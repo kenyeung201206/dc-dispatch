@@ -1,6 +1,19 @@
 {
   "videos": [
     {
+      "id": "lr7KwsMUn4o",
+      "title": "How to Get APEX PROTOCOL GEAR SET! Unlock Guide & Build Test | The Division 2",
+      "channelName": "GCROCK",
+      "channelUrl": "https://www.youtube.com/channel/UCyRKkittAyXHhjZxqC49cxg",
+      "publishedAt": "2026-11-04T17:00:04.000Z",
+      "durationSec": 1970,
+      "official": false,
+      "row": "build-guides",
+      "checkedAt": "2026-11-04T17:04:18.899Z",
+      "via": "youtube-api",
+      "rumour": false
+    },
+    {
       "id": "6RnDzxOAu00",
       "title": "Up To 2,000% Weapon Damage! How To Get These New MUST-HAVE Exotic Gloves | The Division 2",
       "channelName": "The Gaming Brigade",
@@ -9,7 +22,7 @@
       "durationSec": 504,
       "official": false,
       "row": "intel",
-      "checkedAt": "2026-11-04T16:52:21.364Z",
+      "checkedAt": "2026-11-04T17:04:18.899Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -22,7 +35,7 @@
       "durationSec": 2107,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-04T16:52:21.364Z",
+      "checkedAt": "2026-11-04T17:04:18.899Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -35,7 +48,7 @@
       "durationSec": 1683,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-04T16:52:21.364Z",
+      "checkedAt": "2026-11-04T17:04:18.899Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -48,7 +61,7 @@
       "durationSec": 904,
       "official": false,
       "row": "intel",
-      "checkedAt": "2026-11-04T16:52:21.364Z",
+      "checkedAt": "2026-11-04T17:04:18.899Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -61,7 +74,7 @@
       "durationSec": 685,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-04T16:52:21.364Z",
+      "checkedAt": "2026-11-04T17:04:18.899Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -74,7 +87,7 @@
       "durationSec": 1054,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-04T16:52:21.364Z",
+      "checkedAt": "2026-11-04T17:04:18.899Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -87,20 +100,20 @@
       "durationSec": 6728,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-04T16:52:21.364Z",
+      "checkedAt": "2026-11-04T17:04:18.899Z",
       "via": "youtube-search",
       "rumour": false
     },
     {
       "id": "OogcFXOuTr4",
-      "title": "Tom Clancy's The Division 2_20261104220516",
+      "title": "全境封鎖2 獵捕 華盛頓國際機場：伯比•古茲曼  精通 ",
       "channelName": "小豬玩遊戲",
       "channelUrl": "https://www.youtube.com/channel/UCO6st1aohdGkPYJw2lS-tjA",
       "publishedAt": "2026-11-04T14:18:48.000Z",
       "durationSec": 2024,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-04T16:52:21.364Z",
+      "checkedAt": "2026-11-04T17:04:18.899Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -112,7 +125,7 @@
       "publishedAt": "2026-11-04T13:58:13.000Z",
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-04T16:52:21.364Z",
+      "checkedAt": "2026-11-04T17:04:18.899Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -125,7 +138,7 @@
       "durationSec": 486,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-04T16:52:21.364Z",
+      "checkedAt": "2026-11-04T17:04:18.899Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -138,7 +151,7 @@
       "durationSec": 106,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-04T16:52:21.364Z",
+      "checkedAt": "2026-11-04T17:04:18.899Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -151,7 +164,7 @@
       "durationSec": 1342,
       "official": false,
       "row": "build-guides",
-      "checkedAt": "2026-11-04T16:52:21.364Z",
+      "checkedAt": "2026-11-04T17:04:18.899Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -164,7 +177,7 @@
       "durationSec": 3582,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-04T16:52:21.364Z",
+      "checkedAt": "2026-11-04T17:04:18.899Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -177,7 +190,7 @@
       "durationSec": 71,
       "official": false,
       "row": "build-guides",
-      "checkedAt": "2026-11-04T16:52:21.364Z",
+      "checkedAt": "2026-11-04T17:04:18.899Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -190,7 +203,7 @@
       "durationSec": 5512,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-04T16:52:21.364Z",
+      "checkedAt": "2026-11-04T17:04:18.899Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -203,7 +216,7 @@
       "durationSec": 1480,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-04T16:52:21.364Z",
+      "checkedAt": "2026-11-04T17:04:18.899Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -216,7 +229,7 @@
       "durationSec": 12485,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-04T16:52:21.364Z",
+      "checkedAt": "2026-11-04T17:04:18.899Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -229,7 +242,7 @@
       "durationSec": 15939,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-04T16:52:21.364Z",
+      "checkedAt": "2026-11-04T17:04:18.899Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -242,7 +255,7 @@
       "durationSec": 345,
       "official": false,
       "row": "intel",
-      "checkedAt": "2026-11-04T16:52:21.364Z",
+      "checkedAt": "2026-11-04T17:04:18.899Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -255,7 +268,7 @@
       "durationSec": 1355,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-04T16:52:21.364Z",
+      "checkedAt": "2026-11-04T17:04:18.899Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -268,7 +281,7 @@
       "durationSec": 207,
       "official": false,
       "row": "intel",
-      "checkedAt": "2026-11-04T16:52:21.364Z",
+      "checkedAt": "2026-11-04T17:04:18.899Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -281,7 +294,7 @@
       "durationSec": 552,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-04T16:52:21.364Z",
+      "checkedAt": "2026-11-04T17:04:18.899Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -294,7 +307,7 @@
       "durationSec": 1945,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-04T16:52:21.364Z",
+      "checkedAt": "2026-11-04T17:04:18.899Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -307,7 +320,7 @@
       "durationSec": 16264,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-04T16:52:21.364Z",
+      "checkedAt": "2026-11-04T17:04:18.899Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -333,7 +346,7 @@
       "durationSec": 1867,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-04T16:52:21.364Z",
+      "checkedAt": "2026-11-04T17:04:18.899Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -346,7 +359,7 @@
       "durationSec": 162,
       "official": false,
       "row": "intel",
-      "checkedAt": "2026-11-04T16:52:21.364Z",
+      "checkedAt": "2026-11-04T17:04:18.899Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -359,7 +372,7 @@
       "durationSec": 1017,
       "official": false,
       "row": "build-guides",
-      "checkedAt": "2026-11-04T16:52:21.364Z",
+      "checkedAt": "2026-11-04T17:04:18.899Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -372,7 +385,7 @@
       "durationSec": 1860,
       "official": false,
       "row": "intel",
-      "checkedAt": "2026-11-04T16:52:21.364Z",
+      "checkedAt": "2026-11-04T17:04:18.899Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -385,7 +398,7 @@
       "durationSec": 920,
       "official": false,
       "row": "build-guides",
-      "checkedAt": "2026-11-04T16:52:21.364Z",
+      "checkedAt": "2026-11-04T17:04:18.899Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -398,7 +411,7 @@
       "durationSec": 2007,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-04T16:52:21.364Z",
+      "checkedAt": "2026-11-04T17:04:18.899Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -411,7 +424,7 @@
       "durationSec": 593,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-04T16:52:21.364Z",
+      "checkedAt": "2026-11-04T17:04:18.899Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -424,20 +437,7 @@
       "durationSec": 42900,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-04T16:52:21.364Z",
-      "via": "youtube-api",
-      "rumour": false
-    },
-    {
-      "id": "xdrB33BkUVU",
-      "title": "DLC IS HERE! SUNSHINE IS BACK | PSN |🪓🥷 DAG 🔴LIVE | Division 2",
-      "channelName": "Died Again Gaming",
-      "channelUrl": "https://www.youtube.com/channel/UCrK99e79TwSpgElDb-r-Lpg",
-      "publishedAt": "2026-11-04T01:58:53.000Z",
-      "durationSec": 10009,
-      "official": false,
-      "row": "more",
-      "checkedAt": "2026-11-04T16:52:21.364Z",
+      "checkedAt": "2026-11-04T17:04:18.899Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -450,7 +450,7 @@
       "durationSec": 92,
       "official": true,
       "row": "trailers",
-      "checkedAt": "2026-11-04T16:52:21.364Z",
+      "checkedAt": "2026-11-04T17:04:18.899Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -463,7 +463,7 @@
       "durationSec": 7035,
       "official": true,
       "row": "more",
-      "checkedAt": "2026-11-04T16:52:21.364Z",
+      "checkedAt": "2026-11-04T17:04:18.899Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -476,7 +476,7 @@
       "durationSec": 342,
       "official": true,
       "row": "more",
-      "checkedAt": "2026-11-04T16:52:21.364Z",
+      "checkedAt": "2026-11-04T17:04:18.899Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -489,7 +489,7 @@
       "publishedAt": "2026-11-02T13:48:39.000Z",
       "official": true,
       "row": "more",
-      "checkedAt": "2026-11-04T16:52:21.364Z",
+      "checkedAt": "2026-11-04T17:04:18.899Z",
       "via": "ubisoft-page",
       "rumour": false
     },
@@ -502,7 +502,7 @@
       "publishedAt": "2026-10-30T18:16:35.000Z",
       "official": true,
       "row": "trailers",
-      "checkedAt": "2026-11-04T16:52:21.364Z",
+      "checkedAt": "2026-11-04T17:04:18.899Z",
       "via": "ubisoft-page",
       "rumour": false
     },
@@ -515,7 +515,7 @@
       "publishedAt": "2026-10-13T13:30:33.000Z",
       "official": true,
       "row": "trailers",
-      "checkedAt": "2026-11-04T16:52:21.364Z",
+      "checkedAt": "2026-11-04T17:04:18.899Z",
       "via": "ubisoft-page",
       "rumour": false
     }
