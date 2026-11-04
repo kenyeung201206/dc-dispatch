@@ -35,7 +35,8 @@ const pageTitle = title ? `${title} · ${t(locale, 'site.name')}` : t(locale, 's
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-title" content="DC Dispatch" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <!-- "default": the page starts below the status bar like in Safari (no glass blur over content under the Dynamic Island). -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
     <title>{pageTitle}</title>
     <script is:inline>
       // Pick the theme before first paint: saved choice, else the OS setting, else Day.

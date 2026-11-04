@@ -47,7 +47,7 @@ const tools = [
 <style>
   .snav {
     position: sticky;
-    top: var(--bar-h);
+    top: calc(var(--bar-h) + env(safe-area-inset-top));
     z-index: 15;
     background: var(--paper);
     border-bottom: 1px solid var(--rule);

@@ -9,7 +9,7 @@
 html {
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
-  scroll-padding-top: calc(var(--bar-h) + var(--nav-h) + 8px);
+  scroll-padding-top: calc(var(--bar-h) + env(safe-area-inset-top) + var(--nav-h) + 8px);
 }
 
 body {
