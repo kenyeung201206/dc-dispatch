@@ -21,16 +21,16 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:
-      - uses: actions/checkout@v4
-      - uses: pnpm/action-setup@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v7.0.1
+      - uses: pnpm/action-setup@v6.1.0
+      - uses: actions/setup-node@v7.1.0
         with:
           node-version: 24
           cache: pnpm
       - run: pnpm install --frozen-lockfile
 
       # Keeps ETag/Last-Modified caches between runs so unchanged sources aren't re-downloaded.
-      - uses: actions/cache@v4
+      - uses: actions/cache@v6.1.0
         with:
           path: data/cache
           key: http-cache-${{ github.run_id }}
@@ -61,7 +61,12 @@ jobs:
 
       - name: Deploy to Cloudflare Pages
         if: ${{ vars.CF_PAGES_PROJECT != '' }}
-        run: pnpm exec wrangler pages deploy dist --project-name="${{ vars.CF_PAGES_PROJECT }}" --branch=main --commit-dirty=true
+        run: |
+          if [ -z "$CLOUDFLARE_API_TOKEN" ] || [ -z "$CLOUDFLARE_ACCOUNT_ID" ]; then
+            echo "::warning::Cloudflare secrets not set yet — edition committed but not deployed. See docs/DEPLOY.md step 4."
+            exit 0
+          fi
+          pnpm exec wrangler pages deploy dist --project-name="${{ vars.CF_PAGES_PROJECT }}" --branch=main --commit-dirty=true
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
