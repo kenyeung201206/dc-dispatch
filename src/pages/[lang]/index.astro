@@ -1,0 +1,18 @@
+---
+import Base from '../../layouts/Base.astro';
+import { CATEGORIES } from '../../schema/item.ts';
+import { LOCALES, t, type Locale } from '../../i18n/index.ts';
+
+export function getStaticPaths() {
+  return LOCALES.map((lang) => ({ params: { lang } }));
+}
+const locale = Astro.params.lang as Locale;
+---
+<Base locale={locale}>
+  <h1>{t(locale, 'site.name')}</h1>
+  <p>{t(locale, 'site.tagline')}</p>
+  <p>{t(locale, 'home.placeholder')}</p>
+  <ul>
+    {CATEGORIES.map((c) => <li>{t(locale, `section.${c}`)}</li>)}
+  </ul>
+</Base>

@@ -1,0 +1,21 @@
+{
+  "site.name": "The DC Dispatch",
+  "site.tagline": "All the news that's fit to extract.",
+  "nav.skip": "Skip to content",
+  "nav.language": "中文",
+  "nav.languageLabel": "Switch to Traditional Chinese",
+  "section.front-page": "Front Page",
+  "section.updates": "Updates & Patch Notes",
+  "section.arsenal": "Arsenal & Gear",
+  "section.missions": "Missions & Story",
+  "section.glitch-watch": "Glitch Watch",
+  "section.dark-zone": "Dark Zone & PvP",
+  "section.builds": "Builds & Meta",
+  "section.community": "Community Pulse",
+  "section.watch-now": "Watch Now",
+  "section.franchise": "Franchise Desk",
+  "section.back-page": "Back Page",
+  "home.placeholder": "Your daily briefing, Agent. The presses are still warming up.",
+  "translation.pending": "Translation pending",
+  "footer.disclaimer": "Unofficial fan project. Not affiliated with, endorsed or sponsored by Ubisoft. Tom Clancy's The Division 2 and related marks are trademarks of Ubisoft Entertainment. Private and non-commercial."
+}

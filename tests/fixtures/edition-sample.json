@@ -1,0 +1,29 @@
+{
+  "date": "2026-11-04",
+  "editionNumber": 1,
+  "generatedAt": "2026-11-04T06:00:00+09:00",
+  "items": [
+    {
+      "id": "fixture-tu-y8s3-3",
+      "sourceId": "steam-news",
+      "sourceName": "Steam News (Ubisoft announcement)",
+      "sourceUrl": "https://www.ubisoft.com/en-us/game/the-division/the-division-2/news-updates/7L8TlD1Hv0XC1prOD8mdte/tuy8s33-crossplay-rollout-conflict-improvements-more",
+      "title_orig": "[TUY8S3.3] Crossplay Rollout, Conflict Improvements & More",
+      "lang_orig": "en",
+      "publishedAt": "2026-11-02T16:00:22Z",
+      "fetchedAt": "2026-11-04T06:00:00+09:00",
+      "category": "updates",
+      "tags": ["title-update", "crossplay"],
+      "importance": 90,
+      "confidence": "official",
+      "headline_en": "Title Update Y8S3.3 starts staged crossplay rollout",
+      "headline_zhHant": "pending",
+      "summary_en": "PC players move to new crossplay servers on November 10, with PC leaderboards reset. PlayStation and Xbox join on November 17, when crossplay goes live by default.",
+      "summary_zhHant": "pending",
+      "media": [],
+      "relatedIds": [],
+      "status": "new"
+    }
+  ],
+  "sources": [{ "sourceId": "steam-news", "ok": true, "checkedAt": "2026-11-04T06:00:00+09:00" }]
+}

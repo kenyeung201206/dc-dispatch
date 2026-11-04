@@ -1,0 +1,21 @@
+{
+  "site.name": "華盛頓每日快報",
+  "site.tagline": "所有值得擷取的新聞，盡在此處。",
+  "nav.skip": "跳至主要內容",
+  "nav.language": "EN",
+  "nav.languageLabel": "切換至英文",
+  "section.front-page": "頭版",
+  "section.updates": "更新與修正",
+  "section.arsenal": "武器與裝備",
+  "section.missions": "任務與劇情",
+  "section.glitch-watch": "漏洞觀察",
+  "section.dark-zone": "暗區與對戰",
+  "section.builds": "配裝與環境",
+  "section.community": "社群脈動",
+  "section.watch-now": "影音",
+  "section.franchise": "系列新聞",
+  "section.back-page": "後頁",
+  "home.placeholder": "特工，這是您的每日簡報。印刷機還在暖機中。",
+  "translation.pending": "翻譯待補",
+  "footer.disclaimer": "非官方粉絲專案，與 Ubisoft 無任何隸屬、背書或贊助關係。《全境封鎖 2》及相關商標為 Ubisoft Entertainment 所有。僅供私人、非商業用途。"
+}

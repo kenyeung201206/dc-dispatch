@@ -1,0 +1,19 @@
+# Secrets — never commit
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets.*
+credentials.json
+service-account*.json
+
+# Build / deps
+node_modules/
+dist/
+.astro/
+playwright-report/
+test-results/
+
+# Pipeline caches
+data/cache/

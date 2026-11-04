@@ -1,0 +1,47 @@
+---
+import { HTML_LANG, otherLocale, switchLocalePath, t, type Locale } from '../i18n/index.ts';
+
+interface Props {
+  locale: Locale;
+  title?: string;
+}
+const { locale, title } = Astro.props;
+const other = otherLocale(locale);
+const pageTitle = title ? `${title} · ${t(locale, 'site.name')}` : t(locale, 'site.name');
+---
+<!doctype html>
+<html lang={HTML_LANG[locale]}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>{pageTitle}</title>
+  </head>
+  <body>
+    <a class="skip" href="#main">{t(locale, 'nav.skip')}</a>
+    <header>
+      <p>{t(locale, 'site.name')}</p>
+      <a
+        href={switchLocalePath(Astro.url.pathname, other)}
+        hreflang={HTML_LANG[other]}
+        aria-label={t(locale, 'nav.languageLabel')}
+        data-lang-switch={other}>{t(locale, 'nav.language')}</a
+      >
+    </header>
+    <main id="main">
+      <slot />
+    </main>
+    <footer>
+      <p>{t(locale, 'footer.disclaimer')}</p>
+    </footer>
+    <script>
+      // Remember the language the reader picked (best effort).
+      document.querySelector('[data-lang-switch]')?.addEventListener('click', (e) => {
+        const to = (e.currentTarget as HTMLElement).dataset.langSwitch;
+        try {
+          if (to) localStorage.setItem('dcd.lang', to);
+        } catch {}
+      });
+    </script>
+  </body>
+</html>

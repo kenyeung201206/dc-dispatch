@@ -1,0 +1,25 @@
+---
+// Root: send the reader to their remembered language, or detect it on the first visit.
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>The DC Dispatch</title>
+    <script is:inline>
+      (function () {
+        var lang = null;
+        try { lang = localStorage.getItem('dcd.lang'); } catch (e) {}
+        if (lang !== 'en' && lang !== 'zh-hant') {
+          lang = /^zh/i.test(navigator.language || '') ? 'zh-hant' : 'en';
+        }
+        location.replace('/' + lang + '/');
+      })();
+    </script>
+  </head>
+  <body>
+    <p><a href="/en/">English</a> · <a href="/zh-hant/" lang="zh-Hant-TW">繁體中文</a></p>
+  </body>
+</html>
