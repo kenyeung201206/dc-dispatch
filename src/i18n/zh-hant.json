@@ -174,5 +174,6 @@
   "status.quota": "YouTube 配額：今日用了 {n}／10,000 單位",
   "status.cost": "付費 API 花費：US${n}",
   "status.archive": "過刊共 {n} 期",
-  "footer.status": "系統狀態"
+  "footer.status": "系統狀態",
+  "footer.signOut": "登出"
 }

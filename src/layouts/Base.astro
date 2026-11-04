@@ -52,7 +52,7 @@ const pageTitle = title ? `${title} · ${t(locale, 'site.name')}` : t(locale, 's
       <div class="wrap">
         <p>{t(locale, 'footer.disclaimer')}</p>
         <p>{t(locale, 'footer.aiNote')}</p>
-        <p><a href={`/${locale}/status/`}>{t(locale, 'footer.status')}</a></p>
+        <p><a href={`/${locale}/status/`}>{t(locale, 'footer.status')}</a> · <a href="/__logout">{t(locale, 'footer.signOut')}</a></p>
       </div>
     </footer>
     <script>

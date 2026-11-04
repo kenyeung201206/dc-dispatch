@@ -6,7 +6,7 @@ Researched 2026-11-04 (Asia/Tokyo). Everything below was checked live today unle
 
 | # | Decision | Choice |
 |---|----------|--------|
-| 1 | Hosting | A — Cloudflare Pages + Cloudflare Access (email allowlist) |
+| 1 | Hosting | A → changed 2026-11-04: Cloudflare Pages + **own password lock** (Access/Zero Trust wanted a payment card; owner declined) |
 | 2 | Refresh runner | A — GitHub Actions, 06:00 Asia/Tokyo (21:00 UTC previous day) |
 | 3 | API keys | A — YouTube Data API + Twitch only. **No Anthropic, no image-gen key** |
 | 4 | Chinese | A — Traditional Chinese, Taiwan terms (`zh-Hant-TW`) |

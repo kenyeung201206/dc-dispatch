@@ -174,5 +174,6 @@
   "status.quota": "YouTube quota used: {n} of 10,000 units/day",
   "status.cost": "Paid API spend: US${n}",
   "status.archive": "{n} editions in the archive",
-  "footer.status": "Status"
+  "footer.status": "Status",
+  "footer.signOut": "Sign out"
 }

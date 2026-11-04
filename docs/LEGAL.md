@@ -40,7 +40,7 @@ Not legal advice. Researched 2026-11-04. Each rule below is enforced in code (se
 - Text is CC BY-SA 3.0. → only used to cross-check glossary terms; any reused text credited + link.
 
 ## Our own privacy
-- Private (Cloudflare Access), `noindex`, `robots.txt` Disallow: /, no analytics, no third-party requests until a video is clicked.
+- Private (password lock in `functions/_middleware.ts`: every request needs a signed 30-day HttpOnly cookie), `noindex`, `robots.txt` Disallow: /, no analytics, no third-party requests until a video is clicked.
 
 ## Enforcement in code (Phase 1+)
 - Schema: every item requires `sourceUrl`; every media item requires `license` + `attribution` → CI fails otherwise.
