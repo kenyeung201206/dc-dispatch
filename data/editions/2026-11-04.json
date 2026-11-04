@@ -1,7 +1,7 @@
 {
   "date": "2026-11-04",
   "editionNumber": 1,
-  "generatedAt": "2026-11-04T07:04:34.024Z",
+  "generatedAt": "2026-11-04T07:39:33.529Z",
   "meta": {
     "season_en": "Red Horizon",
     "season_zhHant": "Red Horizon 賽季",
@@ -17,7 +17,7 @@
       "title_orig": "[TUY8S3.3] Crossplay Rollout, Conflict Improvements & More",
       "lang_orig": "en",
       "publishedAt": "2026-11-02T15:45:00.000Z",
-      "fetchedAt": "2026-11-04T07:04:34.024Z",
+      "fetchedAt": "2026-11-04T07:39:33.529Z",
       "category": "updates",
       "tags": [
         "title-update",
@@ -56,7 +56,7 @@
       "title_orig": "The Division 2: Echoes of Central Park DLC is available now!",
       "lang_orig": "en",
       "publishedAt": "2026-11-03T15:00:00.000Z",
-      "fetchedAt": "2026-11-04T07:04:34.024Z",
+      "fetchedAt": "2026-11-04T07:39:33.529Z",
       "category": "missions",
       "tags": [
         "dlc"
@@ -84,7 +84,7 @@
       "title_orig": "[TUY8S3.3] Crossplay Rollout, Conflict Improvements & More",
       "lang_orig": "en",
       "publishedAt": "2026-11-02T15:45:00.000Z",
-      "fetchedAt": "2026-11-04T07:04:34.024Z",
+      "fetchedAt": "2026-11-04T07:39:33.529Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -118,7 +118,7 @@
       "title_orig": "The Division 2: Echoes of Central Park Launch Twitch Drops",
       "lang_orig": "en",
       "publishedAt": "2026-11-03T15:00:00.000Z",
-      "fetchedAt": "2026-11-04T07:04:34.024Z",
+      "fetchedAt": "2026-11-04T07:39:33.529Z",
       "category": "community",
       "tags": [
         "twitch-drops",
@@ -145,7 +145,7 @@
       "title_orig": "Play The Division 2: Echoes of Central Park Today!",
       "lang_orig": "en",
       "publishedAt": "2026-11-03T17:13:46.000Z",
-      "fetchedAt": "2026-11-04T07:04:34.024Z",
+      "fetchedAt": "2026-11-04T07:39:33.529Z",
       "category": "community",
       "tags": [],
       "importance": 69,
@@ -168,7 +168,7 @@
       "title_orig": "Last Chance to Pre-Purchase The Division 2: Echoes of Central Park",
       "lang_orig": "en",
       "publishedAt": "2026-10-28T13:29:29.000Z",
-      "fetchedAt": "2026-11-04T07:04:34.024Z",
+      "fetchedAt": "2026-11-04T07:39:33.529Z",
       "category": "missions",
       "tags": [
         "dlc",
@@ -194,7 +194,7 @@
       "title_orig": "Echoes of Central Park Launch Livestream",
       "lang_orig": "en",
       "publishedAt": "2026-10-27T16:01:04.000Z",
-      "fetchedAt": "2026-11-04T07:04:34.024Z",
+      "fetchedAt": "2026-11-04T07:39:33.529Z",
       "category": "community",
       "tags": [],
       "importance": 54,
@@ -217,7 +217,7 @@
       "title_orig": "Echoes of Central Park Costume Contest",
       "lang_orig": "en",
       "publishedAt": "2026-10-27T10:34:40.000Z",
-      "fetchedAt": "2026-11-04T07:04:34.024Z",
+      "fetchedAt": "2026-11-04T07:39:33.529Z",
       "category": "community",
       "tags": [],
       "importance": 53,
@@ -240,7 +240,7 @@
       "title_orig": "The Division 2: Red Moon Unleashed Event Twitch Drops",
       "lang_orig": "en",
       "publishedAt": "2026-10-15T16:00:00.000Z",
-      "fetchedAt": "2026-11-04T07:04:34.024Z",
+      "fetchedAt": "2026-11-04T07:39:33.529Z",
       "category": "community",
       "tags": [
         "event",
@@ -265,17 +265,17 @@
     {
       "sourceId": "steam-news",
       "ok": true,
-      "checkedAt": "2026-11-04T07:04:34.024Z"
+      "checkedAt": "2026-11-04T07:39:33.529Z"
     },
     {
       "sourceId": "ubisoft-en",
       "ok": true,
-      "checkedAt": "2026-11-04T07:04:34.024Z"
+      "checkedAt": "2026-11-04T07:39:33.529Z"
     },
     {
       "sourceId": "ubisoft-zh-tw",
       "ok": true,
-      "checkedAt": "2026-11-04T07:04:34.024Z"
+      "checkedAt": "2026-11-04T07:39:33.529Z"
     }
   ]
 }
