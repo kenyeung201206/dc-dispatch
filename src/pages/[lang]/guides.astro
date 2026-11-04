@@ -1,8 +1,10 @@
 ---
 import Paper from '../../layouts/Paper.astro';
 import GuidePicks from '../../components/GuidePicks.astro';
-import { LOCALES, t, tf, type Locale } from '../../i18n/index.ts';
+import { LOCALES, t, tf, type Locale, type UiKey } from '../../i18n/index.ts';
 import { creator, posts, series, slots } from '../../lib/creator-posts.ts';
+import { routes } from '../../lib/routes.ts';
+import { CATEGORIES } from '../../schema/item.ts';
 
 export function getStaticPaths() {
   return LOCALES.map((lang) => ({ params: { lang } }));
@@ -11,6 +13,10 @@ const locale = Astro.params.lang as Locale;
 const en = locale === 'en';
 const day = (d: string) =>
   new Intl.DateTimeFormat(en ? 'en' : 'zh-Hant-TW', { month: 'short', day: 'numeric', year: 'numeric', timeZone: 'UTC' }).format(new Date(`${d}T00:00:00Z`));
+/** His posts grouped by newspaper section, in the paper's section order, newest first. */
+const groups = CATEGORIES.map((c) => [c, posts.filter((p) => p.category === c).sort((a, b) => b.publishedAt.localeCompare(a.publishedAt))] as const).filter(
+  ([, list]) => list.length > 0,
+);
 ---
 <Paper locale={locale} title={t(locale, 'cg.title')} current="guides">
   <header class="section-head page-head">
@@ -68,21 +74,45 @@ const day = (d: string) =>
   }
 
   {
-    posts.length > 0 && (
+    groups.length > 0 && (
       <section class="series" aria-labelledby="notices-h">
         <h2 id="notices-h">{t(locale, 'cg.updates')}</h2>
-        <ul class="notices">
-          {posts.map((p) => (
-            <li>
-              <strong>{en ? p.title_en : p.title_zhHant}</strong>
-              <p>{en ? p.text_en : p.text_zhHant}</p>
-              <p class="src hud-label">
-                <a href={p.postUrl ?? creator.postsUrl} rel="noopener noreferrer" target="_blank">{t(locale, 'cg.source')}</a> ·{' '}
-                {tf(locale, 'cg.until', { d: day(p.until) })}
-              </p>
-            </li>
-          ))}
-        </ul>
+        {groups.map(([cat, list]) => (
+          <div class="group" data-cat={cat}>
+            <h3 class="hud-label">
+              <a href={routes.section(locale, cat)}>{t(locale, `section.${cat}` as UiKey)} →</a>
+            </h3>
+            <ul class="notices">
+              {list.map((p) => (
+                <li id={`post-${p.id}`}>
+                  <strong>{en ? p.title_en : p.title_zhHant}</strong>
+                  <p>{en ? p.text_en : p.text_zhHant}</p>
+                  {p.codes && (
+                    <ul class="codes" aria-label={t(locale, 'cg.codes')}>
+                      {p.codes.map((c) => (
+                        <li>
+                          {c.label && <span class="cl">{c.label}</span>}
+                          <code>{c.code}</code>
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+                  <p class="src hud-label">
+                    <a href={p.postUrl ?? creator.postsUrl} rel="noopener noreferrer" target="_blank">{t(locale, 'cg.source')}</a>
+                    {p.link && (
+                      <>
+                        {' · '}
+                        <a href={p.link} rel="noopener noreferrer" target="_blank">{t(locale, 'cg.link')}</a>
+                      </>
+                    )}
+                    {' · '}
+                    {tf(locale, 'cg.until', { d: day(p.until) })}
+                  </p>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
       </section>
     )
   }
@@ -228,5 +258,37 @@ const day = (d: string) =>
   }
   .notices p {
     margin: 4px 0;
+  }
+  .group h3 {
+    margin: var(--space-4) 0 0;
+    text-transform: none;
+  }
+  .group h3 a {
+    display: inline-block;
+    padding: 6px 0;
+    color: var(--shd-ink);
+  }
+  .codes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin: 6px 0;
+    padding: 0;
+    list-style: none;
+  }
+  .codes li {
+    display: flex;
+    flex-direction: column;
+    padding: 4px 8px;
+    border: 1px dashed var(--rule);
+  }
+  .cl {
+    font-size: 0.75rem;
+    color: var(--ink-soft);
+  }
+  .codes code {
+    font: 700 1rem var(--font-hud);
+    letter-spacing: 0.04em;
+    user-select: all;
   }
 </style>

@@ -1,5 +1,5 @@
 {
-  "_note": "Editor-written from posts the owner pasted or screenshotted (YouTube posts can't be read automatically). Steps are short, in our own words, with credit and a link. Never copy whole posts or images. A series disappears after 'until' (YYYY-MM-DD, Tokyo).",
+  "_note": "Editor-written from 灰帽特工's YouTube posts (read by hand at the owner's request, not by the robot). Steps are short, in our own words, with credit and a link. Never copy whole posts or images. Items disappear after 'until' (YYYY-MM-DD, Tokyo). Posts from the last 3 days also run as a story in their section.",
   "creator": {
     "name": "灰帽特工 Gray Hat Agent",
     "channelUrl": "https://www.youtube.com/@%E7%81%B0%E5%B8%BD%E7%89%B9%E5%B7%A5",
@@ -17,16 +17,159 @@
       "untilNote": "Season end not announced yet; update to the season's last day when Ubisoft announces it.",
       "entries": [
         {
+          "n": 1,
+          "steps_zhHant": ["在東下城區或司法廣場完成 2 次公開處決活動", "佔領東下城區的 2 個控制點", "在東下城區擊殺 10 名淨化者"],
+          "steps_en": ["Complete 2 Public Execution activities in East Downtown or Judiciary Square", "Take 2 control points in East Downtown", "Kill 10 Cleaners in East Downtown"],
+          "postUrl": "https://www.youtube.com/post/UgkxtykZ5kpj0Lbx8um9QiAgXkW2QmdAZKs6",
+          "seen": "2026-11-05"
+        },
+        {
+          "n": 2,
+          "steps_zhHant": ["在司法廣場擊殺 5 名淨化者", "佔領「橢圓營區燃料庫」控制點", "佔領東下城區任一敵方控制點"],
+          "steps_en": ["Kill 5 Cleaners in Judiciary Square", "Take the fuel-depot control point at the Ellipse camp (橢圓營區燃料庫)", "Take any enemy control point in East Downtown"],
+          "postUrl": "https://www.youtube.com/post/UgkxAqTmgXa9ZpwS9x55DyugIoe57fgHcp2w",
+          "seen": "2026-11-05"
+        },
+        {
+          "n": 3,
+          "steps_zhHant": ["在西波托馬克公園、西區或霧谷完成 2 次領地控制活動（地圖上紅色交叉霰彈槍圖示）", "完成 3 次資源護送活動", "擊殺任意 5 名具名敵人"],
+          "steps_en": ["Complete 2 Territory Control activities (red crossed-shotguns map icon) in West Potomac Park, West End or Foggy Bottom", "Complete 3 resource escort activities", "Kill any 5 named enemies"],
+          "postUrl": "https://www.youtube.com/post/UgkxOS44uhfRxJlmSMrog1Omwk-CiIVg3_Id",
+          "seen": "2026-11-05"
+        },
+        {
+          "n": 4,
+          "steps_zhHant": ["在東暗區或西暗區完成 2 個地標", "在華盛頓完成 3 次淨化者陣營的開放世界活動", "完成憲政大廳的指定懸賞"],
+          "steps_en": ["Clear 2 landmarks in Dark Zone East or West", "Complete 3 Cleaners open-world activities in Washington", "Complete the listed bounty in Constitution Hall"],
+          "postUrl": "https://www.youtube.com/post/UgkxYoPyp6MMZc20gFibni7eclzg3TELtRJB",
+          "seen": "2026-11-05"
+        },
+        {
+          "n": 5,
+          "steps_zhHant": ["完成 2 次真實之子的宣傳廣播活動", "擊殺 5 名黑牙無人機操作員", "擊殺 25 名鬣狗"],
+          "steps_en": ["Complete 2 True Sons Propaganda Broadcast activities", "Kill 5 Black Tusk drone operators", "Kill 25 Hyenas"],
+          "postUrl": "https://www.youtube.com/post/Ugkx2cFTX5xBWWqWLsG6QAjGnQZgrXJKT4mm",
+          "seen": "2026-11-05"
+        },
+        {
+          "n": 6,
+          "steps_zhHant": ["在開放世界完成解救人質活動（地圖上綠色手銬圖示）", "擊殺 5 名具名或精英淨化者", "以任意難度完成波托馬克活動中心任務"],
+          "steps_en": ["Complete a Hostage Rescue activity in the open world (green handcuffs map icon)", "Kill 5 named or elite Cleaners", "Complete the Potomac Event Center mission on any difficulty"],
+          "postUrl": "https://www.youtube.com/post/Ugkxi4O2wtnZvUakMtX5LHpG8MM-sA0oEmtp",
+          "seen": "2026-11-05"
+        },
+        {
+          "n": 7,
+          "steps_zhHant": ["佔領西南區的 2 個控制點", "完成西南區的 3 項活動", "在西南區完成 1 次資源護送活動"],
+          "steps_en": ["Take 2 control points in the Southwest district", "Complete 3 activities in the Southwest district", "Complete 1 resource escort activity in the Southwest district"],
+          "postUrl": "https://www.youtube.com/post/Ugkxb4aWRZYBs-3BeKXB_-i_oruO7INuFSHd",
+          "seen": "2026-11-05"
+        },
+        {
+          "n": 8,
+          "steps_zhHant": ["完成 2 次流亡者陣營的宣傳廣播活動", "完成「鬧鬼住宅」控制點", "完成憲政大廳區域的指定懸賞"],
+          "steps_en": ["Complete 2 Outcasts Propaganda Broadcast activities", "Complete the “haunted house” control point (鬧鬼住宅)", "Complete the listed bounty in the Constitution Hall area"],
+          "postUrl": "https://www.youtube.com/post/Ugkx8_XC_KSdc7a8f6q0wQf62OcZmfr3aJWu",
+          "seen": "2026-11-05"
+        },
+        {
+          "n": 9,
+          "steps_zhHant": ["擊殺 3 名精英或具名鬣狗", "擊殺 5 名醫療兵（他寫「暗牙醫療兵」）", "完成 2 個鬣狗控制點"],
+          "steps_en": ["Kill 3 elite or named Hyenas", "Kill 5 medics (he writes “暗牙”, likely Black Tusk)", "Complete 2 Hyena control points"],
+          "postUrl": "https://www.youtube.com/post/UgkxOMTckdf7NHLZczAqwrPnXbF9tgJABYKn",
+          "seen": "2026-11-05"
+        },
+        {
+          "n": 10,
+          "steps_zhHant": ["擊殺 50 名淨化者", "完成 1 次淨化者陣營的領地控制活動", "佔領 3 個淨化者陣營的控制點"],
+          "steps_en": ["Kill 50 Cleaners", "Complete 1 Cleaners Territory Control activity", "Take 3 Cleaners control points"],
+          "postUrl": "https://www.youtube.com/post/UgkxEtkUGCcUWceKyXq45_k5mQlO-5iFIWKf",
+          "seen": "2026-11-05"
+        },
+        {
           "n": 11,
           "final": true,
           "steps_zhHant": ["完成三個黑牙陣營的白區（開放世界）活動", "完成任一入侵副本", "完成指定懸賞"],
           "steps_en": ["Complete three Black Tusk open-world activities", "Complete any Incursion", "Complete the listed bounty"],
           "result_zhHant": "全部獵捕完成後，即可解鎖本季位於華盛頓機場的獵捕終章任務。",
           "result_en": "With every manhunt done, this season's final manhunt mission at the Washington airport unlocks.",
+          "postUrl": "https://www.youtube.com/post/UgkxhzKhVaqhYfb3vmxKqYtBJ4a-Xho4Jfel",
           "seen": "2026-11-04"
         }
       ]
     }
   ],
-  "posts": []
+  "posts": [
+    {
+      "id": "twitch-drops-2026-11-03",
+      "category": "community",
+      "title_zhHant": "11 月第一輪 Twitch 掉寶開跑",
+      "title_en": "November's first Twitch Drops are live",
+      "text_zhHant": "11 月 3 日至 10 日，在 Twitch 觀看《全境封鎖 2》合作直播達指定時數，即可領取限定獎勵。",
+      "text_en": "From 3 to 10 November, watch partnered The Division 2 streams on Twitch for long enough to earn limited rewards.",
+      "publishedAt": "2026-11-04",
+      "postUrl": "https://www.youtube.com/post/UgkxD6AcFzCwkpLpmOoTvUZY9Z0b1oz9X7F0",
+      "seen": "2026-11-05",
+      "until": "2026-11-10"
+    },
+    {
+      "id": "maintenance-2026-11-03-central-park",
+      "category": "updates",
+      "title_zhHant": "11 月 3 日停機維護：中央公園 DLC 上線",
+      "title_en": "3 Nov maintenance brings the Central Park DLC",
+      "text_zhHant": "灰帽特工提醒：11 月 3 日下午 4:00（他貼文的時間）停機約 6 小時，維護後推出全新中央公園 DLC。更新日誌見 Ubisoft 官方連結。",
+      "text_en": "灰帽特工 flagged a roughly 6-hour maintenance on 3 November from 4:00 pm (his time zone) to launch the new Central Park DLC. Patch notes are on Ubisoft's site.",
+      "publishedAt": "2026-11-03",
+      "link": "https://www.ubisoft.com/ja-jp/game/the-division/the-division-2/news-updates/7L8TlD1Hv0XC1prOD8mdte",
+      "postUrl": "https://www.youtube.com/post/Ugkx9IepbcMyv7QAxXq9yiJUUmHMdYSgtSae",
+      "seen": "2026-11-05",
+      "until": "2026-11-17"
+    },
+    {
+      "id": "redeem-codes-2026",
+      "category": "community",
+      "title_zhHant": "兌換碼合集：臂章、帽子西裝、背包",
+      "title_en": "Redeem codes: armbands, hats & suits, backpack",
+      "text_zhHant": "到 Ubisoft 兌換網站輸入即可領取外觀。10 月的創作者臂章與帽子西裝碼較新；8–9 月的 gamescom 臂章和中央公園彩蛋背包碼可能已過期。背包到手後記得掃一下上面的 QR 碼。",
+      "text_en": "Enter these on Ubisoft's redeem site for free cosmetics. October's creator armbands and hats-and-suits code are the newest; the August–September gamescom armband and Central Park backpack codes may have expired. Scan the QR code on the backpack once you have it.",
+      "codes": [
+        { "label": "SOLIDFPS armband", "code": "SLD-FPS-4QT-Z8N" },
+        { "label": "widdz armband", "code": "WID-DZX-7QK-9RM" },
+        { "label": "IamPurePrime armband", "code": "PPR-IME-4T8-ZQ9" },
+        { "label": "Hats & suits", "code": "F8H-CEN-7W5-PRK" },
+        { "label": "gamescom 2026 armband", "code": "TD2-GMZ-C26-BKP" },
+        { "label": "Central Park backpack", "code": "PPR-X29-3JU-RTE" }
+      ],
+      "publishedAt": "2026-10-21",
+      "link": "https://redeem.ubisoft.com/thedivision2",
+      "postUrl": "https://www.youtube.com/post/Ugkxwj0VH4QQAkXHpEPvvCirK46TUa4fAws8",
+      "seen": "2026-11-05",
+      "until": "2026-12-31"
+    },
+    {
+      "id": "survivors-dlc-preview",
+      "category": "franchise",
+      "title_zhHant": "倖存者 DLC：冬季華盛頓生存模式",
+      "title_en": "Survivors DLC: a winter survival mode for Washington",
+      "text_zhHant": "依官方釋出的概念圖與說明，倖存者 DLC 會把華盛頓變成冬天，玩法類似一代的生存模式，分 PvP 與 PvE 兩種，並有「更厚的雪層」等新機制。封閉測試曾開放報名（9 月底），現在是否仍開放請以官方頁面為準。",
+      "text_en": "Going by the official concept art and notes, the Survivors DLC turns Washington into winter with a survival mode like the first game's, in separate PvP and PvE versions, plus new touches such as deeper snow. A closed-test sign-up opened in late September; check Ubisoft's page to see if it is still open.",
+      "publishedAt": "2026-09-25",
+      "link": "https://register.ubisoft.com/tctd2-survivors-register/en-GB",
+      "postUrl": "https://www.youtube.com/post/Ugkx7II7TrTWoR5piaoP6GKYS6OKR5tROToT",
+      "seen": "2026-11-05",
+      "until": "2026-12-31"
+    },
+    {
+      "id": "build-full-armor-backfire-12",
+      "category": "builds",
+      "title_zhHant": "全防逆火第二套：只有 12 精防也能用",
+      "title_en": "All-armor Backfire, take two: for 12 armor cores",
+      "text_zhHant": "很多特工沒有 13 個精防，灰帽特工因此給出第二套全防逆火配裝：12 精防也不掉強度，還多 10% 擊殺回甲。爆頭率低於約 70% 的話，把爆頭傷害換成暴擊傷害 DPS 會更高。",
+      "text_en": "Many agents don't have 13 armor cores, so 灰帽特工 posted a second all-armor Backfire setup that works with 12 and adds 10% armor on kill. If your headshot rate is below about 70%, swap headshot damage for crit damage for more DPS.",
+      "publishedAt": "2026-09-01",
+      "postUrl": "https://www.youtube.com/post/UgkxrMeN895Q-qq0LWwl8FhpvJcwnfnqA2fb",
+      "seen": "2026-11-05",
+      "until": "2027-01-03"
+    }
+  ]
 }

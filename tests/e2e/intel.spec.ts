@@ -37,17 +37,30 @@ test('Guide Picks: front-page list links to playable guides on the Builds page',
   await expect(card.locator('iframe')).toHaveAttribute('src', /youtube-nocookie\.com\/embed\//);
 });
 
-test('灰帽特工 攻略 page: missions 1→11 in order, filled and pending slots, links to his posts', async ({ page }) => {
+test('灰帽特工 攻略 page: missions 1→11 in order, each linking to its own post', async ({ page }) => {
   await page.goto('/zh-hant/guides/');
   await expect(page.getByRole('heading', { level: 1 })).toHaveText('灰帽特工 攻略');
   await expect(page.getByRole('link', { name: '查看灰帽特工全部貼文 ↗' })).toHaveAttribute('href', /youtube\.com\/@.+\/posts$/);
   const slots = page.locator('.steps > .slot');
   await expect(slots).toHaveCount(11);
+  await expect(page.locator('.steps > .slot.empty')).toHaveCount(0);
   await expect(slots.nth(0).locator('.n')).toHaveText('1');
-  await expect(slots.nth(0)).toHaveClass(/empty/);
+  await expect(slots.nth(0)).toContainText('公開處決');
+  await expect(slots.nth(0).locator('.src a')).toHaveAttribute('href', /^https:\/\/www\.youtube\.com\/post\/Ugkx/);
   await expect(slots.nth(10)).toHaveClass(/final/);
   await expect(slots.nth(10).locator('.todo li')).toHaveCount(3);
-  await expect(page.locator('.prog')).toContainText('已收錄 1 / 11');
+  await expect(page.locator('.prog')).toContainText('已收錄 11 / 11');
+});
+
+test('灰帽特工 posts are sorted into newspaper sections, codes are shown, section links work', async ({ page }) => {
+  await page.goto('/zh-hant/guides/');
+  const groups = page.locator('.group');
+  await expect(groups.first()).toBeVisible();
+  for (const cat of await groups.evaluateAll((els) => els.map((e) => e.getAttribute('data-cat')))) {
+    await expect(page.locator(`.group[data-cat="${cat}"] h3 a`)).toHaveAttribute('href', new RegExp(`/zh-hant/(section/${cat}/|watch/|)$`));
+  }
+  const codes = page.locator('#post-redeem-codes-2026 .codes code');
+  if (await codes.count()) await expect(codes.first()).toHaveText(/^[A-Z0-9]{3}-[A-Z0-9]{3}-[A-Z0-9]{3}-[A-Z0-9]{3}$/);
 });
 
 test('guides page is reachable from the nav in English', async ({ page, isMobile }) => {

@@ -2,7 +2,8 @@ import { readFileSync } from 'node:fs';
 import { describe, expect, it } from 'vitest';
 import { cleanTitle, eventsFromArticle, guidesFromPicks, guidesFromVideos, liveGuides, mergeEvents, untilFor } from '../../pipeline/guides.ts';
 import { parseUbisoftNews } from '../../pipeline/sources/ubisoft.ts';
-import { GameEventLogSchema } from '../../src/schema/item.ts';
+import { CreatorPostsSchema, GameEventLogSchema, ItemSchema } from '../../src/schema/item.ts';
+import { creatorPostStories } from '../../pipeline/creator-posts.ts';
 
 const events = GameEventLogSchema.parse(JSON.parse(readFileSync('data/events.json', 'utf8'))).events;
 
@@ -49,5 +50,27 @@ describe('events from Ubisoft notes', () => {
 
   it('strips hashtags from titles', () => {
     expect(cleanTitle('最高難度全流程 #全境封鎖 #thedivision2')).toBe('最高難度全流程');
+  });
+});
+
+describe('灰帽特工 curated posts', () => {
+  const file = JSON.parse(readFileSync('data/creator-posts.json', 'utf8'));
+
+  it('the data file is valid and the mission series is complete', () => {
+    const data = CreatorPostsSchema.parse(file);
+    const s = data.series.find((x) => x.id === 'y8s3-manhunt-scouts')!;
+    expect(s.entries.map((e) => e.n).sort((a, b) => a - b)).toEqual([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]);
+    for (const e of s.entries) expect(e.steps_en).toHaveLength(e.steps_zhHant.length);
+  });
+
+  it('only recent, unexpired posts become stories, in their own section, never official', () => {
+    const items = creatorPostStories(file, new Date('2026-11-05T00:00:00Z'));
+    expect(items.map((i) => i.category).sort()).toEqual(['community', 'updates']);
+    for (const i of items) {
+      expect(ItemSchema.safeParse(i).success).toBe(true);
+      expect(i.confidence).toBe('community');
+      expect(i.headline_en).not.toBe('pending');
+    }
+    expect(creatorPostStories(file, new Date('2026-11-20T00:00:00Z'))).toHaveLength(0);
   });
 });

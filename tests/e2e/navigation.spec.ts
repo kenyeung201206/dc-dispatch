@@ -48,7 +48,7 @@ test('glitch board shows status and first-seen date', async ({ page }) => {
 
 test('archive calendar links to the latest edition', async ({ page }) => {
   await page.goto('/zh-hant/archive/');
-  await page.locator('.day.has').first().click();
+  await page.locator('.day.has').last().click();
   await expect(page).toHaveURL(/\/zh-hant\/$/);
 });
 

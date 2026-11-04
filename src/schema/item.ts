@@ -223,6 +223,14 @@ export const CreatorPostsSchema = z.object({
       title_en: z.string().min(1),
       text_zhHant: z.string().min(1),
       text_en: z.string().min(1),
+      /** Which newspaper section it belongs to. */
+      category: CategorySchema,
+      /** Day he posted it (approximate when YouTube only showed "2 weeks ago"). Recent ones also run as a story. */
+      publishedAt: z.iso.date(),
+      /** Redeem codes, shown as copyable chips. */
+      codes: z.array(z.object({ label: z.string().optional(), code: z.string().regex(/^[A-Z0-9-]{6,32}$/) })).optional(),
+      /** Extra link from the post (e.g. Ubisoft patch notes or a sign-up page). */
+      link: httpsUrl.optional(),
       postUrl: httpsUrl.optional(),
       seen: z.iso.date(),
       until: z.iso.date(),

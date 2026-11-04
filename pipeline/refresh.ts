@@ -13,6 +13,7 @@ import { parsePatch, upsertPatches } from './patches.ts';
 import { buildVideos } from './video/build.ts';
 import { searchVideos } from './video/youtube.ts';
 import { videoStories } from './video/intel-items.ts';
+import { creatorPostStories } from './creator-posts.ts';
 import { exoticsFromArticle, mergeExotics, wikiExotics } from './exotics.ts';
 import { eventsFromArticle, guidesFromPicks, guidesFromVideos, liveGuides, mergeEvents, mergeGuides, type Pick } from './guides.ts';
 import { checkEmbeddable, fetchChannelVideos } from './video/youtube.ts';
@@ -130,6 +131,10 @@ async function main() {
   const vStories = videoStories(searched, now);
   for (const v of vStories) sourceText.set(v.id, searched.find((x) => x.id === v.videoId)?.description ?? v.title_orig);
   fresh.push(...vStories);
+  // 灰帽特工's curated posts: the newest ones run as stories in their section.
+  const cpStories = creatorPostStories(await readJson('data/creator-posts.json', { creator: {}, series: [], posts: [] }), now);
+  for (const c of cpStories) sourceText.set(c.id, c.summary_zhHant);
+  fresh.push(...cpStories);
   const videos = await buildVideos({
     searched: [...searched, ...guideVideos],
     enHtml: results.find((r) => r.sourceId === 'ubisoft-en')?.body,
