@@ -80,7 +80,12 @@ export async function buildVideos({ enHtml, zhHtml, previous, channels, youtubeK
       !rejected.has(p.id) &&
       now.getTime() - Date.parse(p.checkedAt) < MAX_UNVERIFIED_DAYS * DAY,
   );
-  const all = [...verified, ...carried].sort((a, b) => b.publishedAt.localeCompare(a.publishedAt)).slice(0, MAX_VIDEOS);
+  // Official videos (trailers, Ubisoft uploads) always keep their place; creators fill the rest of the cap.
+  const newest = (a: Video, b: Video) => b.publishedAt.localeCompare(a.publishedAt);
+  const pool = [...verified, ...carried];
+  const officialVideos = pool.filter((v) => v.official).sort(newest);
+  const others = pool.filter((v) => !v.official).sort(newest).slice(0, Math.max(0, MAX_VIDEOS - officialVideos.length));
+  const all = [...officialVideos, ...others].sort(newest);
   log('info', 'videos', { verified: verified.length, carried: carried.length, rejected: rejected.size, total: all.length });
   return all;
 }

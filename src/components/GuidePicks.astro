@@ -73,7 +73,7 @@ const short = (d: string) =>
     </div>
   )
 }
-{limit && guides.length > 0 && <p class="more"><a href={`${routes.section(locale, 'builds')}#guides`}>{t(locale, 'guides.more')}</a></p>}
+{limit && <p class="more"><a href={routes.guides(locale)}>{t(locale, 'cg.more')}</a></p>}
 
 <style>
   .mini {

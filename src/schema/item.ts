@@ -188,6 +188,49 @@ export const GuideSchema = z.object({
 export type Guide = z.infer<typeof GuideSchema>;
 export const GuideLogSchema = z.object({ guides: z.array(GuideSchema) });
 
+/** Creator mission guides written from posts the owner pasted (data/creator-posts.json). */
+const SeriesEntrySchema = z.object({
+  n: z.number().int().positive(),
+  final: z.boolean().optional(),
+  steps_zhHant: z.array(z.string().min(1)).min(1),
+  steps_en: z.array(z.string().min(1)).min(1),
+  result_zhHant: z.string().optional(),
+  result_en: z.string().optional(),
+  /** Direct link to the post, if the owner sent it; otherwise the posts tab is linked. */
+  postUrl: httpsUrl.optional(),
+  seen: z.iso.date(),
+});
+export const CreatorPostsSchema = z.object({
+  _note: z.string().optional(),
+  creator: z.object({ name: z.string().min(1), channelUrl: httpsUrl, postsUrl: httpsUrl }),
+  series: z.array(
+    z.object({
+      id: z.string().min(1),
+      title_zhHant: z.string().min(1),
+      title_en: z.string().min(1),
+      intro_zhHant: z.string().optional(),
+      intro_en: z.string().optional(),
+      total: z.number().int().positive(),
+      until: z.iso.date(),
+      untilNote: z.string().optional(),
+      entries: z.array(SeriesEntrySchema),
+    }),
+  ),
+  posts: z.array(
+    z.object({
+      id: z.string().min(1),
+      title_zhHant: z.string().min(1),
+      title_en: z.string().min(1),
+      text_zhHant: z.string().min(1),
+      text_en: z.string().min(1),
+      postUrl: httpsUrl.optional(),
+      seen: z.iso.date(),
+      until: z.iso.date(),
+    }),
+  ),
+});
+export type CreatorPosts = z.infer<typeof CreatorPostsSchema>;
+
 /** Watch Now rows (brief §8). */
 export const VIDEO_ROWS = ['intel', 'trailers', 'patch-breakdowns', 'build-guides', 'more'] as const;
 

@@ -195,5 +195,19 @@
   "guides.more": "所有攻略 →",
   "guides.none": "目前沒有攻略。ISAC 還在偵查。",
   "guides.post": "閱讀貼文 ↗",
-  "guides.inChinese": "中文"
+  "guides.inChinese": "中文",
+  "nav.guides": "攻略",
+  "cg.title": "灰帽特工 攻略",
+  "cg.intro": "整理自灰帽特工 YouTube 貼文的任務攻略（以本報的話簡要重寫），並附上他的影片。每一步都附原文連結。",
+  "cg.allPosts": "查看灰帽特工全部貼文 ↗",
+  "cg.progress": "已收錄 {have} / {total}",
+  "cg.pending": "尚未收錄。貼上或截圖他第 {n} 篇的貼文即可補上。",
+  "cg.final": "終章",
+  "cg.mission": "任務 {n}",
+  "cg.unlock": "完成後",
+  "cg.source": "灰帽特工原文 ↗",
+  "cg.until": "顯示至 {d}",
+  "cg.videos": "他的影片",
+  "cg.updates": "公告",
+  "cg.more": "灰帽特工攻略 →"
 }

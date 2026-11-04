@@ -195,5 +195,19 @@
   "guides.more": "All guides →",
   "guides.none": "No guides right now. ISAC is out scouting.",
   "guides.post": "Read the post ↗",
-  "guides.inChinese": "In Chinese"
+  "guides.inChinese": "In Chinese",
+  "nav.guides": "Guides",
+  "cg.title": "Gray Hat Agent Guides",
+  "cg.intro": "Mission walkthroughs from 灰帽特工 (Gray Hat Agent), written up short in our own words from his YouTube posts, plus his videos. Each step links to his original.",
+  "cg.allPosts": "All of his posts on YouTube ↗",
+  "cg.progress": "{have} of {total} added",
+  "cg.pending": "Not added yet. Paste or screenshot his post for mission {n} to fill this in.",
+  "cg.final": "Final",
+  "cg.mission": "Mission {n}",
+  "cg.unlock": "Unlocks",
+  "cg.source": "灰帽特工’s post ↗",
+  "cg.until": "Shown until {d}",
+  "cg.videos": "His videos",
+  "cg.updates": "Notices",
+  "cg.more": "Gray Hat Agent guides →"
 }

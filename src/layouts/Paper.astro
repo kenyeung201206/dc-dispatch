@@ -14,7 +14,7 @@ interface Props {
   title?: string;
   edition?: Edition;
   /** Which nav item is active; anything but the front page gets the compact phone header. */
-  current?: Category | 'archive' | 'patches' | 'search';
+  current?: Category | 'archive' | 'patches' | 'search' | 'guides';
 }
 const { locale, title, edition = latestEdition(), current } = Astro.props;
 // Inner pages: phones show only the compact sticky bar, so the page starts on the first screen.

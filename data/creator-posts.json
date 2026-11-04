@@ -1,0 +1,32 @@
+{
+  "_note": "Editor-written from posts the owner pasted or screenshotted (YouTube posts can't be read automatically). Steps are short, in our own words, with credit and a link. Never copy whole posts or images. A series disappears after 'until' (YYYY-MM-DD, Tokyo).",
+  "creator": {
+    "name": "灰帽特工 Gray Hat Agent",
+    "channelUrl": "https://www.youtube.com/@%E7%81%B0%E5%B8%BD%E7%89%B9%E5%B7%A5",
+    "postsUrl": "https://www.youtube.com/@%E7%81%B0%E5%B8%BD%E7%89%B9%E5%B7%A5/posts"
+  },
+  "series": [
+    {
+      "id": "y8s3-manhunt-scouts",
+      "title_zhHant": "Y8S3 獵捕偵查任務",
+      "title_en": "Y8S3 Manhunt Scouts",
+      "intro_zhHant": "Red Horizon 賽季的獵捕偵查任務共 11 項，全部完成即可解鎖本季的獵捕終章任務。",
+      "intro_en": "Red Horizon's 11 manhunt scouts. Finish them all to unlock the season's final manhunt mission.",
+      "total": 11,
+      "until": "2027-01-03",
+      "untilNote": "Season end not announced yet; update to the season's last day when Ubisoft announces it.",
+      "entries": [
+        {
+          "n": 11,
+          "final": true,
+          "steps_zhHant": ["完成三個黑牙陣營的白區（開放世界）活動", "完成任一入侵副本", "完成指定懸賞"],
+          "steps_en": ["Complete three Black Tusk open-world activities", "Complete any Incursion", "Complete the listed bounty"],
+          "result_zhHant": "全部獵捕完成後，即可解鎖本季位於華盛頓機場的獵捕終章任務。",
+          "result_en": "With every manhunt done, this season's final manhunt mission at the Washington airport unlocks.",
+          "seen": "2026-11-04"
+        }
+      ]
+    }
+  ],
+  "posts": []
+}

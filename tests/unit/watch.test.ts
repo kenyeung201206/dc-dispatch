@@ -153,3 +153,27 @@ describe('Twitch live lookup (mocked Helix)', () => {
     expect((await getLive(env, failing as never, NOW.getTime())).status).toBe('error');
   });
 });
+
+describe('video cap', () => {
+  it('always keeps official videos even when many creator videos are newer', async () => {
+    const mk = (i: number, official: boolean) => ({
+      id: `${official ? 'o' : 'c'}${String(i).padStart(10, '0')}`,
+      title: official ? 'Official trailer' : 'Creator video',
+      publishedAt: new Date(Date.UTC(2026, 10, official ? 1 : 3, 0, i)).toISOString(),
+      official,
+      via: 'youtube-api' as const,
+      verified: true,
+      channelName: 'x',
+      channelUrl: 'https://www.youtube.com/@x',
+    });
+    const out = await buildVideos({
+      previous: [],
+      channels: [],
+      now: NOW,
+      dryRun: true,
+      searched: [...Array.from({ length: 60 }, (_, i) => mk(i, false)), mk(1, true), mk(2, true)],
+    });
+    expect(out.length).toBeLessThanOrEqual(40);
+    expect(out.filter((v) => v.official)).toHaveLength(2);
+  });
+});

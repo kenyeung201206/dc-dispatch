@@ -6,10 +6,11 @@ import type { Category } from '../schema/item.ts';
 interface Props {
   locale: Locale;
   sections: Category[];
-  current?: Category | 'archive' | 'patches' | 'search';
+  current?: Category | 'archive' | 'patches' | 'search' | 'guides';
 }
 const { locale, sections, current } = Astro.props;
 const tools = [
+  { key: 'guides', href: routes.guides(locale), label: t(locale, 'nav.guides') },
   { key: 'archive', href: routes.archive(locale), label: t(locale, 'nav.archive') },
   { key: 'patches', href: routes.patches(locale), label: t(locale, 'nav.patches') },
   { key: 'search', href: routes.search(locale), label: `⌕ ${t(locale, 'nav.search')}` },

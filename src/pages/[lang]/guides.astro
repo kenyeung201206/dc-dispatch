@@ -1,0 +1,232 @@
+---
+import Paper from '../../layouts/Paper.astro';
+import GuidePicks from '../../components/GuidePicks.astro';
+import { LOCALES, t, tf, type Locale } from '../../i18n/index.ts';
+import { creator, posts, series, slots } from '../../lib/creator-posts.ts';
+
+export function getStaticPaths() {
+  return LOCALES.map((lang) => ({ params: { lang } }));
+}
+const locale = Astro.params.lang as Locale;
+const en = locale === 'en';
+const day = (d: string) =>
+  new Intl.DateTimeFormat(en ? 'en' : 'zh-Hant-TW', { month: 'short', day: 'numeric', year: 'numeric', timeZone: 'UTC' }).format(new Date(`${d}T00:00:00Z`));
+---
+<Paper locale={locale} title={t(locale, 'cg.title')} current="guides">
+  <header class="section-head page-head">
+    <h1>{t(locale, 'cg.title')}</h1>
+  </header>
+  <p class="intro">{t(locale, 'cg.intro')}</p>
+  <p><a class="cta" href={creator.postsUrl} rel="noopener noreferrer" target="_blank">{t(locale, 'cg.allPosts')}</a></p>
+
+  {
+    series.map((s) => {
+      const have = s.entries.length;
+      return (
+        <section class="series" aria-labelledby={`s-${s.id}`}>
+          <header class="sh">
+            <h2 id={`s-${s.id}`}>{en ? s.title_en : s.title_zhHant}</h2>
+            <p class="hud-label prog">
+              {tf(locale, 'cg.progress', { have, total: s.total })} · {tf(locale, 'cg.until', { d: day(s.until) })}
+            </p>
+            <div class="bar" aria-hidden="true"><span style={`width:${Math.round((have / s.total) * 100)}%`} /></div>
+            {(en ? s.intro_en : s.intro_zhHant) && <p class="sintro">{en ? s.intro_en : s.intro_zhHant}</p>}
+          </header>
+          <ol class="steps">
+            {slots(s).map(({ n, entry }) => (
+              <li class:list={['slot', !entry && 'empty', entry?.final && 'final']} id={`${s.id}-${n}`}>
+                <p class="num">
+                  <span class="n">{n}</span>
+                  <span class="hud-label">{tf(locale, 'cg.mission', { n })}</span>
+                  {entry?.final && <span class="fin">{t(locale, 'cg.final')}</span>}
+                </p>
+                {entry ? (
+                  <>
+                    <ul class="todo">
+                      {(en ? entry.steps_en : entry.steps_zhHant).map((st) => (
+                        <li>{st}</li>
+                      ))}
+                    </ul>
+                    {(en ? entry.result_en : entry.result_zhHant) && (
+                      <p class="res">
+                        <strong>{t(locale, 'cg.unlock')}:</strong> {en ? entry.result_en : entry.result_zhHant}
+                      </p>
+                    )}
+                    <p class="src hud-label">
+                      <a href={entry.postUrl ?? creator.postsUrl} rel="noopener noreferrer" target="_blank">{t(locale, 'cg.source')}</a>
+                    </p>
+                  </>
+                ) : (
+                  <p class="pend">{tf(locale, 'cg.pending', { n })}</p>
+                )}
+              </li>
+            ))}
+          </ol>
+        </section>
+      );
+    })
+  }
+
+  {
+    posts.length > 0 && (
+      <section class="series" aria-labelledby="notices-h">
+        <h2 id="notices-h">{t(locale, 'cg.updates')}</h2>
+        <ul class="notices">
+          {posts.map((p) => (
+            <li>
+              <strong>{en ? p.title_en : p.title_zhHant}</strong>
+              <p>{en ? p.text_en : p.text_zhHant}</p>
+              <p class="src hud-label">
+                <a href={p.postUrl ?? creator.postsUrl} rel="noopener noreferrer" target="_blank">{t(locale, 'cg.source')}</a> ·{' '}
+                {tf(locale, 'cg.until', { d: day(p.until) })}
+              </p>
+            </li>
+          ))}
+        </ul>
+      </section>
+    )
+  }
+
+  <section class="series" aria-labelledby="vids-h">
+    <h2 id="vids-h">{t(locale, 'cg.videos')}</h2>
+    <GuidePicks locale={locale} />
+  </section>
+</Paper>
+
+<style>
+  .page-head h1 {
+    margin: 0;
+    font: 900 var(--step-3) / 1.1 var(--font-display);
+  }
+  :lang(zh-Hant-TW) .page-head h1,
+  :lang(zh-Hant-TW) h2 {
+    font-family: var(--font-cjk);
+  }
+  .intro {
+    max-width: 70ch;
+    color: var(--ink-soft);
+  }
+  .cta {
+    display: inline-flex;
+    align-items: center;
+    min-height: var(--tap);
+    padding: 0 18px;
+    background: var(--shd);
+    color: var(--on-shd);
+    font: 700 1rem var(--font-hud);
+    text-decoration: none;
+  }
+  .series {
+    margin-top: var(--space-6);
+  }
+  .series h2 {
+    margin: 0;
+    font: 900 var(--step-2) / 1.2 var(--font-display);
+    border-top: 3px solid var(--rule);
+    padding-top: 6px;
+  }
+  .prog {
+    margin: 6px 0;
+    color: var(--ink-soft);
+    text-transform: none;
+  }
+  .bar {
+    height: 8px;
+    background: var(--rule-soft);
+    max-width: 420px;
+  }
+  .bar span {
+    display: block;
+    height: 100%;
+    background: var(--shd);
+  }
+  .sintro {
+    max-width: 70ch;
+  }
+  .steps {
+    display: grid;
+    gap: var(--space-3);
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr));
+    margin: var(--space-4) 0 0;
+    padding: 0;
+    list-style: none;
+  }
+  .slot {
+    padding: 12px 14px;
+    border: 1.5px solid var(--rule);
+    background: color-mix(in srgb, var(--paper-2) 60%, transparent);
+  }
+  .slot.empty {
+    border-style: dashed;
+    color: var(--ink-soft);
+    background: transparent;
+  }
+  .slot.final {
+    border-top: 6px solid var(--shd);
+  }
+  .num {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 0 0 6px;
+  }
+  .n {
+    display: grid;
+    place-items: center;
+    width: 32px;
+    height: 32px;
+    background: var(--ink);
+    color: var(--paper);
+    font: 700 1rem var(--font-hud);
+    clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+  }
+  .empty .n {
+    background: var(--rule-soft);
+    color: var(--ink-soft);
+  }
+  .fin {
+    padding: 0 6px;
+    background: var(--shd);
+    color: var(--on-shd);
+    font: 700 0.75rem / 1.6 var(--font-hud);
+  }
+  .todo {
+    margin: 0 0 6px;
+    padding-left: 1.2em;
+  }
+  .todo li {
+    margin: 2px 0;
+  }
+  .res {
+    margin: 0 0 6px;
+    padding-left: 10px;
+    border-left: 3px solid var(--shd);
+    font-size: 0.9375rem;
+  }
+  .src {
+    margin: 0;
+    text-transform: none;
+    letter-spacing: 0;
+    font-weight: 400;
+  }
+  .src a {
+    display: inline-block;
+    padding: 6px 0;
+  }
+  .pend {
+    margin: 0;
+    font-style: italic;
+    font-size: 0.9375rem;
+  }
+  .notices {
+    padding: 0;
+    list-style: none;
+  }
+  .notices li {
+    padding: 10px 0;
+    border-bottom: 1px solid var(--rule-soft);
+  }
+  .notices p {
+    margin: 4px 0;
+  }
+</style>

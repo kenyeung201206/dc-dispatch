@@ -1,3 +1,4 @@
+import { readFileSync } from 'node:fs';
 import { expect, test, type Page } from '@playwright/test';
 
 /** Keep tests offline: never actually load YouTube/Twitch players or thumbnails. */
@@ -30,13 +31,16 @@ test('YouTube facade loads no player until tapped, then plays inline from youtub
 });
 
 test('Chinese page uses the regional upload when Ubisoft has one', async ({ page }) => {
+  // Data changes daily: pick any listed video that has a zh-TW regional twin.
+  const videos = JSON.parse(readFileSync('data/videos.json', 'utf8')).videos as { id: string; idZh?: string }[];
+  const pair = videos.find((v) => v.idZh);
+  test.skip(!pair, 'no regional pair in the current data');
   await blockThirdParty(page);
-  await page.goto('/zh-hant/watch/');
-  const zhId = await page.locator('.vod .vf').getAttribute('data-yt');
   await page.goto('/en/watch/');
-  const enId = await page.locator('.vod .vf').getAttribute('data-yt');
-  expect(zhId).toMatch(/^[A-Za-z0-9_-]{11}$/);
-  expect(zhId).not.toBe(enId);
+  await expect(page.locator(`.vf[data-yt="${pair!.id}"]`).first()).toBeAttached();
+  await page.goto('/zh-hant/watch/');
+  await expect(page.locator(`.vf[data-yt="${pair!.idZh}"]`).first()).toBeAttached();
+  await expect(page.locator(`.vf[data-yt="${pair!.id}"]`)).toHaveCount(0);
 });
 
 test('Live Now: unavailable state when the live service is missing', async ({ page }) => {

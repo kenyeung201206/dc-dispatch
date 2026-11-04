@@ -11,5 +11,6 @@ export const routes = {
   archive: (l: Locale) => `/${l}/archive/`,
   edition: (l: Locale, date: string) => `/${l}/edition/${date}/`,
   patches: (l: Locale) => `/${l}/patches/`,
+  guides: (l: Locale) => `/${l}/guides/`,
   search: (l: Locale) => `/${l}/search/`,
 };
