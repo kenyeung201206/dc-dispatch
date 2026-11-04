@@ -101,3 +101,18 @@ describe('origin check uses the Host the browser used', () => {
     expect(res.status).toBe(303);
   });
 });
+
+describe('home-screen app files', () => {
+  it('icons and the manifest load without signing in (phones fetch them cookie-less)', async () => {
+    for (const p of ['/manifest.webmanifest', '/icons/apple-touch-icon.png', '/icons/icon-512.png', '/icons/maskable-512.png', '/apple-touch-icon.png']) {
+      expect((await run(p)).status, p).toBe(200);
+    }
+  });
+
+  it('only those exact files: neighbours, tricks and POSTs stay locked', async () => {
+    for (const p of ['/icons/', '/icons/../en/', '/icons/secret.png', '/manifest.webmanifest.bak', '/en/manifest.webmanifest', '/data/editions/2026-11-04.json']) {
+      expect((await run(p)).status, p).toBe(401);
+    }
+    expect((await run('/manifest.webmanifest', { method: 'POST' })).status).toBe(401);
+  });
+});

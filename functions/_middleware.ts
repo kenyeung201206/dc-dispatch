@@ -27,6 +27,18 @@ interface Ctx {
   next: () => Promise<Response>;
 }
 
+/** Exact files only (no folders, no wildcards), so nothing else slips past the lock. */
+const APP_SHELL = new Set([
+  '/manifest.webmanifest',
+  '/icons/apple-touch-icon.png',
+  '/icons/icon-192.png',
+  '/icons/icon-512.png',
+  '/icons/maskable-512.png',
+  '/icons/favicon-32.png',
+  '/apple-touch-icon.png',
+]);
+export const isAppShellAsset = (path: string) => APP_SHELL.has(path);
+
 const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));
 const redirect = (to: string, extra: Record<string, string> = {}) =>
   new Response(null, { status: 303, headers: { location: to, 'cache-control': 'no-store', ...extra } });
@@ -38,7 +50,10 @@ export async function onRequest({ request, env, next }: Ctx): Promise<Response> 
   const e = env as Required<AuthEnv>;
   const now = Date.now();
 
-  if (url.pathname === LOGOUT_PATH) return redirect(LOGIN_PATH, { 'set-cookie': clearCookieHeader(secure) });
+  // Home-screen icon + app manifest: phones fetch these without the sign-in cookie. They hold no news content.
+  if (isAppShellAsset(url.pathname) && (request.method === 'GET' || request.method === 'HEAD')) return next();
+
+  if (url.pathname === LOGOUT_PATH)return redirect(LOGIN_PATH, { 'set-cookie': clearCookieHeader(secure) });
 
   if (url.pathname === LOGIN_PATH) {
     if (request.method === 'POST') {

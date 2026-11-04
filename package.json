@@ -20,7 +20,8 @@
     "refresh": "node --env-file-if-exists=.env pipeline/refresh.ts",
     "refresh:dry": "node pipeline/refresh.ts --dry-run",
     "deploy": "wrangler pages deploy dist --project-name=${CF_PAGES_PROJECT:-dc-dispatch} --branch=main",
-    "preview:cf": "wrangler pages dev dist --port 8788"
+    "preview:cf": "wrangler pages dev dist --port 8788",
+    "icons": "node scripts/make-icons.ts"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "0.137.0",
@@ -36,6 +37,7 @@
     "@playwright/test": "1.64.1",
     "@types/node": "24.19.2",
     "pagefind": "1.6.0",
+    "sharp": "0.35.5",
     "typescript": "6.0.3",
     "vitest": "5.1.0",
     "wrangler": "4.151.3"
