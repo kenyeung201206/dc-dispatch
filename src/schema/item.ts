@@ -151,6 +151,17 @@ export const VideoSchema = z.object({
 export type Video = z.infer<typeof VideoSchema>;
 export const VideoLibrarySchema = z.object({ videos: z.array(VideoSchema) });
 
+/** Health of the last pipeline run, for the Status page (data/status.json). No secrets, only booleans. */
+export const RunStatusSchema = z.object({
+  lastRun: z.iso.datetime({ offset: true }),
+  durationMs: z.number().int().min(0),
+  edition: z.object({ date: z.iso.date(), number: z.number().int().positive(), items: z.number().int(), zhPending: z.number().int() }),
+  sources: z.array(z.object({ id: z.string(), ok: z.boolean(), items: z.number().int(), note: z.string().optional() })),
+  videos: z.object({ total: z.number().int(), youtubeApiConfigured: z.boolean() }),
+  budget: z.object({ youtubeQuotaUnits: z.number().int(), costUsd: z.number() }),
+});
+export type RunStatus = z.infer<typeof RunStatusSchema>;
+
 /** One daily edition file: data/editions/YYYY-MM-DD.json */
 export const EditionSchema = z.object({
   date: z.iso.date(),

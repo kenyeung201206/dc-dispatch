@@ -1,0 +1,70 @@
+name: Daily edition
+
+# 06:00 Asia/Tokyo = 21:00 UTC the day before. Also runnable by hand from the Actions tab.
+on:
+  schedule:
+    - cron: '0 21 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write # commit the new edition back to the repo
+
+concurrency:
+  group: daily-edition
+  cancel-in-progress: false
+
+env:
+  ASTRO_TELEMETRY_DISABLED: '1'
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+
+      # Keeps ETag/Last-Modified caches between runs so unchanged sources aren't re-downloaded.
+      - uses: actions/cache@v4
+        with:
+          path: data/cache
+          key: http-cache-${{ github.run_id }}
+          restore-keys: http-cache-
+
+      - name: Fetch today's news
+        run: pnpm run refresh
+        env:
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+
+      - name: Check
+        run: pnpm run i18n:check && pnpm run test
+
+      - name: Build site + search index
+        run: pnpm run build
+        env:
+          HUMOUR_LEVEL: ${{ vars.HUMOUR_LEVEL || 'medium' }}
+
+      - name: Commit the edition
+        run: |
+          git config user.name "dc-dispatch-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/editions data/images.json data/patches.json data/videos.json data/status.json
+          if git diff --cached --quiet; then echo "No data changes"; else
+            git commit -m "chore(data): edition $(TZ=Asia/Tokyo date +%F)"
+            git push
+          fi
+
+      - name: Deploy to Cloudflare Pages
+        if: ${{ vars.CF_PAGES_PROJECT != '' }}
+        run: pnpm exec wrangler pages deploy dist --project-name="${{ vars.CF_PAGES_PROJECT }}" --branch=main --commit-dirty=true
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+
+      - name: Fail loudly if the paper is stale
+        run: node scripts/check-stale.ts 36

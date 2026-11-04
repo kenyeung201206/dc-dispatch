@@ -23,3 +23,6 @@ docs/screenshots/
 
 # Pipeline dry-run output
 .dry-run/
+
+# Wrangler local state
+.wrangler/

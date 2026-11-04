@@ -1,0 +1,184 @@
+---
+import Paper from '../../layouts/Paper.astro';
+import raw from '../../../data/status.json' with { type: 'json' };
+import { HTML_LANG, LOCALES, t, tf, type Locale } from '../../i18n/index.ts';
+import { editions } from '../../lib/editions.ts';
+import { RunStatusSchema } from '../../schema/item.ts';
+
+export function getStaticPaths() {
+  return LOCALES.map((lang) => ({ params: { lang } }));
+}
+const locale = Astro.params.lang as Locale;
+const status = RunStatusSchema.parse(raw);
+const when = new Intl.DateTimeFormat(HTML_LANG[locale], {
+  timeZone: 'Asia/Tokyo',
+  dateStyle: 'full',
+  timeStyle: 'short',
+}).format(new Date(status.lastRun));
+const SOURCE_NAMES: Record<string, string> = {
+  'steam-news': 'Steam News API',
+  'ubisoft-en': 'Ubisoft (EN)',
+  'ubisoft-zh-tw': 'Ubisoft 台灣 (zh-TW)',
+};
+---
+<Paper locale={locale} title={t(locale, 'status.title')}>
+  <header class="section-head page-head">
+    <h1>{t(locale, 'status.title')}</h1>
+    <p>{t(locale, 'status.intro')}</p>
+  </header>
+
+  <p class="stale" hidden data-stale>{t(locale, 'status.stale')}</p>
+
+  <dl class="grid">
+    <div class="card">
+      <dt>{t(locale, 'status.lastRun')}</dt>
+      <dd>
+        <time datetime={status.lastRun}>{when}</time>
+        <span class="ago" data-ago={status.lastRun} data-template={t(locale, 'status.ago')}></span>
+      </dd>
+    </div>
+    <div class="card">
+      <dt>{t(locale, 'status.edition')}</dt>
+      <dd>Nº {String(status.edition.number).padStart(3, '0')} · {status.edition.date} · {status.edition.items}</dd>
+      <dd class="sub">{tf(locale, 'status.archive', { n: editions.length })}</dd>
+    </div>
+    <div class="card">
+      <dt>{t(locale, 'status.videos')}</dt>
+      <dd>{tf(locale, 'status.videoCount', { n: status.videos.total })}</dd>
+      <dd class="sub">{t(locale, 'status.ytApi')}: <b class:list={[status.videos.youtubeApiConfigured ? 'ok' : 'warn']}>{t(locale, status.videos.youtubeApiConfigured ? 'status.yes' : 'status.no')}</b></dd>
+      <dd class="sub">{t(locale, 'status.live')}: <b data-live-status data-yes={t(locale, 'status.yes')} data-no={t(locale, 'status.no')} data-down={t(locale, 'status.down')}>{t(locale, 'status.checking')}</b></dd>
+    </div>
+    <div class="card">
+      <dt>{t(locale, 'status.budget')}</dt>
+      <dd>{tf(locale, 'status.quota', { n: status.budget.youtubeQuotaUnits })}</dd>
+      <dd class="sub">{tf(locale, 'status.cost', { n: status.budget.costUsd.toFixed(2) })}</dd>
+    </div>
+  </dl>
+
+  <h2 class="hud-label">{t(locale, 'status.sources')}</h2>
+  <table class="src">
+    <thead>
+      <tr><th scope="col">{t(locale, 'status.source')}</th><th scope="col">{t(locale, 'status.health')}</th><th scope="col">{t(locale, 'status.items')}</th></tr>
+    </thead>
+    <tbody>
+      {
+        status.sources.map((s) => (
+          <tr>
+            <th scope="row">{SOURCE_NAMES[s.id] ?? s.id}</th>
+            <td>
+              <span class:list={['chip', s.ok ? 'ok' : 'warn']}>{t(locale, s.ok ? 'status.ok' : 'status.down')}</span>
+              {s.note && <small>{s.note}</small>}
+            </td>
+            <td>{s.items}</td>
+          </tr>
+        ))
+      }
+    </tbody>
+  </table>
+</Paper>
+
+<script>
+  const HOUR = 3_600_000;
+  document.querySelectorAll<HTMLElement>('[data-ago]').forEach((el) => {
+    const hours = Math.floor((Date.now() - Date.parse(el.dataset.ago ?? '')) / HOUR);
+    if (Number.isNaN(hours)) return;
+    el.textContent = ` (${(el.dataset.template ?? '{n}').replace('{n}', String(hours))})`;
+    if (hours > 36) document.querySelector<HTMLElement>('[data-stale]')!.hidden = false;
+  });
+  const live = document.querySelector<HTMLElement>('[data-live-status]');
+  if (live) {
+    fetch('/api/live')
+      .then((r) => (r.ok ? r.json() : { status: 'error' }))
+      .catch(() => ({ status: 'error' }))
+      .then((d: { status: string }) => {
+        const ok = d.status === 'live' || d.status === 'offline';
+        live.textContent = (ok ? live.dataset.yes : d.status === 'unconfigured' ? live.dataset.no : live.dataset.down) ?? '';
+        live.className = ok ? 'ok' : 'warn';
+      });
+  }
+</script>
+
+<style>
+  .page-head h1 {
+    margin: 0;
+    font: 900 var(--step-3) / 1.1 var(--font-display);
+  }
+  :lang(zh-Hant-TW) .page-head h1 {
+    font-family: var(--font-cjk);
+  }
+  .stale {
+    padding: 10px 14px;
+    border: 2px solid var(--dz-red);
+    color: var(--dz-red);
+    font-weight: 700;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 260px), 1fr));
+    gap: var(--space-4);
+    margin: 0 0 var(--space-5);
+  }
+  .card {
+    padding: 12px 14px;
+    border: 1.5px solid var(--rule);
+  }
+  dt {
+    font: 600 var(--step--1) var(--font-hud);
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    margin-bottom: 4px;
+  }
+  dd {
+    margin: 0;
+    font-weight: 700;
+  }
+  .sub {
+    font: 400 var(--step--1) / 1.6 var(--font-hud);
+    color: var(--ink-soft);
+  }
+  .ago {
+    font-weight: 400;
+    color: var(--ink-soft);
+  }
+  .src {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  .src th,
+  .src td {
+    padding: 10px 8px;
+    text-align: left;
+    border-bottom: 1px solid var(--rule-soft);
+    vertical-align: top;
+  }
+  .src thead th {
+    font: 600 var(--step--1) var(--font-hud);
+    text-transform: uppercase;
+    border-bottom: 2px solid var(--rule);
+  }
+  .chip {
+    padding: 1px 8px;
+    font: 600 0.75rem / 1.6 var(--font-hud);
+  }
+  .chip.ok,
+  b.ok {
+    color: var(--ok-green);
+  }
+  .chip.ok {
+    color: #fff;
+    background: var(--ok-green);
+  }
+  .chip.warn,
+  b.warn {
+    color: var(--dz-red);
+  }
+  .chip.warn {
+    color: #fff;
+    background: var(--dz-red);
+  }
+  small {
+    display: block;
+    color: var(--ink-soft);
+    overflow-wrap: anywhere;
+  }
+</style>

@@ -1,0 +1,6 @@
+# Cloudflare Pages project (static site in dist/ + functions/ for /api/live).
+# Secrets are NOT stored here: set TWITCH_CLIENT_ID / TWITCH_CLIENT_SECRET in the Pages project settings
+# (or `wrangler pages secret put NAME --project-name dc-dispatch`).
+name = "dc-dispatch"
+pages_build_output_dir = "dist"
+compatibility_date = "2026-10-01"

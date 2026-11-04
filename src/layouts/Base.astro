@@ -52,6 +52,7 @@ const pageTitle = title ? `${title} · ${t(locale, 'site.name')}` : t(locale, 's
       <div class="wrap">
         <p>{t(locale, 'footer.disclaimer')}</p>
         <p>{t(locale, 'footer.aiNote')}</p>
+        <p><a href={`/${locale}/status/`}>{t(locale, 'footer.status')}</a></p>
       </div>
     </footer>
     <script>
@@ -148,6 +149,10 @@ const pageTitle = title ? `${title} · ${t(locale, 'site.name')}` : t(locale, 's
         border-top: 4px double var(--rule);
         font: 400 var(--step--1) / 1.6 var(--font-hud);
         color: var(--ink-soft);
+      }
+      .site-footer a {
+        display: inline-block;
+        padding: 6px 0;
       }
       .site-footer p {
         margin: 0 0 8px;

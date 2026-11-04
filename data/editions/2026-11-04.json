@@ -1,7 +1,7 @@
 {
   "date": "2026-11-04",
   "editionNumber": 1,
-  "generatedAt": "2026-11-04T05:43:19.007Z",
+  "generatedAt": "2026-11-04T07:04:34.024Z",
   "meta": {
     "season_en": "Red Horizon",
     "season_zhHant": "Red Horizon 賽季",
@@ -17,7 +17,7 @@
       "title_orig": "[TUY8S3.3] Crossplay Rollout, Conflict Improvements & More",
       "lang_orig": "en",
       "publishedAt": "2026-11-02T15:45:00.000Z",
-      "fetchedAt": "2026-11-04T05:43:19.007Z",
+      "fetchedAt": "2026-11-04T07:04:34.024Z",
       "category": "updates",
       "tags": [
         "title-update",
@@ -26,7 +26,7 @@
         "event",
         "pvp"
       ],
-      "importance": 100,
+      "importance": 99,
       "confidence": "official",
       "headline_en": "TU Y8S3.3: crossplay arrives in stages — PC on Nov 10, consoles Nov 17",
       "headline_zhHant": "Y8S3.3 更新：跨平台遊玩分階段上線，PC 11 月 10 日先行，主機 11 月 17 日加入",
@@ -56,7 +56,7 @@
       "title_orig": "The Division 2: Echoes of Central Park DLC is available now!",
       "lang_orig": "en",
       "publishedAt": "2026-11-03T15:00:00.000Z",
-      "fetchedAt": "2026-11-04T05:43:19.007Z",
+      "fetchedAt": "2026-11-04T07:04:34.024Z",
       "category": "missions",
       "tags": [
         "dlc"
@@ -84,12 +84,12 @@
       "title_orig": "[TUY8S3.3] Crossplay Rollout, Conflict Improvements & More",
       "lang_orig": "en",
       "publishedAt": "2026-11-02T15:45:00.000Z",
-      "fetchedAt": "2026-11-04T05:43:19.007Z",
+      "fetchedAt": "2026-11-04T07:04:34.024Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
       ],
-      "importance": 73,
+      "importance": 72,
       "confidence": "official",
       "headline_en": "Known issue (TU Y8S3.3): Climax Mission may stay locked after all Manhunt scouts",
       "headline_zhHant": "已知問題（Y8S3.3）：完成所有獵殺偵查後，高潮任務可能仍未解鎖",
@@ -118,7 +118,7 @@
       "title_orig": "The Division 2: Echoes of Central Park Launch Twitch Drops",
       "lang_orig": "en",
       "publishedAt": "2026-11-03T15:00:00.000Z",
-      "fetchedAt": "2026-11-04T05:43:19.007Z",
+      "fetchedAt": "2026-11-04T07:04:34.024Z",
       "category": "community",
       "tags": [
         "twitch-drops",
@@ -145,7 +145,7 @@
       "title_orig": "Play The Division 2: Echoes of Central Park Today!",
       "lang_orig": "en",
       "publishedAt": "2026-11-03T17:13:46.000Z",
-      "fetchedAt": "2026-11-04T05:43:19.007Z",
+      "fetchedAt": "2026-11-04T07:04:34.024Z",
       "category": "community",
       "tags": [],
       "importance": 69,
@@ -168,7 +168,7 @@
       "title_orig": "Last Chance to Pre-Purchase The Division 2: Echoes of Central Park",
       "lang_orig": "en",
       "publishedAt": "2026-10-28T13:29:29.000Z",
-      "fetchedAt": "2026-11-04T05:43:19.007Z",
+      "fetchedAt": "2026-11-04T07:04:34.024Z",
       "category": "missions",
       "tags": [
         "dlc",
@@ -194,7 +194,7 @@
       "title_orig": "Echoes of Central Park Launch Livestream",
       "lang_orig": "en",
       "publishedAt": "2026-10-27T16:01:04.000Z",
-      "fetchedAt": "2026-11-04T05:43:19.007Z",
+      "fetchedAt": "2026-11-04T07:04:34.024Z",
       "category": "community",
       "tags": [],
       "importance": 54,
@@ -217,7 +217,7 @@
       "title_orig": "Echoes of Central Park Costume Contest",
       "lang_orig": "en",
       "publishedAt": "2026-10-27T10:34:40.000Z",
-      "fetchedAt": "2026-11-04T05:43:19.007Z",
+      "fetchedAt": "2026-11-04T07:04:34.024Z",
       "category": "community",
       "tags": [],
       "importance": 53,
@@ -240,7 +240,7 @@
       "title_orig": "The Division 2: Red Moon Unleashed Event Twitch Drops",
       "lang_orig": "en",
       "publishedAt": "2026-10-15T16:00:00.000Z",
-      "fetchedAt": "2026-11-04T05:43:19.007Z",
+      "fetchedAt": "2026-11-04T07:04:34.024Z",
       "category": "community",
       "tags": [
         "event",
@@ -265,17 +265,17 @@
     {
       "sourceId": "steam-news",
       "ok": true,
-      "checkedAt": "2026-11-04T05:43:19.007Z"
+      "checkedAt": "2026-11-04T07:04:34.024Z"
     },
     {
       "sourceId": "ubisoft-en",
       "ok": true,
-      "checkedAt": "2026-11-04T05:43:19.007Z"
+      "checkedAt": "2026-11-04T07:04:34.024Z"
     },
     {
       "sourceId": "ubisoft-zh-tw",
       "ok": true,
-      "checkedAt": "2026-11-04T05:43:19.007Z"
+      "checkedAt": "2026-11-04T07:04:34.024Z"
     }
   ]
 }

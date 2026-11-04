@@ -8,7 +8,7 @@
 import { mkdir, readdir, readFile, writeFile } from 'node:fs/promises';
 import { join } from 'node:path';
 import { parseArgs } from 'node:util';
-import { EditionSchema, ImageLibrarySchema, PatchLogSchema, VideoLibrarySchema, type Edition, type Item } from '../src/schema/item.ts';
+import { EditionSchema, ImageLibrarySchema, PatchLogSchema, RunStatusSchema, VideoLibrarySchema, type Edition, type Item } from '../src/schema/item.ts';
 import { parsePatch, upsertPatches } from './patches.ts';
 import { buildVideos } from './video/build.ts';
 import { SOURCES, TIMEZONE, type SourceId } from './config.ts';
@@ -74,6 +74,7 @@ async function previousEdition(date: string): Promise<Edition | undefined> {
 }
 
 async function main() {
+  const startedAt = Date.now();
   // Dry runs are pinned to the fixtures' date so results are reproducible.
   const now = args.date
     ? new Date(`${args.date}T06:00:00+09:00`)
@@ -100,13 +101,15 @@ async function main() {
     .filter((p) => p !== null);
   const patches = { patches: upsertPatches(patchLog.patches, foundPatches) };
 
+  const channels = (await readJson<{ channels: { id: string; name: string; official: boolean }[] }>('data/video-channels.json', { channels: [] })).channels;
+  const youtubeKey = dryRun ? undefined : process.env.YOUTUBE_API_KEY;
   // Watch Now: official videos from Ubisoft pages + allowlisted channels (with a key), each verified embeddable.
   const videos = await buildVideos({
     enHtml: results.find((r) => r.sourceId === 'ubisoft-en')?.body,
     zhHtml: results.find((r) => r.sourceId === 'ubisoft-zh-tw')?.body,
     previous: VideoLibrarySchema.parse(await readJson('data/videos.json', { videos: [] })).videos,
-    channels: (await readJson<{ channels: { id: string; name: string; official: boolean }[] }>('data/video-channels.json', { channels: [] })).channels,
-    youtubeKey: dryRun ? undefined : process.env.YOUTUBE_API_KEY,
+    channels,
+    youtubeKey,
     now,
     dryRun,
   });
@@ -120,6 +123,17 @@ async function main() {
   await writeFile(join(outDir, 'images.json'), JSON.stringify(ImageLibrarySchema.parse(images), null, 2) + '\n');
   await writeFile(join(outDir, 'videos.json'), JSON.stringify(VideoLibrarySchema.parse({ videos }), null, 2) + '\n');
   await writeFile(join(outDir, 'patches.json'), JSON.stringify(PatchLogSchema.parse(patches), null, 2) + '\n');
+
+  // Status page data: only counts and booleans, never key values.
+  const status = RunStatusSchema.parse({
+    lastRun: new Date().toISOString(),
+    durationMs: Date.now() - startedAt,
+    edition: { date, number: edition.editionNumber, items: edition.items.length, zhPending: edition.items.filter((i) => i.headline_zhHant === 'pending').length },
+    sources: results.map((r) => ({ id: r.sourceId, ok: r.ok, items: r.items.length, ...(r.note ? { note: r.note } : {}) })),
+    videos: { total: videos.length, youtubeApiConfigured: Boolean(youtubeKey) },
+    budget: { youtubeQuotaUnits: youtubeKey ? channels.length * 2 : 0, costUsd: 0 },
+  });
+  await writeFile(join(outDir, 'status.json'), JSON.stringify(status, null, 2) + '\n');
 
   const pending = edition.items.filter((i) => i.headline_zhHant === 'pending').length;
   log('info', 'refresh done', {

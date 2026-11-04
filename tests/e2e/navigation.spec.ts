@@ -82,3 +82,12 @@ test('desktop: nav has archive, patch tracker and search', async ({ page }) => {
     await expect(page.locator('.snav').getByRole('link', { name })).toBeVisible();
   }
 });
+
+test('status page shows last refresh and source health in both languages', async ({ page }) => {
+  await page.goto('/en/status/');
+  await expect(page.getByText('Last refresh')).toBeVisible();
+  await expect(page.locator('.src tbody tr')).toHaveCount(3);
+  await expect(page.locator('[data-live-status]')).not.toHaveText('Checking…');
+  await page.goto('/zh-hant/status/');
+  await expect(page.getByText('上次更新')).toBeVisible();
+});
