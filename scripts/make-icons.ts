@@ -4,7 +4,7 @@
  *   pnpm run icons
  *
  * Source: assets/icon-source.jpg or .png (the SHD eagle seal key art). The seal is cropped as a square
- * from the lower part of the picture (tune CROP below if the picture changes). Without a source file,
+ * around the centre of the picture (tune CROP below if the picture changes). Without a source file,
  * a plain SHD hexagon placeholder is used so the site always has icons.
  */
 import { existsSync } from 'node:fs';
@@ -13,8 +13,8 @@ import sharp from 'sharp';
 
 const OUT = 'public/icons';
 const BG = '#121416';
-/** Square around the seal, as fractions of the picture's width/height. */
-const CROP = { left: 0.1, top: 0.3, size: 0.8 };
+/** Square around the seal: centre (fractions of width/height) and side (fraction of the shorter side). */
+const CROP = { cx: 0.5, cy: 0.5, size: 1 };
 
 const PLACEHOLDER = Buffer.from(`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
   <rect width="512" height="512" fill="${BG}"/>
@@ -29,9 +29,9 @@ async function sourceSquare(): Promise<Buffer> {
     return sharp(PLACEHOLDER).resize(1024, 1024).png().toBuffer();
   }
   const { width = 0, height = 0 } = await sharp(file).metadata();
-  const size = Math.min(Math.round(width * CROP.size), height - Math.round(height * CROP.top));
-  const left = Math.round(width * CROP.left);
-  const top = Math.round(height * CROP.top);
+  const size = Math.round(Math.min(width, height) * CROP.size);
+  const left = Math.max(0, Math.min(width - size, Math.round(width * CROP.cx - size / 2)));
+  const top = Math.max(0, Math.min(height - size, Math.round(height * CROP.cy - size / 2)));
   console.log(`Icon from ${file} (${width}×${height}), seal square ${size}px at ${left},${top}`);
   return sharp(file).extract({ left, top, width: size, height: size }).resize(1024, 1024).png().toBuffer();
 }
