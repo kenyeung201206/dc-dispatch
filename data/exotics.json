@@ -1,0 +1,94 @@
+{
+  "exotics": [
+    {
+      "name": "Loaded for Bear",
+      "type": "Gloves",
+      "talent": "Afterburn",
+      "text": "Hitting enemies applies stacks to them. An enemy cannot have more than 20 stacks applied to them.",
+      "status": "released",
+      "confidence": "official",
+      "firstSeen": "2026-11-02T15:45:00.000Z",
+      "sources": [
+        {
+          "name": "Ubisoft",
+          "url": "https://www.ubisoft.com/en-us/game/the-division/the-division-2/news-updates/7L8TlD1Hv0XC1prOD8mdte/tuy8s33-crossplay-rollout-conflict-improvements-more"
+        },
+        {
+          "name": "The Division Wiki (CC BY-SA)",
+          "url": "https://thedivision.fandom.com/wiki/Loaded_for_Bear"
+        }
+      ]
+    },
+    {
+      "name": "The Ratel",
+      "type": "Weapon",
+      "status": "announced",
+      "confidence": "official",
+      "firstSeen": "2026-10-13T16:00:00.000Z",
+      "sources": [
+        {
+          "name": "Ubisoft",
+          "url": "https://www.ubisoft.com/en-us/game/the-division/the-division-2/news-updates/2o0p19fLQGze5j7h3iEXTN/the-division-2-echoes-of-central-park-showcase-everything-you-need-to-know"
+        }
+      ]
+    },
+    {
+      "name": "Vertigo",
+      "type": "Light Machine Gun",
+      "text": "Vertigo is an Exotic Light Machine Gun in Tom Clancy's The Division 2.",
+      "status": "spotted",
+      "confidence": "community",
+      "firstSeen": "2026-09-23T19:23:29.000Z",
+      "sources": [
+        {
+          "name": "The Division Wiki (CC BY-SA)",
+          "url": "https://thedivision.fandom.com/wiki/Vertigo"
+        }
+      ]
+    },
+    {
+      "name": "Sarru",
+      "type": "Backpack",
+      "text": "Sarru is an Exotic Backpack in Tom Clancy's The Division 2.",
+      "status": "spotted",
+      "confidence": "community",
+      "firstSeen": "2026-09-23T19:17:03.000Z",
+      "sources": [
+        {
+          "name": "The Division Wiki (CC BY-SA)",
+          "url": "https://thedivision.fandom.com/wiki/Sarru"
+        }
+      ]
+    },
+    {
+      "name": "Fafnir",
+      "type": "Shotgun",
+      "talent": "Dragon's Breath",
+      "text": "This weapon fires Dragon's Breath shells. Each shot has a 40% chance of applying Burn to the enemy.",
+      "status": "announced",
+      "confidence": "official",
+      "firstSeen": "2026-08-26T16:45:00.000Z",
+      "sources": [
+        {
+          "name": "Ubisoft",
+          "url": "https://www.ubisoft.com/en-us/game/the-division/the-division-2/news-updates/4mrYiFPIyKpzpoqshDQk80/the-division-2-red-horizon"
+        }
+      ]
+    },
+    {
+      "name": "Iron Will",
+      "type": "Chest",
+      "talent": "Resolved",
+      "text": "PvE version: Your next body shot will be considered a headshot. Cooldown: 2s PvP version: Your next body shot will be considered a headshot.",
+      "status": "announced",
+      "confidence": "official",
+      "firstSeen": "2026-08-26T16:45:00.000Z",
+      "sources": [
+        {
+          "name": "Ubisoft",
+          "url": "https://www.ubisoft.com/en-us/game/the-division/the-division-2/news-updates/4mrYiFPIyKpzpoqshDQk80/the-division-2-red-horizon"
+        }
+      ]
+    }
+  ]
+}

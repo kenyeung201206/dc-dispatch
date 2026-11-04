@@ -38,6 +38,7 @@ describe('buildVideos', () => {
     publishedAt: '2026-10-01T00:00:00.000Z',
     official: true,
     row: 'more',
+    rumour: false,
     checkedAt: new Date(NOW.getTime() - daysAgo * 86_400_000).toISOString(),
     via: 'ubisoft-page',
   });

@@ -12,10 +12,15 @@ const MAX_DAYS_APART = 3;
 /** Preference for the "main" copy of a story: Ubisoft site > official Steam post > press. */
 const rank = (r: RawItem) => (r.sourceId === 'ubisoft-en' ? 0 : r.confidence === 'official' ? 1 : 2);
 
+/** Query parameters that never identify content (tracking, display options). */
+const NOISE_PARAMS = /^(utm_.*|fbclid|gclid|ref|tnum|cc_lang_pref|cc_load_policy|hl|t)$/i;
+
 export function canonicalUrl(raw: string): string {
   const u = new URL(raw);
   u.hash = '';
-  u.search = '';
+  // Keep identifying params (e.g. 巴哈 ?bsn=…&snA=…, YouTube ?v=…); drop tracking ones; sort for stability.
+  const kept = [...u.searchParams].filter(([k]) => !NOISE_PARAMS.test(k)).sort(([a], [b]) => a.localeCompare(b));
+  u.search = kept.length ? `?${new URLSearchParams(kept).toString()}` : '';
   u.hostname = u.hostname.toLowerCase();
   return u.href.replace(/\/$/, '');
 }

@@ -16,7 +16,10 @@ export interface RawItem {
   abstract?: string;
   publishedAt: string;
   lang: 'en' | 'zh';
-  confidence: 'official' | 'reported';
+  /** Tag such as 情報 / 攻略 / 心得 (巴哈姆特) used for classification. */
+  tag?: string;
+  videoId?: string;
+  confidence: 'official' | 'reported' | 'community' | 'rumour';
   imageUrl?: string;
 }
 

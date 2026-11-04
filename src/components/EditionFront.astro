@@ -11,6 +11,8 @@ import { routes } from '../lib/routes.ts';
 import VideoFacade from './VideoFacade.astro';
 import LiveNow from './LiveNow.astro';
 import BackPage from './BackPage.astro';
+import ExoticIntel from './ExoticIntel.astro';
+import GuidePicks from './GuidePicks.astro';
 import { agentOfTheDay, humourLevel } from '../lib/humour.ts';
 import { videoOfTheDay, videos } from '../lib/videos.ts';
 import { bannerFor, imageFor } from '../lib/images.ts';
@@ -69,6 +71,12 @@ const moreVideos = videos.filter((v) => v.id !== vod?.id).slice(0, 2);
             ))
           }
         </ul>
+      </SideBox>
+      <SideBox title={t(locale, 'guides.title')}>
+        <GuidePicks locale={locale} limit={4} />
+      </SideBox>
+      <SideBox title={t(locale, 'exotic.title')}>
+        <ExoticIntel locale={locale} limit={5} />
       </SideBox>
       <SideBox title={t(locale, 'sidebar.patch')}>
         <ul class="tldr">

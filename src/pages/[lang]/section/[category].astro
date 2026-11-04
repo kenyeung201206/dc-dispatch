@@ -2,6 +2,8 @@
 import Paper from '../../../layouts/Paper.astro';
 import StoryCard from '../../../components/StoryCard.astro';
 import Photo from '../../../components/Photo.astro';
+import ExoticIntel from '../../../components/ExoticIntel.astro';
+import GuidePicks from '../../../components/GuidePicks.astro';
 import { CATEGORIES, type Category } from '../../../schema/item.ts';
 import { LOCALES, t, tf, type Locale, type UiKey } from '../../../i18n/index.ts';
 import { allItems } from '../../../lib/editions.ts';
@@ -21,7 +23,7 @@ const used = new Set(items.flatMap((i) => (i.imageId ? [i.imageId] : [])));
 const banner = bannerFor(category, used);
 const photos = new Map(items.map((i) => [i.id, imageFor(i, used)]));
 
-const confidences = (['official', 'reported', 'rumour'] as const).filter((c) => items.some((i) => i.confidence === c));
+const confidences = (['official', 'reported', 'community', 'rumour'] as const).filter((c) => items.some((i) => i.confidence === c));
 const states = (['active', 'hotfixed', 'patched'] as const).filter((s) => items.some((i) => i.glitch?.state === s));
 // Topic filters: known tags used by at least one story here (and not by all of them).
 const KNOWN_TAGS = ['title-update', 'crossplay', 'dlc', 'event', 'twitch-drops', 'exotic', 'pvp', 'known-issue', 'season'] as const;
@@ -39,6 +41,24 @@ const title = isBoard ? t(locale, 'glitch.board') : t(locale, `section.${categor
   {isBoard && <p class="intro">{t(locale, 'glitch.boardIntro')}</p>}
   {category === 'updates' && <p class="intro"><a href={routes.patches(locale)}>{t(locale, 'nav.patches')} →</a></p>}
   {banner && <Photo locale={locale} image={banner} variant="banner" />}
+  {
+    category === 'builds' && (
+      <section class="intel-block" id="guides" aria-labelledby="guides-h">
+        <h2 id="guides-h" class="hud-label">{t(locale, 'guides.title')}</h2>
+        <p class="intro">{t(locale, 'guides.intro')}</p>
+        <GuidePicks locale={locale} />
+      </section>
+    )
+  }
+  {
+    category === 'arsenal' && (
+      <section class="intel-block" aria-labelledby="intel-h">
+        <h2 id="intel-h" class="hud-label">{t(locale, 'exotic.title')}</h2>
+        <p class="intro">{t(locale, 'exotic.intro')}</p>
+        <ExoticIntel locale={locale} />
+      </section>
+    )
+  }
 
   {
     items.length > 1 && (confidences.length > 1 || states.length > 1 || tags.length > 0) && (
@@ -137,6 +157,9 @@ const title = isBoard ? t(locale, 'glitch.board') : t(locale, `section.${categor
     padding: 8px 0;
     color: var(--shd-ink);
     font-weight: 700;
+  }
+  .intel-block {
+    margin: var(--space-4) 0 var(--space-5);
   }
   .filters {
     display: flex;

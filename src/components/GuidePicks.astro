@@ -1,0 +1,174 @@
+---
+/** 攻略精選: creator guides with their expiry ("until") or event chip. Compact list for the sidebar; full cards with players on the Builds page. */
+import VideoFacade from './VideoFacade.astro';
+import { t, tf, type Locale } from '../i18n/index.ts';
+import { eventFor, guides, guideVideo } from '../lib/guides.ts';
+import { routes } from '../lib/routes.ts';
+
+interface Props {
+  locale: Locale;
+  limit?: number;
+}
+const { locale, limit } = Astro.props;
+const list = limit ? guides.slice(0, limit) : guides;
+const short = (d: string) =>
+  new Intl.DateTimeFormat(locale === 'en' ? 'en' : 'zh-Hant-TW', { month: 'short', day: 'numeric', timeZone: 'UTC' }).format(new Date(`${d}T00:00:00Z`));
+---
+{
+  list.length === 0 ? (
+    <p class="none">{t(locale, 'guides.none')}</p>
+  ) : limit ? (
+    <ul class="mini">
+      {list.map((gd) => {
+        const ev = eventFor(gd);
+        return (
+          <li>
+            <a href={`${routes.section(locale, 'builds')}#guide-${gd.id}`} class="row">
+              {gd.videoId && <img src={`https://i.ytimg.com/vi/${gd.videoId}/mqdefault.jpg`} width="112" height="63" alt="" loading="lazy" referrerpolicy="no-referrer" />}
+              <span class="txt">
+                <span class="tt" lang="zh-Hant-TW">{gd.title}</span>
+                <span class="meta">
+                  {gd.channelName} · {ev ? `${locale === 'en' ? ev.name_en : ev.name_zhHant} · ` : ''}
+                  {tf(locale, 'guides.until', { d: short(gd.until) })}
+                </span>
+              </span>
+            </a>
+          </li>
+        );
+      })}
+    </ul>
+  ) : (
+    <div class="cards">
+      {list.map((gd) => {
+        const ev = eventFor(gd);
+        const summary = locale === 'en' ? gd.summary_en ?? gd.summary_zhHant : gd.summary_zhHant ?? gd.summary_en;
+        return (
+          <article class="card" id={`guide-${gd.id}`}>
+            <p class="chips">
+              <span class="stamp">{t(locale, 'confidence.community')}</span>
+              {ev && <span class="ev">{locale === 'en' ? ev.name_en : ev.name_zhHant}</span>}
+              <span class="until">{tf(locale, 'guides.until', { d: short(gd.until) })}</span>
+            </p>
+            {gd.kind === 'video' && gd.videoId ? (
+              <VideoFacade locale={locale} video={guideVideo(gd)} />
+            ) : (
+              <h3 class="tt" lang="zh-Hant-TW">
+                <a href={gd.url} rel="noopener noreferrer" target="_blank">{gd.title}</a>
+              </h3>
+            )}
+            {summary && (
+              <p class="sum" lang={locale === 'en' && !gd.summary_en ? 'zh-Hant-TW' : undefined}>
+                {summary}
+              </p>
+            )}
+            {gd.kind === 'post' && (
+              <p class="by hud-label">
+                <a href={gd.channelUrl} rel="noopener noreferrer" target="_blank">{gd.channelName} ↗</a> ·{' '}
+                <a href={gd.url} rel="noopener noreferrer" target="_blank">{t(locale, 'guides.post')}</a>
+              </p>
+            )}
+          </article>
+        );
+      })}
+    </div>
+  )
+}
+{limit && guides.length > 0 && <p class="more"><a href={`${routes.section(locale, 'builds')}#guides`}>{t(locale, 'guides.more')}</a></p>}
+
+<style>
+  .mini {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .mini li {
+    border-bottom: 1px solid var(--rule-soft);
+  }
+  .mini li:last-child {
+    border-bottom: 0;
+  }
+  .row {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    padding: 8px 0;
+    text-decoration: none;
+    min-height: var(--tap);
+  }
+  .row img {
+    flex: none;
+    width: 112px;
+    height: 63px;
+    object-fit: cover;
+    border: 1px solid var(--rule);
+  }
+  .txt {
+    display: grid;
+    gap: 2px;
+    min-width: 0;
+  }
+  .tt {
+    font: 700 0.9375rem / 1.4 var(--font-cjk);
+    overflow-wrap: anywhere;
+  }
+  .meta {
+    font: 400 0.75rem / 1.4 var(--font-hud);
+    color: var(--ink-soft);
+  }
+  .cards {
+    display: grid;
+    gap: var(--space-5) var(--space-4);
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr));
+  }
+  .card {
+    min-width: 0;
+  }
+  .chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin: 0 0 6px;
+    font: 600 0.75rem / 1.6 var(--font-hud);
+  }
+  .chips span {
+    padding: 0 6px;
+    border: 1.5px solid currentColor;
+  }
+  .stamp {
+    color: var(--shd-ink);
+  }
+  .ev {
+    color: var(--dz-red);
+  }
+  .until {
+    color: var(--ink-soft);
+  }
+  h3.tt {
+    margin: 0 0 6px;
+    font-size: var(--step-1);
+  }
+  .sum {
+    margin: 6px 0;
+    font-size: 0.9375rem;
+  }
+  .by {
+    margin: 0;
+    text-transform: none;
+    letter-spacing: 0;
+    font-weight: 400;
+    color: var(--ink-soft);
+  }
+  .by a,
+  .more a {
+    display: inline-block;
+    padding: 6px 0;
+  }
+  .more a {
+    color: var(--shd-ink);
+    font-weight: 700;
+  }
+  .none {
+    font-style: italic;
+    color: var(--ink-soft);
+  }
+</style>

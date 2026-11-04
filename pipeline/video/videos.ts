@@ -15,7 +15,16 @@ export interface VideoCandidate {
   via: Video['via'];
   /** Set when the YouTube API already confirmed public + embeddable + not made for kids. */
   verified?: boolean;
+  /** Found by the daily creator search (not an allowlisted channel). */
+  search?: boolean;
+  description?: string;
+  views?: number;
 }
+
+/** Leak / datamine / unreleased wording ⇒ RUMOUR stamp. */
+export const RUMOUR_WORDS = /\b(leak(ed|s)?|datamin(e|ed|ing)|unreleased|hidden|secret|coming soon|first look|insider|rumou?r)\b|洩漏|外洩|爆料|未公開|搶先|傳聞|解包/i;
+/** Intel-style topics ⇒ the "Field Intel" shelf. */
+const INTEL_WORDS = /\b(new exotic|exotics?|PTS|test server|datamin\w*|leak\w*|unreleased|first look|next season|new season|roadmap)\b|奇特|新賽季|測試伺服器|爆料|情報/i;
 
 const YT_ID = /^[A-Za-z0-9_-]{11}$/;
 const UbiVideo = z.object({
@@ -60,7 +69,8 @@ export function pairRegional(en: VideoCandidate[], zh: VideoCandidate[]): (Video
 }
 
 /** Which Watch Now row a video belongs in. */
-export function rowFor(title: string): Video['row'] {
+export function rowFor(title: string, search = false): Video['row'] {
+  if (search && (INTEL_WORDS.test(title) || RUMOUR_WORDS.test(title))) return 'intel';
   if (/\b(trailer|teaser)\b/i.test(title)) return 'trailers';
   if (/\b(patch|title update|TU ?Y\d|update notes|hotfix|changes)\b/i.test(title)) return 'patch-breakdowns';
   if (/\b(builds?|loadouts?|guides?|tier lists?|meta)\b/i.test(title)) return 'build-guides';

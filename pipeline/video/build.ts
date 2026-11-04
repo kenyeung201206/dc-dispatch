@@ -1,6 +1,6 @@
 import type { Video } from '../../src/schema/item.ts';
 import { log } from '../log.ts';
-import { pairRegional, parseUbisoftVideos, rowFor, type VideoCandidate } from './videos.ts';
+import { pairRegional, parseUbisoftVideos, rowFor, RUMOUR_WORDS, type VideoCandidate } from './videos.ts';
 import { checkEmbeddable, fetchChannelVideos, type Channel } from './youtube.ts';
 
 const DAY = 86_400_000;
@@ -17,9 +17,11 @@ interface Input {
   now: Date;
   dryRun: boolean;
   check?: typeof checkEmbeddable;
+  /** Already-verified videos from the daily creator search. */
+  searched?: VideoCandidate[];
 }
 
-export async function buildVideos({ enHtml, zhHtml, previous, channels, youtubeKey, now, dryRun, check = checkEmbeddable }: Input): Promise<Video[]> {
+export async function buildVideos({ enHtml, zhHtml, previous, channels, youtubeKey, now, dryRun, check = checkEmbeddable, searched = [] }: Input): Promise<Video[]> {
   const safeParse = (html?: string) => {
     try {
       return html ? parseUbisoftVideos(html) : [];
@@ -29,8 +31,9 @@ export async function buildVideos({ enHtml, zhHtml, previous, channels, youtubeK
     }
   };
   const official = pairRegional(safeParse(enHtml), safeParse(zhHtml));
-  const creators = await fetchChannelVideos(channels, youtubeKey, now);
-  const candidates: (VideoCandidate & { idZh?: string })[] = [...official, ...creators.filter((c) => !official.some((o) => o.id === c.id))];
+  const creators = [...(await fetchChannelVideos(channels, youtubeKey, now)), ...searched];
+  const seen = new Set(official.map((o) => o.id));
+  const candidates: (VideoCandidate & { idZh?: string })[] = [...official, ...creators.filter((c) => !seen.has(c.id) && seen.add(c.id))];
 
   const checkedAt = now.toISOString();
   const verified: Video[] = [];
@@ -63,7 +66,8 @@ export async function buildVideos({ enHtml, zhHtml, previous, channels, youtubeK
       publishedAt: c.publishedAt,
       ...(c.durationSec ? { durationSec: c.durationSec } : {}),
       official: c.official,
-      row: rowFor(c.title),
+      row: rowFor(c.title, c.search),
+      rumour: RUMOUR_WORDS.test(c.title),
       checkedAt,
       via: c.via,
     });

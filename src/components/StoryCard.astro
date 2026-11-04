@@ -26,6 +26,12 @@ const day = new Intl.DateTimeFormat(locale === 'en' ? 'en' : 'zh-Hant-TW', {
 }).format(new Date(item.publishedAt));
 ---
 <article class:list={['story', variant]} data-confidence={item.confidence}>
+  {item.videoId && !photo && variant !== 'brief' && (
+    <a class="vthumb" href={routes.story(locale, item.id)} aria-hidden="true" tabindex="-1">
+      <img src={`https://i.ytimg.com/vi/${item.videoId}/mqdefault.jpg`} width="320" height="180" alt="" loading="lazy" referrerpolicy="no-referrer" />
+      <span>▶</span>
+    </a>
+  )}
   {photo && variant !== 'brief' && (
     <Photo locale={locale} image={photo.image} filePhoto={photo.filePhoto} variant={variant === 'lead' ? 'lead' : 'card'} eager={variant === 'lead'} />
   )}
@@ -34,20 +40,20 @@ const day = new Intl.DateTimeFormat(locale === 'en' ? 'en' : 'zh-Hant-TW', {
     {item.status === 'updated' && <span class="hud-label upd">{t(locale, 'status.updated')}</span>}
     <time class="hud-label" datetime={item.publishedAt} title={formatDate(item.publishedAt, locale)}>{day}</time>
   </div>
-  <H class="headline" lang={headline.pending ? 'en' : undefined}>
+  <H class="headline" lang={headline.pending ? headline.lang : undefined}>
     <a href={routes.story(locale, item.id)}>{headline.text}</a>
   </H>
   {headline.pending && <p class="pending">{t(locale, 'translation.pending')}</p>}
   {variant !== 'brief' && item.confidence === 'rumour' && <p class="declass hud-label">{t(locale, 'story.declassify')}</p>}
   {variant !== 'brief' && (
-    <p class:list={['summary', variant === 'lead' && item.summaryKind !== 'extract' && 'dropcap', item.summaryKind === 'extract' && 'quote']} lang={summary.pending ? 'en' : undefined} tabindex={item.confidence === 'rumour' ? 0 : undefined}>
+    <p class:list={['summary', variant === 'lead' && item.summaryKind !== 'extract' && 'dropcap', item.summaryKind === 'extract' && 'quote']} lang={summary.pending ? summary.lang : undefined} tabindex={item.confidence === 'rumour' ? 0 : undefined}>
       {item.summaryKind === 'extract' ? `“${summary.text}”` : summary.text}
       {item.summaryKind === 'extract' && <span class="attrib"> — {item.sourceName}</span>}
     </p>
   )}
   {why && variant !== 'brief' && (
     <p class="why">
-      <strong>{t(locale, 'story.whyItMatters')}:</strong> <span lang={why.pending ? 'en' : undefined}>{why.text}</span>
+      <strong>{t(locale, 'story.whyItMatters')}:</strong> <span lang={why.pending ? why.lang : undefined}>{why.text}</span>
     </p>
   )}
   {showOriginal && variant === 'lead' && (
@@ -146,6 +152,33 @@ const day = new Intl.DateTimeFormat(locale === 'en' ? 'en' : 'zh-Hant-TW', {
     margin: 0 0 4px;
     color: var(--dz-red);
     text-transform: none;
+  }
+  .vthumb {
+    position: relative;
+    display: block;
+    aspect-ratio: 16 / 9;
+    margin-bottom: var(--space-3);
+    background: #000;
+    border: 1.5px solid var(--rule);
+    overflow: hidden;
+  }
+  .vthumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .vthumb span {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    place-items: center;
+    width: 48px;
+    height: 34px;
+    border-radius: 8px;
+    background: rgb(33 33 33 / 0.85);
+    color: #fff;
   }
   .quote {
     font-style: italic;

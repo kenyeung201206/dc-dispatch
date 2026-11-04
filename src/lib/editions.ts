@@ -51,12 +51,16 @@ export function relatedItems(item: Item, max = 4): ArchivedItem[] {
 type LocalizedField = 'headline' | 'summary' | 'whyItMatters';
 
 /** Returns the field in the reader's language; Chinese falls back to English + a pending flag. */
-export function localized(item: Item, field: LocalizedField, locale: Locale) {
-  const en = item[`${field}_en`] ?? '';
-  if (locale === 'en') return { text: en, pending: false };
-  const zh = item[`${field}_zhHant`];
-  if (zh && zh !== 'pending') return { text: zh, pending: false };
-  return { text: en, pending: true };
+/**
+ * The field in the reader's language; if that's still "pending", the other language
+ * with pending=true and its lang tag (so screen readers and fonts switch correctly).
+ */
+export function localized(item: Item, field: LocalizedField, locale: Locale): { text: string; pending: boolean; lang: string } {
+  const ok = (v?: string) => (v && v !== 'pending' ? v : undefined);
+  const en = ok(item[`${field}_en`]);
+  const zh = ok(item[`${field}_zhHant`]);
+  if (locale === 'en') return en ? { text: en, pending: false, lang: 'en' } : { text: zh ?? '', pending: Boolean(zh), lang: 'zh-Hant-TW' };
+  return zh ? { text: zh, pending: false, lang: 'zh-Hant-TW' } : { text: en ?? '', pending: Boolean(en), lang: 'en' };
 }
 
 /** D.C. weather gag, deterministic by date. */

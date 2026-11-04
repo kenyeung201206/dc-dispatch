@@ -47,3 +47,15 @@ Not legal advice. Researched 2026-11-04. Each rule below is enforced in code (se
 - Summary length ≤ 80 words; quotes ≤ 25 words — checked by unit test.
 - Retention job: YouTube metadata > 30 days re-validated/dropped; Twitch data > 24 h dropped.
 - CSP allows frames only from `www.youtube-nocookie.com`, `player.twitch.tv`, `clips.twitch.tv`.
+
+## Community & creator sources (added 2026-11-04)
+- **巴哈姆特:** robots.txt allows the board list and threads. We show only a post's title, the board's own short preview (≤ 60 characters) and a link — never full posts, never usernames, never uploaded images. The site's terms page could not be loaded, so use stays minimal; if 巴哈 objects or its terms forbid it, remove the `bahamut` source.
+- **Facebook:** not used. Its robots.txt prohibits automated collection without Meta's written permission.
+- **Division Wiki:** CC BY-SA 3.0 — quotes ≤ 25 words, credited "The Division Wiki (CC BY-SA)" with a link.
+- **YouTube creator videos:** shown only through the official embed after a tap, with channel credit; same 30-day rule as above. Video stories are removed from archived editions after 30 days (`scrubOldYoutube`).
+- **Labels:** creator/forum content is stamped COMMUNITY; leak/datamine/unreleased titles are stamped RUMOUR / 傳聞. Neither ever appears as official.
+
+## AI summaries (optional)
+- With `ANTHROPIC_API_KEY`, public source text (articles, video descriptions, first forum post) is sent to the Anthropic API to write short original summaries. No personal data is sent.
+- Prompts treat source text as untrusted data; replies must match a strict schema; the model may not add facts and must say "unconfirmed" for community/rumour items. Stories show "AI summary of the source — check the original".
+- Daily spend cap (`AI_DAILY_BUDGET_USD`, default US$0.50) and a content-hash cache (`data/ai-cache.json`) so nothing is summarised twice.

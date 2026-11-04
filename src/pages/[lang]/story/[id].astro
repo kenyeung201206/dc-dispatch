@@ -1,6 +1,7 @@
 ---
 import Paper from '../../../layouts/Paper.astro';
 import Photo from '../../../components/Photo.astro';
+import VideoFacade from '../../../components/VideoFacade.astro';
 import Stamp from '../../../components/Stamp.astro';
 import StoryCard from '../../../components/StoryCard.astro';
 import { formatDate, LOCALES, t, tf, type Locale, type UiKey } from '../../../i18n/index.ts';
@@ -40,7 +41,7 @@ const reportHref = `mailto:?subject=${encodeURIComponent(`[DC Dispatch] Translat
       <time class="hud-label" datetime={item.publishedAt}>{formatDate(item.publishedAt, locale)}</time>
     </div>
 
-    <h1 class="headline" lang={headline.pending ? 'en' : undefined} data-pagefind-meta="title">{headline.text}</h1>
+    <h1 class="headline" lang={headline.pending ? headline.lang : undefined} data-pagefind-meta="title">{headline.text}</h1>
     {headline.pending && <p class="pending">{t(locale, 'translation.pending')}</p>}
     {
       (locale !== item.lang_orig.slice(0, 2) || headline.text !== item.title_orig) && (
@@ -50,18 +51,39 @@ const reportHref = `mailto:?subject=${encodeURIComponent(`[DC Dispatch] Translat
       )
     }
 
+    {
+      item.videoId && (
+        <VideoFacade
+          locale={locale}
+          size="large"
+          video={{
+            id: item.videoId,
+            title: item.title_orig,
+            channelName: item.sourceName,
+            channelUrl: item.sourceUrl,
+            publishedAt: item.publishedAt,
+            official: false,
+            row: 'intel',
+            rumour: item.confidence === 'rumour',
+            checkedAt: item.fetchedAt,
+            via: 'youtube-search',
+          }}
+        />
+      )
+    }
     {photo && <Photo locale={locale} image={photo.image} filePhoto={photo.filePhoto} variant="lead" eager />}
 
-    <p class:list={['summary', item.summaryKind === 'extract' && 'quote']} lang={summary.pending ? 'en' : undefined}>
+    <p class:list={['summary', item.summaryKind === 'extract' && 'quote']} lang={summary.pending ? summary.lang : undefined}>
       {item.summaryKind === 'extract' ? `“${summary.text}”` : summary.text}
       {item.summaryKind === 'extract' && <span class="attrib"> — {item.sourceName}</span>}
     </p>
     {summary.pending && <p class="pending">{t(locale, 'translation.pending')}</p>}
+    {item.summaryKind === 'ai' && <p class="pending">{t(locale, 'story.aiSummary')}</p>}
 
     {
       why && (
         <p class="why">
-          <strong>{t(locale, 'story.whyItMatters')}:</strong> <span lang={why.pending ? 'en' : undefined}>{why.text}</span>
+          <strong>{t(locale, 'story.whyItMatters')}:</strong> <span lang={why.pending ? why.lang : undefined}>{why.text}</span>
         </p>
       )
     }

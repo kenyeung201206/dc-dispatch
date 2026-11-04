@@ -8,18 +8,25 @@
 import { mkdir, readdir, readFile, writeFile } from 'node:fs/promises';
 import { join } from 'node:path';
 import { parseArgs } from 'node:util';
-import { EditionSchema, ImageLibrarySchema, PatchLogSchema, RunStatusSchema, VideoLibrarySchema, type Edition, type Item } from '../src/schema/item.ts';
+import { EditionSchema, ImageLibrarySchema, ExoticLogSchema, GameEventLogSchema, GuideLogSchema, PatchLogSchema, RunStatusSchema, VideoLibrarySchema, type Edition, type Item } from '../src/schema/item.ts';
 import { parsePatch, upsertPatches } from './patches.ts';
 import { buildVideos } from './video/build.ts';
+import { searchVideos } from './video/youtube.ts';
+import { videoStories } from './video/intel-items.ts';
+import { exoticsFromArticle, mergeExotics, wikiExotics } from './exotics.ts';
+import { eventsFromArticle, guidesFromPicks, guidesFromVideos, liveGuides, mergeEvents, mergeGuides, type Pick } from './guides.ts';
+import { checkEmbeddable, fetchChannelVideos } from './video/youtube.ts';
 import { SOURCES, TIMEZONE, type SourceId } from './config.ts';
 import { dedupe } from './dedupe.ts';
-import { assembleEdition, OverridesSchema } from './edition.ts';
+import { assembleEdition, OverridesSchema, scrubOldYoutube } from './edition.ts';
 import { politeGet } from './http.ts';
 import { log } from './log.ts';
 import { storyToItems } from './normalize.ts';
 import { parseSteamNews } from './sources/steam.ts';
 import type { RawItem, SourceResult } from './sources/types.ts';
 import { parseUbisoftNews } from './sources/ubisoft.ts';
+import { parseBahamutBoard, parseBahamutFirstPost } from './sources/bahamut.ts';
+import { aiSummaries, needsAi } from './ai.ts';
 
 const { values: args } = parseArgs({
   options: {
@@ -30,20 +37,22 @@ const { values: args } = parseArgs({
 const dryRun = args['dry-run'];
 
 const FIXTURES: Record<SourceId, string> = {
+  bahamut: 'tests/fixtures/sources/bahamut.html',
   'steam-news': 'tests/fixtures/sources/steam-news.json',
   'ubisoft-en': 'tests/fixtures/sources/ubisoft-en.html',
   'ubisoft-zh-tw': 'tests/fixtures/sources/ubisoft-zh-tw.html',
 };
-const PARSERS: Record<SourceId, (body: string) => RawItem[]> = {
+const PARSERS: Record<SourceId, (body: string, now: Date) => RawItem[]> = {
+  bahamut: (b, now) => parseBahamutBoard(b, now),
   'steam-news': parseSteamNews,
   'ubisoft-en': (b) => parseUbisoftNews(b, 'ubisoft-en'),
   'ubisoft-zh-tw': (b) => parseUbisoftNews(b, 'ubisoft-zh-tw'),
 };
 
-async function runSource(id: SourceId): Promise<SourceResult> {
+async function runSource(id: SourceId, now: Date): Promise<SourceResult> {
   try {
     const body = dryRun ? await readFile(FIXTURES[id], 'utf8') : await politeGet(SOURCES[id].url);
-    const items = PARSERS[id](body);
+    const items = PARSERS[id](body, now);
     log('info', 'source ok', { source: id, items: items.length });
     if (!items.length) return { sourceId: id, ok: false, items, note: 'no items parsed (layout change?)' };
     return { sourceId: id, ok: true, items, body };
@@ -84,13 +93,19 @@ async function main() {
   const date = tokyoDate(now);
   log('info', 'refresh start', { date, dryRun });
 
-  const results = await Promise.all((Object.keys(SOURCES) as SourceId[]).map(runSource));
+  const results = await Promise.all((Object.keys(SOURCES) as SourceId[]).map((id) => runSource(id, now)));
   const zhById = new Map(results.find((r) => r.sourceId === 'ubisoft-zh-tw')!.items.map((i) => [i.externalId, i]));
   const english = results.filter((r) => r.sourceId !== 'ubisoft-zh-tw').flatMap((r) => r.items);
 
   const images = ImageLibrarySchema.parse(await readJson('data/images.json', {}));
   const stories = dedupe(english);
-  const fresh: Item[] = stories.flatMap((s) => storyToItems(s, { now, zhById, images }));
+  // Source text per story, kept in memory for the optional AI step.
+  const sourceText = new Map<string, string>();
+  const fresh: Item[] = stories.flatMap((s) => {
+    const items = storyToItems(s, { now, zhById, images });
+    if (items[0]) sourceText.set(items[0].id, [s.primary.abstract, s.primary.text].filter(Boolean).join(' \n'));
+    return items;
+  });
   log('info', 'processed', { raw: english.length, stories: stories.length, items: fresh.length });
 
   // Patch Notes Tracker: every title update seen on Ubisoft's page, kept across editions.
@@ -101,10 +116,22 @@ async function main() {
     .filter((p) => p !== null);
   const patches = { patches: upsertPatches(patchLog.patches, foundPatches) };
 
-  const channels = (await readJson<{ channels: { id: string; name: string; official: boolean }[] }>('data/video-channels.json', { channels: [] })).channels;
+  const videoConfig = await readJson<{
+    channels: { id: string; name: string; official: boolean }[];
+    searches?: { q: string; lang?: string }[];
+    guideCreators?: { id: string; name: string; official: boolean }[];
+  }>('data/video-channels.json', { channels: [] });
+  const channels = videoConfig.channels;
   const youtubeKey = dryRun ? undefined : process.env.YOUTUBE_API_KEY;
   // Watch Now: official videos from Ubisoft pages + allowlisted channels (with a key), each verified embeddable.
+  // Creator scan: daily YouTube searches (needs the key); best ones also become stories.
+  const searched = await searchVideos(videoConfig.searches ?? [], youtubeKey, now);
+  const guideVideos = await fetchChannelVideos(videoConfig.guideCreators ?? [], youtubeKey, now);
+  const vStories = videoStories(searched, now);
+  for (const v of vStories) sourceText.set(v.id, searched.find((x) => x.id === v.videoId)?.description ?? v.title_orig);
+  fresh.push(...vStories);
   const videos = await buildVideos({
+    searched: [...searched, ...guideVideos],
     enHtml: results.find((r) => r.sourceId === 'ubisoft-en')?.body,
     zhHtml: results.find((r) => r.sourceId === 'ubisoft-zh-tw')?.body,
     previous: VideoLibrarySchema.parse(await readJson('data/videos.json', { videos: [] })).videos,
@@ -114,6 +141,51 @@ async function main() {
     dryRun,
   });
 
+  // Exotic intel: official tables/mentions from Ubisoft posts + exotics newly added to the wiki (not in dry runs).
+  const officialExotics = (results.find((r) => r.sourceId === 'ubisoft-en')?.items ?? []).flatMap(exoticsFromArticle);
+  let spotted: Awaited<ReturnType<typeof wikiExotics>> = [];
+  if (!dryRun) {
+    try {
+      spotted = await wikiExotics(now);
+    } catch (err) {
+      log('warn', 'wiki exotics failed', { error: String(err).slice(0, 120) });
+    }
+  }
+  const exoticLog = ExoticLogSchema.parse(await readJson('data/exotics.json', { exotics: [] }));
+  const exotics = { exotics: mergeExotics(exoticLog.exotics, [...officialExotics, ...spotted], now) };
+
+  // Optional AI summaries (ANTHROPIC_API_KEY). 巴哈 previews are short, so read the thread's first post for those.
+  const anthropicKey = dryRun ? undefined : process.env.ANTHROPIC_API_KEY;
+  let ai = { applied: 0, costUsd: 0, skipped: 0 };
+  if (anthropicKey) {
+    for (const item of fresh.filter((i) => i.sourceId === 'bahamut' && needsAi(i)).slice(0, 8)) {
+      try {
+        sourceText.set(item.id, parseBahamutFirstPost(await politeGet(item.sourceUrl)) || (sourceText.get(item.id) ?? ''));
+      } catch (err) {
+        log('warn', 'bahamut post fetch failed', { id: item.id, error: String(err).slice(0, 80) });
+      }
+    }
+    const glossary = (await readJson<{ terms: { en: string; zhHant: string }[] }>('data/glossary.json', { terms: [] })).terms;
+    ai = await aiSummaries(
+      fresh.map((item) => ({ item, text: sourceText.get(item.id) ?? item.title_orig })),
+      { apiKey: anthropicKey, model: process.env.AI_MODEL, budgetUsd: Number(process.env.AI_DAILY_BUDGET_USD) || 0.5, glossary },
+    );
+  }
+
+  // Events (curated + read from Ubisoft notes) and 攻略精選 guides that expire with their event.
+  const eventLog = GameEventLogSchema.parse(await readJson('data/events.json', { events: [] }));
+  const events = mergeEvents(eventLog.events, (results.find((x) => x.sourceId === 'ubisoft-en')?.items ?? []).flatMap(eventsFromArticle));
+  const picksFile = await readJson<{ picks: Pick[] }>('data/picks.json', { picks: [] });
+  const pickGuides = guidesFromPicks(picksFile.picks, events);
+  if (!dryRun) {
+    for (const p of pickGuides.filter((x) => x.kind === 'video' && x.videoId)) {
+      if ((await checkEmbeddable(p.videoId!)).ok) p.checkedAt = now.toISOString();
+      else p.until = '1970-01-01'; // no longer playable: drop it
+    }
+  }
+  const previousGuides = GuideLogSchema.parse(await readJson('data/guides.json', { guides: [] })).guides;
+  const guides = { guides: liveGuides(mergeGuides(previousGuides, [...guidesFromVideos(guideVideos, events, now), ...pickGuides]), now) };
+
   const overrides = OverridesSchema.parse(await readJson('data/overrides.json', {}));
   const edition = assembleEdition({ date, now, fresh, results, previous: await previousEdition(date), overrides });
 
@@ -122,6 +194,9 @@ async function main() {
   await writeFile(join(outDir, 'editions', `${date}.json`), JSON.stringify(edition, null, 2) + '\n');
   await writeFile(join(outDir, 'images.json'), JSON.stringify(ImageLibrarySchema.parse(images), null, 2) + '\n');
   await writeFile(join(outDir, 'videos.json'), JSON.stringify(VideoLibrarySchema.parse({ videos }), null, 2) + '\n');
+  await writeFile(join(outDir, 'events.json'), JSON.stringify(GameEventLogSchema.parse({ _note: eventLog._note, events }), null, 2) + '\n');
+  await writeFile(join(outDir, 'guides.json'), JSON.stringify(GuideLogSchema.parse(guides), null, 2) + '\n');
+  await writeFile(join(outDir, 'exotics.json'), JSON.stringify(ExoticLogSchema.parse(exotics), null, 2) + '\n');
   await writeFile(join(outDir, 'patches.json'), JSON.stringify(PatchLogSchema.parse(patches), null, 2) + '\n');
 
   // Status page data: only counts and booleans, never key values.
@@ -131,9 +206,21 @@ async function main() {
     edition: { date, number: edition.editionNumber, items: edition.items.length, zhPending: edition.items.filter((i) => i.headline_zhHant === 'pending').length },
     sources: results.map((r) => ({ id: r.sourceId, ok: r.ok, items: r.items.length, ...(r.note ? { note: r.note } : {}) })),
     videos: { total: videos.length, youtubeApiConfigured: Boolean(youtubeKey) },
-    budget: { youtubeQuotaUnits: youtubeKey ? channels.length * 2 : 0, costUsd: 0 },
+    budget: { youtubeQuotaUnits: youtubeKey ? channels.length * 2 + (videoConfig.searches?.length ?? 0) * 100 + 1 : 0, costUsd: Number(ai.costUsd.toFixed(4)) },
   });
   await writeFile(join(outDir, 'status.json'), JSON.stringify(status, null, 2) + '\n');
+
+  // Retention: remove YouTube-derived stories from editions older than 30 days.
+  if (!dryRun) {
+    for (const file of (await readdir('data/editions').catch(() => [] as string[])).filter((f) => f.endsWith('.json'))) {
+      const old = EditionSchema.parse(JSON.parse(await readFile(join('data/editions', file), 'utf8')));
+      const scrubbed = scrubOldYoutube(old, now);
+      if (scrubbed) {
+        await writeFile(join('data/editions', file), JSON.stringify(scrubbed, null, 2) + '\n');
+        log('info', 'youtube retention scrub', { edition: old.date });
+      }
+    }
+  }
 
   const pending = edition.items.filter((i) => i.headline_zhHant === 'pending').length;
   log('info', 'refresh done', {

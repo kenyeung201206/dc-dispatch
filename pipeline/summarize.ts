@@ -3,8 +3,8 @@ import type { RawItem } from './sources/types.ts';
 import { extractChars, extractWords, hasCJK, toPlainText } from './text.ts';
 
 export interface Summary {
-  headline_en: string;
-  summary_en: string;
+  headline_en: string | 'pending';
+  summary_en: string | 'pending';
   headline_zhHant: string | 'pending';
   summary_zhHant: string | 'pending';
   summaryKind: 'original' | 'extract';
@@ -19,6 +19,16 @@ const MAX_ZH_CHARS = 60;
  * Chinese comes only from Ubisoft's official zh-TW article; otherwise "pending".
  */
 export function summarize(primary: RawItem, zh?: RawItem): Summary {
+  // Chinese-first sources (巴哈): Chinese now, English "pending" until the AI step translates it.
+  if (primary.lang === 'zh') {
+    return {
+      headline_en: 'pending',
+      summary_en: 'pending',
+      headline_zhHant: primary.title,
+      summary_zhHant: extractChars(primary.text || primary.title, MAX_ZH_CHARS),
+      summaryKind: 'extract',
+    };
+  }
   const enSource = primary.abstract?.trim() || primary.text;
   const summary_en = extractWords(enSource, MAX_QUOTE_WORDS) || primary.title;
 

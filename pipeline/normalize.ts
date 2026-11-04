@@ -19,7 +19,7 @@ export function storyToItems(story: Story, ctx: BuildContext): Item[] {
   const { primary, others } = story;
   const zh = [primary, ...others].map((r) => ctx.zhById.get(r.externalId)).find(Boolean);
   const s = summarize(primary, zh);
-  const category = classify(primary.title, primary.text);
+  const category = classify(primary.title, primary.text, primary.tag);
   const url = canonicalUrl(primary.url);
   const fetchedAt = ctx.now.toISOString();
 

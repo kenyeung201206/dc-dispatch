@@ -1,7 +1,7 @@
 import { z } from 'zod';
 import { politeGet } from '../http.ts';
 import { log } from '../log.ts';
-import { parseDuration, type VideoCandidate } from './videos.ts';
+import { parseDuration, RUMOUR_WORDS, type VideoCandidate } from './videos.ts';
 
 /**
  * YouTube oEmbed: public, keyless. 200 = public and embeddable; 401 = embedding disabled;
@@ -29,7 +29,15 @@ const Videos = z.object({
     .array(
       z.object({
         id: z.string(),
-        snippet: z.object({ title: z.string(), channelTitle: z.string(), channelId: z.string(), publishedAt: z.string() }),
+        snippet: z.object({
+          title: z.string(),
+          channelTitle: z.string(),
+          channelId: z.string(),
+          publishedAt: z.string(),
+          description: z.string().optional(),
+          defaultAudioLanguage: z.string().optional(),
+        }),
+        statistics: z.object({ viewCount: z.string().optional() }).optional(),
         status: z.object({
           embeddable: z.boolean(),
           privacyStatus: z.string(),
@@ -86,7 +94,7 @@ export async function fetchChannelVideos(
       for (const v of vs.items) {
         const { status, snippet } = v;
         if (!status.embeddable || status.privacyStatus !== 'public' || status.madeForKids) continue;
-        if (!/division/i.test(snippet.title)) continue;
+        if (!/division|全境封鎖|全境封锁/i.test(snippet.title)) continue;
         if (now.getTime() - Date.parse(snippet.publishedAt) > maxAgeMs) continue;
         out.push({
           id: v.id,
@@ -106,5 +114,71 @@ export async function fetchChannelVideos(
       log('warn', 'youtube channel failed', { channel: ch.name, error: String(err).replace(/key=[^&\s]+/g, 'key=***').slice(0, 120) });
     }
   }
+  return out;
+}
+
+const SearchList = z.object({ items: z.array(z.object({ id: z.object({ videoId: z.string().optional() }) })).default([]) });
+const DIVISION = /division|全境封鎖|全境封锁/i;
+
+/**
+ * Daily creator scan: YouTube search for new Division 2 videos (last 3 days) per query, then one
+ * videos.list call to confirm public + embeddable + not made for kids. Quota: 100 units per query
+ * + 1 per videos.list call (about 400/day for 4 queries; the free quota is 10,000).
+ */
+export async function searchVideos(
+  queries: { q: string; lang?: string }[],
+  key: string | undefined,
+  now: Date,
+  get = politeGet,
+): Promise<VideoCandidate[]> {
+  if (!key || !queries.length) return [];
+  const since = new Date(now.getTime() - 3 * 86_400_000).toISOString();
+  const ids = new Set<string>();
+  for (const { q, lang } of queries) {
+    try {
+      const params = new URLSearchParams({ part: 'id', type: 'video', order: 'date', maxResults: '15', q, publishedAfter: since });
+      if (lang) params.set('relevanceLanguage', lang);
+      const res = SearchList.parse(JSON.parse(await get(`https://www.googleapis.com/youtube/v3/search?${params}&key=${encodeURIComponent(key)}`)));
+      for (const i of res.items) if (i.id.videoId) ids.add(i.id.videoId);
+    } catch (err) {
+      log('warn', 'youtube search failed', { q, error: String(err).replace(/key=[^&\s]+/g, 'key=***').slice(0, 120) });
+    }
+  }
+  if (!ids.size) return [];
+  const out: VideoCandidate[] = [];
+  const all = [...ids];
+  for (let i = 0; i < all.length; i += 50) {
+    let vs: z.infer<typeof Videos>;
+    try {
+      vs = Videos.parse(
+        JSON.parse(
+          await get(`https://www.googleapis.com/youtube/v3/videos?part=snippet,status,contentDetails,statistics&id=${all.slice(i, i + 50).join(',')}&key=${encodeURIComponent(key)}`),
+        ),
+      );
+    } catch (err) {
+      log('warn', 'youtube videos lookup failed', { error: String(err).replace(/key=[^&\s]+/g, 'key=***').slice(0, 120) });
+      continue;
+    }
+    for (const v of vs.items) {
+      const { status, snippet } = v;
+      if (!status.embeddable || status.privacyStatus !== 'public' || status.madeForKids) continue;
+      if (!DIVISION.test(`${snippet.title} ${snippet.description ?? ''}`)) continue;
+      out.push({
+        id: v.id,
+        title: snippet.title,
+        channelName: snippet.channelTitle,
+        channelUrl: `https://www.youtube.com/channel/${snippet.channelId}`,
+        publishedAt: new Date(snippet.publishedAt).toISOString(),
+        durationSec: parseDuration(v.contentDetails.duration),
+        official: false,
+        via: 'youtube-search',
+        verified: true,
+        search: true,
+        description: (snippet.description ?? '').slice(0, 2000),
+        views: Number(v.statistics?.viewCount ?? 0) || 0,
+      });
+    }
+  }
+  log('info', 'youtube search ok', { queries: queries.length, found: ids.size, kept: out.length, rumours: out.filter((v) => RUMOUR_WORDS.test(v.title)).length });
   return out;
 }

@@ -38,6 +38,7 @@ const duration = formatDuration(video.durationSec);
     <span class="vt" lang="en">{title}</span>
     <span class="meta">
       {video.official && <span class="off">{t(locale, 'watch.official')}</span>}
+      {video.rumour && <span class="off rum">{t(locale, 'confidence.rumour')}</span>}
       <a href={video.channelUrl} rel="noopener noreferrer" target="_blank">{video.channelName}</a>{' · '}<time datetime={video.publishedAt}>{formatDate(video.publishedAt, locale)}</time>
     </span>
     <a class="yt" href={`https://www.youtube.com/watch?v=${id}`} rel="noopener noreferrer" target="_blank">{t(locale, 'watch.onYoutube')}</a>
@@ -115,6 +116,10 @@ const duration = formatDuration(video.durationSec);
     right: 8px;
     background: rgb(0 0 0 / 0.8);
     color: #fff;
+  }
+  .rum {
+    background: var(--dz-red) !important;
+    color: #fff !important;
   }
   .off {
     margin-right: 6px;

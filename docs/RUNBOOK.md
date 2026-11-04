@@ -47,5 +47,16 @@ Edit `data/glossary.json`. Only set `verified: true` with an official Ubisoft zh
 - Live Now calls `/api/live` (`functions/api/live.ts`), which needs `TWITCH_CLIENT_ID` + `TWITCH_CLIENT_SECRET` in the Cloudflare Pages environment. Until deployed (Phase 7) the page shows "live list unavailable" with a link to Twitch.
 - The refresh reads keys from `.env` (`node --env-file-if-exists=.env`) locally and from GitHub Actions secrets in CI.
 
+## Intel sources
+- **巴哈:** `pipeline/sources/bahamut.ts` reads the board list; if the layout changes the log says "Bahamut board layout changed" and the edition still publishes. Fixture: `tests/fixtures/sources/bahamut.html`.
+- **Exotic Intel:** `pipeline/exotics.ts` → `data/exotics.json` (kept 120 days). Official from Ubisoft tables/mentions; "Spotted" from the wiki category.
+- **Creator scan:** `searches` in `data/video-channels.json` (each costs 100 YouTube quota units/day).
+- **AI summaries:** set `ANTHROPIC_API_KEY` (GitHub secret). Optional repo variables: `AI_MODEL` (default `claude-opus-5-5`), `AI_DAILY_BUDGET_USD` (default 0.50). Spend appears on the Status page.
+
+## 攻略精選 / Guide Picks
+- **Automatic:** new videos from `guideCreators` in `data/video-channels.json` (currently 灰帽特工, channel UCJ2qGCBwyN8d2l9aoWkyShw). Needs `YOUTUBE_API_KEY`.
+- **Editor picks:** `data/picks.json`. For a YouTube community post, add `{"kind":"post","url":…,"title":…,"channelName":…,"channelUrl":…,"summary_zhHant":"our own words","added":"YYYY-MM-DD"}`. Never paste the creator's text; YouTube posts can't be read automatically (no API; scraping is against YouTube's terms).
+- **Expiry:** `until` if given; else the matched event's end date (`data/events.json`, `match` words in the title); else 60 days. The daily rebuild removes expired guides. Events are also read automatically from Ubisoft notes ("EVENT … From November 17 to November 26").
+
 ## Keys
 Names are in `.env.example`. None are needed for Phase 3. Rotate a key by replacing it in your `.env` and in GitHub Actions secrets; never commit it.

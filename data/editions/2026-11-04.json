@@ -1,7 +1,7 @@
 {
   "date": "2026-11-04",
   "editionNumber": 1,
-  "generatedAt": "2026-11-04T09:59:09.281Z",
+  "generatedAt": "2026-11-04T12:48:38.730Z",
   "meta": {
     "season_en": "Red Horizon",
     "season_zhHant": "Red Horizon 賽季",
@@ -17,7 +17,7 @@
       "title_orig": "[TUY8S3.3] Crossplay Rollout, Conflict Improvements & More",
       "lang_orig": "en",
       "publishedAt": "2026-11-02T15:45:00.000Z",
-      "fetchedAt": "2026-11-04T09:59:09.281Z",
+      "fetchedAt": "2026-11-04T12:48:38.730Z",
       "category": "updates",
       "tags": [
         "title-update",
@@ -56,7 +56,7 @@
       "title_orig": "The Division 2: Echoes of Central Park DLC is available now!",
       "lang_orig": "en",
       "publishedAt": "2026-11-03T15:00:00.000Z",
-      "fetchedAt": "2026-11-04T09:59:09.281Z",
+      "fetchedAt": "2026-11-04T12:48:38.730Z",
       "category": "missions",
       "tags": [
         "dlc"
@@ -84,7 +84,7 @@
       "title_orig": "[TUY8S3.3] Crossplay Rollout, Conflict Improvements & More",
       "lang_orig": "en",
       "publishedAt": "2026-11-02T15:45:00.000Z",
-      "fetchedAt": "2026-11-04T09:59:09.281Z",
+      "fetchedAt": "2026-11-04T12:48:38.730Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -111,29 +111,6 @@
       }
     },
     {
-      "id": "1tv75gq",
-      "sourceId": "steam-news",
-      "sourceName": "Ubisoft (via Steam News)",
-      "sourceUrl": "https://store.steampowered.com/news/app/2221490/view/1847920302252931",
-      "title_orig": "Play The Division 2: Echoes of Central Park Today!",
-      "lang_orig": "en",
-      "publishedAt": "2026-11-03T17:13:46.000Z",
-      "fetchedAt": "2026-11-04T09:59:09.281Z",
-      "category": "community",
-      "tags": [],
-      "importance": 69,
-      "confidence": "official",
-      "headline_en": "Play The Division 2: Echoes of Central Park Today!",
-      "headline_zhHant": "《全境封鎖 2 - 中央公園的迴響》今天開玩！",
-      "summary_en": "The Division 2: Echoes of Central Park is out now, inviting you to take on a dark threat that lurks in Central Park.",
-      "summary_zhHant": "pending",
-      "summaryKind": "extract",
-      "alsoReportedBy": [],
-      "media": [],
-      "relatedIds": [],
-      "status": "new"
-    },
-    {
       "id": "1sx320d",
       "sourceId": "ubisoft-en",
       "sourceName": "Ubisoft",
@@ -141,7 +118,7 @@
       "title_orig": "The Division 2: Echoes of Central Park Launch Twitch Drops",
       "lang_orig": "en",
       "publishedAt": "2026-11-03T15:00:00.000Z",
-      "fetchedAt": "2026-11-04T09:59:09.281Z",
+      "fetchedAt": "2026-11-04T12:48:38.730Z",
       "category": "community",
       "tags": [
         "twitch-drops",
@@ -161,6 +138,29 @@
       "status": "new"
     },
     {
+      "id": "1tv75gq",
+      "sourceId": "steam-news",
+      "sourceName": "Ubisoft (via Steam News)",
+      "sourceUrl": "https://store.steampowered.com/news/app/2221490/view/1847920302252931",
+      "title_orig": "Play The Division 2: Echoes of Central Park Today!",
+      "lang_orig": "en",
+      "publishedAt": "2026-11-03T17:13:46.000Z",
+      "fetchedAt": "2026-11-04T12:48:38.730Z",
+      "category": "community",
+      "tags": [],
+      "importance": 68,
+      "confidence": "official",
+      "headline_en": "Play The Division 2: Echoes of Central Park Today!",
+      "headline_zhHant": "《全境封鎖 2 - 中央公園的迴響》今天開玩！",
+      "summary_en": "The Division 2: Echoes of Central Park is out now, inviting you to take on a dark threat that lurks in Central Park.",
+      "summary_zhHant": "pending",
+      "summaryKind": "extract",
+      "alsoReportedBy": [],
+      "media": [],
+      "relatedIds": [],
+      "status": "new"
+    },
+    {
       "id": "1k3dbt0",
       "sourceId": "steam-news",
       "sourceName": "Ubisoft (via Steam News)",
@@ -168,7 +168,7 @@
       "title_orig": "Last Chance to Pre-Purchase The Division 2: Echoes of Central Park",
       "lang_orig": "en",
       "publishedAt": "2026-10-28T13:29:29.000Z",
-      "fetchedAt": "2026-11-04T09:59:09.281Z",
+      "fetchedAt": "2026-11-04T12:48:38.730Z",
       "category": "missions",
       "tags": [
         "dlc",
@@ -194,7 +194,7 @@
       "title_orig": "Echoes of Central Park Launch Livestream",
       "lang_orig": "en",
       "publishedAt": "2026-10-27T16:01:04.000Z",
-      "fetchedAt": "2026-11-04T09:59:09.281Z",
+      "fetchedAt": "2026-11-04T12:48:38.730Z",
       "category": "community",
       "tags": [],
       "importance": 53,
@@ -217,7 +217,7 @@
       "title_orig": "Echoes of Central Park Costume Contest",
       "lang_orig": "en",
       "publishedAt": "2026-10-27T10:34:40.000Z",
-      "fetchedAt": "2026-11-04T09:59:09.281Z",
+      "fetchedAt": "2026-11-04T12:48:38.730Z",
       "category": "community",
       "tags": [],
       "importance": 53,
@@ -233,6 +233,104 @@
       "status": "new"
     },
     {
+      "id": "1p4skj2",
+      "sourceId": "bahamut",
+      "sourceName": "巴哈姆特 全境封鎖板",
+      "sourceUrl": "https://forum.gamer.com.tw/C.php?bsn=24460&snA=32864",
+      "title_orig": "【情報】Twitch掉寶 11/03 - 11/10",
+      "lang_orig": "zh",
+      "publishedAt": "2026-11-03T15:03:00.000Z",
+      "fetchedAt": "2026-11-04T12:48:38.730Z",
+      "category": "community",
+      "tags": [
+        "dlc"
+      ],
+      "importance": 50,
+      "confidence": "community",
+      "headline_en": "pending",
+      "headline_zhHant": "【情報】Twitch掉寶 11/03 - 11/10",
+      "summary_en": "pending",
+      "summary_zhHant": "上個掉寶資訊圖 安安我是米孜育碧的合作創作者 這次11/03 - 11/10有中央公園DLC的掉寶活動大家記得掛台記得音…",
+      "summaryKind": "extract",
+      "alsoReportedBy": [],
+      "media": [],
+      "relatedIds": [],
+      "status": "new"
+    },
+    {
+      "id": "1qiqkzx",
+      "sourceId": "bahamut",
+      "sourceName": "巴哈姆特 全境封鎖板",
+      "sourceUrl": "https://forum.gamer.com.tw/C.php?bsn=24460&snA=32861",
+      "title_orig": "【情報】TU29.3 / Y8S3.3 Patchnote翻譯｜跨平台遊玩、衝突戰改善、牧羊人活動與問題修正",
+      "lang_orig": "zh",
+      "publishedAt": "2026-11-03T13:57:00.000Z",
+      "fetchedAt": "2026-11-04T12:48:38.730Z",
+      "category": "updates",
+      "tags": [
+        "dlc"
+      ],
+      "importance": 50,
+      "confidence": "community",
+      "headline_en": "pending",
+      "headline_zhHant": "【情報】TU29.3 / Y8S3.3 Patchnote翻譯｜跨平台遊玩、衝突戰改善、牧羊人活動與問題修正",
+      "summary_en": "pending",
+      "summary_zhHant": "以下為AI翻譯並稍微潤飾過 原文 《中央公園的迴響》（Echoes of Central Park）即將推出！",
+      "summaryKind": "extract",
+      "alsoReportedBy": [],
+      "media": [],
+      "relatedIds": [],
+      "status": "new"
+    },
+    {
+      "id": "1porrx0",
+      "sourceId": "bahamut",
+      "sourceName": "巴哈姆特 全境封鎖板",
+      "sourceUrl": "https://forum.gamer.com.tw/C.php?bsn=24460&snA=32862",
+      "title_orig": "【心得】無陷阱手T10日蝕複合控場(全汞合金)",
+      "lang_orig": "zh",
+      "publishedAt": "2026-11-03T05:31:00.000Z",
+      "fetchedAt": "2026-11-04T12:48:38.730Z",
+      "category": "builds",
+      "tags": [],
+      "importance": 49,
+      "confidence": "community",
+      "headline_en": "pending",
+      "headline_zhHant": "【心得】無陷阱手T10日蝕複合控場(全汞合金)",
+      "summary_en": "pending",
+      "summary_zhHant": "適用於任何T10副本 全隊至少配有兩位打手 原型天賦都是汞合金 約只有兩條增加狀態效果的副詞條 5種控場複合式:火 泡沫…",
+      "summaryKind": "extract",
+      "alsoReportedBy": [],
+      "media": [],
+      "relatedIds": [],
+      "status": "new"
+    },
+    {
+      "id": "1q8qzay",
+      "sourceId": "bahamut",
+      "sourceName": "巴哈姆特 全境封鎖板",
+      "sourceUrl": "https://forum.gamer.com.tw/C.php?bsn=24460&snA=32860",
+      "title_orig": "【情報】【已開機】關機維護公告 - 2026/11/03(二) 16:00 (Y8S3.3 中央公園DLC)，延長1.5小時",
+      "lang_orig": "zh",
+      "publishedAt": "2026-11-02T16:43:00.000Z",
+      "fetchedAt": "2026-11-04T12:48:38.730Z",
+      "category": "updates",
+      "tags": [
+        "dlc"
+      ],
+      "importance": 48,
+      "confidence": "community",
+      "headline_en": "pending",
+      "headline_zhHant": "【情報】【已開機】關機維護公告 - 2026/11/03(二) 16:00 (Y8S3.3 中央公園DLC)，延長1.5小時",
+      "summary_en": "pending",
+      "summary_zhHant": "關機維護時間：2026 年 11 月 03 日 16:00 開始維護 預計維護 6 小時 版本更新資訊 https://…",
+      "summaryKind": "extract",
+      "alsoReportedBy": [],
+      "media": [],
+      "relatedIds": [],
+      "status": "new"
+    },
+    {
       "id": "173ppw8",
       "sourceId": "ubisoft-en",
       "sourceName": "Ubisoft",
@@ -240,7 +338,7 @@
       "title_orig": "The Division 2: Red Moon Unleashed Event Twitch Drops",
       "lang_orig": "en",
       "publishedAt": "2026-10-15T16:00:00.000Z",
-      "fetchedAt": "2026-11-04T09:59:09.281Z",
+      "fetchedAt": "2026-11-04T12:48:38.730Z",
       "category": "community",
       "tags": [
         "event",
@@ -259,23 +357,76 @@
       "imageId": "ubi-VLVLB9xFr5sLxAtZSVM6J",
       "relatedIds": [],
       "status": "new"
+    },
+    {
+      "id": "1pz9cpm",
+      "sourceId": "bahamut",
+      "sourceName": "巴哈姆特 全境封鎖板",
+      "sourceUrl": "https://forum.gamer.com.tw/C.php?bsn=24460&snA=32833",
+      "title_orig": "【情報】全境2 TUY8S3.2 血月高照、創作者合作、升級更新 2F R/MMR BUFF",
+      "lang_orig": "zh",
+      "publishedAt": "2026-10-27T07:04:00.000Z",
+      "fetchedAt": "2026-11-04T12:48:38.730Z",
+      "category": "updates",
+      "tags": [
+        "title-update"
+      ],
+      "importance": 34,
+      "confidence": "community",
+      "headline_en": "pending",
+      "headline_zhHant": "【情報】全境2 TUY8S3.2 血月高照、創作者合作、升級更新 2F R/MMR BUFF",
+      "summary_en": "pending",
+      "summary_zhHant": "官方原文公告 (AI翻譯) 目錄 血月高照 內容創作者合作 數據與倍率活動 機密任務 改善與修正 血月高照 10 月 1…",
+      "summaryKind": "extract",
+      "alsoReportedBy": [],
+      "media": [],
+      "relatedIds": [],
+      "status": "new"
+    },
+    {
+      "id": "1obbqjs",
+      "sourceId": "bahamut",
+      "sourceName": "巴哈姆特 全境封鎖板",
+      "sourceUrl": "https://forum.gamer.com.tw/C.php?bsn=24460&snA=32835",
+      "title_orig": "【情報】［活動警報］復仇者懸賞",
+      "lang_orig": "zh",
+      "publishedAt": "2026-10-26T11:51:00.000Z",
+      "fetchedAt": "2026-11-04T12:48:38.730Z",
+      "category": "missions",
+      "tags": [],
+      "importance": 33,
+      "confidence": "community",
+      "headline_en": "pending",
+      "headline_zhHant": "【情報】［活動警報］復仇者懸賞",
+      "summary_en": "pending",
+      "summary_zhHant": "打完月亮教徒有機會掉落懸賞 不過懸賞的顏色是黃色，不是一般看到的灰色 而且能夠被分解 可能不少人裝滿，所以不會看掉落物或…",
+      "summaryKind": "extract",
+      "alsoReportedBy": [],
+      "media": [],
+      "relatedIds": [],
+      "status": "new"
     }
   ],
   "sources": [
     {
       "sourceId": "steam-news",
       "ok": true,
-      "checkedAt": "2026-11-04T09:59:09.281Z"
+      "checkedAt": "2026-11-04T12:48:38.730Z"
     },
     {
       "sourceId": "ubisoft-en",
       "ok": true,
-      "checkedAt": "2026-11-04T09:59:09.281Z"
+      "checkedAt": "2026-11-04T12:48:38.730Z"
     },
     {
       "sourceId": "ubisoft-zh-tw",
       "ok": true,
-      "checkedAt": "2026-11-04T09:59:09.281Z"
+      "checkedAt": "2026-11-04T12:48:38.730Z"
+    },
+    {
+      "sourceId": "bahamut",
+      "ok": true,
+      "checkedAt": "2026-11-04T12:48:38.730Z"
     }
   ]
 }

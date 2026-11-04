@@ -68,7 +68,8 @@ describe('dedupe, classify, score', () => {
     expect(tu.others.some((o) => o.sourceId === 'steam-news')).toBe(true);
   });
   it('canonical URLs ignore query and hash', () => {
-    expect(canonicalUrl('https://WWW.ubisoft.com/a/?x=1#y')).toBe('https://www.ubisoft.com/a');
+    expect(canonicalUrl('https://WWW.ubisoft.com/a/?utm_source=x&fbclid=1#y')).toBe('https://www.ubisoft.com/a');
+    expect(canonicalUrl('https://forum.gamer.com.tw/C.php?snA=2&bsn=24460&tnum=3')).toBe('https://forum.gamer.com.tw/C.php?bsn=24460&snA=2');
   });
   it('classifies by title first', () => {
     expect(classify('[TUY8S3.3] Crossplay Rollout, Conflict Improvements & More', '')).toBe('updates');

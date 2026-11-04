@@ -9,8 +9,9 @@
       "publishedAt": "2026-11-02T13:48:39.000Z",
       "official": true,
       "row": "more",
-      "checkedAt": "2026-11-04T09:59:09.281Z",
-      "via": "ubisoft-page"
+      "checkedAt": "2026-11-04T12:48:38.730Z",
+      "via": "ubisoft-page",
+      "rumour": false
     },
     {
       "id": "Y2o8OGfwEpQ",
@@ -21,8 +22,9 @@
       "publishedAt": "2026-10-30T18:16:35.000Z",
       "official": true,
       "row": "trailers",
-      "checkedAt": "2026-11-04T09:59:09.281Z",
-      "via": "ubisoft-page"
+      "checkedAt": "2026-11-04T12:48:38.730Z",
+      "via": "ubisoft-page",
+      "rumour": false
     },
     {
       "id": "MsAVpwIDHHI",
@@ -33,8 +35,9 @@
       "publishedAt": "2026-10-13T13:30:33.000Z",
       "official": true,
       "row": "trailers",
-      "checkedAt": "2026-11-04T09:59:09.281Z",
-      "via": "ubisoft-page"
+      "checkedAt": "2026-11-04T12:48:38.730Z",
+      "via": "ubisoft-page",
+      "rumour": false
     }
   ]
 }

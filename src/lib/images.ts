@@ -36,7 +36,7 @@ export function imageFor(item: Item, used: Set<string>): PlacedImage | null {
     used.add(item.imageId);
     return { image: getImage(item.imageId), filePhoto: false };
   }
-  if (NO_FILE_PHOTO.has(item.category)) return null;
+  if (NO_FILE_PHOTO.has(item.category) || item.videoId) return null;
   const shots = library.images.filter((i) => i.tags.includes('screenshot') && !used.has(i.id));
   if (!shots.length) return null;
   const pick = shots[hash(item.id) % shots.length]!;

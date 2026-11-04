@@ -1,10 +1,58 @@
 {
-  "_note": "YouTube channels to follow (needs YOUTUBE_API_KEY). Only uploads whose title mentions The Division are used, and each video must be public + embeddable + not made-for-kids. Edit freely.",
+  "_note": "YouTube channels to follow (needs YOUTUBE_API_KEY). Only uploads whose title mentions The Division are used, and each video must be public + embeddable + not made-for-kids. Edit freely. \"searches\" = daily YouTube searches (100 quota units each) for creator intel; results show only if they mention The Division.",
   "channels": [
-    { "id": "UC0KU8F9jJqSLS11LRXvFWmg", "name": "Ubisoft", "handle": "@Ubisoft", "official": true },
-    { "id": "UCyRKkittAyXHhjZxqC49cxg", "name": "GCROCK", "handle": "@GCROCK", "official": false },
-    { "id": "UC1h4ld2anwjT4NEbqFOJRXQ", "name": "widdz", "handle": "@widdz", "official": false },
-    { "id": "UCrK99e79TwSpgElDb-r-Lpg", "name": "Died Again Gaming", "handle": "@DiedAgainGaming", "official": false },
-    { "id": "UCWd5S9-AEf26j0wY3P8TOhw", "name": "Kamikazevondoom", "handle": "@Kamikazevondoom", "official": false }
+    {
+      "id": "UC0KU8F9jJqSLS11LRXvFWmg",
+      "name": "Ubisoft",
+      "handle": "@Ubisoft",
+      "official": true
+    },
+    {
+      "id": "UCyRKkittAyXHhjZxqC49cxg",
+      "name": "GCROCK",
+      "handle": "@GCROCK",
+      "official": false
+    },
+    {
+      "id": "UC1h4ld2anwjT4NEbqFOJRXQ",
+      "name": "widdz",
+      "handle": "@widdz",
+      "official": false
+    },
+    {
+      "id": "UCrK99e79TwSpgElDb-r-Lpg",
+      "name": "Died Again Gaming",
+      "handle": "@DiedAgainGaming",
+      "official": false
+    },
+    {
+      "id": "UCWd5S9-AEf26j0wY3P8TOhw",
+      "name": "Kamikazevondoom",
+      "handle": "@Kamikazevondoom",
+      "official": false
+    }
+  ],
+  "searches": [
+    {
+      "q": "the division 2 new exotic"
+    },
+    {
+      "q": "the division 2 PTS"
+    },
+    {
+      "q": "the division 2 leak datamine"
+    },
+    {
+      "q": "全境封鎖2",
+      "lang": "zh-Hant"
+    }
+  ],
+  "guideCreators": [
+    {
+      "id": "UCJ2qGCBwyN8d2l9aoWkyShw",
+      "name": "灰帽特工 Gray Hat Agent",
+      "handle": "@灰帽特工",
+      "official": false
+    }
   ]
 }

@@ -1,10 +1,10 @@
 {
-  "lastRun": "2026-11-04T09:59:10.692Z",
-  "durationMs": 1411,
+  "lastRun": "2026-11-04T12:48:45.232Z",
+  "durationMs": 6502,
   "edition": {
     "date": "2026-11-04",
     "number": 1,
-    "items": 9,
+    "items": 15,
     "zhPending": 0
   },
   "sources": [
@@ -22,6 +22,11 @@
       "id": "ubisoft-zh-tw",
       "ok": true,
       "items": 8
+    },
+    {
+      "id": "bahamut",
+      "ok": true,
+      "items": 6
     }
   ],
   "videos": {

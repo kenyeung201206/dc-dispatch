@@ -1,0 +1,143 @@
+---
+import { formatDate, t, type Locale, type UiKey } from '../i18n/index.ts';
+import { exotics, exoticType } from '../lib/exotics.ts';
+import { routes } from '../lib/routes.ts';
+
+interface Props {
+  locale: Locale;
+  /** Sidebar box shows the newest few; the Arsenal page shows everything. */
+  limit?: number;
+}
+const { locale, limit } = Astro.props;
+const list = limit ? exotics.slice(0, limit) : exotics;
+const day = (iso: string) =>
+  new Intl.DateTimeFormat(locale === 'en' ? 'en' : 'zh-Hant-TW', { month: 'short', day: 'numeric', timeZone: 'Asia/Tokyo' }).format(new Date(iso));
+---
+{
+  list.length === 0 ? (
+    <p class="none">{t(locale, 'exotic.none')}</p>
+  ) : (
+    <ul class:list={['intel', !limit && 'full']}>
+      {list.map((e) => (
+        <li>
+          <p class="top">
+            <span class:list={['st', e.status]}>{t(locale, `exotic.status.${e.status}` as UiKey)}</span>
+            <time class="hud-label" datetime={e.firstSeen} title={formatDate(e.firstSeen, locale)}>{day(e.firstSeen)}</time>
+          </p>
+          <p class="name">
+            <strong lang="en">{e.name}</strong>
+            {e.type && <span class="type"> · {exoticType(e.type, locale)}</span>}
+          </p>
+          {e.talent && (
+            <p class="talent">
+              {t(locale, 'exotic.talent')}: <b lang="en">{e.talent}</b>
+            </p>
+          )}
+          {e.text && !limit && <p class="quote" lang="en">“{e.text}”</p>}
+          <p class="src">
+            {e.sources.map((s, i) => (
+              <>
+                {i > 0 && ' · '}
+                <a href={s.url} rel="noopener noreferrer" target="_blank">{s.name} ↗</a>
+              </>
+            ))}
+          </p>
+        </li>
+      ))}
+    </ul>
+  )
+}
+{limit && <p class="more"><a href={routes.section(locale, 'arsenal')}>{t(locale, 'exotic.more')}</a></p>}
+{!limit && exotics.some((e) => e.status === 'spotted') && <p class="note hud-label">{t(locale, 'exotic.wikiNote')}</p>}
+
+<style>
+  .intel {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .intel.full {
+    display: grid;
+    gap: var(--space-4);
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 280px), 1fr));
+  }
+  .intel li {
+    padding: 8px 0;
+    border-bottom: 1px solid var(--rule-soft);
+  }
+  .intel.full li {
+    padding: 12px 14px;
+    border: 1.5px solid var(--rule);
+  }
+  .intel li:last-child {
+    border-bottom: 0;
+  }
+  .intel.full li:last-child {
+    border-bottom: 1.5px solid var(--rule);
+  }
+  .top {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+    margin: 0 0 4px;
+    color: var(--ink-soft);
+  }
+  .st {
+    padding: 0 6px;
+    font: 600 0.75rem / 1.6 var(--font-hud);
+    text-transform: uppercase;
+    color: #fff;
+    background: var(--ink-soft);
+  }
+  .st.released {
+    background: var(--ok-green);
+  }
+  .st.pts {
+    background: var(--shd);
+    color: var(--on-shd);
+  }
+  .st.announced {
+    background: var(--panel);
+  }
+  .st.spotted {
+    background: var(--dz-red);
+  }
+  .name,
+  .talent,
+  .quote,
+  .src {
+    margin: 0;
+  }
+  .name strong {
+    font: 700 var(--step-0) / 1.3 var(--font-display);
+  }
+  .type,
+  .talent {
+    font-size: 0.9375rem;
+    color: var(--ink-soft);
+  }
+  .quote {
+    font-style: italic;
+    font-size: 0.9375rem;
+    margin-top: 4px;
+  }
+  .src,
+  .note {
+    font: 400 var(--step--1) / 1.5 var(--font-hud);
+    color: var(--ink-soft);
+  }
+  .src a {
+    display: inline-block;
+    padding: 4px 0;
+  }
+  .more a {
+    display: inline-block;
+    padding: 8px 0;
+    color: var(--shd-ink);
+    font-weight: 700;
+  }
+  .none {
+    font-style: italic;
+    color: var(--ink-soft);
+  }
+</style>

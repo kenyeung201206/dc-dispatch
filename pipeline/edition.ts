@@ -45,6 +45,14 @@ export function applyOverrides(items: Item[], overrides: Overrides): Item[] {
 }
 
 const DAY = 86_400_000;
+
+/** YouTube API data may be kept 30 days at most: drop video stories from older archived editions. */
+export function scrubOldYoutube(edition: Edition, now: Date): Edition | null {
+  if (now.getTime() - Date.parse(`${edition.date}T00:00:00+09:00`) <= 30 * DAY) return null;
+  const items = edition.items.filter((i) => i.sourceId !== 'youtube');
+  if (items.length === edition.items.length || !items.length) return null;
+  return { ...edition, items };
+}
 const GLITCH_KEEP_DAYS = 60;
 
 export interface AssembleInput {

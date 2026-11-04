@@ -14,8 +14,11 @@ const TAG_RULES: [string, RegExp][] = [
 ];
 
 /** Title decides first (it's what the story is about); body text only breaks ties. */
-export function classify(title: string, text: string): Category {
-  for (const { category, pattern } of CATEGORY_RULES) if (pattern.test(title)) return category;
+export function classify(title: string, text: string, tag?: string): Category {
+  for (const { category, pattern, zh } of CATEGORY_RULES) if (pattern.test(title) || zh?.test(title)) return category;
+  // 巴哈 post types: guides and write-ups are builds; intel defaults to updates.
+  if (tag === '攻略' || tag === '心得') return 'builds';
+  if (tag === '情報') return 'updates';
   const head = text.slice(0, 600);
   for (const { category, pattern } of CATEGORY_RULES) {
     if (category === 'glitch-watch') continue; // patch notes always mention bugs; don't misfile them

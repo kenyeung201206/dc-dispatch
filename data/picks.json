@@ -1,0 +1,25 @@
+{
+  "_note": "Editor-picked guides (攻略精選). Summaries are our own words — never copy a creator's text. 'until' (YYYY-MM-DD, Tokyo) is optional: if missing, the guide follows its event's end date, or shows for 60 days. Videos are re-checked daily and dropped if no longer embeddable.",
+  "picks": [
+    {
+      "kind": "video",
+      "videoId": "I2bM6jujjv0",
+      "title": "入手最炫面具！中央公園隱藏獵人「謀害」彩蛋 全點位分享",
+      "channelName": "灰帽特工 Gray Hat Agent",
+      "channelUrl": "https://www.youtube.com/@%E7%81%B0%E5%B8%BD%E7%89%B9%E5%B7%A5",
+      "summary_zhHant": "灰帽特工整理《中央公園的迴響》隱藏獵人「謀害」彩蛋的全部點位，完成後可取得面具獎勵。",
+      "summary_en": "Gray Hat Agent maps every location for the hidden \"Murder\" hunter easter egg in Echoes of Central Park, which rewards a mask.",
+      "added": "2026-11-04"
+    },
+    {
+      "kind": "video",
+      "videoId": "_7KqJPIZLfY",
+      "title": "直面恐懼！中央公園殘響資料片 最高難度全流程速通",
+      "channelName": "灰帽特工 Gray Hat Agent",
+      "channelUrl": "https://www.youtube.com/@%E7%81%B0%E5%B8%BD%E7%89%B9%E5%B7%A5",
+      "summary_zhHant": "灰帽特工以最高難度速通《中央公園的迴響》資料片全流程，想先看路線與打法的特工可以參考。",
+      "summary_en": "A full run of the Echoes of Central Park story on the hardest difficulty, handy for checking routes and fights before you play.",
+      "added": "2026-11-04"
+    }
+  ]
+}

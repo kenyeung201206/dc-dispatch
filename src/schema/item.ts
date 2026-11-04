@@ -71,13 +71,15 @@ export const ItemSchema = z
     category: CategorySchema,
     tags: z.array(z.string()).default([]),
     importance: z.number().int().min(0).max(100),
-    confidence: z.enum(['official', 'reported', 'rumour']),
-    headline_en: z.string().min(1),
+    /** official = publisher; reported = press; community = forums/creators; rumour = leaks, datamines, unconfirmed. */
+    confidence: z.enum(['official', 'reported', 'community', 'rumour']),
+    /** English may be "pending" for stories that start in Chinese (e.g. 巴哈姆特) until translated. */
+    headline_en: Localized,
     headline_zhHant: Localized,
-    summary_en: z.string().min(1),
+    summary_en: Localized,
     summary_zhHant: Localized,
     /** "extract" = short quote from the source (≤ 25 words), shown in quotation marks. */
-    summaryKind: z.enum(['original', 'extract']).default('original'),
+    summaryKind: z.enum(['original', 'extract', 'ai']).default('original'),
     /** Other outlets carrying the same story ("Reported by N sources"). */
     alsoReportedBy: z.array(z.object({ name: z.string().min(1), url: httpsUrl })).default([]),
     whyItMatters_en: z.string().optional(),
@@ -85,6 +87,8 @@ export const ItemSchema = z
     media: z.array(MediaSchema).default([]),
     /** Picture for this story, by id in data/images.json. */
     imageId: z.string().optional(),
+    /** YouTube video this story is about (creator scan). */
+    videoId: z.string().regex(/^[A-Za-z0-9_-]{11}$/).optional(),
     relatedIds: z.array(z.string()).default([]),
     status: z.enum(['new', 'updated', 'fixed', 'retracted']).default('new'),
     /** Glitch Watch only (brief §4.2). */
@@ -128,8 +132,64 @@ export const PatchSchema = z.object({
 export type Patch = z.infer<typeof PatchSchema>;
 export const PatchLogSchema = z.object({ patches: z.array(PatchSchema) });
 
+/** Exotic intel (data/exotics.json): official tables/mentions + exotics newly added to the community wiki. */
+export const ExoticSchema = z.object({
+  name: z.string().min(1),
+  type: z.string().optional(),
+  talent: z.string().optional(),
+  /** Short quote (≤ 25 words) from the source describing it. */
+  text: z.string().optional(),
+  /** released = in a live title update; pts = on the test server; announced = officially named; spotted = added to the wiki. */
+  status: z.enum(['released', 'pts', 'announced', 'spotted']),
+  confidence: z.enum(['official', 'community']),
+  firstSeen: z.iso.datetime({ offset: true }),
+  sources: z.array(z.object({ name: z.string().min(1), url: httpsUrl })).min(1),
+});
+export type Exotic = z.infer<typeof ExoticSchema>;
+export const ExoticLogSchema = z.object({ exotics: z.array(ExoticSchema) });
+
+/** Limited-time events (data/events.json): guides tied to an event disappear after it ends. */
+export const GameEventSchema = z.object({
+  id: z.string().min(1),
+  name_en: z.string().min(1),
+  name_zhHant: z.string().min(1),
+  start: z.iso.date(),
+  end: z.iso.date(),
+  match: z.array(z.string().min(1)).min(1),
+  source: httpsUrl,
+  auto: z.boolean().optional(),
+});
+export type GameEvent = z.infer<typeof GameEventSchema>;
+export const GameEventLogSchema = z.object({ _note: z.string().optional(), events: z.array(GameEventSchema) });
+
+/**
+ * 攻略精選 / Guide Picks (data/guides.json): creator guides shown until their event ends (or 60 days).
+ * Videos play through the official embed; posts are linked with a short summary in our own words.
+ */
+export const GuideSchema = z.object({
+  id: z.string().min(1),
+  kind: z.enum(['video', 'post']),
+  videoId: z.string().regex(/^[A-Za-z0-9_-]{11}$/).optional(),
+  url: httpsUrl,
+  title: z.string().min(1),
+  channelName: z.string().min(1),
+  channelUrl: httpsUrl,
+  publishedAt: z.iso.datetime({ offset: true }),
+  /** Our own short summary (never copied text). */
+  summary_zhHant: z.string().optional(),
+  summary_en: z.string().optional(),
+  eventId: z.string().optional(),
+  /** Last day to show (Asia/Tokyo calendar date). */
+  until: z.iso.date(),
+  addedBy: z.enum(['auto', 'editor']),
+  /** When a video was last confirmed embeddable (YouTube data: refresh within 30 days). */
+  checkedAt: z.iso.datetime({ offset: true }).optional(),
+});
+export type Guide = z.infer<typeof GuideSchema>;
+export const GuideLogSchema = z.object({ guides: z.array(GuideSchema) });
+
 /** Watch Now rows (brief §8). */
-export const VIDEO_ROWS = ['trailers', 'patch-breakdowns', 'build-guides', 'more'] as const;
+export const VIDEO_ROWS = ['intel', 'trailers', 'patch-breakdowns', 'build-guides', 'more'] as const;
 
 /** A YouTube video confirmed embeddable + public on the date in checkedAt (data/videos.json). */
 export const VideoSchema = z.object({
@@ -146,7 +206,9 @@ export const VideoSchema = z.object({
   row: z.enum(VIDEO_ROWS),
   /** When we last confirmed it is public and embeddable (YouTube data must be refreshed within 30 days). */
   checkedAt: z.iso.datetime({ offset: true }),
-  via: z.enum(['ubisoft-page', 'youtube-api']),
+  via: z.enum(['ubisoft-page', 'youtube-api', 'youtube-search']),
+  /** Title sounds like a leak/datamine/unreleased content: shown with a RUMOUR stamp. */
+  rumour: z.boolean().default(false),
 });
 export type Video = z.infer<typeof VideoSchema>;
 export const VideoLibrarySchema = z.object({ videos: z.array(VideoSchema) });
