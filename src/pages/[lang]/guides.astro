@@ -91,7 +91,7 @@ const groups = CATEGORIES.map((c) => [c, posts.filter((p) => p.category === c).s
                     <ul class="codes" aria-label={t(locale, 'cg.codes')}>
                       {p.codes.map((c) => (
                         <li>
-                          {c.label && <span class="cl">{c.label}</span>}
+                          {(en ? c.label : (c.label_zhHant ?? c.label)) && <span class="cl">{en ? c.label : (c.label_zhHant ?? c.label)}</span>}
                           <code>{c.code}</code>
                         </li>
                       ))}

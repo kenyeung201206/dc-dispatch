@@ -35,7 +35,7 @@ const duration = formatDuration(video.durationSec);
     </button>
   </div>
   <figcaption>
-    <span class="vt" lang="en">{title}</span>
+    <span class="vt" lang={locale === 'zh-hant' && video.titleZh ? 'zh-Hant-TW' : undefined}>{title}</span>
     <span class="meta">
       {video.official && <span class="off">{t(locale, 'watch.official')}</span>}
       {video.rumour && <span class="off rum">{t(locale, 'confidence.rumour')}</span>}

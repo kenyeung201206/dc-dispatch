@@ -70,3 +70,15 @@ test('guides page is reachable from the nav in English', async ({ page, isMobile
   await expect(page).toHaveURL(/\/en\/guides\/$/);
   await expect(page.locator('.steps > .slot').nth(10)).toContainText('Black Tusk');
 });
+
+test('Chinese pages: exotics and patch notes are in Chinese, English originals stay on English pages', async ({ page }) => {
+  await page.goto('/zh-hant/section/arsenal/');
+  const names = page.locator('.intel .name strong');
+  await expect(names.first()).toHaveText(/[㐀-鿿]/);
+  for (const q of await page.locator('.intel .quote').allTextContents()) expect(q).toMatch(/[㐀-鿿]/);
+  await page.goto('/zh-hant/patches/');
+  for (const c of await page.locator('.diff td').allTextContents()) expect(c).toMatch(/[㐀-鿿]/);
+  await expect(page.locator('.patch .title').first()).toHaveText(/[㐀-鿿]/);
+  await page.goto('/en/section/arsenal/');
+  await expect(page.locator('.intel .name strong').first()).toHaveText(/^[^㐀-鿿]+$/);
+});

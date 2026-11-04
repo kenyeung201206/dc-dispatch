@@ -6,7 +6,7 @@ import Ticker from '../components/Ticker.astro';
 import SectionNav from '../components/SectionNav.astro';
 import { CATEGORIES, type Category, type Edition } from '../schema/item.ts';
 import type { Locale } from '../i18n/index.ts';
-import { byImportance, latestEdition, localized } from '../lib/editions.ts';
+import { byImportance, latestEdition, localized, readableIn } from '../lib/editions.ts';
 import { tickerJokes } from '../lib/humour.ts';
 
 interface Props {
@@ -19,7 +19,8 @@ interface Props {
 const { locale, title, edition = latestEdition(), current } = Astro.props;
 // Inner pages: phones show only the compact sticky bar, so the page starts on the first screen.
 const compact = current !== 'front-page';
-const tickerLines = [...edition.items]
+const tickerLines = edition.items
+  .filter((i) => readableIn(i, locale))
   .sort(byImportance)
   .slice(0, 4)
   .map((i) => localized(i, 'headline', locale).text);

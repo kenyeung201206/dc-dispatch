@@ -25,10 +25,17 @@ export function canonicalUrl(raw: string): string {
   return u.href.replace(/\/$/, '');
 }
 
+/** Title-update tag at the start of patch-note titles, e.g. "[TUY8S3.3]". */
+const tuTag = (title: string) => /^\s*\[TU\s*(Y\d+S\d+(?:\.\d+)*)\]/i.exec(title)?.[1]?.toUpperCase();
+
 function sameStory(a: RawItem, b: RawItem): boolean {
   if (canonicalUrl(a.url) === canonicalUrl(b.url)) return true;
   const days = Math.abs(Date.parse(a.publishedAt) - Date.parse(b.publishedAt)) / 86_400_000;
-  return days <= MAX_DAYS_APART && titleSimilarity(a.title, b.title) >= SIMILAR;
+  if (days > MAX_DAYS_APART) return false;
+  // Same title update's notes posted on Steam and Ubisoft under different titles.
+  const tag = tuTag(a.title);
+  if (tag && tag === tuTag(b.title)) return true;
+  return titleSimilarity(a.title, b.title) >= SIMILAR;
 }
 
 /** Group duplicates (same URL, or near-identical title within a few days) into stories. */

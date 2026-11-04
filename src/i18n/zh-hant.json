@@ -211,5 +211,9 @@
   "cg.updates": "他的最新貼文（依版面分類）",
   "cg.more": "灰帽特工攻略 →",
   "cg.codes": "兌換碼",
-  "cg.link": "官方連結 ↗"
+  "cg.link": "官方連結 ↗",
+  "story.noZh.title": "這篇報導還沒有中文版",
+  "story.noZh.text": "這篇來自 {source} 的報導目前只有英文，翻譯完成後就會出現在這裡。",
+  "story.noZh.english": "切換到英文版 →",
+  "exotic.ourName": "本報譯名，遊戲內名稱可能不同。"
 }

@@ -1,7 +1,7 @@
 ---
 import Paper from '../../layouts/Paper.astro';
 import { HTML_LANG, LOCALES, t, type Locale } from '../../i18n/index.ts';
-import { editions, localized, byImportance } from '../../lib/editions.ts';
+import { editions, localized, byImportance, readableIn } from '../../lib/editions.ts';
 import { routes } from '../../lib/routes.ts';
 
 export function getStaticPaths() {
@@ -59,7 +59,7 @@ function grid(ym: string): (string | null)[] {
   <ol class="list">
     {
       editions.map((e) => {
-        const top = [...e.items].sort(byImportance)[0];
+        const top = e.items.filter((i) => readableIn(i, locale)).sort(byImportance)[0];
         return (
           <li>
             <a href={hrefFor(e.date)}>

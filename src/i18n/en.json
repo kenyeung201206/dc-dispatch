@@ -211,5 +211,9 @@
   "cg.updates": "His latest posts, by section",
   "cg.more": "Gray Hat Agent guides →",
   "cg.codes": "Redeem codes",
-  "cg.link": "Official link ↗"
+  "cg.link": "Official link ↗",
+  "story.noZh.title": "Not in Chinese yet",
+  "story.noZh.text": "This story from {source} is English-only; it appears here once it is translated.",
+  "story.noZh.english": "Read it in English →",
+  "exotic.ourName": "Name translated by us; the in-game name may differ."
 }

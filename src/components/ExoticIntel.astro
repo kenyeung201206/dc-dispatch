@@ -2,6 +2,7 @@
 import { formatDate, t, type Locale, type UiKey } from '../i18n/index.ts';
 import { exotics, exoticType } from '../lib/exotics.ts';
 import { routes } from '../lib/routes.ts';
+import { exoticZh, sourceZh } from '../lib/zh.ts';
 
 interface Props {
   locale: Locale;
@@ -9,7 +10,13 @@ interface Props {
   limit?: number;
 }
 const { locale, limit } = Astro.props;
-const list = limit ? exotics.slice(0, limit) : exotics;
+const en = locale === 'en';
+// Chinese pages: our Chinese names/text; English talent and quotes are dropped when there's no translation.
+const list = (limit ? exotics.slice(0, limit) : exotics).map((e) => {
+  if (en) return { ...e, ours: false };
+  const z = exoticZh(e);
+  return { ...e, name: z.name ?? e.name, talent: z.talent, text: z.text, ours: Boolean(z.name) };
+});
 const day = (iso: string) =>
   new Intl.DateTimeFormat(locale === 'en' ? 'en' : 'zh-Hant-TW', { month: 'short', day: 'numeric', timeZone: 'Asia/Tokyo' }).format(new Date(iso));
 ---
@@ -25,20 +32,21 @@ const day = (iso: string) =>
             <time class="hud-label" datetime={e.firstSeen} title={formatDate(e.firstSeen, locale)}>{day(e.firstSeen)}</time>
           </p>
           <p class="name">
-            <strong lang="en">{e.name}</strong>
+            <strong lang={en ? 'en' : undefined}>{e.name}</strong>
+            {e.ours && <span class="ours" title={t(locale, 'exotic.ourName')}>＊</span>}
             {e.type && <span class="type"> · {exoticType(e.type, locale)}</span>}
           </p>
           {e.talent && (
             <p class="talent">
-              {t(locale, 'exotic.talent')}: <b lang="en">{e.talent}</b>
+              {t(locale, 'exotic.talent')}: <b lang={en ? 'en' : undefined}>{e.talent}</b>
             </p>
           )}
-          {e.text && !limit && <p class="quote" lang="en">“{e.text}”</p>}
+          {e.text && !limit && <p class="quote" lang={en ? 'en' : undefined}>{en ? `“${e.text}”` : e.text}</p>}
           <p class="src">
             {e.sources.map((s, i) => (
               <>
                 {i > 0 && ' · '}
-                <a href={s.url} rel="noopener noreferrer" target="_blank">{s.name} ↗</a>
+                <a href={s.url} rel="noopener noreferrer" target="_blank">{en ? s.name : sourceZh(s.name)} ↗</a>
               </>
             ))}
           </p>
@@ -47,6 +55,7 @@ const day = (iso: string) =>
     </ul>
   )
 }
+{!en && list.some((e) => e.ours) && <p class="note">＊{t(locale, 'exotic.ourName')}</p>}
 {limit && <p class="more"><a href={routes.section(locale, 'arsenal')}>{t(locale, 'exotic.more')}</a></p>}
 {!limit && exotics.some((e) => e.status === 'spotted') && <p class="note hud-label">{t(locale, 'exotic.wikiNote')}</p>}
 
@@ -105,6 +114,15 @@ const day = (iso: string) =>
   .name,
   .talent,
   .quote,
+  .ours {
+    color: var(--shd-ink);
+    font-weight: 700;
+  }
+  .note {
+    margin: 4px 0 0;
+    font-size: 0.8125rem;
+    color: var(--ink-soft);
+  }
   .src {
     margin: 0;
   }

@@ -80,6 +80,8 @@ export const ItemSchema = z
     summary_zhHant: Localized,
     /** "extract" = short quote from the source (≤ 25 words), shown in quotation marks. */
     summaryKind: z.enum(['original', 'extract', 'ai']).default('original'),
+    /** How the Chinese summary should be shown, when it differs (e.g. our own write-up of an English quote). */
+    summaryKind_zhHant: z.enum(['original', 'extract', 'ai']).optional(),
     /** Other outlets carrying the same story ("Reported by N sources"). */
     alsoReportedBy: z.array(z.object({ name: z.string().min(1), url: httpsUrl })).default([]),
     whyItMatters_en: z.string().optional(),
@@ -228,7 +230,7 @@ export const CreatorPostsSchema = z.object({
       /** Day he posted it (approximate when YouTube only showed "2 weeks ago"). Recent ones also run as a story. */
       publishedAt: z.iso.date(),
       /** Redeem codes, shown as copyable chips. */
-      codes: z.array(z.object({ label: z.string().optional(), code: z.string().regex(/^[A-Z0-9-]{6,32}$/) })).optional(),
+      codes: z.array(z.object({ label: z.string().optional(), label_zhHant: z.string().optional(), code: z.string().regex(/^[A-Z0-9-]{6,32}$/) })).optional(),
       /** Extra link from the post (e.g. Ubisoft patch notes or a sign-up page). */
       link: httpsUrl.optional(),
       postUrl: httpsUrl.optional(),
@@ -294,3 +296,28 @@ export const EditionSchema = z.object({
   sources: z.array(SourceHealthSchema),
 });
 export type Edition = z.infer<typeof EditionSchema>;
+
+/** Editor translations for English-only content (data/translations.zh.json). Chinese pages use these. */
+export const TranslationsZhSchema = z.object({
+  _note: z.string().optional(),
+  items: z.record(
+    z.string(),
+    z.object({
+      headline: z.string().min(1),
+      summary: z.string().min(1),
+      whyItMatters: z.string().min(1).optional(),
+      riskNote: z.string().min(1).optional(),
+      /** "original" when the Chinese is our own write-up rather than a translated quote. */
+      summaryKind: z.enum(['original', 'extract']).optional(),
+    }),
+  ),
+  /** YouTube video id → Chinese title. */
+  videos: z.record(z.string(), z.string().min(1)),
+  /** Exotic English name → Chinese fields. Names are our own unless Ubisoft Taiwan has one. */
+  exotics: z.record(z.string(), z.object({ name: z.string().min(1), talent: z.string().optional(), text: z.string().optional() })),
+  /** Patch version → Chinese title, section headings and change lines (same order as data/patches.json). */
+  patches: z.record(z.string(), z.object({ title: z.string().min(1), sections: z.array(z.string()), changes: z.array(z.string()) })),
+  /** Source / outlet display names. */
+  sources: z.record(z.string(), z.string().min(1)),
+});
+export type TranslationsZh = z.infer<typeof TranslationsZhSchema>;

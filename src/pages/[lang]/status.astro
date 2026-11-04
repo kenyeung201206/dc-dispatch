@@ -21,6 +21,12 @@ const SOURCE_NAMES: Record<string, string> = {
   'ubisoft-zh-tw': 'Ubisoft 台灣 (zh-TW)',
   bahamut: '巴哈姆特 全境封鎖板',
 };
+const SOURCE_NAMES_ZH: Record<string, string> = {
+  'steam-news': 'Steam 新聞',
+  'ubisoft-en': 'Ubisoft 英文官網',
+  'ubisoft-zh-tw': 'Ubisoft 台灣官網',
+  bahamut: '巴哈姆特 全境封鎖板',
+};
 ---
 <Paper locale={locale} title={t(locale, 'status.title')}>
   <header class="section-head page-head">
@@ -65,7 +71,7 @@ const SOURCE_NAMES: Record<string, string> = {
       {
         status.sources.map((s) => (
           <tr>
-            <th scope="row">{SOURCE_NAMES[s.id] ?? s.id}</th>
+            <th scope="row">{(locale === 'en' ? SOURCE_NAMES : SOURCE_NAMES_ZH)[s.id] ?? s.id}</th>
             <td>
               <span class:list={['chip', s.ok ? 'ok' : 'warn']}>{t(locale, s.ok ? 'status.ok' : 'status.down')}</span>
               {s.note && <small>{s.note}</small>}

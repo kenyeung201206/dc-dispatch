@@ -3,15 +3,15 @@ import Paper from '../../layouts/Paper.astro';
 import VideoFacade from '../../components/VideoFacade.astro';
 import LiveNow from '../../components/LiveNow.astro';
 import { LOCALES, t, type Locale, type UiKey } from '../../i18n/index.ts';
-import { videoOfTheDay, videos } from '../../lib/videos.ts';
+import { videoOfTheDay, videos, videosFor } from '../../lib/videos.ts';
 import { VIDEO_ROWS } from '../../schema/item.ts';
 
 export function getStaticPaths() {
   return LOCALES.map((lang) => ({ params: { lang } }));
 }
 const locale = Astro.params.lang as Locale;
-const vod = videoOfTheDay();
-const rows = VIDEO_ROWS.map((row) => ({ row, list: videos.filter((v) => v.row === row && v.id !== vod?.id) }));
+const vod = videoOfTheDay(locale);
+const rows = VIDEO_ROWS.map((row) => ({ row, list: videosFor(locale).filter((v) => v.row === row && v.id !== vod?.id) }));
 const hasCreators = videos.some((v) => v.via === 'youtube-api');
 ---
 <Paper locale={locale} title={t(locale, 'watch.title')} current="watch-now">

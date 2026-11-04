@@ -18,79 +18,167 @@
       "entries": [
         {
           "n": 1,
-          "steps_zhHant": ["在東下城區或司法廣場完成 2 次公開處決活動", "佔領東下城區的 2 個控制點", "在東下城區擊殺 10 名淨化者"],
-          "steps_en": ["Complete 2 Public Execution activities in East Downtown or Judiciary Square", "Take 2 control points in East Downtown", "Kill 10 Cleaners in East Downtown"],
+          "steps_zhHant": [
+            "在東下城區或司法廣場完成 2 次公開處決活動",
+            "佔領東下城區的 2 個控制點",
+            "在東下城區擊殺 10 名淨化者"
+          ],
+          "steps_en": [
+            "Complete 2 Public Execution activities in East Downtown or Judiciary Square",
+            "Take 2 control points in East Downtown",
+            "Kill 10 Cleaners in East Downtown"
+          ],
           "postUrl": "https://www.youtube.com/post/UgkxtykZ5kpj0Lbx8um9QiAgXkW2QmdAZKs6",
           "seen": "2026-11-05"
         },
         {
           "n": 2,
-          "steps_zhHant": ["在司法廣場擊殺 5 名淨化者", "佔領「橢圓營區燃料庫」控制點", "佔領東下城區任一敵方控制點"],
-          "steps_en": ["Kill 5 Cleaners in Judiciary Square", "Take the fuel-depot control point at the Ellipse camp (橢圓營區燃料庫)", "Take any enemy control point in East Downtown"],
+          "steps_zhHant": [
+            "在司法廣場擊殺 5 名淨化者",
+            "佔領「橢圓營區燃料庫」控制點",
+            "佔領東下城區任一敵方控制點"
+          ],
+          "steps_en": [
+            "Kill 5 Cleaners in Judiciary Square",
+            "Take the fuel-depot control point at the Ellipse camp (橢圓營區燃料庫)",
+            "Take any enemy control point in East Downtown"
+          ],
           "postUrl": "https://www.youtube.com/post/UgkxAqTmgXa9ZpwS9x55DyugIoe57fgHcp2w",
           "seen": "2026-11-05"
         },
         {
           "n": 3,
-          "steps_zhHant": ["在西波托馬克公園、西區或霧谷完成 2 次領地控制活動（地圖上紅色交叉霰彈槍圖示）", "完成 3 次資源護送活動", "擊殺任意 5 名具名敵人"],
-          "steps_en": ["Complete 2 Territory Control activities (red crossed-shotguns map icon) in West Potomac Park, West End or Foggy Bottom", "Complete 3 resource escort activities", "Kill any 5 named enemies"],
+          "steps_zhHant": [
+            "在西波托馬克公園、西區或霧谷完成 2 次領地控制活動（地圖上紅色交叉霰彈槍圖示）",
+            "完成 3 次資源護送活動",
+            "擊殺任意 5 名具名敵人"
+          ],
+          "steps_en": [
+            "Complete 2 Territory Control activities (red crossed-shotguns map icon) in West Potomac Park, West End or Foggy Bottom",
+            "Complete 3 resource escort activities",
+            "Kill any 5 named enemies"
+          ],
           "postUrl": "https://www.youtube.com/post/UgkxOS44uhfRxJlmSMrog1Omwk-CiIVg3_Id",
           "seen": "2026-11-05"
         },
         {
           "n": 4,
-          "steps_zhHant": ["在東暗區或西暗區完成 2 個地標", "在華盛頓完成 3 次淨化者陣營的開放世界活動", "完成憲政大廳的指定懸賞"],
-          "steps_en": ["Clear 2 landmarks in Dark Zone East or West", "Complete 3 Cleaners open-world activities in Washington", "Complete the listed bounty in Constitution Hall"],
+          "steps_zhHant": [
+            "在東暗區或西暗區完成 2 個地標",
+            "在華盛頓完成 3 次淨化者陣營的開放世界活動",
+            "完成憲政大廳的指定懸賞"
+          ],
+          "steps_en": [
+            "Clear 2 landmarks in Dark Zone East or West",
+            "Complete 3 Cleaners open-world activities in Washington",
+            "Complete the listed bounty in Constitution Hall"
+          ],
           "postUrl": "https://www.youtube.com/post/UgkxYoPyp6MMZc20gFibni7eclzg3TELtRJB",
           "seen": "2026-11-05"
         },
         {
           "n": 5,
-          "steps_zhHant": ["完成 2 次真實之子的宣傳廣播活動", "擊殺 5 名黑牙無人機操作員", "擊殺 25 名鬣狗"],
-          "steps_en": ["Complete 2 True Sons Propaganda Broadcast activities", "Kill 5 Black Tusk drone operators", "Kill 25 Hyenas"],
+          "steps_zhHant": [
+            "完成 2 次真實之子的宣傳廣播活動",
+            "擊殺 5 名黑牙無人機操作員",
+            "擊殺 25 名鬣狗"
+          ],
+          "steps_en": [
+            "Complete 2 True Sons Propaganda Broadcast activities",
+            "Kill 5 Black Tusk drone operators",
+            "Kill 25 Hyenas"
+          ],
           "postUrl": "https://www.youtube.com/post/Ugkx2cFTX5xBWWqWLsG6QAjGnQZgrXJKT4mm",
           "seen": "2026-11-05"
         },
         {
           "n": 6,
-          "steps_zhHant": ["在開放世界完成解救人質活動（地圖上綠色手銬圖示）", "擊殺 5 名具名或精英淨化者", "以任意難度完成波托馬克活動中心任務"],
-          "steps_en": ["Complete a Hostage Rescue activity in the open world (green handcuffs map icon)", "Kill 5 named or elite Cleaners", "Complete the Potomac Event Center mission on any difficulty"],
+          "steps_zhHant": [
+            "在開放世界完成解救人質活動（地圖上綠色手銬圖示）",
+            "擊殺 5 名具名或精英淨化者",
+            "以任意難度完成波托馬克活動中心任務"
+          ],
+          "steps_en": [
+            "Complete a Hostage Rescue activity in the open world (green handcuffs map icon)",
+            "Kill 5 named or elite Cleaners",
+            "Complete the Potomac Event Center mission on any difficulty"
+          ],
           "postUrl": "https://www.youtube.com/post/Ugkxi4O2wtnZvUakMtX5LHpG8MM-sA0oEmtp",
           "seen": "2026-11-05"
         },
         {
           "n": 7,
-          "steps_zhHant": ["佔領西南區的 2 個控制點", "完成西南區的 3 項活動", "在西南區完成 1 次資源護送活動"],
-          "steps_en": ["Take 2 control points in the Southwest district", "Complete 3 activities in the Southwest district", "Complete 1 resource escort activity in the Southwest district"],
+          "steps_zhHant": [
+            "佔領西南區的 2 個控制點",
+            "完成西南區的 3 項活動",
+            "在西南區完成 1 次資源護送活動"
+          ],
+          "steps_en": [
+            "Take 2 control points in the Southwest district",
+            "Complete 3 activities in the Southwest district",
+            "Complete 1 resource escort activity in the Southwest district"
+          ],
           "postUrl": "https://www.youtube.com/post/Ugkxb4aWRZYBs-3BeKXB_-i_oruO7INuFSHd",
           "seen": "2026-11-05"
         },
         {
           "n": 8,
-          "steps_zhHant": ["完成 2 次流亡者陣營的宣傳廣播活動", "完成「鬧鬼住宅」控制點", "完成憲政大廳區域的指定懸賞"],
-          "steps_en": ["Complete 2 Outcasts Propaganda Broadcast activities", "Complete the “haunted house” control point (鬧鬼住宅)", "Complete the listed bounty in the Constitution Hall area"],
+          "steps_zhHant": [
+            "完成 2 次流亡者陣營的宣傳廣播活動",
+            "完成「鬧鬼住宅」控制點",
+            "完成憲政大廳區域的指定懸賞"
+          ],
+          "steps_en": [
+            "Complete 2 Outcasts Propaganda Broadcast activities",
+            "Complete the “haunted house” control point (鬧鬼住宅)",
+            "Complete the listed bounty in the Constitution Hall area"
+          ],
           "postUrl": "https://www.youtube.com/post/Ugkx8_XC_KSdc7a8f6q0wQf62OcZmfr3aJWu",
           "seen": "2026-11-05"
         },
         {
           "n": 9,
-          "steps_zhHant": ["擊殺 3 名精英或具名鬣狗", "擊殺 5 名醫療兵（他寫「暗牙醫療兵」）", "完成 2 個鬣狗控制點"],
-          "steps_en": ["Kill 3 elite or named Hyenas", "Kill 5 medics (he writes “暗牙”, likely Black Tusk)", "Complete 2 Hyena control points"],
+          "steps_zhHant": [
+            "擊殺 3 名精英或具名鬣狗",
+            "擊殺 5 名醫療兵（他寫「暗牙醫療兵」）",
+            "完成 2 個鬣狗控制點"
+          ],
+          "steps_en": [
+            "Kill 3 elite or named Hyenas",
+            "Kill 5 medics (he writes “暗牙”, likely Black Tusk)",
+            "Complete 2 Hyena control points"
+          ],
           "postUrl": "https://www.youtube.com/post/UgkxOMTckdf7NHLZczAqwrPnXbF9tgJABYKn",
           "seen": "2026-11-05"
         },
         {
           "n": 10,
-          "steps_zhHant": ["擊殺 50 名淨化者", "完成 1 次淨化者陣營的領地控制活動", "佔領 3 個淨化者陣營的控制點"],
-          "steps_en": ["Kill 50 Cleaners", "Complete 1 Cleaners Territory Control activity", "Take 3 Cleaners control points"],
+          "steps_zhHant": [
+            "擊殺 50 名淨化者",
+            "完成 1 次淨化者陣營的領地控制活動",
+            "佔領 3 個淨化者陣營的控制點"
+          ],
+          "steps_en": [
+            "Kill 50 Cleaners",
+            "Complete 1 Cleaners Territory Control activity",
+            "Take 3 Cleaners control points"
+          ],
           "postUrl": "https://www.youtube.com/post/UgkxEtkUGCcUWceKyXq45_k5mQlO-5iFIWKf",
           "seen": "2026-11-05"
         },
         {
           "n": 11,
           "final": true,
-          "steps_zhHant": ["完成三個黑牙陣營的白區（開放世界）活動", "完成任一入侵副本", "完成指定懸賞"],
-          "steps_en": ["Complete three Black Tusk open-world activities", "Complete any Incursion", "Complete the listed bounty"],
+          "steps_zhHant": [
+            "完成三個黑牙陣營的白區（開放世界）活動",
+            "完成任一入侵副本",
+            "完成指定懸賞"
+          ],
+          "steps_en": [
+            "Complete three Black Tusk open-world activities",
+            "Complete any Incursion",
+            "Complete the listed bounty"
+          ],
           "result_zhHant": "全部獵捕完成後，即可解鎖本季位於華盛頓機場的獵捕終章任務。",
           "result_en": "With every manhunt done, this season's final manhunt mission at the Washington airport unlocks.",
           "postUrl": "https://www.youtube.com/post/UgkxhzKhVaqhYfb3vmxKqYtBJ4a-Xho4Jfel",
@@ -133,12 +221,36 @@
       "text_zhHant": "到 Ubisoft 兌換網站輸入即可領取外觀。10 月的創作者臂章與帽子西裝碼較新；8–9 月的 gamescom 臂章和中央公園彩蛋背包碼可能已過期。背包到手後記得掃一下上面的 QR 碼。",
       "text_en": "Enter these on Ubisoft's redeem site for free cosmetics. October's creator armbands and hats-and-suits code are the newest; the August–September gamescom armband and Central Park backpack codes may have expired. Scan the QR code on the backpack once you have it.",
       "codes": [
-        { "label": "SOLIDFPS armband", "code": "SLD-FPS-4QT-Z8N" },
-        { "label": "widdz armband", "code": "WID-DZX-7QK-9RM" },
-        { "label": "IamPurePrime armband", "code": "PPR-IME-4T8-ZQ9" },
-        { "label": "Hats & suits", "code": "F8H-CEN-7W5-PRK" },
-        { "label": "gamescom 2026 armband", "code": "TD2-GMZ-C26-BKP" },
-        { "label": "Central Park backpack", "code": "PPR-X29-3JU-RTE" }
+        {
+          "label": "SOLIDFPS armband",
+          "code": "SLD-FPS-4QT-Z8N",
+          "label_zhHant": "SOLIDFPS 臂章"
+        },
+        {
+          "label": "widdz armband",
+          "code": "WID-DZX-7QK-9RM",
+          "label_zhHant": "widdz 臂章"
+        },
+        {
+          "label": "IamPurePrime armband",
+          "code": "PPR-IME-4T8-ZQ9",
+          "label_zhHant": "IamPurePrime 臂章"
+        },
+        {
+          "label": "Hats & suits",
+          "code": "F8H-CEN-7W5-PRK",
+          "label_zhHant": "帽子與西裝"
+        },
+        {
+          "label": "gamescom 2026 armband",
+          "code": "TD2-GMZ-C26-BKP",
+          "label_zhHant": "gamescom 2026 臂章"
+        },
+        {
+          "label": "Central Park backpack",
+          "code": "PPR-X29-3JU-RTE",
+          "label_zhHant": "中央公園背包"
+        }
       ],
       "publishedAt": "2026-10-21",
       "link": "https://redeem.ubisoft.com/thedivision2",

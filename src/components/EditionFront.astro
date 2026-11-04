@@ -6,7 +6,7 @@ import Photo from './Photo.astro';
 import { CATEGORIES, type Category } from '../schema/item.ts';
 import { t, type Locale, type UiKey } from '../i18n/index.ts';
 import type { Edition } from '../schema/item.ts';
-import { byImportance, localized } from '../lib/editions.ts';
+import { byImportance, localized, readableIn } from '../lib/editions.ts';
 import { routes } from '../lib/routes.ts';
 import VideoFacade from './VideoFacade.astro';
 import LiveNow from './LiveNow.astro';
@@ -14,7 +14,7 @@ import BackPage from './BackPage.astro';
 import ExoticIntel from './ExoticIntel.astro';
 import GuidePicks from './GuidePicks.astro';
 import { agentOfTheDay, humourLevel } from '../lib/humour.ts';
-import { videoOfTheDay, videos } from '../lib/videos.ts';
+import { videoOfTheDay, videosFor } from '../lib/videos.ts';
 import { bannerFor, imageFor } from '../lib/images.ts';
 
 interface Props {
@@ -22,7 +22,7 @@ interface Props {
   edition: Edition;
 }
 const { locale, edition } = Astro.props;
-const items = [...edition.items].sort(byImportance);
+const items = edition.items.filter((i) => readableIn(i, locale)).sort(byImportance);
 
 const [lead, ...rest] = items;
 const secondary = rest.slice(0, 3);
@@ -41,8 +41,8 @@ const used = new Set(items.flatMap((i) => (i.imageId ? [i.imageId] : [])));
 const banners = new Map(SECTION_ORDER.map((c) => [c, bannerFor(c, used)]));
 const photos = new Map(items.map((i) => [i.id, imageFor(i, used)]));
 const leadPhoto = photos.get(lead!.id);
-const vod = videoOfTheDay();
-const moreVideos = videos.filter((v) => v.id !== vod?.id).slice(0, 2);
+const vod = videoOfTheDay(locale);
+const moreVideos = videosFor(locale).filter((v) => v.id !== vod?.id).slice(0, 2);
 ---
   {edition.fixture && <p class="fixture-note hud-label">{t(locale, 'edition.fixture')}</p>}
 

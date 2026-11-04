@@ -20,6 +20,7 @@ const sizes =
     : variant === 'lead'
       ? '(min-width: 1024px) 840px, 100vw'
       : '(min-width: 1280px) 1232px, (min-width: 768px) 100vw, 200px';
+import { sourceZh } from '../lib/zh.ts';
 ---
 <figure class:list={['photo', variant]}>
   <div class="frame">
@@ -38,7 +39,7 @@ const sizes =
   </div>
   <figcaption>
     {filePhoto && <span class="file">{t(locale, 'photo.file')}</span>}
-    <span>{t(locale, 'photo.credit')}: <a href={image.attributionUrl} rel="noopener noreferrer" target="_blank">{image.attribution} ↗</a></span>
+    <span>{t(locale, 'photo.credit')}: <a href={image.attributionUrl} rel="noopener noreferrer" target="_blank">{locale === 'en' ? image.attribution : sourceZh(image.attribution)} ↗</a></span>
   </figcaption>
 </figure>
 

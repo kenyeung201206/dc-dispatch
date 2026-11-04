@@ -4,6 +4,7 @@ import { formatDate, LOCALES, t, type Locale } from '../../i18n/index.ts';
 import { findItem } from '../../lib/editions.ts';
 import { patches } from '../../lib/patches.ts';
 import { routes } from '../../lib/routes.ts';
+import { patchZh } from '../../lib/zh.ts';
 
 export function getStaticPaths() {
   return LOCALES.map((lang) => ({ params: { lang } }));
@@ -20,13 +21,18 @@ const locale = Astro.params.lang as Locale;
     {
       patches.map((p) => {
         const story = p.itemId ? findItem(p.itemId) : undefined;
+        // Chinese pages: our translations, else nothing in English (stats and links still show).
+        const zhp = locale === 'en' ? null : patchZh(p);
+        const title = zhp ? zhp.title : p.title;
+        const sections = zhp ? (zhp.sections ?? []) : p.sections;
+        const changes = zhp ? (zhp.changes ? p.changes.map((c, i) => ({ ...c, text: zhp.changes![i]! })) : []) : p.changes;
         return (
           <li class="patch" id={`tu-${p.version.toLowerCase().replaceAll('.', '-')}`}>
             <div class="badge" aria-hidden="true">{p.version}</div>
             <div class="body">
               <h2>
                 <span class="ver">TU {p.version}</span>
-                <span class="title" lang="en">{p.title}</span>
+                {title && <span class="title" lang={zhp ? undefined : 'en'}>{title}</span>}
               </h2>
               <p class="hud-label when"><time datetime={p.publishedAt}>{formatDate(p.publishedAt, locale)}</time></p>
 
@@ -36,26 +42,26 @@ const locale = Astro.params.lang as Locale;
                 <div><dt>{t(locale, 'patches.changes')}</dt><dd>{p.changes.length}</dd></div>
               </dl>
 
-              {p.sections.length > 0 && (
+              {sections.length > 0 && (
                 <>
                   <h3 class="hud-label">{t(locale, 'patches.sections')}</h3>
-                  <ul class="secs" lang="en">
-                    {p.sections.map((s) => <li>{s}</li>)}
+                  <ul class="secs" lang={zhp ? undefined : 'en'}>
+                    {sections.map((s) => <li>{s}</li>)}
                   </ul>
                 </>
               )}
 
-              {p.changes.length > 0 && (
+              {changes.length > 0 && (
                 <table class="diff">
                   <caption class="hud-label">{t(locale, 'patches.changes')}</caption>
                   <tbody>
-                    {p.changes.map((c) => (
+                    {changes.map((c) => (
                       <tr class={c.direction}>
                         <th scope="row">
                           <span aria-hidden="true">{c.direction === 'up' ? '▲' : '▼'}</span>
                           <span class="visually-hidden">{t(locale, c.direction === 'up' ? 'patches.up' : 'patches.down')}</span>
                         </th>
-                        <td lang="en">“{c.text}”</td>
+                        <td lang={zhp ? undefined : 'en'}>{zhp ? c.text : `“${c.text}”`}</td>
                       </tr>
                     ))}
                   </tbody>

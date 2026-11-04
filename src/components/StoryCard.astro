@@ -3,6 +3,7 @@ import Stamp from './Stamp.astro';
 import Photo from './Photo.astro';
 import { formatDate, t, type Locale } from '../i18n/index.ts';
 import { localized } from '../lib/editions.ts';
+import { sourceZh } from '../lib/zh.ts';
 import type { PlacedImage } from '../lib/images.ts';
 import { routes } from '../lib/routes.ts';
 import type { Item } from '../schema/item.ts';
@@ -16,8 +17,12 @@ interface Props {
 const { locale, item, variant = 'standard', photo } = Astro.props;
 const headline = localized(item, 'headline', locale);
 const summary = localized(item, 'summary', locale);
-const why = item.whyItMatters_en ? localized(item, 'whyItMatters', locale) : null;
-const showOriginal = locale !== item.lang_orig.slice(0, 2);
+const whyRaw = item.whyItMatters_en ? localized(item, 'whyItMatters', locale) : null;
+// Chinese pages never show English: drop untranslated extras and the English original title.
+const why = whyRaw && !(locale !== 'en' && whyRaw.pending) ? whyRaw : null;
+const showOriginal = locale !== item.lang_orig.slice(0, 2) && locale === 'en';
+const kind = (locale !== 'en' && item.summaryKind_zhHant) || item.summaryKind;
+const src = (name: string) => (locale === 'en' ? name : sourceZh(name));
 const H = variant === 'lead' ? 'h2' : 'h3';
 const day = new Intl.DateTimeFormat(locale === 'en' ? 'en' : 'zh-Hant-TW', {
   timeZone: 'Asia/Tokyo',
@@ -46,9 +51,9 @@ const day = new Intl.DateTimeFormat(locale === 'en' ? 'en' : 'zh-Hant-TW', {
   {headline.pending && <p class="pending">{t(locale, 'translation.pending')}</p>}
   {variant !== 'brief' && item.confidence === 'rumour' && <p class="declass hud-label">{t(locale, 'story.declassify')}</p>}
   {variant !== 'brief' && (
-    <p class:list={['summary', variant === 'lead' && item.summaryKind !== 'extract' && 'dropcap', item.summaryKind === 'extract' && 'quote']} lang={summary.pending ? summary.lang : undefined} tabindex={item.confidence === 'rumour' ? 0 : undefined}>
-      {item.summaryKind === 'extract' ? `“${summary.text}”` : summary.text}
-      {item.summaryKind === 'extract' && <span class="attrib"> — {item.sourceName}</span>}
+    <p class:list={['summary', variant === 'lead' && kind !== 'extract' && 'dropcap', kind === 'extract' && 'quote']} lang={summary.pending ? summary.lang : undefined} tabindex={item.confidence === 'rumour' ? 0 : undefined}>
+      {kind === 'extract' ? `“${summary.text}”` : summary.text}
+      {kind === 'extract' && <span class="attrib"> — {src(item.sourceName)}</span>}
     </p>
   )}
   {why && variant !== 'brief' && (
@@ -62,11 +67,11 @@ const day = new Intl.DateTimeFormat(locale === 'en' ? 'en' : 'zh-Hant-TW', {
     </p>
   )}
   <p class="source">
-    {t(locale, 'story.source')}: <a href={item.sourceUrl} rel="noopener noreferrer" target="_blank">{item.sourceName}</a>
+    {t(locale, 'story.source')}: <a href={item.sourceUrl} rel="noopener noreferrer" target="_blank">{src(item.sourceName)}</a>
     {item.alsoReportedBy.map((s) => (
       <>
         {' · '}
-        <a href={s.url} rel="noopener noreferrer" target="_blank">{s.name}</a>
+        <a href={s.url} rel="noopener noreferrer" target="_blank">{src(s.name)}</a>
       </>
     ))}
   </p>

@@ -27,9 +27,9 @@ const season = edition.meta ? (locale === 'en' ? edition.meta.season_en : editio
   <div class="title">
     <p class="title-name">
       <button type="button" class="hex-btn" data-hex aria-label={t(locale, 'egg.scan')}><Hex size={52} /></button>
-      <span>The DC Dispatch</span>
+      <span>{locale === 'en' ? 'The DC Dispatch' : '華盛頓每日快報'}</span>
     </p>
-    <p class="zhname" lang="zh-Hant-TW">華盛頓每日快報</p>
+    {locale === 'en' && <p class="zhname" lang="zh-Hant-TW">華盛頓每日快報</p>}
     <p class="tag">“{t(locale, 'site.tagline')}”</p>
     <span class="corner tl" aria-hidden="true"></span><span class="corner br" aria-hidden="true"></span>
   </div>

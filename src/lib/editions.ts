@@ -1,6 +1,7 @@
 import { EditionSchema, type Edition, type Item } from '../schema/item.ts';
 import type { Locale } from '../i18n/index.ts';
 import { getImage } from './images.ts';
+import { hasZh, withZh } from './zh.ts';
 
 const files = import.meta.glob<{ default: unknown }>('../../data/editions/*.json', { eager: true });
 
@@ -10,7 +11,8 @@ export const editions: Edition[] = Object.entries(files)
     const parsed = EditionSchema.safeParse(mod.default);
     if (!parsed.success) throw new Error(`Invalid edition ${path}: ${parsed.error.message}`);
     for (const item of parsed.data.items) if (item.imageId) getImage(item.imageId); // fails on a bad id
-    return parsed.data;
+    // Editor translations fill English-only stories for Chinese readers.
+    return { ...parsed.data, items: parsed.data.items.map(withZh) };
   })
   .sort((a, b) => b.date.localeCompare(a.date));
 
@@ -35,15 +37,18 @@ export const allItems: ArchivedItem[] = (() => {
   return [...seen.values()].sort(byNewest);
 })();
 
+/** Chinese pages show only stories that have Chinese (never an English fallback). */
+export const readableIn = (item: Item, locale: Locale) => locale === 'en' || hasZh(item);
+
 export function findItem(id: string): ArchivedItem | undefined {
   return allItems.find((i) => i.id === id);
 }
 
 /** Linked stories first, then same-category stories with shared tags. */
-export function relatedItems(item: Item, max = 4): ArchivedItem[] {
-  const linked = item.relatedIds.map(findItem).filter((i): i is ArchivedItem => !!i);
+export function relatedItems(item: Item, locale: Locale, max = 4): ArchivedItem[] {
+  const linked = item.relatedIds.map(findItem).filter((i): i is ArchivedItem => !!i && readableIn(i, locale));
   const similar = allItems.filter(
-    (o) => o.id !== item.id && !item.relatedIds.includes(o.id) && o.category === item.category,
+    (o) => o.id !== item.id && !item.relatedIds.includes(o.id) && o.category === item.category && readableIn(o, locale),
   );
   return [...linked, ...similar].slice(0, max);
 }

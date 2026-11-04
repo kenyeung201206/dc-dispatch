@@ -6,7 +6,7 @@ import ExoticIntel from '../../../components/ExoticIntel.astro';
 import GuidePicks from '../../../components/GuidePicks.astro';
 import { CATEGORIES, type Category } from '../../../schema/item.ts';
 import { LOCALES, t, tf, type Locale, type UiKey } from '../../../i18n/index.ts';
-import { allItems } from '../../../lib/editions.ts';
+import { allItems, readableIn } from '../../../lib/editions.ts';
 import { bannerFor, imageFor } from '../../../lib/images.ts';
 import { routes } from '../../../lib/routes.ts';
 
@@ -18,7 +18,7 @@ export function getStaticPaths() {
 const locale = Astro.params.lang as Locale;
 const category = Astro.params.category as Category;
 const isBoard = category === 'glitch-watch';
-const items = allItems.filter((i) => i.category === category);
+const items = allItems.filter((i) => i.category === category && readableIn(i, locale));
 const used = new Set(items.flatMap((i) => (i.imageId ? [i.imageId] : [])));
 const banner = bannerFor(category, used);
 const photos = new Map(items.map((i) => [i.id, imageFor(i, used)]));

@@ -67,6 +67,15 @@ describe('dedupe, classify, score', () => {
     expect(tu.primary.sourceId).toBe('ubisoft-en');
     expect(tu.others.some((o) => o.sourceId === 'steam-news')).toBe(true);
   });
+  it('Steam and Ubisoft notes for the same title update are one story even with different titles', () => {
+    const base = steam[0]!;
+    const a = { ...base, externalId: 'a', url: 'https://store.steampowered.com/news/app/1/view/1', title: '[TUY8S3.3] Echoes of Central Park Launch, Crossplay Rollout & More' };
+    const b = { ...base, externalId: 'b', sourceId: 'ubisoft-en' as const, url: 'https://www.ubisoft.com/x', title: '[TUY8S3.3] Crossplay Rollout, Conflict Improvements & More' };
+    const c = { ...base, externalId: 'c', url: 'https://store.steampowered.com/news/app/1/view/2', title: '[TUY8S3.2] Red Moon Unleashed & More' };
+    const stories = dedupe([a, b, c]);
+    expect(stories).toHaveLength(2);
+    expect(stories.find((s) => s.primary.externalId === 'b')!.others.map((o) => o.externalId)).toEqual(['a']);
+  });
   it('canonical URLs ignore query and hash', () => {
     expect(canonicalUrl('https://WWW.ubisoft.com/a/?utm_source=x&fbclid=1#y')).toBe('https://www.ubisoft.com/a');
     expect(canonicalUrl('https://forum.gamer.com.tw/C.php?snA=2&bsn=24460&tnum=3')).toBe('https://forum.gamer.com.tw/C.php?bsn=24460&snA=2');
