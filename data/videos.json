@@ -1,6 +1,19 @@
 {
   "videos": [
     {
+      "id": "6RnDzxOAu00",
+      "title": "Up To 2,000% Weapon Damage! How To Get These New MUST-HAVE Exotic Gloves | The Division 2",
+      "channelName": "The Gaming Brigade",
+      "channelUrl": "https://www.youtube.com/channel/UCnqbdVhRhYh5KQpDtKz8ksg",
+      "publishedAt": "2026-11-04T16:16:14.000Z",
+      "durationSec": 504,
+      "official": false,
+      "row": "intel",
+      "checkedAt": "2026-11-04T16:52:21.364Z",
+      "via": "youtube-search",
+      "rumour": false
+    },
+    {
       "id": "n9osKC74Law",
       "title": "BOBBY GUZMAN Mastermission & garantierte EXO-Handschuhe! | The Division 2 Deutsch",
       "channelName": "Charles",
@@ -9,8 +22,21 @@
       "durationSec": 2107,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-04T16:12:57.055Z",
+      "checkedAt": "2026-11-04T16:52:21.364Z",
       "via": "youtube-search",
+      "rumour": false
+    },
+    {
+      "id": "WLJDVHJG-X0",
+      "title": "*DO THIS NOW & MAX OUT* The Division 2: BEST XP FARM RIGHT NOW Giving 100 SHD Levels EVERY HOUR...",
+      "channelName": "Kamikazevondoom",
+      "channelUrl": "https://www.youtube.com/channel/UCWd5S9-AEf26j0wY3P8TOhw",
+      "publishedAt": "2026-11-04T15:45:09.000Z",
+      "durationSec": 1683,
+      "official": false,
+      "row": "more",
+      "checkedAt": "2026-11-04T16:52:21.364Z",
+      "via": "youtube-api",
       "rumour": false
     },
     {
@@ -22,7 +48,7 @@
       "durationSec": 904,
       "official": false,
       "row": "intel",
-      "checkedAt": "2026-11-04T16:12:57.055Z",
+      "checkedAt": "2026-11-04T16:52:21.364Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -35,7 +61,7 @@
       "durationSec": 685,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-04T16:12:57.055Z",
+      "checkedAt": "2026-11-04T16:52:21.364Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -48,7 +74,7 @@
       "durationSec": 1054,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-04T16:12:57.055Z",
+      "checkedAt": "2026-11-04T16:52:21.364Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -58,22 +84,23 @@
       "channelName": "edmundwcho",
       "channelUrl": "https://www.youtube.com/channel/UCXE6qS_mSLtkF2LEWTUVg1w",
       "publishedAt": "2026-11-04T14:39:02.000Z",
+      "durationSec": 6728,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-04T16:12:57.055Z",
+      "checkedAt": "2026-11-04T16:52:21.364Z",
       "via": "youtube-search",
       "rumour": false
     },
     {
       "id": "OogcFXOuTr4",
-      "title": "全境封鎖2 獵捕 華盛頓國際機場：伯比•古茲曼  精通 ",
+      "title": "Tom Clancy's The Division 2_20261104220516",
       "channelName": "小豬玩遊戲",
       "channelUrl": "https://www.youtube.com/channel/UCO6st1aohdGkPYJw2lS-tjA",
       "publishedAt": "2026-11-04T14:18:48.000Z",
       "durationSec": 2024,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-04T16:12:57.055Z",
+      "checkedAt": "2026-11-04T16:52:21.364Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -85,7 +112,7 @@
       "publishedAt": "2026-11-04T13:58:13.000Z",
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-04T16:12:57.055Z",
+      "checkedAt": "2026-11-04T16:52:21.364Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -98,7 +125,7 @@
       "durationSec": 486,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-04T16:12:57.055Z",
+      "checkedAt": "2026-11-04T16:52:21.364Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -111,7 +138,7 @@
       "durationSec": 106,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-04T16:12:57.055Z",
+      "checkedAt": "2026-11-04T16:52:21.364Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -124,7 +151,7 @@
       "durationSec": 1342,
       "official": false,
       "row": "build-guides",
-      "checkedAt": "2026-11-04T16:12:57.055Z",
+      "checkedAt": "2026-11-04T16:52:21.364Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -137,7 +164,7 @@
       "durationSec": 3582,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-04T16:12:57.055Z",
+      "checkedAt": "2026-11-04T16:52:21.364Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -150,7 +177,7 @@
       "durationSec": 71,
       "official": false,
       "row": "build-guides",
-      "checkedAt": "2026-11-04T16:12:57.055Z",
+      "checkedAt": "2026-11-04T16:52:21.364Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -163,7 +190,7 @@
       "durationSec": 5512,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-04T16:12:57.055Z",
+      "checkedAt": "2026-11-04T16:52:21.364Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -176,7 +203,7 @@
       "durationSec": 1480,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-04T16:12:57.055Z",
+      "checkedAt": "2026-11-04T16:52:21.364Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -189,7 +216,7 @@
       "durationSec": 12485,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-04T16:12:57.055Z",
+      "checkedAt": "2026-11-04T16:52:21.364Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -199,10 +226,10 @@
       "channelName": "果子貍",
       "channelUrl": "https://www.youtube.com/channel/UChNckLwB1-m-tqRWPwckBLA",
       "publishedAt": "2026-11-04T10:40:02.000Z",
-      "durationSec": 15946,
+      "durationSec": 15939,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-04T16:12:57.055Z",
+      "checkedAt": "2026-11-04T16:52:21.364Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -215,7 +242,7 @@
       "durationSec": 345,
       "official": false,
       "row": "intel",
-      "checkedAt": "2026-11-04T16:12:57.055Z",
+      "checkedAt": "2026-11-04T16:52:21.364Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -228,7 +255,7 @@
       "durationSec": 1355,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-04T16:12:57.055Z",
+      "checkedAt": "2026-11-04T16:52:21.364Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -241,7 +268,7 @@
       "durationSec": 207,
       "official": false,
       "row": "intel",
-      "checkedAt": "2026-11-04T16:12:57.055Z",
+      "checkedAt": "2026-11-04T16:52:21.364Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -254,7 +281,7 @@
       "durationSec": 552,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-04T16:12:57.055Z",
+      "checkedAt": "2026-11-04T16:52:21.364Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -267,7 +294,7 @@
       "durationSec": 1945,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-04T16:12:57.055Z",
+      "checkedAt": "2026-11-04T16:52:21.364Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -280,7 +307,7 @@
       "durationSec": 16264,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-04T16:12:57.055Z",
+      "checkedAt": "2026-11-04T16:52:21.364Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -306,7 +333,7 @@
       "durationSec": 1867,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-04T16:12:57.055Z",
+      "checkedAt": "2026-11-04T16:52:21.364Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -319,7 +346,7 @@
       "durationSec": 162,
       "official": false,
       "row": "intel",
-      "checkedAt": "2026-11-04T16:12:57.055Z",
+      "checkedAt": "2026-11-04T16:52:21.364Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -332,7 +359,7 @@
       "durationSec": 1017,
       "official": false,
       "row": "build-guides",
-      "checkedAt": "2026-11-04T16:12:57.055Z",
+      "checkedAt": "2026-11-04T16:52:21.364Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -345,7 +372,7 @@
       "durationSec": 1860,
       "official": false,
       "row": "intel",
-      "checkedAt": "2026-11-04T16:12:57.055Z",
+      "checkedAt": "2026-11-04T16:52:21.364Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -358,7 +385,7 @@
       "durationSec": 920,
       "official": false,
       "row": "build-guides",
-      "checkedAt": "2026-11-04T16:12:57.055Z",
+      "checkedAt": "2026-11-04T16:52:21.364Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -371,7 +398,7 @@
       "durationSec": 2007,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-04T15:26:58.991Z",
+      "checkedAt": "2026-11-04T16:52:21.364Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -384,7 +411,7 @@
       "durationSec": 593,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-04T16:12:57.055Z",
+      "checkedAt": "2026-11-04T16:52:21.364Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -397,7 +424,7 @@
       "durationSec": 42900,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-04T16:12:57.055Z",
+      "checkedAt": "2026-11-04T16:52:21.364Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -410,34 +437,8 @@
       "durationSec": 10009,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-04T16:12:57.055Z",
+      "checkedAt": "2026-11-04T16:52:21.364Z",
       "via": "youtube-api",
-      "rumour": false
-    },
-    {
-      "id": "OqtZwOAAH-U",
-      "title": "SECRET HUNTER CLUE FOUND?! Central Park Location Guide | The Division 2",
-      "channelName": "GCROCK",
-      "channelUrl": "https://www.youtube.com/channel/UCyRKkittAyXHhjZxqC49cxg",
-      "publishedAt": "2026-11-04T01:41:40.000Z",
-      "durationSec": 289,
-      "official": false,
-      "row": "build-guides",
-      "checkedAt": "2026-11-04T16:12:57.055Z",
-      "via": "youtube-api",
-      "rumour": true
-    },
-    {
-      "id": "33G8KHjysE8",
-      "title": "NEW Master Mission Day 1 Guide! Earn Exotic Gloves! The Division 2",
-      "channelName": "King Macho",
-      "channelUrl": "https://www.youtube.com/channel/UC0RO8Ex_8w1ZYp4VoCz7o5w",
-      "publishedAt": "2026-11-04T00:48:37.000Z",
-      "durationSec": 1415,
-      "official": false,
-      "row": "intel",
-      "checkedAt": "2026-11-04T16:12:57.055Z",
-      "via": "youtube-search",
       "rumour": false
     },
     {
@@ -449,7 +450,7 @@
       "durationSec": 92,
       "official": true,
       "row": "trailers",
-      "checkedAt": "2026-11-04T16:12:57.055Z",
+      "checkedAt": "2026-11-04T16:52:21.364Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -462,7 +463,7 @@
       "durationSec": 7035,
       "official": true,
       "row": "more",
-      "checkedAt": "2026-11-04T16:12:57.055Z",
+      "checkedAt": "2026-11-04T16:52:21.364Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -475,7 +476,7 @@
       "durationSec": 342,
       "official": true,
       "row": "more",
-      "checkedAt": "2026-11-04T16:12:57.055Z",
+      "checkedAt": "2026-11-04T16:52:21.364Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -488,7 +489,7 @@
       "publishedAt": "2026-11-02T13:48:39.000Z",
       "official": true,
       "row": "more",
-      "checkedAt": "2026-11-04T16:12:57.055Z",
+      "checkedAt": "2026-11-04T16:52:21.364Z",
       "via": "ubisoft-page",
       "rumour": false
     },
@@ -501,7 +502,7 @@
       "publishedAt": "2026-10-30T18:16:35.000Z",
       "official": true,
       "row": "trailers",
-      "checkedAt": "2026-11-04T16:12:57.055Z",
+      "checkedAt": "2026-11-04T16:52:21.364Z",
       "via": "ubisoft-page",
       "rumour": false
     },
@@ -514,7 +515,7 @@
       "publishedAt": "2026-10-13T13:30:33.000Z",
       "official": true,
       "row": "trailers",
-      "checkedAt": "2026-11-04T16:12:57.055Z",
+      "checkedAt": "2026-11-04T16:52:21.364Z",
       "via": "ubisoft-page",
       "rumour": false
     }
