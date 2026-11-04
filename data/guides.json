@@ -1,6 +1,19 @@
 {
   "guides": [
     {
+      "id": "yt-qvWu_axVwNE",
+      "kind": "video",
+      "videoId": "qvWu_axVwNE",
+      "url": "https://www.youtube.com/watch?v=qvWu_axVwNE",
+      "title": "中央公園隱藏獵人“無形” 面具獲取攻略",
+      "channelName": "灰帽特工   Gray Hat Agent",
+      "channelUrl": "https://www.youtube.com/channel/UCJ2qGCBwyN8d2l9aoWkyShw",
+      "publishedAt": "2026-11-04T13:13:24.000Z",
+      "until": "2027-01-03",
+      "addedBy": "auto",
+      "checkedAt": "2026-11-04T14:53:41.763Z"
+    },
+    {
       "id": "yt-I2bM6jujjv0",
       "kind": "video",
       "videoId": "I2bM6jujjv0",
@@ -13,7 +26,7 @@
       "summary_en": "Gray Hat Agent maps every location for the hidden \"Murder\" hunter easter egg in Echoes of Central Park, which rewards a mask.",
       "until": "2027-01-03",
       "addedBy": "editor",
-      "checkedAt": "2026-11-04T12:48:38.730Z"
+      "checkedAt": "2026-11-04T14:53:41.763Z"
     },
     {
       "id": "yt-_7KqJPIZLfY",
@@ -28,7 +41,72 @@
       "summary_en": "A full run of the Echoes of Central Park story on the hardest difficulty, handy for checking routes and fights before you play.",
       "until": "2027-01-03",
       "addedBy": "editor",
-      "checkedAt": "2026-11-04T12:48:38.730Z"
+      "checkedAt": "2026-11-04T14:53:41.763Z"
+    },
+    {
+      "id": "yt-hoCIoGRJXOg",
+      "kind": "video",
+      "videoId": "hoCIoGRJXOg",
+      "url": "https://www.youtube.com/watch?v=hoCIoGRJXOg",
+      "title": "Y8S3超夯火坦！極緻藍甲一槍一個 john wick模擬器啓動 2 3",
+      "channelName": "灰帽特工   Gray Hat Agent",
+      "channelUrl": "https://www.youtube.com/channel/UCJ2qGCBwyN8d2l9aoWkyShw",
+      "publishedAt": "2026-10-09T14:06:22.000Z",
+      "until": "2026-12-08",
+      "addedBy": "auto",
+      "checkedAt": "2026-11-04T14:53:41.763Z"
+    },
+    {
+      "id": "yt-Pp8QVpa8ODE",
+      "kind": "video",
+      "videoId": "Pp8QVpa8ODE",
+      "url": "https://www.youtube.com/watch?v=Pp8QVpa8ODE",
+      "title": "憤怒法師 火力 控制全都要！全新META餘燼引擎閃亮登場",
+      "channelName": "灰帽特工   Gray Hat Agent",
+      "channelUrl": "https://www.youtube.com/channel/UCJ2qGCBwyN8d2l9aoWkyShw",
+      "publishedAt": "2026-10-01T23:00:04.000Z",
+      "until": "2026-12-01",
+      "addedBy": "auto",
+      "checkedAt": "2026-11-04T14:53:41.763Z"
+    },
+    {
+      "id": "yt-kF4iHxegXXk",
+      "kind": "video",
+      "videoId": "kF4iHxegXXk",
+      "url": "https://www.youtube.com/watch?v=kF4iHxegXXk",
+      "title": "又見離譜新BUG? 敵人瞬秒 全隊飛升！",
+      "channelName": "灰帽特工   Gray Hat Agent",
+      "channelUrl": "https://www.youtube.com/channel/UCJ2qGCBwyN8d2l9aoWkyShw",
+      "publishedAt": "2026-09-26T12:54:56.000Z",
+      "until": "2026-11-25",
+      "addedBy": "auto",
+      "checkedAt": "2026-11-04T14:53:41.763Z"
+    },
+    {
+      "id": "yt-AFcouOiV0T8",
+      "kind": "video",
+      "videoId": "AFcouOiV0T8",
+      "url": "https://www.youtube.com/watch?v=AFcouOiV0T8",
+      "title": "【字幕】中央公園回響特別直播PART2季中訪談",
+      "channelName": "灰帽特工   Gray Hat Agent",
+      "channelUrl": "https://www.youtube.com/channel/UCJ2qGCBwyN8d2l9aoWkyShw",
+      "publishedAt": "2026-09-24T18:52:45.000Z",
+      "until": "2026-11-24",
+      "addedBy": "auto",
+      "checkedAt": "2026-11-04T14:53:41.763Z"
+    },
+    {
+      "id": "yt-atLoMwB_kfQ",
+      "kind": "video",
+      "videoId": "atLoMwB_kfQ",
+      "url": "https://www.youtube.com/watch?v=atLoMwB_kfQ",
+      "title": "【字幕】初見中央公園DLC 特別直播全程回放 PART1",
+      "channelName": "灰帽特工   Gray Hat Agent",
+      "channelUrl": "https://www.youtube.com/channel/UCJ2qGCBwyN8d2l9aoWkyShw",
+      "publishedAt": "2026-09-24T18:09:07.000Z",
+      "until": "2026-11-24",
+      "addedBy": "auto",
+      "checkedAt": "2026-11-04T14:53:41.763Z"
     }
   ]
 }
