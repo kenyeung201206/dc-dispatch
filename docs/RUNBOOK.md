@@ -1,0 +1,39 @@
+# Runbook
+
+## Daily refresh
+`pnpm run refresh` fetches the sources, builds `data/editions/<Tokyo date>.json` and updates `data/images.json`.
+Scheduled at 06:00 Asia/Tokyo by GitHub Actions (Phase 7). Safe to re-run: the same day's file is rebuilt.
+
+`pnpm run refresh:dry` does the same from recorded fixtures (`tests/fixtures/sources/`), with no network, and writes to `.dry-run/`. CI runs it on every push.
+
+Pipeline steps (`pipeline/`):
+1. **Fetch:** `http.ts`. Allowlisted HTTPS hosts only, 20 s timeout, 2 retries with backoff, ETag/Last-Modified cache in `data/cache/http/`.
+2. **Parse:** `sources/steam.ts` (Steam News API JSON) and `sources/ubisoft.ts` (the `__PRELOADED_STATE__` JSON on Ubisoft news pages, EN + zh-TW).
+3. **Dedupe:** `dedupe.ts`. Same canonical URL, or ≥ 70% title overlap within 3 days. The Ubisoft copy wins and other copies are listed as "also reported by".
+4. **Classify and score:** `classify.ts`, `score.ts`. Rules and weights are in `config.ts`.
+5. **Summarise:** `summarize.ts`. Without an AI key, the summary is a ≤ 25-word quote, shown in quotation marks with the source name. Chinese comes only from Ubisoft's official zh-TW article; otherwise it shows "翻譯待補". Known issues in patch notes become Glitch Watch items.
+6. **Assemble:** `edition.ts`. Applies `data/overrides.json`. Keeps yesterday's items for a source that failed. Keeps active glitches for 60 days, marks updated stories, uses a 21-day window, and refuses to publish an empty edition.
+
+## When a source breaks
+- The log shows `"source failed"` or `"no items parsed (layout change?)"`. The edition still publishes with yesterday's items for that source, and `sources[].ok=false`.
+- **Ubisoft:** check that the page still contains `window.__PRELOADED_STATE__` and that articles still have `id/title/date/button`. Fix `sources/ubisoft.ts`, then re-record the fixture with the real page.
+- **Steam:** the API is stable. Check app id `2221490` and the `feedname` for official posts.
+
+## Editor overrides (`data/overrides.json`)
+Hand-written fixes keyed by item id. Ids are printed in the edition JSON and stay stable, because they're a hash of the source URL. You can set `headline_zhHant`, `summary_zhHant`, `whyItMatters_*`, `summary_en` + `summaryKind: "original"`, `riskNote_zhHant`, `banRisk`, `category`, or `hide: true`.
+Use this for Chinese until `ANTHROPIC_API_KEY` is added, and to correct a misfiled or wrong story.
+
+## Adding a source
+1. Add it to `SOURCES` in `pipeline/config.ts`, and its host to `ALLOWED_HOSTS`.
+2. Write `pipeline/sources/<name>.ts` returning `RawItem[]`. Validate the input with Zod and never `eval`.
+3. Record a fixture in `tests/fixtures/sources/`, add a parser test, and register the source in `PARSERS` / `FIXTURES` in `refresh.ts`.
+4. Record it in `docs/SOURCES.md`, including its terms of service.
+
+## New season / title update
+Update `SEASON` in `pipeline/config.ts`. The TU label is detected automatically from patch-note titles.
+
+## Glossary
+Edit `data/glossary.json`. Only set `verified: true` with an official Ubisoft zh-TW link (a test enforces this).
+
+## Keys
+Names are in `.env.example`. None are needed for Phase 3. Rotate a key by replacing it in your `.env` and in GitHub Actions secrets; never commit it.

@@ -76,6 +76,10 @@ export const ItemSchema = z
     headline_zhHant: Localized,
     summary_en: z.string().min(1),
     summary_zhHant: Localized,
+    /** "extract" = short quote from the source (≤ 25 words), shown in quotation marks. */
+    summaryKind: z.enum(['original', 'extract']).default('original'),
+    /** Other outlets carrying the same story ("Reported by N sources"). */
+    alsoReportedBy: z.array(z.object({ name: z.string().min(1), url: httpsUrl })).default([]),
     whyItMatters_en: z.string().optional(),
     whyItMatters_zhHant: Localized.optional(),
     media: z.array(MediaSchema).default([]),

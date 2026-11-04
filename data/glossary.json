@@ -1,0 +1,20 @@
+{
+  "_note": "Official Traditional Chinese (Taiwan) terms. verified=true only with an official Ubisoft zh-TW source. Used by summaries/translation; unverified terms must not be presented as official.",
+  "terms": [
+    { "en": "Tom Clancy's The Division 2", "zhHant": "全境封鎖 2", "verified": true, "source": "https://www.ubisoft.com/zh-tw/game/the-division/the-division-2/news-updates" },
+    { "en": "Agent", "zhHant": "特工", "verified": true, "source": "https://www.ubisoft.com/zh-tw/game/the-division/the-division-2/news-updates/3Eqa62fOd4sDI1hqjSVdI2" },
+    { "en": "Dark Zone", "zhHant": "暗區", "verified": true, "source": "https://www.ubisoft.com/zh-tw/game/the-division/the-division-2/news-updates/4nt1X6YmHKWn2FxfrbuHx1/" },
+    { "en": "Strategic Homeland Division (SHD)", "zhHant": "國土戰略局", "verified": true, "source": "https://www.ubisoft.com/zh-tw/game/the-division/the-division-2/news-updates/4nt1X6YmHKWn2FxfrbuHx1/" },
+    { "en": "Rogue (status)", "zhHant": "叛變", "verified": true, "source": "https://www.ubisoft.com/zh-tw/game/the-division/the-division-2/news-updates/4nt1X6YmHKWn2FxfrbuHx1/" },
+    { "en": "Disavowed", "zhHant": "毀誓", "verified": true, "source": "https://www.ubisoft.com/zh-tw/game/the-division/the-division-2/news-updates/4nt1X6YmHKWn2FxfrbuHx1/" },
+    { "en": "Manhunt (Rogue status)", "zhHant": "獵捕", "verified": true, "source": "https://www.ubisoft.com/zh-tw/game/the-division/the-division-2/news-updates/4nt1X6YmHKWn2FxfrbuHx1/" },
+    { "en": "Echoes of Central Park", "zhHant": "中央公園的迴響", "verified": true, "source": "https://www.ubisoft.com/zh-tw/game/the-division/the-division-2/news-updates/5EEgwKS6kDqyvUFo5PJYsB/2-twitch" },
+    { "en": "Red Moon Unleashed (event)", "zhHant": "血月高照", "verified": true, "source": "https://www.ubisoft.com/zh-tw/game/the-division/the-division-2/news-updates/VLVLB9xFr5sLxAtZSVM6J/2-twitch" },
+    { "en": "Twitch Drops", "zhHant": "Twitch 掉寶", "verified": true, "source": "https://www.ubisoft.com/zh-tw/game/the-division/the-division-2/news-updates/VLVLB9xFr5sLxAtZSVM6J/2-twitch" },
+    { "en": "Expertise", "zhHant": "裝備專精", "verified": true, "source": "https://www.ubisoft.com/zh-tw/game/the-division/the-division-2/news-updates/21eVYKAAC5FS0WzeNSOpAE/15" },
+    { "en": "Exotic", "zhHant": "特異", "verified": false, "source": null },
+    { "en": "Warlords of New York", "zhHant": "紐約軍閥", "verified": false, "source": null },
+    { "en": "Conflict (PvP mode)", "zhHant": "衝突", "verified": false, "source": null },
+    { "en": "Red Horizon (season)", "zhHant": "Red Horizon", "verified": false, "source": null, "note": "No official Chinese name found; keep English." }
+  ]
+}

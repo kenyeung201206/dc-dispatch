@@ -1,329 +1,401 @@
 {
   "images": [
     {
-      "id": "ubi-echoes-keyart",
       "kind": "image",
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/513QsYLTZSMeeGM9tfPzmY/6efcdc37a37799519bcbdf432c3faa24/TD2_EchoesofCentralPark_Keyart.jpg?w=1600",
+      "alt_en": "Echoes of Central Park key art: agents in a dark, overgrown Central Park",
+      "alt_zhHant": "《中央公園的迴響》主視覺：特工身處陰暗荒蕪的中央公園",
+      "license": "Official promotional image © Ubisoft Entertainment. Shown unmodified, with credit, on a private non-commercial site.",
+      "attribution": "Ubisoft",
+      "attributionUrl": "https://www.ubisoft.com/en-us/game/the-division/the-division-2/news-updates/4yCTNp7RZ1Fdm1kMKYgndg/the-division-2-echoes-of-central-park-dlc-is-available-now",
+      "aiGenerated": false,
+      "id": "ubi-echoes-keyart",
       "width": 1600,
       "height": 900,
       "urlSmall": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/513QsYLTZSMeeGM9tfPzmY/6efcdc37a37799519bcbdf432c3faa24/TD2_EchoesofCentralPark_Keyart.jpg?w=640",
       "widthSmall": 640,
-      "alt_en": "Echoes of Central Park key art: agents in a dark, overgrown Central Park",
-      "alt_zhHant": "《中央公園的迴響》主視覺：特工身處陰暗荒蕪的中央公園",
       "tags": [
         "central-park",
         "keyart"
-      ],
-      "license": "Official promotional image © Ubisoft Entertainment. Shown unmodified, with credit, on a private non-commercial site.",
-      "attribution": "Ubisoft",
-      "attributionUrl": "https://www.ubisoft.com/en-us/game/the-division/the-division-2/news-updates/4yCTNp7RZ1Fdm1kMKYgndg/the-division-2-echoes-of-central-park-dlc-is-available-now",
-      "aiGenerated": false
+      ]
     },
     {
-      "id": "ubi-tu-y8s3-3",
       "kind": "image",
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/6DVtaPhnGzFQzWfSWkS5IS/98ed230091e7e0d2bacbca7f768261d2/TU_Y8S3.3.jpg?w=1600",
+      "alt_en": "Official Title Update Y8S3.3 banner",
+      "alt_zhHant": "官方第 Y8S3.3 號遊戲更新橫幅",
+      "license": "Official promotional image © Ubisoft Entertainment. Shown unmodified, with credit, on a private non-commercial site.",
+      "attribution": "Ubisoft",
+      "attributionUrl": "https://www.ubisoft.com/en-us/game/the-division/the-division-2/news-updates/7L8TlD1Hv0XC1prOD8mdte/tuy8s33-crossplay-rollout-conflict-improvements-more",
+      "aiGenerated": false,
+      "id": "ubi-tu-y8s3-3",
       "width": 1600,
       "height": 900,
       "urlSmall": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/6DVtaPhnGzFQzWfSWkS5IS/98ed230091e7e0d2bacbca7f768261d2/TU_Y8S3.3.jpg?w=640",
       "widthSmall": 640,
-      "alt_en": "Official Title Update Y8S3.3 banner",
-      "alt_zhHant": "官方第 Y8S3.3 號遊戲更新橫幅",
       "tags": [
         "banner",
         "title-update"
-      ],
-      "license": "Official promotional image © Ubisoft Entertainment. Shown unmodified, with credit, on a private non-commercial site.",
-      "attribution": "Ubisoft",
-      "attributionUrl": "https://www.ubisoft.com/en-us/game/the-division/the-division-2/news-updates/7L8TlD1Hv0XC1prOD8mdte/tuy8s33-crossplay-rollout-conflict-improvements-more",
-      "aiGenerated": false
+      ]
     },
     {
-      "id": "ubi-red-moon",
       "kind": "image",
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/1p72lI7Ulak6A0YUgJCD2g/85ff62d4b60266135f69af560fe173d7/-TD2-_News_-_-TUY8S3.2-_Red_Moon-Red_Moon_Unleashed_Event_Thumbnail.jpg?w=1600",
+      "alt_en": "Red Moon Unleashed event art: masked enemies under a red moon",
+      "alt_zhHant": "「血月高照」活動主視覺：血月下的面具敵人",
+      "license": "Official promotional image © Ubisoft Entertainment. Shown unmodified, with credit, on a private non-commercial site.",
+      "attribution": "Ubisoft",
+      "attributionUrl": "https://www.ubisoft.com/en-us/game/the-division/the-division-2/news-updates/7uzKuy4iB0MtOJfsXAr3TO/tuy8s32-red-moon-unleashed-creator-collaboration-escalation-updates-more",
+      "aiGenerated": false,
+      "id": "ubi-red-moon",
       "width": 1600,
       "height": 900,
       "urlSmall": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/1p72lI7Ulak6A0YUgJCD2g/85ff62d4b60266135f69af560fe173d7/-TD2-_News_-_-TUY8S3.2-_Red_Moon-Red_Moon_Unleashed_Event_Thumbnail.jpg?w=640",
       "widthSmall": 640,
-      "alt_en": "Red Moon Unleashed event art: masked enemies under a red moon",
-      "alt_zhHant": "「血月高照」活動主視覺：血月下的面具敵人",
       "tags": [
         "event",
         "keyart"
-      ],
-      "license": "Official promotional image © Ubisoft Entertainment. Shown unmodified, with credit, on a private non-commercial site.",
-      "attribution": "Ubisoft",
-      "attributionUrl": "https://www.ubisoft.com/en-us/game/the-division/the-division-2/news-updates/7uzKuy4iB0MtOJfsXAr3TO/tuy8s32-red-moon-unleashed-creator-collaboration-escalation-updates-more",
-      "aiGenerated": false
+      ]
     },
     {
-      "id": "ubi-red-horizon",
       "kind": "image",
       "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/gokFSNmhSifeOfyi9znvR/b3eb6a8c437c17f0f0b997ea1df31a65/-TD2-_News_-_The_Division_2_Red_Horizon-Red_Horizon_Keyart.jpg?w=1600",
+      "alt_en": "Red Horizon key art: an agent before a burning Washington Monument",
+      "alt_zhHant": "Red Horizon 主視覺：特工身後是火光中的華盛頓紀念碑",
+      "license": "Official promotional image © Ubisoft Entertainment. Shown unmodified, with credit, on a private non-commercial site.",
+      "attribution": "Ubisoft",
+      "attributionUrl": "https://www.ubisoft.com/en-us/game/the-division/the-division-2/news-updates/4mrYiFPIyKpzpoqshDQk80/the-division-2-red-horizon",
+      "aiGenerated": false,
+      "id": "ubi-red-horizon",
       "width": 1600,
       "height": 900,
       "urlSmall": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/gokFSNmhSifeOfyi9znvR/b3eb6a8c437c17f0f0b997ea1df31a65/-TD2-_News_-_The_Division_2_Red_Horizon-Red_Horizon_Keyart.jpg?w=640",
       "widthSmall": 640,
-      "alt_en": "Red Horizon key art: an agent before a burning Washington Monument",
-      "alt_zhHant": "Red Horizon 主視覺：特工身後是火光中的華盛頓紀念碑",
       "tags": [
         "season",
         "keyart",
         "dc"
-      ],
-      "license": "Official promotional image © Ubisoft Entertainment. Shown unmodified, with credit, on a private non-commercial site.",
-      "attribution": "Ubisoft",
-      "attributionUrl": "https://www.ubisoft.com/en-us/game/the-division/the-division-2/news-updates/4mrYiFPIyKpzpoqshDQk80/the-division-2-red-horizon",
-      "aiGenerated": false
+      ]
     },
     {
-      "id": "steam-0",
       "kind": "image",
       "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2221490/6f05e8a12c31edef7658d6f382ea348131c5ca26/ss_6f05e8a12c31edef7658d6f382ea348131c5ca26.1920x1080.jpg",
+      "alt_en": "Agents fight through a burning industrial plant",
+      "alt_zhHant": "特工在火光四起的工廠內交戰",
+      "license": "Official promotional image © Ubisoft Entertainment. Shown unmodified, with credit, on a private non-commercial site.",
+      "attribution": "Ubisoft · Steam store",
+      "attributionUrl": "https://store.steampowered.com/app/2221490/",
+      "aiGenerated": false,
+      "id": "steam-0",
       "width": 1920,
       "height": 1080,
       "urlSmall": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2221490/6f05e8a12c31edef7658d6f382ea348131c5ca26/ss_6f05e8a12c31edef7658d6f382ea348131c5ca26.600x338.jpg",
       "widthSmall": 600,
-      "alt_en": "Agents fight through a burning industrial plant",
-      "alt_zhHant": "特工在火光四起的工廠內交戰",
       "tags": [
         "combat",
         "night",
         "screenshot"
-      ],
+      ]
+    },
+    {
+      "kind": "image",
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2221490/17c27624d35a167621a0097b324ebf693ac8db97/ss_17c27624d35a167621a0097b324ebf693ac8db97.1920x1080.jpg",
+      "alt_en": "Agents advance through a littered D.C. street, one behind a shield",
+      "alt_zhHant": "特工在滿地垃圾的華盛頓街頭推進，其中一人手持防彈盾",
       "license": "Official promotional image © Ubisoft Entertainment. Shown unmodified, with credit, on a private non-commercial site.",
       "attribution": "Ubisoft · Steam store",
       "attributionUrl": "https://store.steampowered.com/app/2221490/",
-      "aiGenerated": false
-    },
-    {
+      "aiGenerated": false,
       "id": "steam-1",
-      "kind": "image",
-      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2221490/17c27624d35a167621a0097b324ebf693ac8db97/ss_17c27624d35a167621a0097b324ebf693ac8db97.1920x1080.jpg",
       "width": 1920,
       "height": 1080,
       "urlSmall": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2221490/17c27624d35a167621a0097b324ebf693ac8db97/ss_17c27624d35a167621a0097b324ebf693ac8db97.600x338.jpg",
       "widthSmall": 600,
-      "alt_en": "Agents advance through a littered D.C. street, one behind a shield",
-      "alt_zhHant": "特工在滿地垃圾的華盛頓街頭推進，其中一人手持防彈盾",
       "tags": [
         "combat",
         "squad",
         "dc",
         "screenshot"
-      ],
+      ]
+    },
+    {
+      "kind": "image",
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2221490/4c19d531d113e269e1e5d1d32c9412964920f41d/ss_4c19d531d113e269e1e5d1d32c9412964920f41d.1920x1080.jpg",
+      "alt_en": "An agent covers a highway overpass beside an abandoned truck",
+      "alt_zhHant": "特工在高架道路旁掩護，一旁是廢棄卡車",
       "license": "Official promotional image © Ubisoft Entertainment. Shown unmodified, with credit, on a private non-commercial site.",
       "attribution": "Ubisoft · Steam store",
       "attributionUrl": "https://store.steampowered.com/app/2221490/",
-      "aiGenerated": false
-    },
-    {
+      "aiGenerated": false,
       "id": "steam-2",
-      "kind": "image",
-      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2221490/4c19d531d113e269e1e5d1d32c9412964920f41d/ss_4c19d531d113e269e1e5d1d32c9412964920f41d.1920x1080.jpg",
       "width": 1920,
       "height": 1080,
       "urlSmall": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2221490/4c19d531d113e269e1e5d1d32c9412964920f41d/ss_4c19d531d113e269e1e5d1d32c9412964920f41d.600x338.jpg",
       "widthSmall": 600,
-      "alt_en": "An agent covers a highway overpass beside an abandoned truck",
-      "alt_zhHant": "特工在高架道路旁掩護，一旁是廢棄卡車",
       "tags": [
         "combat",
         "dc",
         "screenshot"
-      ],
+      ]
+    },
+    {
+      "kind": "image",
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2221490/143534912ee8a4e699684d5d716e287a4739b682/ss_143534912ee8a4e699684d5d716e287a4739b682.1920x1080.jpg",
+      "alt_en": "An agent fires from a bridge as explosions hit the waterfront",
+      "alt_zhHant": "特工在橋上開火，河岸邊爆炸不斷",
       "license": "Official promotional image © Ubisoft Entertainment. Shown unmodified, with credit, on a private non-commercial site.",
       "attribution": "Ubisoft · Steam store",
       "attributionUrl": "https://store.steampowered.com/app/2221490/",
-      "aiGenerated": false
-    },
-    {
+      "aiGenerated": false,
       "id": "steam-3",
-      "kind": "image",
-      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2221490/143534912ee8a4e699684d5d716e287a4739b682/ss_143534912ee8a4e699684d5d716e287a4739b682.1920x1080.jpg",
       "width": 1920,
       "height": 1080,
       "urlSmall": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2221490/143534912ee8a4e699684d5d716e287a4739b682/ss_143534912ee8a4e699684d5d716e287a4739b682.600x338.jpg",
       "widthSmall": 600,
-      "alt_en": "An agent fires from a bridge as explosions hit the waterfront",
-      "alt_zhHant": "特工在橋上開火，河岸邊爆炸不斷",
       "tags": [
         "combat",
         "sniper",
         "screenshot"
-      ],
+      ]
+    },
+    {
+      "kind": "image",
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2221490/a66fb9edbd7ced68ee106e1ec847b29328dc748b/ss_a66fb9edbd7ced68ee106e1ec847b29328dc748b.1920x1080.jpg",
+      "alt_en": "Agents trade fire among the trees of an overgrown park",
+      "alt_zhHant": "特工在雜草叢生的公園樹林間交火",
       "license": "Official promotional image © Ubisoft Entertainment. Shown unmodified, with credit, on a private non-commercial site.",
       "attribution": "Ubisoft · Steam store",
       "attributionUrl": "https://store.steampowered.com/app/2221490/",
-      "aiGenerated": false
-    },
-    {
+      "aiGenerated": false,
       "id": "steam-4",
-      "kind": "image",
-      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2221490/a66fb9edbd7ced68ee106e1ec847b29328dc748b/ss_a66fb9edbd7ced68ee106e1ec847b29328dc748b.1920x1080.jpg",
       "width": 1920,
       "height": 1080,
       "urlSmall": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2221490/a66fb9edbd7ced68ee106e1ec847b29328dc748b/ss_a66fb9edbd7ced68ee106e1ec847b29328dc748b.600x338.jpg",
       "widthSmall": 600,
-      "alt_en": "Agents trade fire among the trees of an overgrown park",
-      "alt_zhHant": "特工在雜草叢生的公園樹林間交火",
       "tags": [
         "combat",
         "sniper",
         "park",
         "screenshot"
-      ],
+      ]
+    },
+    {
+      "kind": "image",
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2221490/b344c21b491393c628e55ec1da83abd3224fe8a5/ss_b344c21b491393c628e55ec1da83abd3224fe8a5.1920x1080.jpg",
+      "alt_en": "An agent shoots across a D.C. crosswalk while a drone flies overhead",
+      "alt_zhHant": "特工在華盛頓斑馬線上開火，上空有無人機盤旋",
       "license": "Official promotional image © Ubisoft Entertainment. Shown unmodified, with credit, on a private non-commercial site.",
       "attribution": "Ubisoft · Steam store",
       "attributionUrl": "https://store.steampowered.com/app/2221490/",
-      "aiGenerated": false
-    },
-    {
+      "aiGenerated": false,
       "id": "steam-5",
-      "kind": "image",
-      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2221490/b344c21b491393c628e55ec1da83abd3224fe8a5/ss_b344c21b491393c628e55ec1da83abd3224fe8a5.1920x1080.jpg",
       "width": 1920,
       "height": 1080,
       "urlSmall": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2221490/b344c21b491393c628e55ec1da83abd3224fe8a5/ss_b344c21b491393c628e55ec1da83abd3224fe8a5.600x338.jpg",
       "widthSmall": 600,
-      "alt_en": "An agent shoots across a D.C. crosswalk while a drone flies overhead",
-      "alt_zhHant": "特工在華盛頓斑馬線上開火，上空有無人機盤旋",
       "tags": [
         "combat",
         "dc",
         "skills",
         "screenshot"
-      ],
+      ]
+    },
+    {
+      "kind": "image",
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2221490/db8e97048b12128aa48731089db6091becf6fd6d/ss_db8e97048b12128aa48731089db6091becf6fd6d.1920x1080.jpg",
+      "alt_en": "Night firefight with a burning explosion — Echoes of Central Park",
+      "alt_zhHant": "夜間交火，爆炸火光沖天——《中央公園的迴響》",
       "license": "Official promotional image © Ubisoft Entertainment. Shown unmodified, with credit, on a private non-commercial site.",
       "attribution": "Ubisoft · Steam store",
       "attributionUrl": "https://store.steampowered.com/app/2221490/",
-      "aiGenerated": false
-    },
-    {
+      "aiGenerated": false,
       "id": "steam-6",
-      "kind": "image",
-      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2221490/db8e97048b12128aa48731089db6091becf6fd6d/ss_db8e97048b12128aa48731089db6091becf6fd6d.1920x1080.jpg",
       "width": 1920,
       "height": 1080,
       "urlSmall": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2221490/db8e97048b12128aa48731089db6091becf6fd6d/ss_db8e97048b12128aa48731089db6091becf6fd6d.600x338.jpg",
       "widthSmall": 600,
-      "alt_en": "Night firefight with a burning explosion — Echoes of Central Park",
-      "alt_zhHant": "夜間交火，爆炸火光沖天——《中央公園的迴響》",
       "tags": [
         "combat",
         "night",
         "central-park",
         "screenshot"
-      ],
+      ]
+    },
+    {
+      "kind": "image",
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2221490/d6677f95dab7b92f456498e35b80199d505866a7/ss_d6677f95dab7b92f456498e35b80199d505866a7.1920x1080.jpg",
+      "alt_en": "Agents move through a flooded, rainy Central Park at night",
+      "alt_zhHant": "特工在夜雨中穿越積水的中央公園",
       "license": "Official promotional image © Ubisoft Entertainment. Shown unmodified, with credit, on a private non-commercial site.",
       "attribution": "Ubisoft · Steam store",
       "attributionUrl": "https://store.steampowered.com/app/2221490/",
-      "aiGenerated": false
-    },
-    {
+      "aiGenerated": false,
       "id": "steam-7",
-      "kind": "image",
-      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2221490/d6677f95dab7b92f456498e35b80199d505866a7/ss_d6677f95dab7b92f456498e35b80199d505866a7.1920x1080.jpg",
       "width": 1920,
       "height": 1080,
       "urlSmall": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2221490/d6677f95dab7b92f456498e35b80199d505866a7/ss_d6677f95dab7b92f456498e35b80199d505866a7.600x338.jpg",
       "widthSmall": 600,
-      "alt_en": "Agents move through a flooded, rainy Central Park at night",
-      "alt_zhHant": "特工在夜雨中穿越積水的中央公園",
       "tags": [
         "central-park",
         "night",
         "squad",
         "screenshot"
-      ],
+      ]
+    },
+    {
+      "kind": "image",
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2221490/0e797a4153777789b3d4bd011d07ae0e3d0a8c3d/ss_0e797a4153777789b3d4bd011d07ae0e3d0a8c3d.1920x1080.jpg",
+      "alt_en": "An agent crouches on a leafy Brooklyn street during a firefight",
+      "alt_zhHant": "特工在落葉滿地的布魯克林街頭蹲伏交戰",
       "license": "Official promotional image © Ubisoft Entertainment. Shown unmodified, with credit, on a private non-commercial site.",
       "attribution": "Ubisoft · Steam store",
       "attributionUrl": "https://store.steampowered.com/app/2221490/",
-      "aiGenerated": false
-    },
-    {
+      "aiGenerated": false,
       "id": "steam-8",
-      "kind": "image",
-      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2221490/0e797a4153777789b3d4bd011d07ae0e3d0a8c3d/ss_0e797a4153777789b3d4bd011d07ae0e3d0a8c3d.1920x1080.jpg",
       "width": 1920,
       "height": 1080,
       "urlSmall": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2221490/0e797a4153777789b3d4bd011d07ae0e3d0a8c3d/ss_0e797a4153777789b3d4bd011d07ae0e3d0a8c3d.600x338.jpg",
       "widthSmall": 600,
-      "alt_en": "An agent crouches on a leafy Brooklyn street during a firefight",
-      "alt_zhHant": "特工在落葉滿地的布魯克林街頭蹲伏交戰",
       "tags": [
         "combat",
         "brooklyn",
         "screenshot"
-      ],
+      ]
+    },
+    {
+      "kind": "image",
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2221490/ca4edf30bd96e86b5ee1fda736dd87b841f0abfe/ss_ca4edf30bd96e86b5ee1fda736dd87b841f0abfe.1920x1080.jpg",
+      "alt_en": "Close-up of an agent aiming during a Brooklyn firefight",
+      "alt_zhHant": "布魯克林交戰中特工瞄準的近景",
       "license": "Official promotional image © Ubisoft Entertainment. Shown unmodified, with credit, on a private non-commercial site.",
       "attribution": "Ubisoft · Steam store",
       "attributionUrl": "https://store.steampowered.com/app/2221490/",
-      "aiGenerated": false
-    },
-    {
+      "aiGenerated": false,
       "id": "steam-9",
-      "kind": "image",
-      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2221490/ca4edf30bd96e86b5ee1fda736dd87b841f0abfe/ss_ca4edf30bd96e86b5ee1fda736dd87b841f0abfe.1920x1080.jpg",
       "width": 1920,
       "height": 1080,
       "urlSmall": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2221490/ca4edf30bd96e86b5ee1fda736dd87b841f0abfe/ss_ca4edf30bd96e86b5ee1fda736dd87b841f0abfe.600x338.jpg",
       "widthSmall": 600,
-      "alt_en": "Close-up of an agent aiming during a Brooklyn firefight",
-      "alt_zhHant": "布魯克林交戰中特工瞄準的近景",
       "tags": [
         "combat",
         "brooklyn",
         "weapons",
         "screenshot"
-      ],
+      ]
+    },
+    {
+      "kind": "image",
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2221490/03a6fd0e521e4d113f68420c31394e6fa3ed507f/ss_03a6fd0e521e4d113f68420c31394e6fa3ed507f.1920x1080.jpg",
+      "alt_en": "An agent takes cover behind a car on a night-time New York street",
+      "alt_zhHant": "特工在紐約夜晚街頭以車輛為掩護",
       "license": "Official promotional image © Ubisoft Entertainment. Shown unmodified, with credit, on a private non-commercial site.",
       "attribution": "Ubisoft · Steam store",
       "attributionUrl": "https://store.steampowered.com/app/2221490/",
-      "aiGenerated": false
-    },
-    {
+      "aiGenerated": false,
       "id": "steam-10",
-      "kind": "image",
-      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2221490/03a6fd0e521e4d113f68420c31394e6fa3ed507f/ss_03a6fd0e521e4d113f68420c31394e6fa3ed507f.1920x1080.jpg",
       "width": 1920,
       "height": 1080,
       "urlSmall": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2221490/03a6fd0e521e4d113f68420c31394e6fa3ed507f/ss_03a6fd0e521e4d113f68420c31394e6fa3ed507f.600x338.jpg",
       "widthSmall": 600,
-      "alt_en": "An agent takes cover behind a car on a night-time New York street",
-      "alt_zhHant": "特工在紐約夜晚街頭以車輛為掩護",
       "tags": [
         "combat",
         "night",
         "new-york",
         "screenshot"
-      ],
+      ]
+    },
+    {
+      "kind": "image",
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2221490/8d9ade397001a46af67c47bde01d66cdc76c3b16/ss_8d9ade397001a46af67c47bde01d66cdc76c3b16.1920x1080.jpg",
+      "alt_en": "A lone agent walks a dark, neon-lit New York alley",
+      "alt_zhHant": "一名特工獨自走在霓虹微光的紐約暗巷",
       "license": "Official promotional image © Ubisoft Entertainment. Shown unmodified, with credit, on a private non-commercial site.",
       "attribution": "Ubisoft · Steam store",
       "attributionUrl": "https://store.steampowered.com/app/2221490/",
-      "aiGenerated": false
-    },
-    {
+      "aiGenerated": false,
       "id": "steam-11",
-      "kind": "image",
-      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2221490/8d9ade397001a46af67c47bde01d66cdc76c3b16/ss_8d9ade397001a46af67c47bde01d66cdc76c3b16.1920x1080.jpg",
       "width": 1920,
       "height": 1080,
       "urlSmall": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2221490/8d9ade397001a46af67c47bde01d66cdc76c3b16/ss_8d9ade397001a46af67c47bde01d66cdc76c3b16.600x338.jpg",
       "widthSmall": 600,
-      "alt_en": "A lone agent walks a dark, neon-lit New York alley",
-      "alt_zhHant": "一名特工獨自走在霓虹微光的紐約暗巷",
       "tags": [
         "night",
         "new-york",
         "mood",
         "screenshot"
-      ],
+      ]
+    },
+    {
+      "kind": "image",
+      "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/6V7rmDUJ0hG0cFGEVXYDMQ/aef1675d95ca446732cd0cd8f223ffe1/TCTD2_Y8S3TCTD2_Twitch_Drop_DLC3_Echoes_of_CP_Final_960x540.jpg?w=1600",
+      "alt_en": "Official image for \"The Division 2: Echoes of Central Park Launch Twitch Drops\"",
+      "alt_zhHant": "官方新聞圖片：《全境封鎖 2 - 中央公園的迴響》發行 Twitch 掉寶",
       "license": "Official promotional image © Ubisoft Entertainment. Shown unmodified, with credit, on a private non-commercial site.",
-      "attribution": "Ubisoft · Steam store",
-      "attributionUrl": "https://store.steampowered.com/app/2221490/",
-      "aiGenerated": false
+      "attribution": "Ubisoft",
+      "attributionUrl": "https://www.ubisoft.com/en-us/game/the-division/the-division-2/news-updates/5EEgwKS6kDqyvUFo5PJYsB/the-division-2-echoes-of-central-park-launch-twitch-drops",
+      "aiGenerated": false,
+      "id": "ubi-5EEgwKS6kDqyvUFo5PJYsB",
+      "width": 1600,
+      "height": 900,
+      "urlSmall": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/6V7rmDUJ0hG0cFGEVXYDMQ/aef1675d95ca446732cd0cd8f223ffe1/TCTD2_Y8S3TCTD2_Twitch_Drop_DLC3_Echoes_of_CP_Final_960x540.jpg?w=640",
+      "widthSmall": 640,
+      "tags": [
+        "news"
+      ]
+    },
+    {
+      "kind": "image",
+      "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/4SPW8RkJSxN6cPRcTuwfyU/1ca6f02887448e5c0aa08f9e6a6bd049/TCTD2_Halloween_Event_Twitch_Drop_Finals_960x540.jpg?w=1600",
+      "alt_en": "Official image for \"The Division 2: Red Moon Unleashed Event Twitch Drops\"",
+      "alt_zhHant": "官方新聞圖片：《全境封鎖 2》血月高照活動 Twitch 掉寶",
+      "license": "Official promotional image © Ubisoft Entertainment. Shown unmodified, with credit, on a private non-commercial site.",
+      "attribution": "Ubisoft",
+      "attributionUrl": "https://www.ubisoft.com/en-us/game/the-division/the-division-2/news-updates/VLVLB9xFr5sLxAtZSVM6J/the-division-2-red-moon-unleashed-event-twitch-drops",
+      "aiGenerated": false,
+      "id": "ubi-VLVLB9xFr5sLxAtZSVM6J",
+      "width": 1600,
+      "height": 900,
+      "urlSmall": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/4SPW8RkJSxN6cPRcTuwfyU/1ca6f02887448e5c0aa08f9e6a6bd049/TCTD2_Halloween_Event_Twitch_Drop_Finals_960x540.jpg?w=640",
+      "widthSmall": 640,
+      "tags": [
+        "news"
+      ]
+    },
+    {
+      "kind": "image",
+      "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/3Ba8lRxw6pJnGne4m3nIZX/4da93a9d88b533d5de99d881f090ad4d/TCTD2_recap_thumbnail_960.jpg?w=1600",
+      "alt_en": "Official image for \"The Division 2 Echoes of Central Park Showcase: Everything You Need to Know\"",
+      "alt_zhHant": "官方新聞圖片：《全境封鎖 2 - 中央公園的迴響》展示：一切須知",
+      "license": "Official promotional image © Ubisoft Entertainment. Shown unmodified, with credit, on a private non-commercial site.",
+      "attribution": "Ubisoft",
+      "attributionUrl": "https://www.ubisoft.com/en-us/game/the-division/the-division-2/news-updates/2o0p19fLQGze5j7h3iEXTN/the-division-2-echoes-of-central-park-showcase-everything-you-need-to-know",
+      "aiGenerated": false,
+      "id": "ubi-2o0p19fLQGze5j7h3iEXTN",
+      "width": 1600,
+      "height": 900,
+      "urlSmall": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/3Ba8lRxw6pJnGne4m3nIZX/4da93a9d88b533d5de99d881f090ad4d/TCTD2_recap_thumbnail_960.jpg?w=640",
+      "widthSmall": 640,
+      "tags": [
+        "news"
+      ]
+    },
+    {
+      "kind": "image",
+      "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/5BnxhJK1H2L3X2COjtrkZV/358a180239e153e4cfc638b6745490bf/TCTD2_Legacy_Twitch_Drops_960x540.jpg?w=1600",
+      "alt_en": "Official image for \"The Division 2: Legacy Twitch Drops\"",
+      "alt_zhHant": "官方新聞圖片：全境封鎖 2：傳承 Twitch 掉寶",
+      "license": "Official promotional image © Ubisoft Entertainment. Shown unmodified, with credit, on a private non-commercial site.",
+      "attribution": "Ubisoft",
+      "attributionUrl": "https://www.ubisoft.com/en-us/game/the-division/the-division-2/news-updates/4QjeRBZu1fgevFCVGBpS2L/the-division-2-legacy-twitch-drops",
+      "aiGenerated": false,
+      "id": "ubi-4QjeRBZu1fgevFCVGBpS2L",
+      "width": 1600,
+      "height": 900,
+      "urlSmall": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/5BnxhJK1H2L3X2COjtrkZV/358a180239e153e4cfc638b6745490bf/TCTD2_Legacy_Twitch_Drops_960x540.jpg?w=640",
+      "widthSmall": 640,
+      "tags": [
+        "news"
+      ]
     }
   ],
   "sectionBanners": {

@@ -20,3 +20,6 @@ data/cache/
 
 # Review screenshots (large; regenerate with pnpm run screens)
 docs/screenshots/
+
+# Pipeline dry-run output
+.dry-run/

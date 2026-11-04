@@ -38,8 +38,9 @@ const day = new Intl.DateTimeFormat(locale === 'en' ? 'en' : 'zh-Hant-TW', {
   </H>
   {headline.pending && <p class="pending">{t(locale, 'translation.pending')}</p>}
   {variant !== 'brief' && (
-    <p class:list={['summary', variant === 'lead' && 'dropcap']} lang={summary.pending ? 'en' : undefined}>
-      {summary.text}
+    <p class:list={['summary', variant === 'lead' && item.summaryKind !== 'extract' && 'dropcap', item.summaryKind === 'extract' && 'quote']} lang={summary.pending ? 'en' : undefined}>
+      {item.summaryKind === 'extract' ? `“${summary.text}”` : summary.text}
+      {item.summaryKind === 'extract' && <span class="attrib"> — {item.sourceName}</span>}
     </p>
   )}
   {why && variant !== 'brief' && (
@@ -54,6 +55,12 @@ const day = new Intl.DateTimeFormat(locale === 'en' ? 'en' : 'zh-Hant-TW', {
   )}
   <p class="source">
     {t(locale, 'story.source')}: <a href={item.sourceUrl} rel="noopener noreferrer" target="_blank">{item.sourceName}</a>
+    {item.alsoReportedBy.map((s) => (
+      <>
+        {' · '}
+        <a href={s.url} rel="noopener noreferrer" target="_blank">{s.name}</a>
+      </>
+    ))}
   </p>
 </article>
 
@@ -111,6 +118,14 @@ const day = new Intl.DateTimeFormat(locale === 'en' ? 'en' : 'zh-Hant-TW', {
     font-weight: 900;
     font-size: 1.5em;
     color: var(--shd-ink);
+  }
+  .quote {
+    font-style: italic;
+  }
+  .attrib {
+    font-style: normal;
+    font-size: var(--step--1);
+    color: var(--ink-soft);
   }
   .why {
     margin: 0 0 8px;
