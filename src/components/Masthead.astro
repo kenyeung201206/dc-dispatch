@@ -26,7 +26,7 @@ const season = edition.meta ? (locale === 'en' ? edition.meta.season_en : editio
 <header class="masthead">
   <div class="title">
     <p class="title-name">
-      <Hex size={52} />
+      <button type="button" class="hex-btn" data-hex aria-label={t(locale, 'egg.scan')}><Hex size={52} /></button>
       <span>The DC Dispatch</span>
     </p>
     <p class="zhname" lang="zh-Hant-TW">華盛頓每日快報</p>
@@ -94,6 +94,46 @@ const season = edition.meta ? (locale === 'en' ? edition.meta.season_en : editio
     margin: 0;
     font: 900 var(--step-4) / 0.95 var(--font-display);
     letter-spacing: -0.01em;
+  }
+  .hex-btn {
+    flex: none;
+    display: grid;
+    place-items: center;
+    min-width: var(--tap);
+    min-height: var(--tap);
+    padding: 0;
+    border: 0;
+    background: none;
+    cursor: pointer;
+  }
+  .masthead {
+    position: relative;
+  }
+  /* HUD scan line: on first paint over the rail, and when the hex is tapped */
+  .masthead::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background: linear-gradient(180deg, transparent 0, rgb(255 109 16 / 0.18) 48%, var(--shd) 50%, rgb(255 109 16 / 0.18) 52%, transparent 100%) no-repeat;
+    background-size: 100% 60px;
+    background-position: 0 -60px;
+    opacity: 0;
+  }
+  :global(.scanning) .masthead::after,
+  .masthead:global(.scanning)::after {
+    animation: scan 1.1s ease-in-out;
+  }
+  @keyframes scan {
+    0% { opacity: 1; background-position: 0 -60px; }
+    100% { opacity: 1; background-position: 0 calc(100% + 60px); }
+  }
+  .rail {
+    animation: scanin 0.7s ease-out both;
+  }
+  @keyframes scanin {
+    from { clip-path: inset(0 0 100% 0); }
+    to { clip-path: inset(0 0 0 0); }
   }
   .zhname {
     margin: 8px 0 0;
@@ -216,8 +256,9 @@ const season = edition.meta ? (locale === 'en' ? edition.meta.season_en : editio
       font-size: 0.8125rem;
       line-height: 1.45;
     }
-    .title-name :global(.hex) {
-      display: none;
+    .hex-btn :global(.hex) {
+      width: 36px;
+      height: 42px;
     }
     .rail > .rail-tools {
       display: none; /* the sticky bar has the same buttons */

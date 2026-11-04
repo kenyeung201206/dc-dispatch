@@ -38,8 +38,9 @@ const day = new Intl.DateTimeFormat(locale === 'en' ? 'en' : 'zh-Hant-TW', {
     <a href={routes.story(locale, item.id)}>{headline.text}</a>
   </H>
   {headline.pending && <p class="pending">{t(locale, 'translation.pending')}</p>}
+  {variant !== 'brief' && item.confidence === 'rumour' && <p class="declass hud-label">{t(locale, 'story.declassify')}</p>}
   {variant !== 'brief' && (
-    <p class:list={['summary', variant === 'lead' && item.summaryKind !== 'extract' && 'dropcap', item.summaryKind === 'extract' && 'quote']} lang={summary.pending ? 'en' : undefined}>
+    <p class:list={['summary', variant === 'lead' && item.summaryKind !== 'extract' && 'dropcap', item.summaryKind === 'extract' && 'quote']} lang={summary.pending ? 'en' : undefined} tabindex={item.confidence === 'rumour' ? 0 : undefined}>
       {item.summaryKind === 'extract' ? `“${summary.text}”` : summary.text}
       {item.summaryKind === 'extract' && <span class="attrib"> — {item.sourceName}</span>}
     </p>
@@ -126,6 +127,25 @@ const day = new Intl.DateTimeFormat(locale === 'en' ? 'en' : 'zh-Hant-TW', {
     font-weight: 900;
     font-size: 1.5em;
     color: var(--shd-ink);
+  }
+  /* Rumours: blurred until hovered, tapped (focus) or the card gets keyboard focus. Visual only. */
+  [data-confidence='rumour'] .summary {
+    filter: blur(4px);
+    transition: filter 0.3s;
+  }
+  [data-confidence='rumour']:hover .summary,
+  [data-confidence='rumour']:focus-within .summary {
+    filter: none;
+  }
+  @media print {
+    [data-confidence='rumour'] .summary {
+      filter: none;
+    }
+  }
+  .declass {
+    margin: 0 0 4px;
+    color: var(--dz-red);
+    text-transform: none;
   }
   .quote {
     font-style: italic;

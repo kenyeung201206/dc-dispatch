@@ -156,3 +156,148 @@ a:hover {
     scroll-behavior: auto !important;
   }
 }
+
+:root[data-mask='hunter'] body {
+  background-image:
+    repeating-linear-gradient(0deg, rgb(208 2 27 / 0.06) 0 1px, transparent 1px 3px),
+    radial-gradient(ellipse at 50% 0%, rgb(208 2 27 / 0.18), transparent 60%);
+  background-size: auto, 100% 100%;
+}
+
+/* ---------- Print: the paper prints like a newspaper (brief §5.2) ---------- */
+@media print {
+  @page {
+    size: A4;
+    margin: 12mm 12mm 14mm;
+  }
+  :root,
+  :root[data-theme='night'],
+  :root[data-mask='hunter'] {
+    --paper: #fff;
+    --paper-2: #fff;
+    --ink: #000;
+    --ink-soft: #333;
+    --rule: #000;
+    --rule-soft: #999;
+    --shd-ink: #000;
+    --panel: #fff;
+    --panel-ink: #000;
+    color-scheme: light;
+  }
+  html,
+  body {
+    background: #fff !important;
+    color: #000;
+    font-size: 10pt;
+    line-height: 1.4;
+  }
+  /* No UI chrome */
+  .skip,
+  [data-bar],
+  .snav,
+  .ticker,
+  .toast,
+  .chip-btn,
+  .rail-tools,
+  [data-filters],
+  .fixture-note,
+  .vf,
+  [data-live],
+  #watch-now,
+  .photo.banner,
+  .crumbs,
+  .ai,
+  .cta,
+  .search,
+  details {
+    display: none !important;
+  }
+  .wrap,
+  .masthead {
+    max-width: none !important;
+    padding-inline: 0 !important;
+  }
+  .masthead {
+    display: grid !important;
+    grid-template-columns: 1fr auto !important;
+    border-top: 3pt solid #000 !important;
+    border-bottom: 3pt double #000 !important;
+  }
+  .masthead::after {
+    display: none;
+  }
+  .rail {
+    background: none !important;
+    color: #000 !important;
+    border: 0 !important;
+    animation: none !important;
+  }
+  .rail dt {
+    color: #000 !important;
+  }
+  /* Three newspaper columns */
+  .front {
+    display: block !important;
+  }
+  .lead-col,
+  .side {
+    border: 0 !important;
+    padding: 0 !important;
+  }
+  .secondary,
+  .cols,
+  .bp,
+  .side {
+    display: block !important;
+    columns: 3;
+    column-gap: 6mm;
+    column-rule: 0.5pt solid #999;
+  }
+  .story,
+  .box,
+  .entry {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+  .sec {
+    break-before: auto;
+  }
+  /* Empty sections waste paper */
+  .sec:has(> .empty) {
+    display: none !important;
+  }
+  .section-head {
+    break-after: avoid;
+    margin-top: 6mm !important;
+  }
+  img {
+    filter: grayscale(1) contrast(1.1) !important;
+    max-height: 70mm;
+    object-fit: cover;
+  }
+  .photo.lead .frame,
+  .lead .photo .frame {
+    max-height: 90mm;
+  }
+  .frame::before,
+  .frame::after,
+  .box::before,
+  .box::after {
+    display: none !important;
+  }
+  /* Show where links go, for the source credits */
+  .source a[href^='http']::after,
+  .sources a[href^='http']::after {
+    content: ' (' attr(href) ')';
+    font-size: 7pt;
+    word-break: break-all;
+  }
+  a {
+    color: #000 !important;
+    text-decoration: none !important;
+  }
+  .site-footer {
+    border-top: 1pt solid #000 !important;
+    font-size: 7.5pt;
+  }
+}

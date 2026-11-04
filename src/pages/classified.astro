@@ -1,0 +1,75 @@
+---
+// Easter egg: not linked anywhere. Pure satire, bilingual, nothing real.
+import '../styles/global.css';
+---
+<!doctype html>
+<html lang="en" data-theme="night">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>CLASSIFIED · The DC Dispatch</title>
+  </head>
+  <body>
+    <main class="memo wrap">
+      <p class="stamp">TOP SECRET · 極機密</p>
+      <p class="hud-label">SHD INTERNAL MEMO · Nº <span class="r" tabindex="0">0451</span> · SATIRE / 諷刺</p>
+      <h1>RE: The Glove Situation</h1>
+      <p>
+        Agents are advised that the number of gloves currently in circulation exceeds the number of hands in
+        <span class="r" tabindex="0">the entire Eastern Seaboard</span>. Analysts believe the gloves are
+        <span class="r" tabindex="0">breeding in the stash</span>. Do not open the stash after midnight.
+      </p>
+      <p lang="zh-Hant-TW">
+        各位特工請注意：目前流通中的手套數量，已超過<span class="r" tabindex="0">整個美東地區</span>的手的總數。
+        分析人員懷疑手套正在<span class="r" tabindex="0">倉庫裡自行繁殖</span>。午夜過後請勿打開倉庫。
+      </p>
+      <p>Recommended action: <span class="r" tabindex="0">equip them anyway</span>.</p>
+      <p class="sig hud-label">— ISAC, Strategic Glove Assessment Unit (fictional)</p>
+      <p class="hint hud-label">Tap or focus a black bar to declassify. · 點選黑條即可解密。</p>
+      <p><a href="/en/">← The DC Dispatch</a> · <a href="/zh-hant/" lang="zh-Hant-TW">華盛頓每日快報</a></p>
+    </main>
+  </body>
+</html>
+
+<style>
+  .memo {
+    max-width: 720px;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    font-family: var(--font-hud);
+  }
+  .stamp {
+    display: inline-block;
+    transform: rotate(-4deg);
+    border: 3px solid var(--dz-red);
+    color: var(--dz-red);
+    padding: 4px 12px;
+    font: 800 1.25rem var(--font-hud);
+    letter-spacing: 0.15em;
+  }
+  h1 {
+    font: 900 var(--step-3) / 1.1 var(--font-display);
+  }
+  .r {
+    background: var(--ink);
+    color: transparent;
+    border-radius: 1px;
+    cursor: pointer;
+    transition: color 0.2s, background 0.2s;
+  }
+  .r:hover,
+  .r:focus {
+    background: transparent;
+    color: var(--shd);
+  }
+  .sig,
+  .hint {
+    color: var(--ink-soft);
+    text-transform: none;
+  }
+  a {
+    display: inline-block;
+    padding: 8px 0;
+  }
+</style>

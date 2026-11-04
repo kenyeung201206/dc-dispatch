@@ -4,9 +4,11 @@ import { t, type Locale } from '../i18n/index.ts';
 interface Props {
   locale: Locale;
   lines: string[];
+  /** ISAC jokes appended after the headlines (none at HUMOUR_LEVEL=light). */
+  jokes?: string[];
 }
-const { locale, lines } = Astro.props;
-const all = [...lines, t(locale, 'ticker.joke')];
+const { locale, lines, jokes = [] } = Astro.props;
+const all = [...lines, ...jokes];
 ---
 <div class="ticker" role="region" aria-label="Ticker">
   <b class="label">{t(locale, 'ticker.label')}</b>

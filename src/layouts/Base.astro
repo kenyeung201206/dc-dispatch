@@ -47,6 +47,7 @@ const pageTitle = title ? `${title} · ${t(locale, 'site.name')}` : t(locale, 's
     <main id="main" class="wrap">
       <slot />
     </main>
+    <div class="toast" role="status" aria-live="polite" data-toast data-on={t(locale, 'egg.hunterOn')} data-off={t(locale, 'egg.hunterOff')}></div>
     <footer class="site-footer">
       <div class="wrap">
         <p>{t(locale, 'footer.disclaimer')}</p>
@@ -71,8 +72,76 @@ const pageTitle = title ? `${title} · ${t(locale, 'site.name')}` : t(locale, 's
           } catch {}
         }),
       );
+
+      // ---- Easter eggs (no sound, ever) ----
+      console.log(
+        '%c SHD NETWORK %c Curious, Agent? The pipeline lives in /pipeline, the jokes in src/lib/humour.ts. Try the Konami code. ',
+        'background:#ff6d10;color:#111;font-weight:bold;padding:2px 6px',
+        'color:inherit',
+      );
+      const toast = document.querySelector<HTMLElement>('[data-toast]');
+      let toastTimer = 0;
+      const say = (msg: string) => {
+        if (!toast) return;
+        toast.textContent = msg;
+        toast.classList.add('show');
+        clearTimeout(toastTimer);
+        toastTimer = window.setTimeout(() => toast.classList.remove('show'), 3200);
+      };
+      const toggleHunter = () => {
+        const root = document.documentElement;
+        const on = root.dataset.mask !== 'hunter';
+        if (on) root.dataset.mask = 'hunter';
+        else delete root.dataset.mask;
+        say((on ? toast?.dataset.on : toast?.dataset.off) ?? '');
+      };
+      const KONAMI = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'b', 'a'];
+      let k = 0;
+      document.addEventListener('keydown', (e) => {
+        k = e.key.toLowerCase() === KONAMI[k]!.toLowerCase() ? k + 1 : e.key === 'ArrowUp' ? (k === 1 ? 2 : 1) : 0;
+        if (k === KONAMI.length) {
+          k = 0;
+          toggleHunter();
+        }
+      });
+      // Tap the masthead hex: silent scan. Five quick taps: Hunter mode (phones have no arrow keys).
+      let taps: number[] = [];
+      document.querySelectorAll<HTMLElement>('[data-hex]').forEach((hex) =>
+        hex.addEventListener('click', () => {
+          const head = hex.closest<HTMLElement>('.masthead');
+          head?.classList.remove('scanning');
+          void head?.offsetWidth;
+          head?.classList.add('scanning');
+          const now = Date.now();
+          taps = [...taps.filter((t) => now - t < 3000), now];
+          if (taps.length >= 5) {
+            taps = [];
+            toggleHunter();
+          }
+        }),
+      );
     </script>
     <style>
+      .toast {
+        position: fixed;
+        left: 50%;
+        bottom: calc(16px + env(safe-area-inset-bottom));
+        z-index: 50;
+        max-width: min(92vw, 480px);
+        padding: 10px 16px;
+        background: var(--panel);
+        color: var(--panel-ink);
+        border-left: 4px solid var(--shd);
+        font: 600 0.875rem / 1.4 var(--font-hud);
+        transform: translate(-50%, 200%);
+        transition: transform 0.25s ease-out;
+      }
+      .toast:empty {
+        display: none;
+      }
+      .toast.show {
+        transform: translate(-50%, 0);
+      }
       .site-footer {
         margin-top: var(--space-6);
         padding: var(--space-5) 0 calc(var(--space-6) + env(safe-area-inset-bottom));

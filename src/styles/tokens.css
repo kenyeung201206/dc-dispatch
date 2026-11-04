@@ -68,3 +68,21 @@
     --gutter: 24px;
   }
 }
+
+/* Easter egg: Konami code → Hunter mask theme (overrides Day/Night until toggled off). */
+:root[data-mask='hunter'] {
+  --shd: #d0021b;
+  --shd-ink: #ff5a65;
+  --on-shd: #ffffff;
+  --paper: #0b0b0c;
+  --paper-2: #151517;
+  --ink: #ece8e2;
+  --ink-soft: #b0aaa2;
+  --rule: #6b1d24;
+  --rule-soft: #2c1a1c;
+  --panel: #000000;
+  --panel-ink: #f2ede6;
+  --hazard: #ffb300;
+  --focus: #ff8a94;
+  color-scheme: dark;
+}

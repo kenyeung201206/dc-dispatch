@@ -7,6 +7,7 @@ import SectionNav from '../components/SectionNav.astro';
 import { CATEGORIES, type Category, type Edition } from '../schema/item.ts';
 import type { Locale } from '../i18n/index.ts';
 import { byImportance, latestEdition, localized } from '../lib/editions.ts';
+import { tickerJokes } from '../lib/humour.ts';
 
 interface Props {
   locale: Locale;
@@ -28,7 +29,7 @@ const navSections: Category[] = [...CATEGORIES];
   <Fragment slot="masthead">
     <div class:list={['mh', compact && 'compact']}>
       <Masthead locale={locale} edition={edition} />
-      <Ticker locale={locale} lines={tickerLines} />
+      <Ticker locale={locale} lines={tickerLines} jokes={tickerJokes(locale, edition.date)} />
     </div>
     <SectionNav locale={locale} sections={navSections} current={current} />
   </Fragment>

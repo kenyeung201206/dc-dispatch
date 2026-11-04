@@ -46,8 +46,16 @@ Contrast ratios are calculated estimates; automated axe checks come in Phase 8.
 
 ## Rules
 - Facts and jokes never share a box. Jokes live in: ticker tail, section taglines, empty states, weather gag, Agent of the Day, Back Page.
-- No Ubisoft logos, key art or game assets.
-- Motion: only the ticker moves; everything respects `prefers-reduced-motion`.
+- Our own design elements never copy Ubisoft logos or game assets. Official Ubisoft pictures appear only as credited photos (owner's decision, see `LEGAL.md`).
+- Motion is small and purposeful (ticker, HUD scan, rumour reveal); everything respects `prefers-reduced-motion`.
 
-## Not yet (later phases)
-Print stylesheet, bilingual side-by-side mode, PWA, video facades, AI art pack, Easter eggs.
+## Humour & Easter eggs (Phase 6)
+- `src/lib/humour.ts`: Back Page (classifieds, loot horoscope with weapon-class "signs", letters from the Dark Zone, D.C. weather, Nerf-O-Meter, word scramble), Agent of the Day, ticker jokes. Deterministic by date, written natively per language, some keyed to the day's real story tags. `HUMOUR_LEVEL` = light | medium (default) | full.
+- Easter eggs: Konami code or 5 quick taps on the masthead hex → Hunter mask theme; tap hex → silent HUD scan; `/classified/`; console message; bilingual 404 ("Rogue-ified"). No sound anywhere.
+- Rumours blur until hover/tap/focus. Masthead rail scans in on load. All motion off under `prefers-reduced-motion`.
+
+## Print
+A4, black ink, 3 newspaper columns with rules, greyscale photos, source URLs printed after links; nav, ticker, buttons, players and empty sections hidden.
+
+## Not yet
+Bilingual side-by-side reading mode, PWA, AI art pack (see `docs/ART.md`), page-turn animation between editions.

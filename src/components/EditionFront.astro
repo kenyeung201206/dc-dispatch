@@ -10,6 +10,8 @@ import { byImportance, localized } from '../lib/editions.ts';
 import { routes } from '../lib/routes.ts';
 import VideoFacade from './VideoFacade.astro';
 import LiveNow from './LiveNow.astro';
+import BackPage from './BackPage.astro';
+import { agentOfTheDay, humourLevel } from '../lib/humour.ts';
 import { videoOfTheDay, videos } from '../lib/videos.ts';
 import { bannerFor, imageFor } from '../lib/images.ts';
 
@@ -74,9 +76,9 @@ const moreVideos = videos.filter((v) => v.id !== vod?.id).slice(0, 2);
           <li class="more"><a href={routes.patches(locale)}>{t(locale, 'nav.patches')} →</a></li>
         </ul>
       </SideBox>
-      <SideBox title={t(locale, 'sidebar.agent')} tone="satire" satireLabel={t(locale, 'satire.label')}>
-        <p class="satire-text">{t(locale, 'sidebar.agentText')}</p>
-      </SideBox>
+      {humourLevel() !== 'light' && <SideBox title={t(locale, 'sidebar.agent')} tone="satire" satireLabel={t(locale, 'satire.label')}>
+        <p class="satire-text">{agentOfTheDay(locale, edition.date)}</p>
+      </SideBox>}
     </aside>
   </div>
 
@@ -119,20 +121,7 @@ const moreVideos = videos.filter((v) => v.id !== vod?.id).slice(0, 2);
     </div>
   </section>
 
-  <section id="back-page" class="sec back" aria-labelledby="h-back">
-    <header class="section-head">
-      <h2 id="h-back">{t(locale, 'section.back-page')}</h2>
-      <p class="sat-tag">{t(locale, 'satire.label')}</p>
-    </header>
-    <div class="cols">
-      <SideBox title={t(locale, 'backpage.horoscope')} tone="satire" satireLabel={t(locale, 'satire.label')}>
-        <p class="satire-text">{t(locale, 'backpage.horoscopeText')}</p>
-      </SideBox>
-      <SideBox title={t(locale, 'backpage.classified')} tone="satire" satireLabel={t(locale, 'satire.label')}>
-        <p class="satire-text">{t(locale, 'backpage.classifiedText')}</p>
-      </SideBox>
-    </div>
-  </section>
+  <BackPage locale={locale} edition={edition} />
 
 <style>
   .fixture-note {

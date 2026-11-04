@@ -1,0 +1,192 @@
+---
+import SideBox from './SideBox.astro';
+import { t, tf, type Locale } from '../i18n/index.ts';
+import { backPage } from '../lib/humour.ts';
+import { patches } from '../lib/patches.ts';
+import type { Edition } from '../schema/item.ts';
+
+interface Props {
+  locale: Locale;
+  edition: Edition;
+}
+const { locale, edition } = Astro.props;
+// The newest patch published on or before this edition's date.
+const patch = patches.find((p) => p.publishedAt.slice(0, 10) <= edition.date);
+const bp = backPage(locale, edition, patch);
+const sat = t(locale, 'satire.label');
+const angle = bp.nerf.needle === null ? 0 : (bp.nerf.needle - 0.5) * 160; // -80° (nerf) … +80° (buff)
+---
+<section id="back-page" class="sec back" aria-labelledby="h-back">
+  <header class="section-head">
+    <h2 id="h-back">{t(locale, 'backpage.title')}</h2>
+    <p class="sat-tag">{sat}</p>
+  </header>
+
+  <div class="bp">
+    <SideBox title={t(locale, 'backpage.classified')} tone="satire" satireLabel={sat}>
+      <ul class="classifieds">
+        {bp.classifieds.map((c) => <li>{c}</li>)}
+      </ul>
+    </SideBox>
+
+    <SideBox title={t(locale, 'backpage.horoscope')} tone="satire" satireLabel={sat}>
+      <dl class="horo">
+        {bp.horoscope.map((h) => (
+          <div>
+            <dt>{h.sign}</dt>
+            <dd>{h.text}</dd>
+          </div>
+        ))}
+      </dl>
+    </SideBox>
+
+    <div class="stack">
+      <SideBox title={t(locale, 'backpage.nerf')} tone="satire" satireLabel={sat}>
+        <svg class="gauge" viewBox="0 0 200 120" role="img" aria-label={`${t(locale, 'backpage.nerf')}: ${bp.nerf.verdict}`}>
+          <path d="M20 100 A80 80 0 0 1 180 100" fill="none" stroke="var(--rule-soft)" stroke-width="14"></path>
+          <path d="M20 100 A80 80 0 0 1 100 20" fill="none" stroke="var(--dz-red)" stroke-width="14" opacity=".75"></path>
+          <path d="M100 20 A80 80 0 0 1 180 100" fill="none" stroke="var(--ok-green)" stroke-width="14" opacity=".75"></path>
+          <g transform={`rotate(${angle} 100 100)`}>
+            <line x1="100" y1="100" x2="100" y2="32" stroke="var(--ink)" stroke-width="4" stroke-linecap="round"></line>
+          </g>
+          <circle cx="100" cy="100" r="7" fill="var(--shd)"></circle>
+          <text x="20" y="118" font-size="11" fill="var(--ink-soft)" font-family="IBM Plex Mono, monospace">{t(locale, 'backpage.nerfLow')}</text>
+          <text x="180" y="118" font-size="11" fill="var(--ink-soft)" text-anchor="end" font-family="IBM Plex Mono, monospace">{t(locale, 'backpage.nerfHigh')}</text>
+        </svg>
+        <p class="verdict">{bp.nerf.verdict}</p>
+        <p class="basis hud-label">
+          {bp.nerf.version
+            ? tf(locale, 'backpage.nerfBasis', { v: `TU ${bp.nerf.version}`, up: bp.nerf.up, down: bp.nerf.down })
+            : t(locale, 'backpage.nerfNone')}
+        </p>
+      </SideBox>
+
+      <SideBox title={t(locale, 'backpage.weather')} tone="satire" satireLabel={sat}>
+        <p class="satire-text">{bp.forecast}</p>
+      </SideBox>
+    </div>
+
+    <SideBox title={t(locale, 'backpage.letters')} tone="satire" satireLabel={sat}>
+      <blockquote class="letter">{bp.letter}</blockquote>
+      <p class="basis hud-label">{t(locale, 'backpage.fiction')}</p>
+    </SideBox>
+
+    <SideBox title={t(locale, 'backpage.scramble')} tone="satire" satireLabel={sat}>
+      <p class="hint">{t(locale, 'backpage.scrambleHint')}</p>
+      <p class="puzzle" aria-label={bp.scramble.puzzle.split('').join(' ')}>{bp.scramble.puzzle}</p>
+      <details>
+        <summary>{t(locale, 'backpage.reveal')}</summary>
+        <p class="answer">{bp.scramble.answer}</p>
+      </details>
+    </SideBox>
+  </div>
+</section>
+
+<style>
+  .sat-tag {
+    color: var(--dz-red) !important;
+    font: 600 var(--step--1) var(--font-hud) !important;
+    letter-spacing: 0.1em;
+  }
+  .bp {
+    display: grid;
+    gap: 0 var(--space-4);
+  }
+  .classifieds {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .classifieds li {
+    padding: 8px 0;
+    border-bottom: 1px dashed var(--rule-soft);
+    font-size: 0.9375rem;
+  }
+  .classifieds li:last-child {
+    border-bottom: 0;
+  }
+  .classifieds li::first-line {
+    font-weight: 700;
+  }
+  .horo {
+    margin: 0;
+  }
+  .horo div {
+    padding: 6px 0;
+    border-bottom: 1px dashed var(--rule-soft);
+  }
+  .horo div:last-child {
+    border-bottom: 0;
+  }
+  .horo dt {
+    font: 600 var(--step--1) var(--font-hud);
+    color: var(--shd-ink);
+    text-transform: uppercase;
+  }
+  .horo dd {
+    margin: 0;
+    font-style: italic;
+    font-size: 0.9375rem;
+  }
+  .gauge {
+    display: block;
+    width: 100%;
+    max-width: 260px;
+    margin: 0 auto;
+  }
+  .verdict {
+    margin: 4px 0;
+    text-align: center;
+    font: 700 var(--step-0) var(--font-display);
+  }
+  .basis {
+    margin: 0;
+    color: var(--ink-soft);
+    text-transform: none;
+    letter-spacing: 0;
+    font-weight: 400;
+  }
+  .satire-text,
+  .letter {
+    margin: 0;
+    font-style: italic;
+  }
+  .letter {
+    padding-left: 10px;
+    border-left: 3px solid var(--rule-soft);
+    margin-bottom: 8px;
+  }
+  .hint {
+    margin: 0 0 4px;
+    font-size: 0.9375rem;
+  }
+  .puzzle {
+    margin: 0 0 8px;
+    font: 600 1.5rem var(--font-hud);
+    letter-spacing: 0.2em;
+    color: var(--shd-ink);
+    overflow-wrap: anywhere;
+  }
+  summary {
+    min-height: var(--tap);
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font: 600 0.875rem var(--font-hud);
+  }
+  .answer {
+    margin: 0;
+    font: 700 1.125rem var(--font-hud);
+    letter-spacing: 0.1em;
+  }
+  @media (min-width: 768px) {
+    .bp {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  @media (min-width: 1024px) {
+    .bp {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+</style>

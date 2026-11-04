@@ -1,0 +1,70 @@
+---
+// Cloudflare Pages serves this for any unknown URL. Bilingual, since we don't know the reader's language.
+import '../styles/global.css';
+import Hex from '../components/Hex.astro';
+---
+<!doctype html>
+<html lang="en" data-theme="night">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>404 · Sector lost · The DC Dispatch</title>
+  </head>
+  <body>
+    <main class="lost wrap">
+      <Hex size={64} />
+      <p class="code hud-label">ERROR 404 · SECTOR NOT FOUND</p>
+      <h1>This sector has been Rogue-ified.</h1>
+      <p lang="zh-Hant-TW" class="zh">此區域已遭叛變特工佔領。</p>
+      <p>The page you wanted has gone dark. ISAC recommends retreating to a safe house.</p>
+      <p lang="zh-Hant-TW">你要找的頁面已經失聯。ISAC 建議先撤回安全屋。</p>
+      <nav class="ways">
+        <a href="/en/">Back to today's edition</a>
+        <a href="/zh-hant/" lang="zh-Hant-TW">回到今日報紙</a>
+      </nav>
+      <p class="tiny hud-label">SATIRE · 諷刺 — no Agents were harmed in the making of this error.</p>
+    </main>
+  </body>
+</html>
+
+<style>
+  .lost {
+    min-height: 100dvh;
+    display: grid;
+    align-content: center;
+    gap: 8px;
+    max-width: 640px;
+  }
+  .code {
+    color: var(--shd);
+  }
+  h1 {
+    margin: 0;
+    font: 900 var(--step-3) / 1.1 var(--font-display);
+  }
+  .zh {
+    font: 900 var(--step-2) / 1.4 var(--font-cjk);
+    margin: 0;
+  }
+  .ways {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 12px 0;
+  }
+  .ways a {
+    display: inline-flex;
+    align-items: center;
+    min-height: var(--tap);
+    padding: 0 16px;
+    background: var(--shd);
+    color: var(--on-shd);
+    font: 600 0.9375rem var(--font-hud);
+    text-decoration: none;
+  }
+  .tiny {
+    color: var(--ink-soft);
+    text-transform: none;
+  }
+</style>
