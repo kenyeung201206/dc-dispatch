@@ -1,7 +1,7 @@
 {
   "date": "2026-11-04",
   "editionNumber": 1,
-  "generatedAt": "2026-11-04T13:38:38.422Z",
+  "generatedAt": "2026-11-04T14:51:46.470Z",
   "meta": {
     "season_en": "Red Horizon",
     "season_zhHant": "Red Horizon 賽季",
@@ -17,7 +17,7 @@
       "title_orig": "[TUY8S3.3] Crossplay Rollout, Conflict Improvements & More",
       "lang_orig": "en",
       "publishedAt": "2026-11-02T15:45:00.000Z",
-      "fetchedAt": "2026-11-04T13:38:38.422Z",
+      "fetchedAt": "2026-11-04T14:51:46.470Z",
       "category": "updates",
       "tags": [
         "title-update",
@@ -26,19 +26,14 @@
         "event",
         "pvp"
       ],
-      "importance": 99,
+      "importance": 91,
       "confidence": "official",
       "headline_en": "TU Y8S3.3: crossplay arrives in stages — PC on Nov 10, consoles Nov 17",
       "headline_zhHant": "Y8S3.3 更新：跨平台遊玩分階段上線，PC 11 月 10 日先行，主機 11 月 17 日加入",
       "summary_en": "Title Update Y8S3.3 adds crossplay icons now. On November 10, PC players move to new crossplay servers and PC leaderboards reset. On November 17, PlayStation and Xbox join and crossplay is on by default. Also: a Master Climax Mission, Conflict scoreboard changes and the Shepherd Event (Nov 17–26).",
       "summary_zhHant": "第 Y8S3.3 號遊戲更新先加入跨平台圖示。11 月 10 日起，PC 玩家移至新的跨平台伺服器，PC 排行榜同時重置；11 月 17 日 PlayStation 與 Xbox 加入，跨平台遊玩預設開啟。另有大師難度高潮任務、衝突模式計分板調整，以及 Shepherd 活動（11 月 17 日至 26 日）。",
       "summaryKind": "original",
-      "alsoReportedBy": [
-        {
-          "name": "Ubisoft (via Steam News)",
-          "url": "https://store.steampowered.com/news/app/2221490/view/1847920302248716"
-        }
-      ],
+      "alsoReportedBy": [],
       "whyItMatters_en": "PC players: your leaderboard spot resets on November 10.",
       "whyItMatters_zhHant": "PC 玩家請注意：排行榜名次將於 11 月 10 日歸零。",
       "media": [],
@@ -49,6 +44,34 @@
       "status": "new"
     },
     {
+      "id": "pk4upq",
+      "sourceId": "steam-news",
+      "sourceName": "Ubisoft (via Steam News)",
+      "sourceUrl": "https://store.steampowered.com/news/app/2221490/view/1847920302248716",
+      "title_orig": "[TUY8S3.3] Echoes of Central Park Launch, Crossplay Rollout & More",
+      "lang_orig": "en",
+      "publishedAt": "2026-11-02T16:00:22.000Z",
+      "fetchedAt": "2026-11-04T14:51:46.470Z",
+      "category": "updates",
+      "tags": [
+        "title-update",
+        "crossplay",
+        "event",
+        "pvp"
+      ],
+      "importance": 86,
+      "confidence": "official",
+      "headline_en": "[TUY8S3.3] Echoes of Central Park Launch, Crossplay Rollout & More",
+      "headline_zhHant": "pending",
+      "summary_en": "Echoes of Central Park is out now! Get a closer look at the campaign, companions, and new gear in our Echoes of Central Park launch…",
+      "summary_zhHant": "pending",
+      "summaryKind": "extract",
+      "alsoReportedBy": [],
+      "media": [],
+      "relatedIds": [],
+      "status": "new"
+    },
+    {
       "id": "7kdlud",
       "sourceId": "ubisoft-en",
       "sourceName": "Ubisoft",
@@ -56,7 +79,7 @@
       "title_orig": "The Division 2: Echoes of Central Park DLC is available now!",
       "lang_orig": "en",
       "publishedAt": "2026-11-03T15:00:00.000Z",
-      "fetchedAt": "2026-11-04T13:38:38.422Z",
+      "fetchedAt": "2026-11-04T14:51:46.470Z",
       "category": "missions",
       "tags": [
         "dlc"
@@ -84,7 +107,7 @@
       "title_orig": "[TUY8S3.3] Crossplay Rollout, Conflict Improvements & More",
       "lang_orig": "en",
       "publishedAt": "2026-11-02T15:45:00.000Z",
-      "fetchedAt": "2026-11-04T13:38:38.422Z",
+      "fetchedAt": "2026-11-04T14:51:46.470Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -111,6 +134,34 @@
       }
     },
     {
+      "id": "3rttxq",
+      "sourceId": "youtube",
+      "sourceName": "Kamikazevondoom",
+      "sourceUrl": "https://www.youtube.com/watch?v=xrbGg-_U2z0",
+      "title_orig": "*LOGIN NOW* The Division 2: EVERYTHING NEW TODAY! NEW HUNTERS, Triple XP Event, & New Exotic Meta...",
+      "lang_orig": "en",
+      "publishedAt": "2026-11-03T20:30:13.000Z",
+      "fetchedAt": "2026-11-04T14:51:46.470Z",
+      "category": "arsenal",
+      "tags": [
+        "event",
+        "exotic",
+        "video"
+      ],
+      "importance": 69,
+      "confidence": "community",
+      "headline_en": "*LOGIN NOW* The Division 2: EVERYTHING NEW TODAY! NEW HUNTERS, Triple XP Event, & New Exotic Meta...",
+      "headline_zhHant": "pending",
+      "summary_en": "Enjoy! Join this channel to get access to perks: Don't forget to mash that LIKE AND SUBSCRIBE to the channel.",
+      "summary_zhHant": "pending",
+      "summaryKind": "extract",
+      "alsoReportedBy": [],
+      "media": [],
+      "videoId": "xrbGg-_U2z0",
+      "relatedIds": [],
+      "status": "new"
+    },
+    {
       "id": "1sx320d",
       "sourceId": "ubisoft-en",
       "sourceName": "Ubisoft",
@@ -118,7 +169,7 @@
       "title_orig": "The Division 2: Echoes of Central Park Launch Twitch Drops",
       "lang_orig": "en",
       "publishedAt": "2026-11-03T15:00:00.000Z",
-      "fetchedAt": "2026-11-04T13:38:38.422Z",
+      "fetchedAt": "2026-11-04T14:51:46.470Z",
       "category": "community",
       "tags": [
         "twitch-drops",
@@ -145,7 +196,7 @@
       "title_orig": "Play The Division 2: Echoes of Central Park Today!",
       "lang_orig": "en",
       "publishedAt": "2026-11-03T17:13:46.000Z",
-      "fetchedAt": "2026-11-04T13:38:38.422Z",
+      "fetchedAt": "2026-11-04T14:51:46.470Z",
       "category": "community",
       "tags": [],
       "importance": 68,
@@ -161,6 +212,144 @@
       "status": "new"
     },
     {
+      "id": "j7jygg",
+      "sourceId": "youtube",
+      "sourceName": "V1rtualzZ",
+      "sourceUrl": "https://www.youtube.com/watch?v=f4FELz1HTI8",
+      "title_orig": "The NEW RATEL Exotic  – How to Get It & Is It Any Good  The Division 2",
+      "lang_orig": "en",
+      "publishedAt": "2026-11-03T15:01:04.000Z",
+      "fetchedAt": "2026-11-04T14:51:46.470Z",
+      "category": "arsenal",
+      "tags": [
+        "exotic",
+        "video"
+      ],
+      "importance": 65,
+      "confidence": "community",
+      "headline_en": "The NEW RATEL Exotic  – How to Get It & Is It Any Good  The Division 2",
+      "headline_zhHant": "pending",
+      "summary_en": "A brand-new Exotic Assault Rifle has arrived in The Division 2 with the release of Echoes of Central Park – introducing The Ratel!",
+      "summary_zhHant": "pending",
+      "summaryKind": "extract",
+      "alsoReportedBy": [],
+      "media": [],
+      "videoId": "f4FELz1HTI8",
+      "relatedIds": [],
+      "status": "new"
+    },
+    {
+      "id": "1qedh9z",
+      "sourceId": "youtube",
+      "sourceName": "RogueGold",
+      "sourceUrl": "https://www.youtube.com/watch?v=Cw4snqbK8rQ",
+      "title_orig": "Division 2 New \"RATEL\" Exotic Is Gnarly | First Impressions & Gameplay",
+      "lang_orig": "en",
+      "publishedAt": "2026-11-03T19:00:24.000Z",
+      "fetchedAt": "2026-11-04T14:51:46.470Z",
+      "category": "arsenal",
+      "tags": [
+        "dlc",
+        "exotic",
+        "pvp",
+        "video"
+      ],
+      "importance": 65,
+      "confidence": "community",
+      "headline_en": "Division 2 New \"RATEL\" Exotic Is Gnarly | First Impressions & Gameplay",
+      "headline_zhHant": "pending",
+      "summary_en": "Echoes Of Central Park is here, and in this video we're breaking down and taking a first look at the new \"Ratel\" Exotic AR that's…",
+      "summary_zhHant": "pending",
+      "summaryKind": "extract",
+      "alsoReportedBy": [],
+      "media": [],
+      "videoId": "Cw4snqbK8rQ",
+      "relatedIds": [],
+      "status": "new"
+    },
+    {
+      "id": "zxcaw6",
+      "sourceId": "youtube",
+      "sourceName": "widdz",
+      "sourceUrl": "https://www.youtube.com/watch?v=5ojzlb1H4gg",
+      "title_orig": "How to Get the Ratel Exotic AR + Every Guardian EZ (The Division 2 Central Park)",
+      "lang_orig": "en",
+      "publishedAt": "2026-11-04T04:15:51.000Z",
+      "fetchedAt": "2026-11-04T14:51:46.470Z",
+      "category": "arsenal",
+      "tags": [
+        "exotic",
+        "video"
+      ],
+      "importance": 65,
+      "confidence": "community",
+      "headline_en": "How to Get the Ratel Exotic AR + Every Guardian EZ (The Division 2 Central Park)",
+      "headline_zhHant": "pending",
+      "summary_en": "How to get the Ratel exotic AR in Echoes of Central Park, and everything about the Guardians: how to spawn all 6, how to beat…",
+      "summary_zhHant": "pending",
+      "summaryKind": "extract",
+      "alsoReportedBy": [],
+      "media": [],
+      "videoId": "5ojzlb1H4gg",
+      "relatedIds": [],
+      "status": "new"
+    },
+    {
+      "id": "1afuz53",
+      "sourceId": "youtube",
+      "sourceName": "ManaWar Gaming",
+      "sourceUrl": "https://www.youtube.com/watch?v=cqpBj3sRHCk",
+      "title_orig": "How To Get The Ratel Exotic Assault Rifle #TheDivision2 #TheRatel #RatelExotic",
+      "lang_orig": "en",
+      "publishedAt": "2026-11-04T07:28:42.000Z",
+      "fetchedAt": "2026-11-04T14:51:46.470Z",
+      "category": "arsenal",
+      "tags": [
+        "dlc",
+        "exotic",
+        "video"
+      ],
+      "importance": 64,
+      "confidence": "community",
+      "headline_en": "How To Get The Ratel Exotic Assault Rifle #TheDivision2 #TheRatel #RatelExotic",
+      "headline_zhHant": "pending",
+      "summary_en": "Looking to unlock The Ratel Exotic Assault Rifle in Tom Clancy’s The Division 2?",
+      "summary_zhHant": "pending",
+      "summaryKind": "extract",
+      "alsoReportedBy": [],
+      "media": [],
+      "videoId": "cqpBj3sRHCk",
+      "relatedIds": [],
+      "status": "new"
+    },
+    {
+      "id": "u3y9u4",
+      "sourceId": "youtube",
+      "sourceName": "King Macho",
+      "sourceUrl": "https://www.youtube.com/watch?v=33G8KHjysE8",
+      "title_orig": "NEW Master Mission Day 1 Guide! Earn Exotic Gloves! The Division 2",
+      "lang_orig": "en",
+      "publishedAt": "2026-11-04T00:48:37.000Z",
+      "fetchedAt": "2026-11-04T14:51:46.470Z",
+      "category": "arsenal",
+      "tags": [
+        "exotic",
+        "video"
+      ],
+      "importance": 64,
+      "confidence": "community",
+      "headline_en": "NEW Master Mission Day 1 Guide! Earn Exotic Gloves! The Division 2",
+      "headline_zhHant": "pending",
+      "summary_en": "Agents, we’re taking on the NEW Master mission in The Division 2, where you can earn exotic gloves!",
+      "summary_zhHant": "pending",
+      "summaryKind": "extract",
+      "alsoReportedBy": [],
+      "media": [],
+      "videoId": "33G8KHjysE8",
+      "relatedIds": [],
+      "status": "new"
+    },
+    {
       "id": "1k3dbt0",
       "sourceId": "steam-news",
       "sourceName": "Ubisoft (via Steam News)",
@@ -168,7 +357,7 @@
       "title_orig": "Last Chance to Pre-Purchase The Division 2: Echoes of Central Park",
       "lang_orig": "en",
       "publishedAt": "2026-10-28T13:29:29.000Z",
-      "fetchedAt": "2026-11-04T13:38:38.422Z",
+      "fetchedAt": "2026-11-04T14:51:46.470Z",
       "category": "missions",
       "tags": [
         "dlc",
@@ -194,7 +383,7 @@
       "title_orig": "Echoes of Central Park Launch Livestream",
       "lang_orig": "en",
       "publishedAt": "2026-10-27T16:01:04.000Z",
-      "fetchedAt": "2026-11-04T13:38:38.422Z",
+      "fetchedAt": "2026-11-04T14:51:46.470Z",
       "category": "community",
       "tags": [],
       "importance": 53,
@@ -217,10 +406,10 @@
       "title_orig": "Echoes of Central Park Costume Contest",
       "lang_orig": "en",
       "publishedAt": "2026-10-27T10:34:40.000Z",
-      "fetchedAt": "2026-11-04T13:38:38.422Z",
+      "fetchedAt": "2026-11-04T14:51:46.470Z",
       "category": "community",
       "tags": [],
-      "importance": 53,
+      "importance": 52,
       "confidence": "official",
       "headline_en": "Echoes of Central Park Costume Contest",
       "headline_zhHant": "《中央公園的迴響》服裝比賽",
@@ -240,7 +429,7 @@
       "title_orig": "【情報】Twitch掉寶 11/03 - 11/10",
       "lang_orig": "zh",
       "publishedAt": "2026-11-03T15:03:00.000Z",
-      "fetchedAt": "2026-11-04T13:38:38.422Z",
+      "fetchedAt": "2026-11-04T14:51:46.470Z",
       "category": "community",
       "tags": [
         "dlc"
@@ -265,7 +454,7 @@
       "title_orig": "【情報】TU29.3 / Y8S3.3 Patchnote翻譯｜跨平台遊玩、衝突戰改善、牧羊人活動與問題修正",
       "lang_orig": "zh",
       "publishedAt": "2026-11-03T13:57:00.000Z",
-      "fetchedAt": "2026-11-04T13:38:38.422Z",
+      "fetchedAt": "2026-11-04T14:51:46.470Z",
       "category": "updates",
       "tags": [
         "dlc"
@@ -290,7 +479,7 @@
       "title_orig": "【心得】無陷阱手T10日蝕複合控場(全汞合金)",
       "lang_orig": "zh",
       "publishedAt": "2026-11-03T05:31:00.000Z",
-      "fetchedAt": "2026-11-04T13:38:38.422Z",
+      "fetchedAt": "2026-11-04T14:51:46.470Z",
       "category": "builds",
       "tags": [],
       "importance": 49,
@@ -313,7 +502,7 @@
       "title_orig": "【情報】【已開機】關機維護公告 - 2026/11/03(二) 16:00 (Y8S3.3 中央公園DLC)，延長1.5小時",
       "lang_orig": "zh",
       "publishedAt": "2026-11-02T16:43:00.000Z",
-      "fetchedAt": "2026-11-04T13:38:38.422Z",
+      "fetchedAt": "2026-11-04T14:51:46.470Z",
       "category": "updates",
       "tags": [
         "dlc"
@@ -338,7 +527,7 @@
       "title_orig": "The Division 2: Red Moon Unleashed Event Twitch Drops",
       "lang_orig": "en",
       "publishedAt": "2026-10-15T16:00:00.000Z",
-      "fetchedAt": "2026-11-04T13:38:38.422Z",
+      "fetchedAt": "2026-11-04T14:51:46.470Z",
       "category": "community",
       "tags": [
         "event",
@@ -366,7 +555,7 @@
       "title_orig": "【情報】全境2 TUY8S3.2 血月高照、創作者合作、升級更新 2F R/MMR BUFF",
       "lang_orig": "zh",
       "publishedAt": "2026-10-27T07:04:00.000Z",
-      "fetchedAt": "2026-11-04T13:38:38.422Z",
+      "fetchedAt": "2026-11-04T14:51:46.470Z",
       "category": "updates",
       "tags": [
         "title-update"
@@ -391,10 +580,10 @@
       "title_orig": "【情報】［活動警報］復仇者懸賞",
       "lang_orig": "zh",
       "publishedAt": "2026-10-26T11:51:00.000Z",
-      "fetchedAt": "2026-11-04T13:38:38.422Z",
+      "fetchedAt": "2026-11-04T14:51:46.470Z",
       "category": "missions",
       "tags": [],
-      "importance": 33,
+      "importance": 32,
       "confidence": "community",
       "headline_en": "pending",
       "headline_zhHant": "【情報】［活動警報］復仇者懸賞",
@@ -411,22 +600,22 @@
     {
       "sourceId": "steam-news",
       "ok": true,
-      "checkedAt": "2026-11-04T13:38:38.422Z"
+      "checkedAt": "2026-11-04T14:51:46.470Z"
     },
     {
       "sourceId": "ubisoft-en",
       "ok": true,
-      "checkedAt": "2026-11-04T13:38:38.422Z"
+      "checkedAt": "2026-11-04T14:51:46.470Z"
     },
     {
       "sourceId": "ubisoft-zh-tw",
       "ok": true,
-      "checkedAt": "2026-11-04T13:38:38.422Z"
+      "checkedAt": "2026-11-04T14:51:46.470Z"
     },
     {
       "sourceId": "bahamut",
       "ok": true,
-      "checkedAt": "2026-11-04T13:38:38.422Z"
+      "checkedAt": "2026-11-04T14:51:46.470Z"
     }
   ]
 }
