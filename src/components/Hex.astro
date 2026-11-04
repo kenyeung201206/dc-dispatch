@@ -1,0 +1,16 @@
+---
+/** Original hex emblem (deliberately not the SHD logo). */
+interface Props {
+  size?: number;
+}
+const { size = 40 } = Astro.props;
+---
+<svg class="hex" width={size} height={Math.round(size * 1.15)} viewBox="0 0 40 46" aria-hidden="true" focusable="false">
+  <path d="M20 2l17 10v22L20 44 3 34V12z" fill="none" stroke="var(--shd)" stroke-width="3"></path>
+  <path d="M20 10l10 6v14l-10 6-10-6V16z" fill="var(--shd)" opacity=".9"></path>
+</svg>
+<style>
+  .hex {
+    flex: none;
+  }
+</style>

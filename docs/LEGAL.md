@@ -4,7 +4,13 @@ Not legal advice. Researched 2026-11-04. Each rule below is enforced in code (se
 
 ## Ubisoft
 - **No dedicated fan-site / brand-usage policy was found.** The only public creator policy is the [Ubisoft Video Policy](https://www.ubisoft.com/en-us/videopolicy.html) (last updated 01/2016): non-commercial fan content encouraged; "simple duplication of our official trailers … is not in keeping" with it; no charging for access; questions → videorights@ubisoft.com.
-- **Our stance (conservative):** no Ubisoft logos, key art, box art, character art or ripped game assets on the site. Official images are **linked, not copied**. Trailers are shown only through the official YouTube embed of Ubisoft's own upload.
+- **Our stance (updated 2026-11-04, owner's decision):** the site is private (two readers behind Cloudflare Access), so it shows **Ubisoft's own published promotional images** — Steam store screenshots and the header images of official Ubisoft news posts.
+  - Loaded directly from Ubisoft/Steam servers (`shared.akamai.steamstatic.com`, `staticctf.ubisoft.com`), not copied into the repo; shown unmodified (crop-to-fit only).
+  - Every picture carries a visible "Photo: Ubisoft ↗" credit linking to where it was published (`data/images.json`, enforced by schema).
+  - Generic gameplay shots used on a story they don't come from are labelled **"File photo / 資料照片"**; non-Division-2 stories (Franchise Desk) never get Division 2 file photos.
+  - **Never:** images extracted from the game's installed files, fan art without permission, or making the site public with these images. If the site is ever shared publicly, swap to original art first.
+  - Copyright still applies to private use; this is a low-risk, owner-accepted choice, not a licence.
+- Trailers are shown only through the official YouTube embed of Ubisoft's own upload.
 - **Footer disclaimer (EN):** "Unofficial fan project. Not affiliated with, endorsed or sponsored by Ubisoft. Tom Clancy's The Division 2 and related marks are trademarks of Ubisoft Entertainment. Private and non-commercial."
 - **Footer disclaimer (zh-Hant):** 「非官方粉絲專案，與 Ubisoft 無任何隸屬、背書或贊助關係。《全境封鎖 2》及相關商標為 Ubisoft Entertainment 所有。僅供私人、非商業用途。」
 - No official wording exists to copy, so this is our own text.

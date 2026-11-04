@@ -17,3 +17,6 @@ test-results/
 
 # Pipeline caches
 data/cache/
+
+# Review screenshots (large; regenerate with pnpm run screens)
+docs/screenshots/

@@ -1,0 +1,91 @@
+---
+import { t, type Locale } from '../i18n/index.ts';
+
+interface Props {
+  locale: Locale;
+  lines: string[];
+}
+const { locale, lines } = Astro.props;
+const all = [...lines, t(locale, 'ticker.joke')];
+---
+<div class="ticker" role="region" aria-label="Ticker">
+  <b class="label">{t(locale, 'ticker.label')}</b>
+  <div class="viewport">
+    <ul class="track">
+      {all.map((l) => <li>{l}</li>)}
+    </ul>
+    <ul class="track dup" aria-hidden="true">
+      {all.map((l) => <li>{l}</li>)}
+    </ul>
+  </div>
+</div>
+
+<style>
+  .ticker {
+    display: flex;
+    align-items: stretch;
+    max-width: var(--max);
+    margin-inline: auto;
+    border-bottom: 2px solid var(--rule);
+    font: 400 0.9375rem / 1.4 var(--font-hud);
+    overflow: hidden;
+  }
+  .label {
+    flex: none;
+    display: grid;
+    place-items: center;
+    padding: 8px 10px;
+    background: var(--shd);
+    color: var(--on-shd);
+    font-weight: 600;
+    letter-spacing: 0.06em;
+  }
+  .viewport {
+    display: flex;
+    overflow: hidden;
+    min-width: 0;
+    mask-image: linear-gradient(90deg, transparent, #000 16px, #000 calc(100% - 24px), transparent);
+  }
+  .track {
+    display: flex;
+    flex: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    animation: ticker 60s linear infinite;
+  }
+  .track li {
+    padding: 8px 0 8px 16px;
+    white-space: nowrap;
+  }
+  .track li::after {
+    content: '◆';
+    color: var(--shd-ink);
+    margin-left: 16px;
+    font-size: 0.7em;
+    vertical-align: middle;
+  }
+  .ticker:hover .track,
+  .ticker:focus-within .track {
+    animation-play-state: paused;
+  }
+  @keyframes ticker {
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    /* No auto-scroll: a single line the reader can swipe/scroll instead. */
+    .viewport {
+      mask-image: none;
+      overflow-x: auto;
+      scrollbar-width: thin;
+    }
+    .track {
+      animation: none;
+    }
+    .dup {
+      display: none;
+    }
+  }
+</style>

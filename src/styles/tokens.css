@@ -1,0 +1,70 @@
+/* Design tokens — see docs/DESIGN.md */
+:root,
+:root[data-theme='day'] {
+  /* Brand */
+  --shd: #ff6d10; /* approx. SHD orange: fills, rules, large text only */
+  --shd-ink: #a84300; /* AA-safe orange for small text on newsprint (5.5:1) */
+  --on-shd: #111111; /* text on orange fills (6.4:1) */
+  --hazard: #f2c200; /* Glitch Watch */
+  --dz-red: #b3261e; /* Dark Zone / ban risk */
+  --ok-green: #2e6b3a;
+
+  /* Day edition (newsprint) */
+  --paper: #f3eee3;
+  --paper-2: #e9e2d2;
+  --ink: #1b1a17;
+  --ink-soft: #4a463f; /* 8.3:1 on paper */
+  --rule: #1b1a17;
+  --rule-soft: #b9b09e;
+  --panel: #17191b; /* HUD rail, always dark */
+  --panel-ink: #ede7da;
+  --focus: #0b57d0;
+
+  /* Type */
+  --font-display: 'Playfair Display', 'Noto Serif TC', Georgia, serif;
+  --font-body: 'Libre Caslon Text', 'Noto Serif TC', Georgia, serif;
+  --font-hud: 'IBM Plex Mono', 'Noto Serif TC', ui-monospace, monospace;
+  --font-cjk: 'Noto Serif TC', serif;
+
+  --step--1: 0.875rem;
+  --step-0: 1.0625rem; /* 17px body */
+  --step-1: 1.25rem;
+  --step-2: clamp(1.4rem, 1.2rem + 1vw, 1.75rem);
+  --step-3: clamp(1.75rem, 1.4rem + 2vw, 2.6rem);
+  --step-4: clamp(2.5rem, 1.6rem + 4.5vw, 5.25rem);
+
+  /* Space & layout */
+  --gutter: 16px;
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --tap: 44px;
+  --max: 1280px;
+  --bar-h: 52px;
+  --nav-h: 48px;
+
+  color-scheme: light;
+}
+
+:root[data-theme='night'] {
+  --shd-ink: #ff8a3d; /* 7.9:1 on night paper */
+  --dz-red: #ff5a4e;
+  --ok-green: #6fcf7f;
+  --paper: #121416;
+  --paper-2: #1b1e21;
+  --ink: #e8e4da;
+  --ink-soft: #b3ada2;
+  --rule: #4a5056;
+  --rule-soft: #2c3135;
+  --focus: #8ab4f8;
+  color-scheme: dark;
+}
+
+@media (min-width: 768px) {
+  :root {
+    --gutter: 24px;
+  }
+}

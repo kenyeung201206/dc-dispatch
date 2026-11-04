@@ -14,14 +14,21 @@
     "check": "astro check",
     "test": "vitest run",
     "i18n:check": "node scripts/check-i18n.ts",
-    "ci": "pnpm run i18n:check && pnpm run check && pnpm run test && pnpm run build"
+    "ci": "pnpm run i18n:check && pnpm run check && pnpm run test && pnpm run build",
+    "test:e2e": "playwright test",
+    "screens": "node -e \"process.env.SCREENS=String(1);require('child_process').execSync('playwright test screenshots --project=desktop-chromium --project=iphone',{stdio:'inherit'})\""
   },
   "dependencies": {
+    "@fontsource/ibm-plex-mono": "5.3.0",
+    "@fontsource/libre-caslon-text": "5.3.0",
+    "@fontsource/noto-serif-tc": "5.3.1",
+    "@fontsource/playfair-display": "5.3.0",
     "astro": "7.4.5",
     "zod": "4.6.7"
   },
   "devDependencies": {
     "@astrojs/check": "0.9.12",
+    "@playwright/test": "1.64.1",
     "@types/node": "24.19.2",
     "typescript": "6.0.3",
     "vitest": "5.1.0"

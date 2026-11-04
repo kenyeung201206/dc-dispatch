@@ -1,0 +1,224 @@
+---
+import Hex from './Hex.astro';
+import { HTML_LANG, formatDate, otherLocale, switchLocalePath, t, type Locale } from '../i18n/index.ts';
+import { weatherFor } from '../lib/editions.ts';
+import type { Edition } from '../schema/item.ts';
+
+interface Props {
+  locale: Locale;
+  edition: Edition;
+}
+const { locale, edition } = Astro.props;
+const other = otherLocale(locale);
+const otherHref = switchLocalePath(Astro.url.pathname, other);
+const dateIso = `${edition.date}T12:00:00+09:00`;
+const season = edition.meta ? (locale === 'en' ? edition.meta.season_en : edition.meta.season_zhHant) : null;
+---
+<!-- Phone: compact sticky bar -->
+<div class="bar" data-bar>
+  <a class="bar-home" href={`/${locale}/`}><Hex size={28} /><span>{t(locale, 'site.name')}</span></a>
+  <a class="chip-btn" href={otherHref} hreflang={HTML_LANG[other]} lang={HTML_LANG[other]} aria-label={t(locale, 'nav.languageLabel')} data-lang-switch={other}>{t(locale, 'nav.language')}</a>
+  <button class="chip-btn" type="button" data-theme-toggle aria-label={t(locale, 'theme.toggle')}>◐</button>
+</div>
+
+<header class="masthead">
+  <div class="title">
+    <p class="title-name">
+      <Hex size={52} />
+      <span>The DC Dispatch</span>
+    </p>
+    <p class="zhname" lang="zh-Hant-TW">華盛頓每日快報</p>
+    <p class="tag">“{t(locale, 'site.tagline')}”</p>
+    <span class="corner tl" aria-hidden="true"></span><span class="corner br" aria-hidden="true"></span>
+  </div>
+  <dl class="rail">
+    <div><dt>{t(locale, 'rail.edition')}</dt><dd>{t(locale, 'edition.number')} {String(edition.editionNumber).padStart(3, '0')}{locale === 'zh-hant' ? ' 期' : ''}</dd></div>
+    <div><dt>{t(locale, 'rail.date')}</dt><dd><time datetime={edition.date}>{formatDate(dateIso, locale)}</time></dd></div>
+    {season && <div><dt>{t(locale, 'rail.season')}</dt><dd>{season} · {edition.meta?.titleUpdate}</dd></div>}
+    <div><dt>{t(locale, 'rail.weather')}</dt><dd>{weatherFor(edition.date, locale)}</dd></div>
+    <div class="rail-tools">
+      <a class="chip-btn" href={otherHref} hreflang={HTML_LANG[other]} lang={HTML_LANG[other]} aria-label={t(locale, 'nav.languageLabel')} data-lang-switch={other}>{t(locale, 'nav.language')}</a>
+      <button class="chip-btn" type="button" data-theme-toggle aria-label={t(locale, 'theme.toggle')}>
+        <span class="when-day">◐ {t(locale, 'theme.night')}</span><span class="when-night">◑ {t(locale, 'theme.day')}</span>
+      </button>
+    </div>
+  </dl>
+</header>
+
+<style>
+  .bar {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    min-height: var(--bar-h);
+    padding: env(safe-area-inset-top) max(12px, env(safe-area-inset-right)) 0 max(12px, env(safe-area-inset-left));
+    background: var(--paper);
+    border-bottom: 2px solid var(--shd);
+  }
+  .bar-home {
+    flex: 1;
+    min-width: 0;
+    min-height: var(--tap);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    font: 900 1.25rem / 1 var(--font-display);
+    white-space: nowrap;
+  }
+  .bar-home span {
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .masthead {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: var(--max);
+    margin-inline: auto;
+    border-bottom: 2px solid var(--rule);
+  }
+  .title {
+    position: relative;
+    padding: 20px var(--gutter) 14px;
+  }
+  .title-name {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 0;
+    font: 900 var(--step-4) / 0.95 var(--font-display);
+    letter-spacing: -0.01em;
+  }
+  .zhname {
+    margin: 8px 0 0;
+    font: 900 clamp(1.15rem, 0.9rem + 1.4vw, 1.75rem) / 1.4 var(--font-cjk);
+    letter-spacing: 0.25em;
+  }
+  .tag {
+    margin: 4px 0 0;
+    font: italic var(--step-0) / 1.4 var(--font-body);
+    color: var(--ink-soft);
+  }
+  .corner {
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    border: 2px solid var(--shd);
+  }
+  .tl {
+    top: 8px;
+    left: 8px;
+    border-right: 0;
+    border-bottom: 0;
+  }
+  .br {
+    bottom: 8px;
+    right: 8px;
+    border-left: 0;
+    border-top: 0;
+  }
+
+  .rail {
+    position: relative;
+    margin: 0;
+    padding: 12px var(--gutter);
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 2px 12px;
+    background: var(--panel);
+    color: var(--panel-ink);
+    border-top: 3px solid var(--shd);
+    font: 400 0.875rem / 1.5 var(--font-hud);
+  }
+  .rail::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background: repeating-linear-gradient(0deg, rgb(255 255 255 / 0.04) 0 1px, transparent 1px 3px);
+  }
+  .rail > div {
+    display: contents;
+  }
+  .rail dt {
+    color: var(--shd);
+    font-weight: 600;
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding-top: 2px;
+  }
+  .rail dd {
+    margin: 0;
+    min-width: 0;
+    overflow-wrap: anywhere;
+  }
+  .rail > .rail-tools {
+    grid-column: 1 / -1;
+    display: flex;
+    gap: 8px;
+    margin-top: 8px;
+    position: relative;
+    z-index: 1;
+  }
+  :root[data-theme='night'] .when-day,
+  :root:not([data-theme='night']) .when-night {
+    display: none;
+  }
+
+  @media (min-width: 768px) {
+    .bar {
+      display: none;
+    }
+    .masthead {
+      grid-template-columns: 1fr 290px;
+      margin-top: var(--space-4);
+      border-top: 2px solid var(--rule);
+    }
+    .title {
+      padding: 24px 28px 16px;
+      border-right: 2px solid var(--rule);
+    }
+    .rail {
+      border-top: 0;
+      border-left: 3px solid var(--shd);
+      padding: 14px 16px;
+      grid-template-columns: 1fr;
+      align-content: start;
+      gap: 0;
+    }
+    .rail dd {
+      margin-bottom: 8px;
+    }
+  }
+  @media (max-width: 767.98px) {
+    .title {
+      padding: 14px var(--gutter) 10px;
+    }
+    .title-name {
+      font-size: clamp(2.1rem, 10vw, 2.75rem);
+    }
+    .zhname {
+      margin-top: 4px;
+      font-size: 1.1rem;
+    }
+    .tag {
+      font-size: 0.9375rem;
+    }
+    .rail {
+      padding: 8px var(--gutter);
+      font-size: 0.8125rem;
+      line-height: 1.45;
+    }
+    .title-name :global(.hex) {
+      display: none;
+    }
+    .rail > .rail-tools {
+      display: none; /* the sticky bar has the same buttons */
+    }
+  }
+</style>

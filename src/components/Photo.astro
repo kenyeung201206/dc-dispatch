@@ -1,0 +1,120 @@
+---
+import { t, type Locale } from '../i18n/index.ts';
+import type { ImageAsset } from '../schema/item.ts';
+
+interface Props {
+  locale: Locale;
+  image: ImageAsset;
+  variant: 'lead' | 'card' | 'banner';
+  filePhoto?: boolean;
+  /** Load immediately (only the first big picture on a page). */
+  eager?: boolean;
+}
+const { locale, image, variant, filePhoto = false, eager = false } = Astro.props;
+const alt = locale === 'en' ? image.alt_en : image.alt_zhHant;
+// On phones, cards and banners use the ~600px file even on 3x screens to save mobile data
+// (Steam only offers 600px and 1920px). Only the lead picture gets full size everywhere.
+const sizes =
+  variant === 'card'
+    ? '(min-width: 1024px) 400px, (min-width: 768px) 50vw, 200px'
+    : variant === 'lead'
+      ? '(min-width: 1024px) 840px, 100vw'
+      : '(min-width: 1280px) 1232px, (min-width: 768px) 100vw, 200px';
+---
+<figure class:list={['photo', variant]}>
+  <div class="frame">
+    <img
+      src={variant === 'card' ? image.urlSmall : image.url}
+      srcset={`${image.urlSmall} ${image.widthSmall}w, ${image.url} ${image.width}w`}
+      sizes={sizes}
+      width={image.width}
+      height={image.height}
+      alt={alt}
+      loading={eager ? 'eager' : 'lazy'}
+      fetchpriority={eager ? 'high' : 'auto'}
+      decoding="async"
+      referrerpolicy="no-referrer"
+    />
+  </div>
+  <figcaption>
+    {filePhoto && <span class="file">{t(locale, 'photo.file')}</span>}
+    <span>{t(locale, 'photo.credit')}: <a href={image.attributionUrl} rel="noopener noreferrer" target="_blank">{image.attribution} ↗</a></span>
+  </figcaption>
+</figure>
+
+<style>
+  .photo {
+    margin: 0 0 var(--space-3);
+  }
+  .frame {
+    position: relative;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    background: var(--panel);
+    border: 1.5px solid var(--rule);
+  }
+  .banner .frame {
+    aspect-ratio: 16 / 7;
+  }
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  /* Newsprint by day: slightly muted, like ink on paper */
+  :root:not([data-theme='night']) img {
+    filter: saturate(0.88) contrast(1.04);
+  }
+  /* SHD corner brackets on big pictures */
+  .lead .frame::before,
+  .lead .frame::after,
+  .banner .frame::before,
+  .banner .frame::after {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    width: 22px;
+    height: 22px;
+    border: 3px solid var(--shd);
+    pointer-events: none;
+  }
+  .lead .frame::before,
+  .banner .frame::before {
+    top: 8px;
+    left: 8px;
+    border-right: 0;
+    border-bottom: 0;
+  }
+  .lead .frame::after,
+  .banner .frame::after {
+    bottom: 8px;
+    right: 8px;
+    border-left: 0;
+    border-top: 0;
+  }
+  figcaption {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 2px 10px;
+    padding-top: 4px;
+    font: 400 0.75rem / 1.4 var(--font-hud);
+    color: var(--ink-soft);
+  }
+  figcaption a {
+    display: inline-block;
+    padding: 4px 0;
+  }
+  .file {
+    margin-right: auto;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    padding-top: 4px;
+  }
+  @media (min-width: 1024px) {
+    .banner .frame {
+      aspect-ratio: 16 / 4.5;
+    }
+  }
+</style>

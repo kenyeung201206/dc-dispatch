@@ -1,0 +1,60 @@
+---
+interface Props {
+  title: string;
+  tone?: 'default' | 'hazard' | 'satire';
+  satireLabel?: string;
+}
+const { title, tone = 'default', satireLabel } = Astro.props;
+---
+<section class:list={['box', tone]}>
+  <h2 class="hud-label">
+    {title}
+    {tone === 'satire' && satireLabel && <span class="sat">{satireLabel}</span>}
+  </h2>
+  <slot />
+</section>
+
+<style>
+  .box {
+    position: relative;
+    margin-bottom: var(--space-5);
+    padding: 12px 14px;
+    border: 1.5px solid var(--rule);
+    background: color-mix(in srgb, var(--paper-2) 70%, transparent);
+  }
+  .box::before,
+  .box::after {
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border: 2px solid var(--shd);
+  }
+  .box::before {
+    top: -2px;
+    left: -2px;
+    border-right: 0;
+    border-bottom: 0;
+  }
+  .box::after {
+    bottom: -2px;
+    right: -2px;
+    border-left: 0;
+    border-top: 0;
+  }
+  .hazard {
+    border-top: 6px solid var(--hazard);
+    background-image: repeating-linear-gradient(-45deg, transparent 0 10px, rgb(242 194 0 / 0.07) 10px 20px);
+  }
+  h2 {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+    margin: 0 0 8px;
+  }
+  .sat {
+    color: var(--dz-red);
+    border: 1.5px solid currentColor;
+    padding: 0 6px;
+  }
+</style>

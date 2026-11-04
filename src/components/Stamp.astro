@@ -1,0 +1,34 @@
+---
+import { t, type Locale } from '../i18n/index.ts';
+import type { Item } from '../schema/item.ts';
+
+interface Props {
+  locale: Locale;
+  confidence: Item['confidence'];
+}
+const { locale, confidence } = Astro.props;
+---
+<span class:list={['stamp', confidence]}>{t(locale, `confidence.${confidence}`)}</span>
+
+<style>
+  .stamp {
+    display: inline-block;
+    padding: 2px 8px;
+    border: 2px solid currentColor;
+    font: 600 0.75rem / 1.4 var(--font-hud);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    transform: rotate(-2deg);
+    white-space: nowrap;
+  }
+  .official {
+    color: var(--ok-green);
+  }
+  .reported {
+    color: var(--ink-soft);
+  }
+  .rumour {
+    color: var(--dz-red);
+    border-style: dashed;
+  }
+</style>

@@ -1,0 +1,158 @@
+@import './tokens.css';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  scroll-padding-top: calc(var(--bar-h) + var(--nav-h) + 8px);
+}
+
+body {
+  margin: 0;
+  min-height: 100dvh;
+  background-color: var(--paper);
+  color: var(--ink);
+  font: 400 var(--step-0) / 1.6 var(--font-body);
+  /* Paper grain (day) */
+  background-image:
+    radial-gradient(rgb(0 0 0 / 0.035) 1px, transparent 1px),
+    radial-gradient(rgb(0 0 0 / 0.025) 1px, transparent 1px);
+  background-size: 3px 3px, 7px 7px;
+  background-position: 0 0, 1px 2px;
+  overflow-x: hidden;
+}
+
+:root[data-theme='night'] body {
+  /* Scan lines + hex grid (night) */
+  background-image:
+    repeating-linear-gradient(0deg, rgb(255 109 16 / 0.03) 0 1px, transparent 1px 3px),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='48'%3E%3Cpath d='M14 0l14 8v16L14 32 0 24V8z' fill='none' stroke='%23FF6D10' stroke-opacity='.05'/%3E%3C/svg%3E");
+  background-size: auto, 28px 48px;
+}
+
+:lang(zh-Hant-TW) body,
+body:lang(zh-Hant-TW) {
+  line-height: 1.75;
+  text-autospace: normal; /* CJK/Latin spacing where supported */
+  line-break: strict;
+}
+
+img,
+svg {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: inherit;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
+}
+a:hover {
+  color: var(--shd-ink);
+}
+
+:focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 2px;
+}
+
+.skip {
+  position: absolute;
+  left: 8px;
+  top: -100px;
+  z-index: 100;
+  background: var(--ink);
+  color: var(--paper);
+  padding: 12px 16px;
+}
+.skip:focus {
+  top: 8px;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.wrap {
+  max-width: var(--max);
+  margin-inline: auto;
+  padding-inline: max(var(--gutter), env(safe-area-inset-left)) max(var(--gutter), env(safe-area-inset-right));
+}
+
+/* Small HUD label */
+.hud-label {
+  font: 600 var(--step--1) / 1.3 var(--font-hud);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+/* Icon-ish button (lang / theme), 44px target */
+.chip-btn {
+  min-width: var(--tap);
+  min-height: var(--tap);
+  display: inline-grid;
+  place-items: center;
+  padding: 0 10px;
+  border: 1.5px solid currentColor;
+  background: transparent;
+  color: inherit;
+  font: 600 0.9375rem / 1 var(--font-hud);
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 0;
+}
+.chip-btn:hover {
+  color: var(--shd);
+}
+
+/* Section heading with orange bar */
+.section-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 4px 12px;
+  border-top: 3px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
+  padding: 6px 0;
+  margin: var(--space-6) 0 var(--space-4);
+}
+.section-head h2 {
+  margin: 0;
+  font: 900 var(--step-2) / 1.15 var(--font-display);
+}
+.section-head h2::before {
+  content: '';
+  display: inline-block;
+  width: 0.55em;
+  height: 0.55em;
+  margin-right: 0.35em;
+  background: var(--shd);
+  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+}
+.section-head p {
+  margin: 0;
+  font: italic var(--step--1) / 1.4 var(--font-body);
+  color: var(--ink-soft);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

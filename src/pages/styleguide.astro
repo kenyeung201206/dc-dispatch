@@ -1,0 +1,74 @@
+---
+// Hidden style guide (not linked from nav). See docs/DESIGN.md.
+import Base from '../layouts/Base.astro';
+import Stamp from '../components/Stamp.astro';
+import SideBox from '../components/SideBox.astro';
+import StoryCard from '../components/StoryCard.astro';
+import Hex from '../components/Hex.astro';
+import { latestEdition } from '../lib/editions.ts';
+
+const sample = latestEdition().items[0]!;
+const swatches = ['--shd', '--shd-ink', '--paper', '--paper-2', '--ink', '--ink-soft', '--hazard', '--dz-red', '--panel', '--ok-green'];
+---
+<Base locale="en" title="Style guide">
+  <h1 style="font: 900 var(--step-3) var(--font-display)">Style guide</h1>
+  <p><button class="chip-btn" type="button" data-theme-toggle>Toggle Day / Night</button></p>
+
+  <header class="section-head"><h2>Colour</h2></header>
+  <ul class="sw">
+    {swatches.map((s) => <li><span style={`background: var(${s})`}></span><code>{s}</code></li>)}
+  </ul>
+
+  <header class="section-head"><h2>Type</h2></header>
+  <p style="font: 900 var(--step-4)/1 var(--font-display); margin: 0">Playfair 900</p>
+  <p style="font: 700 var(--step-2) var(--font-display)">Playfair 700 headline</p>
+  <p>Libre Caslon body text at 17px. <em>Italic for taglines.</em> <strong>Bold for emphasis.</strong></p>
+  <p class="hud-label">IBM Plex Mono HUD label</p>
+  <p lang="zh-Hant-TW" style="font: 900 var(--step-2)/1.4 var(--font-cjk)">思源宋體標題 900</p>
+  <p lang="zh-Hant-TW">中文內文使用 Noto Serif TC，行高 1.75，中英文之間自動留白（如 Division 2）。</p>
+
+  <header class="section-head"><h2>Stamps & emblem</h2></header>
+  <p style="display:flex;gap:16px;align-items:center;flex-wrap:wrap">
+    <Stamp locale="en" confidence="official" /><Stamp locale="en" confidence="reported" /><Stamp locale="en" confidence="rumour" />
+    <Stamp locale="zh-hant" confidence="rumour" /><Hex size={40} />
+  </p>
+
+  <header class="section-head"><h2>Boxes</h2></header>
+  <div class="grid">
+    <SideBox title="Default">Plain box with HUD corners.</SideBox>
+    <SideBox title="Hazard" tone="hazard">Glitch Watch.</SideBox>
+    <SideBox title="Satire" tone="satire" satireLabel="SATIRE">Jokes live here.</SideBox>
+  </div>
+
+  <header class="section-head"><h2>Story cards</h2></header>
+  <StoryCard locale="en" item={sample} variant="lead" />
+  <div class="grid">
+    <StoryCard locale="en" item={sample} />
+    <StoryCard locale="zh-hant" item={{ ...sample, headline_zhHant: 'pending', summary_zhHant: 'pending' }} />
+    <StoryCard locale="en" item={{ ...sample, confidence: 'rumour' }} variant="brief" />
+  </div>
+</Base>
+
+<style>
+  .sw {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 12px;
+    padding: 0;
+    list-style: none;
+  }
+  .sw span {
+    display: block;
+    height: 48px;
+    border: 1px solid var(--rule);
+  }
+  .grid {
+    display: grid;
+    gap: 16px;
+  }
+  @media (min-width: 768px) {
+    .grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+</style>

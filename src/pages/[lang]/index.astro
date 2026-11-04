@@ -1,18 +1,251 @@
 ---
 import Base from '../../layouts/Base.astro';
-import { CATEGORIES } from '../../schema/item.ts';
-import { LOCALES, t, type Locale } from '../../i18n/index.ts';
+import Masthead from '../../components/Masthead.astro';
+import Ticker from '../../components/Ticker.astro';
+import SectionNav from '../../components/SectionNav.astro';
+import StoryCard from '../../components/StoryCard.astro';
+import SideBox from '../../components/SideBox.astro';
+import LeadArt from '../../components/LeadArt.astro';
+import Photo from '../../components/Photo.astro';
+import { CATEGORIES, type Category } from '../../schema/item.ts';
+import { LOCALES, t, type Locale, type UiKey } from '../../i18n/index.ts';
+import { byImportance, latestEdition, localized } from '../../lib/editions.ts';
+import { bannerFor, imageFor } from '../../lib/images.ts';
 
 export function getStaticPaths() {
   return LOCALES.map((lang) => ({ params: { lang } }));
 }
 const locale = Astro.params.lang as Locale;
+const edition = latestEdition();
+const items = [...edition.items].sort(byImportance);
+
+const [lead, ...rest] = items;
+const secondary = rest.slice(0, 3);
+const frontIds = new Set([lead!.id, ...secondary.map((i) => i.id)]);
+
+// Section blocks below the fold (Watch Now + Back Page come in later phases).
+const SECTION_ORDER = CATEGORIES.filter((c) => !['front-page', 'watch-now', 'back-page'].includes(c));
+const bySection = (c: Category) => items.filter((i) => i.category === c && !frontIds.has(i.id));
+
+const glitches = items.filter((i) => i.glitch);
+const patchTldr = items.filter((i) => i.category === 'updates').slice(0, 4);
+const tickerLines = items.slice(0, 4).map((i) => localized(i, 'headline', locale).text);
+const navSections: Category[] = ['front-page', ...SECTION_ORDER, 'back-page'];
+
+// Pictures: stories' own images are reserved first, then section banners,
+// then gameplay "file photos" for stories without one — no picture repeats on the page.
+const used = new Set(items.flatMap((i) => (i.imageId ? [i.imageId] : [])));
+const banners = new Map(SECTION_ORDER.map((c) => [c, bannerFor(c, used)]));
+const photos = new Map(items.map((i) => [i.id, imageFor(i, used)]));
+const leadPhoto = photos.get(lead!.id);
 ---
 <Base locale={locale}>
-  <h1>{t(locale, 'site.name')}</h1>
-  <p>{t(locale, 'site.tagline')}</p>
-  <p>{t(locale, 'home.placeholder')}</p>
-  <ul>
-    {CATEGORIES.map((c) => <li>{t(locale, `section.${c}`)}</li>)}
-  </ul>
+  <Fragment slot="masthead">
+    <Masthead locale={locale} edition={edition} />
+    <Ticker locale={locale} lines={tickerLines} />
+    <SectionNav locale={locale} sections={navSections} />
+  </Fragment>
+
+  {edition.fixture && <p class="fixture-note hud-label">{t(locale, 'edition.fixture')}</p>}
+
+  <h1 class="visually-hidden">{t(locale, 'site.name')} — {t(locale, 'section.front-page')}</h1>
+
+  <div class="front" id="front-page">
+    <div class="lead-col">
+      {!leadPhoto && <LeadArt />}
+      <StoryCard locale={locale} item={lead!} variant="lead" photo={leadPhoto} />
+      <div class="secondary">
+        {secondary.map((item) => <StoryCard locale={locale} item={item} photo={photos.get(item.id)} />)}
+      </div>
+    </div>
+
+    <aside class="side" aria-label={t(locale, 'sidebar.glitch')}>
+      <SideBox title={t(locale, 'sidebar.glitch')} tone="hazard">
+        <ul class="glitch-list">
+          {
+            glitches.map((g) => (
+              <li>
+                <span class:list={['gstate', g.glitch!.state]}>{t(locale, `glitch.${g.glitch!.state}`)}</span>
+                <a href={g.sourceUrl} rel="noopener noreferrer" target="_blank">{localized(g, 'headline', locale).text}</a>
+                {g.glitch!.banRisk && <strong class="ban">{t(locale, 'glitch.banRisk')}</strong>}
+                <small>{locale === 'en' ? g.glitch!.riskNote_en : g.glitch!.riskNote_zhHant === 'pending' ? g.glitch!.riskNote_en : g.glitch!.riskNote_zhHant}</small>
+              </li>
+            ))
+          }
+        </ul>
+      </SideBox>
+      <SideBox title={t(locale, 'sidebar.patch')}>
+        <ul class="tldr">
+          {patchTldr.map((p) => <li>{localized(p, 'headline', locale).text}</li>)}
+        </ul>
+      </SideBox>
+      <SideBox title={t(locale, 'sidebar.agent')} tone="satire" satireLabel={t(locale, 'satire.label')}>
+        <p class="satire-text">{t(locale, 'sidebar.agentText')}</p>
+      </SideBox>
+    </aside>
+  </div>
+
+  {
+    SECTION_ORDER.map((c) => {
+      const list = bySection(c);
+      const banner = banners.get(c);
+      return (
+        <section id={c} class="sec" aria-labelledby={`h-${c}`}>
+          <header class="section-head">
+            <h2 id={`h-${c}`}>{t(locale, `section.${c}` as UiKey)}</h2>
+            <p>{t(locale, `tagline.${c}` as UiKey)}</p>
+          </header>
+          {banner && <Photo locale={locale} image={banner} variant="banner" />}
+          {list.length ? (
+            <div class="cols">
+              {list.map((item) => <StoryCard locale={locale} item={item} photo={photos.get(item.id)} />)}
+            </div>
+          ) : (
+            <p class="empty">{t(locale, 'empty.section')}</p>
+          )}
+        </section>
+      );
+    })
+  }
+
+  <section id="back-page" class="sec back" aria-labelledby="h-back">
+    <header class="section-head">
+      <h2 id="h-back">{t(locale, 'section.back-page')}</h2>
+      <p class="sat-tag">{t(locale, 'satire.label')}</p>
+    </header>
+    <div class="cols">
+      <SideBox title={t(locale, 'backpage.horoscope')} tone="satire" satireLabel={t(locale, 'satire.label')}>
+        <p class="satire-text">{t(locale, 'backpage.horoscopeText')}</p>
+      </SideBox>
+      <SideBox title={t(locale, 'backpage.classified')} tone="satire" satireLabel={t(locale, 'satire.label')}>
+        <p class="satire-text">{t(locale, 'backpage.classifiedText')}</p>
+      </SideBox>
+    </div>
+  </section>
 </Base>
+
+<style>
+  .fixture-note {
+    margin: var(--space-4) 0 0;
+    padding: 8px 12px;
+    border: 1.5px dashed var(--shd-ink);
+    color: var(--shd-ink);
+    text-transform: none;
+    letter-spacing: 0.02em;
+  }
+  .front {
+    display: grid;
+    gap: var(--space-5);
+    margin-top: var(--space-5);
+  }
+  .secondary {
+    display: grid;
+    gap: var(--space-4);
+    border-top: 2px solid var(--rule);
+    padding-top: var(--space-4);
+  }
+  .cols {
+    display: grid;
+    gap: var(--space-4);
+  }
+  .glitch-list,
+  .tldr {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .glitch-list li,
+  .tldr li {
+    padding: 8px 0;
+    border-bottom: 1px solid var(--rule-soft);
+  }
+  .glitch-list li:last-child,
+  .tldr li:last-child {
+    border-bottom: 0;
+  }
+  .glitch-list a {
+    display: block;
+    font-weight: 700;
+    padding: 4px 0;
+  }
+  .glitch-list small {
+    display: block;
+    color: var(--ink-soft);
+  }
+  .gstate {
+    display: inline-block;
+    padding: 0 6px;
+    font: 600 0.75rem / 1.6 var(--font-hud);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    background: var(--hazard);
+    color: #111;
+  }
+  .gstate.patched,
+  .gstate.hotfixed {
+    background: var(--ok-green);
+    color: #fff;
+  }
+  .ban {
+    display: block;
+    color: var(--dz-red);
+  }
+  .tldr li::before {
+    content: '▸ ';
+    color: var(--shd-ink);
+  }
+  .satire-text {
+    margin: 0;
+    font-style: italic;
+  }
+  .empty {
+    font-style: italic;
+    color: var(--ink-soft);
+  }
+  .sat-tag {
+    color: var(--dz-red) !important;
+    font: 600 var(--step--1) var(--font-hud) !important;
+    letter-spacing: 0.1em;
+  }
+
+  @media (min-width: 768px) {
+    .secondary,
+    .cols {
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: var(--space-5);
+    }
+  }
+  @media (min-width: 1024px) {
+    .front {
+      grid-template-columns: minmax(0, 8fr) minmax(0, 4fr);
+      gap: 0;
+    }
+    .lead-col {
+      padding-right: var(--space-5);
+      border-right: 1px solid var(--rule);
+    }
+    .side {
+      padding-left: var(--space-5);
+    }
+    .secondary,
+    .cols {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0;
+    }
+    /* column rules between stories */
+    .secondary > :global(*),
+    .cols > :global(*) {
+      padding: 0 var(--space-4);
+      border-left: 1px solid var(--rule-soft);
+    }
+    .secondary > :global(*:first-child),
+    .cols > :global(*:first-child) {
+      padding-left: 0;
+      border-left: 0;
+    }
+    .back .cols > :global(*) {
+      border-left: 1.5px solid var(--rule);
+      margin: 0 var(--space-2);
+    }
+  }
+</style>

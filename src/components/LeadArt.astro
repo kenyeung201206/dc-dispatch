@@ -1,0 +1,44 @@
+---
+/** Original decorative HUD illustration (no game assets). Decorative only. */
+---
+<div class="art" aria-hidden="true">
+  <svg viewBox="0 0 800 340" preserveAspectRatio="xMidYMid slice">
+    <defs>
+      <pattern id="hexgrid" width="28" height="48" patternUnits="userSpaceOnUse">
+        <path d="M14 0l14 8v16L14 32 0 24V8z" fill="none" stroke="currentColor" stroke-opacity=".12"></path>
+      </pattern>
+    </defs>
+    <rect width="800" height="340" fill="url(#hexgrid)"></rect>
+    <!-- Abstract skyline with a dome -->
+    <g fill="none" stroke="var(--shd)" stroke-width="2">
+      <path d="M0 290h120v-40h40v-70h30v70h50v-30h60v30h20v-60h20v60h40"></path>
+      <path d="M380 290v-60h20v-20h12a68 68 0 0 1 136 0h12v20h20v60"></path>
+      <path d="M480 142v-30m-6 0h12"></path>
+      <path d="M580 290v-50h60v-40h40v40h40v-90h20v90h60"></path>
+      <path d="M0 290h800" stroke-opacity=".6"></path>
+    </g>
+    <!-- HUD reticle -->
+    <g stroke="currentColor" stroke-opacity=".55" fill="none" stroke-width="1.5">
+      <circle cx="480" cy="190" r="96"></circle>
+      <path d="M480 80v30m0 160v30M370 190h30m160 0h30"></path>
+    </g>
+    <text x="24" y="40" fill="var(--shd)" font-family="IBM Plex Mono, monospace" font-size="16" letter-spacing="2">SECTOR // CENTRAL PARK · SIGNAL WEAK</text>
+    <text x="24" y="320" fill="currentColor" fill-opacity=".6" font-family="IBM Plex Mono, monospace" font-size="12">ILLUSTRATION · ORIGINAL ARTWORK</text>
+  </svg>
+</div>
+
+<style>
+  .art {
+    margin: 0 0 var(--space-4);
+    aspect-ratio: 800 / 340;
+    color: var(--ink);
+    border: 1.5px solid var(--rule);
+    background: linear-gradient(180deg, var(--paper-2), var(--paper));
+    overflow: hidden;
+  }
+  svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+</style>
