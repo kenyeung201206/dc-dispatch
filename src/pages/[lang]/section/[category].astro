@@ -1,0 +1,206 @@
+---
+import Paper from '../../../layouts/Paper.astro';
+import StoryCard from '../../../components/StoryCard.astro';
+import Photo from '../../../components/Photo.astro';
+import { CATEGORIES, type Category } from '../../../schema/item.ts';
+import { LOCALES, t, tf, type Locale, type UiKey } from '../../../i18n/index.ts';
+import { allItems } from '../../../lib/editions.ts';
+import { bannerFor, imageFor } from '../../../lib/images.ts';
+import { routes } from '../../../lib/routes.ts';
+
+export function getStaticPaths() {
+  // Front page, Watch Now (Phase 5) and Back Page have no section page.
+  const PAGES = CATEGORIES.filter((c) => !['front-page', 'watch-now', 'back-page'].includes(c));
+  return LOCALES.flatMap((lang) => PAGES.map((category) => ({ params: { lang, category } })));
+}
+const locale = Astro.params.lang as Locale;
+const category = Astro.params.category as Category;
+const isBoard = category === 'glitch-watch';
+const items = allItems.filter((i) => i.category === category);
+const used = new Set(items.flatMap((i) => (i.imageId ? [i.imageId] : [])));
+const banner = bannerFor(category, used);
+const photos = new Map(items.map((i) => [i.id, imageFor(i, used)]));
+
+const confidences = (['official', 'reported', 'rumour'] as const).filter((c) => items.some((i) => i.confidence === c));
+const states = (['active', 'hotfixed', 'patched'] as const).filter((s) => items.some((i) => i.glitch?.state === s));
+// Topic filters: known tags used by at least one story here (and not by all of them).
+const KNOWN_TAGS = ['title-update', 'crossplay', 'dlc', 'event', 'twitch-drops', 'exotic', 'pvp', 'known-issue', 'season'] as const;
+const tags = KNOWN_TAGS.filter((tag) => {
+  const n = items.filter((i) => i.tags.includes(tag)).length;
+  return n > 0 && n < items.length;
+});
+const title = isBoard ? t(locale, 'glitch.board') : t(locale, `section.${category}` as UiKey);
+---
+<Paper locale={locale} title={title} current={category}>
+  <header class="section-head page-head">
+    <h1>{title}</h1>
+    <p>{t(locale, `tagline.${category}` as UiKey)}</p>
+  </header>
+  {isBoard && <p class="intro">{t(locale, 'glitch.boardIntro')}</p>}
+  {category === 'updates' && <p class="intro"><a href={routes.patches(locale)}>{t(locale, 'nav.patches')} →</a></p>}
+  {banner && <Photo locale={locale} image={banner} variant="banner" />}
+
+  {
+    items.length > 1 && (confidences.length > 1 || states.length > 1 || tags.length > 0) && (
+      <div class="filters" role="group" aria-label={t(locale, 'filter.label')} data-filters>
+        <button type="button" class="chip" aria-pressed="true" data-key="" data-value="">{t(locale, 'filter.all')}</button>
+        {confidences.length > 1 && confidences.map((c) => (
+          <button type="button" class="chip" aria-pressed="false" data-key="confidence" data-value={c}>
+            {t(locale, `confidence.${c}` as UiKey)}
+          </button>
+        ))}
+        {tags.map((tag) => (
+          <button type="button" class="chip" aria-pressed="false" data-key="tags" data-value={tag}>
+            # {t(locale, `tag.${tag}` as UiKey)}
+          </button>
+        ))}
+        {states.length > 1 && states.map((s) => (
+          <button type="button" class="chip" aria-pressed="false" data-key="state" data-value={s}>
+            {t(locale, `glitch.${s}` as UiKey)}
+          </button>
+        ))}
+      </div>
+    )
+  }
+
+  <p class="count hud-label" aria-live="polite" data-count data-template={t(locale, 'section.count')}>
+    {tf(locale, 'section.count', { n: items.length })}
+  </p>
+
+  {
+    items.length ? (
+      <div class="cols">
+        {items.map((item) => (
+          <div class="entry" data-confidence={item.confidence} data-state={item.glitch?.state ?? ''} data-tags={item.tags.join(' ')}>
+            {item.glitch && (
+              <p class="gline">
+                <span class:list={['gstate', item.glitch.state]}>{t(locale, `glitch.${item.glitch.state}` as UiKey)}</span>
+                <span class="hud-label">{t(locale, 'glitch.firstSeen')}: {item.glitch.firstSeen}</span>
+                {item.glitch.banRisk && <strong class="ban">{t(locale, 'glitch.banRisk')}</strong>}
+              </p>
+            )}
+            <StoryCard locale={locale} item={item} photo={photos.get(item.id)} />
+          </div>
+        ))}
+      </div>
+    ) : (
+      <p class="empty">{t(locale, 'empty.section')}</p>
+    )
+  }
+</Paper>
+
+<script>
+  // Progressive enhancement: without JS every story is simply shown.
+  document.querySelectorAll<HTMLElement>('[data-filters]').forEach((group) => {
+    const entries = [...document.querySelectorAll<HTMLElement>('.entry')];
+    const count = document.querySelector<HTMLElement>('[data-count]');
+    group.addEventListener('click', (e) => {
+      const btn = (e.target as HTMLElement).closest<HTMLButtonElement>('button[data-key]');
+      if (!btn) return;
+      group.querySelectorAll('button').forEach((b) => b.setAttribute('aria-pressed', String(b === btn)));
+      const { key, value } = btn.dataset;
+      let shown = 0;
+      for (const el of entries) {
+        const field = el.dataset[key ?? ''] ?? '';
+        const match = !key || (key === 'tags' ? field.split(' ').includes(value ?? '') : field === value);
+        el.hidden = !match;
+        if (match) shown++;
+      }
+      if (count) count.textContent = (count.dataset.template ?? '{n}').replace('{n}', String(shown));
+    });
+  });
+</script>
+
+<style>
+  .page-head h1 {
+    margin: 0;
+    font: 900 var(--step-3) / 1.1 var(--font-display);
+  }
+  .page-head h1::before {
+    content: '';
+    display: inline-block;
+    width: 0.5em;
+    height: 0.5em;
+    margin-right: 0.35em;
+    background: var(--shd);
+    clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+  }
+  :lang(zh-Hant-TW) .page-head h1 {
+    font-family: var(--font-cjk);
+  }
+  .intro {
+    color: var(--ink-soft);
+    max-width: 70ch;
+  }
+  .intro a {
+    display: inline-block;
+    padding: 8px 0;
+    color: var(--shd-ink);
+    font-weight: 700;
+  }
+  .filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: var(--space-4) 0 var(--space-2);
+  }
+  .chip {
+    min-height: var(--tap);
+    padding: 0 14px;
+    border: 1.5px solid var(--rule);
+    background: transparent;
+    color: var(--ink);
+    font: 600 0.875rem var(--font-hud);
+    cursor: pointer;
+  }
+  .chip[aria-pressed='true'] {
+    background: var(--ink);
+    color: var(--paper);
+  }
+  .count {
+    color: var(--ink-soft);
+  }
+  .cols {
+    display: grid;
+    gap: var(--space-5) var(--space-4);
+  }
+  .entry[hidden] {
+    display: none;
+  }
+  .gline {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 10px;
+    align-items: center;
+    margin: 0 0 8px;
+  }
+  .gstate {
+    padding: 0 6px;
+    font: 600 0.75rem / 1.6 var(--font-hud);
+    text-transform: uppercase;
+    background: var(--hazard);
+    color: #111;
+  }
+  .gstate.patched,
+  .gstate.hotfixed {
+    background: var(--ok-green);
+    color: #fff;
+  }
+  .ban {
+    color: var(--dz-red);
+  }
+  .empty {
+    font-style: italic;
+    color: var(--ink-soft);
+  }
+  @media (min-width: 768px) {
+    .cols {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  @media (min-width: 1024px) {
+    .cols {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+</style>

@@ -2,6 +2,7 @@
 import Hex from './Hex.astro';
 import { HTML_LANG, formatDate, otherLocale, switchLocalePath, t, type Locale } from '../i18n/index.ts';
 import { weatherFor } from '../lib/editions.ts';
+import { routes } from '../lib/routes.ts';
 import type { Edition } from '../schema/item.ts';
 
 interface Props {
@@ -17,6 +18,7 @@ const season = edition.meta ? (locale === 'en' ? edition.meta.season_en : editio
 <!-- Phone: compact sticky bar -->
 <div class="bar" data-bar>
   <a class="bar-home" href={`/${locale}/`}><Hex size={28} /><span>{t(locale, 'site.name')}</span></a>
+  <a class="chip-btn" href={routes.search(locale)} aria-label={t(locale, 'nav.search')}>⌕</a>
   <a class="chip-btn" href={otherHref} hreflang={HTML_LANG[other]} lang={HTML_LANG[other]} aria-label={t(locale, 'nav.languageLabel')} data-lang-switch={other}>{t(locale, 'nav.language')}</a>
   <button class="chip-btn" type="button" data-theme-toggle aria-label={t(locale, 'theme.toggle')}>◐</button>
 </div>

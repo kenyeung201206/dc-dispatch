@@ -4,6 +4,7 @@ import Photo from './Photo.astro';
 import { formatDate, t, type Locale } from '../i18n/index.ts';
 import { localized } from '../lib/editions.ts';
 import type { PlacedImage } from '../lib/images.ts';
+import { routes } from '../lib/routes.ts';
 import type { Item } from '../schema/item.ts';
 
 interface Props {
@@ -34,7 +35,7 @@ const day = new Intl.DateTimeFormat(locale === 'en' ? 'en' : 'zh-Hant-TW', {
     <time class="hud-label" datetime={item.publishedAt} title={formatDate(item.publishedAt, locale)}>{day}</time>
   </div>
   <H class="headline" lang={headline.pending ? 'en' : undefined}>
-    {headline.text}
+    <a href={routes.story(locale, item.id)}>{headline.text}</a>
   </H>
   {headline.pending && <p class="pending">{t(locale, 'translation.pending')}</p>}
   {variant !== 'brief' && (
@@ -78,6 +79,13 @@ const day = new Intl.DateTimeFormat(locale === 'en' ? 'en' : 'zh-Hant-TW', {
   }
   .upd {
     color: var(--shd-ink);
+  }
+  .headline a {
+    text-decoration: none;
+  }
+  .headline a:hover {
+    text-decoration: underline;
+    text-decoration-color: var(--shd);
   }
   .headline {
     margin: 0 0 6px;

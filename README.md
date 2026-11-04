@@ -3,7 +3,7 @@
 A private, bilingual (EN / 繁體中文) daily newspaper about *Tom Clancy's The Division 2*, for two readers.
 Unofficial fan project, not affiliated with Ubisoft.
 
-**Status:** Phase 1 (skeleton). See `DIVISION2_SITE_BRIEF.md` for the full spec and `docs/` for research.
+**Status:** Phase 4 (pipeline v1, all core pages). See `DIVISION2_SITE_BRIEF.md` for the full spec and `docs/` for research.
 
 ## Setup
 
@@ -19,7 +19,11 @@ pnpm dev          # http://localhost:4321/
 | Command | What it does |
 |---|---|
 | `pnpm dev` | Local dev server |
-| `pnpm build` | Static build into `dist/` |
+| `pnpm build` | Static build into `dist/` + Pagefind search index (search only works on a build: `pnpm build && pnpm preview`) |
+| `pnpm refresh` | Fetch today's news and write `data/editions/<date>.json` |
+| `pnpm refresh:dry` | Same, from recorded fixtures (no network), into `.dry-run/` |
+| `pnpm test:e2e` | Playwright tests (desktop Chromium/WebKit, iPhone, Pixel, 360px) |
+| `pnpm screens` | Review screenshots into `docs/screenshots/` |
 | `pnpm check` | Astro + TypeScript type check |
 | `pnpm test` | Unit tests (Vitest) |
 | `pnpm i18n:check` | Fails if EN and 中文 UI strings don't match key-for-key |
@@ -36,7 +40,9 @@ The site builds and tests pass with none of them set.
 
 ```
 docs/       research, sources, legal
-src/        Astro site (i18n/, layouts/, pages/, schema/)
+src/        Astro site (components/, i18n/, layouts/, lib/, pages/, schema/, styles/)
+pipeline/   daily refresh (sources/, dedupe, classify, score, summarize, patches)
+data/       editions/, images.json, patches.json, overrides.json, glossary.json
 scripts/    repo checks
 tests/      unit tests + fixtures
 public/     static files (robots.txt, Cloudflare _headers)

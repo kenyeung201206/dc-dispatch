@@ -111,6 +111,23 @@ export const SourceHealthSchema = z.object({
   note: z.string().optional(),
 });
 
+/** One title update in the Patch Notes Tracker (data/patches.json). Facts read from the notes. */
+export const PatchSchema = z.object({
+  version: z.string().regex(/^Y\d+S\d+(\.\d+)?$/),
+  title: z.string().min(1),
+  url: httpsUrl,
+  publishedAt: z.iso.datetime({ offset: true }),
+  /** Top-level headings of the notes, e.g. "Crossplay", "Master Climax Mission". */
+  sections: z.array(z.string()),
+  fixes: z.number().int().min(0),
+  knownIssues: z.number().int().min(0),
+  /** "X from A to B" lines: up = number went up, down = went down. Short quotes (≤ 25 words). */
+  changes: z.array(z.object({ text: z.string().min(1), direction: z.enum(['up', 'down']) })),
+  itemId: z.string().optional(),
+});
+export type Patch = z.infer<typeof PatchSchema>;
+export const PatchLogSchema = z.object({ patches: z.array(PatchSchema) });
+
 /** One daily edition file: data/editions/YYYY-MM-DD.json */
 export const EditionSchema = z.object({
   date: z.iso.date(),

@@ -1,20 +1,41 @@
 ---
 import { t, type Locale, type UiKey } from '../i18n/index.ts';
+import { routes } from '../lib/routes.ts';
 import type { Category } from '../schema/item.ts';
 
 interface Props {
   locale: Locale;
   sections: Category[];
+  current?: Category | 'archive' | 'patches' | 'search';
 }
-const { locale, sections } = Astro.props;
+const { locale, sections, current } = Astro.props;
+const tools = [
+  { key: 'archive', href: routes.archive(locale), label: t(locale, 'nav.archive') },
+  { key: 'patches', href: routes.patches(locale), label: t(locale, 'nav.patches') },
+  { key: 'search', href: routes.search(locale), label: `⌕ ${t(locale, 'nav.search')}` },
+] as const;
 ---
 <nav class="snav" aria-label={t(locale, 'nav.sections')}>
   <ul>
     {
       sections.map((s) => (
         <li>
-          <a href={`#${s}`} class:list={[s === 'glitch-watch' && 'hz', s === 'dark-zone' && 'dz']}>
+          <a
+            href={s === 'back-page' ? `${routes.home(locale)}#back-page` : routes.section(locale, s)}
+            class:list={[s === 'glitch-watch' && 'hz', s === 'dark-zone' && 'dz']}
+            aria-current={current === s ? 'page' : undefined}
+          >
             {t(locale, `section.${s}` as UiKey)}
+          </a>
+        </li>
+      ))
+    }
+    <li class="sep" aria-hidden="true"></li>
+    {
+      tools.map((x) => (
+        <li>
+          <a href={x.href} class="tool" aria-current={current === x.key ? 'page' : undefined}>
+            {x.label}
           </a>
         </li>
       ))
@@ -49,6 +70,11 @@ const { locale, sections } = Astro.props;
     flex: none;
     scroll-snap-align: start;
   }
+  .sep {
+    width: 1px;
+    margin: 10px 6px;
+    background: var(--rule-soft);
+  }
   a {
     display: flex;
     align-items: center;
@@ -62,8 +88,15 @@ const { locale, sections } = Astro.props;
     border-bottom: 3px solid transparent;
   }
   a:hover,
-  a:focus-visible {
+  a:focus-visible,
+  a[aria-current='page'] {
     border-bottom-color: var(--shd);
+  }
+  a[aria-current='page'] {
+    color: var(--shd-ink);
+  }
+  .tool {
+    color: var(--shd-ink);
   }
   .hz {
     box-shadow: inset 4px 0 0 var(--hazard);

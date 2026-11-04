@@ -1,0 +1,36 @@
+---
+import Paper from '../../../layouts/Paper.astro';
+import EditionFront from '../../../components/EditionFront.astro';
+import { LOCALES, t, type Locale } from '../../../i18n/index.ts';
+import { editions } from '../../../lib/editions.ts';
+import { routes } from '../../../lib/routes.ts';
+
+// Past editions only; the latest one lives at /<lang>/.
+export function getStaticPaths() {
+  const past = editions.slice(1);
+  return LOCALES.flatMap((lang) => past.map((e) => ({ params: { lang, date: e.date }, props: { edition: e } })));
+}
+const locale = Astro.params.lang as Locale;
+const { edition } = Astro.props;
+---
+<Paper locale={locale} edition={edition} title={edition.date} current="archive">
+  <p class="past hud-label">
+    {t(locale, 'edition.past')} <a href={routes.home(locale)}>{t(locale, 'edition.toToday')} →</a>
+  </p>
+  <EditionFront locale={locale} edition={edition} />
+</Paper>
+
+<style>
+  .past {
+    margin: var(--space-4) 0 0;
+    padding: 8px 12px;
+    border: 1.5px solid var(--rule);
+    text-transform: none;
+    letter-spacing: 0;
+  }
+  .past a {
+    display: inline-block;
+    padding: 6px 0;
+    color: var(--shd-ink);
+  }
+</style>

@@ -21,6 +21,32 @@ export function latestEdition(): Edition {
 }
 
 export const byImportance = (a: Item, b: Item) => b.importance - a.importance;
+export const byNewest = (a: Item, b: Item) => b.publishedAt.localeCompare(a.publishedAt);
+
+export interface ArchivedItem extends Item {
+  /** Most recent edition the story appeared in. */
+  editionDate: string;
+}
+
+/** Every story across all editions, latest version of each (editions are newest first). */
+export const allItems: ArchivedItem[] = (() => {
+  const seen = new Map<string, ArchivedItem>();
+  for (const e of editions) for (const i of e.items) if (!seen.has(i.id)) seen.set(i.id, { ...i, editionDate: e.date });
+  return [...seen.values()].sort(byNewest);
+})();
+
+export function findItem(id: string): ArchivedItem | undefined {
+  return allItems.find((i) => i.id === id);
+}
+
+/** Linked stories first, then same-category stories with shared tags. */
+export function relatedItems(item: Item, max = 4): ArchivedItem[] {
+  const linked = item.relatedIds.map(findItem).filter((i): i is ArchivedItem => !!i);
+  const similar = allItems.filter(
+    (o) => o.id !== item.id && !item.relatedIds.includes(o.id) && o.category === item.category,
+  );
+  return [...linked, ...similar].slice(0, max);
+}
 
 type LocalizedField = 'headline' | 'summary' | 'whyItMatters';
 

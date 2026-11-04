@@ -1,0 +1,267 @@
+---
+import Paper from '../../../layouts/Paper.astro';
+import Photo from '../../../components/Photo.astro';
+import Stamp from '../../../components/Stamp.astro';
+import StoryCard from '../../../components/StoryCard.astro';
+import { formatDate, LOCALES, t, tf, type Locale, type UiKey } from '../../../i18n/index.ts';
+import { allItems, findItem, localized, relatedItems } from '../../../lib/editions.ts';
+import { imageFor } from '../../../lib/images.ts';
+import { routes } from '../../../lib/routes.ts';
+
+export function getStaticPaths() {
+  return LOCALES.flatMap((lang) => allItems.map((item) => ({ params: { lang, id: item.id } })));
+}
+const locale = Astro.params.lang as Locale;
+const item = findItem(Astro.params.id!)!;
+const headline = localized(item, 'headline', locale);
+const summary = localized(item, 'summary', locale);
+const why = item.whyItMatters_en ? localized(item, 'whyItMatters', locale) : null;
+const photo = imageFor(item, new Set());
+const related = relatedItems(item);
+const sources = [{ name: item.sourceName, url: item.sourceUrl }, ...item.alsoReportedBy];
+const sectionLabel = t(locale, `section.${item.category}` as UiKey);
+const riskNote = item.glitch
+  ? locale === 'en' || item.glitch.riskNote_zhHant === 'pending'
+    ? item.glitch.riskNote_en
+    : item.glitch.riskNote_zhHant
+  : null;
+const reportHref = `mailto:?subject=${encodeURIComponent(`[DC Dispatch] Translation issue: ${item.id}`)}&body=${encodeURIComponent(`Story: ${item.headline_en}\nPage: ${routes.story(locale, item.id)}\n\nWhat's wrong:\n`)}`;
+---
+<Paper locale={locale} title={headline.text} current={item.category}>
+  <article class="story-page" data-pagefind-body>
+    <nav class="crumbs hud-label" aria-label="Breadcrumb">
+      <a href={routes.home(locale)}>{t(locale, 'nav.home')}</a> /
+      <a href={routes.section(locale, item.category)}>{sectionLabel}</a>
+    </nav>
+
+    <div class="meta" data-pagefind-ignore>
+      <Stamp locale={locale} confidence={item.confidence} />
+      {item.status === 'updated' && <span class="hud-label upd">{t(locale, 'status.updated')}</span>}
+      <time class="hud-label" datetime={item.publishedAt}>{formatDate(item.publishedAt, locale)}</time>
+    </div>
+
+    <h1 class="headline" lang={headline.pending ? 'en' : undefined} data-pagefind-meta="title">{headline.text}</h1>
+    {headline.pending && <p class="pending">{t(locale, 'translation.pending')}</p>}
+    {
+      (locale !== item.lang_orig.slice(0, 2) || headline.text !== item.title_orig) && (
+        <p class="orig">
+          {t(locale, 'story.original')}: <span lang={item.lang_orig}>{item.title_orig}</span>
+        </p>
+      )
+    }
+
+    {photo && <Photo locale={locale} image={photo.image} filePhoto={photo.filePhoto} variant="lead" eager />}
+
+    <p class:list={['summary', item.summaryKind === 'extract' && 'quote']} lang={summary.pending ? 'en' : undefined}>
+      {item.summaryKind === 'extract' ? `“${summary.text}”` : summary.text}
+      {item.summaryKind === 'extract' && <span class="attrib"> — {item.sourceName}</span>}
+    </p>
+    {summary.pending && <p class="pending">{t(locale, 'translation.pending')}</p>}
+
+    {
+      why && (
+        <p class="why">
+          <strong>{t(locale, 'story.whyItMatters')}:</strong> <span lang={why.pending ? 'en' : undefined}>{why.text}</span>
+        </p>
+      )
+    }
+
+    {
+      item.glitch && (
+        <dl class="glitch">
+          <dt>{t(locale, 'filter.status')}</dt>
+          <dd><span class:list={['gstate', item.glitch.state]}>{t(locale, `glitch.${item.glitch.state}` as UiKey)}</span></dd>
+          <dt>{t(locale, 'glitch.firstSeen')}</dt>
+          <dd><time datetime={item.glitch.firstSeen}>{item.glitch.firstSeen}</time></dd>
+          {item.glitch.banRisk && <dd class="ban">{t(locale, 'glitch.banRisk')}</dd>}
+          <dd class="note">{riskNote}</dd>
+        </dl>
+      )
+    }
+
+    <section class="sources" aria-labelledby="src-h">
+      <h2 id="src-h" class="hud-label">
+        {sources.length > 1 ? tf(locale, 'story.reportedBy', { n: sources.length }) : t(locale, 'story.source')}
+      </h2>
+      <ul>
+        {sources.map((s) => <li><a href={s.url} rel="noopener noreferrer" target="_blank">{s.name} ↗</a></li>)}
+      </ul>
+      <a class="cta" href={item.sourceUrl} rel="noopener noreferrer" target="_blank">{t(locale, 'story.readOriginal')}</a>
+    </section>
+
+    <p class="ai hud-label" data-pagefind-ignore>
+      {t(locale, 'story.aiNote')} <a href={reportHref}>{t(locale, 'story.reportTranslation')}</a>
+    </p>
+
+    <!-- Search filters (Pagefind) -->
+    <span hidden data-pagefind-filter={t(locale, 'filter.category')}>{sectionLabel}</span>
+    <span hidden data-pagefind-filter={t(locale, 'filter.confidence')}>{t(locale, `confidence.${item.confidence}` as UiKey)}</span>
+    <span hidden data-pagefind-filter={t(locale, 'filter.source')}>{item.sourceName}</span>
+  </article>
+
+  {
+    related.length > 0 && (
+      <section class="related" aria-labelledby="rel-h">
+        <header class="section-head">
+          <h2 id="rel-h">{t(locale, 'story.related')}</h2>
+        </header>
+        <div class="cols">
+          {related.map((r) => <StoryCard locale={locale} item={r} variant="brief" />)}
+        </div>
+      </section>
+    )
+  }
+</Paper>
+
+<style>
+  .story-page {
+    max-width: 760px;
+    margin: var(--space-5) auto 0;
+  }
+  .crumbs {
+    margin: 0 0 var(--space-3);
+    color: var(--ink-soft);
+  }
+  .crumbs a {
+    display: inline-block;
+    padding: 8px 0;
+  }
+  .meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 12px;
+    align-items: center;
+    color: var(--ink-soft);
+  }
+  .upd {
+    color: var(--shd-ink);
+  }
+  .headline {
+    margin: 10px 0 8px;
+    font: 900 var(--step-3) / 1.1 var(--font-display);
+    text-wrap: balance;
+  }
+  .headline:lang(zh-Hant-TW),
+  :lang(zh-Hant-TW) .headline {
+    font-family: var(--font-cjk);
+    line-height: 1.3;
+  }
+  .orig,
+  .pending {
+    margin: 0 0 var(--space-3);
+    font: 400 var(--step--1) / 1.5 var(--font-hud);
+    color: var(--ink-soft);
+  }
+  .pending {
+    color: var(--shd-ink);
+  }
+  .summary {
+    font-size: 1.1875rem;
+    line-height: 1.65;
+  }
+  .quote {
+    font-style: italic;
+  }
+  .attrib {
+    font-style: normal;
+    font-size: var(--step--1);
+    color: var(--ink-soft);
+  }
+  .why {
+    padding-left: 12px;
+    border-left: 3px solid var(--shd);
+  }
+  .glitch {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 4px 12px;
+    padding: 12px 14px;
+    border: 1.5px solid var(--rule);
+    border-top: 6px solid var(--hazard);
+  }
+  .glitch dt {
+    font: 600 var(--step--1) var(--font-hud);
+    text-transform: uppercase;
+  }
+  .glitch dd {
+    margin: 0;
+  }
+  .glitch .ban,
+  .glitch .note {
+    grid-column: 1 / -1;
+  }
+  .ban {
+    color: var(--dz-red);
+    font-weight: 700;
+  }
+  .gstate {
+    padding: 0 6px;
+    font: 600 0.75rem / 1.6 var(--font-hud);
+    text-transform: uppercase;
+    background: var(--hazard);
+    color: #111;
+  }
+  .gstate.patched,
+  .gstate.hotfixed {
+    background: var(--ok-green);
+    color: #fff;
+  }
+  .sources {
+    margin-top: var(--space-5);
+    padding-top: var(--space-3);
+    border-top: 2px solid var(--rule);
+  }
+  .sources h2 {
+    margin: 0 0 6px;
+  }
+  .sources ul {
+    margin: 0 0 var(--space-3);
+    padding-left: 1.2em;
+  }
+  .sources li a {
+    display: inline-block;
+    padding: 6px 0;
+  }
+  .cta {
+    display: inline-flex;
+    align-items: center;
+    min-height: var(--tap);
+    padding: 0 18px;
+    background: var(--shd);
+    color: var(--on-shd);
+    font: 600 0.9375rem var(--font-hud);
+    text-decoration: none;
+  }
+  .cta:hover {
+    color: var(--on-shd);
+    filter: brightness(1.08);
+  }
+  .ai {
+    margin-top: var(--space-4);
+    color: var(--ink-soft);
+    text-transform: none;
+    letter-spacing: 0;
+    font-weight: 400;
+  }
+  .ai a {
+    display: inline-block;
+    padding: 6px 0;
+  }
+  .related {
+    max-width: var(--max);
+  }
+  .cols {
+    display: grid;
+    gap: var(--space-4);
+  }
+  @media (min-width: 768px) {
+    .cols {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  @media (min-width: 1024px) {
+    .cols {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+</style>

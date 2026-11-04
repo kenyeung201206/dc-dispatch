@@ -14,6 +14,13 @@ Pipeline steps (`pipeline/`):
 5. **Summarise:** `summarize.ts`. Without an AI key, the summary is a ≤ 25-word quote, shown in quotation marks with the source name. Chinese comes only from Ubisoft's official zh-TW article; otherwise it shows "翻譯待補". Known issues in patch notes become Glitch Watch items.
 6. **Assemble:** `edition.ts`. Applies `data/overrides.json`. Keeps yesterday's items for a source that failed. Keeps active glitches for 60 days, marks updated stories, uses a 21-day window, and refuses to publish an empty edition.
 
+## Site pages
+- `/<lang>/` today, `/<lang>/edition/<date>/` past editions, `/<lang>/archive/` calendar
+- `/<lang>/section/<category>/` section pages with confidence/topic filters (Glitch Watch = glitch board with status)
+- `/<lang>/story/<id>/` story pages with sources, related stories and a translation-report link
+- `/<lang>/patches/` Patch Notes Tracker from `data/patches.json` (pipeline keeps every TU it sees)
+- `/<lang>/search/` Pagefind, one index per language; only story pages are indexed
+
 ## When a source breaks
 - The log shows `"source failed"` or `"no items parsed (layout change?)"`. The edition still publishes with yesterday's items for that source, and `sources[].ok=false`.
 - **Ubisoft:** check that the page still contains `window.__PRELOADED_STATE__` and that articles still have `id/title/date/button`. Fix `sources/ubisoft.ts`, then re-record the fixture with the real page.

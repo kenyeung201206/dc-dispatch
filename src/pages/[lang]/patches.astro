@@ -1,0 +1,195 @@
+---
+import Paper from '../../layouts/Paper.astro';
+import { formatDate, LOCALES, t, type Locale } from '../../i18n/index.ts';
+import { findItem } from '../../lib/editions.ts';
+import { patches } from '../../lib/patches.ts';
+import { routes } from '../../lib/routes.ts';
+
+export function getStaticPaths() {
+  return LOCALES.map((lang) => ({ params: { lang } }));
+}
+const locale = Astro.params.lang as Locale;
+---
+<Paper locale={locale} title={t(locale, 'patches.title')} current="patches">
+  <header class="section-head page-head">
+    <h1>{t(locale, 'patches.title')}</h1>
+    <p>{t(locale, 'patches.intro')}</p>
+  </header>
+
+  <ol class="timeline">
+    {
+      patches.map((p) => {
+        const story = p.itemId ? findItem(p.itemId) : undefined;
+        return (
+          <li class="patch" id={`tu-${p.version.toLowerCase().replaceAll('.', '-')}`}>
+            <div class="badge" aria-hidden="true">{p.version}</div>
+            <div class="body">
+              <h2>
+                <span class="ver">TU {p.version}</span>
+                <span class="title" lang="en">{p.title}</span>
+              </h2>
+              <p class="hud-label when"><time datetime={p.publishedAt}>{formatDate(p.publishedAt, locale)}</time></p>
+
+              <dl class="stats">
+                <div><dt>{t(locale, 'patches.fixes')}</dt><dd>{p.fixes}</dd></div>
+                <div><dt>{t(locale, 'patches.knownIssues')}</dt><dd>{p.knownIssues}</dd></div>
+                <div><dt>{t(locale, 'patches.changes')}</dt><dd>{p.changes.length}</dd></div>
+              </dl>
+
+              {p.sections.length > 0 && (
+                <>
+                  <h3 class="hud-label">{t(locale, 'patches.sections')}</h3>
+                  <ul class="secs" lang="en">
+                    {p.sections.map((s) => <li>{s}</li>)}
+                  </ul>
+                </>
+              )}
+
+              {p.changes.length > 0 && (
+                <table class="diff">
+                  <caption class="hud-label">{t(locale, 'patches.changes')}</caption>
+                  <tbody>
+                    {p.changes.map((c) => (
+                      <tr class={c.direction}>
+                        <th scope="row">
+                          <span aria-hidden="true">{c.direction === 'up' ? '▲' : '▼'}</span>
+                          <span class="visually-hidden">{t(locale, c.direction === 'up' ? 'patches.up' : 'patches.down')}</span>
+                        </th>
+                        <td lang="en">“{c.text}”</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              )}
+
+              <p class="links">
+                {story && <a href={routes.story(locale, story.id)}>{t(locale, 'patches.story')} →</a>}
+                <a href={p.url} rel="noopener noreferrer" target="_blank">{t(locale, 'patches.read')}</a>
+              </p>
+            </div>
+          </li>
+        );
+      })
+    }
+  </ol>
+</Paper>
+
+<style>
+  .page-head h1 {
+    margin: 0;
+    font: 900 var(--step-3) / 1.1 var(--font-display);
+  }
+  :lang(zh-Hant-TW) .page-head h1 {
+    font-family: var(--font-cjk);
+  }
+  .timeline {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border-left: 3px solid var(--shd);
+  }
+  .patch {
+    position: relative;
+    padding: 0 0 var(--space-6) var(--space-5);
+  }
+  .badge {
+    position: absolute;
+    left: -9px;
+    top: 6px;
+    width: 15px;
+    height: 17px;
+    background: var(--shd);
+    clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+    font-size: 0;
+  }
+  h2 {
+    display: grid;
+    gap: 2px;
+    margin: 0;
+  }
+  .ver {
+    font: 600 var(--step--1) var(--font-hud);
+    color: var(--shd-ink);
+    letter-spacing: 0.1em;
+  }
+  .title {
+    font: 900 var(--step-2) / 1.2 var(--font-display);
+  }
+  .when {
+    color: var(--ink-soft);
+    margin: 4px 0 var(--space-3);
+  }
+  .stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-3);
+    margin: 0 0 var(--space-3);
+  }
+  .stats div {
+    min-width: 96px;
+    padding: 8px 12px;
+    border: 1.5px solid var(--rule);
+  }
+  .stats dt {
+    font: 600 0.75rem var(--font-hud);
+    text-transform: uppercase;
+    color: var(--ink-soft);
+  }
+  .stats dd {
+    margin: 0;
+    font: 900 var(--step-2) var(--font-display);
+  }
+  .secs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin: 4px 0 var(--space-3);
+    padding: 0;
+    list-style: none;
+  }
+  .secs li {
+    padding: 2px 10px;
+    border: 1px solid var(--rule-soft);
+    font: 400 var(--step--1) var(--font-hud);
+  }
+  .diff {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: var(--space-3);
+  }
+  .diff caption {
+    text-align: left;
+    padding-bottom: 4px;
+  }
+  .diff th,
+  .diff td {
+    padding: 8px;
+    border-bottom: 1px solid var(--rule-soft);
+    text-align: left;
+    vertical-align: top;
+  }
+  .diff th {
+    width: 2em;
+    font-size: 1.1rem;
+  }
+  .up th {
+    color: var(--ok-green);
+  }
+  .down th {
+    color: var(--dz-red);
+  }
+  .diff td {
+    font-style: italic;
+  }
+  .links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 18px;
+  }
+  .links a {
+    display: inline-block;
+    padding: 8px 0;
+    color: var(--shd-ink);
+    font-weight: 700;
+  }
+</style>

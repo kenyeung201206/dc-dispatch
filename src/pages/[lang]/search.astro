@@ -1,0 +1,82 @@
+---
+import Paper from '../../layouts/Paper.astro';
+import { LOCALES, t, type Locale } from '../../i18n/index.ts';
+
+export function getStaticPaths() {
+  return LOCALES.map((lang) => ({ params: { lang } }));
+}
+const locale = Astro.params.lang as Locale;
+---
+<Paper locale={locale} title={t(locale, 'search.title')} current="search">
+  <header class="section-head page-head">
+    <h1>{t(locale, 'search.title')}</h1>
+    <p>{t(locale, 'search.intro')}</p>
+  </header>
+
+  <!-- Pagefind builds /pagefind/ at build time; each language gets its own index (by <html lang>). -->
+  <link rel="stylesheet" href="/pagefind/pagefind-ui.css" />
+  <div id="search" class="search"></div>
+  <p class="dev-note hud-label" hidden data-dev-note>{t(locale, 'search.devNote')}</p>
+  <script is:inline src="/pagefind/pagefind-ui.js"></script>
+  <script is:inline>
+    (function () {
+      if (typeof PagefindUI === 'undefined') {
+        document.querySelector('[data-dev-note]').hidden = false;
+        return;
+      }
+      new PagefindUI({
+        element: '#search',
+        showImages: false,
+        showSubResults: false,
+        resetStyles: false,
+        autofocus: true,
+      });
+      // Allow /search/?q=term links.
+      var q = new URLSearchParams(location.search).get('q');
+      if (q) {
+        var input = document.querySelector('#search input');
+        if (input) {
+          input.value = q;
+          input.dispatchEvent(new Event('input', { bubbles: true }));
+        }
+      }
+    })();
+  </script>
+</Paper>
+
+<style>
+  .page-head h1 {
+    margin: 0;
+    font: 900 var(--step-3) / 1.1 var(--font-display);
+  }
+  :lang(zh-Hant-TW) .page-head h1 {
+    font-family: var(--font-cjk);
+  }
+  .search {
+    --pagefind-ui-scale: 1;
+    --pagefind-ui-primary: var(--shd-ink);
+    --pagefind-ui-text: var(--ink);
+    --pagefind-ui-background: var(--paper);
+    --pagefind-ui-border: var(--rule);
+    --pagefind-ui-tag: var(--paper-2);
+    --pagefind-ui-border-width: 1.5px;
+    --pagefind-ui-border-radius: 0;
+    --pagefind-ui-font: var(--font-body);
+    margin-top: var(--space-4);
+  }
+  /* 16px+ input avoids iOS zoom-on-focus */
+  .search :global(input) {
+    font-size: 1rem !important;
+  }
+  .search :global(.pagefind-ui__result-link) {
+    font-family: var(--font-display);
+  }
+  .search :global(.pagefind-ui__filter-checkbox),
+  .search :global(.pagefind-ui__filter-label) {
+    min-height: 32px;
+  }
+  .dev-note {
+    color: var(--shd-ink);
+    text-transform: none;
+  }
+</style>

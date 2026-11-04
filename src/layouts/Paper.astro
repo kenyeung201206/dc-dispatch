@@ -1,0 +1,49 @@
+---
+/** Every newspaper page: masthead, ticker and section nav around the page content. */
+import Base from './Base.astro';
+import Masthead from '../components/Masthead.astro';
+import Ticker from '../components/Ticker.astro';
+import SectionNav from '../components/SectionNav.astro';
+import { CATEGORIES, type Category, type Edition } from '../schema/item.ts';
+import type { Locale } from '../i18n/index.ts';
+import { byImportance, latestEdition, localized } from '../lib/editions.ts';
+
+interface Props {
+  locale: Locale;
+  title?: string;
+  edition?: Edition;
+  /** Which nav item is active; anything but the front page gets the compact phone header. */
+  current?: Category | 'archive' | 'patches' | 'search';
+}
+const { locale, title, edition = latestEdition(), current } = Astro.props;
+// Inner pages: phones show only the compact sticky bar, so the page starts on the first screen.
+const compact = current !== 'front-page';
+const tickerLines = [...edition.items]
+  .sort(byImportance)
+  .slice(0, 4)
+  .map((i) => localized(i, 'headline', locale).text);
+const navSections: Category[] = CATEGORIES.filter((c) => c !== 'watch-now');
+---
+<Base locale={locale} title={title}>
+  <Fragment slot="masthead">
+    <div class:list={['mh', compact && 'compact']}>
+      <Masthead locale={locale} edition={edition} />
+      <Ticker locale={locale} lines={tickerLines} />
+    </div>
+    <SectionNav locale={locale} sections={navSections} current={current} />
+  </Fragment>
+  <slot />
+</Base>
+
+<style>
+  /* No box of its own, so the sticky phone bar stays pinned to the page. */
+  .mh {
+    display: contents;
+  }
+  @media (max-width: 767.98px) {
+    .compact :global(.masthead),
+    .compact :global(.ticker) {
+      display: none;
+    }
+  }
+</style>

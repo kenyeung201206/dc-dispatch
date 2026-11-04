@@ -144,3 +144,19 @@ describe('glossary', () => {
     }
   });
 });
+
+describe('patch tracker', () => {
+  it('reads version, sections, fix counts and number changes from TU notes', async () => {
+    const { parsePatch, upsertPatches } = await import('../../pipeline/patches.ts');
+    const tu = ubiEn.find((u) => u.externalId === '7L8TlD1Hv0XC1prOD8mdte')!;
+    const p = parsePatch(tu)!;
+    expect(p.version).toBe('Y8S3.3');
+    expect(p.sections).toContain('Crossplay');
+    expect(p.fixes).toBeGreaterThan(0);
+    expect(p.knownIssues).toBe(1);
+    expect(p.changes.some((c) => c.direction === 'up' && /50 to 100/.test(c.text))).toBe(true);
+    expect(p.changes.every((c) => wordCount(c.text) <= 25)).toBe(true);
+    expect(parsePatch(ubiEn.find((u) => !/TU/.test(u.title))!)).toBeNull();
+    expect(upsertPatches([p], [{ ...p, fixes: 99 }])).toHaveLength(1);
+  });
+});

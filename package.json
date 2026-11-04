@@ -9,14 +9,14 @@
   },
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build",
+    "build": "astro build && pagefind --site dist",
     "preview": "astro preview",
     "check": "astro check",
     "test": "vitest run",
     "i18n:check": "node scripts/check-i18n.ts",
     "ci": "pnpm run i18n:check && pnpm run check && pnpm run test && pnpm run build",
     "test:e2e": "playwright test",
-    "screens": "node -e \"process.env.SCREENS=String(1);require('child_process').execSync('playwright test screenshots --project=desktop-chromium --project=iphone',{stdio:'inherit'})\"",
+    "screens": "node -e \"process.env.SCREENS=String(1);require('child_process').execSync('playwright test screen --project=desktop-chromium --project=iphone',{stdio:'inherit'})\"",
     "refresh": "node pipeline/refresh.ts",
     "refresh:dry": "node pipeline/refresh.ts --dry-run"
   },
@@ -32,6 +32,7 @@
     "@astrojs/check": "0.9.12",
     "@playwright/test": "1.64.1",
     "@types/node": "24.19.2",
+    "pagefind": "1.6.0",
     "typescript": "6.0.3",
     "vitest": "5.1.0"
   }

@@ -1,0 +1,52 @@
+{
+  "patches": [
+    {
+      "version": "Y8S3.3",
+      "title": "[TUY8S3.3] Crossplay Rollout, Conflict Improvements & More",
+      "url": "https://www.ubisoft.com/en-us/game/the-division/the-division-2/news-updates/7L8TlD1Hv0XC1prOD8mdte/tuy8s33-crossplay-rollout-conflict-improvements-more",
+      "publishedAt": "2026-11-02T15:45:00.000Z",
+      "sections": [
+        "Crossplay",
+        "Friend Referral",
+        "Shepherd Event Project",
+        "Master Climax Mission",
+        "Improvements And Fixes"
+      ],
+      "fixes": 6,
+      "knownIssues": 1,
+      "changes": [
+        {
+          "text": "We're increasing the Clan member limit from 50 to 100, giving you more room to grow your Clan.",
+          "direction": "up"
+        },
+        {
+          "text": "The increase from 1 to 3 automatic endorsements introduced during the previous Shepherd Event remains in place, helping you climb the ranks.",
+          "direction": "up"
+        }
+      ],
+      "itemId": "x544i0"
+    },
+    {
+      "version": "Y8S3.2",
+      "title": "[TUY8S3.2] Red Moon Unleashed, Creator Collaboration, Escalation Updates & More",
+      "url": "https://www.ubisoft.com/en-us/game/the-division/the-division-2/news-updates/7uzKuy4iB0MtOJfsXAr3TO/tuy8s32-red-moon-unleashed-creator-collaboration-escalation-updates-more",
+      "publishedAt": "2026-10-13T15:45:00.000Z",
+      "sections": [
+        "Red Moon Unleashed",
+        "Content Creator Collaboration",
+        "Stats And Resource Multiplier Events",
+        "Classified Assignments",
+        "Improvements And Fixes"
+      ],
+      "fixes": 12,
+      "knownIssues": 0,
+      "changes": [
+        {
+          "text": "The Conflict Rank cap is increasing from 100 to 200. Each rank above 100 requires the same amount of XP as Rank 100.",
+          "direction": "up"
+        }
+      ],
+      "itemId": "15ukxnc"
+    }
+  ]
+}

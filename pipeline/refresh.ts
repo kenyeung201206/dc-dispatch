@@ -8,7 +8,8 @@
 import { mkdir, readdir, readFile, writeFile } from 'node:fs/promises';
 import { join } from 'node:path';
 import { parseArgs } from 'node:util';
-import { EditionSchema, ImageLibrarySchema, type Edition, type Item } from '../src/schema/item.ts';
+import { EditionSchema, ImageLibrarySchema, PatchLogSchema, type Edition, type Item } from '../src/schema/item.ts';
+import { parsePatch, upsertPatches } from './patches.ts';
 import { SOURCES, TIMEZONE, type SourceId } from './config.ts';
 import { dedupe } from './dedupe.ts';
 import { assembleEdition, OverridesSchema } from './edition.ts';
@@ -90,6 +91,14 @@ async function main() {
   const fresh: Item[] = stories.flatMap((s) => storyToItems(s, { now, zhById, images }));
   log('info', 'processed', { raw: english.length, stories: stories.length, items: fresh.length });
 
+  // Patch Notes Tracker: every title update seen on Ubisoft's page, kept across editions.
+  const patchLog = PatchLogSchema.parse(await readJson('data/patches.json', { patches: [] }));
+  const foundPatches = stories
+    .filter((s) => s.primary.sourceId === 'ubisoft-en')
+    .map((s) => parsePatch(s.primary, fresh.find((i) => i.title_orig === s.primary.title)?.id))
+    .filter((p) => p !== null);
+  const patches = { patches: upsertPatches(patchLog.patches, foundPatches) };
+
   const overrides = OverridesSchema.parse(await readJson('data/overrides.json', {}));
   const edition = assembleEdition({ date, now, fresh, results, previous: await previousEdition(date), overrides });
 
@@ -97,6 +106,7 @@ async function main() {
   await mkdir(join(outDir, 'editions'), { recursive: true });
   await writeFile(join(outDir, 'editions', `${date}.json`), JSON.stringify(edition, null, 2) + '\n');
   await writeFile(join(outDir, 'images.json'), JSON.stringify(ImageLibrarySchema.parse(images), null, 2) + '\n');
+  await writeFile(join(outDir, 'patches.json'), JSON.stringify(PatchLogSchema.parse(patches), null, 2) + '\n');
 
   const pending = edition.items.filter((i) => i.headline_zhHant === 'pending').length;
   log('info', 'refresh done', {

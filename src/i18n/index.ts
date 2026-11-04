@@ -21,6 +21,11 @@ export function t(locale: Locale, key: UiKey): string {
   return dictionaries[locale][key];
 }
 
+/** t() with {placeholders}: tf('en', 'section.count', { n: 3 }) → "3 stories". */
+export function tf(locale: Locale, key: UiKey, vars: Record<string, string | number>): string {
+  return t(locale, key).replace(/\{(\w+)\}/g, (_, k: string) => String(vars[k] ?? `{${k}}`));
+}
+
 export function otherLocale(locale: Locale): Locale {
   return locale === 'en' ? 'zh-hant' : 'en';
 }
