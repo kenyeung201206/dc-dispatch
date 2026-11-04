@@ -8,8 +8,9 @@
 import { mkdir, readdir, readFile, writeFile } from 'node:fs/promises';
 import { join } from 'node:path';
 import { parseArgs } from 'node:util';
-import { EditionSchema, ImageLibrarySchema, PatchLogSchema, type Edition, type Item } from '../src/schema/item.ts';
+import { EditionSchema, ImageLibrarySchema, PatchLogSchema, VideoLibrarySchema, type Edition, type Item } from '../src/schema/item.ts';
 import { parsePatch, upsertPatches } from './patches.ts';
+import { buildVideos } from './video/build.ts';
 import { SOURCES, TIMEZONE, type SourceId } from './config.ts';
 import { dedupe } from './dedupe.ts';
 import { assembleEdition, OverridesSchema } from './edition.ts';
@@ -45,7 +46,7 @@ async function runSource(id: SourceId): Promise<SourceResult> {
     const items = PARSERS[id](body);
     log('info', 'source ok', { source: id, items: items.length });
     if (!items.length) return { sourceId: id, ok: false, items, note: 'no items parsed (layout change?)' };
-    return { sourceId: id, ok: true, items };
+    return { sourceId: id, ok: true, items, body };
   } catch (err) {
     log('error', 'source failed', { source: id, error: String(err) });
     return { sourceId: id, ok: false, items: [], note: String(err).slice(0, 200) };
@@ -99,6 +100,17 @@ async function main() {
     .filter((p) => p !== null);
   const patches = { patches: upsertPatches(patchLog.patches, foundPatches) };
 
+  // Watch Now: official videos from Ubisoft pages + allowlisted channels (with a key), each verified embeddable.
+  const videos = await buildVideos({
+    enHtml: results.find((r) => r.sourceId === 'ubisoft-en')?.body,
+    zhHtml: results.find((r) => r.sourceId === 'ubisoft-zh-tw')?.body,
+    previous: VideoLibrarySchema.parse(await readJson('data/videos.json', { videos: [] })).videos,
+    channels: (await readJson<{ channels: { id: string; name: string; official: boolean }[] }>('data/video-channels.json', { channels: [] })).channels,
+    youtubeKey: dryRun ? undefined : process.env.YOUTUBE_API_KEY,
+    now,
+    dryRun,
+  });
+
   const overrides = OverridesSchema.parse(await readJson('data/overrides.json', {}));
   const edition = assembleEdition({ date, now, fresh, results, previous: await previousEdition(date), overrides });
 
@@ -106,6 +118,7 @@ async function main() {
   await mkdir(join(outDir, 'editions'), { recursive: true });
   await writeFile(join(outDir, 'editions', `${date}.json`), JSON.stringify(edition, null, 2) + '\n');
   await writeFile(join(outDir, 'images.json'), JSON.stringify(ImageLibrarySchema.parse(images), null, 2) + '\n');
+  await writeFile(join(outDir, 'videos.json'), JSON.stringify(VideoLibrarySchema.parse({ videos }), null, 2) + '\n');
   await writeFile(join(outDir, 'patches.json'), JSON.stringify(PatchLogSchema.parse(patches), null, 2) + '\n');
 
   const pending = edition.items.filter((i) => i.headline_zhHant === 'pending').length;
@@ -114,6 +127,7 @@ async function main() {
     edition: edition.editionNumber,
     items: edition.items.length,
     zhPending: pending,
+    videos: videos.length,
     sourcesDown: edition.sources.filter((s) => !s.ok).map((s) => s.sourceId),
     estimatedCostUsd: 0,
   });

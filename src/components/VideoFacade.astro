@@ -1,0 +1,148 @@
+---
+/**
+ * Click-to-load YouTube player. Nothing from youtube-nocookie.com loads until the reader taps;
+ * before that only the thumbnail image (i.ytimg.com, cookieless) is shown. Playback starts on the tap
+ * because the tap is the reader pressing play — never on page load.
+ */
+import { formatDate, t, type Locale } from '../i18n/index.ts';
+import { formatDuration } from '../lib/videos.ts';
+import type { Video } from '../schema/item.ts';
+
+interface Props {
+  locale: Locale;
+  video: Video;
+  size?: 'large' | 'card';
+}
+const { locale, video, size = 'card' } = Astro.props;
+const id = locale === 'zh-hant' && video.idZh ? video.idZh : video.id;
+const title = locale === 'zh-hant' && video.titleZh ? video.titleZh : video.title;
+const duration = formatDuration(video.durationSec);
+---
+<figure class:list={['vf', size]} data-yt={id} data-title={title}>
+  <div class="frame">
+    <button type="button" class="play" aria-label={`${t(locale, 'watch.play')}: ${title}`}>
+      <img
+        src={`https://i.ytimg.com/vi/${id}/hqdefault.jpg`}
+        width="480"
+        height="360"
+        alt=""
+        loading="lazy"
+        decoding="async"
+        referrerpolicy="no-referrer"
+      />
+      <span class="icon" aria-hidden="true"><svg viewBox="0 0 68 48" width="68" height="48"><path d="M66.5 7.7A8.5 8.5 0 0 0 60.5 1.6C55.2.2 34 .2 34 .2S12.8.2 7.5 1.6A8.5 8.5 0 0 0 1.5 7.7 89 89 0 0 0 .1 24a89 89 0 0 0 1.4 16.3 8.5 8.5 0 0 0 6 6.1c5.3 1.4 26.5 1.4 26.5 1.4s21.2 0 26.5-1.4a8.5 8.5 0 0 0 6-6.1A89 89 0 0 0 67.9 24a89 89 0 0 0-1.4-16.3z" fill="#212121" fill-opacity=".85"></path><path d="M27 34l18-10-18-10z" fill="#fff"></path></svg></span>
+      {duration && <span class="dur">{duration}</span>}
+    </button>
+  </div>
+  <figcaption>
+    <span class="vt" lang="en">{title}</span>
+    <span class="meta">
+      {video.official && <span class="off">{t(locale, 'watch.official')}</span>}
+      <a href={video.channelUrl} rel="noopener noreferrer" target="_blank">{video.channelName}</a>{' · '}<time datetime={video.publishedAt}>{formatDate(video.publishedAt, locale)}</time>
+    </span>
+    <a class="yt" href={`https://www.youtube.com/watch?v=${id}`} rel="noopener noreferrer" target="_blank">{t(locale, 'watch.onYoutube')}</a>
+  </figcaption>
+</figure>
+
+<script>
+  document.addEventListener('click', (e) => {
+    const btn = (e.target as HTMLElement).closest<HTMLButtonElement>('.vf .play');
+    if (!btn) return;
+    const fig = btn.closest<HTMLElement>('.vf')!;
+    const id = fig.dataset.yt ?? '';
+    if (!/^[A-Za-z0-9_-]{11}$/.test(id)) return;
+    const iframe = document.createElement('iframe');
+    iframe.src = `https://www.youtube-nocookie.com/embed/${id}?autoplay=1&playsinline=1&rel=0`;
+    iframe.title = fig.dataset.title ?? 'YouTube video';
+    iframe.allow = 'autoplay; encrypted-media; picture-in-picture; fullscreen';
+    iframe.allowFullscreen = true;
+    iframe.referrerPolicy = 'strict-origin-when-cross-origin';
+    btn.replaceWith(iframe);
+    iframe.focus();
+  });
+</script>
+
+<style>
+  .vf {
+    margin: 0;
+    min-width: 0;
+  }
+  .frame {
+    position: relative;
+    aspect-ratio: 16 / 9;
+    background: #000;
+    border: 1.5px solid var(--rule);
+    overflow: hidden;
+  }
+  .play,
+  .frame :global(iframe) {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+  .play {
+    padding: 0;
+    background: #000;
+    cursor: pointer;
+  }
+  .play img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 0;
+  }
+  .play:hover .icon path:first-child,
+  .play:focus-visible .icon path:first-child {
+    fill: #f00;
+    fill-opacity: 1;
+  }
+  .dur {
+    position: absolute;
+    bottom: 8px;
+    padding: 2px 6px;
+    font: 600 0.75rem / 1.4 var(--font-hud);
+  }
+  .dur {
+    right: 8px;
+    background: rgb(0 0 0 / 0.8);
+    color: #fff;
+  }
+  .off {
+    margin-right: 6px;
+    padding: 1px 6px;
+    font-weight: 600;
+    background: var(--shd);
+    color: var(--on-shd);
+    text-transform: uppercase;
+  }
+  figcaption {
+    display: grid;
+    gap: 2px;
+    padding-top: 6px;
+  }
+  .vt {
+    font: 700 var(--step-0) / 1.3 var(--font-display);
+  }
+  .large .vt {
+    font-size: var(--step-1);
+  }
+  .meta,
+  .yt {
+    font: 400 var(--step--1) / 1.5 var(--font-hud);
+    color: var(--ink-soft);
+  }
+  .meta a,
+  .yt {
+    display: inline-block;
+    padding: 4px 0;
+  }
+</style>

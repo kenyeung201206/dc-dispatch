@@ -1,0 +1,110 @@
+import { z } from 'zod';
+import { politeGet } from '../http.ts';
+import { log } from '../log.ts';
+import { parseDuration, type VideoCandidate } from './videos.ts';
+
+/**
+ * YouTube oEmbed: public, keyless. 200 = public and embeddable; 401 = embedding disabled;
+ * 404 = private/removed. Used to verify every video before listing it (brief §8).
+ */
+const OEmbed = z.object({ title: z.string(), author_name: z.string(), author_url: z.string() });
+export async function checkEmbeddable(id: string, get = politeGet) {
+  try {
+    const body = await get(`https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v=${id}&format=json`, {
+      retries: 1,
+    });
+    const o = OEmbed.parse(JSON.parse(body));
+    return { ok: true as const, title: o.title, channelName: o.author_name, channelUrl: o.author_url };
+  } catch (err) {
+    log('info', 'video not embeddable or unavailable', { id, error: String(err).slice(0, 80) });
+    return { ok: false as const };
+  }
+}
+
+const PlaylistItems = z.object({
+  items: z.array(z.object({ contentDetails: z.object({ videoId: z.string() }) })).default([]),
+});
+const Videos = z.object({
+  items: z
+    .array(
+      z.object({
+        id: z.string(),
+        snippet: z.object({ title: z.string(), channelTitle: z.string(), channelId: z.string(), publishedAt: z.string() }),
+        status: z.object({
+          embeddable: z.boolean(),
+          privacyStatus: z.string(),
+          madeForKids: z.boolean().optional(),
+        }),
+        contentDetails: z.object({ duration: z.string() }),
+      }),
+    )
+    .default([]),
+});
+
+export interface Channel {
+  id: string;
+  name: string;
+  official: boolean;
+}
+
+/**
+ * Latest Division uploads from allowlisted channels via the YouTube Data API.
+ * Quota: 2 units per channel (playlistItems.list + videos.list). Skips when no key.
+ * The key goes only into the request URL, never into logs.
+ */
+export async function fetchChannelVideos(
+  channels: Channel[],
+  key: string | undefined,
+  now: Date,
+  get = politeGet,
+): Promise<VideoCandidate[]> {
+  if (!key) {
+    log('info', 'YOUTUBE_API_KEY not set: creator videos skipped');
+    return [];
+  }
+  const out: VideoCandidate[] = [];
+  const maxAgeMs = 60 * 86_400_000;
+  for (const ch of channels) {
+    try {
+      const uploads = `UU${ch.id.slice(2)}`;
+      const pl = PlaylistItems.parse(
+        JSON.parse(
+          await get(
+            `https://www.googleapis.com/youtube/v3/playlistItems?part=contentDetails&maxResults=15&playlistId=${uploads}&key=${encodeURIComponent(key)}`,
+          ),
+        ),
+      );
+      const ids = pl.items.map((i) => i.contentDetails.videoId);
+      if (!ids.length) continue;
+      const vs = Videos.parse(
+        JSON.parse(
+          await get(
+            `https://www.googleapis.com/youtube/v3/videos?part=snippet,status,contentDetails&id=${ids.join(',')}&key=${encodeURIComponent(key)}`,
+          ),
+        ),
+      );
+      for (const v of vs.items) {
+        const { status, snippet } = v;
+        if (!status.embeddable || status.privacyStatus !== 'public' || status.madeForKids) continue;
+        if (!/division/i.test(snippet.title)) continue;
+        if (now.getTime() - Date.parse(snippet.publishedAt) > maxAgeMs) continue;
+        out.push({
+          id: v.id,
+          title: snippet.title,
+          channelName: snippet.channelTitle,
+          channelUrl: `https://www.youtube.com/channel/${snippet.channelId}`,
+          publishedAt: new Date(snippet.publishedAt).toISOString(),
+          durationSec: parseDuration(v.contentDetails.duration),
+          official: ch.official,
+          via: 'youtube-api',
+          verified: true,
+        });
+      }
+      log('info', 'youtube channel ok', { channel: ch.name, kept: out.length });
+    } catch (err) {
+      // Error text can contain the request URL; log only the channel and status.
+      log('warn', 'youtube channel failed', { channel: ch.name, error: String(err).replace(/key=[^&\s]+/g, 'key=***').slice(0, 120) });
+    }
+  }
+  return out;
+}

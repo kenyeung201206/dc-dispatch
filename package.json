@@ -17,7 +17,7 @@
     "ci": "pnpm run i18n:check && pnpm run check && pnpm run test && pnpm run build",
     "test:e2e": "playwright test",
     "screens": "node -e \"process.env.SCREENS=String(1);require('child_process').execSync('playwright test screen --project=desktop-chromium --project=iphone',{stdio:'inherit'})\"",
-    "refresh": "node pipeline/refresh.ts",
+    "refresh": "node --env-file-if-exists=.env pipeline/refresh.ts",
     "refresh:dry": "node pipeline/refresh.ts --dry-run"
   },
   "dependencies": {

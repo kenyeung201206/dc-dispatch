@@ -22,7 +22,7 @@ const tickerLines = [...edition.items]
   .sort(byImportance)
   .slice(0, 4)
   .map((i) => localized(i, 'headline', locale).text);
-const navSections: Category[] = CATEGORIES.filter((c) => c !== 'watch-now');
+const navSections: Category[] = [...CATEGORIES];
 ---
 <Base locale={locale} title={title}>
   <Fragment slot="masthead">

@@ -25,4 +25,6 @@ export interface SourceResult {
   ok: boolean;
   items: RawItem[];
   note?: string;
+  /** Raw response body, kept in memory only (used to read videos from the same page). */
+  body?: string;
 }

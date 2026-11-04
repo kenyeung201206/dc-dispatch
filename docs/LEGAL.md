@@ -22,6 +22,13 @@ Not legal advice. Researched 2026-11-04. Each rule below is enforced in code (se
 - Made-for-Kids videos: tracking off (III.E.4.j). → skip `madeForKids=true` videos entirely.
 - One API project per client, never expose key (III.D.1). → key only in GitHub Actions secret.
 
+### How Watch Now complies (Phase 5)
+- Players load only after a tap; playback starts from that tap (the reader pressing play), never on page load. Official players only (`youtube-nocookie.com/embed`, `player.twitch.tv`, `clips.twitch.tv`); nothing overlays a running player.
+- **Deviation from the brief:** video **thumbnails** come from YouTube/Twitch image servers (`i.ytimg.com`, `static-cdn.jtvnw.net`) before the tap, lazily when scrolled into view. They set no cookies. Copying them to our server would mean storing YouTube content, which the API terms restrict.
+- Every video shows channel credit + "Watch on YouTube/Twitch ↗". Watch page links the YouTube Terms of Service and Google Privacy Policy.
+- Video metadata is re-checked every run and deleted if not re-confirmed within 30 days; made-for-kids videos are skipped. Twitch data is fetched on demand (5-minute cache), never stored.
+- Twitch `parent` = the page's own hostname at run time, so it is always correct for localhost, preview and production.
+
 ## Twitch ([Embed docs](https://dev.twitch.tv/docs/embed/), [Developer Agreement](https://legal.twitch.com/legal/developer-agreement))
 - Embeds need HTTPS and `parent=` for every serving domain; nothing may cover the player. → `parent` list from config (prod, preview, localhost).
 - Unauthenticated Helix data (streams, games): community/staff posts indicate a **24-hour** storage limit (Schedule 1 wording **unverified**). → live data fetched on demand; clip metadata purged after 24 h.

@@ -1,0 +1,10 @@
+{
+  "_note": "YouTube channels to follow (needs YOUTUBE_API_KEY). Only uploads whose title mentions The Division are used, and each video must be public + embeddable + not made-for-kids. Edit freely.",
+  "channels": [
+    { "id": "UC0KU8F9jJqSLS11LRXvFWmg", "name": "Ubisoft", "handle": "@Ubisoft", "official": true },
+    { "id": "UCyRKkittAyXHhjZxqC49cxg", "name": "GCROCK", "handle": "@GCROCK", "official": false },
+    { "id": "UC1h4ld2anwjT4NEbqFOJRXQ", "name": "widdz", "handle": "@widdz", "official": false },
+    { "id": "UCrK99e79TwSpgElDb-r-Lpg", "name": "Died Again Gaming", "handle": "@DiedAgainGaming", "official": false },
+    { "id": "UCWd5S9-AEf26j0wY3P8TOhw", "name": "Kamikazevondoom", "handle": "@Kamikazevondoom", "official": false }
+  ]
+}

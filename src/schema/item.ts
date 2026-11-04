@@ -128,6 +128,29 @@ export const PatchSchema = z.object({
 export type Patch = z.infer<typeof PatchSchema>;
 export const PatchLogSchema = z.object({ patches: z.array(PatchSchema) });
 
+/** Watch Now rows (brief §8). */
+export const VIDEO_ROWS = ['trailers', 'patch-breakdowns', 'build-guides', 'more'] as const;
+
+/** A YouTube video confirmed embeddable + public on the date in checkedAt (data/videos.json). */
+export const VideoSchema = z.object({
+  id: z.string().regex(/^[A-Za-z0-9_-]{11}$/),
+  /** Regional upload of the same video for Chinese readers, if Ubisoft has one. */
+  idZh: z.string().regex(/^[A-Za-z0-9_-]{11}$/).optional(),
+  title: z.string().min(1),
+  titleZh: z.string().min(1).optional(),
+  channelName: z.string().min(1),
+  channelUrl: httpsUrl,
+  publishedAt: z.iso.datetime({ offset: true }),
+  durationSec: z.number().int().positive().optional(),
+  official: z.boolean(),
+  row: z.enum(VIDEO_ROWS),
+  /** When we last confirmed it is public and embeddable (YouTube data must be refreshed within 30 days). */
+  checkedAt: z.iso.datetime({ offset: true }),
+  via: z.enum(['ubisoft-page', 'youtube-api']),
+});
+export type Video = z.infer<typeof VideoSchema>;
+export const VideoLibrarySchema = z.object({ videos: z.array(VideoSchema) });
+
 /** One daily edition file: data/editions/YYYY-MM-DD.json */
 export const EditionSchema = z.object({
   date: z.iso.date(),

@@ -8,6 +8,9 @@ import { t, type Locale, type UiKey } from '../i18n/index.ts';
 import type { Edition } from '../schema/item.ts';
 import { byImportance, localized } from '../lib/editions.ts';
 import { routes } from '../lib/routes.ts';
+import VideoFacade from './VideoFacade.astro';
+import LiveNow from './LiveNow.astro';
+import { videoOfTheDay, videos } from '../lib/videos.ts';
 import { bannerFor, imageFor } from '../lib/images.ts';
 
 interface Props {
@@ -34,6 +37,8 @@ const used = new Set(items.flatMap((i) => (i.imageId ? [i.imageId] : [])));
 const banners = new Map(SECTION_ORDER.map((c) => [c, bannerFor(c, used)]));
 const photos = new Map(items.map((i) => [i.id, imageFor(i, used)]));
 const leadPhoto = photos.get(lead!.id);
+const vod = videoOfTheDay();
+const moreVideos = videos.filter((v) => v.id !== vod?.id).slice(0, 2);
 ---
   {edition.fixture && <p class="fixture-note hud-label">{t(locale, 'edition.fixture')}</p>}
 
@@ -97,6 +102,22 @@ const leadPhoto = photos.get(lead!.id);
       );
     })
   }
+
+  <section id="watch-now" class="sec watch" aria-labelledby="h-watch">
+    <header class="section-head">
+      <h2 id="h-watch"><a href={routes.watch(locale)}>{t(locale, 'watch.title')}</a></h2>
+      <p>{t(locale, 'watch.tagline')}</p>
+    </header>
+    <div class="watch-grid">
+      {vod && <div class="wv"><p class="hud-label">{t(locale, 'watch.vod')}</p><VideoFacade locale={locale} video={vod} size="large" /></div>}
+      <div class="wside">
+        {moreVideos.map((v) => <VideoFacade locale={locale} video={v} />)}
+        <p class="hud-label">{t(locale, 'live.title')}</p>
+        <LiveNow locale={locale} compact />
+        <p><a class="all" href={routes.watch(locale)}>{t(locale, 'watch.all')}</a></p>
+      </div>
+    </div>
+  </section>
 
   <section id="back-page" class="sec back" aria-labelledby="h-back">
     <header class="section-head">
@@ -209,6 +230,26 @@ const leadPhoto = photos.get(lead!.id);
     letter-spacing: 0.1em;
   }
 
+  .watch-grid {
+    display: grid;
+    gap: var(--space-5);
+  }
+  .wside {
+    display: grid;
+    gap: var(--space-4);
+    align-content: start;
+  }
+  .all {
+    display: inline-block;
+    padding: 8px 0;
+    color: var(--shd-ink);
+    font-weight: 700;
+  }
+  @media (min-width: 1024px) {
+    .watch-grid {
+      grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+    }
+  }
   @media (min-width: 768px) {
     .secondary,
     .cols {

@@ -20,5 +20,13 @@ Checked 2026-11-04. Reliability: A = official, B = established press/creator, C 
 | Division fandom wiki | https://thedivision.fandom.com/ | HTML 403 to bots; MediaWiki API OK | CC BY-SA 3.0 | — | Community | EN | C | Manual link + glossary cross-check (with attribution) |
 | Massgate.org | https://massgate.org/ | — | — | — | Unreachable (expired TLS) | — | — | **Reject** |
 
-## YouTube channel allowlist (to fill in Phase 5)
-Each channel will be checked for: active in last 60 days, uploads are `status.embeddable=true` and public. Candidates: official Tom Clancy's The Division channel and Ubisoft channel (trailers), plus well-known Division creators. **Not yet verified; nothing gets listed until it is.**
+## Video sources (Phase 5, checked 2026-11-04)
+- **Ubisoft news page videos** (no key): official uploads listed in the same `__PRELOADED_STATE__` JSON; the zh-TW page lists regional uploads (paired by title).
+- **YouTube oEmbed** `https://www.youtube.com/oembed` (no key): every video is checked here each run; 200 = public + embeddable, 401/404 = dropped.
+- **YouTube channel RSS** (`/feeds/videos.xml`): **dead**, returns 404 for every channel and playlist (tested 2026-11-04). Creator videos therefore need `YOUTUBE_API_KEY`.
+- **YouTube Data API** (with key): allowlist in `data/video-channels.json`; `playlistItems` + `videos` = 2 quota units per channel per day.
+- **Twitch Helix** (with keys): called live by `functions/api/live.ts` (Cloudflare Pages Function) — never stored.
+
+## YouTube channel allowlist (initial, edit `data/video-channels.json`)
+Found via 2026 Division 2 build/guide videos; each passed the embed check today: Ubisoft (official), GCROCK, widdz, Died Again Gaming, Kamikazevondoom. Only uploads mentioning "Division" from the last 60 days are used.
+

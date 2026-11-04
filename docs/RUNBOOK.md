@@ -42,5 +42,10 @@ Update `SEASON` in `pipeline/config.ts`. The TU label is detected automatically 
 ## Glossary
 Edit `data/glossary.json`. Only set `verified: true` with an official Ubisoft zh-TW link (a test enforces this).
 
+## Watch Now
+- `data/videos.json` is rebuilt every refresh: official videos from Ubisoft's pages (no key) + allowlisted channels (`data/video-channels.json`, needs `YOUTUBE_API_KEY`). Every video is re-checked with YouTube oEmbed; unconfirmed ones vanish after 30 days.
+- Live Now calls `/api/live` (`functions/api/live.ts`), which needs `TWITCH_CLIENT_ID` + `TWITCH_CLIENT_SECRET` in the Cloudflare Pages environment. Until deployed (Phase 7) the page shows "live list unavailable" with a link to Twitch.
+- The refresh reads keys from `.env` (`node --env-file-if-exists=.env`) locally and from GitHub Actions secrets in CI.
+
 ## Keys
 Names are in `.env.example`. None are needed for Phase 3. Rotate a key by replacing it in your `.env` and in GitHub Actions secrets; never commit it.

@@ -1,0 +1,127 @@
+---
+import Paper from '../../layouts/Paper.astro';
+import VideoFacade from '../../components/VideoFacade.astro';
+import LiveNow from '../../components/LiveNow.astro';
+import { LOCALES, t, type Locale, type UiKey } from '../../i18n/index.ts';
+import { videoOfTheDay, videos } from '../../lib/videos.ts';
+import { VIDEO_ROWS } from '../../schema/item.ts';
+
+export function getStaticPaths() {
+  return LOCALES.map((lang) => ({ params: { lang } }));
+}
+const locale = Astro.params.lang as Locale;
+const vod = videoOfTheDay();
+const rows = VIDEO_ROWS.map((row) => ({ row, list: videos.filter((v) => v.row === row && v.id !== vod?.id) }));
+const hasCreators = videos.some((v) => v.via === 'youtube-api');
+---
+<Paper locale={locale} title={t(locale, 'watch.title')} current="watch-now">
+  <header class="section-head page-head">
+    <h1>{t(locale, 'watch.title')}</h1>
+    <p>{t(locale, 'watch.tagline')}</p>
+  </header>
+
+  {
+    vod && (
+      <section class="vod" aria-labelledby="vod-h">
+        <h2 id="vod-h" class="hud-label">{t(locale, 'watch.vod')}</h2>
+        <VideoFacade locale={locale} video={vod} size="large" />
+      </section>
+    )
+  }
+
+  <section class="block" aria-labelledby="live-h">
+    <header class="section-head">
+      <h2 id="live-h"><span class="dot" aria-hidden="true"></span>{t(locale, 'live.title')}</h2>
+    </header>
+    <LiveNow locale={locale} />
+  </section>
+
+  {
+    rows.map(({ row, list }) => (
+      <section class="block" aria-labelledby={`row-${row}`}>
+        <header class="section-head">
+          <h2 id={`row-${row}`}>{t(locale, `watch.row.${row}` as UiKey)}</h2>
+        </header>
+        {list.length ? (
+          <div class="shelf">
+            {list.map((v) => (
+              <VideoFacade locale={locale} video={v} />
+            ))}
+          </div>
+        ) : (
+          <p class="empty">
+            {t(locale, 'watch.emptyRow')} {!hasCreators && row !== 'trailers' && <span>{t(locale, 'watch.needsKey')}</span>}
+          </p>
+        )}
+      </section>
+    ))
+  }
+
+  <p class="yt-note hud-label">
+    {t(locale, 'watch.ytNote')}{' '}
+    <a href="https://www.youtube.com/t/terms" rel="noopener noreferrer" target="_blank">{t(locale, 'watch.ytTerms')}</a> ·
+    <a href="https://policies.google.com/privacy" rel="noopener noreferrer" target="_blank">{t(locale, 'watch.googlePrivacy')}</a>
+  </p>
+</Paper>
+
+<style>
+  .page-head h1 {
+    margin: 0;
+    font: 900 var(--step-3) / 1.1 var(--font-display);
+  }
+  :lang(zh-Hant-TW) .page-head h1 {
+    font-family: var(--font-cjk);
+  }
+  .vod {
+    max-width: 900px;
+  }
+  .dot {
+    display: inline-block;
+    width: 0.5em;
+    height: 0.5em;
+    margin-right: 0.4em;
+    border-radius: 50%;
+    background: #e91916;
+    vertical-align: middle;
+  }
+  .block .section-head h2::before {
+    display: none;
+  }
+  /* Phone: swipeable shelf. Desktop: grid. */
+  .shelf {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: min(80vw, 320px);
+    gap: var(--space-4);
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding-bottom: var(--space-2);
+    overscroll-behavior-x: contain;
+  }
+  .shelf > :global(*) {
+    scroll-snap-align: start;
+  }
+  .empty {
+    font-style: italic;
+    color: var(--ink-soft);
+  }
+  .yt-note {
+    margin-top: var(--space-6);
+    color: var(--ink-soft);
+    text-transform: none;
+    letter-spacing: 0;
+    font-weight: 400;
+  }
+  .yt-note a {
+    display: inline-block;
+    padding: 6px 0;
+  }
+  @media (min-width: 768px) {
+    .shelf {
+      grid-auto-flow: row;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      grid-auto-columns: unset;
+      overflow: visible;
+    }
+  }
+</style>

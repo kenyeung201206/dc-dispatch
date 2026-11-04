@@ -4,7 +4,7 @@ import type { Category } from '../src/schema/item.ts';
 export const USER_AGENT = 'Mozilla/5.0 (compatible; DCDispatchBot/0.1; private fan newspaper)';
 
 /** The fetcher refuses any host not on this list (SSRF guard). */
-export const ALLOWED_HOSTS = new Set(['api.steampowered.com', 'www.ubisoft.com']);
+export const ALLOWED_HOSTS = new Set(['api.steampowered.com', 'www.ubisoft.com', 'www.youtube.com', 'www.googleapis.com']);
 
 export const TIMEZONE = 'Asia/Tokyo';
 export const STEAM_APP_ID = 2221490;
