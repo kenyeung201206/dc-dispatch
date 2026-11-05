@@ -116,3 +116,35 @@ describe('home-screen app files', () => {
     expect((await run('/manifest.webmanifest', { method: 'POST' })).status).toBe(401);
   });
 });
+
+describe('view counter', () => {
+  const store = () => {
+    const m = new Map<string, string>();
+    return { m, kv: { get: async (k: string) => m.get(k) ?? null, put: async (k: string, v: string) => void m.set(k, v) } };
+  };
+  const signedIn = async () => `dcd_auth=${await makeToken(env, Date.now())}`;
+
+  it('counts signed-in page loads only, after the response', async () => {
+    const { m, kv } = store();
+    const jobs: Promise<unknown>[] = [];
+    const go = async (path: string, headers: Record<string, string>) =>
+      onRequest({ request: new Request(BASE + path, { headers }), env: { ...env, VIEWS: kv }, next: ok, waitUntil: (p) => void jobs.push(p) });
+    const cookie = await signedIn();
+    await go('/zh-hant/', { accept: 'text/html', cookie });
+    await go('/en/story/x/', { accept: 'text/html', cookie });
+    await go('/api/views', { accept: 'application/json', cookie }); // not a page
+    await go('/pagefind/pagefind.js', { accept: '*/*', cookie }); // not a page
+    await go('/zh-hant/', { accept: 'text/html', cookie, 'sec-purpose': 'prefetch' }); // prefetch
+    await go('/zh-hant/', { accept: 'text/html' }); // not signed in
+    await Promise.all(jobs);
+    expect(m.get('total')).toBe('2');
+    expect([...m.keys()].filter((k) => k.startsWith('day:'))).toHaveLength(1);
+  });
+
+  it('the site still works when the counter storage is missing or broken', async () => {
+    const cookie = await signedIn();
+    const broken = { get: async () => { throw new Error('down'); }, put: async () => {} };
+    const res = await onRequest({ request: new Request(BASE + '/zh-hant/', { headers: { accept: 'text/html', cookie } }), env: { ...env, VIEWS: broken }, next: ok, waitUntil: () => {} });
+    expect(res.status).toBe(200);
+  });
+});

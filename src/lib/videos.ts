@@ -1,7 +1,7 @@
 import raw from '../../data/videos.json' with { type: 'json' };
 import { VideoLibrarySchema, type Video } from '../schema/item.ts';
 import type { Locale } from '../i18n/index.ts';
-import { videoTitleZh } from './zh.ts';
+import { hasChinese, videoTitleZh } from './zh.ts';
 
 const parsed = VideoLibrarySchema.safeParse(raw);
 if (!parsed.success) throw new Error(`Invalid data/videos.json: ${parsed.error.message}`);
@@ -12,10 +12,13 @@ export const videos: Video[] = parsed.data.videos;
 /** Videos for this language. Chinese readers get Chinese titles, and only videos that have one. */
 export function videosFor(locale: Locale): Video[] {
   if (locale === 'en') return videos;
-  return videos.flatMap((v) => {
+  const list = videos.flatMap((v) => {
     const titleZh = videoTitleZh(v);
     return titleZh ? [{ ...v, titleZh }] : [];
   });
+  // Videos spoken in Chinese (Taiwan / Hong Kong / mainland creators, Ubisoft regional uploads) come first.
+  const spokenZh = (v: Video) => Boolean(v.idZh) || hasChinese(v.title);
+  return [...list.filter(spokenZh), ...list.filter((v) => !spokenZh(v))];
 }
 
 /** Video of the Day: the newest official video, else the newest of any. */

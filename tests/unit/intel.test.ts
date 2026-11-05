@@ -129,6 +129,14 @@ describe('YouTube creator scan (mocked API)', () => {
     expect(z.headline_zhHant).toBe('全境封鎖2 新奇特武器實測');
     for (const i of items) expect(ItemSchema.safeParse(i).success).toBe(true);
   });
+
+  it('keeps room for Chinese-speaking creators even when English videos are bigger', () => {
+    const en = Array.from({ length: 8 }, (_, n): VideoCandidate => ({ id: `e${n}`.padEnd(11, 'x'), title: `Division 2 new exotic build ${n}`, publishedAt: '2026-11-03T00:00:00.000Z', official: false, via: 'youtube-search', search: true, views: 50_000 }));
+    const zh: VideoCandidate = { ...en[0]!, id: 'zzzzzzzzzzz', title: '全境封鎖2 蜜獾怎麼拿', views: 10 };
+    const ids = videoStories([...en, zh], NOW).map((i) => i.videoId);
+    expect(ids).toHaveLength(6);
+    expect(ids).toContain('zzzzzzzzzzz');
+  });
 });
 
 describe('AI summaries (mocked client, no real API calls)', () => {

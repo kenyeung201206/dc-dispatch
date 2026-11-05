@@ -4,3 +4,8 @@
 name = "dc-dispatch"
 pages_build_output_dir = "dist"
 compatibility_date = "2026-10-01"
+
+# Page-view counter (functions/lib/views.ts). Created by .github/workflows/setup-views.yml.
+[[kv_namespaces]]
+binding = "VIEWS"
+id = "29e65aa1a4ef419baad5b43ea3410405"

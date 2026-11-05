@@ -7,6 +7,7 @@
 import { formatDate, t, type Locale } from '../i18n/index.ts';
 import { formatDuration } from '../lib/videos.ts';
 import type { Video } from '../schema/item.ts';
+import { hasChinese } from '../lib/zh.ts';
 
 interface Props {
   locale: Locale;
@@ -17,8 +18,10 @@ const { locale, video, size = 'card' } = Astro.props;
 const id = locale === 'zh-hant' && video.idZh ? video.idZh : video.id;
 const title = locale === 'zh-hant' && video.titleZh ? video.titleZh : video.title;
 const duration = formatDuration(video.durationSec);
+/** Chinese readers watching a non-Chinese video: ask YouTube for Traditional Chinese subtitles (auto-translated if needed). */
+const cc = locale === 'zh-hant' && !hasChinese(video.title) && !video.idZh ? 'zh-Hant' : undefined;
 ---
-<figure class:list={['vf', size]} data-yt={id} data-title={title}>
+<figure class:list={['vf', size]} data-yt={id} data-title={title} data-cc={cc}>
   <div class="frame">
     <button type="button" class="play" aria-label={`${t(locale, 'watch.play')}: ${title}`}>
       <img
@@ -46,6 +49,25 @@ const duration = formatDuration(video.durationSec);
 </figure>
 
 <script>
+  const YT = 'https://www.youtube-nocookie.com';
+  /**
+   * Turn on Traditional Chinese subtitles via the player's message API (no extra script needed).
+   * If the video has no Chinese track, YouTube auto-translates its captions. Retried for a while
+   * because the captions module only loads once playback starts.
+   */
+  function chineseSubtitles(iframe: HTMLIFrameElement) {
+    const send = (msg: object) => iframe.contentWindow?.postMessage(JSON.stringify(msg), YT);
+    const cmd = (func: string, args: unknown[] = []) => send({ event: 'command', func, args });
+    let tries = 0;
+    const tick = () => {
+      send({ event: 'listening', id: iframe.id });
+      cmd('loadModule', ['captions']);
+      cmd('setOption', ['captions', 'track', { languageCode: 'zh-Hant' }]);
+      if (++tries < 12) window.setTimeout(tick, 1000);
+    };
+    iframe.addEventListener('load', () => window.setTimeout(tick, 800), { once: true });
+  }
+
   document.addEventListener('click', (e) => {
     const btn = (e.target as HTMLElement).closest<HTMLButtonElement>('.vf .play');
     if (!btn) return;
@@ -53,7 +75,11 @@ const duration = formatDuration(video.durationSec);
     const id = fig.dataset.yt ?? '';
     if (!/^[A-Za-z0-9_-]{11}$/.test(id)) return;
     const iframe = document.createElement('iframe');
-    iframe.src = `https://www.youtube-nocookie.com/embed/${id}?autoplay=1&playsinline=1&rel=0`;
+    const cc = fig.dataset.cc === 'zh-Hant';
+    const extra = cc ? `&cc_load_policy=1&cc_lang_pref=zh-Hant&hl=zh-TW&enablejsapi=1&origin=${encodeURIComponent(location.origin)}` : '';
+    iframe.src = `https://www.youtube-nocookie.com/embed/${id}?autoplay=1&playsinline=1&rel=0${extra}`;
+    if (cc) chineseSubtitles(iframe);
+    iframe.id = `yt-${id}-${Date.now()}`;
     iframe.title = fig.dataset.title ?? 'YouTube video';
     iframe.allow = 'autoplay; encrypted-media; picture-in-picture; fullscreen';
     iframe.allowFullscreen = true;

@@ -20,11 +20,13 @@ import {
   safeNext,
   verifyToken,
 } from './lib/auth.ts';
+import { countView, isPageView, type ViewsEnv } from './lib/views.ts';
 
 interface Ctx {
   request: Request;
-  env: AuthEnv;
+  env: AuthEnv & ViewsEnv;
   next: () => Promise<Response>;
+  waitUntil?: (p: Promise<unknown>) => void;
 }
 
 /** Exact files only (no folders, no wildcards), so nothing else slips past the lock. */
@@ -43,7 +45,7 @@ const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));
 const redirect = (to: string, extra: Record<string, string> = {}) =>
   new Response(null, { status: 303, headers: { location: to, 'cache-control': 'no-store', ...extra } });
 
-export async function onRequest({ request, env, next }: Ctx): Promise<Response> {
+export async function onRequest({ request, env, next, waitUntil }: Ctx): Promise<Response> {
   const url = new URL(request.url);
   const secure = url.protocol === 'https:';
   if (!configured(env)) return loginPage('unconfigured', '/', 503);
@@ -85,7 +87,11 @@ export async function onRequest({ request, env, next }: Ctx): Promise<Response> 
     return loginPage('ask', nextPath);
   }
 
-  if (await verifyToken(e, readCookie(request.headers.get('cookie'), COOKIE), now)) return next();
+  if (await verifyToken(e, readCookie(request.headers.get('cookie'), COOKIE), now)) {
+    // View counter: signed-in page loads only, counted after the response so pages never wait on it.
+    if (env.VIEWS && waitUntil && isPageView(request)) waitUntil(countView(env.VIEWS, now).catch(() => {}));
+    return next();
+  }
 
   // Not signed in: send page visits to the password page; refuse everything else.
   const wantsPage = request.method === 'GET' && (request.headers.get('accept') ?? '').includes('text/html');

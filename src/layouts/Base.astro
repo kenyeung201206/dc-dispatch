@@ -53,9 +53,10 @@ const pageTitle = title ? `${title} · ${t(locale, 'site.name')}` : t(locale, 's
   <body>
     <a class="skip" href="#main">{t(locale, 'nav.skip')}</a>
     <slot name="masthead" />
-    <main id="main" class="wrap">
+    <main id="main" class="wrap" tabindex="-1">
       <slot />
     </main>
+    <button type="button" class="to-top" data-to-top hidden aria-label={t(locale, 'nav.toTop')}><span aria-hidden="true">▲</span><span class="tt">{t(locale, 'nav.toTopShort')}</span></button>
     <div class="toast" role="status" aria-live="polite" data-toast data-on={t(locale, 'egg.hunterOn')} data-off={t(locale, 'egg.hunterOff')}></div>
     <footer class="site-footer">
       <div class="wrap">
@@ -80,6 +81,32 @@ const pageTitle = title ? `${title} · ${t(locale, 'site.name')}` : t(locale, 's
           try {
             localStorage.setItem('dcd.theme', next);
           } catch {}
+        }),
+      );
+
+      // Floating back-to-top: appears after scrolling about a screen and a half.
+      const top = document.querySelector<HTMLButtonElement>('[data-to-top]');
+      if (top) {
+        const sync = () => (top.hidden = window.scrollY < window.innerHeight * 1.5);
+        window.addEventListener('scroll', sync, { passive: true });
+        sync();
+        top.addEventListener('click', () => {
+          const calm = matchMedia('(prefers-reduced-motion: reduce)').matches;
+          window.scrollTo({ top: 0, behavior: calm ? 'auto' : 'smooth' });
+          document.querySelector<HTMLElement>('#main')?.focus({ preventScroll: true });
+        });
+      }
+      // Return button: go back like the browser would; from a fresh/outside visit, go to the section or home.
+      document.querySelectorAll<HTMLAnchorElement>('[data-back]').forEach((a) =>
+        a.addEventListener('click', (e) => {
+          let fromHere = false;
+          try {
+            fromHere = Boolean(document.referrer) && new URL(document.referrer).origin === location.origin;
+          } catch {}
+          if (fromHere && history.length > 1) {
+            e.preventDefault();
+            history.back();
+          }
         }),
       );
 
@@ -151,6 +178,40 @@ const pageTitle = title ? `${title} · ${t(locale, 'site.name')}` : t(locale, 's
       }
       .toast.show {
         transform: translate(-50%, 0);
+      }
+      .to-top {
+        position: fixed;
+        right: max(16px, env(safe-area-inset-right));
+        bottom: calc(16px + env(safe-area-inset-bottom));
+        z-index: 40;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 52px;
+        height: 52px;
+        border: 2px solid var(--ink);
+        border-radius: 50%;
+        background: var(--shd);
+        color: var(--on-shd);
+        font: 700 0.6875rem / 1 var(--font-hud);
+        box-shadow: 0 3px 10px rgb(0 0 0 / 0.25);
+        cursor: pointer;
+      }
+      .to-top[hidden] {
+        display: none;
+      }
+      .to-top span:first-child {
+        font-size: 1rem;
+      }
+      .to-top:focus-visible {
+        outline: 3px solid var(--ink);
+        outline-offset: 3px;
+      }
+      @media print {
+        .to-top {
+          display: none;
+        }
       }
       .site-footer {
         margin-top: var(--space-6);

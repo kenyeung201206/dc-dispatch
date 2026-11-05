@@ -38,6 +38,7 @@ const season = edition.meta ? (locale === 'en' ? edition.meta.season_en : editio
     <div><dt>{t(locale, 'rail.date')}</dt><dd><time datetime={edition.date}>{formatDate(dateIso, locale)}</time></dd></div>
     {season && <div><dt>{t(locale, 'rail.season')}</dt><dd>{season} · {edition.meta?.titleUpdate}</dd></div>}
     <div><dt>{t(locale, 'rail.weather')}</dt><dd>{weatherFor(edition.date, locale)}</dd></div>
+    <div data-views hidden data-fmt={t(locale, 'rail.viewsFmt')}><dt>{t(locale, 'rail.views')}</dt><dd>—</dd></div>
     <div class="rail-tools">
       <a class="chip-btn" href={otherHref} hreflang={HTML_LANG[other]} lang={HTML_LANG[other]} aria-label={t(locale, 'nav.languageLabel')} data-lang-switch={other}>{t(locale, 'nav.language')}</a>
       <button class="chip-btn" type="button" data-theme-toggle aria-label={t(locale, 'theme.toggle')}>
@@ -46,6 +47,22 @@ const season = edition.meta ? (locale === 'en' ? edition.meta.season_en : editio
     </div>
   </dl>
 </header>
+
+<script>
+  // View counter (functions/api/views.ts). Hidden unless the counter answers.
+  const box = document.querySelector<HTMLElement>('[data-views]');
+  if (box) {
+    fetch('/api/views', { headers: { accept: 'application/json' }, credentials: 'same-origin' })
+      .then((r) => (r.ok ? r.json() : null))
+      .then((v: { status?: string; total?: number; today?: number } | null) => {
+        if (!v || v.status !== 'ok') return;
+        const n = (x = 0) => x.toLocaleString(document.documentElement.lang || undefined);
+        box.querySelector('dd')!.textContent = (box.dataset.fmt ?? '{total}').replace('{total}', n(v.total)).replace('{today}', n(v.today));
+        box.hidden = false;
+      })
+      .catch(() => {});
+  }
+</script>
 
 <style>
   .bar {
@@ -185,6 +202,9 @@ const season = edition.meta ? (locale === 'en' ? edition.meta.season_en : editio
   }
   .rail > div {
     display: contents;
+  }
+  .rail > div[hidden] {
+    display: none;
   }
   .rail dt {
     color: var(--shd);

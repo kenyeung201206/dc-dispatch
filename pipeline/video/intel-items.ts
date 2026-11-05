@@ -25,10 +25,13 @@ function cleanDescription(d = ''): string {
 }
 
 export function videoStories(videos: VideoCandidate[], now: Date): Item[] {
-  const picked = [...videos]
+  const ranked = [...videos]
     .filter((v) => v.search)
-    .sort((a, b) => Number(INTERESTING.test(b.title)) - Number(INTERESTING.test(a.title)) || (b.views ?? 0) - (a.views ?? 0))
-    .slice(0, MAX_VIDEO_STORIES);
+    .sort((a, b) => Number(INTERESTING.test(b.title)) - Number(INTERESTING.test(a.title)) || (b.views ?? 0) - (a.views ?? 0));
+  // Keep room for Chinese-speaking creators (up to half), so Chinese readers get videos they can follow.
+  const zh = ranked.filter((v) => detectLang(v.title) === 'zh').slice(0, MAX_VIDEO_STORIES / 2);
+  const rest = ranked.filter((v) => !zh.includes(v)).slice(0, MAX_VIDEO_STORIES - zh.length);
+  const picked = ranked.filter((v) => zh.includes(v) || rest.includes(v));
   return picked.map((v) => {
     const url = `https://www.youtube.com/watch?v=${v.id}`;
     const desc = cleanDescription(v.description);

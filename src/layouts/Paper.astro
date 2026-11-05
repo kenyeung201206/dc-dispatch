@@ -5,7 +5,8 @@ import Masthead from '../components/Masthead.astro';
 import Ticker from '../components/Ticker.astro';
 import SectionNav from '../components/SectionNav.astro';
 import { CATEGORIES, type Category, type Edition } from '../schema/item.ts';
-import type { Locale } from '../i18n/index.ts';
+import { t, type Locale } from '../i18n/index.ts';
+import { routes } from '../lib/routes.ts';
 import { byImportance, latestEdition, localized, readableIn } from '../lib/editions.ts';
 import { tickerJokes } from '../lib/humour.ts';
 
@@ -25,6 +26,8 @@ const tickerLines = edition.items
   .slice(0, 4)
   .map((i) => localized(i, 'headline', locale).text);
 const navSections: Category[] = [...CATEGORIES];
+/** Where Return goes when there's no page to go back to: the story's section, else the front page. */
+const backHref = current && (CATEGORIES as readonly string[]).includes(current) && current !== 'front-page' && !Astro.url.pathname.includes('/section/') ? routes.section(locale, current as Category) : routes.home(locale);
 ---
 <Base locale={locale} title={title}>
   <Fragment slot="masthead">
@@ -34,6 +37,15 @@ const navSections: Category[] = [...CATEGORIES];
     </div>
     <SectionNav locale={locale} sections={navSections} current={current} />
   </Fragment>
+  {
+    compact && (
+      <p class="back-row">
+        <a class="back" href={backHref} data-back>
+          <span aria-hidden="true">←</span> {t(locale, 'nav.back')}
+        </a>
+      </p>
+    )
+  }
   <slot />
 </Base>
 
@@ -41,6 +53,25 @@ const navSections: Category[] = [...CATEGORIES];
   /* No box of its own, so the sticky phone bar stays pinned to the page. */
   .mh {
     display: contents;
+  }
+  .back-row {
+    margin: var(--space-3) 0 0;
+  }
+  .back {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    min-height: var(--tap);
+    padding: 0 14px 0 10px;
+    border: 1.5px solid var(--rule);
+    font: 700 0.9375rem / 1 var(--font-hud);
+    text-decoration: none;
+    color: var(--ink);
+  }
+  .back:hover,
+  .back:focus-visible {
+    border-color: var(--shd);
+    color: var(--shd-ink);
   }
   @media (max-width: 767.98px) {
     .compact :global(.masthead),
