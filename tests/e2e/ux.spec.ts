@@ -106,3 +106,38 @@ test('reloading a page starts at the top; going Back returns to where you were',
   await page.goBack();
   await expect.poll(() => page.evaluate(() => window.scrollY)).toBeGreaterThan(1000);
 });
+
+test('最新更新 box sits above the lead story, newest first, without hashtag clutter', async ({ page }) => {
+  await page.route(/(youtube-nocookie\.com|ytimg\.com)/, (r) => r.abort());
+  await page.goto('/zh-hant/');
+  const box = page.locator('.latest');
+  await expect(box.getByRole('heading')).toHaveText('最新更新');
+  const boxTop = (await box.boundingBox())!.y;
+  const leadTop = (await page.locator('.story.lead').boundingBox())!.y;
+  expect(boxTop).toBeLessThan(leadTop);
+  const times = await box.locator('time').evaluateAll((els) => els.map((e) => e.getAttribute('datetime') ?? ''));
+  expect([...times].sort().reverse()).toEqual(times);
+  for (const h of await box.locator('li a').allTextContents()) expect(h).not.toMatch(/#\S/);
+});
+
+test('新 badges: stories since your last visit; gone once you have seen them', async ({ page }) => {
+  await page.route(/(youtube-nocookie\.com|ytimg\.com)/, (r) => r.abort());
+  await page.goto('/zh-hant/');
+  // Long-ago last visit: everything from the last 3 days is new to you.
+  await page.evaluate(() => {
+    localStorage.setItem('dcd.lastSeen', '1');
+    localStorage.removeItem('dcd.prevVisit');
+  });
+  await page.reload();
+  const shown = page.locator('[data-new-badge]:not([hidden])');
+  const ages = await shown.evaluateAll((els) => els.map((e) => Date.now() - Date.parse((e as HTMLElement).dataset.firstSeen!)));
+  for (const a of ages) expect(a).toBeLessThan(72 * 3_600_000 + 60_000);
+  // Seen just now (same visit): nothing new.
+  await page.evaluate(() => {
+    const now = String(Date.now());
+    localStorage.setItem('dcd.lastSeen', now);
+    localStorage.setItem('dcd.prevVisit', now);
+  });
+  await page.reload();
+  await expect(page.locator('[data-new-badge]:not([hidden])')).toHaveCount(0);
+});

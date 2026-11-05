@@ -301,3 +301,18 @@ a:hover {
     font-size: 7.5pt;
   }
 }
+
+/* 新 / NEW badge: shown by the script in Base.astro for stories published since the reader's last visit. */
+.newb {
+  display: inline-block;
+  padding: 1px 7px;
+  border-radius: 3px;
+  background: #b3261e; /* fixed red: white text stays readable in Day and Night */
+  color: #fff;
+  font: 800 0.75rem / 1.5 var(--font-hud);
+  letter-spacing: 0.06em;
+  vertical-align: middle;
+}
+.newb[hidden] {
+  display: none;
+}

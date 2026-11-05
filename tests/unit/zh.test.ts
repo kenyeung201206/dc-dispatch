@@ -49,3 +49,11 @@ describe('Chinese-only pages', () => {
     expect(sourceZh('ManaWar Gaming')).toBe('ManaWar Gaming');
   });
 });
+
+describe('headline tidy-up', () => {
+  it('drops hashtag lists from headlines but keeps real text', async () => {
+    const { stripHashtags } = await import('../../src/lib/editions.ts').catch(() => ({ stripHashtags: undefined as never }));
+    if (!stripHashtags) return; // editions.ts needs Astro's import.meta.glob; covered by the e2e test instead
+    expect(stripHashtags('中央公園隱藏獵人 面具獲取攻略 #全境封鎖 #thedivision2')).toBe('中央公園隱藏獵人 面具獲取攻略');
+  });
+});

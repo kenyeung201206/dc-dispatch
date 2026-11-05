@@ -170,3 +170,14 @@ describe('patch tracker', () => {
     expect(upsertPatches([p], [{ ...p, fixes: 99 }])).toHaveLength(1);
   });
 });
+
+describe('first-seen time (新 badge)', () => {
+  it('keeps the first time a story was published across runs; new stories get the run time', () => {
+    const base = assembleEdition({ date: '2026-11-04', now: NOW, fresh: buildItems(), results: ok, overrides: {} });
+    const [a, b] = base.items;
+    const known = new Map([[a!.id, '2026-11-01T00:00:00.000Z']]);
+    const e = assembleEdition({ date: '2026-11-04', now: NOW, fresh: buildItems(), results: ok, overrides: {}, firstSeen: known });
+    expect(e.items.find((i) => i.id === a!.id)!.firstSeenAt).toBe('2026-11-01T00:00:00.000Z');
+    expect(e.items.find((i) => i.id === b!.id)!.firstSeenAt).toBe(NOW.toISOString());
+  });
+});

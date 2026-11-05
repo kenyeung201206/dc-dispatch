@@ -24,6 +24,11 @@ interface Props {
 const { locale, edition } = Astro.props;
 const items = edition.items.filter((i) => readableIn(i, locale)).sort(byImportance);
 
+/** 最新更新: the most recently published stories, newest first. */
+const latest = [...items].filter((i) => i.firstSeenAt).sort((a, b) => b.firstSeenAt!.localeCompare(a.firstSeenAt!) || byImportance(a, b)).slice(0, 6);
+const when = (iso: string) =>
+  new Intl.DateTimeFormat(locale === 'en' ? 'en-GB' : 'zh-Hant-TW', { timeZone: 'Asia/Tokyo', month: 'numeric', day: 'numeric', hour: '2-digit', minute: '2-digit', hour12: false }).format(new Date(iso));
+
 const [lead, ...rest] = items;
 const secondary = rest.slice(0, 3);
 const frontIds = new Set([lead!.id, ...secondary.map((i) => i.id)]);
@@ -47,6 +52,26 @@ const moreVideos = videosFor(locale).filter((v) => v.id !== vod?.id).slice(0, 2)
   {edition.fixture && <p class="fixture-note hud-label">{t(locale, 'edition.fixture')}</p>}
 
   <h1 class="visually-hidden">{t(locale, 'site.name')} — {t(locale, 'section.front-page')}</h1>
+
+  {
+    latest.length > 0 && (
+      <section class="latest" aria-labelledby="latest-h">
+        <h2 id="latest-h" class="hud-label"><span class="pulse" aria-hidden="true"></span>{t(locale, 'latest.title')}</h2>
+        <ol>
+          {latest.map((i) => (
+            <li>
+              <p class="lm">
+                <span class="newb" data-new-badge data-first-seen={i.firstSeenAt} hidden>{t(locale, 'badge.new')}</span>
+                <time class="hud-label" datetime={i.firstSeenAt}>{when(i.firstSeenAt!)}</time>
+                <span class="sec">· {t(locale, `section.${i.category}` as UiKey)}</span>
+              </p>
+              <a href={routes.story(locale, i.id)}>{localized(i, 'headline', locale).text}</a>
+            </li>
+          ))}
+        </ol>
+      </section>
+    )
+  }
 
   <div class="front" id="front-page">
     <div class="lead-col">
@@ -132,6 +157,69 @@ const moreVideos = videosFor(locale).filter((v) => v.id !== vod?.id).slice(0, 2)
   <BackPage locale={locale} edition={edition} />
 
 <style>
+  .latest {
+    margin: var(--space-4) 0;
+    padding: 10px 14px;
+    border: 2px solid var(--ink);
+    border-left: 8px solid var(--shd);
+    background: color-mix(in srgb, var(--paper-2) 70%, transparent);
+  }
+  .latest h2 {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 0 0 6px;
+    color: var(--shd-ink);
+  }
+  .pulse {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--shd);
+    animation: pulse 1.6s ease-in-out infinite;
+  }
+  @keyframes pulse {
+    50% {
+      opacity: 0.35;
+    }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .pulse {
+      animation: none;
+    }
+  }
+  .latest ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .latest li {
+    padding: 8px 0;
+    border-top: 1px dashed var(--rule-soft);
+  }
+  .lm {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 6px;
+    margin: 0 0 2px;
+  }
+  .latest li:first-child {
+    border-top: 0;
+  }
+  .latest time {
+    color: var(--ink-soft);
+    text-transform: none;
+  }
+  .latest a {
+    display: block;
+    font-weight: 700;
+    line-height: 1.45;
+  }
+  .latest .sec {
+    font-size: 0.8125rem;
+    color: var(--ink-soft);
+  }
   .fixture-note {
     margin: var(--space-4) 0 0;
     padding: 8px 12px;

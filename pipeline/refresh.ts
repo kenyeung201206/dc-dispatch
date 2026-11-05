@@ -83,6 +83,28 @@ async function previousEdition(date: string): Promise<Edition | undefined> {
   return EditionSchema.parse(JSON.parse(await readFile(join('data/editions', last), 'utf8')));
 }
 
+/** Story id → when it was first published, across every saved edition (older files: their generatedAt). */
+async function firstSeenIndex(): Promise<Map<string, string>> {
+  const out = new Map<string, string>();
+  const files = (await readdir('data/editions').catch(() => [] as string[])).filter((f) => /^\d{4}-\d{2}-\d{2}\.json$/.test(f));
+  for (const f of files) {
+    let e: Edition;
+    try {
+      e = EditionSchema.parse(JSON.parse(await readFile(join('data/editions', f), 'utf8')));
+    } catch {
+      continue;
+    }
+    if (e.fixture) continue;
+    for (const i of e.items) {
+      // Older files have no firstSeenAt: use the publish time (today's file is rewritten on every run).
+      const t = i.firstSeenAt ?? (i.publishedAt < e.generatedAt ? i.publishedAt : e.generatedAt);
+      const was = out.get(i.id);
+      if (!was || t < was) out.set(i.id, t);
+    }
+  }
+  return out;
+}
+
 async function main() {
   const startedAt = Date.now();
   // Dry runs are pinned to the fixtures' date so results are reproducible.
@@ -192,7 +214,7 @@ async function main() {
   const guides = { guides: liveGuides(mergeGuides(previousGuides, [...guidesFromVideos(guideVideos, events, now), ...pickGuides]), now) };
 
   const overrides = OverridesSchema.parse(await readJson('data/overrides.json', {}));
-  const edition = assembleEdition({ date, now, fresh, results, previous: await previousEdition(date), overrides });
+  const edition = assembleEdition({ date, now, fresh, results, previous: await previousEdition(date), overrides, firstSeen: dryRun ? new Map() : await firstSeenIndex() });
 
   const outDir = dryRun ? '.dry-run' : 'data';
   await mkdir(join(outDir, 'editions'), { recursive: true });

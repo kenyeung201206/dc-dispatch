@@ -62,6 +62,8 @@ export interface AssembleInput {
   results: SourceResult[];
   previous?: Edition;
   overrides: Overrides;
+  /** Story id → first time it was published (from all saved editions). */
+  firstSeen?: Map<string, string>;
 }
 
 /**
@@ -69,7 +71,7 @@ export interface AssembleInput {
  * keep still-active glitches, mark updated stories, trim to the time window.
  * Throws rather than return an empty edition.
  */
-export function assembleEdition({ date, now, fresh, results, previous, overrides }: AssembleInput): Edition {
+export function assembleEdition({ date, now, fresh, results, previous, overrides, firstSeen = new Map() }: AssembleInput): Edition {
   const prev = previous && !previous.fixture ? previous : undefined;
   const prevById = new Map(prev?.items.map((i) => [i.id, i]) ?? []);
   const failed = new Set<SourceId>(results.filter((r) => !r.ok).map((r) => r.sourceId));
@@ -92,7 +94,9 @@ export function assembleEdition({ date, now, fresh, results, previous, overrides
   const items = applyOverrides([...byId.values()], overrides)
     .filter((i) => Date.parse(i.publishedAt) >= cutoff || i.glitch?.state === 'active')
     .sort((a, b) => b.importance - a.importance)
-    .slice(0, MAX_ITEMS);
+    .slice(0, MAX_ITEMS)
+    // First time we published it: earlier editions (incl. earlier runs today), else now.
+    .map((i) => ({ ...i, firstSeenAt: firstSeen.get(i.id) ?? i.firstSeenAt ?? now.toISOString() }));
   if (!items.length) throw new Error('Refusing to publish an empty edition');
 
   const tu = items

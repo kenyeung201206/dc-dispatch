@@ -123,6 +123,26 @@ const pageTitle = title ? `${title} · ${t(locale, 'site.name')}` : t(locale, 's
         }),
       );
 
+      // 新 badges: stories published since this reader's last visit (per browser; a visit = a break of 30+ min).
+      // First visit: the last 12 hours. Never older than 3 days.
+      (() => {
+        const H = 3_600_000;
+        const now = Date.now();
+        let prev = now - 12 * H;
+        try {
+          const last = Number(localStorage.getItem('dcd.lastSeen')) || 0;
+          const saved = Number(localStorage.getItem('dcd.prevVisit')) || 0;
+          prev = last && now - last < 0.5 * H ? saved || prev : last || prev;
+          localStorage.setItem('dcd.prevVisit', String(prev));
+          localStorage.setItem('dcd.lastSeen', String(now));
+        } catch {}
+        const since = Math.max(prev, now - 72 * H);
+        document.querySelectorAll<HTMLElement>('[data-new-badge]').forEach((b) => {
+          const t = Date.parse(b.dataset.firstSeen ?? '');
+          if (t > since) b.hidden = false;
+        });
+      })();
+
       // ---- Easter eggs (no sound, ever) ----
       console.log(
         '%c SHD NETWORK %c Curious, Agent? The pipeline lives in /pipeline, the jokes in src/lib/humour.ts. Try the Konami code. ',

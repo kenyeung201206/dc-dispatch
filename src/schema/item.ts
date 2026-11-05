@@ -92,6 +92,8 @@ export const ItemSchema = z
     /** YouTube video this story is about (creator scan). */
     videoId: z.string().regex(/^[A-Za-z0-9_-]{11}$/).optional(),
     relatedIds: z.array(z.string()).default([]),
+    /** When the robot first published this story (drives the 新 badge and the 最新更新 box). */
+    firstSeenAt: z.iso.datetime({ offset: true }).optional(),
     status: z.enum(['new', 'updated', 'fixed', 'retracted']).default('new'),
     /** Glitch Watch only (brief §4.2). */
     glitch: z

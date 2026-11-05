@@ -225,5 +225,7 @@
   "story.zhVideos": "相關中文影片",
   "story.zhVideosNoteVideo": "上面的影片是英文。以下是說中文的創作者談同一主題的影片：",
   "story.zhVideosNote": "說中文的創作者談同一主題的影片：",
-  "rail.updated": "更新時間"
+  "rail.updated": "更新時間",
+  "latest.title": "最新更新",
+  "badge.new": "新"
 }

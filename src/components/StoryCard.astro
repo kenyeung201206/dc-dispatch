@@ -41,6 +41,7 @@ const day = new Intl.DateTimeFormat(locale === 'en' ? 'en' : 'zh-Hant-TW', {
     <Photo locale={locale} image={photo.image} filePhoto={photo.filePhoto} variant={variant === 'lead' ? 'lead' : 'card'} eager={variant === 'lead'} />
   )}
   <div class="meta">
+    {item.firstSeenAt && <span class="newb" data-new-badge data-first-seen={item.firstSeenAt} hidden>{t(locale, 'badge.new')}</span>}
     <Stamp locale={locale} confidence={item.confidence} />
     {item.status === 'updated' && <span class="hud-label upd">{t(locale, 'status.updated')}</span>}
     <time class="hud-label" datetime={item.publishedAt} title={formatDate(item.publishedAt, locale)}>{day}</time>

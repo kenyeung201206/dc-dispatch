@@ -16,6 +16,21 @@ export const editions: Edition[] = Object.entries(files)
   })
   .sort((a, b) => b.date.localeCompare(a.date));
 
+// First time each story was published: saved firstSeenAt, else its own publish time (capped by the oldest edition
+// carrying it). Not the edition's generatedAt alone: today's file is rewritten on every 3-hourly run.
+{
+  const first = new Map<string, string>();
+  for (const e of [...editions].reverse()) {
+    if (e.fixture) continue;
+    for (const i of e.items) {
+      const t = i.firstSeenAt ?? (i.publishedAt < e.generatedAt ? i.publishedAt : e.generatedAt);
+      const was = first.get(i.id);
+      if (!was || t < was) first.set(i.id, t);
+    }
+  }
+  for (const e of editions) for (const i of e.items) if (first.has(i.id)) i.firstSeenAt = first.get(i.id);
+}
+
 export function latestEdition(): Edition {
   const e = editions[0];
   if (!e) throw new Error('No editions found in data/editions/');
@@ -61,11 +76,18 @@ type LocalizedField = 'headline' | 'summary' | 'whyItMatters';
  * with pending=true and its lang tag (so screen readers and fonts switch correctly).
  */
 export function localized(item: Item, field: LocalizedField, locale: Locale): { text: string; pending: boolean; lang: string } {
-  const ok = (v?: string) => (v && v !== 'pending' ? v : undefined);
+  const tidy = (v: string) => (field === 'headline' ? stripHashtags(v) : v);
+  const ok = (v?: string) => (v && v !== 'pending' ? tidy(v) : undefined);
   const en = ok(item[`${field}_en`]);
   const zh = ok(item[`${field}_zhHant`]);
   if (locale === 'en') return en ? { text: en, pending: false, lang: 'en' } : { text: zh ?? '', pending: Boolean(zh), lang: 'zh-Hant-TW' };
   return zh ? { text: zh, pending: false, lang: 'zh-Hant-TW' } : { text: en ?? '', pending: Boolean(en), lang: 'en' };
+}
+
+/** Video titles often end in hashtag lists (#全境封鎖 #thedivision2 …): drop them from headlines. */
+export function stripHashtags(s: string): string {
+  const out = s.replace(/(^|\s)#[^\s#]+/gu, ' ').replace(/\s{2,}/g, ' ').trim();
+  return out || s;
 }
 
 /** D.C. weather gag, deterministic by date. */

@@ -225,5 +225,7 @@
   "story.zhVideos": "Related Chinese videos",
   "story.zhVideosNoteVideo": "The video above is in English. These are by Chinese-speaking creators on the same topic.",
   "story.zhVideosNote": "Videos by Chinese-speaking creators on the same topic.",
-  "rail.updated": "Updated"
+  "rail.updated": "Updated",
+  "latest.title": "Latest updates",
+  "badge.new": "NEW"
 }
