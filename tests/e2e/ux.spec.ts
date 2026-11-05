@@ -10,7 +10,7 @@ test('view counter: hidden when the counter is off, shown in the banner when it 
 
 test('floating back-to-top button appears after scrolling and returns to the top', async ({ page }) => {
   await page.goto('/zh-hant/watch/');
-  await page.waitForTimeout(150); // let the page's own start-at-top step finish
+  await page.keyboard.press('Shift'); // a reader is here: the page's start-at-top step stands down
   const btn = page.locator('[data-to-top]');
   await expect(btn).toBeHidden();
   await page.evaluate(() => window.scrollTo(0, document.body.scrollHeight));
@@ -68,7 +68,7 @@ test('story pages: an English video story asks for Chinese subtitles on the Chin
 
 test('return button floats at the bottom left and stays on screen while scrolling', async ({ page }) => {
   await page.goto('/zh-hant/watch/');
-  await page.waitForTimeout(150); // let the page's own start-at-top step finish
+  await page.keyboard.press('Shift'); // a reader is here: the page's start-at-top step stands down
   const back = page.getByRole('link', { name: '返回' });
   await page.evaluate(() => window.scrollTo(0, document.body.scrollHeight / 2));
   await expect(back).toBeInViewport();
