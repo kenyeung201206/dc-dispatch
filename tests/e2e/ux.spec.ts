@@ -34,13 +34,14 @@ test('return button: goes back to the previous page, or to the section when open
   await expect(page.getByRole('link', { name: '返回' })).toHaveCount(0); // not on the front page
 });
 
-test('Chinese readers get Traditional Chinese subtitles on non-Chinese videos', async ({ page }) => {
+test('Chinese readers: non-Chinese videos open with Chinese player menus and a subtitle hint', async ({ page }) => {
   await page.route(/(youtube-nocookie\.com|ytimg\.com)/, (r) => r.abort());
   await page.goto('/zh-hant/watch/');
   const fig = page.locator('.vf[data-cc="zh-Hant"]').first();
   test.skip((await fig.count()) === 0, 'no non-Chinese video in the current data');
+  await expect(fig.locator('.cchint')).toContainText('YouTube App');
   await fig.locator('.play').click();
-  await expect(fig.locator('iframe')).toHaveAttribute('src', /cc_load_policy=1&cc_lang_pref=zh-Hant&hl=zh-TW&enablejsapi=1/);
+  await expect(fig.locator('iframe')).toHaveAttribute('src', /hl=zh-TW&cc_lang_pref=zh-Hant/);
   await page.goto('/en/watch/');
   await expect(page.locator('.vf[data-cc]')).toHaveCount(0);
 });

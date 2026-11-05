@@ -221,5 +221,5 @@
   "nav.toTop": "Back to top",
   "nav.toTopShort": "TOP",
   "nav.back": "Back",
-  "watch.ccHint": "Want Chinese subtitles? Tap ⚙ → Subtitles → Auto-translate → Chinese (Traditional). Only works when the creator’s video has subtitles (e.g. “English (auto-generated)”)."
+  "watch.ccHint": "Chinese subtitles: YouTube blocks auto-translate inside players on other sites. Tap “Watch on YouTube”, then in the YouTube app: ⚙ → Captions → Auto-translate → Chinese (Traditional). Only for videos that have subtitles."
 }
