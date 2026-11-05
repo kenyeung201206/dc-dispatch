@@ -1,0 +1,30 @@
+# One-off: create the free KV storage the view counter uses, and print its id (not a secret).
+# Safe to run again: it reuses the namespace if it already exists.
+name: Set up view counter storage
+on: workflow_dispatch
+permissions:
+  contents: read
+jobs:
+  kv:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7.0.1
+      - uses: pnpm/action-setup@v6.1.0
+      - uses: actions/setup-node@v7.1.0
+        with:
+          node-version: 24
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - name: Create or find the namespace
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          list=$(pnpm exec wrangler kv namespace list)
+          id=$(echo "$list" | node -e 'let s="";process.stdin.on("data",d=>s+=d).on("end",()=>{const a=JSON.parse(s.slice(s.indexOf("[")));const n=a.find(x=>x.title==="dcd-views");console.log(n?n.id:"")})')
+          if [ -z "$id" ]; then
+            pnpm exec wrangler kv namespace create dcd-views
+            list=$(pnpm exec wrangler kv namespace list)
+            id=$(echo "$list" | node -e 'let s="";process.stdin.on("data",d=>s+=d).on("end",()=>{const a=JSON.parse(s.slice(s.indexOf("[")));const n=a.find(x=>x.title==="dcd-views");console.log(n?n.id:"")})')
+          fi
+          echo "VIEWS_NAMESPACE_ID=$id"
