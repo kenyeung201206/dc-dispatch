@@ -16,8 +16,10 @@ Chinese 「重點整理」 for stories that don't have one yet, then pushes. A p
 - **Never** touch secrets, `.env`, workflows, or any file other than the two data files below.
 
 ## Steps
-1. `git pull`. Find the newest file in `data/editions/` (skip ones with `"fixture": true`).
-2. List its stories whose `id` is not in `data/briefs.zh.json` → `items`. Nothing missing → stop (no commit).
+1. `git pull`.
+2. Run `node scripts/missing-briefs.ts`. It prints the newest edition's stories with no 重點整理 (keys of
+   `data/briefs.zh.json` → `items`). Use exactly that list; don't write your own check. Empty `missing` → stop (no commit).
+   `needsZhTitle: true` → also do step 5 for that story.
 3. For each missing story (at most 10 per run), read its `sourceUrl`:
    - Ubisoft / other web pages: fetch the page.
    - Steam (`store.steampowered.com/news/...`): the page is script-rendered; use
