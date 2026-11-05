@@ -10,6 +10,7 @@ test('view counter: hidden when the counter is off, shown in the banner when it 
 
 test('floating back-to-top button appears after scrolling and returns to the top', async ({ page }) => {
   await page.goto('/zh-hant/watch/');
+  await page.waitForTimeout(150); // let the page's own start-at-top step finish
   const btn = page.locator('[data-to-top]');
   await expect(btn).toBeHidden();
   await page.evaluate(() => window.scrollTo(0, document.body.scrollHeight));
@@ -67,6 +68,7 @@ test('story pages: an English video story asks for Chinese subtitles on the Chin
 
 test('return button floats at the bottom left and stays on screen while scrolling', async ({ page }) => {
   await page.goto('/zh-hant/watch/');
+  await page.waitForTimeout(150); // let the page's own start-at-top step finish
   const back = page.getByRole('link', { name: '返回' });
   await page.evaluate(() => window.scrollTo(0, document.body.scrollHeight / 2));
   await expect(back).toBeInViewport();
@@ -89,4 +91,18 @@ test('English story, Chinese page: related Chinese videos box (only in Chinese)'
   for (const t of await box.locator('.vt').allTextContents()) expect(t).toMatch(/[㐀-鿿]/);
   await page.goto('/en/story/kt71s5/');
   await expect(page.locator('.zhvids')).toHaveCount(0);
+});
+
+test('reloading a page starts at the top; going Back returns to where you were', async ({ page, isMobile }) => {
+  test.skip(isMobile, 'desktop scroll restoration');
+  await page.route(/(youtube-nocookie\.com|ytimg\.com)/, (r) => r.abort());
+  await page.goto('/zh-hant/');
+  await page.evaluate(() => window.scrollTo(0, document.body.scrollHeight));
+  await page.reload();
+  await expect.poll(() => page.evaluate(() => window.scrollY)).toBe(0);
+  await page.evaluate(() => window.scrollTo(0, 1500));
+  await page.waitForTimeout(200);
+  await page.goto('/zh-hant/section/arsenal/');
+  await page.goBack();
+  await expect.poll(() => page.evaluate(() => window.scrollY)).toBeGreaterThan(1000);
 });

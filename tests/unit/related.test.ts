@@ -33,9 +33,17 @@ describe('related Chinese videos', () => {
     expect(out).not.toContain('park'.padEnd(11, 'x'));
   });
 
-  it('falls back to the same DLC when nobody covered the item yet, curated guides first', () => {
-    const out = relatedChineseVideos(story('How to Get the Ratel', 'New in Echoes of Central Park'), pool).map((v) => v.id);
-    expect(out.slice(0, 2)).toEqual(['mask'.padEnd(11, 'x'), 'park'.padEnd(11, 'x')]);
+  it('a named item needs a video about that item: same DLC alone is not enough', () => {
+    expect(relatedChineseVideos(story('How to Get the Ratel', 'New in Echoes of Central Park'), pool)).toEqual([]);
+    const withRatel = [...pool, { video: vid('ratl', '全境封鎖2 Ratel 蜜獾 實測'), guide: false }];
+    expect(relatedChineseVideos(story('How to Get the Ratel', 'New in Echoes of Central Park'), withRatel).map((v) => v.id)).toEqual(['ratl'.padEnd(11, 'x')]);
+  });
+
+  it('a specific topic (not a named item) matches that topic', () => {
+    const out = relatedChineseVideos(story('NEW Master Mission Day 1 Guide'), pool).map((v) => v.id);
+    expect(out).toContain('hunt'.padEnd(11, 'x'));
+    expect(out).not.toContain('park'.padEnd(11, 'x'));
+    expect(out).not.toContain('mask'.padEnd(11, 'x'));
   });
 
   it('nothing for unrelated stories, and never the story’s own video', () => {

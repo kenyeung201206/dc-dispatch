@@ -48,6 +48,19 @@ const pageTitle = title ? `${title} · ${t(locale, 'site.name')}` : t(locale, 's
         }
         document.documentElement.dataset.theme = t;
       })();
+      // Opening or reloading a page starts at the top (browsers otherwise restore the last position,
+      // e.g. the bottom of the long front page). Going Back still returns to where you were.
+      (function () {
+        try {
+          var nav = performance.getEntriesByType('navigation')[0];
+          if (location.hash || (nav && nav.type === 'back_forward')) return;
+          var touched = false;
+          var mark = function () { touched = true; };
+          ['wheel', 'touchstart', 'keydown', 'mousedown'].forEach(function (ev) { addEventListener(ev, mark, { once: true, passive: true }); });
+          var top = function () { if (!touched && scrollY > 0) scrollTo(0, 0); };
+          addEventListener('load', function () { top(); setTimeout(top, 0); requestAnimationFrame(top); });
+        } catch (e) {}
+      })();
     </script>
   </head>
   <body>

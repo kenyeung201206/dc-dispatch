@@ -37,24 +37,28 @@ function chineseVideos(): { video: Video; guide: boolean }[] {
 }
 
 /**
- * Best Chinese videos for a story: score = sum of matched topic weights (+1 for a curated guide).
- * Specific topics (weight ≥ 2, or two broad ones) win; with none, broad matches such as the same DLC are used.
+ * Chinese videos about the SAME subject as the story — never just "same DLC".
+ * - Story about a named item (weight 3: an exotic, the hidden hunters, the Guardians…): the video must be about
+ *   one of those items.
+ * - Otherwise the video must share a specific topic (weight 2: master mission, builds, bugs, drops…).
+ * - Broad words (weight 1: Central Park, "exotic") only help ranking, they never make a match on their own.
+ * No match → empty (the box is hidden) rather than something unrelated.
  */
 export function relatedChineseVideos(item: Pick<Item, 'headline_en' | 'summary_en' | 'title_orig' | 'videoId'>, pool = chineseVideos()): Video[] {
   const wanted = topicsOf(`${item.title_orig} ${item.headline_en} ${item.summary_en}`);
-  if (!wanted.length) return [];
-  const scored = pool
+  const named = wanted.filter((t) => t.weight === 3);
+  const required = named.length ? named : wanted.filter((t) => t.weight === 2);
+  if (!required.length) return [];
+  return pool
     .filter(({ video }) => video.id !== item.videoId)
     .map(({ video, guide }) => {
       const title = video.title.toLowerCase();
-      const hits = wanted.filter((t) => t.zh.some((w) => title.includes(w)));
-      const score = hits.reduce((s, t) => s + t.weight, 0);
-      return { video, score: score ? score + (guide ? 1 : 0) : 0, strong: hits.some((t) => t.weight >= 2) || hits.length >= 2 };
+      const has = (t: (typeof wanted)[number]) => t.zh.some((w) => title.includes(w));
+      if (!required.some(has)) return { video, score: 0 };
+      const score = wanted.filter(has).reduce((s, t) => s + t.weight, 0) + (guide ? 1 : 0);
+      return { video, score };
     })
-    .filter((x) => x.score > 0);
-  // Specific matches when there are any; otherwise the best broad ones (e.g. same DLC), curated guides first.
-  const best = scored.some((x) => x.strong) ? scored.filter((x) => x.strong) : scored;
-  return best
+    .filter((x) => x.score > 0)
     .sort((a, b) => b.score - a.score || b.video.publishedAt.localeCompare(a.video.publishedAt))
     .slice(0, MAX_RELATED)
     .map((x) => x.video);
