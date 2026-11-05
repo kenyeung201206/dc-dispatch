@@ -6,7 +6,7 @@ import Photo from './Photo.astro';
 import { CATEGORIES, type Category } from '../schema/item.ts';
 import { t, type Locale, type UiKey } from '../i18n/index.ts';
 import type { Edition } from '../schema/item.ts';
-import { byImportance, localized, readableIn } from '../lib/editions.ts';
+import { allItems, byImportance, localized, readableIn } from '../lib/editions.ts';
 import { routes } from '../lib/routes.ts';
 import VideoFacade from './VideoFacade.astro';
 import LiveNow from './LiveNow.astro';
@@ -24,10 +24,29 @@ interface Props {
 const { locale, edition } = Astro.props;
 const items = edition.items.filter((i) => readableIn(i, locale)).sort(byImportance);
 
-/** 最新更新: the most recently published stories, newest first. */
-const latest = [...items].filter((i) => i.firstSeenAt).sort((a, b) => b.firstSeenAt!.localeCompare(a.firstSeenAt!) || byImportance(a, b)).slice(0, 6);
-const when = (iso: string) =>
-  new Intl.DateTimeFormat(locale === 'en' ? 'en-GB' : 'zh-Hant-TW', { timeZone: 'Asia/Tokyo', month: 'numeric', day: 'numeric', hour: '2-digit', minute: '2-digit', hour12: false }).format(new Date(iso));
+/**
+ * 最新更新 — a table of contents of the last week's arrivals, newest first, grouped by day.
+ * The first LATEST_FIRST rows show; 顯示更多 opens LATEST_STEP more at a time.
+ */
+const LATEST_FIRST = 6;
+const LATEST_STEP = 10;
+const LATEST_MAX = 50;
+const weekAgo = new Date(Date.parse(edition.generatedAt) - 7 * 86_400_000).toISOString();
+const latest = allItems
+  .filter((i) => readableIn(i, locale) && i.firstSeenAt && i.firstSeenAt >= weekAgo)
+  .sort((a, b) => b.firstSeenAt!.localeCompare(a.firstSeenAt!) || byImportance(a, b))
+  .slice(0, LATEST_MAX);
+const fmt = (o: Intl.DateTimeFormatOptions) => new Intl.DateTimeFormat(locale === 'en' ? 'en-GB' : 'zh-Hant-TW', { timeZone: 'Asia/Tokyo', ...o });
+const dayKey = (iso: string) => fmt({ year: 'numeric', month: '2-digit', day: '2-digit' }).format(new Date(iso));
+const dayLabel = (iso: string) => fmt({ month: 'long', day: 'numeric', weekday: 'short' }).format(new Date(iso));
+const clock = (iso: string) => fmt({ hour: '2-digit', minute: '2-digit', hour12: false }).format(new Date(iso));
+/** Rows in order: a day heading whenever the date changes, then that day's stories (n = story position). */
+const latestRows: ({ kind: 'day'; label: string; n: number } | { kind: 'item'; item: (typeof latest)[number]; n: number })[] = [];
+latest.forEach((item, n) => {
+  const prev = latest[n - 1];
+  if (!prev || dayKey(prev.firstSeenAt!) !== dayKey(item.firstSeenAt!)) latestRows.push({ kind: 'day', label: dayLabel(item.firstSeenAt!), n });
+  latestRows.push({ kind: 'item', item, n });
+});
 
 const [lead, ...rest] = items;
 const secondary = rest.slice(0, 3);
@@ -57,18 +76,29 @@ const moreVideos = videosFor(locale).filter((v) => v.id !== vod?.id).slice(0, 2)
     latest.length > 0 && (
       <section class="latest" aria-labelledby="latest-h">
         <h2 id="latest-h" class="hud-label"><span class="pulse" aria-hidden="true"></span>{t(locale, 'latest.title')}</h2>
-        <ol>
-          {latest.map((i) => (
-            <li>
-              <p class="lm">
-                <span class="newb" data-new-badge data-first-seen={i.firstSeenAt} hidden>{t(locale, 'badge.new')}</span>
-                <time class="hud-label" datetime={i.firstSeenAt}>{when(i.firstSeenAt!)}</time>
-                <span class="sec">· {t(locale, `section.${i.category}` as UiKey)}</span>
-              </p>
-              <a href={routes.story(locale, i.id)}>{localized(i, 'headline', locale).text}</a>
-            </li>
-          ))}
+        <ol data-latest data-first={LATEST_FIRST} data-step={LATEST_STEP}>
+          {latestRows.map((r) =>
+            r.kind === 'day' ? (
+              <li class="day" data-n={r.n} hidden={r.n >= LATEST_FIRST} aria-hidden="true">{r.label}</li>
+            ) : (
+              <li data-n={r.n} hidden={r.n >= LATEST_FIRST}>
+                <p class="lm">
+                  <span class="newb" data-new-badge data-first-seen={r.item.firstSeenAt} hidden>{t(locale, 'badge.new')}</span>
+                  <time class="hud-label" datetime={r.item.firstSeenAt}>{clock(r.item.firstSeenAt!)}</time>
+                  <span class="sec">· {t(locale, `section.${r.item.category}` as UiKey)}</span>
+                </p>
+                <a href={routes.story(locale, r.item.id)}>{localized(r.item, 'headline', locale).text}</a>
+              </li>
+            ),
+          )}
         </ol>
+        {
+          latest.length > LATEST_FIRST && (
+            <button type="button" class="more-btn" data-latest-more aria-expanded="false" data-more={t(locale, 'latest.more')} data-less={t(locale, 'latest.less')}>
+              {t(locale, 'latest.more').replace('{n}', String(Math.min(LATEST_STEP, latest.length - LATEST_FIRST)))}
+            </button>
+          )
+        }
       </section>
     )
   }
@@ -206,6 +236,38 @@ const moreVideos = videosFor(locale).filter((v) => v.id !== vod?.id).slice(0, 2)
   }
   .latest li:first-child {
     border-top: 0;
+  }
+  .latest li[hidden] {
+    display: none;
+  }
+  .latest li.day {
+    margin-top: 6px;
+    padding: 6px 0 2px;
+    border-top: 2px solid var(--rule);
+    font: 700 0.8125rem / 1.3 var(--font-hud);
+    letter-spacing: 0.04em;
+    color: var(--shd-ink);
+  }
+  .latest li.day + li {
+    border-top: 0;
+  }
+  .more-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: var(--tap);
+    margin-top: 8px;
+    border: 2px solid var(--ink);
+    background: var(--paper);
+    color: var(--ink);
+    font: 700 0.9375rem / 1 var(--font-hud);
+    cursor: pointer;
+  }
+  .more-btn:hover,
+  .more-btn:focus-visible {
+    background: var(--shd);
+    color: var(--on-shd);
   }
   .latest time {
     color: var(--ink-soft);
@@ -376,3 +438,35 @@ const moreVideos = videosFor(locale).filter((v) => v.id !== vod?.id).slice(0, 2)
     }
   }
 </style>
+
+<script>
+  // 最新更新 「顯示更多」: open STEP more rows per tap; when all are open the button collapses back.
+  document.querySelectorAll<HTMLButtonElement>('[data-latest-more]').forEach((btn) => {
+    const list = btn.parentElement?.querySelector<HTMLElement>('[data-latest]');
+    if (!list) return;
+    const first = Number(list.dataset.first) || 6;
+    const step = Number(list.dataset.step) || 10;
+    const rows = [...list.querySelectorAll<HTMLElement>('li[data-n]')];
+    const total = Math.max(...rows.map((r) => Number(r.dataset.n))) + 1;
+    let open = first;
+    const render = () => {
+      rows.forEach((r) => (r.hidden = Number(r.dataset.n) >= open));
+      const left = total - open;
+      const all = left <= 0;
+      btn.textContent = all ? (btn.dataset.less ?? '') : (btn.dataset.more ?? '').replace('{n}', String(Math.min(step, left)));
+      btn.setAttribute('aria-expanded', String(all));
+    };
+    btn.addEventListener('click', () => {
+      if (open >= total) {
+        open = first;
+        render();
+        list.closest('section')?.scrollIntoView({ block: 'start', behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
+        return;
+      }
+      const firstNew = rows.find((r) => Number(r.dataset.n) === open && !r.classList.contains('day'));
+      open = Math.min(total, open + step);
+      render();
+      firstNew?.querySelector('a')?.focus({ preventScroll: true });
+    });
+  });
+</script>

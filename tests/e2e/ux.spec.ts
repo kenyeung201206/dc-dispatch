@@ -141,3 +141,23 @@ test('新 badges: stories since your last visit; gone once you have seen them', 
   await page.reload();
   await expect(page.locator('[data-new-badge]:not([hidden])')).toHaveCount(0);
 });
+
+test('最新更新: 顯示更多 opens 10 more at a time, grouped by day, then 收合 folds back', async ({ page }) => {
+  await page.route(/(youtube-nocookie\.com|ytimg\.com)/, (r) => r.abort());
+  await page.goto('/zh-hant/');
+  const visible = page.locator('.latest li:not(.day):not([hidden])');
+  const btn = page.locator('[data-latest-more]');
+  test.skip((await btn.count()) === 0, 'six or fewer recent stories');
+  await expect(visible).toHaveCount(6);
+  await expect(page.locator('.latest li.day').first()).toBeVisible();
+  const total = await page.locator('.latest li:not(.day)').count();
+  await expect(btn).toHaveText(`顯示更多（再 ${Math.min(10, total - 6)} 則）`);
+  while ((await btn.getAttribute('aria-expanded')) !== 'true') await btn.click();
+  await expect(visible).toHaveCount(total);
+  await expect(btn).toHaveText('收合');
+  // Every visible story row sits under a visible day heading.
+  const order = await page.locator('.latest li:not([hidden])').evaluateAll((els) => els.map((e) => (e.classList.contains('day') ? 'D' : 'S')).join(''));
+  expect(order.startsWith('D')).toBe(true);
+  await btn.click();
+  await expect(visible).toHaveCount(6);
+});
