@@ -161,3 +161,20 @@ test('最新更新: 顯示更多 opens 10 more at a time, grouped by day, then �
   await btn.click();
   await expect(visible).toHaveCount(6);
 });
+
+test('masthead banner: a random Division 2 picture, never the same twice in a row, with credit', async ({ page }) => {
+  const png = Buffer.from('iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=', 'base64');
+  await page.route(/(staticctf\.ubisoft\.com|steamstatic\.com)/, (r) => r.fulfill({ contentType: 'image/png', body: png }));
+  await page.route(/(youtube-nocookie\.com|ytimg\.com)/, (r) => r.abort());
+  const title = page.locator('.masthead .title');
+  const ids: string[] = [];
+  for (let k = 0; k < 3; k++) {
+    await page.goto('/zh-hant/');
+    await expect(title).toHaveClass(/has-bg/);
+    ids.push((await page.evaluate(() => localStorage.getItem('dcd.bannerBg'))) ?? '');
+  }
+  expect(ids[0]).not.toBe(ids[1]);
+  expect(ids[1]).not.toBe(ids[2]);
+  await expect(title.locator('.bg-credit a')).toHaveAttribute('href', /^https:\/\//);
+  await expect(title.locator('.title-name')).toHaveCSS('color', 'rgb(243, 238, 227)');
+});
