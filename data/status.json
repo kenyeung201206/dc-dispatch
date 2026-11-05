@@ -1,10 +1,10 @@
 {
-  "lastRun": "2026-11-05T03:51:36.357Z",
-  "durationMs": 6916,
+  "lastRun": "2026-11-05T04:51:46.791Z",
+  "durationMs": 16776,
   "edition": {
     "date": "2026-11-05",
     "number": 2,
-    "items": 23,
+    "items": 25,
     "zhPending": 3
   },
   "sources": [
@@ -26,7 +26,7 @@
     {
       "id": "bahamut",
       "ok": true,
-      "items": 6
+      "items": 8
     }
   ],
   "videos": {
@@ -34,7 +34,7 @@
     "youtubeApiConfigured": true
   },
   "budget": {
-    "youtubeQuotaUnits": 811,
+    "youtubeQuotaUnits": 911,
     "costUsd": 0
   }
 }
