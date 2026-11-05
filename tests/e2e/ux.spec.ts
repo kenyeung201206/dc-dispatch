@@ -215,18 +215,26 @@ test('收藏: ☆ asks who is reading once, saves, shows in 我的收藏, and re
   await expect(star).toHaveAttribute('aria-label', '加入收藏');
   await star.click();
   await expect(page.getByRole('dialog', { name: '誰在看？' })).toBeVisible();
-  await page.getByRole('button', { name: '我', exact: true }).click();
+  await expect(page.getByRole('dialog').getByRole('button')).toHaveText(['阿肥', 'Alice', 'Andy哥', 'Keroro', '取消']);
+  await page.getByRole('button', { name: 'Andy哥', exact: true }).click();
   await expect(star).toHaveAttribute('aria-pressed', 'true');
   await expect(star).toHaveText('★');
-  expect(lists.get('我')?.length).toBe(1);
+  expect(lists.get('Andy哥')?.length).toBe(1);
 
   // The story page shows it as saved too, and the second star never asks again.
   await page.goto(href!);
   await expect(page.locator('.favrow [data-fav]')).toHaveAttribute('aria-pressed', 'true');
+  // This device remembers who it belongs to: another ☆ saves straight away, no question.
+  await page.goto('/zh-hant/section/arsenal/');
+  await page.locator('.story [data-fav]').nth(1).click();
+  await expect(page.getByRole('dialog')).toBeHidden();
+  await expect(page.locator('.story [data-fav]').nth(1)).toHaveAttribute('aria-pressed', 'true');
+  await page.locator('.story [data-fav]').nth(1).click(); // undo, so 我的收藏 below has one story
+  await expect(page.locator('.story [data-fav]').nth(1)).toHaveAttribute('aria-pressed', 'false');
 
   // 我的收藏 from the top bar / rail
   await page.goto('/zh-hant/favorites/');
-  await expect(page.getByText('目前使用者：我')).toBeVisible();
+  await expect(page.getByText('目前使用者：Andy哥')).toBeVisible();
   const row = page.locator('[data-favlist] li');
   await expect(row).toHaveCount(1);
   await expect(row.locator('h2 a')).toHaveAttribute('href', href!);
