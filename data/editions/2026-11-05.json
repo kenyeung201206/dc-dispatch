@@ -1,7 +1,7 @@
 {
   "date": "2026-11-05",
   "editionNumber": 2,
-  "generatedAt": "2026-11-05T04:51:30.015Z",
+  "generatedAt": "2026-11-05T06:21:13.290Z",
   "meta": {
     "season_en": "Red Horizon",
     "season_zhHant": "Red Horizon 賽季",
@@ -10,43 +10,41 @@
   "fixture": false,
   "items": [
     {
-      "id": "x544i0",
+      "id": "lmhaez",
       "sourceId": "ubisoft-en",
       "sourceName": "Ubisoft",
-      "sourceUrl": "https://www.ubisoft.com/en-us/game/the-division/the-division-2/news-updates/7L8TlD1Hv0XC1prOD8mdte/tuy8s33-crossplay-rollout-conflict-improvements-more",
-      "title_orig": "[TUY8S3.3] Crossplay Rollout, Conflict Improvements & More",
+      "sourceUrl": "https://www.ubisoft.com/en-us/game/the-division/the-division-2/news-updates/7L8TlD1Hv0XC1prOD8mdte/tuy8s33-echoes-of-central-park-launch-crossplay-rollout-conflict-improvements-more",
+      "title_orig": "[TUY8S3.3] Echoes of Central Park Launch, Crossplay Rollout, Conflict Improvements & More",
       "lang_orig": "en",
       "publishedAt": "2026-11-02T15:45:00.000Z",
-      "fetchedAt": "2026-11-05T04:51:30.015Z",
+      "fetchedAt": "2026-11-05T06:21:13.290Z",
       "category": "updates",
       "tags": [
         "title-update",
         "crossplay",
-        "dlc",
         "event",
         "pvp"
       ],
-      "importance": 98,
+      "importance": 92,
       "confidence": "official",
-      "headline_en": "TU Y8S3.3: crossplay arrives in stages — PC on Nov 10, consoles Nov 17",
-      "headline_zhHant": "Y8S3.3 更新：跨平台遊玩分階段上線，PC 11 月 10 日先行，主機 11 月 17 日加入",
-      "summary_en": "Title Update Y8S3.3 adds crossplay icons now. On November 10, PC players move to new crossplay servers and PC leaderboards reset. On November 17, PlayStation and Xbox join and crossplay is on by default. Also: a Master Climax Mission, Conflict scoreboard changes and the Shepherd Event (Nov 17–26).",
-      "summary_zhHant": "第 Y8S3.3 號遊戲更新先加入跨平台圖示。11 月 10 日起，PC 玩家移至新的跨平台伺服器，PC 排行榜同時重置；11 月 17 日 PlayStation 與 Xbox 加入，跨平台遊玩預設開啟。另有大師難度高潮任務、衝突模式計分板調整，以及 Shepherd 活動（11 月 17 日至 26 日）。",
-      "summaryKind": "original",
+      "headline_en": "[TUY8S3.3] Echoes of Central Park Launch, Crossplay Rollout, Conflict Improvements & More",
+      "headline_zhHant": "pending",
+      "summary_en": "Echoes of Central Park is out now. See what else is coming in Y8S3.3, including the Crossplay rollout, Conflict improvements, updated Friend Referral rewards, and…",
+      "summary_zhHant": "pending",
+      "summaryKind": "extract",
       "alsoReportedBy": [
         {
           "name": "Ubisoft (via Steam News)",
           "url": "https://store.steampowered.com/news/app/2221490/view/1847920302248716"
         }
       ],
-      "whyItMatters_en": "PC players: your leaderboard spot resets on November 10.",
-      "whyItMatters_zhHant": "PC 玩家請注意：排行榜名次將於 11 月 10 日歸零。",
       "media": [],
       "imageId": "ubi-tu-y8s3-3",
       "relatedIds": [
-        "wa4wps"
+        "jrg9a1"
       ],
-      "status": "updated"
+      "firstSeenAt": "2026-11-05T06:21:13.290Z",
+      "status": "new"
     },
     {
       "id": "7kdlud",
@@ -56,12 +54,12 @@
       "title_orig": "The Division 2: Echoes of Central Park DLC is available now!",
       "lang_orig": "en",
       "publishedAt": "2026-11-03T15:00:00.000Z",
-      "fetchedAt": "2026-11-05T04:51:30.015Z",
+      "fetchedAt": "2026-11-05T06:21:13.290Z",
       "category": "missions",
       "tags": [
         "dlc"
       ],
-      "importance": 82,
+      "importance": 81,
       "confidence": "official",
       "headline_en": "Echoes of Central Park DLC is out now",
       "headline_zhHant": "《中央公園的迴響》DLC 正式推出",
@@ -74,35 +72,8 @@
       "media": [],
       "imageId": "ubi-echoes-keyart",
       "relatedIds": [],
+      "firstSeenAt": "2026-11-03T15:00:00.000Z",
       "status": "updated"
-    },
-    {
-      "id": "kt71s5",
-      "sourceId": "youtube",
-      "sourceName": "GCROCK",
-      "sourceUrl": "https://www.youtube.com/watch?v=a4u3MVY3BwU",
-      "title_orig": "How to Get THE RATEL EXOTIC! Unlock Guide & Weapon Test | The Division 2",
-      "lang_orig": "en",
-      "publishedAt": "2026-11-04T13:08:46.000Z",
-      "fetchedAt": "2026-11-05T04:51:30.015Z",
-      "category": "arsenal",
-      "tags": [
-        "dlc",
-        "exotic",
-        "video"
-      ],
-      "importance": 80,
-      "confidence": "community",
-      "headline_en": "How to Get THE RATEL EXOTIC! Unlock Guide & Weapon Test | The Division 2",
-      "headline_zhHant": "pending",
-      "summary_en": "The Ratel Exotic is a brand-new exotic weapon introduced in The Division 2: Echoes of Central Park DLC!",
-      "summary_zhHant": "pending",
-      "summaryKind": "extract",
-      "alsoReportedBy": [],
-      "media": [],
-      "videoId": "a4u3MVY3BwU",
-      "relatedIds": [],
-      "status": "new"
     },
     {
       "id": "wa4wps",
@@ -112,12 +83,12 @@
       "title_orig": "[TUY8S3.3] Crossplay Rollout, Conflict Improvements & More",
       "lang_orig": "en",
       "publishedAt": "2026-11-02T15:45:00.000Z",
-      "fetchedAt": "2026-11-05T04:51:30.015Z",
+      "fetchedAt": "2026-11-04T14:53:41.763Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
       ],
-      "importance": 71,
+      "importance": 72,
       "confidence": "official",
       "headline_en": "Known issue (TU Y8S3.3): Climax Mission may stay locked after all Manhunt scouts",
       "headline_zhHant": "已知問題（Y8S3.3）：完成所有獵殺偵查後，高潮任務可能仍未解鎖",
@@ -129,7 +100,8 @@
       "relatedIds": [
         "x544i0"
       ],
-      "status": "updated",
+      "firstSeenAt": "2026-11-02T15:45:00.000Z",
+      "status": "new",
       "glitch": {
         "state": "active",
         "firstSeen": "2026-11-02",
@@ -139,31 +111,39 @@
       }
     },
     {
-      "id": "1sx320d",
+      "id": "jrg9a1",
       "sourceId": "ubisoft-en",
       "sourceName": "Ubisoft",
-      "sourceUrl": "https://www.ubisoft.com/en-us/game/the-division/the-division-2/news-updates/5EEgwKS6kDqyvUFo5PJYsB/the-division-2-echoes-of-central-park-launch-twitch-drops",
-      "title_orig": "The Division 2: Echoes of Central Park Launch Twitch Drops",
+      "sourceUrl": "https://www.ubisoft.com/en-us/game/the-division/the-division-2/news-updates/7L8TlD1Hv0XC1prOD8mdte/tuy8s33-echoes-of-central-park-launch-crossplay-rollout-conflict-improvements-more",
+      "title_orig": "[TUY8S3.3] Echoes of Central Park Launch, Crossplay Rollout, Conflict Improvements & More",
       "lang_orig": "en",
-      "publishedAt": "2026-11-03T15:00:00.000Z",
-      "fetchedAt": "2026-11-05T04:51:30.015Z",
-      "category": "community",
+      "publishedAt": "2026-11-02T15:45:00.000Z",
+      "fetchedAt": "2026-11-05T06:21:13.290Z",
+      "category": "glitch-watch",
       "tags": [
-        "twitch-drops",
-        "exotic"
+        "known-issue"
       ],
-      "importance": 67,
+      "importance": 70,
       "confidence": "official",
-      "headline_en": "The Division 2: Echoes of Central Park Launch Twitch Drops",
-      "headline_zhHant": "《全境封鎖 2 - 中央公園的迴響》發行 Twitch 掉寶",
-      "summary_en": "Tune in from November 3 – November 10 to earn exclusive rewards while watching your favorite The Division 2 streamers on Twitch.",
-      "summary_zhHant": "11 月 3 日至 11 月 10 日期間，在 Twitch 上觀看你喜愛的《全境封鎖 2》實況主即可獲得專屬獎勵。",
+      "headline_en": "Known issue (TU Y8S3.3): After completing all Manhunt Scouts marked as High-Value Targets, the Climax Mission…",
+      "headline_zhHant": "pending",
+      "summary_en": "After completing all Manhunt Scouts marked as High-Value Targets, the Climax Mission remains locked in the Scouts menu and does not appear on the map.",
+      "summary_zhHant": "pending",
       "summaryKind": "extract",
       "alsoReportedBy": [],
       "media": [],
-      "imageId": "ubi-5EEgwKS6kDqyvUFo5PJYsB",
-      "relatedIds": [],
-      "status": "new"
+      "relatedIds": [
+        "lmhaez"
+      ],
+      "firstSeenAt": "2026-11-05T06:21:13.290Z",
+      "status": "new",
+      "glitch": {
+        "state": "active",
+        "firstSeen": "2026-11-02",
+        "banRisk": false,
+        "riskNote_en": "Known issue listed by Ubisoft. Workaround: Log out and back in to unlock it.",
+        "riskNote_zhHant": "pending"
+      }
     },
     {
       "id": "1tv75gq",
@@ -173,7 +153,7 @@
       "title_orig": "Play The Division 2: Echoes of Central Park Today!",
       "lang_orig": "en",
       "publishedAt": "2026-11-03T17:13:46.000Z",
-      "fetchedAt": "2026-11-05T04:51:30.015Z",
+      "fetchedAt": "2026-11-05T06:21:13.290Z",
       "category": "community",
       "tags": [],
       "importance": 67,
@@ -186,6 +166,35 @@
       "alsoReportedBy": [],
       "media": [],
       "relatedIds": [],
+      "firstSeenAt": "2026-11-03T17:13:46.000Z",
+      "status": "new"
+    },
+    {
+      "id": "1sx320d",
+      "sourceId": "ubisoft-en",
+      "sourceName": "Ubisoft",
+      "sourceUrl": "https://www.ubisoft.com/en-us/game/the-division/the-division-2/news-updates/5EEgwKS6kDqyvUFo5PJYsB/the-division-2-echoes-of-central-park-launch-twitch-drops",
+      "title_orig": "The Division 2: Echoes of Central Park Launch Twitch Drops",
+      "lang_orig": "en",
+      "publishedAt": "2026-11-03T15:00:00.000Z",
+      "fetchedAt": "2026-11-05T06:21:13.290Z",
+      "category": "community",
+      "tags": [
+        "twitch-drops",
+        "exotic"
+      ],
+      "importance": 66,
+      "confidence": "official",
+      "headline_en": "The Division 2: Echoes of Central Park Launch Twitch Drops",
+      "headline_zhHant": "《全境封鎖 2 - 中央公園的迴響》發行 Twitch 掉寶",
+      "summary_en": "Tune in from November 3 – November 10 to earn exclusive rewards while watching your favorite The Division 2 streamers on Twitch.",
+      "summary_zhHant": "11 月 3 日至 11 月 10 日期間，在 Twitch 上觀看你喜愛的《全境封鎖 2》實況主即可獲得專屬獎勵。",
+      "summaryKind": "extract",
+      "alsoReportedBy": [],
+      "media": [],
+      "imageId": "ubi-5EEgwKS6kDqyvUFo5PJYsB",
+      "relatedIds": [],
+      "firstSeenAt": "2026-11-03T15:00:00.000Z",
       "status": "new"
     },
     {
@@ -196,7 +205,7 @@
       "title_orig": "How To Get The Ratel Exotic Assault Rifle #TheDivision2 #TheRatel #RatelExotic",
       "lang_orig": "en",
       "publishedAt": "2026-11-04T07:28:42.000Z",
-      "fetchedAt": "2026-11-05T04:51:30.015Z",
+      "fetchedAt": "2026-11-05T06:21:13.290Z",
       "category": "arsenal",
       "tags": [
         "dlc",
@@ -214,6 +223,7 @@
       "media": [],
       "videoId": "cqpBj3sRHCk",
       "relatedIds": [],
+      "firstSeenAt": "2026-11-04T07:28:42.000Z",
       "status": "new"
     },
     {
@@ -224,7 +234,7 @@
       "title_orig": "Up To 2,000% Weapon Damage! How To Get These New MUST-HAVE Exotic Gloves | The Division 2",
       "lang_orig": "en",
       "publishedAt": "2026-11-04T16:16:14.000Z",
-      "fetchedAt": "2026-11-05T04:51:30.015Z",
+      "fetchedAt": "2026-11-05T06:21:13.290Z",
       "category": "arsenal",
       "tags": [
         "exotic",
@@ -241,6 +251,35 @@
       "media": [],
       "videoId": "6RnDzxOAu00",
       "relatedIds": [],
+      "firstSeenAt": "2026-11-04T16:16:14.000Z",
+      "status": "new"
+    },
+    {
+      "id": "3h7l3y",
+      "sourceId": "youtube",
+      "sourceName": "Patrick Wolf",
+      "sourceUrl": "https://www.youtube.com/watch?v=c9sOicTHVNg",
+      "title_orig": "The Division 2 | The New Ratel Exotic AR Really Suprised Me! | Review + My Thoughts",
+      "lang_orig": "en",
+      "publishedAt": "2026-11-04T20:07:40.000Z",
+      "fetchedAt": "2026-11-05T06:21:13.290Z",
+      "category": "arsenal",
+      "tags": [
+        "exotic",
+        "video"
+      ],
+      "importance": 64,
+      "confidence": "community",
+      "headline_en": "The Division 2 | The New Ratel Exotic AR Really Suprised Me! | Review + My Thoughts",
+      "headline_zhHant": "pending",
+      "summary_en": "I really am enjoying using this new gun. Let me know what you think of it below!",
+      "summary_zhHant": "pending",
+      "summaryKind": "extract",
+      "alsoReportedBy": [],
+      "media": [],
+      "videoId": "c9sOicTHVNg",
+      "relatedIds": [],
+      "firstSeenAt": "2026-11-05T06:21:13.290Z",
       "status": "new"
     },
     {
@@ -251,7 +290,7 @@
       "title_orig": "11 月 3 日停機維護：中央公園 DLC 上線",
       "lang_orig": "zh",
       "publishedAt": "2026-11-03T00:00:00Z",
-      "fetchedAt": "2026-11-05T04:51:30.015Z",
+      "fetchedAt": "2026-11-05T06:21:13.290Z",
       "category": "updates",
       "tags": [
         "dlc",
@@ -267,6 +306,34 @@
       "alsoReportedBy": [],
       "media": [],
       "relatedIds": [],
+      "firstSeenAt": "2026-11-03T00:00:00Z",
+      "status": "new"
+    },
+    {
+      "id": "1az9jep",
+      "sourceId": "youtube",
+      "sourceName": "B站森牧阳",
+      "sourceUrl": "https://www.youtube.com/watch?v=RKGn1PgnEFY",
+      "title_orig": "全境封锁2：Y8S3猎捕大师本奇特：全副武装！天赋演示",
+      "lang_orig": "zh",
+      "publishedAt": "2026-11-04T20:50:31.000Z",
+      "fetchedAt": "2026-11-05T06:21:13.290Z",
+      "category": "updates",
+      "tags": [
+        "video"
+      ],
+      "importance": 57,
+      "confidence": "community",
+      "headline_en": "pending",
+      "headline_zhHant": "全境封锁2：Y8S3猎捕大师本奇特：全副武装！天赋演示",
+      "summary_en": "pending",
+      "summary_zhHant": "合理讨论，你杆你对，个人观点，仅供参考!",
+      "summaryKind": "extract",
+      "alsoReportedBy": [],
+      "media": [],
+      "videoId": "RKGn1PgnEFY",
+      "relatedIds": [],
+      "firstSeenAt": "2026-11-04T20:50:31.000Z",
       "status": "new"
     },
     {
@@ -277,12 +344,12 @@
       "title_orig": "中央公園隱藏獵人“無形” 面具獲取攻略  #全境封鎖 #全境封鎖2 #全境封鎖3 #thedivision #thedivision2 #thedivision3",
       "lang_orig": "zh",
       "publishedAt": "2026-11-04T13:13:24.000Z",
-      "fetchedAt": "2026-11-05T04:51:30.015Z",
+      "fetchedAt": "2026-11-05T06:21:13.290Z",
       "category": "franchise",
       "tags": [
         "video"
       ],
-      "importance": 57,
+      "importance": 56,
       "confidence": "community",
       "headline_en": "pending",
       "headline_zhHant": "中央公園隱藏獵人“無形” 面具獲取攻略  #全境封鎖 #全境封鎖2 #全境封鎖3 #thedivision #thedivision2 #thedivision3",
@@ -293,6 +360,7 @@
       "media": [],
       "videoId": "qvWu_axVwNE",
       "relatedIds": [],
+      "firstSeenAt": "2026-11-04T13:13:24.000Z",
       "status": "new"
     },
     {
@@ -303,7 +371,7 @@
       "title_orig": "全境封鎖2 - 最新獵捕奇特 \"重裝出擊\" 與 \"復仇女神\" 的最強combo，手握核爆 輕鬆引爆8000萬傷害(雖然我沒拍進去XD)",
       "lang_orig": "zh",
       "publishedAt": "2026-11-04T09:06:53.000Z",
-      "fetchedAt": "2026-11-05T04:51:30.015Z",
+      "fetchedAt": "2026-11-05T06:21:13.290Z",
       "category": "arsenal",
       "tags": [
         "video"
@@ -319,32 +387,7 @@
       "media": [],
       "videoId": "c6GTSXfLW58",
       "relatedIds": [],
-      "status": "new"
-    },
-    {
-      "id": "1az9jep",
-      "sourceId": "youtube",
-      "sourceName": "B站森牧阳",
-      "sourceUrl": "https://www.youtube.com/watch?v=RKGn1PgnEFY",
-      "title_orig": "全境封锁2：Y8S3猎捕大师本奇特：全副武装！天赋演示",
-      "lang_orig": "zh",
-      "publishedAt": "2026-11-04T20:50:31.000Z",
-      "fetchedAt": "2026-11-05T04:51:30.015Z",
-      "category": "updates",
-      "tags": [
-        "video"
-      ],
-      "importance": 56,
-      "confidence": "community",
-      "headline_en": "pending",
-      "headline_zhHant": "全境封锁2：Y8S3猎捕大师本奇特：全副武装！天赋演示",
-      "summary_en": "pending",
-      "summary_zhHant": "合理讨论，你杆你对，个人观点，仅供参考!",
-      "summaryKind": "extract",
-      "alsoReportedBy": [],
-      "media": [],
-      "videoId": "RKGn1PgnEFY",
-      "relatedIds": [],
+      "firstSeenAt": "2026-11-04T09:06:53.000Z",
       "status": "new"
     },
     {
@@ -355,13 +398,13 @@
       "title_orig": "Last Chance to Pre-Purchase The Division 2: Echoes of Central Park",
       "lang_orig": "en",
       "publishedAt": "2026-10-28T13:29:29.000Z",
-      "fetchedAt": "2026-11-05T04:51:30.015Z",
+      "fetchedAt": "2026-11-05T06:21:13.290Z",
       "category": "missions",
       "tags": [
         "dlc",
         "exotic"
       ],
-      "importance": 54,
+      "importance": 53,
       "confidence": "official",
       "headline_en": "Last Chance to Pre-Purchase The Division 2: Echoes of Central Park",
       "headline_zhHant": "《全境封鎖 2 - 中央公園的迴響》預購最後機會",
@@ -371,6 +414,7 @@
       "alsoReportedBy": [],
       "media": [],
       "relatedIds": [],
+      "firstSeenAt": "2026-10-28T13:29:29.000Z",
       "status": "new"
     },
     {
@@ -381,7 +425,7 @@
       "title_orig": "Echoes of Central Park Launch Livestream",
       "lang_orig": "en",
       "publishedAt": "2026-10-27T16:01:04.000Z",
-      "fetchedAt": "2026-11-05T04:51:30.015Z",
+      "fetchedAt": "2026-11-05T06:21:13.290Z",
       "category": "community",
       "tags": [],
       "importance": 52,
@@ -394,6 +438,31 @@
       "alsoReportedBy": [],
       "media": [],
       "relatedIds": [],
+      "firstSeenAt": "2026-10-27T16:01:04.000Z",
+      "status": "new"
+    },
+    {
+      "id": "hsu80a",
+      "sourceId": "bahamut",
+      "sourceName": "巴哈姆特 全境封鎖板",
+      "sourceUrl": "https://forum.gamer.com.tw/C.php?bsn=24460&snA=32068",
+      "title_orig": "【攻略】部分技能的解鎖方式整理",
+      "lang_orig": "zh",
+      "publishedAt": "2026-11-05T05:50:13.290Z",
+      "fetchedAt": "2026-11-05T06:21:13.290Z",
+      "category": "builds",
+      "tags": [],
+      "importance": 52,
+      "confidence": "community",
+      "headline_en": "pending",
+      "headline_zhHant": "【攻略】部分技能的解鎖方式整理",
+      "summary_en": "pending",
+      "summary_zhHant": "最近小號升 40 發現技能沒有跟主角色同步，需要獨自取得 （太久沒練小號都忘光了） 於是網路上一個個的搜尋各種技能如何解…",
+      "summaryKind": "extract",
+      "alsoReportedBy": [],
+      "media": [],
+      "relatedIds": [],
+      "firstSeenAt": "2026-11-05T04:01:30.015Z",
       "status": "new"
     },
     {
@@ -403,8 +472,8 @@
       "sourceUrl": "https://forum.gamer.com.tw/C.php?bsn=24460&snA=32874",
       "title_orig": "【情報】中央公園的迴響 DLC 夥伴 - 相關資訊",
       "lang_orig": "zh",
-      "publishedAt": "2026-11-05T04:04:30.015Z",
-      "fetchedAt": "2026-11-05T04:51:30.015Z",
+      "publishedAt": "2026-11-05T04:21:13.290Z",
+      "fetchedAt": "2026-11-05T06:21:13.290Z",
       "category": "missions",
       "tags": [
         "dlc"
@@ -419,29 +488,7 @@
       "alsoReportedBy": [],
       "media": [],
       "relatedIds": [],
-      "status": "new"
-    },
-    {
-      "id": "hsu80a",
-      "sourceId": "bahamut",
-      "sourceName": "巴哈姆特 全境封鎖板",
-      "sourceUrl": "https://forum.gamer.com.tw/C.php?bsn=24460&snA=32068",
-      "title_orig": "【攻略】部分技能的解鎖方式整理",
-      "lang_orig": "zh",
-      "publishedAt": "2026-11-05T04:01:30.015Z",
-      "fetchedAt": "2026-11-05T04:51:30.015Z",
-      "category": "builds",
-      "tags": [],
-      "importance": 52,
-      "confidence": "community",
-      "headline_en": "pending",
-      "headline_zhHant": "【攻略】部分技能的解鎖方式整理",
-      "summary_en": "pending",
-      "summary_zhHant": "最近小號升 40 發現技能沒有跟主角色同步，需要獨自取得 （太久沒練小號都忘光了） 於是網路上一個個的搜尋各種技能如何解…",
-      "summaryKind": "extract",
-      "alsoReportedBy": [],
-      "media": [],
-      "relatedIds": [],
+      "firstSeenAt": "2026-11-05T04:04:30.015Z",
       "status": "new"
     },
     {
@@ -452,7 +499,7 @@
       "title_orig": "Echoes of Central Park Costume Contest",
       "lang_orig": "en",
       "publishedAt": "2026-10-27T10:34:40.000Z",
-      "fetchedAt": "2026-11-05T04:51:30.015Z",
+      "fetchedAt": "2026-11-05T06:21:13.290Z",
       "category": "community",
       "tags": [],
       "importance": 51,
@@ -465,56 +512,7 @@
       "alsoReportedBy": [],
       "media": [],
       "relatedIds": [],
-      "status": "new"
-    },
-    {
-      "id": "1p4skj2",
-      "sourceId": "bahamut",
-      "sourceName": "巴哈姆特 全境封鎖板",
-      "sourceUrl": "https://forum.gamer.com.tw/C.php?bsn=24460&snA=32864",
-      "title_orig": "【情報】Twitch掉寶 11/03 - 11/10",
-      "lang_orig": "zh",
-      "publishedAt": "2026-11-03T15:03:00.000Z",
-      "fetchedAt": "2026-11-05T04:51:30.015Z",
-      "category": "community",
-      "tags": [
-        "dlc"
-      ],
-      "importance": 49,
-      "confidence": "community",
-      "headline_en": "pending",
-      "headline_zhHant": "【情報】Twitch掉寶 11/03 - 11/10",
-      "summary_en": "pending",
-      "summary_zhHant": "上個掉寶資訊圖 安安我是米孜育碧的合作創作者 這次11/03 - 11/10有中央公園DLC的掉寶活動大家記得掛台記得音…",
-      "summaryKind": "extract",
-      "alsoReportedBy": [],
-      "media": [],
-      "relatedIds": [],
-      "status": "new"
-    },
-    {
-      "id": "1qiqkzx",
-      "sourceId": "bahamut",
-      "sourceName": "巴哈姆特 全境封鎖板",
-      "sourceUrl": "https://forum.gamer.com.tw/C.php?bsn=24460&snA=32861",
-      "title_orig": "【情報】TU29.3 / Y8S3.3 Patchnote翻譯｜跨平台遊玩、衝突戰改善、牧羊人活動與問題修正",
-      "lang_orig": "zh",
-      "publishedAt": "2026-11-03T13:57:00.000Z",
-      "fetchedAt": "2026-11-05T04:51:30.015Z",
-      "category": "updates",
-      "tags": [
-        "dlc"
-      ],
-      "importance": 49,
-      "confidence": "community",
-      "headline_en": "pending",
-      "headline_zhHant": "【情報】TU29.3 / Y8S3.3 Patchnote翻譯｜跨平台遊玩、衝突戰改善、牧羊人活動與問題修正",
-      "summary_en": "pending",
-      "summary_zhHant": "以下為AI翻譯並稍微潤飾過 原文 《中央公園的迴響》（Echoes of Central Park）即將推出！",
-      "summaryKind": "extract",
-      "alsoReportedBy": [],
-      "media": [],
-      "relatedIds": [],
+      "firstSeenAt": "2026-10-27T10:34:40.000Z",
       "status": "new"
     },
     {
@@ -525,7 +523,7 @@
       "title_orig": "11 月第一輪 Twitch 掉寶開跑",
       "lang_orig": "zh",
       "publishedAt": "2026-11-04T00:00:00Z",
-      "fetchedAt": "2026-11-05T04:51:30.015Z",
+      "fetchedAt": "2026-11-05T06:21:13.290Z",
       "category": "community",
       "tags": [
         "twitch-drops",
@@ -541,6 +539,59 @@
       "alsoReportedBy": [],
       "media": [],
       "relatedIds": [],
+      "firstSeenAt": "2026-11-04T00:00:00Z",
+      "status": "new"
+    },
+    {
+      "id": "1p4skj2",
+      "sourceId": "bahamut",
+      "sourceName": "巴哈姆特 全境封鎖板",
+      "sourceUrl": "https://forum.gamer.com.tw/C.php?bsn=24460&snA=32864",
+      "title_orig": "【情報】Twitch掉寶 11/03 - 11/10",
+      "lang_orig": "zh",
+      "publishedAt": "2026-11-03T15:03:00.000Z",
+      "fetchedAt": "2026-11-05T06:21:13.290Z",
+      "category": "community",
+      "tags": [
+        "dlc"
+      ],
+      "importance": 48,
+      "confidence": "community",
+      "headline_en": "pending",
+      "headline_zhHant": "【情報】Twitch掉寶 11/03 - 11/10",
+      "summary_en": "pending",
+      "summary_zhHant": "上個掉寶資訊圖 安安我是米孜育碧的合作創作者 這次11/03 - 11/10有中央公園DLC的掉寶活動大家記得掛台記得音…",
+      "summaryKind": "extract",
+      "alsoReportedBy": [],
+      "media": [],
+      "relatedIds": [],
+      "firstSeenAt": "2026-11-03T15:03:00.000Z",
+      "status": "new"
+    },
+    {
+      "id": "1qiqkzx",
+      "sourceId": "bahamut",
+      "sourceName": "巴哈姆特 全境封鎖板",
+      "sourceUrl": "https://forum.gamer.com.tw/C.php?bsn=24460&snA=32861",
+      "title_orig": "【情報】TU29.3 / Y8S3.3 Patchnote翻譯｜跨平台遊玩、衝突戰改善、牧羊人活動與問題修正",
+      "lang_orig": "zh",
+      "publishedAt": "2026-11-03T13:57:00.000Z",
+      "fetchedAt": "2026-11-05T06:21:13.290Z",
+      "category": "updates",
+      "tags": [
+        "dlc"
+      ],
+      "importance": 48,
+      "confidence": "community",
+      "headline_en": "pending",
+      "headline_zhHant": "【情報】TU29.3 / Y8S3.3 Patchnote翻譯｜跨平台遊玩、衝突戰改善、牧羊人活動與問題修正",
+      "summary_en": "pending",
+      "summary_zhHant": "以下為AI翻譯並稍微潤飾過 原文 《中央公園的迴響》（Echoes of Central Park）即將推出！",
+      "summaryKind": "extract",
+      "alsoReportedBy": [],
+      "media": [],
+      "relatedIds": [],
+      "firstSeenAt": "2026-11-03T13:57:00.000Z",
       "status": "new"
     },
     {
@@ -551,7 +602,7 @@
       "title_orig": "【心得】無陷阱手T10日蝕複合控場(全汞合金)",
       "lang_orig": "zh",
       "publishedAt": "2026-11-03T05:31:00.000Z",
-      "fetchedAt": "2026-11-05T04:51:30.015Z",
+      "fetchedAt": "2026-11-05T06:21:13.290Z",
       "category": "builds",
       "tags": [],
       "importance": 48,
@@ -564,6 +615,7 @@
       "alsoReportedBy": [],
       "media": [],
       "relatedIds": [],
+      "firstSeenAt": "2026-11-03T05:31:00.000Z",
       "status": "new"
     },
     {
@@ -574,12 +626,12 @@
       "title_orig": "【情報】【已開機】關機維護公告 - 2026/11/03(二) 16:00 (Y8S3.3 中央公園DLC)，延長1.5小時",
       "lang_orig": "zh",
       "publishedAt": "2026-11-02T16:43:00.000Z",
-      "fetchedAt": "2026-11-05T04:51:30.015Z",
+      "fetchedAt": "2026-11-05T06:21:13.290Z",
       "category": "updates",
       "tags": [
         "dlc"
       ],
-      "importance": 47,
+      "importance": 46,
       "confidence": "community",
       "headline_en": "pending",
       "headline_zhHant": "【情報】【已開機】關機維護公告 - 2026/11/03(二) 16:00 (Y8S3.3 中央公園DLC)，延長1.5小時",
@@ -589,6 +641,7 @@
       "alsoReportedBy": [],
       "media": [],
       "relatedIds": [],
+      "firstSeenAt": "2026-11-02T16:43:00.000Z",
       "status": "new"
     },
     {
@@ -599,7 +652,7 @@
       "title_orig": "The Division 2: Red Moon Unleashed Event Twitch Drops",
       "lang_orig": "en",
       "publishedAt": "2026-10-15T16:00:00.000Z",
-      "fetchedAt": "2026-11-05T04:51:30.015Z",
+      "fetchedAt": "2026-11-05T06:21:13.290Z",
       "category": "community",
       "tags": [
         "event",
@@ -617,6 +670,7 @@
       "media": [],
       "imageId": "ubi-VLVLB9xFr5sLxAtZSVM6J",
       "relatedIds": [],
+      "firstSeenAt": "2026-10-15T16:00:00.000Z",
       "status": "new"
     },
     {
@@ -627,7 +681,7 @@
       "title_orig": "【情報】全境2 TUY8S3.2 血月高照、創作者合作、升級更新 2F R/MMR BUFF",
       "lang_orig": "zh",
       "publishedAt": "2026-10-27T07:04:00.000Z",
-      "fetchedAt": "2026-11-05T04:51:30.015Z",
+      "fetchedAt": "2026-11-05T06:21:13.290Z",
       "category": "updates",
       "tags": [
         "title-update"
@@ -642,6 +696,7 @@
       "alsoReportedBy": [],
       "media": [],
       "relatedIds": [],
+      "firstSeenAt": "2026-10-27T07:04:00.000Z",
       "status": "new"
     },
     {
@@ -652,7 +707,7 @@
       "title_orig": "【情報】［活動警報］復仇者懸賞",
       "lang_orig": "zh",
       "publishedAt": "2026-10-26T11:51:00.000Z",
-      "fetchedAt": "2026-11-05T04:51:30.015Z",
+      "fetchedAt": "2026-11-05T06:21:13.290Z",
       "category": "missions",
       "tags": [],
       "importance": 31,
@@ -665,6 +720,7 @@
       "alsoReportedBy": [],
       "media": [],
       "relatedIds": [],
+      "firstSeenAt": "2026-10-26T11:51:00.000Z",
       "status": "new"
     }
   ],
@@ -672,22 +728,22 @@
     {
       "sourceId": "steam-news",
       "ok": true,
-      "checkedAt": "2026-11-05T04:51:30.015Z"
+      "checkedAt": "2026-11-05T06:21:13.290Z"
     },
     {
       "sourceId": "ubisoft-en",
       "ok": true,
-      "checkedAt": "2026-11-05T04:51:30.015Z"
+      "checkedAt": "2026-11-05T06:21:13.290Z"
     },
     {
       "sourceId": "ubisoft-zh-tw",
       "ok": true,
-      "checkedAt": "2026-11-05T04:51:30.015Z"
+      "checkedAt": "2026-11-05T06:21:13.290Z"
     },
     {
       "sourceId": "bahamut",
       "ok": true,
-      "checkedAt": "2026-11-05T04:51:30.015Z"
+      "checkedAt": "2026-11-05T06:21:13.290Z"
     }
   ]
 }
