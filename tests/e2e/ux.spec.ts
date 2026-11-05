@@ -20,30 +20,28 @@ test('floating back-to-top button appears after scrolling and returns to the top
   await expect.poll(() => page.evaluate(() => window.scrollY)).toBeLessThan(5);
 });
 
-test('return button: one tap to the front page, from any depth', async ({ page }) => {
+test('返回 goes one page back; 頭版 always goes to the front page', async ({ page }) => {
   await page.route(/(youtube-nocookie\.com|ytimg\.com|staticctf\.ubisoft\.com|steamstatic\.com)/, (r) => r.abort());
-  // front page → section → story → Return lands on the front page, not the section
+  const floating = page.locator('.floatnav');
+  // front page → 武器與裝備 → story: 返回 lands on 武器與裝備, 頭版 on the front page
   await page.goto('/zh-hant/');
   await page.goto('/zh-hant/section/arsenal/');
   const first = page.locator('.story .headline a').first();
   const href = await first.getAttribute('href');
   await first.click();
   await expect(page).toHaveURL(href!);
-  await page.getByRole('link', { name: '返回' }).click();
+  await floating.getByRole('link', { name: '返回' }).click();
+  await expect(page).toHaveURL(/\/zh-hant\/section\/arsenal\/$/);
+  await page.goForward();
+  await expect(page).toHaveURL(href!);
+  await floating.getByRole('link', { name: '頭版' }).click();
   await expect(page).toHaveURL(/\/zh-hant\/$/);
-
-  // front page → story → Return goes Back (keeps the place on the front page)
-  await page.locator('.story .headline a').first().click();
-  await expect(page).toHaveURL(/\/story\//);
-  const depth = await page.evaluate(() => history.length);
-  await page.getByRole('link', { name: '返回' }).click();
-  await expect(page).toHaveURL(/\/zh-hant\/$/);
-  expect(await page.evaluate(() => history.length)).toBe(depth); // a Back, not a new page
 
   await page.goto(href!); // fresh visit: no page to go back to
-  await expect(page.getByRole('link', { name: '返回' })).toHaveAttribute('href', /\/zh-hant\/$/);
+  await expect(floating.getByRole('link', { name: '返回' })).toHaveAttribute('href', /\/zh-hant\/(section\/[a-z-]+\/)?$/);
+  await expect(floating.getByRole('link', { name: '頭版' })).toHaveAttribute('href', /\/zh-hant\/$/);
   await page.goto('/zh-hant/');
-  await expect(page.getByRole('link', { name: '返回' })).toHaveCount(0); // not on the front page
+  await expect(floating).toHaveCount(0); // not on the front page
 });
 
 test('Chinese readers: non-Chinese videos open with Chinese player menus and a subtitle hint', async ({ page }) => {
@@ -77,14 +75,18 @@ test('story pages: an English video story asks for Chinese subtitles on the Chin
   await expect(fig.locator('iframe')).toHaveAttribute('src', /cc_lang_pref=zh-Hant/);
 });
 
-test('return button floats at the bottom left and stays on screen while scrolling', async ({ page }) => {
+test('返回 and 頭版 float at the bottom left and stay on screen while scrolling', async ({ page }) => {
   await page.goto('/zh-hant/watch/');
   await page.keyboard.press('Shift'); // a reader is here: the page's start-at-top step stands down
-  const back = page.getByRole('link', { name: '返回' });
+  const back = page.locator('.floatnav').getByRole('link', { name: '返回' });
+  const home = page.locator('.floatnav').getByRole('link', { name: '頭版' });
   await page.evaluate(() => window.scrollTo(0, document.body.scrollHeight / 2));
   await expect(back).toBeInViewport();
-  expect(await back.evaluate((el) => getComputedStyle(el).position)).toBe('fixed');
-  const box = (await back.boundingBox())!;
+  await expect(home).toBeInViewport();
+  expect(await page.locator('.floatnav').evaluate((el) => getComputedStyle(el).position)).toBe('fixed');
+  const backBox = (await back.boundingBox())!;
+  const box = (await home.boundingBox())!; // the right-hand one of the pair
+  expect(backBox.x + backBox.width).toBeLessThanOrEqual(box.x); // side by side, not overlapping
   const vw = page.viewportSize()!;
   expect(box.x).toBeLessThan(vw.width / 2);
   expect(box.y + box.height).toBeGreaterThan(vw.height - 100);

@@ -26,8 +26,8 @@ const tickerLines = edition.items
   .slice(0, 4)
   .map((i) => localized(i, 'headline', locale).text);
 const navSections: Category[] = [...CATEGORIES];
-/** Return always leads to the front page in one tap (not one step back at a time). */
-const backHref = routes.home(locale);
+/** Where Return goes when there's no page to go back to: the story's section, else the front page. */
+const backHref = current && (CATEGORIES as readonly string[]).includes(current) && current !== 'front-page' && !Astro.url.pathname.includes('/section/') ? routes.section(locale, current as Category) : routes.home(locale);
 ---
 <Base locale={locale} title={title}>
   <Fragment slot="masthead">
@@ -39,9 +39,14 @@ const backHref = routes.home(locale);
   </Fragment>
   {
     compact && (
-      <a class="back" href={backHref} data-back>
-        <span aria-hidden="true">←</span> {t(locale, 'nav.back')}
-      </a>
+      <nav class="floatnav" aria-label={t(locale, 'nav.quick')}>
+        <a class="back" href={backHref} data-back>
+          <span aria-hidden="true">←</span> {t(locale, 'nav.back')}
+        </a>
+        <a class="back home" href={routes.home(locale)}>
+          <span aria-hidden="true">⌂</span> {t(locale, 'section.front-page')}
+        </a>
+      </nav>
     )
   }
   <slot />
@@ -52,12 +57,16 @@ const backHref = routes.home(locale);
   .mh {
     display: contents;
   }
-  /* Floating Return button, bottom left (back-to-top sits bottom right). */
-  .back {
+  /* Floating Return + Front Page buttons, bottom left (back-to-top sits bottom right). */
+  .floatnav {
     position: fixed;
     left: max(16px, env(safe-area-inset-left));
     bottom: calc(16px + env(safe-area-inset-bottom));
     z-index: 40;
+    display: flex;
+    gap: 10px;
+  }
+  .back {
     display: inline-flex;
     align-items: center;
     gap: 6px;
@@ -84,7 +93,7 @@ const backHref = routes.home(locale);
     outline-offset: 3px;
   }
   @media print {
-    .back {
+    .floatnav {
       display: none;
     }
   }

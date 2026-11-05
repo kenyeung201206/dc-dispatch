@@ -109,16 +109,15 @@ const pageTitle = title ? `${title} · ${t(locale, 'site.name')}` : t(locale, 's
           document.querySelector<HTMLElement>('#main')?.focus({ preventScroll: true });
         });
       }
-      // Return button: always the front page in one tap. If we just came from the front page, go Back
-      // instead so the reader lands where they were on it.
+      // Return button: one page back, like the browser; from a fresh/outside visit, go to the section or home.
+      // (The 頭版 button beside it always goes to the front page.)
       document.querySelectorAll<HTMLAnchorElement>('[data-back]').forEach((a) =>
         a.addEventListener('click', (e) => {
-          let fromHome = false;
+          let fromHere = false;
           try {
-            const from = new URL(document.referrer);
-            fromHome = from.origin === location.origin && from.pathname === new URL(a.href).pathname;
+            fromHere = new URL(document.referrer).origin === location.origin;
           } catch {}
-          if (fromHome && history.length > 1) {
+          if (fromHere && history.length > 1) {
             e.preventDefault();
             history.back();
           }
