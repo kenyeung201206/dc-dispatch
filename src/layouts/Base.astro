@@ -215,7 +215,8 @@ const pageTitle = title ? `${title} · ${t(locale, 'site.name')}` : t(locale, 's
       }
       .site-footer {
         margin-top: var(--space-6);
-        padding: var(--space-5) 0 calc(var(--space-6) + env(safe-area-inset-bottom));
+        /* Extra room so the floating Return / Top buttons never cover the last links. */
+        padding: var(--space-5) 0 calc(88px + env(safe-area-inset-bottom));
         border-top: 4px double var(--rule);
         font: 400 var(--step--1) / 1.6 var(--font-hud);
         color: var(--ink-soft);

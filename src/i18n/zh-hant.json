@@ -220,5 +220,6 @@
   "rail.viewsFmt": "{total} 次（今日 {today}）",
   "nav.toTop": "回到頂端",
   "nav.toTopShort": "頂端",
-  "nav.back": "返回"
+  "nav.back": "返回",
+  "watch.ccHint": "想看中文字幕？點播放器的 ⚙ 設定 → 字幕 → 自動翻譯 → 中文（繁體）。影片需有字幕（例如「英文（自動產生）」）才能自動翻譯。"
 }

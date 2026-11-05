@@ -45,6 +45,7 @@ const cc = locale === 'zh-hant' && !hasChinese(video.title) && !video.idZh ? 'zh
       <a href={video.channelUrl} rel="noopener noreferrer" target="_blank">{video.channelName}</a>{' · '}<time datetime={video.publishedAt}>{formatDate(video.publishedAt, locale)}</time>
     </span>
     <a class="yt" href={`https://www.youtube.com/watch?v=${id}`} rel="noopener noreferrer" target="_blank">{t(locale, 'watch.onYoutube')}</a>
+    {cc && <span class="cchint">{t(locale, 'watch.ccHint')}</span>}
   </figcaption>
 </figure>
 
@@ -55,15 +56,45 @@ const cc = locale === 'zh-hant' && !hasChinese(video.title) && !video.idZh ? 'zh
    * If the video has no Chinese track, YouTube auto-translates its captions. Retried for a while
    * because the captions module only loads once playback starts.
    */
+  type Track = { languageCode?: string; kind?: string; translationLanguage?: { languageCode?: string } };
+  const isZh = (t?: Track) => Boolean(t && (/^zh/i.test(t.languageCode ?? '') || /^zh-Hant/i.test(t.translationLanguage?.languageCode ?? '')));
+
   function chineseSubtitles(iframe: HTMLIFrameElement) {
     const send = (msg: object) => iframe.contentWindow?.postMessage(JSON.stringify(msg), YT);
     const cmd = (func: string, args: unknown[] = []) => send({ event: 'command', func, args });
+    let done = false;
+    // YouTube can only auto-translate an existing subtitle track: wait for the player to list its tracks,
+    // use a real Chinese track if there is one, else switch the source track on with a Chinese translation.
+    const onMessage = (e: MessageEvent) => {
+      if (e.source !== iframe.contentWindow || done) return;
+      let data: { event?: string; info?: { captions?: { tracklist?: Track[]; track?: Track } } };
+      try {
+        data = JSON.parse(String(e.data));
+      } catch {
+        return;
+      }
+      const cap = data.info?.captions;
+      if (!cap) return;
+      if (isZh(cap.track)) {
+        done = true;
+        return;
+      }
+      const list = cap.tracklist ?? [];
+      if (!list.length) return;
+      const zhTrack = list.find((t) => /^zh-(Hant|TW|HK)/i.test(t.languageCode ?? '')) ?? list.find((t) => /^zh/i.test(t.languageCode ?? ''));
+      const source = list.find((t) => t.kind !== 'asr') ?? list[0]!;
+      cmd('setOption', ['captions', 'track', zhTrack ?? { ...source, translationLanguage: { languageCode: 'zh-Hant', languageName: '中文（繁體）' } }]);
+    };
+    window.addEventListener('message', onMessage);
     let tries = 0;
     const tick = () => {
+      if (done) return;
       send({ event: 'listening', id: iframe.id });
       cmd('loadModule', ['captions']);
-      cmd('setOption', ['captions', 'track', { languageCode: 'zh-Hant' }]);
-      if (++tries < 12) window.setTimeout(tick, 1000);
+      // Ask for the track list again; the player answers with an apiInfoDelivery message.
+      cmd('setOption', ['captions', 'reload', true]);
+      if (++tries < 20) window.setTimeout(tick, 1500);
+      else window.removeEventListener('message', onMessage);
     };
     iframe.addEventListener('load', () => window.setTimeout(tick, 800), { once: true });
   }
@@ -90,6 +121,13 @@ const cc = locale === 'zh-hant' && !hasChinese(video.title) && !video.idZh ? 'zh
 </script>
 
 <style>
+  .cchint {
+    display: block;
+    margin-top: 4px;
+    font-size: 0.8125rem;
+    line-height: 1.5;
+    color: var(--ink-soft);
+  }
   .vf {
     margin: 0;
     min-width: 0;

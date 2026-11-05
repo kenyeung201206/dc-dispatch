@@ -63,3 +63,18 @@ test('story pages: an English video story asks for Chinese subtitles on the Chin
   await fig.locator('.play').click();
   await expect(fig.locator('iframe')).toHaveAttribute('src', /cc_lang_pref=zh-Hant/);
 });
+
+test('return button floats at the bottom left and stays on screen while scrolling', async ({ page }) => {
+  await page.goto('/zh-hant/watch/');
+  const back = page.getByRole('link', { name: '返回' });
+  await page.evaluate(() => window.scrollTo(0, document.body.scrollHeight / 2));
+  await expect(back).toBeInViewport();
+  expect(await back.evaluate((el) => getComputedStyle(el).position)).toBe('fixed');
+  const box = (await back.boundingBox())!;
+  const vw = page.viewportSize()!;
+  expect(box.x).toBeLessThan(vw.width / 2);
+  expect(box.y + box.height).toBeGreaterThan(vw.height - 100);
+  // Never on top of the back-to-top button
+  const top = (await page.locator('[data-to-top]').boundingBox())!;
+  expect(box.x + box.width).toBeLessThan(top.x);
+});

@@ -220,5 +220,6 @@
   "rail.viewsFmt": "{total} ({today} today)",
   "nav.toTop": "Back to top",
   "nav.toTopShort": "TOP",
-  "nav.back": "Back"
+  "nav.back": "Back",
+  "watch.ccHint": "Want Chinese subtitles? Tap ⚙ → Subtitles → Auto-translate → Chinese (Traditional). Only works when the creator’s video has subtitles (e.g. “English (auto-generated)”)."
 }

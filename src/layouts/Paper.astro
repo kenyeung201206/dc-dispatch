@@ -39,11 +39,9 @@ const backHref = current && (CATEGORIES as readonly string[]).includes(current) 
   </Fragment>
   {
     compact && (
-      <p class="back-row">
-        <a class="back" href={backHref} data-back>
-          <span aria-hidden="true">←</span> {t(locale, 'nav.back')}
-        </a>
-      </p>
+      <a class="back" href={backHref} data-back>
+        <span aria-hidden="true">←</span> {t(locale, 'nav.back')}
+      </a>
     )
   }
   <slot />
@@ -54,24 +52,41 @@ const backHref = current && (CATEGORIES as readonly string[]).includes(current) 
   .mh {
     display: contents;
   }
-  .back-row {
-    margin: var(--space-3) 0 0;
-  }
+  /* Floating Return button, bottom left (back-to-top sits bottom right). */
   .back {
+    position: fixed;
+    left: max(16px, env(safe-area-inset-left));
+    bottom: calc(16px + env(safe-area-inset-bottom));
+    z-index: 40;
     display: inline-flex;
     align-items: center;
     gap: 6px;
-    min-height: var(--tap);
-    padding: 0 14px 0 10px;
-    border: 1.5px solid var(--rule);
-    font: 700 0.9375rem / 1 var(--font-hud);
+    min-height: 52px;
+    padding: 0 18px 0 14px;
+    border: 2px solid var(--ink);
+    border-radius: 26px;
+    background: var(--panel);
+    color: var(--panel-ink);
+    font: 700 1rem / 1 var(--font-hud);
     text-decoration: none;
-    color: var(--ink);
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.25);
+  }
+  .back span {
+    font-size: 1.125rem;
   }
   .back:hover,
   .back:focus-visible {
-    border-color: var(--shd);
-    color: var(--shd-ink);
+    background: var(--shd);
+    color: var(--on-shd);
+  }
+  .back:focus-visible {
+    outline: 3px solid var(--ink);
+    outline-offset: 3px;
+  }
+  @media print {
+    .back {
+      display: none;
+    }
   }
   @media (max-width: 767.98px) {
     .compact :global(.masthead),
