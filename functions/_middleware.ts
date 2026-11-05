@@ -20,7 +20,7 @@ import {
   safeNext,
   verifyToken,
 } from './lib/auth.ts';
-import { countView, isPageView, type ViewsEnv } from './lib/views.ts';
+import { countView, isPageView, VISIT_COOKIE, visitCookieHeader, type ViewsEnv } from './lib/views.ts';
 
 interface Ctx {
   request: Request;
@@ -88,9 +88,14 @@ export async function onRequest({ request, env, next, waitUntil }: Ctx): Promise
   }
 
   if (await verifyToken(e, readCookie(request.headers.get('cookie'), COOKIE), now)) {
-    // View counter: signed-in page loads only, counted after the response so pages never wait on it.
-    if (env.VIEWS && waitUntil && isPageView(request)) waitUntil(countView(env.VIEWS, now).catch(() => {}));
-    return next();
+    if (!isPageView(request)) return next();
+    // Visit counter: only the first page of a visit counts (after the response, so pages never wait on it).
+    const inVisit = readCookie(request.headers.get('cookie'), VISIT_COOKIE) === '1';
+    if (!inVisit && env.VIEWS && waitUntil) waitUntil(countView(env.VIEWS, now).catch(() => {}));
+    const res = await next();
+    const out = new Response(res.body, res);
+    out.headers.append('set-cookie', visitCookieHeader(secure));
+    return out;
   }
 
   // Not signed in: send page visits to the password page; refuse everything else.

@@ -1,6 +1,8 @@
 /**
- * Page-view counter in Cloudflare KV (binding VIEWS, see wrangler.toml).
- * Counts signed-in page loads only: no cookies of its own, no IPs, no per-person data.
+ * Visit counter in Cloudflare KV (binding VIEWS, see wrangler.toml).
+ * Counts a visit, not every page: the first signed-in page opens a visit; moving around the site (or Back)
+ * doesn't count again until the reader has been away 30 minutes. The only thing stored in the browser is a
+ * plain "1" flag cookie that expires; no IDs, no IPs, no per-person data.
  * Read-modify-write is fine at this site's size (a handful of readers).
  */
 export interface KV {
@@ -26,6 +28,12 @@ export function isPageView(request: Request): boolean {
   const path = new URL(request.url).pathname;
   return !path.startsWith('/__') && !path.startsWith('/api/');
 }
+
+export const VISIT_COOKIE = 'dcd_visit';
+export const VISIT_SECONDS = 30 * 60;
+/** Refreshed on every page, so a visit lasts until 30 minutes without opening a page. */
+export const visitCookieHeader = (secure: boolean) =>
+  `${VISIT_COOKIE}=1; Path=/; Max-Age=${VISIT_SECONDS}; HttpOnly; SameSite=Lax${secure ? '; Secure' : ''}`;
 
 const num = (v: string | null) => (v && /^\d+$/.test(v) ? Number(v) : 0);
 

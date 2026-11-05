@@ -216,7 +216,7 @@
   "story.noZh.text": "This story from {source} is English-only; it appears here once it is translated.",
   "story.noZh.english": "Read it in English →",
   "exotic.ourName": "Name translated by us; the in-game name may differ.",
-  "rail.views": "Views",
+  "rail.views": "Visits",
   "rail.viewsFmt": "{total} ({today} today)",
   "nav.toTop": "Back to top",
   "nav.toTopShort": "TOP",

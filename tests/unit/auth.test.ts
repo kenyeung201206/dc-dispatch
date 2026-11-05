@@ -141,6 +141,36 @@ describe('view counter', () => {
     expect([...m.keys()].filter((k) => k.startsWith('day:'))).toHaveLength(1);
   });
 
+  it('counts a visit once: moving to other pages and back does not count again', async () => {
+    const { m, kv } = store();
+    const jobs: Promise<unknown>[] = [];
+    const auth = await signedIn();
+    let visit = '';
+    const open = async (path: string) => {
+      const res = await onRequest({
+        request: new Request(BASE + path, { headers: { accept: 'text/html', cookie: [auth, visit].filter(Boolean).join('; ') } }),
+        env: { ...env, VIEWS: kv },
+        next: ok,
+        waitUntil: (p) => void jobs.push(p),
+      });
+      const set = res.headers.get('set-cookie') ?? '';
+      expect(set).toMatch(/^dcd_visit=1; Path=\/; Max-Age=1800; HttpOnly; SameSite=Lax/);
+      visit = set.split(';')[0]!; // the browser keeps it for 30 minutes
+      return res;
+    };
+    expect((await open('/zh-hant/')).status).toBe(200);
+    await open('/zh-hant/section/arsenal/');
+    await open('/zh-hant/story/x/');
+    await open('/zh-hant/section/arsenal/'); // 返回
+    await open('/zh-hant/'); // 頭版
+    await Promise.all(jobs);
+    expect(m.get('total')).toBe('1');
+    visit = ''; // 30 minutes away: the flag has expired
+    await open('/zh-hant/');
+    await Promise.all(jobs);
+    expect(m.get('total')).toBe('2');
+  });
+
   it('the site still works when the counter storage is missing or broken', async () => {
     const cookie = await signedIn();
     const broken = { get: async () => { throw new Error('down'); }, put: async () => {} };
