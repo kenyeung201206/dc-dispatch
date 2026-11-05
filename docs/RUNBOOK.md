@@ -2,7 +2,7 @@
 
 ## Daily refresh
 `pnpm run refresh` fetches the sources, builds `data/editions/<Tokyo date>.json` and updates `data/images.json`.
-Scheduled at 06:00 Asia/Tokyo by GitHub Actions (Phase 7). Safe to re-run: the same day's file is rebuilt.
+Scheduled every 3 hours from 06:00 Asia/Tokyo by GitHub Actions. Safe to re-run: the same day's file is rebuilt (same edition number).
 
 `pnpm run refresh:dry` does the same from recorded fixtures (`tests/fixtures/sources/`), with no network, and writes to `.dry-run/`. CI runs it on every push.
 

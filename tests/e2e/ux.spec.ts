@@ -57,7 +57,7 @@ test('story pages: an English video story asks for Chinese subtitles on the Chin
       if (!id && i.videoId && i.lang_orig === 'en' && (i.headline_zhHant !== 'pending' || i.id in zhTitled)) id = i.id;
   test.skip(!id, 'no English video story in the current data');
   await page.goto(`/zh-hant/story/${id}/`);
-  const fig = page.locator('.story-page .vf');
+  const fig = page.locator('.story-page .vf').first();
   test.skip((await fig.count()) === 0, 'story has no video');
   await expect(fig).toHaveAttribute('data-cc', 'zh-Hant');
   await expect(fig.locator('.vt')).toHaveText(/[㐀-鿿]/);
@@ -78,4 +78,15 @@ test('return button floats at the bottom left and stays on screen while scrollin
   // Never on top of the back-to-top button
   const top = (await page.locator('[data-to-top]').boundingBox())!;
   expect(box.x + box.width).toBeLessThan(top.x);
+});
+
+test('English story, Chinese page: related Chinese videos box (only in Chinese)', async ({ page }) => {
+  await page.route(/(youtube-nocookie\.com|ytimg\.com)/, (r) => r.abort());
+  await page.goto('/zh-hant/story/kt71s5/');
+  const box = page.locator('.zhvids');
+  test.skip((await box.count()) === 0, 'no related Chinese video in the current data');
+  await expect(box.getByRole('heading')).toHaveText('相關中文影片');
+  for (const t of await box.locator('.vt').allTextContents()) expect(t).toMatch(/[㐀-鿿]/);
+  await page.goto('/en/story/kt71s5/');
+  await expect(page.locator('.zhvids')).toHaveCount(0);
 });

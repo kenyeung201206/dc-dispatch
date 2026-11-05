@@ -1,0 +1,18 @@
+{
+  "_note": "Links English story topics to the Chinese words creators use (Traditional + Simplified), for the 'related Chinese videos' box. en = case-insensitive regex on the English story text; zh = words looked for in Chinese video titles; weight = how specific the topic is (3 = a named item, 1 = broad).",
+  "topics": [
+    { "id": "ratel", "en": "\\bratel\\b", "zh": ["蜜獾", "平頭哥", "平头哥", "ratel"], "weight": 3 },
+    { "id": "loaded-for-bear", "en": "loaded for bear", "zh": ["全副武裝", "全副武装", "loaded for bear"], "weight": 3 },
+    { "id": "fafnir", "en": "\\bfafnir\\b", "zh": ["法夫納", "法夫纳", "fafnir"], "weight": 3 },
+    { "id": "iron-will", "en": "iron will", "zh": ["鋼鐵意志", "钢铁意志"], "weight": 3 },
+    { "id": "hunter-masks", "en": "\\bhunters?\\b|\\bmask", "zh": ["隱藏獵人", "隐藏猎人", "獵人", "猎人", "面具"], "weight": 3 },
+    { "id": "guardians", "en": "\\bguardians?\\b", "zh": ["守護者", "守护者"], "weight": 3 },
+    { "id": "manhunt", "en": "manhunt|master mission|climax|scouts?\\b", "zh": ["獵捕", "猎捕", "精通", "大師", "大师", "高潮", "機場", "机场"], "weight": 2 },
+    { "id": "exotic-gloves", "en": "exotic gloves", "zh": ["奇特手套", "手套"], "weight": 2 },
+    { "id": "builds", "en": "\\bbuilds?\\b|\\bmeta\\b", "zh": ["配裝", "配装", "build", "meta"], "weight": 2 },
+    { "id": "bugs", "en": "\\bbug|hotfix|glitch|exploit", "zh": ["bug", "漏洞", "修正", "熱修", "热修"], "weight": 2 },
+    { "id": "twitch-drops", "en": "twitch drops?", "zh": ["掉寶", "掉宝"], "weight": 2 },
+    { "id": "central-park", "en": "central park", "zh": ["中央公園", "中央公园", "迴響", "回響", "殘響", "残响", "回响"], "weight": 1 },
+    { "id": "exotic", "en": "\\bexotics?\\b", "zh": ["奇特", "異域", "异域"], "weight": 1 }
+  ]
+}

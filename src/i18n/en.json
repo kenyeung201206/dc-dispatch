@@ -152,7 +152,7 @@
   "egg.scan": "Scan the masthead",
   "story.declassify": "Rumour: hover or tap to declassify",
   "status.title": "Status",
-  "status.intro": "How the paper is doing. Updated by every daily run.",
+  "status.intro": "How the paper is doing. Updated every 3 hours.",
   "status.lastRun": "Last refresh",
   "status.ago": "{n} hours ago",
   "status.stale": "Warning: no new edition for more than 36 hours. Check the daily job.",
@@ -221,5 +221,9 @@
   "nav.toTop": "Back to top",
   "nav.toTopShort": "TOP",
   "nav.back": "Back",
-  "watch.ccHint": "Chinese subtitles: YouTube blocks auto-translate inside players on other sites. Tap “Watch on YouTube”, then in the YouTube app: ⚙ → Captions → Auto-translate → Chinese (Traditional). Only for videos that have subtitles."
+  "watch.ccHint": "Chinese subtitles: YouTube blocks auto-translate inside players on other sites. Tap “Watch on YouTube”, then in the YouTube app: ⚙ → Captions → Auto-translate → Chinese (Traditional). Only for videos that have subtitles.",
+  "story.zhVideos": "Related Chinese videos",
+  "story.zhVideosNoteVideo": "The video above is in English. These are by Chinese-speaking creators on the same topic.",
+  "story.zhVideosNote": "Videos by Chinese-speaking creators on the same topic.",
+  "rail.updated": "Updated"
 }

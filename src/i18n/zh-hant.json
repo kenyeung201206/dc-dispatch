@@ -152,7 +152,7 @@
   "egg.scan": "掃描報頭",
   "story.declassify": "傳聞：滑過或點選即可解密",
   "status.title": "系統狀態",
-  "status.intro": "報紙的運作狀況，每天自動更新。",
+  "status.intro": "報紙的運作狀況，每 3 小時自動更新。",
   "status.lastRun": "上次更新",
   "status.ago": "{n} 小時前",
   "status.stale": "警告：已超過 36 小時沒有新的一期，請檢查每日排程。",
@@ -221,5 +221,9 @@
   "nav.toTop": "回到頂端",
   "nav.toTopShort": "頂端",
   "nav.back": "返回",
-  "watch.ccHint": "想看中文字幕：YouTube 不允許嵌入在其他網站的播放器使用「自動翻譯」。請按「在 YouTube 觀看」，在 YouTube App 裡點 ⚙ 設定 → 字幕 → 自動翻譯 → 中文（繁體）。影片本身要有字幕才行。"
+  "watch.ccHint": "想看中文字幕：YouTube 不允許嵌入在其他網站的播放器使用「自動翻譯」。請按「在 YouTube 觀看」，在 YouTube App 裡點 ⚙ 設定 → 字幕 → 自動翻譯 → 中文（繁體）。影片本身要有字幕才行。",
+  "story.zhVideos": "相關中文影片",
+  "story.zhVideosNoteVideo": "上面的影片是英文。以下是說中文的創作者談同一主題的影片：",
+  "story.zhVideosNote": "說中文的創作者談同一主題的影片：",
+  "rail.updated": "更新時間"
 }
