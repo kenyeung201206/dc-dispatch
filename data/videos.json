@@ -1,6 +1,58 @@
 {
   "videos": [
     {
+      "id": "1a-YXqlnUGA",
+      "title": "全境封鎖2 - 中央公園守護者最強剋星\"誘餌ProMax\"，擔心核爆手套被砍掉嗎? 有了它再也不用擔心打不贏守護者",
+      "channelName": "純天然",
+      "channelUrl": "https://www.youtube.com/channel/UCAGO36FuuShsuvGD9bF1UwQ",
+      "publishedAt": "2026-11-05T15:13:10.000Z",
+      "durationSec": 272,
+      "official": false,
+      "row": "more",
+      "checkedAt": "2026-11-05T15:54:01.383Z",
+      "via": "youtube-search",
+      "rumour": false
+    },
+    {
+      "id": "oqM7ibYDFdo",
+      "title": "The Ultimate Level 40 Guide (The Division 2)",
+      "channelName": "widdz",
+      "channelUrl": "https://www.youtube.com/channel/UC1h4ld2anwjT4NEbqFOJRXQ",
+      "publishedAt": "2026-11-05T15:00:16.000Z",
+      "durationSec": 1099,
+      "official": false,
+      "row": "build-guides",
+      "checkedAt": "2026-11-05T15:54:01.383Z",
+      "via": "youtube-api",
+      "rumour": false
+    },
+    {
+      "id": "crMyROKH6CE",
+      "title": "逆火称霸中央公園！超穩定消滅中央公園BOSS并獲取限定奇特武器＆裝備組 #全境封鎖 #全境封鎖2 #全境封鎖3#中央公園 #thedivision#thedivision2 #thedivision3",
+      "channelName": "灰帽特工   Gray Hat Agent",
+      "channelUrl": "https://www.youtube.com/channel/UCJ2qGCBwyN8d2l9aoWkyShw",
+      "publishedAt": "2026-11-05T14:28:10.000Z",
+      "durationSec": 1140,
+      "official": false,
+      "row": "intel",
+      "checkedAt": "2026-11-05T15:54:01.383Z",
+      "via": "youtube-search",
+      "rumour": false
+    },
+    {
+      "id": "aCO6yoNr3HQ",
+      "title": "How to Get The Ratel Exotic & Fighting All 5 Guardians The Division 2",
+      "channelName": "Truistic",
+      "channelUrl": "https://www.youtube.com/channel/UC9XN0JL3Vr3huDTJbkYZYyA",
+      "publishedAt": "2026-11-05T13:15:36.000Z",
+      "durationSec": 3472,
+      "official": false,
+      "row": "intel",
+      "checkedAt": "2026-11-05T15:54:01.383Z",
+      "via": "youtube-search",
+      "rumour": false
+    },
+    {
       "id": "ZRwfHDJ-fnQ",
       "title": "How to Unlock the MURDER HUNTER MASK! Full Hunter Puzzle Guide | The Division 2",
       "channelName": "GCROCK",
@@ -9,7 +61,7 @@
       "durationSec": 349,
       "official": false,
       "row": "build-guides",
-      "checkedAt": "2026-11-05T12:14:53.855Z",
+      "checkedAt": "2026-11-05T15:54:01.383Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -22,7 +74,7 @@
       "durationSec": 1344,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-05T12:14:53.855Z",
+      "checkedAt": "2026-11-05T15:54:01.383Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -35,7 +87,7 @@
       "durationSec": 546,
       "official": false,
       "row": "build-guides",
-      "checkedAt": "2026-11-05T12:14:53.855Z",
+      "checkedAt": "2026-11-05T15:54:01.383Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -48,7 +100,7 @@
       "durationSec": 19067,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-05T12:14:53.855Z",
+      "checkedAt": "2026-11-05T15:54:01.383Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -58,9 +110,10 @@
       "channelName": "母胎單身的我本質上是個渣男",
       "channelUrl": "https://www.youtube.com/channel/UCkhHB18_7qEAgWR22_6uPlA",
       "publishedAt": "2026-11-05T10:15:02.000Z",
+      "durationSec": 10459,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-05T12:14:53.855Z",
+      "checkedAt": "2026-11-05T15:54:01.383Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -73,7 +126,7 @@
       "durationSec": 239,
       "official": false,
       "row": "intel",
-      "checkedAt": "2026-11-05T12:14:53.855Z",
+      "checkedAt": "2026-11-05T15:54:01.383Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -86,7 +139,7 @@
       "durationSec": 13001,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-05T12:14:53.855Z",
+      "checkedAt": "2026-11-05T15:54:01.383Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -99,7 +152,7 @@
       "durationSec": 2315,
       "official": false,
       "row": "intel",
-      "checkedAt": "2026-11-05T12:14:53.855Z",
+      "checkedAt": "2026-11-05T15:54:01.383Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -112,7 +165,7 @@
       "durationSec": 262,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-05T12:14:53.855Z",
+      "checkedAt": "2026-11-05T15:54:01.383Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -125,7 +178,7 @@
       "durationSec": 695,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-05T12:14:53.855Z",
+      "checkedAt": "2026-11-05T15:54:01.383Z",
       "via": "youtube-api",
       "rumour": true
     },
@@ -138,7 +191,7 @@
       "durationSec": 319,
       "official": false,
       "row": "intel",
-      "checkedAt": "2026-11-05T12:14:53.855Z",
+      "checkedAt": "2026-11-05T15:54:01.383Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -151,7 +204,7 @@
       "durationSec": 293,
       "official": false,
       "row": "intel",
-      "checkedAt": "2026-11-05T12:14:53.855Z",
+      "checkedAt": "2026-11-05T15:54:01.383Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -164,7 +217,7 @@
       "durationSec": 6726,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-05T12:14:53.855Z",
+      "checkedAt": "2026-11-05T15:54:01.383Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -177,7 +230,7 @@
       "durationSec": 2887,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-05T12:14:53.855Z",
+      "checkedAt": "2026-11-05T15:54:01.383Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -190,7 +243,7 @@
       "durationSec": 92,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-05T12:14:53.855Z",
+      "checkedAt": "2026-11-05T15:54:01.383Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -203,7 +256,7 @@
       "durationSec": 1640,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-05T12:14:53.855Z",
+      "checkedAt": "2026-11-05T15:54:01.383Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -216,7 +269,7 @@
       "durationSec": 569,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-05T12:14:53.855Z",
+      "checkedAt": "2026-11-05T15:54:01.383Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -229,7 +282,7 @@
       "durationSec": 4229,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-05T12:14:53.855Z",
+      "checkedAt": "2026-11-05T15:54:01.383Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -242,7 +295,7 @@
       "durationSec": 38259,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-05T12:14:53.855Z",
+      "checkedAt": "2026-11-05T15:54:01.383Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -255,7 +308,7 @@
       "durationSec": 11136,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-05T12:14:53.855Z",
+      "checkedAt": "2026-11-05T15:54:01.383Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -268,7 +321,7 @@
       "durationSec": 1053,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-05T12:14:53.855Z",
+      "checkedAt": "2026-11-05T15:54:01.383Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -333,7 +386,7 @@
       "durationSec": 377,
       "official": false,
       "row": "intel",
-      "checkedAt": "2026-11-05T12:14:53.855Z",
+      "checkedAt": "2026-11-05T15:54:01.383Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -346,7 +399,7 @@
       "durationSec": 29,
       "official": false,
       "row": "intel",
-      "checkedAt": "2026-11-05T12:14:53.855Z",
+      "checkedAt": "2026-11-05T15:54:01.383Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -359,7 +412,7 @@
       "durationSec": 705,
       "official": false,
       "row": "build-guides",
-      "checkedAt": "2026-11-05T12:14:53.855Z",
+      "checkedAt": "2026-11-05T15:54:01.383Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -372,7 +425,7 @@
       "durationSec": 7180,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-05T12:14:53.855Z",
+      "checkedAt": "2026-11-05T15:54:01.383Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -385,59 +438,7 @@
       "durationSec": 58,
       "official": false,
       "row": "intel",
-      "checkedAt": "2026-11-05T12:14:53.855Z",
-      "via": "youtube-search",
-      "rumour": false
-    },
-    {
-      "id": "FwKhDdZOviQ",
-      "title": "I Got THe Necromancer Hive On The Last Day Division 2 #shorts #",
-      "channelName": "Died Again Gaming",
-      "channelUrl": "https://www.youtube.com/channel/UCrK99e79TwSpgElDb-r-Lpg",
-      "publishedAt": "2026-11-05T00:10:21.000Z",
-      "durationSec": 40,
-      "official": false,
-      "row": "more",
-      "checkedAt": "2026-11-05T12:14:53.855Z",
-      "via": "youtube-api",
-      "rumour": false
-    },
-    {
-      "id": "fnvrUMp4t2M",
-      "title": "全境封锁2：Y8S3猎捕大师本—华盛顿国际机场：鲍比·古兹曼！流程实况",
-      "channelName": "B站森牧阳",
-      "channelUrl": "https://www.youtube.com/channel/UCxxUK5_3ocVwBXDUZxdk76g",
-      "publishedAt": "2026-11-04T23:30:05.000Z",
-      "durationSec": 1415,
-      "official": false,
-      "row": "more",
-      "checkedAt": "2026-11-05T09:50:09.276Z",
-      "via": "youtube-search",
-      "rumour": false
-    },
-    {
-      "id": "rZp0Z_Mco7Q",
-      "title": "The Division 2 NEW Skills Are HERE! Testing PvP Builds & Conflict | Echoes of Central Park",
-      "channelName": "Unknown1Z1",
-      "channelUrl": "https://www.youtube.com/channel/UCxJTc03USSNuWpq4xIzbGiw",
-      "publishedAt": "2026-11-04T22:37:05.000Z",
-      "durationSec": 21141,
-      "official": false,
-      "row": "build-guides",
-      "checkedAt": "2026-11-05T12:14:53.855Z",
-      "via": "youtube-search",
-      "rumour": false
-    },
-    {
-      "id": "ZtaWSNT3O2s",
-      "title": "The Ratel 5 hunters Central Park - Solo",
-      "channelName": "I__IVANKO__I",
-      "channelUrl": "https://www.youtube.com/channel/UC5d78wOu7bXGQFAJ4yYX2UA",
-      "publishedAt": "2026-11-04T22:32:22.000Z",
-      "durationSec": 752,
-      "official": false,
-      "row": "more",
-      "checkedAt": "2026-11-05T12:14:53.855Z",
+      "checkedAt": "2026-11-05T15:54:01.383Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -450,7 +451,7 @@
       "durationSec": 92,
       "official": true,
       "row": "trailers",
-      "checkedAt": "2026-11-05T12:14:53.855Z",
+      "checkedAt": "2026-11-05T15:54:01.383Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -463,7 +464,7 @@
       "durationSec": 7035,
       "official": true,
       "row": "more",
-      "checkedAt": "2026-11-05T12:14:53.855Z",
+      "checkedAt": "2026-11-05T15:54:01.383Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -476,7 +477,7 @@
       "durationSec": 342,
       "official": true,
       "row": "more",
-      "checkedAt": "2026-11-05T12:14:53.855Z",
+      "checkedAt": "2026-11-05T15:54:01.383Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -489,7 +490,7 @@
       "publishedAt": "2026-11-02T13:48:39.000Z",
       "official": true,
       "row": "more",
-      "checkedAt": "2026-11-05T12:14:53.855Z",
+      "checkedAt": "2026-11-05T15:54:01.383Z",
       "via": "ubisoft-page",
       "rumour": false
     },
@@ -502,7 +503,7 @@
       "publishedAt": "2026-10-30T18:16:35.000Z",
       "official": true,
       "row": "trailers",
-      "checkedAt": "2026-11-05T12:14:53.855Z",
+      "checkedAt": "2026-11-05T15:54:01.383Z",
       "via": "ubisoft-page",
       "rumour": false
     },
@@ -515,7 +516,7 @@
       "publishedAt": "2026-10-13T13:30:33.000Z",
       "official": true,
       "row": "trailers",
-      "checkedAt": "2026-11-05T12:14:53.855Z",
+      "checkedAt": "2026-11-05T15:54:01.383Z",
       "via": "ubisoft-page",
       "rumour": false
     }
