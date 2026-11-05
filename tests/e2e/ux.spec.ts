@@ -20,17 +20,28 @@ test('floating back-to-top button appears after scrolling and returns to the top
   await expect.poll(() => page.evaluate(() => window.scrollY)).toBeLessThan(5);
 });
 
-test('return button: goes back to the previous page, or to the section when opened directly', async ({ page }) => {
+test('return button: one tap to the front page, from any depth', async ({ page }) => {
+  await page.route(/(youtube-nocookie\.com|ytimg\.com|staticctf\.ubisoft\.com|steamstatic\.com)/, (r) => r.abort());
+  // front page → section → story → Return lands on the front page, not the section
+  await page.goto('/zh-hant/');
   await page.goto('/zh-hant/section/arsenal/');
   const first = page.locator('.story .headline a').first();
   const href = await first.getAttribute('href');
   await first.click();
   await expect(page).toHaveURL(href!);
   await page.getByRole('link', { name: '返回' }).click();
-  await expect(page).toHaveURL(/\/zh-hant\/section\/arsenal\/$/);
+  await expect(page).toHaveURL(/\/zh-hant\/$/);
+
+  // front page → story → Return goes Back (keeps the place on the front page)
+  await page.locator('.story .headline a').first().click();
+  await expect(page).toHaveURL(/\/story\//);
+  const depth = await page.evaluate(() => history.length);
+  await page.getByRole('link', { name: '返回' }).click();
+  await expect(page).toHaveURL(/\/zh-hant\/$/);
+  expect(await page.evaluate(() => history.length)).toBe(depth); // a Back, not a new page
 
   await page.goto(href!); // fresh visit: no page to go back to
-  await expect(page.getByRole('link', { name: '返回' })).toHaveAttribute('href', /\/zh-hant\/(section\/[a-z-]+\/)?$/);
+  await expect(page.getByRole('link', { name: '返回' })).toHaveAttribute('href', /\/zh-hant\/$/);
   await page.goto('/zh-hant/');
   await expect(page.getByRole('link', { name: '返回' })).toHaveCount(0); // not on the front page
 });

@@ -26,8 +26,8 @@ const tickerLines = edition.items
   .slice(0, 4)
   .map((i) => localized(i, 'headline', locale).text);
 const navSections: Category[] = [...CATEGORIES];
-/** Where Return goes when there's no page to go back to: the story's section, else the front page. */
-const backHref = current && (CATEGORIES as readonly string[]).includes(current) && current !== 'front-page' && !Astro.url.pathname.includes('/section/') ? routes.section(locale, current as Category) : routes.home(locale);
+/** Return always leads to the front page in one tap (not one step back at a time). */
+const backHref = routes.home(locale);
 ---
 <Base locale={locale} title={title}>
   <Fragment slot="masthead">
