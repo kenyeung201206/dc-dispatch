@@ -36,6 +36,7 @@ const season = edition.meta ? (locale === 'en' ? edition.meta.season_en : editio
 <div class="bar" data-bar>
   <a class="bar-home" href={`/${locale}/`}><Hex size={28} /><span>{t(locale, 'site.name')}</span></a>
   <a class="chip-btn" href={routes.search(locale)} aria-label={t(locale, 'nav.search')}>⌕</a>
+  <a class="chip-btn" href={routes.favorites(locale)} aria-label={t(locale, 'fav.page')}>☆</a>
   <a class="chip-btn" href={otherHref} hreflang={HTML_LANG[other]} lang={HTML_LANG[other]} aria-label={t(locale, 'nav.languageLabel')} data-lang-switch={other}>{t(locale, 'nav.language')}</a>
   <button class="chip-btn" type="button" data-theme-toggle aria-label={t(locale, 'theme.toggle')}>◐</button>
 </div>
@@ -59,6 +60,7 @@ const season = edition.meta ? (locale === 'en' ? edition.meta.season_en : editio
     <div><dt>{t(locale, 'rail.weather')}</dt><dd>{weatherFor(edition.date, locale)}</dd></div>
     <div data-views hidden data-fmt={t(locale, 'rail.viewsFmt')}><dt>{t(locale, 'rail.views')}</dt><dd>—</dd></div>
     <div class="rail-tools">
+      <a class="chip-btn" href={routes.favorites(locale)}>☆ {t(locale, 'fav.page')}</a>
       <a class="chip-btn" href={otherHref} hreflang={HTML_LANG[other]} lang={HTML_LANG[other]} aria-label={t(locale, 'nav.languageLabel')} data-lang-switch={other}>{t(locale, 'nav.language')}</a>
       <button class="chip-btn" type="button" data-theme-toggle aria-label={t(locale, 'theme.toggle')}>
         <span class="when-day">◐ {t(locale, 'theme.night')}</span><span class="when-night">◑ {t(locale, 'theme.day')}</span>

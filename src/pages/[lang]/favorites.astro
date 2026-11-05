@@ -1,0 +1,172 @@
+---
+/** 我的收藏: the current reader's saved stories, newest saved first (list comes from FavKit / /api/favs). */
+import Paper from '../../layouts/Paper.astro';
+import { LOCALES, t, type Locale, type UiKey } from '../../i18n/index.ts';
+import { allItems, localized, readableIn } from '../../lib/editions.ts';
+import { routes } from '../../lib/routes.ts';
+
+export function getStaticPaths() {
+  return LOCALES.map((lang) => ({ params: { lang } }));
+}
+const locale = Astro.params.lang as Locale;
+// Every story the reader could have saved, in their language (small: id, headline, summary, section, date).
+const index = Object.fromEntries(
+  allItems
+    .filter((i) => readableIn(i, locale))
+    .map((i) => [
+      i.id,
+      {
+        h: localized(i, 'headline', locale).text,
+        s: localized(i, 'summary', locale).text.slice(0, 140),
+        c: t(locale, `section.${i.category}` as UiKey),
+        u: routes.story(locale, i.id),
+      },
+    ]),
+);
+---
+<Paper locale={locale} title={t(locale, 'fav.page')} compact>
+  <section class="favpage">
+    <h1>☆ {t(locale, 'fav.page')}</h1>
+    <p class="wholine" data-wholine hidden>
+      <span data-who-name data-fmt={t(locale, 'fav.current')}></span>
+      <button type="button" class="link" data-who-switch>{t(locale, 'fav.switch')}</button>
+    </p>
+    <p class="pick" data-pick hidden>
+      {t(locale, 'fav.pick')} <button type="button" class="link" data-who-switch>{t(locale, 'fav.who.title')}</button>
+    </p>
+    <p class="empty" data-empty hidden>{t(locale, 'fav.empty')}</p>
+    <ol class="favlist" data-favlist></ol>
+    <template data-row>
+      <li>
+        <div class="top"><span class="sec hud-label"></span><span class="when hud-label"></span></div>
+        <h2><a></a></h2>
+        <p class="sum"></p>
+      </li>
+    </template>
+  </section>
+  <script type="application/json" data-fav-index set:html={JSON.stringify(index)} />
+  <span hidden data-labels data-saved={t(locale, 'fav.saved')} data-gone={t(locale, 'fav.gone')} data-lang={locale === 'en' ? 'en' : 'zh-Hant-TW'}></span>
+</Paper>
+
+<style>
+  .favpage {
+    max-width: 760px;
+    margin-inline: auto;
+  }
+  .favpage h1 {
+    margin: var(--space-3) 0 var(--space-2);
+    font: 900 var(--step-3) / 1.1 var(--font-display);
+  }
+  .wholine,
+  .pick,
+  .empty {
+    color: var(--ink-soft);
+  }
+  .link {
+    min-height: 44px;
+    padding: 0 6px;
+    border: 0;
+    background: none;
+    color: var(--shd-ink);
+    font: inherit;
+    font-weight: 700;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  .favlist {
+    margin: var(--space-3) 0 0;
+    padding: 0;
+    list-style: none;
+  }
+  .favlist :global(li) {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 2px 8px;
+    padding: var(--space-3) 0;
+    border-top: 1px solid var(--rule-soft);
+  }
+  .favlist :global(.top) {
+    display: flex;
+    gap: 10px;
+    color: var(--ink-soft);
+  }
+  .favlist :global(h2) {
+    grid-column: 1;
+    margin: 4px 0;
+    font: 800 var(--step-1) / 1.3 var(--font-display);
+  }
+  .favlist :global(h2 a) {
+    color: inherit;
+    text-decoration: none;
+  }
+  .favlist :global(h2 a:hover) {
+    text-decoration: underline;
+  }
+  .favlist :global(.sum) {
+    grid-column: 1;
+    margin: 0;
+    color: var(--ink-soft);
+  }
+  .favlist :global(.fav) {
+    grid-column: 2;
+    grid-row: 1 / span 3;
+    align-self: start;
+    margin: 0;
+  }
+</style>
+
+<script>
+  type Fav = { id: string; at: string };
+  type Entry = { h: string; s: string; c: string; u: string };
+  const index: Record<string, Entry> = JSON.parse(document.querySelector('[data-fav-index]')?.textContent ?? '{}');
+  const labels = document.querySelector<HTMLElement>('[data-labels]')!.dataset;
+  const list = document.querySelector<HTMLOListElement>('[data-favlist]')!;
+  const tpl = document.querySelector<HTMLTemplateElement>('[data-row]')!;
+  const wholine = document.querySelector<HTMLElement>('[data-wholine]')!;
+  const whoName = document.querySelector<HTMLElement>('[data-who-name]')!;
+  const pick = document.querySelector<HTMLElement>('[data-pick]')!;
+  const empty = document.querySelector<HTMLElement>('[data-empty]')!;
+  const fmt = new Intl.DateTimeFormat(labels.lang, { month: 'short', day: 'numeric', timeZone: 'Asia/Tokyo' });
+  const removeLabel = document.querySelector<HTMLElement>('[data-who-dialog]')?.dataset.favRemove ?? '';
+
+  function render(who: string, favs: Fav[]) {
+    wholine.hidden = !who;
+    pick.hidden = Boolean(who);
+    whoName.textContent = (whoName.dataset.fmt ?? '{who}').replace('{who}', who);
+    empty.hidden = !who || favs.length > 0;
+    list.replaceChildren(
+      ...favs.map((f) => {
+        const row = tpl.content.firstElementChild!.cloneNode(true) as HTMLLIElement;
+        const e = index[f.id];
+        const a = row.querySelector('a')!;
+        if (e) {
+          a.href = e.u;
+          a.textContent = e.h;
+          row.querySelector('.sec')!.textContent = e.c;
+          row.querySelector('.sum')!.textContent = e.s;
+        } else {
+          a.removeAttribute('href');
+          a.textContent = labels.gone ?? '';
+        }
+        row.querySelector('.when')!.textContent = (labels.saved ?? '{date}').replace('{date}', fmt.format(new Date(f.at)));
+        // The same ☆ button as everywhere else (FavKit handles the click), so removing works here too.
+        const b = document.createElement('button');
+        b.type = 'button';
+        b.className = 'fav';
+        b.dataset.fav = f.id;
+        b.setAttribute('aria-pressed', 'true');
+        b.setAttribute('aria-label', removeLabel);
+        b.innerHTML = '<span class="fav-icon" aria-hidden="true">★</span>';
+        row.append(b);
+        return row;
+      }),
+    );
+  }
+
+  const state = (window as unknown as { dcdFavs?: () => { who: string; favs: Fav[] } }).dcdFavs?.();
+  render(state?.who ?? '', state?.favs ?? []);
+  document.addEventListener('dcd:favs', (e) => {
+    const d = (e as CustomEvent<{ who: string; favs: Fav[] }>).detail;
+    render(d.who, d.favs);
+  });
+</script>

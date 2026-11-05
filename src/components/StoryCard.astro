@@ -1,6 +1,7 @@
 ---
 import Stamp from './Stamp.astro';
 import Photo from './Photo.astro';
+import FavButton from './FavButton.astro';
 import { formatDate, t, type Locale } from '../i18n/index.ts';
 import { localized } from '../lib/editions.ts';
 import { sourceZh } from '../lib/zh.ts';
@@ -45,6 +46,7 @@ const day = new Intl.DateTimeFormat(locale === 'en' ? 'en' : 'zh-Hant-TW', {
     <Stamp locale={locale} confidence={item.confidence} />
     {item.status === 'updated' && <span class="hud-label upd">{t(locale, 'status.updated')}</span>}
     <time class="hud-label" datetime={item.publishedAt} title={formatDate(item.publishedAt, locale)}>{day}</time>
+    <FavButton locale={locale} id={item.id} />
   </div>
   <H class="headline" lang={headline.pending ? headline.lang : undefined}>
     <a href={routes.story(locale, item.id)}>{headline.text}</a>

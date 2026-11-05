@@ -13,4 +13,5 @@ export const routes = {
   patches: (l: Locale) => `/${l}/patches/`,
   guides: (l: Locale) => `/${l}/guides/`,
   search: (l: Locale) => `/${l}/search/`,
+  favorites: (l: Locale) => `/${l}/favorites/`,
 };

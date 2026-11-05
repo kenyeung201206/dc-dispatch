@@ -191,3 +191,47 @@ test('masthead banner: a random Division 2 picture, never the same twice in a ro
   await expect(title.locator('.bg-credit a')).toHaveAttribute('href', /^https:\/\//);
   await expect(title.locator('.title-name')).toHaveCSS('color', 'rgb(243, 238, 227)');
 });
+
+test('收藏: ☆ asks who is reading once, saves, shows in 我的收藏, and removes', async ({ page }) => {
+  await page.route(/(youtube-nocookie\.com|ytimg\.com|staticctf\.ubisoft\.com|steamstatic\.com)/, (r) => r.abort());
+  // Stand-in for /api/favs (the real one runs on Cloudflare): one list per name, newest first.
+  const lists = new Map<string, { id: string; at: string }[]>();
+  await page.route('**/api/favs**', async (r) => {
+    const req = r.request();
+    if (req.method() === 'POST') {
+      const { who, id, on } = req.postDataJSON();
+      const rest = (lists.get(who) ?? []).filter((f) => f.id !== id);
+      lists.set(who, on ? [{ id, at: new Date().toISOString() }, ...rest] : rest);
+      return r.fulfill({ json: { status: 'ok', favs: lists.get(who) } });
+    }
+    const who = new URL(req.url()).searchParams.get('who') ?? '';
+    return r.fulfill({ json: { status: 'ok', favs: lists.get(who) ?? [] } });
+  });
+
+  await page.goto('/zh-hant/section/arsenal/');
+  const card = page.locator('.story').first();
+  const href = await card.locator('.headline a').getAttribute('href');
+  const star = card.locator('[data-fav]');
+  await expect(star).toHaveAttribute('aria-label', '加入收藏');
+  await star.click();
+  await expect(page.getByRole('dialog', { name: '誰在看？' })).toBeVisible();
+  await page.getByRole('button', { name: '我', exact: true }).click();
+  await expect(star).toHaveAttribute('aria-pressed', 'true');
+  await expect(star).toHaveText('★');
+  expect(lists.get('我')?.length).toBe(1);
+
+  // The story page shows it as saved too, and the second star never asks again.
+  await page.goto(href!);
+  await expect(page.locator('.favrow [data-fav]')).toHaveAttribute('aria-pressed', 'true');
+
+  // 我的收藏 from the top bar / rail
+  await page.goto('/zh-hant/favorites/');
+  await expect(page.getByText('目前使用者：我')).toBeVisible();
+  const row = page.locator('[data-favlist] li');
+  await expect(row).toHaveCount(1);
+  await expect(row.locator('h2 a')).toHaveAttribute('href', href!);
+  await row.locator('[data-fav]').click();
+  await expect(row).toHaveCount(0);
+  await expect(page.getByText('還沒有收藏')).toBeVisible();
+  expect(await page.evaluate(() => document.documentElement.scrollWidth - innerWidth)).toBeLessThanOrEqual(0);
+});

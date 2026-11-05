@@ -1,0 +1,15 @@
+---
+/** ☆ / ★ button for one story; FavKit.astro does the work. */
+import { t, type Locale } from '../i18n/index.ts';
+interface Props {
+  locale: Locale;
+  id: string;
+  /** "large" shows the word next to the star (story pages). */
+  size?: 'small' | 'large';
+}
+const { locale, id, size = 'small' } = Astro.props;
+---
+<button type="button" class:list={['fav', size]} data-fav={id} aria-pressed="false" aria-label={t(locale, 'fav.add')} data-pagefind-ignore>
+  <span class="fav-icon" aria-hidden="true">☆</span>{size === 'large' && <span class="fav-word">{t(locale, 'fav.word')}</span>}
+</button>
+{/* Styles live in src/styles/global.css (.fav): 我的收藏 builds these buttons in the browser too. */}

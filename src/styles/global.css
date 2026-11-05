@@ -316,3 +316,40 @@ a:hover {
 .newb[hidden] {
   display: none;
 }
+
+/* ☆ / ★ 收藏 button (FavButton.astro, and rows built on 我的收藏) */
+.fav {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  min-width: 44px;
+  min-height: 44px;
+  margin: -10px -10px -10px auto; /* big tap area without making the row taller */
+  padding: 0 10px;
+  border: 0;
+  background: transparent;
+  color: var(--ink-soft);
+  font: 700 1.25rem / 1 var(--font-hud);
+  cursor: pointer;
+}
+.fav[aria-pressed='true'] {
+  color: var(--shd);
+}
+.fav:focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: -3px;
+}
+.fav.large {
+  margin: 0;
+  padding: 0 16px 0 12px;
+  border: 2px solid var(--ink);
+  border-radius: 22px;
+  font-size: 1rem;
+}
+.fav.large .fav-icon {
+  font-size: 1.25rem;
+}
+.fav.large[aria-pressed='true'] {
+  border-color: var(--shd);
+}

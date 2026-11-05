@@ -1,0 +1,262 @@
+---
+/**
+ * 收藏: the 「誰在看？」 picker + the script behind every ☆ button ([data-fav="<story id>"]).
+ * One list per reader name, synced through /api/favs (functions/api/favs.ts); a local copy
+ * (dcd.favs) paints stars instantly and keeps working if the network drops for a moment.
+ */
+import { t, type Locale } from '../i18n/index.ts';
+interface Props {
+  locale: Locale;
+}
+const { locale } = Astro.props;
+---
+<dialog
+  class="who"
+  data-who-dialog
+  aria-labelledby="who-h"
+  data-fav-add={t(locale, 'fav.add')}
+  data-fav-remove={t(locale, 'fav.remove')}
+  data-fav-added={t(locale, 'fav.added')}
+  data-fav-removed={t(locale, 'fav.removed')}
+  data-fav-failed={t(locale, 'fav.failed')}
+>
+  <form method="dialog">
+    <h2 id="who-h">{t(locale, 'fav.who.title')}</h2>
+    <p>{t(locale, 'fav.who.text')}</p>
+    <div class="who-picks">
+      <button type="submit" value={t(locale, 'fav.who.me')}>{t(locale, 'fav.who.me')}</button>
+      <button type="submit" value={t(locale, 'fav.who.wife')}>{t(locale, 'fav.who.wife')}</button>
+    </div>
+    <label class="who-other">
+      <span>{t(locale, 'fav.who.other')}</span>
+      <input name="who" maxlength="12" autocomplete="off" />
+    </label>
+    <div class="who-actions">
+      <button type="submit" value="__typed" class="ok">{t(locale, 'fav.who.ok')}</button>
+      <button type="submit" value="" class="cancel">{t(locale, 'fav.who.cancel')}</button>
+    </div>
+  </form>
+</dialog>
+<p class="fav-toast" data-fav-toast role="status" hidden></p>
+
+<style>
+  .who {
+    max-width: min(360px, calc(100vw - 32px));
+    padding: var(--space-4);
+    border: 2px solid var(--ink);
+    background: var(--paper);
+    color: var(--ink);
+  }
+  .who::backdrop {
+    background: rgb(0 0 0 / 0.5);
+  }
+  .who h2 {
+    margin: 0 0 var(--space-2);
+    font: 800 var(--step-1) / 1.3 var(--font-display);
+  }
+  .who p {
+    margin: 0 0 var(--space-3);
+  }
+  .who-picks {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-2);
+  }
+  .who button {
+    min-height: 48px;
+    border: 2px solid var(--ink);
+    background: var(--panel);
+    color: var(--panel-ink);
+    font: 700 1rem / 1 var(--font-hud);
+    cursor: pointer;
+  }
+  .who-other {
+    display: grid;
+    gap: 4px;
+    margin-block: var(--space-3);
+    font-size: var(--step--1);
+  }
+  .who-other input {
+    min-height: 44px;
+    padding: 0 10px;
+    border: 1px solid var(--rule);
+    background: var(--paper-2);
+    color: var(--ink);
+    font-size: 1rem;
+  }
+  .who-actions {
+    display: flex;
+    gap: var(--space-2);
+  }
+  .who-actions .ok {
+    flex: 1;
+    background: var(--shd);
+    color: var(--on-shd);
+  }
+  .who-actions .cancel {
+    background: transparent;
+    color: var(--ink);
+  }
+  .fav-toast {
+    position: fixed;
+    left: 50%;
+    bottom: calc(84px + env(safe-area-inset-bottom));
+    transform: translateX(-50%);
+    z-index: 60;
+    max-width: calc(100vw - 32px);
+    padding: 10px 16px;
+    border-radius: 20px;
+    background: var(--panel);
+    color: var(--panel-ink);
+    font: 600 0.9375rem / 1.3 var(--font-hud);
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.25);
+  }
+  .fav-toast[hidden] {
+    display: none;
+  }
+</style>
+
+<script>
+  type Fav = { id: string; at: string };
+  const WHO = 'dcd.who';
+  const CACHE = 'dcd.favs';
+  const dialog = document.querySelector<HTMLDialogElement>('[data-who-dialog]');
+  const L = (k: string) => dialog?.dataset[k] ?? '';
+  const store = {
+    get(k: string) {
+      try {
+        return localStorage.getItem(k);
+      } catch {
+        return null;
+      }
+    },
+    set(k: string, v: string) {
+      try {
+        localStorage.setItem(k, v);
+      } catch {}
+    },
+  };
+
+  let who = store.get(WHO) ?? '';
+  let favs: Fav[] = (() => {
+    try {
+      const c = JSON.parse(store.get(CACHE) ?? 'null');
+      return c && c.who === who && Array.isArray(c.favs) ? c.favs : [];
+    } catch {
+      return [];
+    }
+  })();
+
+  const toastBox = document.querySelector<HTMLElement>('[data-fav-toast]');
+  let toastTimer = 0;
+  function toast(msg: string) {
+    if (!toastBox) return;
+    toastBox.textContent = msg;
+    toastBox.hidden = false;
+    clearTimeout(toastTimer);
+    toastTimer = window.setTimeout(() => (toastBox.hidden = true), 2200);
+  }
+
+  function save() {
+    store.set(CACHE, JSON.stringify({ who, favs }));
+    paint();
+    document.dispatchEvent(new CustomEvent('dcd:favs', { detail: { who, favs } }));
+  }
+  function paint() {
+    const on = new Set(favs.map((f) => f.id));
+    document.querySelectorAll<HTMLButtonElement>('[data-fav]').forEach((b) => {
+      const yes = on.has(b.dataset.fav!);
+      b.setAttribute('aria-pressed', String(yes));
+      b.setAttribute('aria-label', yes ? L('favRemove') : L('favAdd'));
+      const icon = b.querySelector('.fav-icon');
+      if (icon) icon.textContent = yes ? '★' : '☆';
+    });
+  }
+
+  async function load() {
+    if (!who) return;
+    try {
+      const r = await fetch(`/api/favs?who=${encodeURIComponent(who)}`, { credentials: 'same-origin', headers: { accept: 'application/json' } });
+      const j = await r.json();
+      if (j.status === 'ok' && Array.isArray(j.favs)) {
+        favs = j.favs;
+        save();
+      }
+    } catch {}
+  }
+
+  /** Asks 「誰在看？」 and resolves with the chosen name ('' if cancelled). */
+  function askWho(): Promise<string> {
+    return new Promise((resolve) => {
+      if (!dialog || typeof dialog.showModal !== 'function') return resolve('');
+      const input = dialog.querySelector<HTMLInputElement>('input[name="who"]')!;
+      input.value = '';
+      dialog.addEventListener(
+        'close',
+        () => {
+          const v = dialog.returnValue === '__typed' ? input.value : dialog.returnValue;
+          const name = (v || '').normalize('NFC').trim();
+          resolve(/^[\p{L}\p{N} _-]{1,12}$/u.test(name) ? name : '');
+        },
+        { once: true },
+      );
+      dialog.showModal();
+    });
+  }
+  async function setWho(name: string) {
+    who = name;
+    store.set(WHO, who);
+    favs = [];
+    save();
+    await load();
+  }
+
+  async function toggle(id: string) {
+    if (!who) {
+      const name = await askWho();
+      if (!name) return;
+      await setWho(name);
+    }
+    const before = favs;
+    const on = !favs.some((f) => f.id === id);
+    favs = on ? [{ id, at: new Date().toISOString() }, ...favs] : favs.filter((f) => f.id !== id);
+    save();
+    toast(on ? L('favAdded') : L('favRemoved'));
+    try {
+      const r = await fetch('/api/favs', {
+        method: 'POST',
+        credentials: 'same-origin',
+        headers: { 'content-type': 'application/json', accept: 'application/json' },
+        body: JSON.stringify({ who, id, on }),
+      });
+      const j = await r.json();
+      if (j.status !== 'ok') throw new Error(j.status);
+      favs = j.favs;
+      save();
+    } catch {
+      favs = before;
+      save();
+      toast(L('favFailed'));
+    }
+  }
+
+  document.addEventListener('click', (e) => {
+    const b = (e.target as Element).closest<HTMLButtonElement>('[data-fav]');
+    if (b) {
+      e.preventDefault();
+      toggle(b.dataset.fav!);
+      return;
+    }
+    const sw = (e.target as Element).closest('[data-who-switch]');
+    if (sw) {
+      e.preventDefault();
+      askWho().then((name) => name && setWho(name));
+    }
+  });
+
+  // Other pages (e.g. 我的收藏) can ask for the current state.
+  (window as unknown as { dcdFavs: () => { who: string; favs: Fav[] } }).dcdFavs = () => ({ who, favs });
+  paint();
+  document.dispatchEvent(new CustomEvent('dcd:favs', { detail: { who, favs } }));
+  load();
+</script>

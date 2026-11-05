@@ -4,6 +4,7 @@ import Photo from '../../../components/Photo.astro';
 import VideoFacade from '../../../components/VideoFacade.astro';
 import Stamp from '../../../components/Stamp.astro';
 import StoryCard from '../../../components/StoryCard.astro';
+import FavButton from '../../../components/FavButton.astro';
 import { formatDate, LOCALES, t, tf, type Locale, type UiKey } from '../../../i18n/index.ts';
 import { allItems, findItem, localized, readableIn, relatedItems } from '../../../lib/editions.ts';
 import { sourceZh } from '../../../lib/zh.ts';
@@ -75,6 +76,7 @@ const reportHref = `mailto:?subject=${encodeURIComponent(`[DC Dispatch] Translat
 
     <h1 class="headline" lang={headline.pending ? headline.lang : undefined} data-pagefind-meta="title">{headline.text}</h1>
     {headline.pending && <p class="pending">{t(locale, 'translation.pending')}</p>}
+    <p class="favrow"><FavButton locale={locale} id={item.id} size="large" /></p>
     {
       !zhPage && (locale !== item.lang_orig.slice(0, 2) || headline.text !== item.title_orig) && (
         <p class="orig">
@@ -236,6 +238,9 @@ const reportHref = `mailto:?subject=${encodeURIComponent(`[DC Dispatch] Translat
     margin: 10px 0 8px;
     font: 900 var(--step-3) / 1.1 var(--font-display);
     text-wrap: balance;
+  }
+  .favrow {
+    margin: 0 0 var(--space-3);
   }
   .headline:lang(zh-Hant-TW),
   :lang(zh-Hant-TW) .headline {

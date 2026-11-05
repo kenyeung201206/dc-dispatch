@@ -12,6 +12,7 @@ import '@fontsource/noto-serif-tc/500.css';
 import '@fontsource/noto-serif-tc/900.css';
 import '../styles/global.css';
 import { HTML_LANG, t, type Locale } from '../i18n/index.ts';
+import FavKit from '../components/FavKit.astro';
 
 interface Props {
   locale: Locale;
@@ -264,5 +265,6 @@ const pageTitle = title ? `${title} · ${t(locale, 'site.name')}` : t(locale, 's
         max-width: 80ch;
       }
     </style>
+    <FavKit locale={locale} />
   </body>
 </html>
