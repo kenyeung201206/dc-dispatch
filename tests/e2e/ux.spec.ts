@@ -44,3 +44,22 @@ test('Chinese readers get Traditional Chinese subtitles on non-Chinese videos', 
   await page.goto('/en/watch/');
   await expect(page.locator('.vf[data-cc]')).toHaveCount(0);
 });
+
+test('story pages: an English video story asks for Chinese subtitles on the Chinese page', async ({ page }) => {
+  await page.route(/(youtube-nocookie\.com|ytimg\.com)/, (r) => r.abort());
+  const { readFileSync, readdirSync } = await import('node:fs');
+  // Any English video story that has Chinese (from the feed or our translations).
+  const zhTitled = JSON.parse(readFileSync('data/translations.zh.json', 'utf8')).items as Record<string, unknown>;
+  let id: string | undefined;
+  for (const f of readdirSync('data/editions'))
+    for (const i of JSON.parse(readFileSync(`data/editions/${f}`, 'utf8')).items)
+      if (!id && i.videoId && i.lang_orig === 'en' && (i.headline_zhHant !== 'pending' || i.id in zhTitled)) id = i.id;
+  test.skip(!id, 'no English video story in the current data');
+  await page.goto(`/zh-hant/story/${id}/`);
+  const fig = page.locator('.story-page .vf');
+  test.skip((await fig.count()) === 0, 'story has no video');
+  await expect(fig).toHaveAttribute('data-cc', 'zh-Hant');
+  await expect(fig.locator('.vt')).toHaveText(/[㐀-鿿]/);
+  await fig.locator('.play').click();
+  await expect(fig.locator('iframe')).toHaveAttribute('src', /cc_lang_pref=zh-Hant/);
+});

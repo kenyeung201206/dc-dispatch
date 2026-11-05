@@ -84,7 +84,8 @@ const reportHref = `mailto:?subject=${encodeURIComponent(`[DC Dispatch] Translat
           size="large"
           video={{
             id: item.videoId,
-            title: zhPage ? headline.text : item.title_orig,
+            title: item.title_orig,
+            ...(zhPage && !headline.pending ? { titleZh: headline.text } : {}),
             channelName: item.sourceName,
             channelUrl: item.sourceUrl,
             publishedAt: item.publishedAt,
