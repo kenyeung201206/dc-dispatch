@@ -1,0 +1,53 @@
+name: Publish write-ups
+
+# When the scheduled 重點整理 writer (docs/BRIEF_WRITER.md) pushes new write-ups, rebuild and publish the
+# site right away instead of waiting for the next 5-hourly edition. (The robot's own pushes use the
+# workflow token, which never starts other workflows, so this can't loop.)
+on:
+  push:
+    branches: [main]
+    paths:
+      - data/briefs.zh.json
+      - data/translations.zh.json
+
+permissions:
+  contents: read
+
+concurrency:
+  group: daily-edition
+  cancel-in-progress: false
+
+env:
+  ASTRO_TELEMETRY_DISABLED: '1'
+
+jobs:
+  publish:
+    if: ${{ vars.CF_PAGES_PROJECT != '' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v7.0.1
+        with:
+          persist-credentials: false
+      - uses: pnpm/action-setup@v6.1.0
+      - uses: actions/setup-node@v7.1.0
+        with:
+          node-version: 24
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - name: Check
+        run: pnpm run i18n:check && pnpm run test
+      - name: Build site + search index
+        run: pnpm run build
+        env:
+          HUMOUR_LEVEL: ${{ vars.HUMOUR_LEVEL || 'medium' }}
+      - name: Deploy to Cloudflare Pages
+        run: |
+          if [ -z "$CLOUDFLARE_API_TOKEN" ] || [ -z "$CLOUDFLARE_ACCOUNT_ID" ]; then
+            echo "::warning::Cloudflare secrets not set — not deployed."
+            exit 0
+          fi
+          pnpm exec wrangler pages deploy dist --project-name="${{ vars.CF_PAGES_PROJECT }}" --branch=main --commit-dirty=true
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
