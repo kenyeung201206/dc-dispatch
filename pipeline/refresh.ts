@@ -8,7 +8,7 @@
 import { mkdir, readdir, readFile, writeFile } from 'node:fs/promises';
 import { join } from 'node:path';
 import { parseArgs } from 'node:util';
-import { CreatorPostsSchema, EditionSchema, ImageLibrarySchema, ExoticLogSchema, GameEventLogSchema, GuideLogSchema, PatchLogSchema, RunStatusSchema, VideoLibrarySchema, type Edition, type Item } from '../src/schema/item.ts';
+import { BriefsZhSchema, CreatorPostsSchema, EditionSchema, ImageLibrarySchema, ExoticLogSchema, GameEventLogSchema, GuideLogSchema, PatchLogSchema, RunStatusSchema, VideoLibrarySchema, type Edition, type Item } from '../src/schema/item.ts';
 import { parsePatch, upsertPatches } from './patches.ts';
 import { buildVideos } from './video/build.ts';
 import { searchVideos } from './video/youtube.ts';
@@ -29,6 +29,7 @@ import type { RawItem, SourceResult } from './sources/types.ts';
 import { parseUbisoftNews } from './sources/ubisoft.ts';
 import { parseBahamutBoard, parseBahamutFirstPost } from './sources/bahamut.ts';
 import { aiSummaries, needsAi } from './ai.ts';
+import { aiBriefs } from './ai-briefs.ts';
 
 const { values: args } = parseArgs({
   options: {
@@ -197,8 +198,9 @@ async function main() {
   // Optional AI summaries (ANTHROPIC_API_KEY). 巴哈 previews are short, so read the thread's first post for those.
   const anthropicKey = dryRun ? undefined : process.env.ANTHROPIC_API_KEY;
   let ai = { applied: 0, costUsd: 0, skipped: 0 };
+  const briefs = BriefsZhSchema.parse(await readJson('data/briefs.zh.json', { items: {} }));
   if (anthropicKey) {
-    for (const item of fresh.filter((i) => i.sourceId === 'bahamut' && needsAi(i)).slice(0, 8)) {
+    for (const item of fresh.filter((i) => i.sourceId === 'bahamut' && (needsAi(i) || !briefs.items[i.id])).slice(0, 8)) {
       try {
         sourceText.set(item.id, parseBahamutFirstPost(await politeGet(item.sourceUrl)) || (sourceText.get(item.id) ?? ''));
       } catch (err) {
@@ -210,6 +212,14 @@ async function main() {
       fresh.map((item) => ({ item, text: sourceText.get(item.id) ?? item.title_orig })),
       { apiKey: anthropicKey, model: process.env.AI_MODEL, budgetUsd: Number(process.env.AI_DAILY_BUDGET_USD) || 0.5, glossary },
     );
+    // 重點整理 for new stories, from what is left of the same budget.
+    const written = await aiBriefs(
+      fresh.map((item) => ({ item, text: sourceText.get(item.id) ?? '' })),
+      briefs,
+      { apiKey: anthropicKey, model: process.env.AI_MODEL, budgetUsd: Math.max(0, (Number(process.env.AI_DAILY_BUDGET_USD) || 0.5) - ai.costUsd), glossary, today: date },
+    );
+    ai.costUsd += written.costUsd;
+    if (written.written) await writeFile('data/briefs.zh.json', JSON.stringify(BriefsZhSchema.parse(briefs), null, 2) + '\n');
   }
 
   // Events (curated + read from Ubisoft notes) and 攻略精選 guides that expire with their event.

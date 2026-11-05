@@ -1,12 +1,13 @@
 name: Daily edition
 
-# Every 3 hours, starting 06:00 Asia/Tokyo (21:00 UTC): 06, 09, 12, 15, 18, 21, 00, 03 Tokyo.
-# Same-day runs update that day's edition (same edition number). Limits: YouTube search quota
-# (9 searches × 100 units × 8 runs ≈ 7,200 of 10,000/day) and free Actions minutes (~1–2 min/run).
+# Every 5 hours (UTC 00, 05, 10, 15, 20 = Tokyo 09, 14, 19, 00, 05). Same-day runs update that day's
+# edition (same edition number). Limits: YouTube search quota (9 searches x 100 units x 5 runs = 4,500 of
+# 10,000/day) and free Actions minutes (~1-2 min/run). With ANTHROPIC_API_KEY set, new stories also get
+# their Chinese summary and 重點整理 written automatically.
 # Also runnable by hand from the Actions tab.
 on:
   schedule:
-    - cron: '0 */3 * * *'
+    - cron: '0 */5 * * *'
   workflow_dispatch:
 
 permissions:
@@ -59,7 +60,7 @@ jobs:
         run: |
           git config user.name "dc-dispatch-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/editions data/images.json data/patches.json data/videos.json data/status.json data/exotics.json data/guides.json data/events.json data/creator-posts.json
+          git add data/editions data/images.json data/patches.json data/videos.json data/status.json data/exotics.json data/guides.json data/events.json data/creator-posts.json data/briefs.zh.json
           if [ -f data/ai-cache.json ]; then git add data/ai-cache.json; fi
           if git diff --cached --quiet; then echo "No data changes"; else
             git commit -m "chore(data): edition $(TZ=Asia/Tokyo date +%F)"
