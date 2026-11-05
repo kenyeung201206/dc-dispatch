@@ -203,9 +203,13 @@ const SeriesEntrySchema = z.object({
   /** Direct link to the post, if the owner sent it; otherwise the posts tab is linked. */
   postUrl: httpsUrl.optional(),
   seen: z.iso.date(),
+  /** Day he posted it; set when the robot added it (those also run as a news story while fresh). */
+  publishedAt: z.iso.date().optional(),
 });
 export const CreatorPostsSchema = z.object({
   _note: z.string().optional(),
+  /** YouTube post ids already handled (added or deliberately skipped), so the robot never re-adds them. */
+  knownPostIds: z.array(z.string().min(1)).optional(),
   creator: z.object({ name: z.string().min(1), channelUrl: httpsUrl, postsUrl: httpsUrl }),
   series: z.array(
     z.object({
@@ -238,6 +242,8 @@ export const CreatorPostsSchema = z.object({
       postUrl: httpsUrl.optional(),
       seen: z.iso.date(),
       until: z.iso.date(),
+      /** Added by the robot from his posts page (his own words; no hand-written English yet). */
+      auto: z.boolean().optional(),
     }),
   ),
 });

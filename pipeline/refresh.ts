@@ -8,12 +8,13 @@
 import { mkdir, readdir, readFile, writeFile } from 'node:fs/promises';
 import { join } from 'node:path';
 import { parseArgs } from 'node:util';
-import { EditionSchema, ImageLibrarySchema, ExoticLogSchema, GameEventLogSchema, GuideLogSchema, PatchLogSchema, RunStatusSchema, VideoLibrarySchema, type Edition, type Item } from '../src/schema/item.ts';
+import { CreatorPostsSchema, EditionSchema, ImageLibrarySchema, ExoticLogSchema, GameEventLogSchema, GuideLogSchema, PatchLogSchema, RunStatusSchema, VideoLibrarySchema, type Edition, type Item } from '../src/schema/item.ts';
 import { parsePatch, upsertPatches } from './patches.ts';
 import { buildVideos } from './video/build.ts';
 import { searchVideos } from './video/youtube.ts';
 import { videoStories } from './video/intel-items.ts';
 import { creatorPostStories } from './creator-posts.ts';
+import { mergeFeed, parsePostsPage } from './creator-feed.ts';
 import { exoticsFromArticle, mergeExotics, wikiExotics } from './exotics.ts';
 import { eventsFromArticle, guidesFromPicks, guidesFromVideos, liveGuides, mergeEvents, mergeGuides, type Pick } from './guides.ts';
 import { checkEmbeddable, fetchChannelVideos } from './video/youtube.ts';
@@ -153,8 +154,20 @@ async function main() {
   const vStories = videoStories(searched, now);
   for (const v of vStories) sourceText.set(v.id, searched.find((x) => x.id === v.videoId)?.description ?? v.title_orig);
   fresh.push(...vStories);
-  // 灰帽特工's curated posts: the newest ones run as stories in their section.
-  const cpStories = creatorPostStories(await readJson('data/creator-posts.json', { creator: {}, series: [], posts: [] }), now);
+  // 灰帽特工's posts: pick up new ones from his posts tab (missions, codes, maintenance…), then the newest run as stories.
+  const creatorData = CreatorPostsSchema.parse(await readJson('data/creator-posts.json', { creator: {}, series: [], posts: [] }));
+  if (!dryRun) {
+    try {
+      const feed = parsePostsPage(await politeGet(creatorData.creator.postsUrl));
+      if (!feed.length) log('warn', 'creator posts: none found on the page (layout changed?)', {});
+      const added = mergeFeed(creatorData, feed, now);
+      if (added.missions.length || added.posts.length) log('info', 'creator posts added', added);
+      await writeFile('data/creator-posts.json', JSON.stringify(CreatorPostsSchema.parse(creatorData), null, 2) + '\n');
+    } catch (err) {
+      log('warn', 'creator posts: could not read the posts tab', { error: String(err).slice(0, 200) });
+    }
+  }
+  const cpStories = creatorPostStories(creatorData, now);
   for (const c of cpStories) sourceText.set(c.id, c.summary_zhHant);
   fresh.push(...cpStories);
   const videos = await buildVideos({
