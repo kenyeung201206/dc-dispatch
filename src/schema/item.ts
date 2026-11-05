@@ -329,3 +329,21 @@ export const TranslationsZhSchema = z.object({
   sources: z.record(z.string(), z.string().min(1)),
 });
 export type TranslationsZh = z.infer<typeof TranslationsZhSchema>;
+
+/** 重點整理 (data/briefs.zh.json): our own Chinese write-up of a story's source, keyed by story id. Never the source's text. */
+export const BriefsZhSchema = z.object({
+  _note: z.string().optional(),
+  items: z.record(
+    z.string(),
+    z.object({
+      points: z.array(z.string().min(1)).min(1),
+      /** Full data from the source (schedules, rewards, numbers) kept complete, in our own table. */
+      tables: z
+        .array(z.object({ title: z.string().min(1), columns: z.array(z.string().min(1)).min(2), rows: z.array(z.array(z.string())).min(1) }))
+        .optional(),
+      body: z.array(z.string().min(1)).optional(),
+      written: z.iso.date(),
+    }),
+  ),
+});
+export type BriefsZh = z.infer<typeof BriefsZhSchema>;
