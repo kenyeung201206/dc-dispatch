@@ -155,6 +155,18 @@ async function main() {
   const vStories = videoStories(searched, now);
   for (const v of vStories) sourceText.set(v.id, searched.find((x) => x.id === v.videoId)?.description ?? v.title_orig);
   fresh.push(...vStories);
+  // Video descriptions (from the YouTube API) for the scheduled 重點整理 writer, which can't load youtube.com
+  // from the cloud. Input only, never shown on the site; kept 30 days.
+  if (!dryRun) {
+    const notes = await readJson<Record<string, { text: string; savedAt: string }>>('data/source-notes.json', {});
+    for (const v of vStories) {
+      const text = searched.find((x) => x.id === v.videoId)?.description?.trim();
+      if (text && !notes[v.id]) notes[v.id] = { text, savedAt: now.toISOString() };
+    }
+    const cutoff = now.getTime() - 30 * 86_400_000;
+    for (const [id, n] of Object.entries(notes)) if (Date.parse(n.savedAt) < cutoff) delete notes[id];
+    await writeFile('data/source-notes.json', JSON.stringify(notes, null, 1) + '\n');
+  }
   // 灰帽特工's posts: pick up new ones from his posts tab (missions, codes, maintenance…), then the newest run as stories.
   const creatorData = CreatorPostsSchema.parse(await readJson('data/creator-posts.json', { creator: {}, series: [], posts: [] }));
   if (!dryRun) {

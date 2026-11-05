@@ -28,8 +28,11 @@ Chinese 「重點整理」 for stories that don't have one yet, then pushes. A p
    - 巴哈 (`forum.gamer.com.tw`): fetch with header
      `User-Agent: Mozilla/5.0 (compatible; DCDispatchBot/0.1; private fan newspaper)`, at most one request
      every 2 seconds; read only the first post (`div.c-article__content`). No usernames.
-   - YouTube (`youtube.com/watch?v=`): use the video description and chapter list; you cannot watch it, so
-     say only what the description says, plus official facts already on the site.
+   - YouTube (`youtube.com/watch?v=`): **never fetch youtube.com** (it blocks cloud requests). Use the story's
+     `sourceText` from step 2 (the description and chapters, saved by the robot from the YouTube API). You cannot
+     watch the video, so say only what the description says, plus official facts already on the site
+     (`data/briefs.zh.json`). No `sourceText` → write from the title alone only if it states clear facts
+     (what the video covers), in 2–3 points; otherwise skip.
    - Can't read the source (blocked, empty) → skip that story this run.
 4. Add an entry to `data/briefs.zh.json`:
    ```json

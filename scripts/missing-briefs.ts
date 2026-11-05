@@ -1,12 +1,18 @@
 /**
  * Lists the newest edition's stories that have no 重點整理 yet (used by the scheduled writer,
- * docs/BRIEF_WRITER.md). Prints JSON: [{ id, sourceId, sourceUrl, title, headline_zhHant, needsZhTitle }].
+ * docs/BRIEF_WRITER.md). Prints JSON: [{ id, sourceId, sourceUrl, title, headline_zhHant, needsZhTitle, sourceText? }].
+ * sourceText = the video description the robot saved (data/source-notes.json), when there is one.
  *   node scripts/missing-briefs.ts
  */
 import { readdirSync, readFileSync } from 'node:fs';
 
 const briefs = JSON.parse(readFileSync('data/briefs.zh.json', 'utf8')).items as Record<string, unknown>;
 const tr = JSON.parse(readFileSync('data/translations.zh.json', 'utf8')).items as Record<string, unknown>;
+// Video descriptions saved by the robot (YouTube API); the cloud can't load youtube.com itself.
+let notes: Record<string, { text: string }> = {};
+try {
+  notes = JSON.parse(readFileSync('data/source-notes.json', 'utf8'));
+} catch {}
 const files = readdirSync('data/editions')
   .filter((f) => /^\d{4}-\d{2}-\d{2}\.json$/.test(f))
   .sort()
@@ -25,6 +31,7 @@ for (const f of files) {
       title: i.title_orig,
       headline_zhHant: i.headline_zhHant,
       needsZhTitle: (pending(i.headline_zhHant) || pending(i.summary_zhHant)) && !tr[i.id],
+      ...(notes[i.id] ? { sourceText: notes[i.id]!.text } : {}),
     }));
   console.log(JSON.stringify({ edition: f.slice(0, 10), missing }, null, 2));
   break;
