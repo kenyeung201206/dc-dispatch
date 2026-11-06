@@ -222,7 +222,9 @@ export const PEOPLE = ['阿肥', 'Alice', 'Andy哥', 'Keroro'];
     const sw = (e.target as Element).closest('[data-who-switch]');
     if (sw) {
       e.preventDefault();
-      askWho().then((name) => name && setWho(name));
+      askWho().then((name) => {
+        if (name) void setWho(name);
+      });
     }
   });
 

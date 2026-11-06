@@ -86,7 +86,8 @@ export function localized(item: Item, field: LocalizedField, locale: Locale): { 
 
 /** Video titles often end in hashtag lists (#全境封鎖 #thedivision2 …): drop them from headlines. */
 export function stripHashtags(s: string): string {
-  const out = s.replace(/(^|\s)#[^\s#]+/gu, ' ').replace(/\s{2,}/g, ' ').trim();
+  // A tag, or a chain of tags with no space between them ("#全境封鎖3#中央公園").
+  const out = s.replace(/(^|\s)(#[^\s#]+)+/gu, ' ').replace(/\s{2,}/g, ' ').trim();
   return out || s;
 }
 

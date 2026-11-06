@@ -248,6 +248,18 @@ async function main() {
   const previousGuides = GuideLogSchema.parse(await readJson('data/guides.json', { guides: [] })).guides;
   const guides = { guides: liveGuides(mergeGuides(previousGuides, [...guidesFromVideos(guideVideos, events, now), ...pickGuides]), now) };
 
+  // Video stories come from YouTube searches, which can fail (e.g. quota used up, HTTP 429). Keep the ones this
+  // day's edition already has, so a failed search never makes them vanish (or orphans their 重點整理).
+  if (!dryRun) {
+    try {
+      const today = EditionSchema.parse(JSON.parse(await readFile(join('data/editions', `${date}.json`), 'utf8')));
+      const have = new Set(fresh.map((i) => i.id));
+      const kept = today.items.filter((i) => i.sourceId === 'youtube' && !have.has(i.id));
+      fresh.push(...kept);
+      if (kept.length) log('info', 'kept video stories from earlier today', { count: kept.length });
+    } catch {}
+  }
+
   const overrides = OverridesSchema.parse(await readJson('data/overrides.json', {}));
   const edition = assembleEdition({ date, now, fresh, results, previous: await previousEdition(date), overrides, firstSeen: dryRun ? new Map() : await firstSeenIndex() });
 
