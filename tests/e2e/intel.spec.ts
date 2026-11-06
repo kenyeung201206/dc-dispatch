@@ -17,7 +17,8 @@ test('Chinese page shows exotic intel with Chinese status labels', async ({ page
 
 test('巴哈 community stories show a COMMUNITY stamp and stay readable in English (Chinese text, translation pending)', async ({ page }) => {
   await page.goto('/en/section/builds/');
-  const card = page.locator('.story[data-confidence="community"]').first();
+  // A 巴哈 story specifically (YouTube videos are community stories too, and may come first).
+  const card = page.locator('.story[data-confidence="community"]:has(.source a[href*="forum.gamer.com.tw"])').first();
   await expect(card.locator('.stamp')).toHaveText('Community');
   await expect(card.locator('.headline')).toHaveAttribute('lang', 'zh-Hant-TW');
   await expect(card.getByText('Translation pending')).toBeVisible();

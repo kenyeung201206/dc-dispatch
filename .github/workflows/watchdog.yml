@@ -3,7 +3,7 @@ name: Stale edition watchdog
 # Fails (GitHub then emails the repo owner, by its normal notification settings) when:
 # - no new edition has been committed for 36 hours (the robot is disabled or broken), or
 # - a story has had no 重點整理 for 12 hours (the scheduled writer keeps skipping it or stopped).
-# Runs 20 minutes after each writer run (writer: :30 past UTC 00/05/10/15/20).
+# Runs about an hour after each robot update (the writer runs every hour at :15).
 on:
   schedule:
     - cron: '50 */5 * * *'
