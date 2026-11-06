@@ -1,7 +1,7 @@
 # 重點整理 writer (scheduled cloud job)
 
-A scheduled Claude session runs this every hour (at :15 UTC). GitHub often starts the robot late, so a fixed
-"30 minutes after" time missed stories; hourly catches every update within an hour. It writes the
+A Claude session runs this right after each robot update (a GitHub push trigger on this repo), and every hour at
+:15 UTC as a backup. GitHub often starts the robot late, so a fixed time alone missed stories. It writes the
 Chinese 「重點整理」 for stories that don't have one yet, then pushes. A push that changes
 `data/briefs.zh.json` or `data/translations.zh.json` publishes the site (`.github/workflows/publish-briefs.yml`).
 
