@@ -1,7 +1,7 @@
 {
   "date": "2026-11-07",
   "editionNumber": 4,
-  "generatedAt": "2026-11-06T15:44:03.654Z",
+  "generatedAt": "2026-11-06T20:41:43.602Z",
   "meta": {
     "season_en": "Red Horizon",
     "season_zhHant": "Red Horizon 賽季",
@@ -17,7 +17,7 @@
       "title_orig": "[TUY8S3.3] Echoes of Central Park Launch, Crossplay Rollout, Conflict Improvements & More",
       "lang_orig": "en",
       "publishedAt": "2026-11-02T15:45:00.000Z",
-      "fetchedAt": "2026-11-06T15:44:03.654Z",
+      "fetchedAt": "2026-11-06T20:41:43.602Z",
       "category": "updates",
       "tags": [
         "title-update",
@@ -54,12 +54,12 @@
       "title_orig": "The Division 2: Echoes of Central Park DLC is available now!",
       "lang_orig": "en",
       "publishedAt": "2026-11-03T15:00:00.000Z",
-      "fetchedAt": "2026-11-06T15:44:03.654Z",
+      "fetchedAt": "2026-11-06T20:41:43.602Z",
       "category": "missions",
       "tags": [
         "dlc"
       ],
-      "importance": 79,
+      "importance": 78,
       "confidence": "official",
       "headline_en": "Echoes of Central Park DLC is out now",
       "headline_zhHant": "《中央公園的迴響》DLC 正式推出",
@@ -118,7 +118,7 @@
       "title_orig": "[TUY8S3.3] Echoes of Central Park Launch, Crossplay Rollout, Conflict Improvements & More",
       "lang_orig": "en",
       "publishedAt": "2026-11-02T15:45:00.000Z",
-      "fetchedAt": "2026-11-06T15:44:03.654Z",
+      "fetchedAt": "2026-11-06T20:41:43.602Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -153,13 +153,13 @@
       "title_orig": "The Division 2: Echoes of Central Park Launch Twitch Drops",
       "lang_orig": "en",
       "publishedAt": "2026-11-03T15:00:00.000Z",
-      "fetchedAt": "2026-11-06T15:44:03.654Z",
+      "fetchedAt": "2026-11-06T20:41:43.602Z",
       "category": "community",
       "tags": [
         "twitch-drops",
         "exotic"
       ],
-      "importance": 64,
+      "importance": 63,
       "confidence": "official",
       "headline_en": "The Division 2: Echoes of Central Park Launch Twitch Drops",
       "headline_zhHant": "《全境封鎖 2 - 中央公園的迴響》發行 Twitch 掉寶",
@@ -181,10 +181,10 @@
       "title_orig": "Play The Division 2: Echoes of Central Park Today!",
       "lang_orig": "en",
       "publishedAt": "2026-11-03T17:13:46.000Z",
-      "fetchedAt": "2026-11-06T15:44:03.654Z",
+      "fetchedAt": "2026-11-06T20:41:43.602Z",
       "category": "community",
       "tags": [],
-      "importance": 64,
+      "importance": 63,
       "confidence": "official",
       "headline_en": "Play The Division 2: Echoes of Central Park Today!",
       "headline_zhHant": "《全境封鎖 2 - 中央公園的迴響》今天開玩！",
@@ -233,7 +233,7 @@
       "title_orig": "How To Get The Ratel Exotic Assault Rifle #TheDivision2 #TheRatel #RatelExotic",
       "lang_orig": "en",
       "publishedAt": "2026-11-04T07:28:42.000Z",
-      "fetchedAt": "2026-11-06T15:44:03.654Z",
+      "fetchedAt": "2026-11-06T20:41:43.602Z",
       "category": "arsenal",
       "tags": [
         "dlc",
@@ -255,14 +255,14 @@
       "status": "new"
     },
     {
-      "id": "bp7p9i",
+      "id": "1gq3w2o",
       "sourceId": "youtube",
       "sourceName": "灰帽特工   Gray Hat Agent",
-      "sourceUrl": "https://www.youtube.com/watch?v=crMyROKH6CE",
-      "title_orig": "逆火称霸中央公園！超穩定消滅中央公園BOSS并獲取限定奇特武器＆裝備組 #全境封鎖 #全境封鎖2 #全境封鎖3#中央公園 #thedivision#thedivision2 #thedivision3",
+      "sourceUrl": "https://www.youtube.com/watch?v=hQojyKKLpn4",
+      "title_orig": "這面具閃瞎眼！中央公園獵人龜裂面具獲取攻略 彩蛋解謎 點位解析 #全境封鎖 #全境封鎖2 #全境封鎖3 #thedivision #thedivision2 #thedivision3",
       "lang_orig": "zh",
-      "publishedAt": "2026-11-05T14:28:10.000Z",
-      "fetchedAt": "2026-11-06T15:44:03.654Z",
+      "publishedAt": "2026-11-05T20:50:35.000Z",
+      "fetchedAt": "2026-11-06T20:41:43.602Z",
       "category": "franchise",
       "tags": [
         "video"
@@ -270,15 +270,15 @@
       "importance": 57,
       "confidence": "community",
       "headline_en": "pending",
-      "headline_zhHant": "逆火称霸中央公園！超穩定消滅中央公園BOSS并獲取限定奇特武器＆裝備組 #全境封鎖 #全境封鎖2 #全境封鎖3#中央公園 #thedivision#thedivision2 #thedivision3",
+      "headline_zhHant": "這面具閃瞎眼！中央公園獵人龜裂面具獲取攻略 彩蛋解謎 點位解析 #全境封鎖 #全境封鎖2 #全境封鎖3 #thedivision #thedivision2 #thedivision3",
       "summary_en": "pending",
       "summary_zhHant": "感謝特工們按贊訂閲小鈴鐺 可能幫到特工們的視頻：",
       "summaryKind": "extract",
       "alsoReportedBy": [],
       "media": [],
-      "videoId": "crMyROKH6CE",
+      "videoId": "hQojyKKLpn4",
       "relatedIds": [],
-      "firstSeenAt": "2026-11-05T20:44:03.796Z",
+      "firstSeenAt": "2026-11-06T20:41:43.602Z",
       "status": "new"
     },
     {
@@ -310,6 +310,33 @@
       "status": "new"
     },
     {
+      "id": "bp7p9i",
+      "sourceId": "youtube",
+      "sourceName": "灰帽特工   Gray Hat Agent",
+      "sourceUrl": "https://www.youtube.com/watch?v=crMyROKH6CE",
+      "title_orig": "逆火称霸中央公園！超穩定消滅中央公園BOSS并獲取限定奇特武器＆裝備組 #全境封鎖 #全境封鎖2 #全境封鎖3#中央公園 #thedivision#thedivision2 #thedivision3",
+      "lang_orig": "zh",
+      "publishedAt": "2026-11-05T14:28:10.000Z",
+      "fetchedAt": "2026-11-06T20:41:43.602Z",
+      "category": "franchise",
+      "tags": [
+        "video"
+      ],
+      "importance": 56,
+      "confidence": "community",
+      "headline_en": "pending",
+      "headline_zhHant": "逆火称霸中央公園！超穩定消滅中央公園BOSS并獲取限定奇特武器＆裝備組 #全境封鎖 #全境封鎖2 #全境封鎖3#中央公園 #thedivision#thedivision2 #thedivision3",
+      "summary_en": "pending",
+      "summary_zhHant": "感謝特工們按贊訂閲小鈴鐺 可能幫到特工們的視頻：",
+      "summaryKind": "extract",
+      "alsoReportedBy": [],
+      "media": [],
+      "videoId": "crMyROKH6CE",
+      "relatedIds": [],
+      "firstSeenAt": "2026-11-05T20:44:03.796Z",
+      "status": "new"
+    },
+    {
       "id": "10jq918",
       "sourceId": "youtube",
       "sourceName": "邪神弱鴨",
@@ -317,7 +344,7 @@
       "title_orig": "全境封鎖2 速拿奇特鼬獾突擊步槍與重裝出擊手套",
       "lang_orig": "zh",
       "publishedAt": "2026-11-05T07:24:30.000Z",
-      "fetchedAt": "2026-11-06T15:44:03.654Z",
+      "fetchedAt": "2026-11-06T20:41:43.602Z",
       "category": "arsenal",
       "tags": [
         "video"
@@ -337,6 +364,33 @@
       "status": "new"
     },
     {
+      "id": "1az9jep",
+      "sourceId": "youtube",
+      "sourceName": "B站森牧阳",
+      "sourceUrl": "https://www.youtube.com/watch?v=RKGn1PgnEFY",
+      "title_orig": "全境封锁2：Y8S3猎捕大师本奇特：全副武装！天赋演示",
+      "lang_orig": "zh",
+      "publishedAt": "2026-11-04T20:50:31.000Z",
+      "fetchedAt": "2026-11-06T20:41:43.602Z",
+      "category": "updates",
+      "tags": [
+        "video"
+      ],
+      "importance": 55,
+      "confidence": "community",
+      "headline_en": "pending",
+      "headline_zhHant": "全境封锁2：Y8S3猎捕大师本奇特：全副武装！天赋演示",
+      "summary_en": "pending",
+      "summary_zhHant": "合理讨论，你杆你对，个人观点，仅供参考!",
+      "summaryKind": "extract",
+      "alsoReportedBy": [],
+      "media": [],
+      "videoId": "RKGn1PgnEFY",
+      "relatedIds": [],
+      "firstSeenAt": "2026-11-05T09:06:48.646Z",
+      "status": "new"
+    },
+    {
       "id": "1wi9bu",
       "sourceId": "youtube",
       "sourceName": "灰帽特工   Gray Hat Agent",
@@ -344,7 +398,7 @@
       "title_orig": "中央公園隱藏獵人“無形” 面具獲取攻略  #全境封鎖 #全境封鎖2 #全境封鎖3 #thedivision #thedivision2 #thedivision3",
       "lang_orig": "zh",
       "publishedAt": "2026-11-04T13:13:24.000Z",
-      "fetchedAt": "2026-11-06T15:44:03.654Z",
+      "fetchedAt": "2026-11-06T20:41:43.602Z",
       "category": "franchise",
       "tags": [
         "video"
@@ -371,13 +425,13 @@
       "title_orig": "Last Chance to Pre-Purchase The Division 2: Echoes of Central Park",
       "lang_orig": "en",
       "publishedAt": "2026-10-28T13:29:29.000Z",
-      "fetchedAt": "2026-11-06T15:44:03.654Z",
+      "fetchedAt": "2026-11-06T20:41:43.602Z",
       "category": "missions",
       "tags": [
         "dlc",
         "exotic"
       ],
-      "importance": 51,
+      "importance": 50,
       "confidence": "official",
       "headline_en": "Last Chance to Pre-Purchase The Division 2: Echoes of Central Park",
       "headline_zhHant": "《全境封鎖 2 - 中央公園的迴響》預購最後機會",
@@ -391,30 +445,6 @@
       "status": "new"
     },
     {
-      "id": "rchnq7",
-      "sourceId": "steam-news",
-      "sourceName": "Ubisoft (via Steam News)",
-      "sourceUrl": "https://store.steampowered.com/news/app/2221490/view/1847286114049455",
-      "title_orig": "Echoes of Central Park Launch Livestream",
-      "lang_orig": "en",
-      "publishedAt": "2026-10-27T16:01:04.000Z",
-      "fetchedAt": "2026-11-06T15:44:03.654Z",
-      "category": "community",
-      "tags": [],
-      "importance": 49,
-      "confidence": "official",
-      "headline_en": "Echoes of Central Park Launch Livestream",
-      "headline_zhHant": "《中央公園的迴響》發行直播",
-      "summary_en": "Agents, what are you curious about? We'll do our best to cover it live!The Echoes of Central Park Launch Stream goes live on November 2…",
-      "summary_zhHant": "pending",
-      "summaryKind": "extract",
-      "alsoReportedBy": [],
-      "media": [],
-      "relatedIds": [],
-      "firstSeenAt": "2026-10-27T16:01:04.000Z",
-      "status": "new"
-    },
-    {
       "id": "hsu80a",
       "sourceId": "bahamut",
       "sourceName": "巴哈姆特 全境封鎖板",
@@ -422,7 +452,7 @@
       "title_orig": "【攻略】部分技能的解鎖方式整理",
       "lang_orig": "zh",
       "publishedAt": "2026-11-05T05:49:00.000Z",
-      "fetchedAt": "2026-11-06T15:44:03.654Z",
+      "fetchedAt": "2026-11-06T20:41:43.602Z",
       "category": "builds",
       "tags": [],
       "importance": 49,
@@ -439,29 +469,27 @@
       "status": "new"
     },
     {
-      "id": "kmjycv",
-      "sourceId": "bahamut",
-      "sourceName": "巴哈姆特 全境封鎖板",
-      "sourceUrl": "https://forum.gamer.com.tw/C.php?bsn=24460&snA=32874",
-      "title_orig": "【情報】中央公園的迴響 DLC 夥伴 - 相關資訊",
-      "lang_orig": "zh",
-      "publishedAt": "2026-11-05T04:03:00.000Z",
-      "fetchedAt": "2026-11-06T15:44:03.654Z",
-      "category": "missions",
-      "tags": [
-        "dlc"
-      ],
-      "importance": 49,
-      "confidence": "community",
-      "headline_en": "pending",
-      "headline_zhHant": "【情報】中央公園的迴響 DLC 夥伴 - 相關資訊",
-      "summary_en": "pending",
-      "summary_zhHant": "遊戲內的資訊整理成圖表方便一覽 內容若有錯誤請再指教",
+      "id": "rchnq7",
+      "sourceId": "steam-news",
+      "sourceName": "Ubisoft (via Steam News)",
+      "sourceUrl": "https://store.steampowered.com/news/app/2221490/view/1847286114049455",
+      "title_orig": "Echoes of Central Park Launch Livestream",
+      "lang_orig": "en",
+      "publishedAt": "2026-10-27T16:01:04.000Z",
+      "fetchedAt": "2026-11-06T20:41:43.602Z",
+      "category": "community",
+      "tags": [],
+      "importance": 48,
+      "confidence": "official",
+      "headline_en": "Echoes of Central Park Launch Livestream",
+      "headline_zhHant": "《中央公園的迴響》發行直播",
+      "summary_en": "Agents, what are you curious about? We'll do our best to cover it live!The Echoes of Central Park Launch Stream goes live on November 2…",
+      "summary_zhHant": "pending",
       "summaryKind": "extract",
       "alsoReportedBy": [],
       "media": [],
       "relatedIds": [],
-      "firstSeenAt": "2026-11-05T04:04:30.015Z",
+      "firstSeenAt": "2026-10-27T16:01:04.000Z",
       "status": "new"
     },
     {
@@ -472,7 +500,7 @@
       "title_orig": "Echoes of Central Park Costume Contest",
       "lang_orig": "en",
       "publishedAt": "2026-10-27T10:34:40.000Z",
-      "fetchedAt": "2026-11-06T15:44:03.654Z",
+      "fetchedAt": "2026-11-06T20:41:43.602Z",
       "category": "community",
       "tags": [],
       "importance": 48,
@@ -489,29 +517,29 @@
       "status": "new"
     },
     {
-      "id": "1p4skj2",
+      "id": "kmjycv",
       "sourceId": "bahamut",
       "sourceName": "巴哈姆特 全境封鎖板",
-      "sourceUrl": "https://forum.gamer.com.tw/C.php?bsn=24460&snA=32864",
-      "title_orig": "【情報】Twitch掉寶 11/03 - 11/10",
+      "sourceUrl": "https://forum.gamer.com.tw/C.php?bsn=24460&snA=32874",
+      "title_orig": "【情報】中央公園的迴響 DLC 夥伴 - 相關資訊",
       "lang_orig": "zh",
-      "publishedAt": "2026-11-03T15:03:00.000Z",
-      "fetchedAt": "2026-11-06T15:44:03.654Z",
-      "category": "community",
+      "publishedAt": "2026-11-05T04:03:00.000Z",
+      "fetchedAt": "2026-11-06T20:41:43.602Z",
+      "category": "missions",
       "tags": [
         "dlc"
       ],
-      "importance": 46,
+      "importance": 48,
       "confidence": "community",
       "headline_en": "pending",
-      "headline_zhHant": "【情報】Twitch掉寶 11/03 - 11/10",
+      "headline_zhHant": "【情報】中央公園的迴響 DLC 夥伴 - 相關資訊",
       "summary_en": "pending",
-      "summary_zhHant": "上個掉寶資訊圖 安安我是米孜育碧的合作創作者 這次11/03 - 11/10有中央公園DLC的掉寶活動大家記得掛台記得音…",
+      "summary_zhHant": "遊戲內的資訊整理成圖表方便一覽 內容若有錯誤請再指教",
       "summaryKind": "extract",
       "alsoReportedBy": [],
       "media": [],
       "relatedIds": [],
-      "firstSeenAt": "2026-11-03T15:03:00.000Z",
+      "firstSeenAt": "2026-11-05T04:04:30.015Z",
       "status": "new"
     },
     {
@@ -522,7 +550,7 @@
       "title_orig": "11 月第一輪 Twitch 掉寶開跑",
       "lang_orig": "zh",
       "publishedAt": "2026-11-04T00:00:00Z",
-      "fetchedAt": "2026-11-06T15:44:03.654Z",
+      "fetchedAt": "2026-11-06T20:41:43.602Z",
       "category": "community",
       "tags": [
         "twitch-drops",
@@ -542,6 +570,32 @@
       "status": "new"
     },
     {
+      "id": "1p4skj2",
+      "sourceId": "bahamut",
+      "sourceName": "巴哈姆特 全境封鎖板",
+      "sourceUrl": "https://forum.gamer.com.tw/C.php?bsn=24460&snA=32864",
+      "title_orig": "【情報】Twitch掉寶 11/03 - 11/10",
+      "lang_orig": "zh",
+      "publishedAt": "2026-11-03T15:03:00.000Z",
+      "fetchedAt": "2026-11-06T20:41:43.602Z",
+      "category": "community",
+      "tags": [
+        "dlc"
+      ],
+      "importance": 45,
+      "confidence": "community",
+      "headline_en": "pending",
+      "headline_zhHant": "【情報】Twitch掉寶 11/03 - 11/10",
+      "summary_en": "pending",
+      "summary_zhHant": "上個掉寶資訊圖 安安我是米孜育碧的合作創作者 這次11/03 - 11/10有中央公園DLC的掉寶活動大家記得掛台記得音…",
+      "summaryKind": "extract",
+      "alsoReportedBy": [],
+      "media": [],
+      "relatedIds": [],
+      "firstSeenAt": "2026-11-03T15:03:00.000Z",
+      "status": "new"
+    },
+    {
       "id": "1qiqkzx",
       "sourceId": "bahamut",
       "sourceName": "巴哈姆特 全境封鎖板",
@@ -549,7 +603,7 @@
       "title_orig": "【情報】TU29.3 / Y8S3.3 Patchnote翻譯｜跨平台遊玩、衝突戰改善、牧羊人活動與問題修正",
       "lang_orig": "zh",
       "publishedAt": "2026-11-03T13:57:00.000Z",
-      "fetchedAt": "2026-11-06T15:44:03.654Z",
+      "fetchedAt": "2026-11-06T20:41:43.602Z",
       "category": "updates",
       "tags": [
         "dlc"
@@ -575,10 +629,10 @@
       "title_orig": "【心得】無陷阱手T10日蝕複合控場(全汞合金)",
       "lang_orig": "zh",
       "publishedAt": "2026-11-03T05:31:00.000Z",
-      "fetchedAt": "2026-11-06T15:44:03.654Z",
+      "fetchedAt": "2026-11-06T20:41:43.602Z",
       "category": "builds",
       "tags": [],
-      "importance": 45,
+      "importance": 44,
       "confidence": "community",
       "headline_en": "pending",
       "headline_zhHant": "【心得】無陷阱手T10日蝕複合控場(全汞合金)",
@@ -599,12 +653,12 @@
       "title_orig": "【情報】【已開機】關機維護公告 - 2026/11/03(二) 16:00 (Y8S3.3 中央公園DLC)，延長1.5小時",
       "lang_orig": "zh",
       "publishedAt": "2026-11-02T16:43:00.000Z",
-      "fetchedAt": "2026-11-06T15:44:03.654Z",
+      "fetchedAt": "2026-11-06T20:41:43.602Z",
       "category": "updates",
       "tags": [
         "dlc"
       ],
-      "importance": 44,
+      "importance": 43,
       "confidence": "community",
       "headline_en": "pending",
       "headline_zhHant": "【情報】【已開機】關機維護公告 - 2026/11/03(二) 16:00 (Y8S3.3 中央公園DLC)，延長1.5小時",
@@ -625,12 +679,12 @@
       "title_orig": "【情報】全境2 TUY8S3.2 血月高照、創作者合作、升級更新 2F R/MMR BUFF",
       "lang_orig": "zh",
       "publishedAt": "2026-10-27T07:04:00.000Z",
-      "fetchedAt": "2026-11-06T15:44:03.654Z",
+      "fetchedAt": "2026-11-06T20:41:43.602Z",
       "category": "updates",
       "tags": [
         "title-update"
       ],
-      "importance": 30,
+      "importance": 29,
       "confidence": "community",
       "headline_en": "pending",
       "headline_zhHant": "【情報】全境2 TUY8S3.2 血月高照、創作者合作、升級更新 2F R/MMR BUFF",
@@ -651,7 +705,7 @@
       "title_orig": "【情報】［活動警報］復仇者懸賞",
       "lang_orig": "zh",
       "publishedAt": "2026-10-26T11:51:00.000Z",
-      "fetchedAt": "2026-11-06T15:44:03.654Z",
+      "fetchedAt": "2026-11-06T20:41:43.602Z",
       "category": "missions",
       "tags": [],
       "importance": 28,
@@ -672,22 +726,22 @@
     {
       "sourceId": "steam-news",
       "ok": true,
-      "checkedAt": "2026-11-06T15:44:03.654Z"
+      "checkedAt": "2026-11-06T20:41:43.602Z"
     },
     {
       "sourceId": "ubisoft-en",
       "ok": true,
-      "checkedAt": "2026-11-06T15:44:03.654Z"
+      "checkedAt": "2026-11-06T20:41:43.602Z"
     },
     {
       "sourceId": "ubisoft-zh-tw",
       "ok": true,
-      "checkedAt": "2026-11-06T15:44:03.654Z"
+      "checkedAt": "2026-11-06T20:41:43.602Z"
     },
     {
       "sourceId": "bahamut",
       "ok": true,
-      "checkedAt": "2026-11-06T15:44:03.654Z"
+      "checkedAt": "2026-11-06T20:41:43.602Z"
     }
   ]
 }
