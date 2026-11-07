@@ -1,11 +1,11 @@
 {
-  "lastRun": "2026-11-07T00:50:25.603Z",
-  "durationMs": 11404,
+  "lastRun": "2026-11-07T01:36:53.359Z",
+  "durationMs": 12775,
   "edition": {
     "date": "2026-11-07",
     "number": 4,
-    "items": 26,
-    "zhPending": 6
+    "items": 33,
+    "zhPending": 11
   },
   "sources": [
     {
@@ -25,9 +25,8 @@
     },
     {
       "id": "bahamut",
-      "ok": false,
-      "items": 0,
-      "note": "Error: HTTP 403"
+      "ok": true,
+      "items": 8
     }
   ],
   "videos": {
@@ -35,7 +34,7 @@
     "youtubeApiConfigured": true
   },
   "budget": {
-    "youtubeQuotaUnits": 911,
+    "youtubeQuotaUnits": 311,
     "costUsd": 0
   }
 }
