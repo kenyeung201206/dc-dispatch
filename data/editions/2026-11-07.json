@@ -1,7 +1,7 @@
 {
   "date": "2026-11-07",
   "editionNumber": 4,
-  "generatedAt": "2026-11-07T12:40:31.520Z",
+  "generatedAt": "2026-11-07T14:36:10.137Z",
   "meta": {
     "season_en": "Red Horizon",
     "season_zhHant": "Red Horizon 賽季",
@@ -17,7 +17,7 @@
       "title_orig": "[TUY8S3.3] Echoes of Central Park Launch, Crossplay Rollout, Conflict Improvements & More",
       "lang_orig": "en",
       "publishedAt": "2026-11-02T15:45:00.000Z",
-      "fetchedAt": "2026-11-07T12:40:31.520Z",
+      "fetchedAt": "2026-11-07T14:36:10.137Z",
       "category": "updates",
       "tags": [
         "title-update",
@@ -25,7 +25,7 @@
         "event",
         "pvp"
       ],
-      "importance": 88,
+      "importance": 87,
       "confidence": "official",
       "headline_en": "[TUY8S3.3] Echoes of Central Park Launch, Crossplay Rollout, Conflict Improvements & More",
       "headline_zhHant": "pending",
@@ -54,12 +54,12 @@
       "title_orig": "The Division 2: Echoes of Central Park DLC is available now!",
       "lang_orig": "en",
       "publishedAt": "2026-11-03T15:00:00.000Z",
-      "fetchedAt": "2026-11-07T12:40:31.520Z",
+      "fetchedAt": "2026-11-07T14:36:10.137Z",
       "category": "missions",
       "tags": [
         "dlc"
       ],
-      "importance": 77,
+      "importance": 76,
       "confidence": "official",
       "headline_en": "Echoes of Central Park DLC is out now",
       "headline_zhHant": "《中央公園的迴響》DLC 正式推出",
@@ -321,12 +321,12 @@
       "title_orig": "[TUY8S3.3] Echoes of Central Park Launch, Crossplay Rollout, Conflict Improvements & More",
       "lang_orig": "en",
       "publishedAt": "2026-11-02T15:45:00.000Z",
-      "fetchedAt": "2026-11-07T12:40:31.520Z",
+      "fetchedAt": "2026-11-07T14:36:10.137Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
       ],
-      "importance": 66,
+      "importance": 65,
       "confidence": "official",
       "headline_en": "Known issue (TU Y8S3.3): After completing all Manhunt Scouts marked as High-Value Targets, the Climax Mission…",
       "headline_zhHant": "pending",
@@ -458,6 +458,34 @@
       "videoId": "fs2r_qLSZiQ",
       "relatedIds": [],
       "firstSeenAt": "2026-11-07T00:50:14.199Z",
+      "status": "new"
+    },
+    {
+      "id": "vajurs",
+      "sourceId": "youtube",
+      "sourceName": "widdz",
+      "sourceUrl": "https://www.youtube.com/watch?v=9CSGIj0iYio",
+      "title_orig": "NEW Best SHD Farm in Central Park: Do This NOW! (The Division 2)",
+      "lang_orig": "en",
+      "publishedAt": "2026-11-07T13:50:25.000Z",
+      "fetchedAt": "2026-11-07T14:36:10.137Z",
+      "category": "arsenal",
+      "tags": [
+        "exotic",
+        "video"
+      ],
+      "importance": 63,
+      "confidence": "community",
+      "headline_en": "NEW Best SHD Farm in Central Park: Do This NOW! (The Division 2)",
+      "headline_zhHant": "pending",
+      "summary_en": "The new best SHD AND exotic farm: Contaminated mode in Central Park. With the new Loaded for Bear gloves the Guardians die in one shot…",
+      "summary_zhHant": "pending",
+      "summaryKind": "extract",
+      "alsoReportedBy": [],
+      "media": [],
+      "videoId": "9CSGIj0iYio",
+      "relatedIds": [],
+      "firstSeenAt": "2026-11-07T14:36:10.137Z",
       "status": "new"
     },
     {
@@ -604,34 +632,6 @@
       "status": "new"
     },
     {
-      "id": "1sx320d",
-      "sourceId": "ubisoft-en",
-      "sourceName": "Ubisoft",
-      "sourceUrl": "https://www.ubisoft.com/en-us/game/the-division/the-division-2/news-updates/5EEgwKS6kDqyvUFo5PJYsB/the-division-2-echoes-of-central-park-launch-twitch-drops",
-      "title_orig": "The Division 2: Echoes of Central Park Launch Twitch Drops",
-      "lang_orig": "en",
-      "publishedAt": "2026-11-03T15:00:00.000Z",
-      "fetchedAt": "2026-11-07T12:40:31.520Z",
-      "category": "community",
-      "tags": [
-        "twitch-drops",
-        "exotic"
-      ],
-      "importance": 62,
-      "confidence": "official",
-      "headline_en": "The Division 2: Echoes of Central Park Launch Twitch Drops",
-      "headline_zhHant": "《全境封鎖 2 - 中央公園的迴響》發行 Twitch 掉寶",
-      "summary_en": "Tune in from November 3 – November 10 to earn exclusive rewards while watching your favorite The Division 2 streamers on Twitch.",
-      "summary_zhHant": "11 月 3 日至 11 月 10 日期間，在 Twitch 上觀看你喜愛的《全境封鎖 2》實況主即可獲得專屬獎勵。",
-      "summaryKind": "extract",
-      "alsoReportedBy": [],
-      "media": [],
-      "imageId": "ubi-5EEgwKS6kDqyvUFo5PJYsB",
-      "relatedIds": [],
-      "firstSeenAt": "2026-11-03T15:00:00.000Z",
-      "status": "new"
-    },
-    {
       "id": "1tv75gq",
       "sourceId": "steam-news",
       "sourceName": "Ubisoft (via Steam News)",
@@ -639,7 +639,7 @@
       "title_orig": "Play The Division 2: Echoes of Central Park Today!",
       "lang_orig": "en",
       "publishedAt": "2026-11-03T17:13:46.000Z",
-      "fetchedAt": "2026-11-07T12:40:31.520Z",
+      "fetchedAt": "2026-11-07T14:36:10.137Z",
       "category": "community",
       "tags": [],
       "importance": 62,
@@ -709,6 +709,34 @@
       "videoId": "osx29wyFK80",
       "relatedIds": [],
       "firstSeenAt": "2026-11-07T06:47:46.217Z",
+      "status": "new"
+    },
+    {
+      "id": "1sx320d",
+      "sourceId": "ubisoft-en",
+      "sourceName": "Ubisoft",
+      "sourceUrl": "https://www.ubisoft.com/en-us/game/the-division/the-division-2/news-updates/5EEgwKS6kDqyvUFo5PJYsB/the-division-2-echoes-of-central-park-launch-twitch-drops",
+      "title_orig": "The Division 2: Echoes of Central Park Launch Twitch Drops",
+      "lang_orig": "en",
+      "publishedAt": "2026-11-03T15:00:00.000Z",
+      "fetchedAt": "2026-11-07T14:36:10.137Z",
+      "category": "community",
+      "tags": [
+        "twitch-drops",
+        "exotic"
+      ],
+      "importance": 61,
+      "confidence": "official",
+      "headline_en": "The Division 2: Echoes of Central Park Launch Twitch Drops",
+      "headline_zhHant": "《全境封鎖 2 - 中央公園的迴響》發行 Twitch 掉寶",
+      "summary_en": "Tune in from November 3 – November 10 to earn exclusive rewards while watching your favorite The Division 2 streamers on Twitch.",
+      "summary_zhHant": "11 月 3 日至 11 月 10 日期間，在 Twitch 上觀看你喜愛的《全境封鎖 2》實況主即可獲得專屬獎勵。",
+      "summaryKind": "extract",
+      "alsoReportedBy": [],
+      "media": [],
+      "imageId": "ubi-5EEgwKS6kDqyvUFo5PJYsB",
+      "relatedIds": [],
+      "firstSeenAt": "2026-11-03T15:00:00.000Z",
       "status": "new"
     },
     {
@@ -851,6 +879,34 @@
       "videoId": "2s6CKW3S0hE",
       "relatedIds": [],
       "firstSeenAt": "2026-11-07T06:47:46.217Z",
+      "status": "new"
+    },
+    {
+      "id": "z7hcmj",
+      "sourceId": "youtube",
+      "sourceName": "Maniacal Thumbz",
+      "sourceUrl": "https://www.youtube.com/watch?v=6zSQN_9t05w",
+      "title_orig": "LOADED FOR BEAR EXOTIC GLOVES BUILD! | T10 ESCALATION | THE DIVISION 2",
+      "lang_orig": "en",
+      "publishedAt": "2026-11-07T13:01:53.000Z",
+      "fetchedAt": "2026-11-07T14:36:10.137Z",
+      "category": "arsenal",
+      "tags": [
+        "exotic",
+        "video"
+      ],
+      "importance": 59,
+      "confidence": "community",
+      "headline_en": "LOADED FOR BEAR EXOTIC GLOVES BUILD! | T10 ESCALATION | THE DIVISION 2",
+      "headline_zhHant": "pending",
+      "summary_en": "🔥 THE DIVISION 2 | LOADED FOR BEAR EXOTIC GLOVES | T10 ESCALATION Looking to take your Loaded for Bear Exotic Gloves into T10 Escalation?…",
+      "summary_zhHant": "pending",
+      "summaryKind": "extract",
+      "alsoReportedBy": [],
+      "media": [],
+      "videoId": "6zSQN_9t05w",
+      "relatedIds": [],
+      "firstSeenAt": "2026-11-07T14:36:10.137Z",
       "status": "new"
     },
     {
@@ -1429,6 +1485,33 @@
       "status": "new"
     },
     {
+      "id": "ckjmz3",
+      "sourceId": "youtube",
+      "sourceName": "PS & PC 遊戲交流區-主頻道",
+      "sourceUrl": "https://www.youtube.com/watch?v=GJZhYfOQJyg",
+      "title_orig": "PS5　全境封鎖2　中央公園#4",
+      "lang_orig": "zh",
+      "publishedAt": "2026-11-07T09:33:09.000Z",
+      "fetchedAt": "2026-11-07T14:36:10.137Z",
+      "category": "community",
+      "tags": [
+        "video"
+      ],
+      "importance": 56,
+      "confidence": "community",
+      "headline_en": "pending",
+      "headline_zhHant": "PS5　全境封鎖2　中央公園#4",
+      "summary_en": "pending",
+      "summary_zhHant": "PS&PC遊戲交流區",
+      "summaryKind": "extract",
+      "alsoReportedBy": [],
+      "media": [],
+      "videoId": "GJZhYfOQJyg",
+      "relatedIds": [],
+      "firstSeenAt": "2026-11-07T14:36:10.137Z",
+      "status": "new"
+    },
+    {
       "id": "1yeqpcs",
       "sourceId": "youtube",
       "sourceName": "ManaWar Gaming",
@@ -1617,109 +1700,28 @@
       "relatedIds": [],
       "firstSeenAt": "2026-11-07T06:47:46.217Z",
       "status": "new"
-    },
-    {
-      "id": "1lbaq1p",
-      "sourceId": "youtube",
-      "sourceName": "PS & PC 遊戲交流區-主頻道",
-      "sourceUrl": "https://www.youtube.com/watch?v=o7jS0hJ2SCc",
-      "title_orig": "PS5　全境封鎖2　中央公園#2",
-      "lang_orig": "zh",
-      "publishedAt": "2026-11-06T20:39:37.000Z",
-      "fetchedAt": "2026-11-07T06:47:46.217Z",
-      "category": "community",
-      "tags": [
-        "video"
-      ],
-      "importance": 55,
-      "confidence": "community",
-      "headline_en": "pending",
-      "headline_zhHant": "PS5　全境封鎖2　中央公園#2",
-      "summary_en": "pending",
-      "summary_zhHant": "PS&PC遊戲交流區",
-      "summaryKind": "extract",
-      "alsoReportedBy": [],
-      "media": [],
-      "videoId": "o7jS0hJ2SCc",
-      "relatedIds": [],
-      "firstSeenAt": "2026-11-07T06:47:46.217Z",
-      "status": "new"
-    },
-    {
-      "id": "1x3ash6",
-      "sourceId": "youtube",
-      "sourceName": "明喵之我思故我宅",
-      "sourceUrl": "https://www.youtube.com/watch?v=SUofng4aHio",
-      "title_orig": "全境封鎖2新手向,高CP的機密任務國家債券銀行軍械庫,配裝分享,有效率的升級方法!!!(遊戲攻略,遊戲心得)",
-      "lang_orig": "zh",
-      "publishedAt": "2026-11-06T08:00:26.000Z",
-      "fetchedAt": "2026-11-07T05:20:53.528Z",
-      "category": "builds",
-      "tags": [
-        "video"
-      ],
-      "importance": 55,
-      "confidence": "community",
-      "headline_en": "pending",
-      "headline_zhHant": "全境封鎖2新手向,高CP的機密任務國家債券銀行軍械庫,配裝分享,有效率的升級方法!!!(遊戲攻略,遊戲心得)",
-      "summary_en": "pending",
-      "summary_zhHant": "喜歡請按讚訂閱,謝謝觀賞~~~",
-      "summaryKind": "extract",
-      "alsoReportedBy": [],
-      "media": [],
-      "videoId": "SUofng4aHio",
-      "relatedIds": [],
-      "firstSeenAt": "2026-11-07T05:20:53.528Z",
-      "status": "new"
-    },
-    {
-      "id": "vttksm",
-      "sourceId": "youtube",
-      "sourceName": "Leighhockey",
-      "sourceUrl": "https://www.youtube.com/watch?v=Cvx6J1DwExo",
-      "title_orig": "Division 2 Guardian Farming and Build Testing",
-      "lang_orig": "en",
-      "publishedAt": "2026-11-06T04:39:39.000Z",
-      "fetchedAt": "2026-11-07T05:20:53.528Z",
-      "category": "builds",
-      "tags": [
-        "video"
-      ],
-      "importance": 55,
-      "confidence": "community",
-      "headline_en": "Division 2 Guardian Farming and Build Testing",
-      "headline_zhHant": "pending",
-      "summary_en": "Division 2",
-      "summary_zhHant": "pending",
-      "summaryKind": "extract",
-      "alsoReportedBy": [],
-      "media": [],
-      "videoId": "Cvx6J1DwExo",
-      "relatedIds": [],
-      "firstSeenAt": "2026-11-07T05:20:53.528Z",
-      "status": "new"
     }
   ],
   "sources": [
     {
       "sourceId": "steam-news",
       "ok": true,
-      "checkedAt": "2026-11-07T12:40:31.520Z"
+      "checkedAt": "2026-11-07T14:36:10.137Z"
     },
     {
       "sourceId": "ubisoft-en",
       "ok": true,
-      "checkedAt": "2026-11-07T12:40:31.520Z"
+      "checkedAt": "2026-11-07T14:36:10.137Z"
     },
     {
       "sourceId": "ubisoft-zh-tw",
       "ok": true,
-      "checkedAt": "2026-11-07T12:40:31.520Z"
+      "checkedAt": "2026-11-07T14:36:10.137Z"
     },
     {
       "sourceId": "bahamut",
       "ok": true,
-      "checkedAt": "2026-11-07T12:40:31.520Z"
+      "checkedAt": "2026-11-07T14:36:10.137Z"
     }
   ]
 }
