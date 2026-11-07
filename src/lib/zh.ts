@@ -5,6 +5,7 @@
  */
 import raw from '../../data/translations.zh.json' with { type: 'json' };
 import { TranslationsZhSchema, type Exotic, type Item, type Patch } from '../schema/item.ts';
+import { zhTerms } from './terms.ts';
 
 const parsed = TranslationsZhSchema.safeParse(raw);
 if (!parsed.success) throw new Error(`Invalid data/translations.zh.json: ${parsed.error.message}`);
@@ -40,7 +41,8 @@ export function videoTitleZh(v: { id: string; title: string; titleZh?: string })
 }
 
 export function exoticZh(e: Exotic): { name?: string; talent?: string; text?: string } {
-  return zh.exotics[e.name] ?? {};
+  const x = zh.exotics[e.name] ?? {};
+  return { ...x, talent: x.talent && zhTerms(x.talent), text: x.text && zhTerms(x.text) };
 }
 
 export function patchZh(p: Patch): { title?: string; sections?: string[]; changes?: string[] } {
@@ -48,8 +50,8 @@ export function patchZh(p: Patch): { title?: string; sections?: string[]; change
   if (!tr) return {};
   return {
     title: tr.title,
-    sections: tr.sections.length === p.sections.length ? tr.sections : undefined,
-    changes: tr.changes.length === p.changes.length ? tr.changes : undefined,
+    sections: tr.sections.length === p.sections.length ? tr.sections.map(zhTerms) : undefined,
+    changes: tr.changes.length === p.changes.length ? tr.changes.map(zhTerms) : undefined,
   };
 }
 

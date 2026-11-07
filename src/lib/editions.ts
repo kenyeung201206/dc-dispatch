@@ -2,6 +2,7 @@ import { EditionSchema, type Edition, type Item } from '../schema/item.ts';
 import type { Locale } from '../i18n/index.ts';
 import { getImage } from './images.ts';
 import { hasZh, withZh } from './zh.ts';
+import { zhTerms } from './terms.ts';
 
 const files = import.meta.glob<{ default: unknown }>('../../data/editions/*.json', { eager: true });
 
@@ -79,7 +80,8 @@ export function localized(item: Item, field: LocalizedField, locale: Locale): { 
   const tidy = (v: string) => (field === 'headline' ? stripHashtags(v) : v);
   const ok = (v?: string) => (v && v !== 'pending' ? tidy(v) : undefined);
   const en = ok(item[`${field}_en`]);
-  const zh = ok(item[`${field}_zhHant`]);
+  const zhRaw = ok(item[`${field}_zhHant`]);
+  const zh = zhRaw && zhTerms(zhRaw);
   if (locale === 'en') return en ? { text: en, pending: false, lang: 'en' } : { text: zh ?? '', pending: Boolean(zh), lang: 'zh-Hant-TW' };
   return zh ? { text: zh, pending: false, lang: 'zh-Hant-TW' } : { text: en ?? '', pending: Boolean(en), lang: 'en' };
 }

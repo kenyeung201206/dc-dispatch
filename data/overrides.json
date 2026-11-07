@@ -3,7 +3,7 @@
     "headline_en": "TU Y8S3.3: crossplay arrives in stages — PC on Nov 10, consoles Nov 17",
     "headline_zhHant": "Y8S3.3 更新：跨平台遊玩分階段上線，PC 11 月 10 日先行，主機 11 月 17 日加入",
     "summary_en": "Title Update Y8S3.3 adds crossplay icons now. On November 10, PC players move to new crossplay servers and PC leaderboards reset. On November 17, PlayStation and Xbox join and crossplay is on by default. Also: a Master Climax Mission, Conflict scoreboard changes and the Shepherd Event (Nov 17–26).",
-    "summary_zhHant": "第 Y8S3.3 號遊戲更新先加入跨平台圖示。11 月 10 日起，PC 玩家移至新的跨平台伺服器，PC 排行榜同時重置；11 月 17 日 PlayStation 與 Xbox 加入，跨平台遊玩預設開啟。另有大師難度高潮任務、衝突模式計分板調整，以及 Shepherd 活動（11 月 17 日至 26 日）。",
+    "summary_zhHant": "第 Y8S3.3 號遊戲更新先加入跨平台圖示。11 月 10 日起，PC 玩家移至新的跨平台伺服器，PC 排行榜同時重置；11 月 17 日 PlayStation 與 Xbox 加入，跨平台遊玩預設開啟。另有大師難度追捕/狩獵任務（Manhunt）、衝突模式計分板調整，以及 Shepherd 活動（11 月 17 日至 26 日）。",
     "summaryKind": "original",
     "whyItMatters_en": "PC players: your leaderboard spot resets on November 10.",
     "whyItMatters_zhHant": "PC 玩家請注意：排行榜名次將於 11 月 10 日歸零。"
@@ -19,14 +19,22 @@
   },
   "wa4wps": {
     "headline_en": "Known issue (TU Y8S3.3): Climax Mission may stay locked after all Manhunt scouts",
-    "headline_zhHant": "已知問題（Y8S3.3）：完成所有獵殺偵查後，高潮任務可能仍未解鎖",
+    "headline_zhHant": "已知問題（Y8S3.3）：完成所有獵殺偵查後，追捕/狩獵任務（Manhunt）可能仍未解鎖",
     "summary_en": "After finishing every High-Value Target Manhunt scout, the Climax Mission can stay locked in the scouts menu and not appear on the map.",
-    "summary_zhHant": "完成所有高價值目標獵殺偵查後，高潮任務可能在偵查選單中仍顯示鎖定，地圖上也看不到。",
+    "summary_zhHant": "完成所有高價值目標獵殺偵查後，追捕/狩獵任務（Manhunt）可能在偵查選單中仍顯示鎖定，地圖上也看不到。",
     "summaryKind": "original",
     "riskNote_zhHant": "官方列出的已知問題。暫時解法：登出後重新登入。"
   },
-  "1tv75gq": { "headline_zhHant": "《全境封鎖 2 - 中央公園的迴響》今天開玩！" },
-  "1k3dbt0": { "headline_zhHant": "《全境封鎖 2 - 中央公園的迴響》預購最後機會" },
-  "rchnq7": { "headline_zhHant": "《中央公園的迴響》發行直播" },
-  "1q5vwna": { "headline_zhHant": "《中央公園的迴響》服裝比賽" }
+  "1tv75gq": {
+    "headline_zhHant": "《全境封鎖 2 - 中央公園的迴響》今天開玩！"
+  },
+  "1k3dbt0": {
+    "headline_zhHant": "《全境封鎖 2 - 中央公園的迴響》預購最後機會"
+  },
+  "rchnq7": {
+    "headline_zhHant": "《中央公園的迴響》發行直播"
+  },
+  "1q5vwna": {
+    "headline_zhHant": "《中央公園的迴響》服裝比賽"
+  }
 }

@@ -93,6 +93,18 @@
       "verified": false,
       "source": null,
       "note": "No official Chinese name found; keep English."
+    },
+    {
+      "en": "Climax Mission (the season's final Manhunt mission)",
+      "zhHant": "追捕/狩獵任務（Manhunt）",
+      "verified": false,
+      "note": "Players' word, the owner's choice (2026-11-07). After the first mention in a text: 追捕任務. Never 高潮任務."
+    },
+    {
+      "en": "Exotic Components",
+      "zhHant": "奇特零件",
+      "verified": false,
+      "note": "Players' word, the owner's choice (2026-11-07). Exotic weapons/gear stay 奇特."
     }
   ]
 }

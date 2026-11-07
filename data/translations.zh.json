@@ -1,5 +1,5 @@
 {
-  "_note": "Editor translations (Taiwan Chinese) for English-only content. Chinese pages use these; anything still without Chinese is hidden on Chinese pages. Game terms follow Ubisoft Taiwan wording where it exists (中央公園的迴響, 血月高照, 高潮任務, 牧羊人活動, 機密任務). Exotic names without an official Chinese name are our own (shown with a note).",
+  "_note": "Editor translations (Taiwan Chinese) for English-only content. Chinese pages use these; anything still without Chinese is hidden on Chinese pages. Game terms follow Ubisoft Taiwan wording where it exists (中央公園的迴響, 血月高照, 追捕/狩獵任務（Manhunt）, 牧羊人活動, 機密任務). Exotic names without an official Chinese name are our own (shown with a note).",
   "items": {
     "pk4upq": {
       "headline": "Y8S3.3 更新：《中央公園的迴響》上市、跨平台分階段上線等",
@@ -111,7 +111,7 @@
       "summaryKind": "original"
     },
     "1461f2j": {
-      "headline": "打不死坦克配裝：高潮任務最大生存力",
+      "headline": "打不死坦克配裝：追捕/狩獵任務（Manhunt）最大生存力",
       "summary": "創作者介紹以PfE與Hazard為核心、追求最大生存力的坦克配裝。",
       "summaryKind": "original"
     }
@@ -123,7 +123,7 @@
     "a4u3MVY3BwU": "如何取得奇特武器「蜜獾」！解鎖攻略與武器實測｜全境封鎖 2",
     "aMEAOtqDpwc": "蜜獾配裝｜湯姆克蘭西：全境封鎖 2",
     "E_pueioaycI": "刷了好幾個小時就為了這個？！🤬（蜜獾與全副武裝）全境封鎖 2 奇特裝備太爛了",
-    "XuV0BJqf7BU": "這次高潮任務真的很讚！大師難度通關＋新奇特手套｜全境封鎖 2",
+    "XuV0BJqf7BU": "這次追捕/狩獵任務（Manhunt）真的很讚！大師難度通關＋新奇特手套｜全境封鎖 2",
     "cqpBj3sRHCk": "如何取得奇特突擊步槍「蜜獾」｜全境封鎖 2",
     "BKKHYmF8HI0": "中央公園終局攻略！完成所有內容、拿齊全部獎勵｜全境封鎖 2",
     "m9Eedlk9iOM": "全境封鎖 2：搭配新奇特「全副武裝」的瘋狂換彈配裝（每次換彈 5000 萬以上）升級戰 T10",
@@ -177,7 +177,7 @@
         "跨平台遊玩",
         "好友推薦",
         "牧羊人活動專案",
-        "大師難度高潮任務",
+        "大師難度追捕/狩獵任務（Manhunt）",
         "改善與修正"
       ],
       "changes": [
