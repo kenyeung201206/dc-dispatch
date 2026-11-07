@@ -1,6 +1,122 @@
 {
   "videos": [
     {
+      "id": "lV0dJ1lNDw0",
+      "title": "I Did Not Play The New DLC Yet | PSN |🪓🥷 DAG 🔴LIVE | Division 2",
+      "channelName": "Died Again Gaming",
+      "channelUrl": "https://www.youtube.com/channel/UCrK99e79TwSpgElDb-r-Lpg",
+      "publishedAt": "2026-11-07T00:37:37.000Z",
+      "official": false,
+      "row": "more",
+      "checkedAt": "2026-11-07T00:50:14.199Z",
+      "via": "youtube-api",
+      "rumour": false
+    },
+    {
+      "id": "zQpvEAY6Qfk",
+      "title": "*BEST TIME TO MAX OUT EVERYTHING* The Division 2: TOP 3 SHD FARMS RIGHT NOW! 200 Levels EVERY HOUR!",
+      "channelName": "Kamikazevondoom",
+      "channelUrl": "https://www.youtube.com/channel/UCWd5S9-AEf26j0wY3P8TOhw",
+      "publishedAt": "2026-11-07T00:00:10.000Z",
+      "durationSec": 2637,
+      "official": false,
+      "row": "more",
+      "checkedAt": "2026-11-07T00:50:14.199Z",
+      "via": "youtube-api",
+      "rumour": false
+    },
+    {
+      "id": "Hnvl_7Oc44M",
+      "title": "The Division 2 Update: What You Need To Know",
+      "channelName": "Champion Dreamers Gaming ",
+      "channelUrl": "https://www.youtube.com/channel/UCp1vIDATDxjAJV4ojAodiOQ",
+      "publishedAt": "2026-11-06T23:53:06.000Z",
+      "durationSec": 153,
+      "official": false,
+      "row": "more",
+      "checkedAt": "2026-11-07T00:50:14.199Z",
+      "via": "youtube-search",
+      "rumour": false
+    },
+    {
+      "id": "yzlp5E0fW64",
+      "title": "全境封鎖2",
+      "channelName": "伊彣",
+      "channelUrl": "https://www.youtube.com/channel/UCzp1Bf9WeE-qINzF-QEzPVA",
+      "publishedAt": "2026-11-06T23:32:22.000Z",
+      "durationSec": 979,
+      "official": false,
+      "row": "more",
+      "checkedAt": "2026-11-07T00:50:14.199Z",
+      "via": "youtube-search",
+      "rumour": false
+    },
+    {
+      "id": "wW1qJ080F8o",
+      "title": "TAKING BACK NYC WITH MY NEW EXOTIC ASSAULT RIFLE! | DIVISION 2 LIVE",
+      "channelName": "LittleNobody",
+      "channelUrl": "https://www.youtube.com/channel/UCTchb3jtnEocEXkhc7dzyTA",
+      "publishedAt": "2026-11-06T23:18:35.000Z",
+      "durationSec": 17993,
+      "official": false,
+      "row": "intel",
+      "checkedAt": "2026-11-07T00:50:14.199Z",
+      "via": "youtube-search",
+      "rumour": false
+    },
+    {
+      "id": "WZldLkvoEmg",
+      "title": "New Loaded for Bear Gloves Are the Real Deal",
+      "channelName": "TuxedoBandido",
+      "channelUrl": "https://www.youtube.com/channel/UCWIdBINha5bKeFuvAs7US4A",
+      "publishedAt": "2026-11-06T21:30:50.000Z",
+      "durationSec": 945,
+      "official": false,
+      "row": "more",
+      "checkedAt": "2026-11-07T00:50:14.199Z",
+      "via": "youtube-search",
+      "rumour": false
+    },
+    {
+      "id": "-4642QaVYKI",
+      "title": "The Division 2 | ONE RELOAD WIPES OUT T10 ESCALATION & NEW DLC! Try This Build Before It's \"FIXED\"!",
+      "channelName": "AnYTime Gaming",
+      "channelUrl": "https://www.youtube.com/channel/UCZ1BJT1Myb-O7haZ0fI1yeQ",
+      "publishedAt": "2026-11-06T21:21:45.000Z",
+      "durationSec": 826,
+      "official": false,
+      "row": "build-guides",
+      "checkedAt": "2026-11-07T00:50:14.199Z",
+      "via": "youtube-search",
+      "rumour": false
+    },
+    {
+      "id": "h0NjDQeDA1E",
+      "title": "3 2M Ticks Pestilence CoCo Monster Division 2 #shorts",
+      "channelName": "Died Again Gaming",
+      "channelUrl": "https://www.youtube.com/channel/UCrK99e79TwSpgElDb-r-Lpg",
+      "publishedAt": "2026-11-06T21:12:06.000Z",
+      "durationSec": 14,
+      "official": false,
+      "row": "more",
+      "checkedAt": "2026-11-07T00:50:14.199Z",
+      "via": "youtube-api",
+      "rumour": false
+    },
+    {
+      "id": "osx29wyFK80",
+      "title": "What Were The Devs Thinking With The NEWEST Exotic?!",
+      "channelName": "AntaqanTV",
+      "channelUrl": "https://www.youtube.com/channel/UCezbsoSj2tVSfNJZO7m5KAQ",
+      "publishedAt": "2026-11-06T21:00:17.000Z",
+      "durationSec": 528,
+      "official": false,
+      "row": "intel",
+      "checkedAt": "2026-11-07T00:50:14.199Z",
+      "via": "youtube-search",
+      "rumour": false
+    },
+    {
       "id": "o7jS0hJ2SCc",
       "title": "PS5　全境封鎖2　中央公園#2",
       "channelName": "PS & PC 遊戲交流區-主頻道",
@@ -9,7 +125,7 @@
       "durationSec": 6432,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-06T20:41:43.602Z",
+      "checkedAt": "2026-11-07T00:50:14.199Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -22,7 +138,7 @@
       "durationSec": 14988,
       "official": false,
       "row": "intel",
-      "checkedAt": "2026-11-06T20:41:43.602Z",
+      "checkedAt": "2026-11-07T00:50:14.199Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -35,7 +151,7 @@
       "durationSec": 593,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-06T20:41:43.602Z",
+      "checkedAt": "2026-11-07T00:50:14.199Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -48,7 +164,7 @@
       "durationSec": 962,
       "official": false,
       "row": "build-guides",
-      "checkedAt": "2026-11-06T20:41:43.602Z",
+      "checkedAt": "2026-11-07T00:50:14.199Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -61,7 +177,7 @@
       "durationSec": 1493,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-06T20:41:43.602Z",
+      "checkedAt": "2026-11-07T00:50:14.199Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -74,7 +190,7 @@
       "durationSec": 240,
       "official": false,
       "row": "intel",
-      "checkedAt": "2026-11-06T20:41:43.602Z",
+      "checkedAt": "2026-11-07T00:50:14.199Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -87,7 +203,7 @@
       "durationSec": 50,
       "official": false,
       "row": "intel",
-      "checkedAt": "2026-11-06T20:41:43.602Z",
+      "checkedAt": "2026-11-07T00:50:14.199Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -100,7 +216,7 @@
       "durationSec": 16214,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-06T20:41:43.602Z",
+      "checkedAt": "2026-11-07T00:50:14.199Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -113,7 +229,7 @@
       "durationSec": 1629,
       "official": false,
       "row": "intel",
-      "checkedAt": "2026-11-06T20:41:43.602Z",
+      "checkedAt": "2026-11-07T00:50:14.199Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -126,7 +242,7 @@
       "durationSec": 119,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-06T20:41:43.602Z",
+      "checkedAt": "2026-11-07T00:50:14.199Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -139,7 +255,7 @@
       "durationSec": 997,
       "official": false,
       "row": "intel",
-      "checkedAt": "2026-11-06T20:41:43.602Z",
+      "checkedAt": "2026-11-07T00:50:14.199Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -152,7 +268,7 @@
       "durationSec": 512,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-06T20:41:43.602Z",
+      "checkedAt": "2026-11-07T00:50:14.199Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -165,7 +281,7 @@
       "durationSec": 75,
       "official": false,
       "row": "intel",
-      "checkedAt": "2026-11-06T20:41:43.602Z",
+      "checkedAt": "2026-11-07T00:50:14.199Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -178,21 +294,8 @@
       "durationSec": 364,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-06T20:41:43.602Z",
+      "checkedAt": "2026-11-07T00:50:14.199Z",
       "via": "youtube-api",
-      "rumour": false
-    },
-    {
-      "id": "wW1qJ080F8o",
-      "title": "TAKING BACK NYC WITH MY NEW EXOTIC ASSAULT RIFLE! | DIVISION 2 LIVE",
-      "channelName": "LittleNobody",
-      "channelUrl": "https://www.youtube.com/channel/UCTchb3jtnEocEXkhc7dzyTA",
-      "publishedAt": "2026-11-06T14:40:32.000Z",
-      "durationSec": 17991,
-      "official": false,
-      "row": "intel",
-      "checkedAt": "2026-11-06T20:41:43.602Z",
-      "via": "youtube-search",
       "rumour": false
     },
     {
@@ -204,7 +307,7 @@
       "durationSec": 31014,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-06T20:41:43.602Z",
+      "checkedAt": "2026-11-07T00:50:14.199Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -217,7 +320,7 @@
       "durationSec": 6970,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-06T20:41:43.602Z",
+      "checkedAt": "2026-11-07T00:50:14.199Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -230,7 +333,7 @@
       "durationSec": 468,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-06T20:41:43.602Z",
+      "checkedAt": "2026-11-07T00:50:14.199Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -243,7 +346,7 @@
       "durationSec": 769,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-06T20:41:43.602Z",
+      "checkedAt": "2026-11-07T00:50:14.199Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -256,7 +359,7 @@
       "durationSec": 325,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-06T20:41:43.602Z",
+      "checkedAt": "2026-11-07T00:50:14.199Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -269,7 +372,7 @@
       "durationSec": 1304,
       "official": false,
       "row": "build-guides",
-      "checkedAt": "2026-11-06T20:41:43.602Z",
+      "checkedAt": "2026-11-07T00:50:14.199Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -282,7 +385,7 @@
       "durationSec": 1692,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-06T20:41:43.602Z",
+      "checkedAt": "2026-11-07T00:50:14.199Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -295,7 +398,7 @@
       "durationSec": 253,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-06T20:41:43.602Z",
+      "checkedAt": "2026-11-07T00:50:14.199Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -308,7 +411,7 @@
       "durationSec": 33,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-06T20:41:43.602Z",
+      "checkedAt": "2026-11-07T00:50:14.199Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -321,7 +424,7 @@
       "durationSec": 5022,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-06T20:41:43.602Z",
+      "checkedAt": "2026-11-07T00:50:14.199Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -334,111 +437,8 @@
       "durationSec": 610,
       "official": false,
       "row": "build-guides",
-      "checkedAt": "2026-11-06T20:41:43.602Z",
+      "checkedAt": "2026-11-07T00:50:14.199Z",
       "via": "youtube-api",
-      "rumour": false
-    },
-    {
-      "id": "wkK020iifww",
-      "title": "全境封鎖2 - 單刷全守護者英雄難度 暴力逆火打法&路線分享，注意與幽靈保持15m，毒沼陷阱不要解 直接灌爆護甲",
-      "channelName": "純天然",
-      "channelUrl": "https://www.youtube.com/channel/UCAGO36FuuShsuvGD9bF1UwQ",
-      "publishedAt": "2026-11-06T05:03:44.000Z",
-      "durationSec": 703,
-      "official": false,
-      "row": "more",
-      "checkedAt": "2026-11-06T20:41:43.602Z",
-      "via": "youtube-search",
-      "rumour": false
-    },
-    {
-      "id": "I5-P5KGKWJc",
-      "title": "How to Unlock the CRAQUELURE HUNTER MASK! Full Hunter Puzzle Guide | The Division 2",
-      "channelName": "GCROCK",
-      "channelUrl": "https://www.youtube.com/channel/UCyRKkittAyXHhjZxqC49cxg",
-      "publishedAt": "2026-11-06T05:00:33.000Z",
-      "durationSec": 363,
-      "official": false,
-      "row": "build-guides",
-      "checkedAt": "2026-11-06T20:41:43.602Z",
-      "via": "youtube-api",
-      "rumour": false
-    },
-    {
-      "id": "yzlp5E0fW64",
-      "title": "全境封鎖2",
-      "channelName": "伊彣",
-      "channelUrl": "https://www.youtube.com/channel/UCzp1Bf9WeE-qINzF-QEzPVA",
-      "publishedAt": "2026-11-06T03:26:42.000Z",
-      "durationSec": 969,
-      "official": false,
-      "row": "more",
-      "checkedAt": "2026-11-06T20:41:43.602Z",
-      "via": "youtube-search",
-      "rumour": false
-    },
-    {
-      "id": "m5mxvW5hOAc",
-      "title": "The Ultimate Containment Guide for Echoes of Central Park!",
-      "channelName": "ShadowHunter",
-      "channelUrl": "https://www.youtube.com/channel/UC7iFbGcE-5A_Hs7Be8i9Dbw",
-      "publishedAt": "2026-11-06T03:15:58.000Z",
-      "durationSec": 396,
-      "official": false,
-      "row": "build-guides",
-      "checkedAt": "2026-11-06T15:44:03.654Z",
-      "via": "youtube-search",
-      "rumour": false
-    },
-    {
-      "id": "x_BriPCvW78",
-      "title": "How to Unlock the PIERCING GAZE HUNTER MASK! Full Hunter Puzzle Guide | The Division 2",
-      "channelName": "GCROCK",
-      "channelUrl": "https://www.youtube.com/channel/UCyRKkittAyXHhjZxqC49cxg",
-      "publishedAt": "2026-11-06T02:03:15.000Z",
-      "durationSec": 225,
-      "official": false,
-      "row": "build-guides",
-      "checkedAt": "2026-11-06T20:41:43.602Z",
-      "via": "youtube-api",
-      "rumour": false
-    },
-    {
-      "id": "dvh_E-6JJEo",
-      "title": "全境封鎖2 - 中央公園 圍堵守護者模式 團寵配裝，騎士套分享全隊滿危防，新手先堆危防就能玩",
-      "channelName": "純天然",
-      "channelUrl": "https://www.youtube.com/channel/UCAGO36FuuShsuvGD9bF1UwQ",
-      "publishedAt": "2026-11-06T01:18:25.000Z",
-      "durationSec": 162,
-      "official": false,
-      "row": "more",
-      "checkedAt": "2026-11-06T20:41:43.602Z",
-      "via": "youtube-search",
-      "rumour": false
-    },
-    {
-      "id": "XX9Jb5yWMl0",
-      "title": "《全境封鎖2 - 中央公園的迴響》到底在玩什麼？",
-      "channelName": "叫我RHeige",
-      "channelUrl": "https://www.youtube.com/channel/UCbJ8rH3kLjEa3H0PN1qktoQ",
-      "publishedAt": "2026-11-06T01:11:50.000Z",
-      "durationSec": 482,
-      "official": false,
-      "row": "more",
-      "checkedAt": "2026-11-06T20:41:43.602Z",
-      "via": "youtube-search",
-      "rumour": false
-    },
-    {
-      "id": "sHw4Wgoh6RE",
-      "title": "《全境封鎖2 》《The Division 2 》solo LV UP 我要把這千等吃下來",
-      "channelName": "母胎單身的我本質上是個渣男",
-      "channelUrl": "https://www.youtube.com/channel/UCkhHB18_7qEAgWR22_6uPlA",
-      "publishedAt": "2026-11-06T01:02:39.000Z",
-      "official": false,
-      "row": "more",
-      "checkedAt": "2026-11-06T20:41:43.602Z",
-      "via": "youtube-search",
       "rumour": false
     },
     {
@@ -450,7 +450,7 @@
       "durationSec": 92,
       "official": true,
       "row": "trailers",
-      "checkedAt": "2026-11-06T20:41:43.602Z",
+      "checkedAt": "2026-11-07T00:50:14.199Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -463,7 +463,7 @@
       "durationSec": 7035,
       "official": true,
       "row": "more",
-      "checkedAt": "2026-11-06T20:41:43.602Z",
+      "checkedAt": "2026-11-07T00:50:14.199Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -476,7 +476,7 @@
       "durationSec": 342,
       "official": true,
       "row": "more",
-      "checkedAt": "2026-11-06T20:41:43.602Z",
+      "checkedAt": "2026-11-07T00:50:14.199Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -489,7 +489,7 @@
       "publishedAt": "2026-11-02T13:48:39.000Z",
       "official": true,
       "row": "more",
-      "checkedAt": "2026-11-06T20:41:43.602Z",
+      "checkedAt": "2026-11-07T00:50:14.199Z",
       "via": "ubisoft-page",
       "rumour": false
     },
@@ -502,7 +502,7 @@
       "publishedAt": "2026-10-30T18:16:35.000Z",
       "official": true,
       "row": "trailers",
-      "checkedAt": "2026-11-06T20:41:43.602Z",
+      "checkedAt": "2026-11-07T00:50:14.199Z",
       "via": "ubisoft-page",
       "rumour": false
     },
@@ -515,7 +515,7 @@
       "publishedAt": "2026-10-13T13:30:33.000Z",
       "official": true,
       "row": "trailers",
-      "checkedAt": "2026-11-06T20:41:43.602Z",
+      "checkedAt": "2026-11-07T00:50:14.199Z",
       "via": "ubisoft-page",
       "rumour": false
     }

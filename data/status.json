@@ -1,11 +1,11 @@
 {
-  "lastRun": "2026-11-06T20:41:51.598Z",
-  "durationMs": 7996,
+  "lastRun": "2026-11-07T00:50:25.603Z",
+  "durationMs": 11404,
   "edition": {
     "date": "2026-11-07",
     "number": 4,
     "items": 26,
-    "zhPending": 5
+    "zhPending": 6
   },
   "sources": [
     {
@@ -25,8 +25,9 @@
     },
     {
       "id": "bahamut",
-      "ok": true,
-      "items": 8
+      "ok": false,
+      "items": 0,
+      "note": "Error: HTTP 403"
     }
   ],
   "videos": {
