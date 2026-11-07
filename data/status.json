@@ -1,11 +1,11 @@
 {
-  "lastRun": "2026-11-07T04:46:25.829Z",
-  "durationMs": 15572,
+  "lastRun": "2026-11-07T05:21:07.731Z",
+  "durationMs": 14203,
   "edition": {
     "date": "2026-11-07",
     "number": 4,
-    "items": 34,
-    "zhPending": 12
+    "items": 40,
+    "zhPending": 18
   },
   "sources": [
     {
@@ -26,7 +26,7 @@
     {
       "id": "bahamut",
       "ok": true,
-      "items": 8
+      "items": 10
     }
   ],
   "videos": {
