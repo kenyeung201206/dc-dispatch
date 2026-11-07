@@ -46,14 +46,21 @@ const pick = (row: string, re: RegExp) => (row.match(re)?.[1] ?? '').replace(/\s
 export function parseBahamutBoard(html: string, now: Date): RawItem[] {
   if (!html.includes('b-list__row')) throw new Error('Bahamut board layout changed (no b-list__row)');
   const out: RawItem[] = [];
-  // Non-sticky rows only; sticky rows are permanent board notices.
-  for (const row of html.split(/<tr class="b-list__row b-list-item b-imglist-item"/).slice(1)) {
+  // Pinned (sticky) rows are mostly board rules, tagged 【討論】, so the tag filter drops them; but some pinned
+  // 【情報】 threads are refreshed by their poster (a daily drops post retitled "11/06 …", a weekly summary).
+  for (const part of html.split(/<tr class="b-list__row(?= )/).slice(1)) {
+    if (!/^(?: b-list__row--sticky)? b-list-item b-imglist-item"/.test(part)) continue;
+    const sticky = part.startsWith(' b-list__row--sticky');
+    const row = part;
     const href = pick(row, /href="(C\.php\?bsn=\d+&(?:amp;)?snA=\d+)[^"]*"/).replace('&amp;', '&');
     const titleRaw = toPlainText(pick(row, /b-list__main__title[^>]*>([^<]+)/));
     const tag = titleRaw.match(/^【([^】]{1,4})】/)?.[1];
     if (!href || !titleRaw || !tag || !KEEP_TAGS.has(tag)) continue;
     const snA = href.match(/snA=(\d+)/)?.[1];
-    const publishedAt = parseBahaTime(pick(row, /b-list__time__edittime[\s\S]*?>([^<]*\d[^<]*)</), now);
+    let publishedAt = parseBahaTime(pick(row, /b-list__time__edittime[\s\S]*?>([^<]*\d[^<]*)</), now);
+    // A pinned thread retitled with a date ("【情報】11/06 每日…") is that day's post.
+    const dated = sticky ? titleRaw.match(/^【[^】]+】\s*(\d{1,2})\/(\d{1,2})/) : null;
+    if (dated) publishedAt = parseBahaTime(`${dated[1]}-${dated[2]} 12:00`, now) ?? publishedAt;
     if (!snA || !publishedAt) continue;
     out.push({
       sourceId: 'bahamut',
@@ -67,6 +74,7 @@ export function parseBahamutBoard(html: string, now: Date): RawItem[] {
       lang: 'zh',
       confidence: 'community',
       tag,
+      ...(dated ? { idSuffix: `${dated[1].padStart(2, '0')}-${dated[2].padStart(2, '0')}` } : {}),
     });
   }
   return out;

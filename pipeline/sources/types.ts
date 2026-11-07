@@ -19,6 +19,8 @@ export interface RawItem {
   /** Tag such as 情報 / 攻略 / 心得 (巴哈姆特) used for classification. */
   tag?: string;
   videoId?: string;
+  /** Extra id part when one link carries a new post each day (巴哈 pinned daily threads): "11-06". */
+  idSuffix?: string;
   confidence: 'official' | 'reported' | 'community' | 'rumour';
   imageUrl?: string;
 }

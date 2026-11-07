@@ -230,3 +230,16 @@ describe('language fallback and retention', () => {
     expect(scrubOldYoutube({ ...withVideo, date: '2026-11-01' }, NOW)).toBeNull();
   });
 });
+
+describe('巴哈 pinned threads', () => {
+  const row = (sticky: boolean, sn: number, title: string, time: string) =>
+    `<tr class="b-list__row${sticky ? ' b-list__row--sticky' : ''} b-list-item b-imglist-item"><td><a href="C.php?bsn=24460&amp;snA=${sn}&amp;tnum=1"><p class="b-list__main__title">${title}</p></a><p class="b-list__brief">預覽</p><p class="b-list__time__edittime"><a>${time}</a></p></td></tr>`;
+  const now = new Date('2026-11-07T05:00:00Z');
+  it('keeps pinned 情報 threads (daily ones dated by their title), skips pinned board rules', () => {
+    const html = `<table>${row(true, 1, '【討論】全境封鎖板建議&amp;申訴', '前天 11:56')}${row(true, 2, '【情報】11/06 每日戰鬥升級掉落 &amp; 原型商人', '08-20 08:53')}${row(true, 3, '【情報】獵捕行動 每週統整', '11-04 01:07')}${row(false, 4, '【問題】怎麼打', '1 小時前')}</table>`;
+    const got = parseBahamutBoard(html, now);
+    expect(got.map((g) => g.externalId)).toEqual(['2', '3']);
+    expect(got[0]).toMatchObject({ idSuffix: '11-06', publishedAt: '2026-11-06T04:00:00.000Z' });
+    expect(got[1]!.idSuffix).toBeUndefined();
+  });
+});

@@ -23,6 +23,7 @@ import { dedupe } from './dedupe.ts';
 import { assembleEdition, OverridesSchema, scrubOldYoutube } from './edition.ts';
 import { politeGet } from './http.ts';
 import { log } from './log.ts';
+import { stableId } from './text.ts';
 import { storyToItems } from './normalize.ts';
 import { parseSteamNews } from './sources/steam.ts';
 import type { RawItem, SourceResult } from './sources/types.ts';
@@ -159,7 +160,12 @@ async function main() {
   const recent = (v: { publishedAt: string }) => now.getTime() - Date.parse(v.publishedAt) <= 3 * 86_400_000;
   const storyPool = [...searched];
   for (const v of [...followed, ...guideVideos]) if (recent(v) && !storyPool.some((s) => s.id === v.id)) storyPool.push({ ...v, search: true });
-  const vStories = videoStories(storyPool, now);
+  // Only videos never shown before compete for the 12 places. Ones already on the site stay anyway (today's
+  // edition carries them), so older, more-viewed videos can't keep pushing today's new uploads out.
+  const seen = dryRun ? new Map<string, string>() : await firstSeenIndex();
+  const unseen = storyPool.filter((v) => !seen.has(stableId(`https://www.youtube.com/watch?v=${v.id}`)));
+  const vStories = videoStories(unseen, now);
+  log('info', 'video stories', { pool: storyPool.length, new: unseen.length, picked: vStories.length });
   for (const v of vStories) sourceText.set(v.id, storyPool.find((x) => x.id === v.videoId)?.description ?? v.title_orig);
   fresh.push(...vStories);
   // Video descriptions (from the YouTube API) for the scheduled 重點整理 writer, which can't load youtube.com
@@ -269,6 +275,16 @@ async function main() {
 
   const overrides = OverridesSchema.parse(await readJson('data/overrides.json', {}));
   const edition = assembleEdition({ date, now, fresh, results, previous: await previousEdition(date), overrides, firstSeen: dryRun ? new Map() : await firstSeenIndex() });
+  // 巴哈 pinned daily threads make one story per day from the same link: keep only the newest day.
+  {
+    const newest = new Map<string, Item>();
+    for (const i of edition.items) {
+      if (i.sourceId !== 'bahamut') continue;
+      const was = newest.get(i.sourceUrl);
+      if (!was || i.publishedAt > was.publishedAt) newest.set(i.sourceUrl, i);
+    }
+    edition.items = edition.items.filter((i) => i.sourceId !== 'bahamut' || newest.get(i.sourceUrl) === i);
+  }
 
   const outDir = dryRun ? '.dry-run' : 'data';
   await mkdir(join(outDir, 'editions'), { recursive: true });

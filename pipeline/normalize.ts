@@ -52,7 +52,7 @@ export function storyToItems(story: Story, ctx: BuildContext): Item[] {
 
   const main: Item = {
     ...base,
-    id: stableId(url),
+    id: primary.idSuffix ? stableId(url, primary.idSuffix) : stableId(url),
     category,
     tags: tagsFor(primary.title, primary.text),
     importance: 0,
