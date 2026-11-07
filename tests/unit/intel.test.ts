@@ -131,11 +131,16 @@ describe('YouTube creator scan (mocked API)', () => {
   });
 
   it('keeps room for Chinese-speaking creators even when English videos are bigger', () => {
-    const en = Array.from({ length: 8 }, (_, n): VideoCandidate => ({ id: `e${n}`.padEnd(11, 'x'), title: `Division 2 new exotic build ${n}`, publishedAt: '2026-11-03T00:00:00.000Z', official: false, via: 'youtube-search', search: true, views: 50_000 }));
-    const zh: VideoCandidate = { ...en[0]!, id: 'zzzzzzzzzzz', title: '全境封鎖2 蜜獾怎麼拿', views: 10 };
+    const en = Array.from({ length: 16 }, (_, n): VideoCandidate => ({ id: `e${n}`.padEnd(11, 'x'), title: `Division 2 new exotic build ${n}`, channelUrl: `https://www.youtube.com/channel/c${n}`, publishedAt: '2026-11-03T00:00:00.000Z', official: false, via: 'youtube-search', search: true, views: 50_000 }));
+    const zh: VideoCandidate = { ...en[0]!, id: 'zzzzzzzzzzz', title: '全境封鎖2 蜜獾怎麼拿', channelUrl: 'https://www.youtube.com/channel/zh', views: 10 };
     const ids = videoStories([...en, zh], NOW).map((i) => i.videoId);
-    expect(ids).toHaveLength(6);
+    expect(ids).toHaveLength(12);
     expect(ids).toContain('zzzzzzzzzzz');
+  });
+
+  it('takes at most 2 videos from one creator per run', () => {
+    const same = Array.from({ length: 5 }, (_, n): VideoCandidate => ({ id: `s${n}`.padEnd(11, 'x'), title: `Division 2 build ${n}`, channelUrl: 'https://www.youtube.com/channel/one', publishedAt: '2026-11-03T00:00:00.000Z', official: false, via: 'youtube-api', search: true, views: 100 - n }));
+    expect(videoStories(same, NOW).map((i) => i.videoId)).toEqual(['s0xxxxxxxxx', 's1xxxxxxxxx']);
   });
 });
 

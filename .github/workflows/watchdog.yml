@@ -6,7 +6,7 @@ name: Stale edition watchdog
 # Runs about an hour after each robot update (the writer runs every hour at :15).
 on:
   schedule:
-    - cron: '50 */5 * * *'
+    - cron: '50 */2 * * *'
   workflow_dispatch:
 
 permissions:

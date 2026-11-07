@@ -87,7 +87,7 @@ export async function fetchChannelVideos(
       const vs = Videos.parse(
         JSON.parse(
           await get(
-            `https://www.googleapis.com/youtube/v3/videos?part=snippet,status,contentDetails&id=${ids.join(',')}&key=${encodeURIComponent(key)}`,
+            `https://www.googleapis.com/youtube/v3/videos?part=snippet,status,contentDetails,statistics&id=${ids.join(',')}&key=${encodeURIComponent(key)}`,
           ),
         ),
       );
@@ -106,6 +106,8 @@ export async function fetchChannelVideos(
           official: ch.official,
           via: 'youtube-api',
           verified: true,
+          description: (snippet.description ?? '').slice(0, 2000),
+          views: Number(v.statistics?.viewCount ?? 0) || 0,
         });
       }
       log('info', 'youtube channel ok', { channel: ch.name, kept: out.length });

@@ -9,7 +9,9 @@ import { score } from '../score.ts';
 import { detectLang, extractChars, extractWords, stableId } from '../text.ts';
 import { RUMOUR_WORDS, type VideoCandidate } from './videos.ts';
 
-export const MAX_VIDEO_STORIES = 6;
+export const MAX_VIDEO_STORIES = 12;
+/** At most this many stories from one creator per run, so no channel floods the page. */
+export const MAX_PER_CHANNEL = 2;
 /** Intel-ish topics get picked first, then by views. */
 const INTERESTING = /\b(exotic|PTS|leak|datamin\w*|unreleased|build|meta|new season|patch|hotfix|bug|glitch|exploit)\b|奇特|配裝|攻略|漏洞|爆料|新賽季/i;
 
@@ -25,9 +27,16 @@ function cleanDescription(d = ''): string {
 }
 
 export function videoStories(videos: VideoCandidate[], now: Date): Item[] {
+  const perChannel = new Map<string, number>();
   const ranked = [...videos]
     .filter((v) => v.search)
-    .sort((a, b) => Number(INTERESTING.test(b.title)) - Number(INTERESTING.test(a.title)) || (b.views ?? 0) - (a.views ?? 0));
+    .sort((a, b) => Number(INTERESTING.test(b.title)) - Number(INTERESTING.test(a.title)) || (b.views ?? 0) - (a.views ?? 0))
+    .filter((v) => {
+      const k = v.channelUrl ?? v.channelName ?? v.id;
+      const n = perChannel.get(k) ?? 0;
+      perChannel.set(k, n + 1);
+      return n < MAX_PER_CHANNEL;
+    });
   // Keep room for Chinese-speaking creators (up to half), so Chinese readers get videos they can follow.
   const zh = ranked.filter((v) => detectLang(v.title) === 'zh').slice(0, MAX_VIDEO_STORIES / 2);
   const rest = ranked.filter((v) => !zh.includes(v)).slice(0, MAX_VIDEO_STORIES - zh.length);

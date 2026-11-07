@@ -145,6 +145,7 @@ async function main() {
     channels: { id: string; name: string; official: boolean }[];
     searches?: { q: string; lang?: string }[];
     guideCreators?: { id: string; name: string; official: boolean }[];
+    follow?: { id: string; name: string; official: boolean }[];
   }>('data/video-channels.json', { channels: [] });
   const channels = videoConfig.channels;
   const youtubeKey = dryRun ? undefined : process.env.YOUTUBE_API_KEY;
@@ -152,15 +153,21 @@ async function main() {
   // Creator scan: daily YouTube searches (needs the key); best ones also become stories.
   const searched = await searchVideos(videoConfig.searches ?? [], youtubeKey, now);
   const guideVideos = await fetchChannelVideos(videoConfig.guideCreators ?? [], youtubeKey, now);
-  const vStories = videoStories(searched, now);
-  for (const v of vStories) sourceText.set(v.id, searched.find((x) => x.id === v.videoId)?.description ?? v.title_orig);
+  // Followed creators: their newest uploads cost ~2 quota units per channel (a search costs 100), so most
+  // creator news comes from here; the few searches only discover new creators.
+  const followed = await fetchChannelVideos(videoConfig.follow ?? [], youtubeKey, now);
+  const recent = (v: { publishedAt: string }) => now.getTime() - Date.parse(v.publishedAt) <= 3 * 86_400_000;
+  const storyPool = [...searched];
+  for (const v of [...followed, ...guideVideos]) if (recent(v) && !storyPool.some((s) => s.id === v.id)) storyPool.push({ ...v, search: true });
+  const vStories = videoStories(storyPool, now);
+  for (const v of vStories) sourceText.set(v.id, storyPool.find((x) => x.id === v.videoId)?.description ?? v.title_orig);
   fresh.push(...vStories);
   // Video descriptions (from the YouTube API) for the scheduled 重點整理 writer, which can't load youtube.com
   // from the cloud. Input only, never shown on the site; kept 30 days.
   if (!dryRun) {
     const notes = await readJson<Record<string, { text: string; savedAt: string }>>('data/source-notes.json', {});
     for (const v of vStories) {
-      const text = searched.find((x) => x.id === v.videoId)?.description?.trim();
+      const text = storyPool.find((x) => x.id === v.videoId)?.description?.trim();
       if (text && !notes[v.id]) notes[v.id] = { text, savedAt: now.toISOString() };
     }
     const cutoff = now.getTime() - 30 * 86_400_000;
@@ -184,7 +191,7 @@ async function main() {
   for (const c of cpStories) sourceText.set(c.id, c.summary_zhHant);
   fresh.push(...cpStories);
   const videos = await buildVideos({
-    searched: [...searched, ...guideVideos],
+    searched: [...searched, ...followed.filter((v) => !searched.some((s) => s.id === v.id)), ...guideVideos],
     enHtml: results.find((r) => r.sourceId === 'ubisoft-en')?.body,
     zhHtml: results.find((r) => r.sourceId === 'ubisoft-zh-tw')?.body,
     previous: VideoLibrarySchema.parse(await readJson('data/videos.json', { videos: [] })).videos,
