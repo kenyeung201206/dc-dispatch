@@ -353,3 +353,16 @@ a:hover {
 .fav.large[aria-pressed='true'] {
   border-color: var(--shd);
 }
+
+/* Long unbroken words (URLs, tag chains, quoted video text) wrap instead of widening the page on phones;
+   min-width: 0 lets a card shrink inside its grid column instead of growing to its longest word. */
+.story {
+  min-width: 0;
+}
+.headline,
+.latest a,
+.story h2,
+.story h3,
+.story p {
+  overflow-wrap: anywhere;
+}
