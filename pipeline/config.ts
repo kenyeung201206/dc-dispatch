@@ -11,7 +11,8 @@ export const STEAM_APP_ID = 2221490;
 
 /** Stories older than this drop out of the edition (active glitches are kept). */
 export const WINDOW_DAYS = 21;
-export const MAX_ITEMS = 40;
+/** Stories in one day's edition (raised from 40 on 2026-11-07: updates every 2 hours bring more). */
+export const MAX_ITEMS = 60;
 /** Extracts quoted from a source stay at or under this many words (brief §4.4). */
 export const MAX_QUOTE_WORDS = 25;
 
