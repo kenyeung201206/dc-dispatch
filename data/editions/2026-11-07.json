@@ -1,7 +1,7 @@
 {
   "date": "2026-11-07",
   "editionNumber": 4,
-  "generatedAt": "2026-11-07T10:36:53.149Z",
+  "generatedAt": "2026-11-07T12:40:31.520Z",
   "meta": {
     "season_en": "Red Horizon",
     "season_zhHant": "Red Horizon 賽季",
@@ -17,7 +17,7 @@
       "title_orig": "[TUY8S3.3] Echoes of Central Park Launch, Crossplay Rollout, Conflict Improvements & More",
       "lang_orig": "en",
       "publishedAt": "2026-11-02T15:45:00.000Z",
-      "fetchedAt": "2026-11-07T10:36:53.149Z",
+      "fetchedAt": "2026-11-07T12:40:31.520Z",
       "category": "updates",
       "tags": [
         "title-update",
@@ -54,7 +54,7 @@
       "title_orig": "The Division 2: Echoes of Central Park DLC is available now!",
       "lang_orig": "en",
       "publishedAt": "2026-11-03T15:00:00.000Z",
-      "fetchedAt": "2026-11-07T10:36:53.149Z",
+      "fetchedAt": "2026-11-07T12:40:31.520Z",
       "category": "missions",
       "tags": [
         "dlc"
@@ -321,7 +321,7 @@
       "title_orig": "[TUY8S3.3] Echoes of Central Park Launch, Crossplay Rollout, Conflict Improvements & More",
       "lang_orig": "en",
       "publishedAt": "2026-11-02T15:45:00.000Z",
-      "fetchedAt": "2026-11-07T10:36:53.149Z",
+      "fetchedAt": "2026-11-07T12:40:31.520Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -611,7 +611,7 @@
       "title_orig": "The Division 2: Echoes of Central Park Launch Twitch Drops",
       "lang_orig": "en",
       "publishedAt": "2026-11-03T15:00:00.000Z",
-      "fetchedAt": "2026-11-07T10:36:53.149Z",
+      "fetchedAt": "2026-11-07T12:40:31.520Z",
       "category": "community",
       "tags": [
         "twitch-drops",
@@ -639,7 +639,7 @@
       "title_orig": "Play The Division 2: Echoes of Central Park Today!",
       "lang_orig": "en",
       "publishedAt": "2026-11-03T17:13:46.000Z",
-      "fetchedAt": "2026-11-07T10:36:53.149Z",
+      "fetchedAt": "2026-11-07T12:40:31.520Z",
       "category": "community",
       "tags": [],
       "importance": 62,
@@ -1429,6 +1429,61 @@
       "status": "new"
     },
     {
+      "id": "1yeqpcs",
+      "sourceId": "youtube",
+      "sourceName": "ManaWar Gaming",
+      "sourceUrl": "https://www.youtube.com/watch?v=gwSdGfXFx8I",
+      "title_orig": "🔴 The Division 2 Echoes of Central Park Livestream",
+      "lang_orig": "en",
+      "publishedAt": "2026-11-06T19:55:53.000Z",
+      "fetchedAt": "2026-11-07T12:40:31.520Z",
+      "category": "community",
+      "tags": [
+        "video"
+      ],
+      "importance": 56,
+      "confidence": "community",
+      "headline_en": "🔴 The Division 2 Echoes of Central Park Livestream",
+      "headline_zhHant": "pending",
+      "summary_en": "The Division 2 Echoes of Central Park Livestream",
+      "summary_zhHant": "pending",
+      "summaryKind": "extract",
+      "alsoReportedBy": [],
+      "media": [],
+      "videoId": "gwSdGfXFx8I",
+      "relatedIds": [],
+      "firstSeenAt": "2026-11-07T12:40:31.520Z",
+      "status": "new"
+    },
+    {
+      "id": "1r1uypk",
+      "sourceId": "youtube",
+      "sourceName": "RAMBO52___",
+      "sourceUrl": "https://www.youtube.com/watch?v=qmoZo1Jvibc",
+      "title_orig": "Tom Clancy's The Division 2 Grand Whashington hotel heroic with 2 directive w/ loaded for bear",
+      "lang_orig": "en",
+      "publishedAt": "2026-11-06T17:25:33.000Z",
+      "fetchedAt": "2026-11-07T12:40:31.520Z",
+      "category": "arsenal",
+      "tags": [
+        "exotic",
+        "video"
+      ],
+      "importance": 56,
+      "confidence": "community",
+      "headline_en": "Tom Clancy's The Division 2 Grand Whashington hotel heroic with 2 directive w/ loaded for bear",
+      "headline_zhHant": "pending",
+      "summary_en": "With Loaded for bear exotic glove",
+      "summary_zhHant": "pending",
+      "summaryKind": "extract",
+      "alsoReportedBy": [],
+      "media": [],
+      "videoId": "qmoZo1Jvibc",
+      "relatedIds": [],
+      "firstSeenAt": "2026-11-07T12:40:31.520Z",
+      "status": "new"
+    },
+    {
       "id": "omxg62",
       "sourceId": "youtube",
       "sourceName": "王偉",
@@ -1453,6 +1508,60 @@
       "videoId": "HHmQ4asrusI",
       "relatedIds": [],
       "firstSeenAt": "2026-11-07T06:47:46.217Z",
+      "status": "new"
+    },
+    {
+      "id": "sqjsdf",
+      "sourceId": "youtube",
+      "sourceName": "王偉",
+      "sourceUrl": "https://www.youtube.com/watch?v=OMTUBktXXN0",
+      "title_orig": "《全境封鎖 2》Tom Clancy’s The Division 2  解獵捕  您喜歡還請謝謝訂閱   (王偉遊戲直播)",
+      "lang_orig": "zh",
+      "publishedAt": "2026-11-06T13:11:29.000Z",
+      "fetchedAt": "2026-11-07T12:40:31.520Z",
+      "category": "missions",
+      "tags": [
+        "video"
+      ],
+      "importance": 55,
+      "confidence": "community",
+      "headline_en": "pending",
+      "headline_zhHant": "《全境封鎖 2》Tom Clancy’s The Division 2  解獵捕  您喜歡還請謝謝訂閱   (王偉遊戲直播)",
+      "summary_en": "pending",
+      "summary_zhHant": "永生花束 可客製化 送禮自用兩相宜.終生保固 免費訂閱/請點我(王偉遊戲直播) SpiritVale 靈谷 心動小鎮 英…",
+      "summaryKind": "extract",
+      "alsoReportedBy": [],
+      "media": [],
+      "videoId": "OMTUBktXXN0",
+      "relatedIds": [],
+      "firstSeenAt": "2026-11-07T12:40:31.520Z",
+      "status": "new"
+    },
+    {
+      "id": "1qir28a",
+      "sourceId": "youtube",
+      "sourceName": "純天然",
+      "sourceUrl": "https://www.youtube.com/watch?v=G1Psog98F6k",
+      "title_orig": "全境封鎖2 - 核爆手套 速通守護者紀錄影像",
+      "lang_orig": "zh",
+      "publishedAt": "2026-11-07T11:44:49.000Z",
+      "fetchedAt": "2026-11-07T12:40:31.520Z",
+      "category": "community",
+      "tags": [
+        "video"
+      ],
+      "importance": 55,
+      "confidence": "community",
+      "headline_en": "pending",
+      "headline_zhHant": "全境封鎖2 - 核爆手套 速通守護者紀錄影像",
+      "summary_en": "pending",
+      "summary_zhHant": "小小失誤 應該沒關係吧",
+      "summaryKind": "extract",
+      "alsoReportedBy": [],
+      "media": [],
+      "videoId": "G1Psog98F6k",
+      "relatedIds": [],
+      "firstSeenAt": "2026-11-07T12:40:31.520Z",
       "status": "new"
     },
     {
@@ -1589,137 +1698,28 @@
       "relatedIds": [],
       "firstSeenAt": "2026-11-07T05:20:53.528Z",
       "status": "new"
-    },
-    {
-      "id": "1pwbkrx",
-      "sourceId": "youtube",
-      "sourceName": "叫我RHeige",
-      "sourceUrl": "https://www.youtube.com/watch?v=ViXJHT3P3hk",
-      "title_orig": "4 位隱藏獵人召喚 + 全面具獲取攻略《全境封鎖2 - 中央公園的迴響》",
-      "lang_orig": "zh",
-      "publishedAt": "2026-11-06T09:02:16.000Z",
-      "fetchedAt": "2026-11-07T05:20:53.528Z",
-      "category": "builds",
-      "tags": [
-        "dlc",
-        "video"
-      ],
-      "importance": 55,
-      "confidence": "community",
-      "headline_en": "pending",
-      "headline_zhHant": "4 位隱藏獵人召喚 + 全面具獲取攻略《全境封鎖2 - 中央公園的迴響》",
-      "summary_en": "pending",
-      "summary_zhHant": "《全境封鎖2：中央公園的迴響》The Division 2: Echoes of Central Park 是《全境封鎖…",
-      "summaryKind": "extract",
-      "alsoReportedBy": [],
-      "media": [],
-      "videoId": "ViXJHT3P3hk",
-      "relatedIds": [],
-      "firstSeenAt": "2026-11-07T05:20:53.528Z",
-      "status": "new"
-    },
-    {
-      "id": "10jq918",
-      "sourceId": "youtube",
-      "sourceName": "邪神弱鴨",
-      "sourceUrl": "https://www.youtube.com/watch?v=_0FwqJHPIS4",
-      "title_orig": "全境封鎖2 速拿奇特鼬獾突擊步槍與重裝出擊手套",
-      "lang_orig": "zh",
-      "publishedAt": "2026-11-05T07:24:30.000Z",
-      "fetchedAt": "2026-11-07T04:46:10.257Z",
-      "category": "arsenal",
-      "tags": [
-        "video"
-      ],
-      "importance": 55,
-      "confidence": "community",
-      "headline_en": "pending",
-      "headline_zhHant": "全境封鎖2 速拿奇特鼬獾突擊步槍與重裝出擊手套",
-      "summary_en": "pending",
-      "summary_zhHant": "這兩件最新必拿的奇特裝備，分別是鼬獾突擊步、重裝出擊手套，大家可不要錯過了。拿法很困難嗎？很簡單，趕緊出發吧。GO",
-      "summaryKind": "extract",
-      "alsoReportedBy": [],
-      "media": [],
-      "videoId": "_0FwqJHPIS4",
-      "relatedIds": [],
-      "firstSeenAt": "2026-11-05T15:54:01.383Z",
-      "status": "new"
-    },
-    {
-      "id": "ckjmz3",
-      "sourceId": "youtube",
-      "sourceName": "PS & PC 遊戲交流區-主頻道",
-      "sourceUrl": "https://www.youtube.com/watch?v=GJZhYfOQJyg",
-      "title_orig": "PS5　全境封鎖2　中央公園#4",
-      "lang_orig": "zh",
-      "publishedAt": "2026-11-07T09:33:09.000Z",
-      "fetchedAt": "2026-11-07T10:36:53.149Z",
-      "category": "community",
-      "tags": [
-        "video"
-      ],
-      "importance": 54,
-      "confidence": "community",
-      "headline_en": "pending",
-      "headline_zhHant": "PS5　全境封鎖2　中央公園#4",
-      "summary_en": "pending",
-      "summary_zhHant": "PS&PC遊戲交流區",
-      "summaryKind": "extract",
-      "alsoReportedBy": [],
-      "media": [],
-      "videoId": "GJZhYfOQJyg",
-      "relatedIds": [],
-      "firstSeenAt": "2026-11-07T10:36:53.149Z",
-      "status": "new"
-    },
-    {
-      "id": "1k0iz8j",
-      "sourceId": "youtube",
-      "sourceName": "灰帽特工   Gray Hat Agent",
-      "sourceUrl": "https://www.youtube.com/watch?v=62kVVRa788s",
-      "title_orig": "中央公園銳利目光獵人面具獲取攻略 彩蛋解謎 位置信息 #全境封鎖 #全境封鎖2 #全境封鎖3 #thedivision #thedivision2 #thedivision3",
-      "lang_orig": "zh",
-      "publishedAt": "2026-11-05T17:52:06.000Z",
-      "fetchedAt": "2026-11-07T05:20:53.528Z",
-      "category": "franchise",
-      "tags": [
-        "video"
-      ],
-      "importance": 54,
-      "confidence": "community",
-      "headline_en": "pending",
-      "headline_zhHant": "中央公園銳利目光獵人面具獲取攻略 彩蛋解謎 位置信息 #全境封鎖 #全境封鎖2 #全境封鎖3 #thedivision #thedivision2 #thedivision3",
-      "summary_en": "pending",
-      "summary_zhHant": "感謝特工們按贊訂閲小鈴鐺 可能幫到特工們的視頻：",
-      "summaryKind": "extract",
-      "alsoReportedBy": [],
-      "media": [],
-      "videoId": "62kVVRa788s",
-      "relatedIds": [],
-      "firstSeenAt": "2026-11-07T05:20:53.528Z",
-      "status": "new"
     }
   ],
   "sources": [
     {
       "sourceId": "steam-news",
       "ok": true,
-      "checkedAt": "2026-11-07T10:36:53.149Z"
+      "checkedAt": "2026-11-07T12:40:31.520Z"
     },
     {
       "sourceId": "ubisoft-en",
       "ok": true,
-      "checkedAt": "2026-11-07T10:36:53.149Z"
+      "checkedAt": "2026-11-07T12:40:31.520Z"
     },
     {
       "sourceId": "ubisoft-zh-tw",
       "ok": true,
-      "checkedAt": "2026-11-07T10:36:53.149Z"
+      "checkedAt": "2026-11-07T12:40:31.520Z"
     },
     {
       "sourceId": "bahamut",
       "ok": true,
-      "checkedAt": "2026-11-07T10:36:53.149Z"
+      "checkedAt": "2026-11-07T12:40:31.520Z"
     }
   ]
 }
