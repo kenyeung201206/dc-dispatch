@@ -1,11 +1,11 @@
 {
-  "lastRun": "2026-11-07T18:35:35.126Z",
-  "durationMs": 15141,
+  "lastRun": "2026-11-07T20:30:28.335Z",
+  "durationMs": 18950,
   "edition": {
     "date": "2026-11-08",
     "number": 5,
-    "items": 26,
-    "zhPending": 7
+    "items": 27,
+    "zhPending": 8
   },
   "sources": [
     {
