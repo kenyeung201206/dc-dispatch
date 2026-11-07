@@ -80,9 +80,11 @@ test('返回 and 頭版 float at the bottom left and stay on screen while scroll
   await page.keyboard.press('Shift'); // a reader is here: the page's start-at-top step stands down
   const back = page.locator('.floatnav').getByRole('link', { name: '返回' });
   const home = page.locator('.floatnav').getByRole('link', { name: '頭版' });
-  await page.evaluate(() => window.scrollTo(0, document.body.scrollHeight / 2));
+  // Far enough for 頂端 to appear (it shows after ~1.5 screens), whatever the page length that day.
+  await page.evaluate(() => window.scrollTo(0, Math.max(document.body.scrollHeight / 2, innerHeight * 2)));
   await expect(back).toBeInViewport();
   await expect(home).toBeInViewport();
+  await expect(page.locator('[data-to-top]')).toBeVisible();
   expect(await page.locator('.floatnav').evaluate((el) => getComputedStyle(el).position)).toBe('fixed');
   const backBox = (await back.boundingBox())!;
   const box = (await home.boundingBox())!; // the right-hand one of the pair
