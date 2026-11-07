@@ -157,8 +157,10 @@ async function main() {
   // Followed creators: their newest uploads cost ~2 quota units per channel (a search costs 100), so most
   // creator news comes from here; the few searches only discover new creators.
   const followed = await fetchChannelVideos(videoConfig.follow ?? [], youtubeKey, now);
-  const recent = (v: { publishedAt: string }) => now.getTime() - Date.parse(v.publishedAt) <= 3 * 86_400_000;
-  const storyPool = [...searched];
+  // Only videos from the last 24 hours become stories: with an update every 2 hours that is just what was
+  // uploaded since the last few runs, so an update brings a handful of new videos, never a backlog of old ones.
+  const recent = (v: { publishedAt: string }) => now.getTime() - Date.parse(v.publishedAt) <= 86_400_000;
+  const storyPool = searched.filter(recent);
   for (const v of [...followed, ...guideVideos]) if (recent(v) && !storyPool.some((s) => s.id === v.id)) storyPool.push({ ...v, search: true });
   // Only videos never shown before compete for the 12 places. Ones already on the site stay anyway (today's
   // edition carries them), so older, more-viewed videos can't keep pushing today's new uploads out.
