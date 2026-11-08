@@ -36,5 +36,5 @@ for (let i = 1; ; i++) {
   if (Date.now() + waitMs > deadline) break;
   await sleep(waitMs);
 }
-if ((await savedDate()) < lootDay(new Date())) log('warn', 'daily loot: still waiting for today's list; the 2-hourly run keeps checking', { have: await savedDate() });
+if ((await savedDate()) < lootDay(new Date())) log('warn', 'daily loot: still waiting for the new list; the 2-hourly run keeps checking',{ have: await savedDate() });
 if (process.env.GITHUB_OUTPUT) await appendFile(process.env.GITHUB_OUTPUT, `changed=${changed}\n`);
