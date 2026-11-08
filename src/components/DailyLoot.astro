@@ -1,9 +1,10 @@
 ---
 /**
- * 今日戰鬥升級: each mission's targeted reward for the day, with the brand's in-game logo so readers who
- * don't know brand names can still recognise them. Data: data/daily-loot.json (the robot reads 巴哈's pinned
- * daily thread every update). Icons: brand banners on The Division Wiki (Ubisoft art), loaded by the reader's
- * browser; a brand we can't match with confidence (e.g. 特種合金) shows as text, never a guessed logo.
+ * 今日戰鬥升級: each mission's targeted reward for the day, with the in-game emblem so readers who don't
+ * know brand names can still recognise them. Data: data/daily-loot.json (the robot reads 巴哈's pinned daily
+ * thread every update). Icons: public/icons/ (white glyphs made from Ubisoft art on The Division Wiki), shown
+ * on a dark tile and tinted like the game: brands and gear slots white, gear sets green. A name we can't match
+ * with confidence (e.g. 特種合金) shows as text, never a guessed logo.
  */
 import loot from '../../data/daily-loot.json' with { type: 'json' };
 import brands from '../../data/brands.json' with { type: 'json' };
@@ -19,13 +20,19 @@ const en = locale === 'en';
 const fresh = Date.parse(date) - Date.parse(loot.date) <= 86_400_000 && Date.parse(loot.date) <= Date.parse(date);
 
 const norm = (s: string) => s.replace(/\s+/g, '').replace(/＆/g, '&');
-const brandOf = (name: string) => brands.brands.find((b) => b.aliases.some((a) => norm(a) === norm(name)));
-const setOf = (name: string) => brands.sets.find((s) => s.aliases.some((a) => norm(a) === norm(name)));
-const rows = loot.missions.map((m) => {
-  const brand = m.kind === 'brand' ? brandOf(m.reward) : undefined;
-  const set = m.kind === 'set' ? setOf(m.reward) : undefined;
-  return { ...m, brand, set };
-});
+type Entry = { en: string; aliases: string[]; icon: string | null };
+const find = (list: Entry[], name: string) => list.find((b) => b.aliases.some((a) => norm(a) === norm(name)));
+const LISTS = { brand: brands.brands, set: brands.sets, slot: brands.slots } as Record<string, Entry[]>;
+/** The poster's cell colour says which list to look in; an unmarked cell may be any of them. */
+const match = (name: string, kind: string) => {
+  for (const k of LISTS[kind] ? [kind] : ['brand', 'set', 'slot']) {
+    const hit = find(LISTS[k]!, name);
+    if (hit) return { ...hit, tint: k === 'set' ? 'set' : 'white' };
+  }
+  return undefined;
+};
+const rows = loot.missions.map((m) => ({ ...m, hit: match(m.reward, m.kind) }));
+const vendor = loot.vendor.map((v) => ({ name: v, hit: match(v, 'other') }));
 const kindLabel = (k: string) => t(locale, `loot.kind.${k === 'brand' || k === 'set' || k === 'slot' ? k : 'other'}` as never);
 const md = loot.date.slice(5).replace('-', '/');
 ---
@@ -40,27 +47,37 @@ const md = loot.date.slice(5).replace('-', '/');
           <li class={`k-${r.kind}`}>
             <span class="place">{r.place}</span>
             <span class="reward">
-              {r.brand?.icon ? (
-                <span class="bicon" aria-hidden="true">
-                  <img src={r.brand.icon} alt="" width="34" height="34" loading="lazy" referrerpolicy="origin" />
+              {r.hit?.icon ? (
+                <span class={`tile t-${r.hit.tint}`} aria-hidden="true">
+                  <span class="glyph" style={`--icon:url(${r.hit.icon})`} />
                 </span>
               ) : (
-                <span class={`bicon none k-${r.kind}`} aria-hidden="true">{r.reward.slice(0, 1)}</span>
+                <span class={`tile none k-${r.kind}`} aria-hidden="true">{r.reward.slice(0, 1)}</span>
               )}
               <span class="names">
-                <strong>{en && (r.brand || r.set) ? (r.brand?.en ?? r.set?.en) : r.reward}</strong>
+                <strong>{en && r.hit ? r.hit.en : r.reward}</strong>
                 <small>
                   {kindLabel(r.kind)}
-                  {!en && (r.brand || r.set) && <> · {r.brand?.en ?? r.set?.en}</>}
+                  {!en && r.hit && <> · {r.hit.en}</>}
                 </small>
               </span>
             </span>
           </li>
         ))}
       </ul>
-      {loot.vendor.length > 0 && (
+      {vendor.length > 0 && (
         <p class="vendor">
-          <strong>{t(locale, 'loot.vendor')}</strong> {loot.vendor.join(' · ')}
+          <strong>{t(locale, 'loot.vendor')}</strong>
+          {vendor.map((v) => (
+            <span class="vitem">
+              {v.hit?.icon && (
+                <span class={`tile sm t-${v.hit.tint}`} aria-hidden="true">
+                  <span class="glyph" style={`--icon:url(${v.hit.icon})`} />
+                </span>
+              )}
+              {en && v.hit ? v.hit.en : v.name}
+            </span>
+          ))}
         </p>
       )}
       <p class="credit">
@@ -112,32 +129,36 @@ const md = loot.date.slice(5).replace('-', '/');
     gap: 10px;
     min-width: 0;
   }
-  /* The wiki banner is the logo circle followed by the name: show just the circle. */
-  .bicon {
+  /* The game's look: a dark square with the emblem in white (gear sets in green). */
+  .tile {
     flex: none;
-    width: 34px;
-    height: 34px;
-    border-radius: 50%;
-    overflow: hidden;
-    background: var(--panel);
-  }
-  .bicon img {
-    display: block;
-    width: auto;
-    height: 34px;
-    max-width: none;
-  }
-  .bicon.none {
     display: grid;
     place-items: center;
-    color: var(--panel-ink);
-    font: 700 0.9rem / 1 var(--font-hud);
+    width: 40px;
+    height: 40px;
+    border: 1px solid #5b6270;
+    background: #262a33;
   }
-  .bicon.none.k-set {
-    background: #5c7f1a;
+  .tile.sm {
+    width: 26px;
+    height: 26px;
   }
-  .bicon.none.k-slot {
-    background: var(--ink-soft);
+  .glyph {
+    width: 82%;
+    height: 82%;
+    background: #f2f2f2;
+    -webkit-mask: var(--icon) center / contain no-repeat;
+    mask: var(--icon) center / contain no-repeat;
+  }
+  .t-set .glyph {
+    background: #2ee59d;
+  }
+  .tile.none {
+    color: #f2f2f2;
+    font: 700 1rem / 1 var(--font-hud);
+  }
+  .tile.none.k-set {
+    color: #2ee59d;
   }
   .names {
     display: grid;
@@ -151,7 +172,16 @@ const md = loot.date.slice(5).replace('-', '/');
     font-size: var(--step--1);
   }
   .vendor {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 6px 14px;
     margin: var(--space-2) 0 0;
+  }
+  .vitem {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
   }
   .credit {
     margin: var(--space-1) 0 0;

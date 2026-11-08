@@ -1,4 +1,4 @@
-import { mkdtempSync, readFileSync } from 'node:fs';
+import { existsSync, mkdtempSync, readFileSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { describe, expect, it, vi } from 'vitest';
@@ -269,10 +269,15 @@ describe('今日戰鬥升級 (巴哈 daily post)', () => {
     expect(dailyDate('【情報】11/07 每日戰鬥升級掉落 & 原型商人', new Date('2026-11-08T03:00:00Z'))).toBe('2026-11-07');
     expect(dailyDate('【情報】12/31 每日', new Date('2027-01-01T03:00:00Z'))).toBe('2026-12-31');
   });
-  it('every brand in the list has a wiki icon, and no Chinese name points to two brands', () => {
-    const b = JSON.parse(readFileSync('data/brands.json', 'utf8')) as { brands: { en: string; aliases: string[]; icon: string | null }[] };
-    for (const x of b.brands) expect(x.icon, x.en).toMatch(/^https:\/\/static\.wikia\.nocookie\.net\/thedivision\/images\//);
-    const all = b.brands.flatMap((x) => x.aliases);
-    expect(new Set(all).size).toBe(all.length);
+  it('every brand and slot has a local in-game icon, and no name points to two entries', () => {
+    type E = { en: string; aliases: string[]; icon: string | null };
+    const b = JSON.parse(readFileSync('data/brands.json', 'utf8')) as { brands: E[]; sets: E[]; slots: E[] };
+    for (const x of [...b.brands, ...b.slots]) expect(x.icon, x.en).toMatch(/^\/icons\/(brand|slot|weapon)\/[a-z0-9-]+\.png$/);
+    for (const x of [...b.brands, ...b.sets, ...b.slots]) if (x.icon) expect(existsSync('public' + x.icon), x.icon).toBe(true);
+    for (const list of [b.brands, b.sets, b.slots]) {
+      const all = list.flatMap((x) => x.aliases);
+      expect(new Set(all).size).toBe(all.length);
+    }
+    expect(b.slots.find((s) => s.aliases.includes('護膝'))?.icon).toBe('/icons/slot/kneepads.png');
   });
 });
