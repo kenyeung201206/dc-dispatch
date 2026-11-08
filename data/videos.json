@@ -1,6 +1,58 @@
 {
   "videos": [
     {
+      "id": "eDID1c7CJ2U",
+      "title": "They really tried to take me out #division2 #gaming #shorts",
+      "channelName": "Died Again Gaming",
+      "channelUrl": "https://www.youtube.com/channel/UCrK99e79TwSpgElDb-r-Lpg",
+      "publishedAt": "2026-11-08T18:13:38.000Z",
+      "durationSec": 41,
+      "official": false,
+      "row": "more",
+      "checkedAt": "2026-11-08T18:35:22.684Z",
+      "via": "youtube-api",
+      "rumour": false
+    },
+    {
+      "id": "C4lo2iyypvU",
+      "title": "Division 2 Guardian Gets Deleted by ONE Reload (Not One Bullet Got Through) 😂",
+      "channelName": "TuxedoBandido",
+      "channelUrl": "https://www.youtube.com/channel/UCWIdBINha5bKeFuvAs7US4A",
+      "publishedAt": "2026-11-08T17:30:13.000Z",
+      "durationSec": 44,
+      "official": false,
+      "row": "more",
+      "checkedAt": "2026-11-08T18:35:22.684Z",
+      "via": "youtube-api",
+      "rumour": false
+    },
+    {
+      "id": "i93VL_Tl2ZY",
+      "title": "BEST NEW Exotic Components Farm... 12 Every 10 Minutes!",
+      "channelName": "iDentity",
+      "channelUrl": "https://www.youtube.com/channel/UCtx_yeCp8I593M5tBu9G-6A",
+      "publishedAt": "2026-11-08T17:00:38.000Z",
+      "durationSec": 702,
+      "official": false,
+      "row": "intel",
+      "checkedAt": "2026-11-08T18:35:22.684Z",
+      "via": "youtube-search",
+      "rumour": false
+    },
+    {
+      "id": "FmIB7hJuqiM",
+      "title": "PS5　全境封鎖2　解夥伴技能",
+      "channelName": "PS & PC 遊戲交流區-主頻道",
+      "channelUrl": "https://www.youtube.com/channel/UCkd3D6EnMoJ7JSEwJ-MPsFQ",
+      "publishedAt": "2026-11-08T17:00:11.000Z",
+      "durationSec": 15970,
+      "official": false,
+      "row": "more",
+      "checkedAt": "2026-11-08T18:35:22.684Z",
+      "via": "youtube-api",
+      "rumour": false
+    },
+    {
       "id": "tNueFm0jukE",
       "title": "Division 2: New Exotic Gloves (Loaded For Bear) Explained",
       "channelName": "Compy9",
@@ -9,7 +61,7 @@
       "durationSec": 2021,
       "official": false,
       "row": "intel",
-      "checkedAt": "2026-11-08T16:32:47.820Z",
+      "checkedAt": "2026-11-08T18:35:22.684Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -22,7 +74,7 @@
       "durationSec": 5459,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-08T16:32:47.820Z",
+      "checkedAt": "2026-11-08T18:35:22.684Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -35,7 +87,7 @@
       "durationSec": 618,
       "official": false,
       "row": "build-guides",
-      "checkedAt": "2026-11-08T16:32:47.820Z",
+      "checkedAt": "2026-11-08T18:35:22.684Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -48,7 +100,7 @@
       "durationSec": 20547,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-08T16:32:47.820Z",
+      "checkedAt": "2026-11-08T18:35:22.684Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -61,7 +113,7 @@
       "durationSec": 6393,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-08T16:32:47.820Z",
+      "checkedAt": "2026-11-08T18:35:22.684Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -74,7 +126,7 @@
       "durationSec": 546,
       "official": false,
       "row": "build-guides",
-      "checkedAt": "2026-11-08T16:32:47.820Z",
+      "checkedAt": "2026-11-08T18:35:22.684Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -87,7 +139,7 @@
       "durationSec": 22812,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-08T16:32:47.820Z",
+      "checkedAt": "2026-11-08T18:35:22.684Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -100,7 +152,7 @@
       "durationSec": 9915,
       "official": false,
       "row": "intel",
-      "checkedAt": "2026-11-08T16:32:47.820Z",
+      "checkedAt": "2026-11-08T18:35:22.684Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -113,7 +165,7 @@
       "durationSec": 2249,
       "official": false,
       "row": "build-guides",
-      "checkedAt": "2026-11-08T16:32:47.820Z",
+      "checkedAt": "2026-11-08T18:35:22.684Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -126,7 +178,7 @@
       "durationSec": 74,
       "official": false,
       "row": "intel",
-      "checkedAt": "2026-11-08T16:32:47.820Z",
+      "checkedAt": "2026-11-08T18:35:22.684Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -139,21 +191,8 @@
       "durationSec": 1220,
       "official": false,
       "row": "intel",
-      "checkedAt": "2026-11-08T16:32:47.820Z",
+      "checkedAt": "2026-11-08T18:35:22.684Z",
       "via": "youtube-search",
-      "rumour": false
-    },
-    {
-      "id": "FmIB7hJuqiM",
-      "title": "PS5　全境封鎖2　解夥伴技能",
-      "channelName": "PS & PC 遊戲交流區-主頻道",
-      "channelUrl": "https://www.youtube.com/channel/UCkd3D6EnMoJ7JSEwJ-MPsFQ",
-      "publishedAt": "2026-11-08T08:13:14.000Z",
-      "durationSec": 15970,
-      "official": false,
-      "row": "more",
-      "checkedAt": "2026-11-08T16:32:47.820Z",
-      "via": "youtube-api",
       "rumour": false
     },
     {
@@ -165,7 +204,7 @@
       "durationSec": 522,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-08T16:32:47.820Z",
+      "checkedAt": "2026-11-08T18:35:22.684Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -178,7 +217,7 @@
       "durationSec": 18813,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-08T16:32:47.820Z",
+      "checkedAt": "2026-11-08T18:35:22.684Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -191,7 +230,7 @@
       "durationSec": 422,
       "official": false,
       "row": "build-guides",
-      "checkedAt": "2026-11-08T16:32:47.820Z",
+      "checkedAt": "2026-11-08T18:35:22.684Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -204,7 +243,7 @@
       "durationSec": 1004,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-08T16:32:47.820Z",
+      "checkedAt": "2026-11-08T18:35:22.684Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -217,7 +256,7 @@
       "durationSec": 5385,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-08T16:32:47.820Z",
+      "checkedAt": "2026-11-08T18:35:22.684Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -230,7 +269,7 @@
       "durationSec": 666,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-08T16:32:47.820Z",
+      "checkedAt": "2026-11-08T18:35:22.684Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -243,7 +282,7 @@
       "durationSec": 788,
       "official": false,
       "row": "build-guides",
-      "checkedAt": "2026-11-08T16:32:47.820Z",
+      "checkedAt": "2026-11-08T18:35:22.684Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -256,7 +295,7 @@
       "durationSec": 2022,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-08T16:32:47.820Z",
+      "checkedAt": "2026-11-08T18:35:22.684Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -269,7 +308,7 @@
       "durationSec": 27,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-08T16:32:47.820Z",
+      "checkedAt": "2026-11-08T18:35:22.684Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -282,8 +321,21 @@
       "durationSec": 25271,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-08T16:32:47.820Z",
+      "checkedAt": "2026-11-08T18:35:22.684Z",
       "via": "youtube-api",
+      "rumour": false
+    },
+    {
+      "id": "d-hUHfLqDSM",
+      "title": "This Pestilence Tipping Scales Build is UNSTOPPABLE...1M+ Ticks 700% CHD [6X XP Event] (Division 2)",
+      "channelName": "FragSavage",
+      "channelUrl": "https://www.youtube.com/channel/UC_EClz3RVYncLGMxdHo8_EQ",
+      "publishedAt": "2026-11-07T18:00:13.000Z",
+      "durationSec": 780,
+      "official": false,
+      "row": "build-guides",
+      "checkedAt": "2026-11-08T18:35:22.684Z",
+      "via": "youtube-search",
       "rumour": false
     },
     {
@@ -295,7 +347,7 @@
       "durationSec": 43,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-08T16:32:47.820Z",
+      "checkedAt": "2026-11-08T18:35:22.684Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -320,7 +372,7 @@
       "durationSec": 736,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-08T16:32:47.820Z",
+      "checkedAt": "2026-11-08T18:35:22.684Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -333,7 +385,7 @@
       "durationSec": 1942,
       "official": false,
       "row": "build-guides",
-      "checkedAt": "2026-11-08T16:32:47.820Z",
+      "checkedAt": "2026-11-08T18:35:22.684Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -346,7 +398,7 @@
       "durationSec": 483,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-08T16:32:47.820Z",
+      "checkedAt": "2026-11-08T18:35:22.684Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -359,7 +411,7 @@
       "durationSec": 1226,
       "official": false,
       "row": "intel",
-      "checkedAt": "2026-11-08T16:32:47.820Z",
+      "checkedAt": "2026-11-08T18:35:22.684Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -372,7 +424,7 @@
       "durationSec": 4895,
       "official": false,
       "row": "intel",
-      "checkedAt": "2026-11-08T16:32:47.820Z",
+      "checkedAt": "2026-11-08T18:35:22.684Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -385,59 +437,7 @@
       "durationSec": 443,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-08T16:32:47.820Z",
-      "via": "youtube-api",
-      "rumour": false
-    },
-    {
-      "id": "mlsF9Ckdjus",
-      "title": "PS5　全境封鎖2　中央公園#3",
-      "channelName": "PS & PC 遊戲交流區-主頻道",
-      "channelUrl": "https://www.youtube.com/channel/UCkd3D6EnMoJ7JSEwJ-MPsFQ",
-      "publishedAt": "2026-11-07T10:29:28.000Z",
-      "durationSec": 14773,
-      "official": false,
-      "row": "more",
-      "checkedAt": "2026-11-08T16:32:47.820Z",
-      "via": "youtube-api",
-      "rumour": false
-    },
-    {
-      "id": "dtq7CtK6mSw",
-      "title": "The Division 2 - HOW TO GET NEW EXOTIC GLOVES \"LOADED FOR BEAR\"",
-      "channelName": "Afflicted Gamer",
-      "channelUrl": "https://www.youtube.com/channel/UC1FqN404t0IwX_MEoMAZ0EA",
-      "publishedAt": "2026-11-07T08:41:20.000Z",
-      "durationSec": 231,
-      "official": false,
-      "row": "intel",
-      "checkedAt": "2026-11-08T16:32:47.820Z",
-      "via": "youtube-search",
-      "rumour": false
-    },
-    {
-      "id": "onfGjSy0w2M",
-      "title": "全境封鎖2 - 重裝出擊 核爆的急速啟動方案，無原型 無專精 僅需5殺後就引爆1.5億",
-      "channelName": "純天然",
-      "channelUrl": "https://www.youtube.com/channel/UCAGO36FuuShsuvGD9bF1UwQ",
-      "publishedAt": "2026-11-07T07:33:15.000Z",
-      "durationSec": 53,
-      "official": false,
-      "row": "more",
-      "checkedAt": "2026-11-08T16:32:47.820Z",
-      "via": "youtube-api",
-      "rumour": false
-    },
-    {
-      "id": "PEvR0dM_QY4",
-      "title": "Division 2’s BEST Farm! 27 Levels + 10+ Exotic Comp in Under 5 Minutes! Central Park King Macho Loop",
-      "channelName": "King Macho",
-      "channelUrl": "https://www.youtube.com/channel/UC0RO8Ex_8w1ZYp4VoCz7o5w",
-      "publishedAt": "2026-11-07T04:19:26.000Z",
-      "durationSec": 497,
-      "official": false,
-      "row": "more",
-      "checkedAt": "2026-11-08T16:32:47.820Z",
+      "checkedAt": "2026-11-08T18:35:22.684Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -450,7 +450,7 @@
       "durationSec": 92,
       "official": true,
       "row": "trailers",
-      "checkedAt": "2026-11-08T16:32:47.820Z",
+      "checkedAt": "2026-11-08T18:35:22.684Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -463,7 +463,7 @@
       "durationSec": 7035,
       "official": true,
       "row": "more",
-      "checkedAt": "2026-11-08T16:32:47.820Z",
+      "checkedAt": "2026-11-08T18:35:22.684Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -476,7 +476,7 @@
       "durationSec": 342,
       "official": true,
       "row": "more",
-      "checkedAt": "2026-11-08T16:32:47.820Z",
+      "checkedAt": "2026-11-08T18:35:22.684Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -489,7 +489,7 @@
       "publishedAt": "2026-11-02T13:48:39.000Z",
       "official": true,
       "row": "more",
-      "checkedAt": "2026-11-08T16:32:47.820Z",
+      "checkedAt": "2026-11-08T18:35:22.684Z",
       "via": "ubisoft-page",
       "rumour": false
     },
@@ -502,7 +502,7 @@
       "publishedAt": "2026-10-30T18:16:35.000Z",
       "official": true,
       "row": "trailers",
-      "checkedAt": "2026-11-08T16:32:47.820Z",
+      "checkedAt": "2026-11-08T18:35:22.684Z",
       "via": "ubisoft-page",
       "rumour": false
     },
@@ -515,7 +515,7 @@
       "publishedAt": "2026-10-13T13:30:33.000Z",
       "official": true,
       "row": "trailers",
-      "checkedAt": "2026-11-08T16:32:47.820Z",
+      "checkedAt": "2026-11-08T18:35:22.684Z",
       "via": "ubisoft-page",
       "rumour": false
     }
