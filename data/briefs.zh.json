@@ -3461,6 +3461,50 @@
         "我們看不到影片內容，以上只依影片標題整理。"
       ],
       "written": "2026-11-08"
+    },
+    "1ddxsrv": {
+      "points": [
+        "這是 YouTube 影片（創作者配裝介紹），不是官方消息",
+        "創作者認為這是目前《全境封鎖2》最強配裝，主軸是優化過的「Loaded Bear」換彈流",
+        "影片先展示裝備、武器、天賦與模組，結尾再說明配裝與換彈操作順序",
+        "配裝重點：Loaded Bear 奇特手套、Nemesis 加一把霰彈槍",
+        "防具天賦：胸甲 Perfect Gunslinger、背包 Vigilance，模組使用 Protection from Elites"
+      ],
+      "tables": [
+        {
+          "title": "配裝一覽",
+          "columns": [
+            "部位／項目",
+            "內容"
+          ],
+          "rows": [
+            [
+              "手套",
+              "Loaded Bear（奇特）"
+            ],
+            [
+              "武器",
+              "Nemesis、霰彈槍"
+            ],
+            [
+              "胸甲",
+              "Perfect Gunslinger"
+            ],
+            [
+              "背包",
+              "Vigilance"
+            ],
+            [
+              "模組",
+              "Protection from Elites"
+            ]
+          ]
+        }
+      ],
+      "body": [
+        "我們看不到影片畫面，以上只依影片說明整理，詳細換彈順序請看影片結尾。"
+      ],
+      "written": "2026-11-08"
     }
   }
 }
