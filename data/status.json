@@ -1,17 +1,17 @@
 {
-  "lastRun": "2026-11-08T10:37:24.588Z",
-  "durationMs": 14763,
+  "lastRun": "2026-11-08T12:39:49.112Z",
+  "durationMs": 16148,
   "edition": {
     "date": "2026-11-08",
     "number": 5,
-    "items": 35,
-    "zhPending": 16
+    "items": 37,
+    "zhPending": 18
   },
   "sources": [
     {
       "id": "steam-news",
       "ok": true,
-      "items": 24
+      "items": 23
     },
     {
       "id": "ubisoft-en",
