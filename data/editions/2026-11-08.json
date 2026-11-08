@@ -652,33 +652,6 @@
       "status": "new"
     },
     {
-      "id": "pdi9iv",
-      "sourceId": "youtube",
-      "sourceName": "伊彣",
-      "sourceUrl": "https://www.youtube.com/watch?v=yzlp5E0fW64",
-      "title_orig": "全境封鎖2",
-      "lang_orig": "zh",
-      "publishedAt": "2026-11-06T23:32:22.000Z",
-      "fetchedAt": "2026-11-07T16:32:13.807Z",
-      "category": "community",
-      "tags": [
-        "video"
-      ],
-      "importance": 50,
-      "confidence": "community",
-      "headline_en": "pending",
-      "headline_zhHant": "全境封鎖2",
-      "summary_en": "pending",
-      "summary_zhHant": "全境封鎖2",
-      "summaryKind": "extract",
-      "alsoReportedBy": [],
-      "media": [],
-      "videoId": "yzlp5E0fW64",
-      "relatedIds": [],
-      "firstSeenAt": "2026-11-07T16:32:13.807Z",
-      "status": "new"
-    },
-    {
       "id": "1k3dbt0",
       "sourceId": "steam-news",
       "sourceName": "Ubisoft (via Steam News)",

@@ -26,10 +26,22 @@ function cleanDescription(d = ''): string {
     .trim();
 }
 
+/** The game's own name in the ways creators write it; a title that is only this says nothing. */
+const GAME_NAME = /tom\s*clancy'?s|the\s*division\s*2?|division\s*2|td2|全境封[鎖锁]\s*2?|湯姆克蘭西|汤姆克兰西/gi;
+
+/**
+ * A video we can't describe without guessing: its title is just the game's name (a stream or a clip) and it
+ * has no description. Such a story would stay "全境封鎖2" with nothing to write up, so we leave it out.
+ */
+export function saysNothing(v: Pick<VideoCandidate, 'title' | 'description'>): boolean {
+  const rest = v.title.replace(GAME_NAME, '').replace(/#\S+/g, '').replace(/[\p{P}\p{S}\s\d]+/gu, '');
+  return rest.length < 3 && cleanDescription(v.description).length < 20;
+}
+
 export function videoStories(videos: VideoCandidate[], now: Date): Item[] {
   const perChannel = new Map<string, number>();
   const ranked = [...videos]
-    .filter((v) => v.search)
+    .filter((v) => v.search && !saysNothing(v))
     .sort((a, b) => Number(INTERESTING.test(b.title)) - Number(INTERESTING.test(a.title)) || (b.views ?? 0) - (a.views ?? 0))
     .filter((v) => {
       const k = v.channelUrl ?? v.channelName ?? v.id;

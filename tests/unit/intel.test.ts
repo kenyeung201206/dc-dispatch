@@ -9,7 +9,7 @@ import { exoticsFromArticle, mergeExotics, wikiExotics, wikiLead } from '../../p
 import { parseBahaTime, parseBahamutBoard, parseBahamutFirstPost } from '../../pipeline/sources/bahamut.ts';
 import { dailyDate, parseDailyLoot } from '../../pipeline/sources/bahamut-daily.ts';
 import { parseUbisoftNews } from '../../pipeline/sources/ubisoft.ts';
-import { videoStories } from '../../pipeline/video/intel-items.ts';
+import { saysNothing, videoStories } from '../../pipeline/video/intel-items.ts';
 import type { VideoCandidate } from '../../pipeline/video/videos.ts';
 import { searchVideos } from '../../pipeline/video/youtube.ts';
 import { localized } from '../../src/lib/editions.ts';
@@ -137,6 +137,15 @@ describe('YouTube creator scan (mocked API)', () => {
     const ids = videoStories([...en, zh], NOW).map((i) => i.videoId);
     expect(ids).toHaveLength(12);
     expect(ids).toContain('zzzzzzzzzzz');
+  });
+
+  it('leaves out videos whose title is only the game name and that have no description', () => {
+    const base: VideoCandidate = { id: 'bare0000000', title: '全境封鎖2', publishedAt: '2026-11-03T00:00:00.000Z', official: false, via: 'youtube-api', search: true, views: 900 };
+    expect(saysNothing(base)).toBe(true);
+    expect(saysNothing({ ...base, title: 'The Division 2 #division2 🔴' })).toBe(true);
+    expect(saysNothing({ ...base, description: '今天實測新的奇特武器，順便講一下配裝思路和天賦搭配。' })).toBe(false);
+    expect(saysNothing({ ...base, title: '全境封鎖2 蜜獾怎麼拿' })).toBe(false);
+    expect(videoStories([base], NOW)).toEqual([]);
   });
 
   it('takes at most 2 videos from one creator per run', () => {
