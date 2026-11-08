@@ -29,6 +29,7 @@ import { parseSteamNews } from './sources/steam.ts';
 import type { RawItem, SourceResult } from './sources/types.ts';
 import { parseUbisoftNews } from './sources/ubisoft.ts';
 import { parseBahamutBoard, parseBahamutFirstPost } from './sources/bahamut.ts';
+import { dailyDate, parseDailyLoot } from './sources/bahamut-daily.ts';
 import { aiSummaries, needsAi } from './ai.ts';
 import { aiBriefs } from './ai-briefs.ts';
 
@@ -120,6 +121,22 @@ async function main() {
   log('info', 'refresh start', { date, dryRun });
 
   const results = await Promise.all((Object.keys(SOURCES) as SourceId[]).map((id) => runSource(id, now)));
+  // Today's 戰鬥升級 loot: 巴哈's pinned daily thread, first post only (one extra request).
+  if (!dryRun) {
+    const daily = results.find((r) => r.sourceId === 'bahamut')?.items.find((i) => /每日戰鬥升級/.test(i.title));
+    const date = daily && dailyDate(daily.title, now);
+    if (daily && date) {
+      try {
+        const loot = parseDailyLoot(await politeGet(daily.url));
+        if (loot) {
+          await writeFile('data/daily-loot.json', JSON.stringify({ date, title: daily.title, url: daily.url, ...loot, fetchedAt: now.toISOString() }, null, 1) + '\n');
+          log('info', 'daily loot', { date, missions: loot.missions.length });
+        } else log('warn', 'daily loot: layout not recognised', {});
+      } catch (err) {
+        log('warn', 'daily loot fetch failed', { error: String(err).slice(0, 120) });
+      }
+    }
+  }
   const zhById = new Map(results.find((r) => r.sourceId === 'ubisoft-zh-tw')!.items.map((i) => [i.externalId, i]));
   const english = results.filter((r) => r.sourceId !== 'ubisoft-zh-tw').flatMap((r) => r.items);
 

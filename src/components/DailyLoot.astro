@@ -1,0 +1,161 @@
+---
+/**
+ * 今日戰鬥升級: each mission's targeted reward for the day, with the brand's in-game logo so readers who
+ * don't know brand names can still recognise them. Data: data/daily-loot.json (the robot reads 巴哈's pinned
+ * daily thread every update). Icons: brand banners on The Division Wiki (Ubisoft art), loaded by the reader's
+ * browser; a brand we can't match with confidence (e.g. 特種合金) shows as text, never a guessed logo.
+ */
+import loot from '../../data/daily-loot.json' with { type: 'json' };
+import brands from '../../data/brands.json' with { type: 'json' };
+import { t, type Locale } from '../i18n/index.ts';
+
+interface Props {
+  locale: Locale;
+  /** The edition's date; the box shows only when the loot is for that day or the day before. */
+  date: string;
+}
+const { locale, date } = Astro.props;
+const en = locale === 'en';
+const fresh = Date.parse(date) - Date.parse(loot.date) <= 86_400_000 && Date.parse(loot.date) <= Date.parse(date);
+
+const norm = (s: string) => s.replace(/\s+/g, '').replace(/＆/g, '&');
+const brandOf = (name: string) => brands.brands.find((b) => b.aliases.some((a) => norm(a) === norm(name)));
+const setOf = (name: string) => brands.sets.find((s) => s.aliases.some((a) => norm(a) === norm(name)));
+const rows = loot.missions.map((m) => {
+  const brand = m.kind === 'brand' ? brandOf(m.reward) : undefined;
+  const set = m.kind === 'set' ? setOf(m.reward) : undefined;
+  return { ...m, brand, set };
+});
+const kindLabel = (k: string) => t(locale, `loot.kind.${k === 'brand' || k === 'set' || k === 'slot' ? k : 'other'}` as never);
+const md = loot.date.slice(5).replace('-', '/');
+---
+{
+  fresh && (
+    <section class="loot" aria-labelledby="loot-h">
+      <h2 id="loot-h" class="hud-label">
+        {t(locale, 'loot.title')} <span class="d">{md}</span>
+      </h2>
+      <ul>
+        {rows.map((r) => (
+          <li class={`k-${r.kind}`}>
+            <span class="place">{r.place}</span>
+            <span class="reward">
+              {r.brand?.icon ? (
+                <span class="bicon" aria-hidden="true">
+                  <img src={r.brand.icon} alt="" width="34" height="34" loading="lazy" referrerpolicy="origin" />
+                </span>
+              ) : (
+                <span class={`bicon none k-${r.kind}`} aria-hidden="true">{r.reward.slice(0, 1)}</span>
+              )}
+              <span class="names">
+                <strong>{en && (r.brand || r.set) ? (r.brand?.en ?? r.set?.en) : r.reward}</strong>
+                <small>
+                  {kindLabel(r.kind)}
+                  {!en && (r.brand || r.set) && <> · {r.brand?.en ?? r.set?.en}</>}
+                </small>
+              </span>
+            </span>
+          </li>
+        ))}
+      </ul>
+      {loot.vendor.length > 0 && (
+        <p class="vendor">
+          <strong>{t(locale, 'loot.vendor')}</strong> {loot.vendor.join(' · ')}
+        </p>
+      )}
+      <p class="credit">
+        {t(locale, 'loot.credit')} <a href={loot.url} rel="noopener noreferrer" target="_blank">{t(locale, 'loot.source')}</a>
+      </p>
+    </section>
+  )
+}
+
+<style>
+  .loot {
+    margin: var(--space-4) 0;
+    padding: var(--space-3) var(--space-3) var(--space-2);
+    border: 2px solid var(--ink);
+    border-left: 6px solid var(--shd);
+    background: var(--paper);
+  }
+  .loot h2 {
+    margin: 0 0 var(--space-2);
+    color: var(--shd-ink);
+    font: 800 var(--step-0) / 1.2 var(--font-hud);
+  }
+  .loot h2 .d {
+    color: var(--ink-soft);
+    font-weight: 600;
+  }
+  .loot ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .loot li {
+    display: grid;
+    grid-template-columns: minmax(5.5em, 7em) 1fr;
+    align-items: center;
+    gap: var(--space-2);
+    padding: 6px 0;
+    border-top: 1px dashed var(--rule-soft);
+  }
+  .loot li:first-child {
+    border-top: 0;
+  }
+  .place {
+    font-weight: 700;
+  }
+  .reward {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    min-width: 0;
+  }
+  /* The wiki banner is the logo circle followed by the name: show just the circle. */
+  .bicon {
+    flex: none;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    overflow: hidden;
+    background: var(--panel);
+  }
+  .bicon img {
+    display: block;
+    width: auto;
+    height: 34px;
+    max-width: none;
+  }
+  .bicon.none {
+    display: grid;
+    place-items: center;
+    color: var(--panel-ink);
+    font: 700 0.9rem / 1 var(--font-hud);
+  }
+  .bicon.none.k-set {
+    background: #5c7f1a;
+  }
+  .bicon.none.k-slot {
+    background: var(--ink-soft);
+  }
+  .names {
+    display: grid;
+    min-width: 0;
+  }
+  .names strong {
+    overflow-wrap: anywhere;
+  }
+  .names small {
+    color: var(--ink-soft);
+    font-size: var(--step--1);
+  }
+  .vendor {
+    margin: var(--space-2) 0 0;
+  }
+  .credit {
+    margin: var(--space-1) 0 0;
+    color: var(--ink-soft);
+    font-size: var(--step--1);
+  }
+</style>

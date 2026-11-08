@@ -1,4 +1,5 @@
 ---
+import DailyLoot from './DailyLoot.astro';
 import StoryCard from './StoryCard.astro';
 import SideBox from './SideBox.astro';
 import LeadArt from './LeadArt.astro';
@@ -104,6 +105,8 @@ const moreVideos = videosFor(locale).filter((v) => v.id !== vod?.id).slice(0, 2)
       </section>
     )
   }
+
+  {!isPast && <DailyLoot locale={locale} date={edition.date} />}
 
   <div class="front" id="front-page">
     <div class="lead-col">

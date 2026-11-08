@@ -1,0 +1,340 @@
+{
+ "_note": "Gear brands and sets for the 今日戰鬥升級 box. aliases = Chinese names players use (巴哈 posts use the short ones); a reward matches only on an exact alias. icon = the brand banner on The Division Wiki (Ubisoft art), loaded by the reader's browser. Unknown names (e.g. 特種合金) show as text.",
+ "brands": [
+  {
+   "en": "5.11 Tactical",
+   "aliases": [
+    "5.11",
+    "5.11 戰術"
+   ],
+   "icon": "https://static.wikia.nocookie.net/thedivision/images/1/16/5.11.png/revision/latest?cb=20220401135410"
+  },
+  {
+   "en": "Airaldi Holdings",
+   "aliases": [
+    "阿爾拉蒂",
+    "艾拉迪"
+   ],
+   "icon": "https://static.wikia.nocookie.net/thedivision/images/f/f1/Airaldi.png/revision/latest?cb=20220401142725"
+  },
+  {
+   "en": "Alps Summit Armament",
+   "aliases": [
+    "阿爾卑斯"
+   ],
+   "icon": "https://static.wikia.nocookie.net/thedivision/images/5/57/Alps.png/revision/latest?cb=20220403154754"
+  },
+  {
+   "en": "Badger Tuff",
+   "aliases": [
+    "貝哲陶夫",
+    "貝哲"
+   ],
+   "icon": "https://static.wikia.nocookie.net/thedivision/images/f/ff/Badger.png/revision/latest?cb=20220403153114"
+  },
+  {
+   "en": "Belstone Armory",
+   "aliases": [
+    "貝爾斯通"
+   ],
+   "icon": "https://static.wikia.nocookie.net/thedivision/images/d/d3/Belstone.png/revision/latest?cb=20220403180746"
+  },
+  {
+   "en": "Brazos de Arcabuz",
+   "aliases": [
+    "火繩槍"
+   ],
+   "icon": "https://static.wikia.nocookie.net/thedivision/images/8/81/Brazos_de_Arcabuz.png/revision/latest?cb=20230304181050"
+  },
+  {
+   "en": "Česká Výroba",
+   "aliases": [
+    "捷克"
+   ],
+   "icon": "https://static.wikia.nocookie.net/thedivision/images/2/29/Ceska.png/revision/latest?cb=20220403175158"
+  },
+  {
+   "en": "China Light Industries",
+   "aliases": [
+    "中國光能",
+    "中國輕工"
+   ],
+   "icon": "https://static.wikia.nocookie.net/thedivision/images/8/81/China.png/revision/latest?cb=20220401140903"
+  },
+  {
+   "en": "Douglas & Harding",
+   "aliases": [
+    "道格&哈定",
+    "道格與哈定",
+    "道格拉斯與哈定",
+    "道格拉斯"
+   ],
+   "icon": "https://static.wikia.nocookie.net/thedivision/images/1/16/Douglas_harding.png/revision/latest?cb=20220403154320"
+  },
+  {
+   "en": "Electrique",
+   "aliases": [
+    "電力"
+   ],
+   "icon": "https://static.wikia.nocookie.net/thedivision/images/d/d7/Electrique.png/revision/latest?cb=20230704102010"
+  },
+  {
+   "en": "Empress International",
+   "aliases": [
+    "女皇"
+   ],
+   "icon": "https://static.wikia.nocookie.net/thedivision/images/1/12/Empress.png/revision/latest?cb=20220403180814"
+  },
+  {
+   "en": "Fenris Group AB",
+   "aliases": [
+    "芬里斯"
+   ],
+   "icon": "https://static.wikia.nocookie.net/thedivision/images/4/49/Fenris.png/revision/latest?cb=20220403154802"
+  },
+  {
+   "en": "Gila Guard",
+   "aliases": [
+    "毒蜥"
+   ],
+   "icon": "https://static.wikia.nocookie.net/thedivision/images/c/c5/Gila.png/revision/latest?cb=20220403153855"
+  },
+  {
+   "en": "Golan Gear",
+   "aliases": [
+    "戈蘭"
+   ],
+   "icon": "https://static.wikia.nocookie.net/thedivision/images/6/63/Golan.png/revision/latest?cb=20220403154311"
+  },
+  {
+   "en": "Grupo Sombra",
+   "aliases": [
+    "影子軍團"
+   ],
+   "icon": "https://static.wikia.nocookie.net/thedivision/images/4/4d/Grupo.png/revision/latest?cb=20220403175150"
+  },
+  {
+   "en": "Habsburg Guard",
+   "aliases": [
+    "哈布斯堡"
+   ],
+   "icon": "https://static.wikia.nocookie.net/thedivision/images/c/ca/Habsburg_Guard.png/revision/latest?cb=20230304181218"
+  },
+  {
+   "en": "Hana-U",
+   "aliases": [
+    "哈瑙"
+   ],
+   "icon": "https://static.wikia.nocookie.net/thedivision/images/d/de/Hana.png/revision/latest?cb=20220403180723"
+  },
+  {
+   "en": "Lengmo",
+   "aliases": [
+    "冷漠"
+   ],
+   "icon": "https://static.wikia.nocookie.net/thedivision/images/7/74/Lengmo.png/revision/latest?cb=20240114075158"
+  },
+  {
+   "en": "Murakami Industries",
+   "aliases": [
+    "村上"
+   ],
+   "icon": "https://static.wikia.nocookie.net/thedivision/images/7/7b/Murakami.png/revision/latest?cb=20220403180732"
+  },
+  {
+   "en": "Overlord Armaments",
+   "aliases": [
+    "霸主"
+   ],
+   "icon": "https://static.wikia.nocookie.net/thedivision/images/1/1e/Overlord.png/revision/latest?cb=20220403153106"
+  },
+  {
+   "en": "Palisade Steelworks",
+   "aliases": [],
+   "icon": "https://static.wikia.nocookie.net/thedivision/images/8/82/Palisade_Steelworks.png/revision/latest?cb=20240720073937"
+  },
+  {
+   "en": "Petrov Defense Group",
+   "aliases": [
+    "彼得羅夫"
+   ],
+   "icon": "https://static.wikia.nocookie.net/thedivision/images/4/41/Petrov.png/revision/latest?cb=20220403153846"
+  },
+  {
+   "en": "Providence Defense",
+   "aliases": [
+    "天命"
+   ],
+   "icon": "https://static.wikia.nocookie.net/thedivision/images/2/22/Providence.png/revision/latest?cb=20220403153122"
+  },
+  {
+   "en": "Richter & Kaiser",
+   "aliases": [
+    "李希特"
+   ],
+   "icon": "https://static.wikia.nocookie.net/thedivision/images/3/34/Richter.png/revision/latest?cb=20220401135420"
+  },
+  {
+   "en": "Sokolov Concern",
+   "aliases": [
+    "索寇羅夫",
+    "索科洛夫"
+   ],
+   "icon": "https://static.wikia.nocookie.net/thedivision/images/1/14/Sokolov.png/revision/latest?cb=20220403175215"
+  },
+  {
+   "en": "Uzina Getica",
+   "aliases": [
+    "先驅工業"
+   ],
+   "icon": "https://static.wikia.nocookie.net/thedivision/images/c/c9/Uzina.png/revision/latest?cb=20220528080550"
+  },
+  {
+   "en": "Walker, Harris & Co.",
+   "aliases": [
+    "沃克"
+   ],
+   "icon": "https://static.wikia.nocookie.net/thedivision/images/a/a1/Walker.png/revision/latest?cb=20220403180739"
+  },
+  {
+   "en": "Wyvern Wear",
+   "aliases": [
+    "飛龍"
+   ],
+   "icon": "https://static.wikia.nocookie.net/thedivision/images/6/6f/Wyvern_wear.png/revision/latest?cb=20220403175208"
+  },
+  {
+   "en": "Yaahl Gear",
+   "aliases": [
+    "耶爾"
+   ],
+   "icon": "https://static.wikia.nocookie.net/thedivision/images/4/45/Yaahl.png/revision/latest?cb=20220403181648"
+  },
+  {
+   "en": "Zwiadowka",
+   "aliases": [],
+   "icon": "https://static.wikia.nocookie.net/thedivision/images/5/5a/Zwiadowka.png/revision/latest?cb=20240720073950"
+  }
+ ],
+ "sets": [
+  {
+   "en": "Negotiator's Dilemma",
+   "aliases": [
+    "談判者"
+   ]
+  },
+  {
+   "en": "True Patriot",
+   "aliases": [
+    "真實愛國者",
+    "愛國者"
+   ]
+  },
+  {
+   "en": "Hard Wired",
+   "aliases": [
+    "固線"
+   ]
+  },
+  {
+   "en": "Tip of the Spear",
+   "aliases": [
+    "先鋒"
+   ]
+  },
+  {
+   "en": "Aces & Eights",
+   "aliases": [
+    "A8",
+    "王牌"
+   ]
+  },
+  {
+   "en": "Foundry Bulwark",
+   "aliases": [
+    "鑄造廠"
+   ]
+  },
+  {
+   "en": "Future Initiative",
+   "aliases": [
+    "未來主動權",
+    "未來"
+   ]
+  },
+  {
+   "en": "Striker's Battlegear",
+   "aliases": [
+    "突襲者"
+   ]
+  },
+  {
+   "en": "Eclipse Protocol",
+   "aliases": [
+    "日蝕"
+   ]
+  },
+  {
+   "en": "Hunter's Fury",
+   "aliases": [
+    "獵人怒火",
+    "獵人之怒"
+   ]
+  },
+  {
+   "en": "Rigger",
+   "aliases": [
+    "裝配工"
+   ]
+  },
+  {
+   "en": "System Corruption",
+   "aliases": [
+    "系統損毀"
+   ]
+  },
+  {
+   "en": "Heartbreaker",
+   "aliases": [
+    "碎心者"
+   ]
+  },
+  {
+   "en": "Umbra Initiative",
+   "aliases": [
+    "本影"
+   ]
+  },
+  {
+   "en": "Hotshot",
+   "aliases": [
+    "烈焰"
+   ]
+  },
+  {
+   "en": "Cavalier",
+   "aliases": [
+    "騎士"
+   ]
+  },
+  {
+   "en": "Ongoing Directive",
+   "aliases": [
+    "政令"
+   ]
+  },
+  {
+   "en": "Ortiz: Exuro",
+   "aliases": [
+    "奧提茲"
+   ]
+  },
+  {
+   "en": "Apex Protocol",
+   "aliases": [
+    "頂峰協定",
+    "頂峰"
+   ]
+  }
+ ]
+}

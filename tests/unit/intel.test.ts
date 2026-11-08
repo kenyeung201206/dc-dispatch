@@ -7,6 +7,7 @@ import { classify } from '../../pipeline/classify.ts';
 import { scrubOldYoutube } from '../../pipeline/edition.ts';
 import { exoticsFromArticle, mergeExotics, wikiExotics, wikiLead } from '../../pipeline/exotics.ts';
 import { parseBahaTime, parseBahamutBoard, parseBahamutFirstPost } from '../../pipeline/sources/bahamut.ts';
+import { dailyDate, parseDailyLoot } from '../../pipeline/sources/bahamut-daily.ts';
 import { parseUbisoftNews } from '../../pipeline/sources/ubisoft.ts';
 import { videoStories } from '../../pipeline/video/intel-items.ts';
 import type { VideoCandidate } from '../../pipeline/video/videos.ts';
@@ -241,5 +242,37 @@ describe('巴哈 pinned threads', () => {
     expect(got.map((g) => g.externalId)).toEqual(['2', '3']);
     expect(got[0]).toMatchObject({ idSuffix: '11-06', publishedAt: '2026-11-06T04:00:00.000Z' });
     expect(got[1]!.idSuffix).toBeUndefined();
+  });
+});
+
+describe('今日戰鬥升級 (巴哈 daily post)', () => {
+  const cell = (color: string, text: string) => `<td bgcolor=#${color} align=center><font size="4">${text}</font></td>`;
+  const html = `<div class="c-article__content"><div>每週二戰鬥升級副本更新<br>今日抽獎</div><table>
+    <tr>${cell('c0c0c0', '美術館')}${cell('ffcc00', '特種合金')}</tr>
+    <tr>${cell('c0c0c0', '曼寧')}${cell('ffffff', '槍套')}</tr>
+    <tr>${cell('c0c0c0', '五角')}${cell('99cc00', '談判者')}</tr>
+    <tr>${cell('c0c0c0', '國防實驗室')}${cell('ffcc00', '道格&amp;哈定')}</tr>
+  </table><div>每日原型箱商人</div><table><tr>${cell('cc99ff', '護膝')}${cell('cc99ff', 'R')}</tr></table></div></article>`;
+  it('reads mission → reward with the type from the cell colour, and the vendor', () => {
+    expect(parseDailyLoot(html)).toEqual({
+      missions: [
+        { place: '美術館', reward: '特種合金', kind: 'brand' },
+        { place: '曼寧', reward: '槍套', kind: 'slot' },
+        { place: '五角', reward: '談判者', kind: 'set' },
+        { place: '國防實驗室', reward: '道格&哈定', kind: 'brand' },
+      ],
+      vendor: ['護膝', 'R'],
+    });
+    expect(parseDailyLoot('<div class="c-article__content">nothing here</div></article>')).toBeUndefined();
+  });
+  it('dates the post from its title', () => {
+    expect(dailyDate('【情報】11/07 每日戰鬥升級掉落 & 原型商人', new Date('2026-11-08T03:00:00Z'))).toBe('2026-11-07');
+    expect(dailyDate('【情報】12/31 每日', new Date('2027-01-01T03:00:00Z'))).toBe('2026-12-31');
+  });
+  it('every brand in the list has a wiki icon, and no Chinese name points to two brands', () => {
+    const b = JSON.parse(readFileSync('data/brands.json', 'utf8')) as { brands: { en: string; aliases: string[]; icon: string | null }[] };
+    for (const x of b.brands) expect(x.icon, x.en).toMatch(/^https:\/\/static\.wikia\.nocookie\.net\/thedivision\/images\//);
+    const all = b.brands.flatMap((x) => x.aliases);
+    expect(new Set(all).size).toBe(all.length);
   });
 });
