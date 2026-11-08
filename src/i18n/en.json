@@ -246,6 +246,7 @@
   "story.zhVideosNote": "Videos by Chinese-speaking creators on the same topic.",
   "rail.updated": "Updated",
   "latest.title": "Latest updates",
+  "latest.titlePast": "Updates that day",
   "badge.new": "NEW",
   "latest.more": "Show more ({n} more)",
   "latest.less": "Show less"

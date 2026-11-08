@@ -132,7 +132,8 @@ test('最新更新 box sits above the lead story, newest first, without hashtag 
   expect(boxTop).toBeLessThan(leadTop);
   const times = await box.locator('time').evaluateAll((els) => els.map((e) => e.getAttribute('datetime') ?? ''));
   expect([...times].sort().reverse()).toEqual(times);
-  for (const h of await box.locator('li a').allTextContents()) expect(h).not.toMatch(/#\S/);
+  // A real hashtag (#全境封鎖, #thedivision2); '#2' as in 「中央公園#2」 is a part number and stays.
+  for (const h of await box.locator('li a').allTextContents()) expect(h).not.toMatch(/#[^\s\d]/);
 });
 
 test('新 badges: stories since your last visit; gone once you have seen them', async ({ page }) => {
@@ -244,4 +245,20 @@ test('收藏: ☆ asks who is reading once, saves, shows in 我的收藏, and re
   await expect(row).toHaveCount(0);
   await expect(page.getByText('還沒有收藏')).toBeVisible();
   expect(await page.evaluate(() => document.documentElement.scrollWidth - innerWidth)).toBeLessThanOrEqual(0);
+});
+
+test('過刊: a past day opens on that day, not on today', async ({ page }) => {
+  await page.route(/(youtube-nocookie\.com|ytimg\.com|staticctf\.ubisoft\.com|steamstatic\.com)/, (r) => r.abort());
+  await page.goto('/zh-hant/archive/');
+  const first = page.locator('.cal a.day').first();
+  const date = (await first.getAttribute('aria-label'))!;
+  await first.click();
+  await expect(page).toHaveURL(new RegExp(`/edition/${date}/$|/zh-hant/$`));
+  if (page.url().includes('/edition/')) {
+    await expect(page.locator('#latest-h')).toHaveText('當日更新');
+    // Nothing in that day's box was first published after that day.
+    const times = await page.locator('.latest time').evaluateAll((els) => els.map((e) => e.getAttribute('datetime') ?? ''));
+    const endOfDay = Date.parse(`${date}T23:59:59+09:00`);
+    for (const t of times) expect(Date.parse(t)).toBeLessThanOrEqual(endOfDay);
+  }
 });

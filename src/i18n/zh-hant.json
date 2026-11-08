@@ -246,6 +246,7 @@
   "story.zhVideosNote": "說中文的創作者談同一主題的影片：",
   "rail.updated": "更新時間",
   "latest.title": "最新更新",
+  "latest.titlePast": "當日更新",
   "badge.new": "新",
   "latest.more": "顯示更多（再 {n} 則）",
   "latest.less": "收合"

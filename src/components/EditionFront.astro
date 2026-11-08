@@ -6,7 +6,7 @@ import Photo from './Photo.astro';
 import { CATEGORIES, type Category } from '../schema/item.ts';
 import { t, type Locale, type UiKey } from '../i18n/index.ts';
 import type { Edition } from '../schema/item.ts';
-import { allItems, byImportance, localized, readableIn } from '../lib/editions.ts';
+import { allItems, byImportance, latestEdition, localized, readableIn } from '../lib/editions.ts';
 import { routes } from '../lib/routes.ts';
 import VideoFacade from './VideoFacade.astro';
 import LiveNow from './LiveNow.astro';
@@ -32,8 +32,10 @@ const LATEST_FIRST = 6;
 const LATEST_STEP = 10;
 const LATEST_MAX = 50;
 const weekAgo = new Date(Date.parse(edition.generatedAt) - 7 * 86_400_000).toISOString();
+// A past day's page shows that day's updates as they were then (not today's), so the archive reads as that day.
+const isPast = edition.date !== latestEdition().date;
 const latest = allItems
-  .filter((i) => readableIn(i, locale) && i.firstSeenAt && i.firstSeenAt >= weekAgo)
+  .filter((i) => readableIn(i, locale) && i.firstSeenAt && i.firstSeenAt >= weekAgo && i.firstSeenAt <= edition.generatedAt)
   .sort((a, b) => b.firstSeenAt!.localeCompare(a.firstSeenAt!) || byImportance(a, b))
   .slice(0, LATEST_MAX);
 const fmt = (o: Intl.DateTimeFormatOptions) => new Intl.DateTimeFormat(locale === 'en' ? 'en-GB' : 'zh-Hant-TW', { timeZone: 'Asia/Tokyo', ...o });
@@ -75,7 +77,7 @@ const moreVideos = videosFor(locale).filter((v) => v.id !== vod?.id).slice(0, 2)
   {
     latest.length > 0 && (
       <section class="latest" aria-labelledby="latest-h">
-        <h2 id="latest-h" class="hud-label"><span class="pulse" aria-hidden="true"></span>{t(locale, 'latest.title')}</h2>
+        <h2 id="latest-h" class="hud-label">{!isPast && <span class="pulse" aria-hidden="true" />}{t(locale, isPast ? 'latest.titlePast' : 'latest.title')}</h2>
         <ol data-latest data-first={LATEST_FIRST} data-step={LATEST_STEP}>
           {latestRows.map((r) =>
             r.kind === 'day' ? (

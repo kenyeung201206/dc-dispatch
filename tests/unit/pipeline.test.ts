@@ -2,6 +2,7 @@ import { readFileSync } from 'node:fs';
 import { describe, expect, it } from 'vitest';
 import { classify } from '../../pipeline/classify.ts';
 import { canonicalUrl, dedupe } from '../../pipeline/dedupe.ts';
+import type { RawItem } from '../../pipeline/sources/types.ts';
 import { applyOverrides, assembleEdition } from '../../pipeline/edition.ts';
 import { assertAllowedUrl } from '../../pipeline/http.ts';
 import { storyToItems } from '../../pipeline/normalize.ts';
@@ -179,5 +180,37 @@ describe('first-seen time (新 badge)', () => {
     const e = assembleEdition({ date: '2026-11-04', now: NOW, fresh: buildItems(), results: ok, overrides: {}, firstSeen: known });
     expect(e.items.find((i) => i.id === a!.id)!.firstSeenAt).toBe('2026-11-01T00:00:00.000Z');
     expect(e.items.find((i) => i.id === b!.id)!.firstSeenAt).toBe(NOW.toISOString());
+  });
+});
+
+describe('same news from different sources is one story', () => {
+  const raw = (o: Partial<RawItem>): RawItem => ({ sourceId: 'ubisoft-en', sourceName: 'Ubisoft', externalId: 'x', url: 'https://example.com/x', title: '', text: '', rawBody: '', publishedAt: '2026-11-03T00:00:00Z', lang: 'en', confidence: 'official', ...o });
+  const ubi = 'https://www.ubisoft.com/en-us/game/the-division/the-division-2/news-updates/7L8TlD1Hv0XC1prOD8mdte';
+  it('Ubisoft article renamed (same article id, new slug)', () => {
+    expect(dedupe([raw({ url: `${ubi}/tuy8s33-crossplay-rollout` }), raw({ url: `${ubi}/tuy8s33-echoes-launch-crossplay` })])).toHaveLength(1);
+  });
+  it("巴哈's translation of the patch notes joins Ubisoft's", () => {
+    const s = dedupe([
+      raw({ title: '[TUY8S3.3] Echoes of Central Park Launch, Crossplay Rollout' }),
+      raw({ sourceId: 'bahamut', url: 'https://forum.gamer.com.tw/C.php?bsn=24460&snA=32861', title: '【情報】TU29.3 / Y8S3.3 Patchnote翻譯｜跨平台遊玩', lang: 'zh', confidence: 'community', publishedAt: '2026-11-03T13:57:00Z' }),
+    ]);
+    expect(s).toHaveLength(1);
+    expect(s[0]!.primary.sourceId).toBe('ubisoft-en');
+  });
+  it('same Twitch drops dates, English and Chinese', () => {
+    expect(dedupe([raw({ title: 'Echoes of Central Park Launch Twitch Drops', text: 'Tune in from November 3 – November 10 to earn rewards' }), raw({ sourceId: 'bahamut', url: 'https://forum.gamer.com.tw/C.php?bsn=24460&snA=1', title: '【情報】Twitch掉寶 11/03 - 11/10', confidence: 'community', lang: 'zh' })])).toHaveLength(1);
+  });
+  it("Ubisoft's and Steam's launch posts", () => {
+    expect(dedupe([raw({ title: 'The Division 2: Echoes of Central Park DLC is available now!' }), raw({ sourceId: 'steam-news', url: 'https://store.steampowered.com/news/app/2221490/view/1', title: 'Play The Division 2: Echoes of Central Park Today!', publishedAt: '2026-11-03T17:13:00Z' })])).toHaveLength(1);
+  });
+  it('keeps different news apart', () => {
+    const s = dedupe([
+      raw({ title: 'The Division 2: Echoes of Central Park DLC is available now!' }),
+      raw({ sourceId: 'steam-news', url: 'https://store.steampowered.com/news/app/2221490/view/2', title: 'Echoes of Central Park Launch Livestream' }),
+      raw({ sourceId: 'steam-news', url: 'https://store.steampowered.com/news/app/2221490/view/3', title: 'Last Chance to Pre-Purchase The Division 2: Echoes of Central Park' }),
+      raw({ sourceId: 'bahamut', url: 'https://forum.gamer.com.tw/C.php?bsn=24460&snA=4', title: '【情報】全境2 TUY8S3.2 血月高照、升級更新', confidence: 'community', lang: 'zh' }),
+      raw({ url: 'https://example.com/y', title: '[TUY8S3.3] Echoes of Central Park Launch, Crossplay Rollout, Conflict Improvements & More' }),
+    ]);
+    expect(s).toHaveLength(5);
   });
 });
