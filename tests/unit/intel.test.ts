@@ -8,7 +8,7 @@ import { scrubOldYoutube } from '../../pipeline/edition.ts';
 import { exoticsFromArticle, mergeExotics, wikiExotics, wikiLead } from '../../pipeline/exotics.ts';
 import { parseBahaTime, parseBahamutBoard, parseBahamutFirstPost } from '../../pipeline/sources/bahamut.ts';
 import { dailyDate, parseDailyLoot } from '../../pipeline/sources/bahamut-daily.ts';
-import { lootDay, parseProtoTrack } from '../../pipeline/sources/prototrack.ts';
+import { lootDay, lootIsLate, parseProtoTrack } from '../../pipeline/sources/prototrack.ts';
 import { parseUbisoftNews } from '../../pipeline/sources/ubisoft.ts';
 import { saysNothing, videoStories } from '../../pipeline/video/intel-items.ts';
 import type { VideoCandidate } from '../../pipeline/video/videos.ts';
@@ -335,5 +335,13 @@ describe('今日戰鬥升級 (ProtoTrack.gg text file)', () => {
   it('starts a new loot day at the 08:00 UTC reset (17:00 Tokyo)', () => {
     expect(lootDay(new Date('2026-11-08T07:59:00Z'))).toBe('2026-11-07');
     expect(lootDay(new Date('2026-11-08T08:00:00Z'))).toBe('2026-11-08');
+  });
+  it('warns once, at 21:00 Tokyo, when the box still shows an older list', () => {
+    const at = (iso: string) => new Date(iso);
+    expect(lootIsLate('2026-11-07', at('2026-11-08T11:50:00Z'))).toBe(false); // 20:50 Tokyo: still waiting
+    expect(lootIsLate('2026-11-07', at('2026-11-08T12:50:00Z'))).toBe(true); // 21:50 Tokyo watchdog run
+    expect(lootIsLate('2026-11-07', at('2026-11-08T14:50:00Z'))).toBe(false); // no repeat emails all night
+    expect(lootIsLate('2026-11-08', at('2026-11-08T12:50:00Z'))).toBe(false); // up to date
+    expect(lootIsLate('2026-11-08', at('2026-11-09T07:50:00Z'))).toBe(false); // before the next reset
   });
 });

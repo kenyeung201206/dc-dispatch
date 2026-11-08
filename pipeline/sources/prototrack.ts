@@ -63,3 +63,12 @@ export function parseProtoTrack(txt: string): Pick<DailyLoot, 'date' | 'missions
 export function lootDay(now: Date): string {
   return new Date(now.getTime() - 8 * 3_600_000).toISOString().slice(0, 10);
 }
+
+/**
+ * True when the box still shows an older day's list 4+ hours after the reset (21:00 Tokyo or later).
+ * Only for the first 2 hours after that, so the watchdog (every 2 h at :50) emails once a day, not all night.
+ */
+export function lootIsLate(saved: string, now: Date): boolean {
+  const sinceReset = (now.getTime() - Date.parse(`${lootDay(now)}T08:00:00Z`)) / 3_600_000;
+  return saved < lootDay(now) && sinceReset >= 4 && sinceReset < 6;
+}

@@ -1,8 +1,9 @@
 name: Daily loot
 
 # The 今日戰鬥升級 box, right after the game's daily reset (08:00 UTC = 17:00 Tokyo). Reads ProtoTrack.gg's
-# plain-text file (usually saved ~2 min after reset), retrying every 3 min for up to ~45 min, then builds and
-# deploys only if the list changed. No YouTube calls, so no API quota. ~3-5 Actions minutes a day.
+# plain-text file (usually saved ~2 min after reset), retrying every 3 min until 09:55 UTC (18:55 Tokyo), then
+# builds and deploys only if the list changed. No YouTube calls, so no API quota. ~3 Actions minutes on a
+# normal day, up to ~2 h on a day ProtoTrack is late. After 09:55 the 2-hourly edition run keeps checking.
 # GitHub may start a scheduled run a few minutes late. The 2-hourly "Daily edition" run also checks the loot.
 on:
   schedule:
@@ -23,7 +24,7 @@ env:
 jobs:
   loot:
     runs-on: ubuntu-latest
-    timeout-minutes: 60
+    timeout-minutes: 120
     steps:
       - uses: actions/checkout@v7.0.1
       - uses: pnpm/action-setup@v6.1.0
