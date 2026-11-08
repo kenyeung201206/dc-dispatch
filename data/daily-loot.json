@@ -1,37 +1,38 @@
 {
- "date": "2026-11-07",
- "title": "【情報】11/07 每日戰鬥升級掉落 & 原型商人",
- "url": "https://forum.gamer.com.tw/C.php?bsn=24460&snA=32612",
+ "date": "2026-11-08",
  "missions": [
   {
    "place": "美術館",
-   "reward": "特種合金",
+   "reward": "Legatus S.p.A.",
    "kind": "brand"
   },
   {
    "place": "曼寧",
-   "reward": "槍套",
+   "reward": "護膝",
    "kind": "slot"
   },
   {
    "place": "白橡木",
-   "reward": "飛龍",
-   "kind": "brand"
+   "reward": "輕機槍",
+   "kind": "weapon"
   },
   {
    "place": "五角",
-   "reward": "談判者",
-   "kind": "set"
+   "reward": "阿爾卑斯",
+   "kind": "brand"
   },
   {
    "place": "國防實驗室",
-   "reward": "道格&哈定",
-   "kind": "brand"
+   "reward": "騎士",
+   "kind": "set"
   }
  ],
  "vendor": [
-  "護膝",
-  "R"
+  "衝鋒槍",
+  "槍套"
  ],
- "fetchedAt": "2026-11-08T08:45:35.006Z"
+ "title": "",
+ "url": "https://prototrack.gg/target-loot/target-loot.php",
+ "source": "prototrack",
+ "fetchedAt": "2026-11-08T09:15:14.696Z"
 }
