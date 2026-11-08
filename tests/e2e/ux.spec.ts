@@ -115,6 +115,7 @@ test('reloading a page starts at the top; going Back returns to where you were',
   await page.evaluate(() => window.scrollTo(0, document.body.scrollHeight));
   await page.reload();
   await expect.poll(() => page.evaluate(() => window.scrollY)).toBe(0);
+  await page.keyboard.press('Shift'); // a reader is here: the page's start-at-top step stands down
   await page.evaluate(() => window.scrollTo(0, 1500));
   await page.waitForTimeout(200);
   await page.goto('/zh-hant/section/arsenal/');
