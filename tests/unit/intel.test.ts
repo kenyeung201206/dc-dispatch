@@ -8,6 +8,7 @@ import { scrubOldYoutube } from '../../pipeline/edition.ts';
 import { exoticsFromArticle, mergeExotics, wikiExotics, wikiLead } from '../../pipeline/exotics.ts';
 import { parseBahaTime, parseBahamutBoard, parseBahamutFirstPost } from '../../pipeline/sources/bahamut.ts';
 import { dailyDate, parseDailyLoot } from '../../pipeline/sources/bahamut-daily.ts';
+import { lootDay, parseProtoTrack } from '../../pipeline/sources/prototrack.ts';
 import { parseUbisoftNews } from '../../pipeline/sources/ubisoft.ts';
 import { saysNothing, videoStories } from '../../pipeline/video/intel-items.ts';
 import type { VideoCandidate } from '../../pipeline/video/videos.ts';
@@ -289,5 +290,50 @@ describe('今日戰鬥升級 (巴哈 daily post)', () => {
     }
     expect(b.slots.find((s) => s.aliases.includes('護膝'))?.icon).toBe('/icons/slot/kneepads.png');
     expect(b.brands.find((s) => s.aliases.includes('特種合金'))?.icon).toBe('/icons/brand/unit-alloys.png');
+  });
+});
+
+describe('今日戰鬥升級 (ProtoTrack.gg text file)', () => {
+  const txt = [
+    'Daily Escalation Target Loot',
+    'Date: 2026-11-07',
+    'Rotation: Weekly Escalation Rotation',
+    '',
+    'Missions:',
+    '- The Art Museum: Unit Alloys',
+    '- Manning National Zoo: Holster',
+    '- Camp White Oak: Wyvern Wear',
+    '- The Pentagon: Negotiators Dilemma',
+    '- DARPA Research Labs: Douglas & Harding',
+    '- Some New Mission: Mystery Thing',
+    '',
+    'Vendor Caches:',
+    '- Weapons: SMGs',
+    '- Gear: Kneepads',
+    '',
+    'Last updated: 2026-11-07 09:01',
+  ].join('\r\n');
+  it('gives the same Chinese names as 巴哈 posts, and leaves unknown names in English', () => {
+    expect(parseProtoTrack(txt)).toEqual({
+      date: '2026-11-07',
+      missions: [
+        { place: '美術館', reward: '特種合金', kind: 'brand' },
+        { place: '曼寧', reward: '槍套', kind: 'slot' },
+        { place: '白橡木', reward: '飛龍', kind: 'brand' },
+        { place: '五角', reward: '談判者', kind: 'set' },
+        { place: '國防實驗室', reward: '道格&哈定', kind: 'brand' },
+        { place: 'Some New Mission', reward: 'Mystery Thing', kind: 'other' },
+      ],
+      vendor: ['衝鋒槍', '護膝'],
+    });
+    expect(parseProtoTrack('Missions:\n- The Art Museum: Unit Alloys')).toBeUndefined();
+    expect(parseProtoTrack('<html>Not found</html>')).toBeUndefined();
+  });
+  it('marks weapons as weapons', () => {
+    expect(parseProtoTrack('Date: 2026-11-08\nMissions:\n- Camp White Oak: LMG\n')?.missions).toEqual([{ place: '白橡木', reward: '輕機槍', kind: 'weapon' }]);
+  });
+  it('starts a new loot day at the 08:00 UTC reset (17:00 Tokyo)', () => {
+    expect(lootDay(new Date('2026-11-08T07:59:00Z'))).toBe('2026-11-07');
+    expect(lootDay(new Date('2026-11-08T08:00:00Z'))).toBe('2026-11-08');
   });
 });

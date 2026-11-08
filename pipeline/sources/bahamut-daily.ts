@@ -6,12 +6,14 @@
  */
 import { toPlainText } from '../text.ts';
 
-export type RewardKind = 'brand' | 'set' | 'slot' | 'other';
+export type RewardKind = 'brand' | 'set' | 'slot' | 'weapon' | 'other';
 export interface DailyLoot {
   /** Day the post is for, from its title ("11/07" → "2026-11-07"). */
   date: string;
   title: string;
   url: string;
+  /** Where the list came from: ProtoTrack.gg (fast, ~2 min after reset) or 巴哈's post (backup). */
+  source: 'prototrack' | 'bahamut';
   missions: { place: string; reward: string; kind: RewardKind }[];
   vendor: string[];
   fetchedAt: string;

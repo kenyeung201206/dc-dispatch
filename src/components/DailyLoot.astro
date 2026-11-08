@@ -1,8 +1,8 @@
 ---
 /**
  * 今日戰鬥升級: each mission's targeted reward for the day, with the in-game emblem so readers who don't
- * know brand names can still recognise them. Data: data/daily-loot.json (the robot reads 巴哈's pinned daily
- * thread every update). Icons: public/icons/ (white glyphs made from Ubisoft art on The Division Wiki), shown
+ * know brand names can still recognise them. Data: data/daily-loot.json (ProtoTrack.gg right after the 17:00
+ * Tokyo reset, 巴哈's pinned daily thread as backup; see pipeline/daily-loot.ts). Icons: public/icons/ (white glyphs made from Ubisoft art on The Division Wiki), shown
  * on a dark tile and tinted like the game: brands and gear slots white, gear sets green. A name we can't match
  * with confidence shows as text, never a guessed logo.
  */
@@ -33,7 +33,8 @@ const match = (name: string, kind: string) => {
 };
 const rows = loot.missions.map((m) => ({ ...m, hit: match(m.reward, m.kind) }));
 const vendor = loot.vendor.map((v) => ({ name: v, hit: match(v, 'other') }));
-const kindLabel = (k: string) => t(locale, `loot.kind.${k === 'brand' || k === 'set' || k === 'slot' ? k : 'other'}` as never);
+const kindLabel = (k: string) => t(locale, `loot.kind.${['brand', 'set', 'slot', 'weapon'].includes(k) ? k : 'other'}` as never);
+const source = loot.source === 'prototrack' ? 'prototrack' : 'bahamut';
 const md = loot.date.slice(5).replace('-', '/');
 ---
 {
@@ -81,7 +82,8 @@ const md = loot.date.slice(5).replace('-', '/');
         </p>
       )}
       <p class="credit">
-        {t(locale, 'loot.credit')} <a href={loot.url} rel="noopener noreferrer" target="_blank">{t(locale, 'loot.source')}</a>
+        {t(locale, `loot.credit.${source}`)}{' '}
+        <a href={loot.url} rel="noopener noreferrer" target="_blank">{source === 'prototrack' ? 'ProtoTrack.gg' : t(locale, 'loot.source')}</a>
       </p>
     </section>
   )
