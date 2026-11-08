@@ -279,5 +279,6 @@ describe('今日戰鬥升級 (巴哈 daily post)', () => {
       expect(new Set(all).size).toBe(all.length);
     }
     expect(b.slots.find((s) => s.aliases.includes('護膝'))?.icon).toBe('/icons/slot/kneepads.png');
+    expect(b.brands.find((s) => s.aliases.includes('特種合金'))?.icon).toBe('/icons/brand/unit-alloys.png');
   });
 });

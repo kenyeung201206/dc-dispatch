@@ -1,5 +1,5 @@
 {
- "_note": "Gear brands, sets, slots and weapon types for the 今日戰鬥升級 box. aliases = names players use (巴哈 posts use the short Chinese ones) plus the English name; a reward matches only on an exact alias. icon = the in-game emblem as a white glyph on transparent (public/icons/), made from Ubisoft art hosted on The Division Wiki; the page tints it like the game (brands and slots white, gear sets green). Unknown names (e.g. 特種合金) show as text.",
+ "_note": "Gear brands, sets, slots and weapon types for the 今日戰鬥升級 box. aliases = names players use (巴哈 posts use the short Chinese ones) plus the English name; a reward matches only on an exact alias. icon = the in-game emblem as a white glyph on transparent (public/icons/), made from Ubisoft art hosted on The Division Wiki; the page tints it like the game (brands and slots white, gear sets green). Unknown names show as text.",
  "brands": [
   {
    "en": "5.11 Tactical",
@@ -268,6 +268,35 @@
     "Legatus"
    ],
    "icon": "/icons/brand/legatus.png"
+  },
+  {
+   "en": "Unit Alloys",
+   "aliases": [
+    "特種合金",
+    "Unit Alloys"
+   ],
+   "icon": "/icons/brand/unit-alloys.png"
+  },
+  {
+   "en": "Royal Works",
+   "aliases": [
+    "Royal Works"
+   ],
+   "icon": "/icons/brand/royal-works.png"
+  },
+  {
+   "en": "Shiny Monkey Gear",
+   "aliases": [
+    "Shiny Monkey Gear"
+   ],
+   "icon": "/icons/brand/shiny-monkey.png"
+  },
+  {
+   "en": "Urban Lookout",
+   "aliases": [
+    "Urban Lookout"
+   ],
+   "icon": "/icons/brand/urban-lookout.png"
   }
  ],
  "sets": [
