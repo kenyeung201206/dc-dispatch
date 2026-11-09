@@ -1,38 +1,38 @@
 {
- "date": "2026-11-08",
+ "date": "2026-11-09",
  "missions": [
   {
    "place": "美術館",
-   "reward": "Legatus S.p.A.",
+   "reward": "戈蘭",
    "kind": "brand"
   },
   {
    "place": "曼寧",
-   "reward": "護膝",
-   "kind": "slot"
-  },
-  {
-   "place": "白橡木",
-   "reward": "輕機槍",
+   "reward": "突擊步槍",
    "kind": "weapon"
   },
   {
+   "place": "白橡木",
+   "reward": "Ember Engine",
+   "kind": "other"
+  },
+  {
    "place": "五角",
-   "reward": "阿爾卑斯",
-   "kind": "brand"
+   "reward": "Gear Mods",
+   "kind": "other"
   },
   {
    "place": "國防實驗室",
-   "reward": "騎士",
-   "kind": "set"
+   "reward": "手槍",
+   "kind": "weapon"
   }
  ],
  "vendor": [
-  "衝鋒槍",
-  "槍套"
+  "手槍",
+  "背包"
  ],
  "title": "",
  "url": "https://prototrack.gg/target-loot/target-loot.php",
  "source": "prototrack",
- "fetchedAt": "2026-11-08T09:15:14.696Z"
+ "fetchedAt": "2026-11-09T08:58:31.604Z"
 }
