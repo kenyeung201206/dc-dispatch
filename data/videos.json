@@ -1,6 +1,19 @@
 {
   "videos": [
     {
+      "id": "NzGG7NPA59I",
+      "title": "全境封鎖2 - 守護者 \"幽靈\"溜溜球 純火打法，無專精 奇特 夥伴 修改器，溜溜球打不到就吃 吃了致盲時別亂動 毒氣彈必躲 15m以上猛射他就贏了！",
+      "channelName": "純天然",
+      "channelUrl": "https://www.youtube.com/channel/UCAGO36FuuShsuvGD9bF1UwQ",
+      "publishedAt": "2026-11-09T01:57:51.000Z",
+      "durationSec": 106,
+      "official": false,
+      "row": "more",
+      "checkedAt": "2026-11-09T02:48:24.780Z",
+      "via": "youtube-api",
+      "rumour": false
+    },
+    {
       "id": "9kyt_cL4VkU",
       "title": "ALL CENTRAL PARK COLLECTIBLES! Every Location & How to Find Them | The Division 2",
       "channelName": "GCROCK",
@@ -9,7 +22,20 @@
       "durationSec": 2122,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-09T00:52:15.837Z",
+      "checkedAt": "2026-11-09T02:48:24.780Z",
+      "via": "youtube-api",
+      "rumour": false
+    },
+    {
+      "id": "nhoHOQdndlk",
+      "title": "The Division 2: BEST FARMING BUILDS for Beginner Players RIGHT NOW!",
+      "channelName": "Kamikazevondoom",
+      "channelUrl": "https://www.youtube.com/channel/UCWd5S9-AEf26j0wY3P8TOhw",
+      "publishedAt": "2026-11-09T00:05:08.000Z",
+      "durationSec": 3206,
+      "official": false,
+      "row": "build-guides",
+      "checkedAt": "2026-11-09T02:48:24.780Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -22,7 +48,7 @@
       "durationSec": 1350,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-09T00:52:15.837Z",
+      "checkedAt": "2026-11-09T02:48:24.780Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -35,7 +61,7 @@
       "durationSec": 1059,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-09T00:52:15.837Z",
+      "checkedAt": "2026-11-09T02:48:24.780Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -48,7 +74,7 @@
       "durationSec": 774,
       "official": false,
       "row": "build-guides",
-      "checkedAt": "2026-11-09T00:52:15.837Z",
+      "checkedAt": "2026-11-09T02:48:24.780Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -61,7 +87,7 @@
       "durationSec": 679,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-09T00:52:15.837Z",
+      "checkedAt": "2026-11-09T02:48:24.780Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -74,7 +100,7 @@
       "durationSec": 857,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-08T22:30:57.696Z",
+      "checkedAt": "2026-11-09T02:48:24.780Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -87,7 +113,7 @@
       "durationSec": 41,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-09T00:52:15.837Z",
+      "checkedAt": "2026-11-09T02:48:24.780Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -100,7 +126,7 @@
       "durationSec": 44,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-09T00:52:15.837Z",
+      "checkedAt": "2026-11-09T02:48:24.780Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -113,7 +139,7 @@
       "durationSec": 702,
       "official": false,
       "row": "intel",
-      "checkedAt": "2026-11-09T00:52:15.837Z",
+      "checkedAt": "2026-11-09T02:48:24.780Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -126,7 +152,7 @@
       "durationSec": 15970,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-09T00:52:15.837Z",
+      "checkedAt": "2026-11-09T02:48:24.780Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -139,7 +165,20 @@
       "durationSec": 2021,
       "official": false,
       "row": "intel",
-      "checkedAt": "2026-11-09T00:52:15.837Z",
+      "checkedAt": "2026-11-09T02:48:24.780Z",
+      "via": "youtube-search",
+      "rumour": false
+    },
+    {
+      "id": "dtd-pQhuE50",
+      "title": "These Gloves bypass Immunity - And it's HILARIOUS - The Division 2",
+      "channelName": "Toni Sins",
+      "channelUrl": "https://www.youtube.com/channel/UCCUzohPob5EQvRDNXiDS5pw",
+      "publishedAt": "2026-11-08T15:20:08.000Z",
+      "durationSec": 185,
+      "official": false,
+      "row": "more",
+      "checkedAt": "2026-11-09T02:48:24.780Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -152,7 +191,7 @@
       "durationSec": 5459,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-09T00:52:15.837Z",
+      "checkedAt": "2026-11-09T02:48:24.780Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -165,7 +204,7 @@
       "durationSec": 618,
       "official": false,
       "row": "build-guides",
-      "checkedAt": "2026-11-09T00:52:15.837Z",
+      "checkedAt": "2026-11-09T02:48:24.780Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -178,7 +217,7 @@
       "durationSec": 20547,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-09T00:52:15.837Z",
+      "checkedAt": "2026-11-09T02:48:24.780Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -191,7 +230,7 @@
       "durationSec": 6393,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-09T00:52:15.837Z",
+      "checkedAt": "2026-11-09T02:48:24.780Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -204,7 +243,7 @@
       "durationSec": 546,
       "official": false,
       "row": "build-guides",
-      "checkedAt": "2026-11-09T00:52:15.837Z",
+      "checkedAt": "2026-11-09T02:48:24.780Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -217,7 +256,7 @@
       "durationSec": 22812,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-09T00:52:15.837Z",
+      "checkedAt": "2026-11-09T02:48:24.780Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -230,7 +269,7 @@
       "durationSec": 9915,
       "official": false,
       "row": "intel",
-      "checkedAt": "2026-11-09T00:52:15.837Z",
+      "checkedAt": "2026-11-09T02:48:24.780Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -243,7 +282,7 @@
       "durationSec": 2249,
       "official": false,
       "row": "build-guides",
-      "checkedAt": "2026-11-09T00:52:15.837Z",
+      "checkedAt": "2026-11-09T02:48:24.780Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -256,7 +295,7 @@
       "durationSec": 74,
       "official": false,
       "row": "intel",
-      "checkedAt": "2026-11-09T00:52:15.837Z",
+      "checkedAt": "2026-11-09T02:48:24.780Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -269,7 +308,7 @@
       "durationSec": 1747,
       "official": false,
       "row": "intel",
-      "checkedAt": "2026-11-09T00:52:15.837Z",
+      "checkedAt": "2026-11-09T02:48:24.780Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -282,7 +321,7 @@
       "durationSec": 1220,
       "official": false,
       "row": "intel",
-      "checkedAt": "2026-11-09T00:52:15.837Z",
+      "checkedAt": "2026-11-09T02:48:24.780Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -295,7 +334,7 @@
       "durationSec": 522,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-09T00:52:15.837Z",
+      "checkedAt": "2026-11-09T02:48:24.780Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -308,7 +347,7 @@
       "durationSec": 18813,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-09T00:52:15.837Z",
+      "checkedAt": "2026-11-09T02:48:24.780Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -321,7 +360,7 @@
       "durationSec": 422,
       "official": false,
       "row": "build-guides",
-      "checkedAt": "2026-11-09T00:52:15.837Z",
+      "checkedAt": "2026-11-09T02:48:24.780Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -334,7 +373,7 @@
       "durationSec": 1004,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-08T22:30:57.696Z",
+      "checkedAt": "2026-11-09T02:48:24.780Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -347,7 +386,7 @@
       "durationSec": 5385,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-09T00:52:15.837Z",
+      "checkedAt": "2026-11-09T02:48:24.780Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -360,7 +399,7 @@
       "durationSec": 666,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-09T00:52:15.837Z",
+      "checkedAt": "2026-11-09T02:48:24.780Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -373,7 +412,7 @@
       "durationSec": 788,
       "official": false,
       "row": "build-guides",
-      "checkedAt": "2026-11-09T00:52:15.837Z",
+      "checkedAt": "2026-11-09T02:48:24.780Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -386,7 +425,7 @@
       "durationSec": 2022,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-08T22:30:57.696Z",
+      "checkedAt": "2026-11-09T02:48:24.780Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -399,46 +438,7 @@
       "durationSec": 27,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-09T00:52:15.837Z",
-      "via": "youtube-api",
-      "rumour": false
-    },
-    {
-      "id": "OMTUBktXXN0",
-      "title": "《全境封鎖 2》Tom Clancy’s The Division 2  解獵捕  您喜歡還請謝謝訂閱   (王偉遊戲直播)",
-      "channelName": "王偉",
-      "channelUrl": "https://www.youtube.com/channel/UCoMK4Qk2nvBqq6NOUkDVgCg",
-      "publishedAt": "2026-11-07T19:55:12.000Z",
-      "durationSec": 25271,
-      "official": false,
-      "row": "more",
-      "checkedAt": "2026-11-09T00:52:15.837Z",
-      "via": "youtube-api",
-      "rumour": false
-    },
-    {
-      "id": "d-hUHfLqDSM",
-      "title": "This Pestilence Tipping Scales Build is UNSTOPPABLE...1M+ Ticks 700% CHD [6X XP Event] (Division 2)",
-      "channelName": "FragSavage",
-      "channelUrl": "https://www.youtube.com/channel/UC_EClz3RVYncLGMxdHo8_EQ",
-      "publishedAt": "2026-11-07T18:00:13.000Z",
-      "durationSec": 780,
-      "official": false,
-      "row": "build-guides",
-      "checkedAt": "2026-11-09T00:52:15.837Z",
-      "via": "youtube-search",
-      "rumour": false
-    },
-    {
-      "id": "9n0qLXqOgQ4",
-      "title": "Division 2 Loaded for Bear Sheriff Reload Hits Half a Legendary Elite 😂",
-      "channelName": "TuxedoBandido",
-      "channelUrl": "https://www.youtube.com/channel/UCWIdBINha5bKeFuvAs7US4A",
-      "publishedAt": "2026-11-07T17:30:05.000Z",
-      "durationSec": 43,
-      "official": false,
-      "row": "more",
-      "checkedAt": "2026-11-09T00:52:15.837Z",
+      "checkedAt": "2026-11-09T02:48:24.780Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -451,7 +451,7 @@
       "durationSec": 92,
       "official": true,
       "row": "trailers",
-      "checkedAt": "2026-11-09T00:52:15.837Z",
+      "checkedAt": "2026-11-09T02:48:24.780Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -464,7 +464,7 @@
       "durationSec": 7035,
       "official": true,
       "row": "more",
-      "checkedAt": "2026-11-09T00:52:15.837Z",
+      "checkedAt": "2026-11-09T02:48:24.780Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -477,7 +477,7 @@
       "durationSec": 342,
       "official": true,
       "row": "more",
-      "checkedAt": "2026-11-09T00:52:15.837Z",
+      "checkedAt": "2026-11-09T02:48:24.780Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -490,7 +490,7 @@
       "publishedAt": "2026-11-02T13:48:39.000Z",
       "official": true,
       "row": "more",
-      "checkedAt": "2026-11-09T00:52:15.837Z",
+      "checkedAt": "2026-11-09T02:48:24.780Z",
       "via": "ubisoft-page",
       "rumour": false
     },
@@ -503,7 +503,7 @@
       "publishedAt": "2026-10-30T18:16:35.000Z",
       "official": true,
       "row": "trailers",
-      "checkedAt": "2026-11-09T00:52:15.837Z",
+      "checkedAt": "2026-11-09T02:48:24.780Z",
       "via": "ubisoft-page",
       "rumour": false
     },
@@ -516,7 +516,7 @@
       "publishedAt": "2026-10-13T13:30:33.000Z",
       "official": true,
       "row": "trailers",
-      "checkedAt": "2026-11-09T00:52:15.837Z",
+      "checkedAt": "2026-11-09T02:48:24.780Z",
       "via": "ubisoft-page",
       "rumour": false
     }

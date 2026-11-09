@@ -1,7 +1,7 @@
 {
   "date": "2026-11-09",
   "editionNumber": 6,
-  "generatedAt": "2026-11-09T00:52:15.837Z",
+  "generatedAt": "2026-11-09T02:48:24.780Z",
   "meta": {
     "season_en": "Red Horizon",
     "season_zhHant": "Red Horizon 賽季",
@@ -17,7 +17,7 @@
       "title_orig": "[TUY8S3.3] Echoes of Central Park Launch, Crossplay Rollout, Conflict Improvements & More",
       "lang_orig": "en",
       "publishedAt": "2026-11-02T15:45:00.000Z",
-      "fetchedAt": "2026-11-09T00:52:15.837Z",
+      "fetchedAt": "2026-11-09T02:48:24.780Z",
       "category": "updates",
       "tags": [
         "title-update",
@@ -58,7 +58,7 @@
       "title_orig": "The Division 2: Echoes of Central Park DLC is available now!",
       "lang_orig": "en",
       "publishedAt": "2026-11-03T15:00:00.000Z",
-      "fetchedAt": "2026-11-09T00:52:15.837Z",
+      "fetchedAt": "2026-11-09T02:48:24.780Z",
       "category": "missions",
       "tags": [
         "dlc"
@@ -156,7 +156,7 @@
       "title_orig": "The Division 2: Echoes of Central Park Launch Twitch Drops",
       "lang_orig": "en",
       "publishedAt": "2026-11-03T15:00:00.000Z",
-      "fetchedAt": "2026-11-09T00:52:15.837Z",
+      "fetchedAt": "2026-11-09T02:48:24.780Z",
       "category": "community",
       "tags": [
         "twitch-drops",
@@ -238,6 +238,34 @@
       "status": "new"
     },
     {
+      "id": "1tv8eb5",
+      "sourceId": "youtube",
+      "sourceName": "Kamikazevondoom",
+      "sourceUrl": "https://www.youtube.com/watch?v=nhoHOQdndlk",
+      "title_orig": "The Division 2: BEST FARMING BUILDS for Beginner Players RIGHT NOW!",
+      "lang_orig": "en",
+      "publishedAt": "2026-11-09T00:05:08.000Z",
+      "fetchedAt": "2026-11-09T02:48:24.780Z",
+      "category": "arsenal",
+      "tags": [
+        "exotic",
+        "video"
+      ],
+      "importance": 63,
+      "confidence": "community",
+      "headline_en": "The Division 2: BEST FARMING BUILDS for Beginner Players RIGHT NOW!",
+      "headline_zhHant": "pending",
+      "summary_en": "Enjoy! ALL BUILDS can be farmed via Retaliation Targeted Loot while you get the Exotic Blueprints. Two for One!",
+      "summary_zhHant": "pending",
+      "summaryKind": "extract",
+      "alsoReportedBy": [],
+      "media": [],
+      "videoId": "nhoHOQdndlk",
+      "relatedIds": [],
+      "firstSeenAt": "2026-11-09T02:48:24.780Z",
+      "status": "new"
+    },
+    {
       "id": "jrg9a1",
       "sourceId": "ubisoft-en",
       "sourceName": "Ubisoft",
@@ -245,7 +273,7 @@
       "title_orig": "[TUY8S3.3] Echoes of Central Park Launch, Crossplay Rollout, Conflict Improvements & More",
       "lang_orig": "en",
       "publishedAt": "2026-11-02T15:45:00.000Z",
-      "fetchedAt": "2026-11-09T00:52:15.837Z",
+      "fetchedAt": "2026-11-09T02:48:24.780Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -411,6 +439,33 @@
       "status": "new"
     },
     {
+      "id": "1h9e4r6",
+      "sourceId": "youtube",
+      "sourceName": "Toni Sins",
+      "sourceUrl": "https://www.youtube.com/watch?v=dtd-pQhuE50",
+      "title_orig": "These Gloves bypass Immunity - And it's HILARIOUS - The Division 2",
+      "lang_orig": "en",
+      "publishedAt": "2026-11-08T15:20:08.000Z",
+      "fetchedAt": "2026-11-09T02:48:24.780Z",
+      "category": "community",
+      "tags": [
+        "video"
+      ],
+      "importance": 57,
+      "confidence": "community",
+      "headline_en": "These Gloves bypass Immunity - And it's HILARIOUS - The Division 2",
+      "headline_zhHant": "pending",
+      "summary_en": "These Gloves bypass Immunity - And it's HILARIOUS - The Division 2",
+      "summary_zhHant": "pending",
+      "summaryKind": "extract",
+      "alsoReportedBy": [],
+      "media": [],
+      "videoId": "dtd-pQhuE50",
+      "relatedIds": [],
+      "firstSeenAt": "2026-11-09T02:48:24.780Z",
+      "status": "new"
+    },
+    {
       "id": "116u8gr",
       "sourceId": "youtube",
       "sourceName": "TuxedoBandido",
@@ -519,6 +574,57 @@
       "status": "new"
     },
     {
+      "id": "1r0tczo",
+      "sourceId": "youtube",
+      "sourceName": "純天然",
+      "sourceUrl": "https://www.youtube.com/watch?v=NzGG7NPA59I",
+      "title_orig": "全境封鎖2 - 守護者 \"幽靈\"溜溜球 純火打法，無專精 奇特 夥伴 修改器，溜溜球打不到就吃 吃了致盲時別亂動 毒氣彈必躲 15m以上猛射他就贏了！",
+      "lang_orig": "zh",
+      "publishedAt": "2026-11-09T01:57:51.000Z",
+      "fetchedAt": "2026-11-09T02:48:24.780Z",
+      "category": "arsenal",
+      "tags": [
+        "video"
+      ],
+      "importance": 54,
+      "confidence": "community",
+      "headline_en": "pending",
+      "headline_zhHant": "全境封鎖2 - 守護者 \"幽靈\"溜溜球 純火打法，無專精 奇特 夥伴 修改器，溜溜球打不到就吃 吃了致盲時別亂動 毒氣彈必躲 15m以上猛射他就贏了！",
+      "summary_en": "pending",
+      "summary_zhHant": "這怪是在跟設計師鬥智鬥勇嗎? 所以說那個獎勵可以再多一點嗎? 打贏了也很空虛...",
+      "summaryKind": "extract",
+      "alsoReportedBy": [],
+      "media": [],
+      "videoId": "NzGG7NPA59I",
+      "relatedIds": [],
+      "firstSeenAt": "2026-11-09T02:48:24.780Z",
+      "status": "new"
+    },
+    {
+      "id": "1o0915k",
+      "sourceId": "bahamut",
+      "sourceName": "巴哈姆特 全境封鎖板",
+      "sourceUrl": "https://forum.gamer.com.tw/C.php?bsn=24460&snA=32884",
+      "title_orig": "【情報】Twitch掉寶 11/10 - 11/17",
+      "lang_orig": "zh",
+      "publishedAt": "2026-11-09T01:48:24.780Z",
+      "fetchedAt": "2026-11-09T02:48:24.780Z",
+      "category": "community",
+      "tags": [],
+      "importance": 52,
+      "confidence": "community",
+      "headline_en": "pending",
+      "headline_zhHant": "【情報】Twitch掉寶 11/10 - 11/17",
+      "summary_en": "pending",
+      "summary_zhHant": "掉寶資訊圖有再補 活動開始時間：2026 年 11 月 10 日（星期二）23:00（晚上 11:00） 活動結束時間：…",
+      "summaryKind": "extract",
+      "alsoReportedBy": [],
+      "media": [],
+      "relatedIds": [],
+      "firstSeenAt": "2026-11-09T02:48:24.780Z",
+      "status": "new"
+    },
+    {
       "id": "1s4c3yl",
       "sourceId": "bahamut",
       "sourceName": "巴哈姆特 全境封鎖板",
@@ -526,7 +632,7 @@
       "title_orig": "【情報】11/07 每日戰鬥升級掉落 & 原型商人",
       "lang_orig": "zh",
       "publishedAt": "2026-11-07T04:00:00.000Z",
-      "fetchedAt": "2026-11-09T00:52:15.837Z",
+      "fetchedAt": "2026-11-09T02:48:24.780Z",
       "category": "updates",
       "tags": [],
       "importance": 48,
@@ -550,7 +656,7 @@
       "title_orig": "Last Chance to Pre-Purchase The Division 2: Echoes of Central Park",
       "lang_orig": "en",
       "publishedAt": "2026-10-28T13:29:29.000Z",
-      "fetchedAt": "2026-11-09T00:52:15.837Z",
+      "fetchedAt": "2026-11-09T02:48:24.780Z",
       "category": "missions",
       "tags": [
         "dlc",
@@ -577,7 +683,7 @@
       "title_orig": "【攻略】部分技能的解鎖方式整理",
       "lang_orig": "zh",
       "publishedAt": "2026-11-05T05:49:00.000Z",
-      "fetchedAt": "2026-11-09T00:52:15.837Z",
+      "fetchedAt": "2026-11-09T02:48:24.780Z",
       "category": "builds",
       "tags": [],
       "importance": 44,
@@ -601,7 +707,7 @@
       "title_orig": "【情報】中央公園的迴響 DLC 夥伴 - 相關資訊",
       "lang_orig": "zh",
       "publishedAt": "2026-11-05T04:03:00.000Z",
-      "fetchedAt": "2026-11-09T00:52:15.837Z",
+      "fetchedAt": "2026-11-09T02:48:24.780Z",
       "category": "missions",
       "tags": [
         "dlc"
@@ -627,7 +733,7 @@
       "title_orig": "Echoes of Central Park Launch Livestream",
       "lang_orig": "en",
       "publishedAt": "2026-10-27T16:01:04.000Z",
-      "fetchedAt": "2026-11-09T00:52:15.837Z",
+      "fetchedAt": "2026-11-09T02:48:24.780Z",
       "category": "community",
       "tags": [],
       "importance": 43,
@@ -651,7 +757,7 @@
       "title_orig": "Echoes of Central Park Costume Contest",
       "lang_orig": "en",
       "publishedAt": "2026-10-27T10:34:40.000Z",
-      "fetchedAt": "2026-11-09T00:52:15.837Z",
+      "fetchedAt": "2026-11-09T02:48:24.780Z",
       "category": "community",
       "tags": [],
       "importance": 43,
@@ -675,10 +781,10 @@
       "title_orig": "【情報】*劇透注意* Y8S3/TU29 獵捕行動 Red Horizon 偵查任務 每週統整",
       "lang_orig": "zh",
       "publishedAt": "2026-11-03T17:07:00.000Z",
-      "fetchedAt": "2026-11-09T00:52:15.837Z",
+      "fetchedAt": "2026-11-09T02:48:24.780Z",
       "category": "updates",
       "tags": [],
-      "importance": 41,
+      "importance": 40,
       "confidence": "community",
       "headline_en": "pending",
       "headline_zhHant": "【情報】*劇透注意* Y8S3/TU29 獵捕行動 Red Horizon 偵查任務 每週統整",
@@ -699,10 +805,10 @@
       "title_orig": "【心得】無陷阱手T10日蝕複合控場(全汞合金)",
       "lang_orig": "zh",
       "publishedAt": "2026-11-03T05:31:00.000Z",
-      "fetchedAt": "2026-11-09T00:52:15.837Z",
+      "fetchedAt": "2026-11-09T02:48:24.780Z",
       "category": "builds",
       "tags": [],
-      "importance": 40,
+      "importance": 39,
       "confidence": "community",
       "headline_en": "pending",
       "headline_zhHant": "【心得】無陷阱手T10日蝕複合控場(全汞合金)",
@@ -723,7 +829,7 @@
       "title_orig": "【情報】【已開機】關機維護公告 - 2026/11/03(二) 16:00 (Y8S3.3 中央公園DLC)，延長1.5小時",
       "lang_orig": "zh",
       "publishedAt": "2026-11-02T16:43:00.000Z",
-      "fetchedAt": "2026-11-09T00:52:15.837Z",
+      "fetchedAt": "2026-11-09T02:48:24.780Z",
       "category": "updates",
       "tags": [
         "dlc"
@@ -749,7 +855,7 @@
       "title_orig": "【情報】全境2 TUY8S3.2 血月高照、創作者合作、升級更新 2F R/MMR BUFF",
       "lang_orig": "zh",
       "publishedAt": "2026-10-27T07:04:00.000Z",
-      "fetchedAt": "2026-11-09T00:52:15.837Z",
+      "fetchedAt": "2026-11-09T02:48:24.780Z",
       "category": "updates",
       "tags": [
         "title-update"
@@ -766,52 +872,28 @@
       "relatedIds": [],
       "firstSeenAt": "2026-10-27T07:04:00.000Z",
       "status": "new"
-    },
-    {
-      "id": "1obbqjs",
-      "sourceId": "bahamut",
-      "sourceName": "巴哈姆特 全境封鎖板",
-      "sourceUrl": "https://forum.gamer.com.tw/C.php?bsn=24460&snA=32835",
-      "title_orig": "【情報】［活動警報］復仇者懸賞",
-      "lang_orig": "zh",
-      "publishedAt": "2026-10-26T11:51:00.000Z",
-      "fetchedAt": "2026-11-09T00:52:15.837Z",
-      "category": "missions",
-      "tags": [],
-      "importance": 23,
-      "confidence": "community",
-      "headline_en": "pending",
-      "headline_zhHant": "【情報】［活動警報］復仇者懸賞",
-      "summary_en": "pending",
-      "summary_zhHant": "打完月亮教徒有機會掉落懸賞 不過懸賞的顏色是黃色，不是一般看到的灰色 而且能夠被分解 可能不少人裝滿，所以不會看掉落物或…",
-      "summaryKind": "extract",
-      "alsoReportedBy": [],
-      "media": [],
-      "relatedIds": [],
-      "firstSeenAt": "2026-10-26T11:51:00.000Z",
-      "status": "new"
     }
   ],
   "sources": [
     {
       "sourceId": "steam-news",
       "ok": true,
-      "checkedAt": "2026-11-09T00:52:15.837Z"
+      "checkedAt": "2026-11-09T02:48:24.780Z"
     },
     {
       "sourceId": "ubisoft-en",
       "ok": true,
-      "checkedAt": "2026-11-09T00:52:15.837Z"
+      "checkedAt": "2026-11-09T02:48:24.780Z"
     },
     {
       "sourceId": "ubisoft-zh-tw",
       "ok": true,
-      "checkedAt": "2026-11-09T00:52:15.837Z"
+      "checkedAt": "2026-11-09T02:48:24.780Z"
     },
     {
       "sourceId": "bahamut",
       "ok": true,
-      "checkedAt": "2026-11-09T00:52:15.837Z"
+      "checkedAt": "2026-11-09T02:48:24.780Z"
     }
   ]
 }
