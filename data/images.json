@@ -396,6 +396,24 @@
       "tags": [
         "news"
       ]
+    },
+    {
+      "kind": "image",
+      "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/1hdfkn0ZdAi4hc6Nwy7fAW/293be9f8400ab2a4e43ac1db70164d8b/-TD2-_News_-_The_Division_2_-_Echoes_of_Central_Park_Event_Pass_-__EOCP_Event_Pass_KeyArt.jpg?w=1600",
+      "alt_en": "Official image for \"The Division 2: Echoes of Central Park Event Pass\"",
+      "alt_zhHant": "官方新聞圖片：The Division 2: Echoes of Central Park Event Pass",
+      "license": "Official promotional image © Ubisoft Entertainment. Shown unmodified, with credit, on a private non-commercial site.",
+      "attribution": "Ubisoft",
+      "attributionUrl": "https://www.ubisoft.com/en-us/game/the-division/the-division-2/news-updates/3kST0nQsp0klDZlR2vAI0F/the-division-2-echoes-of-central-park-event-pass",
+      "aiGenerated": false,
+      "id": "ubi-3kST0nQsp0klDZlR2vAI0F",
+      "width": 1600,
+      "height": 900,
+      "urlSmall": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/1hdfkn0ZdAi4hc6Nwy7fAW/293be9f8400ab2a4e43ac1db70164d8b/-TD2-_News_-_The_Division_2_-_Echoes_of_Central_Park_Event_Pass_-__EOCP_Event_Pass_KeyArt.jpg?w=640",
+      "widthSmall": 640,
+      "tags": [
+        "news"
+      ]
     }
   ],
   "sectionBanners": {
