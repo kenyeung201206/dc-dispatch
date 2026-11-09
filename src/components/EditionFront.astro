@@ -14,6 +14,7 @@ import LiveNow from './LiveNow.astro';
 import BackPage from './BackPage.astro';
 import ExoticIntel from './ExoticIntel.astro';
 import GuidePicks from './GuidePicks.astro';
+import HotTopics from './HotTopics.astro';
 import { agentOfTheDay, humourLevel } from '../lib/humour.ts';
 import { videoOfTheDay, videosFor } from '../lib/videos.ts';
 import { bannerFor, imageFor } from '../lib/images.ts';
@@ -132,6 +133,9 @@ const moreVideos = videosFor(locale).filter((v) => v.id !== vod?.id).slice(0, 2)
           }
         </ul>
       </SideBox>
+      {!isPast && <SideBox title={t(locale, 'hot.title')}>
+        <HotTopics locale={locale} />
+      </SideBox>}
       <SideBox title={t(locale, 'guides.title')}>
         <GuidePicks locale={locale} limit={4} />
       </SideBox>

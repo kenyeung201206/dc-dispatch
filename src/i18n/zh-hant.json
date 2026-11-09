@@ -259,5 +259,13 @@
   "latest.titlePast": "當日更新",
   "badge.new": "新",
   "latest.more": "顯示更多（再 {n} 則）",
-  "latest.less": "收合"
+  "latest.less": "收合",
+  "hot.title": "熱門討論",
+  "hot.note": "巴哈姆特 全境封鎖板近 7 天回覆最多的玩家討論串。玩家說法，不是官方消息。",
+  "hot.replies": "{n} 則回覆",
+  "hot.views": "{n} 次瀏覽",
+  "hot.tag.question": "問題",
+  "hot.tag.discussion": "討論",
+  "hot.tag.chat": "閒聊",
+  "hot.none": "板上目前很安靜。"
 }

@@ -274,6 +274,23 @@ export const VideoSchema = z.object({
 export type Video = z.infer<typeof VideoSchema>;
 export const VideoLibrarySchema = z.object({ videos: z.array(VideoSchema) });
 
+/** 熱門討論: the busiest player threads on 巴哈's Division board (data/hot-topics.json). Title, link, counts only. */
+export const HotTopicsSchema = z.object({
+  updatedAt: z.iso.datetime({ offset: true }),
+  topics: z.array(
+    z.object({
+      id: z.string().min(1),
+      tag: z.string().min(1),
+      title: z.string().min(1),
+      url: httpsUrl,
+      replies: z.number().int().min(0),
+      views: z.number().int().min(0),
+      lastReplyAt: z.iso.datetime({ offset: true }),
+    }),
+  ),
+});
+export type HotTopics = z.infer<typeof HotTopicsSchema>;
+
 /** Health of the last pipeline run, for the Status page (data/status.json). No secrets, only booleans. */
 export const RunStatusSchema = z.object({
   lastRun: z.iso.datetime({ offset: true }),

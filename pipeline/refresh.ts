@@ -8,7 +8,7 @@
 import { mkdir, readdir, readFile, writeFile } from 'node:fs/promises';
 import { join } from 'node:path';
 import { parseArgs } from 'node:util';
-import { BriefsZhSchema, CreatorPostsSchema, EditionSchema, ImageLibrarySchema, ExoticLogSchema, GameEventLogSchema, GuideLogSchema, PatchLogSchema, RunStatusSchema, VideoLibrarySchema, type Edition, type Item } from '../src/schema/item.ts';
+import { BriefsZhSchema, CreatorPostsSchema, EditionSchema, HotTopicsSchema, ImageLibrarySchema, ExoticLogSchema, GameEventLogSchema, GuideLogSchema, PatchLogSchema, RunStatusSchema, VideoLibrarySchema, type Edition, type Item } from '../src/schema/item.ts';
 import { parsePatch, upsertPatches } from './patches.ts';
 import { buildVideos } from './video/build.ts';
 import { searchVideos } from './video/youtube.ts';
@@ -28,7 +28,7 @@ import { storyToItems } from './normalize.ts';
 import { parseSteamNews } from './sources/steam.ts';
 import type { RawItem, SourceResult } from './sources/types.ts';
 import { parseUbisoftNews } from './sources/ubisoft.ts';
-import { parseBahamutBoard, parseBahamutFirstPost } from './sources/bahamut.ts';
+import { parseBahamutBoard, parseBahamutFirstPost, parseBahamutHot } from './sources/bahamut.ts';
 import { updateDailyLoot } from './daily-loot.ts';
 import { trackHealth, type SourceHealth } from './health.ts';
 import { aiSummaries, needsAi } from './ai.ts';
@@ -305,6 +305,21 @@ async function main() {
   await writeFile(join(outDir, 'exotics.json'), JSON.stringify(ExoticLogSchema.parse(exotics), null, 2) + '\n');
   await writeFile(join(outDir, 'patches.json'), JSON.stringify(PatchLogSchema.parse(patches), null, 2) + '\n');
 
+  // 熱門討論: the busiest player threads, read from the 巴哈 board page already fetched above (no extra request).
+  // If the board could not be read, the previous file stays as it was.
+  const hotHealth: Omit<SourceHealth, 'failingSince'> = { id: 'bahamut-hot', ok: false, items: 0 };
+  try {
+    const board = dryRun ? await readFile('tests/fixtures/sources/bahamut-board-full.html', 'utf8') : results.find((r) => r.sourceId === 'bahamut')?.body;
+    if (!board) throw new Error('巴哈 board page not fetched this run');
+    const topics = parseBahamutHot(board, now);
+    await writeFile(join(outDir, 'hot-topics.json'), JSON.stringify(HotTopicsSchema.parse({ updatedAt: now.toISOString(), topics }), null, 2) + '\n');
+    Object.assign(hotHealth, { ok: true, items: topics.length }, topics.length ? {} : { note: 'no busy threads in the last 7 days' });
+    log('info', 'hot topics', { count: topics.length });
+  } catch (err) {
+    hotHealth.note = String(err).slice(0, 200);
+    log('warn', 'hot topics failed', { error: hotHealth.note });
+  }
+
   // Status page data: only counts and booleans, never key values.
   const status = RunStatusSchema.parse({
     lastRun: new Date().toISOString(),
@@ -312,7 +327,7 @@ async function main() {
     edition: { date, number: edition.editionNumber, items: edition.items.length, zhPending: edition.items.filter((i) => i.headline_zhHant === 'pending').length },
     sources: trackHealth(
       now,
-      results.map((r) => ({ id: r.sourceId, ok: r.ok, items: r.items.length, ...(r.note ? { note: r.note } : {}) })),
+      [...results.map((r) => ({ id: r.sourceId, ok: r.ok, items: r.items.length, ...(r.note ? { note: r.note } : {}) })), hotHealth],
       (await readJson<{ sources?: SourceHealth[] }>(join(outDir, 'status.json'), {})).sources,
     ),
     videos: { total: videos.length, youtubeApiConfigured: Boolean(youtubeKey) },

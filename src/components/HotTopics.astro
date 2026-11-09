@@ -1,0 +1,82 @@
+---
+/** 熱門討論: the busiest player threads on 巴哈's Division board. Title, counts and a link out — never posts or usernames. */
+import { t, tf, type Locale } from '../i18n/index.ts';
+import { HOT_TAG_KEYS, hotTitle, hotTopics } from '../lib/hot-topics.ts';
+
+interface Props {
+  locale: Locale;
+}
+const { locale } = Astro.props;
+const num = (n: number) => new Intl.NumberFormat(locale === 'en' ? 'en' : 'zh-Hant-TW', { notation: n >= 10_000 ? 'compact' : 'standard' }).format(n);
+const tagLabel = (tag: string) => (tag in HOT_TAG_KEYS ? t(locale, HOT_TAG_KEYS[tag as keyof typeof HOT_TAG_KEYS]) : tag);
+---
+{
+  hotTopics.length === 0 ? (
+    <p class="none">{t(locale, 'hot.none')}</p>
+  ) : (
+    <ol class="hot">
+      {hotTopics.map((h) => (
+        <li>
+          <a href={h.url} target="_blank" rel="noopener noreferrer" class="row">
+            <span class="tag">{tagLabel(h.tag)}</span>
+            <span class="txt">
+              <span class="tt" lang="zh-Hant-TW">{hotTitle(h.title)}</span>
+              <span class="meta">
+                {tf(locale, 'hot.replies', { n: num(h.replies) })} · {tf(locale, 'hot.views', { n: num(h.views) })}
+              </span>
+            </span>
+          </a>
+        </li>
+      ))}
+    </ol>
+  )
+}
+<p class="note">{t(locale, 'hot.note')}</p>
+
+<style>
+  .hot {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .hot li {
+    border-bottom: 1px solid var(--rule-soft);
+  }
+  .hot li:last-child {
+    border-bottom: 0;
+  }
+  .row {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    padding: 8px 0;
+    text-decoration: none;
+    min-height: var(--tap);
+  }
+  .tag {
+    flex: none;
+    margin-top: 2px;
+    padding: 0 6px;
+    border: 1.5px solid currentColor;
+    font: 600 0.75rem / 1.6 var(--font-hud);
+    white-space: nowrap;
+  }
+  .txt {
+    display: grid;
+    gap: 2px;
+    min-width: 0;
+  }
+  .tt {
+    font: 700 0.9375rem / 1.4 var(--font-cjk);
+    overflow-wrap: anywhere;
+  }
+  .meta,
+  .note,
+  .none {
+    font: 400 0.75rem / 1.4 var(--font-hud);
+    color: var(--ink-soft);
+  }
+  .note {
+    margin: 6px 0 0;
+  }
+</style>

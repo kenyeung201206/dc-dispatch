@@ -1,4 +1,4 @@
-// Fails (so GitHub emails the owner) when a news source (Steam, Ubisoft EN/繁中, 巴哈) has failed or returned
+// Fails (so GitHub emails the owner) when a news source (Steam, Ubisoft EN/繁中, 巴哈, 巴哈 熱門討論) has failed or returned
 // nothing for 6+ hours; then once a day while it lasts. Run: node scripts/check-sources.ts
 import { readFileSync } from 'node:fs';
 import { sourcesToReport, type SourceHealth } from '../pipeline/health.ts';

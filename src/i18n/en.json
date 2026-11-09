@@ -259,5 +259,13 @@
   "latest.titlePast": "Updates that day",
   "badge.new": "NEW",
   "latest.more": "Show more ({n} more)",
-  "latest.less": "Show less"
+  "latest.less": "Show less",
+  "hot.title": "Hot Threads",
+  "hot.note": "Busiest player threads on the 巴哈姆特 Division board (last 7 days). Player talk, not official news. Titles in Chinese.",
+  "hot.replies": "{n} replies",
+  "hot.views": "{n} views",
+  "hot.tag.question": "Question",
+  "hot.tag.discussion": "Discussion",
+  "hot.tag.chat": "Chat",
+  "hot.none": "The board is quiet right now."
 }

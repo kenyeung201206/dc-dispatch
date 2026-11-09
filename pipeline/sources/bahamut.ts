@@ -85,3 +85,46 @@ export function parseBahamutFirstPost(html: string, maxChars = 4000): string {
   const m = html.match(/<div class="c-article__content">([\s\S]*?)<\/div>\s*<\/article>/) ?? html.match(/c-article__content[^>]*>([\s\S]{0,8000})/);
   return toPlainText((m?.[1] ?? '').replace(/<br\s*\/?>/gi, ' ')).slice(0, maxChars);
 }
+
+/** 熱門討論: player threads (questions, debates, chit-chat), ranked by how many replies they have. */
+export const HOT_TAGS = new Set(['討論', '閒聊', '問題']);
+
+export interface HotTopic {
+  id: string;
+  tag: string;
+  title: string;
+  url: string;
+  replies: number;
+  views: number;
+  /** Time of the newest reply, as the list page shows it. */
+  lastReplyAt: string;
+}
+
+const count = (row: string, label: string) => {
+  const m = row.match(new RegExp(`title="${label}：([0-9,]+)"`));
+  return m ? Number(m[1].replace(/,/g, '')) : undefined;
+};
+
+/**
+ * The busiest player threads on the board's first list page: not pinned, tagged 【討論】【閒聊】【問題】,
+ * with a reply in the last `days` days, most replies first. Title, link and counts only — never posts or usernames.
+ */
+export function parseBahamutHot(html: string, now: Date, { days = 7, limit = 5 } = {}): HotTopic[] {
+  if (!html.includes('b-list__row')) throw new Error('Bahamut board layout changed (no b-list__row)');
+  if (!html.includes('title="互動：')) throw new Error('Bahamut board layout changed (no reply counts)');
+  const since = now.getTime() - days * 86_400_000;
+  const out: HotTopic[] = [];
+  for (const row of html.split(/<tr class="b-list__row(?= )/).slice(1)) {
+    if (!/^ b-list-item b-imglist-item"/.test(row)) continue; // skips pinned rows and ads
+    const snA = row.match(/href="C\.php\?bsn=\d+&(?:amp;)?snA=(\d+)/)?.[1];
+    const title = toPlainText(pick(row, /b-list__main__title[^>]*>([^<]+)/));
+    const tag = title.match(/^【([^】]{1,4})】/)?.[1];
+    if (!snA || !tag || !HOT_TAGS.has(tag)) continue;
+    const replies = count(row, '互動');
+    const views = count(row, '人氣');
+    const lastReplyAt = parseBahaTime(pick(row, /b-list__time__edittime[\s\S]*?>([^<]*\d[^<]*)</), now);
+    if (replies === undefined || views === undefined || !lastReplyAt || Date.parse(lastReplyAt) < since) continue;
+    out.push({ id: snA, tag, title, url: `https://forum.gamer.com.tw/C.php?bsn=${BAHAMUT_BOARD}&snA=${snA}`, replies, views, lastReplyAt });
+  }
+  return out.sort((a, b) => b.replies - a.replies || b.views - a.views).slice(0, limit);
+}
