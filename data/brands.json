@@ -476,7 +476,8 @@
    "en": "Ember Engine",
    "aliases": [
     "餘燼引擎",
-    "Ember Engine"
+    "Ember Engine",
+    "餘燼"
    ],
    "icon": "/icons/set/ember-engine.png"
   }
@@ -555,7 +556,8 @@
    "en": "Assault Rifle",
    "aliases": [
     "突擊步槍",
-    "Assault Rifle"
+    "Assault Rifle",
+    "AR"
    ],
    "icon": "/icons/weapon/ar.png"
   },

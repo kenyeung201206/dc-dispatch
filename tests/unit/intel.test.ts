@@ -10,6 +10,7 @@ import { parseBahaTime, parseBahamutBoard, parseBahamutFirstPost } from '../../p
 import { dailyDate, parseDailyLoot } from '../../pipeline/sources/bahamut-daily.ts';
 import { chineseReward, lootDay, lootIsLate, parseProtoTrack } from '../../pipeline/sources/prototrack.ts';
 import { iconsOnPage, slug, toIcon } from '../../pipeline/loot-icons.ts';
+import { sourcesToReport, trackHealth } from '../../pipeline/health.ts';
 import { parseUbisoftNews } from '../../pipeline/sources/ubisoft.ts';
 import { saysNothing, videoStories } from '../../pipeline/video/intel-items.ts';
 import type { VideoCandidate } from '../../pipeline/video/videos.ts';
@@ -375,5 +376,25 @@ describe('戰鬥升級 names and icons from ProtoTrack', () => {
     const { data } = await out.raw().toBuffer({ resolveWithObject: true });
     expect(data[3]).toBe(0); // corner stays transparent
     expect(data[(48 * 96 + 48) * 4 + 3]).toBe(255); // middle is the emblem
+  });
+});
+
+describe('source health (watchdog)', () => {
+  const t0 = new Date('2026-11-09T00:00:00Z');
+  const at = (h: number) => new Date(t0.getTime() + h * 3_600_000);
+  it('remembers since when a source has been failing or empty, and forgets once it works', () => {
+    const run1 = trackHealth(t0, [{ id: 'bahamut', ok: false, items: 0 }, { id: 'steam-news', ok: true, items: 23 }]);
+    expect(run1).toEqual([{ id: 'bahamut', ok: false, items: 0, failingSince: t0.toISOString() }, { id: 'steam-news', ok: true, items: 23 }]);
+    const run2 = trackHealth(at(2), [{ id: 'bahamut', ok: true, items: 0 }], run1);
+    expect(run2[0]!.failingSince).toBe(t0.toISOString()); // fetched but empty still counts as not working
+    expect(trackHealth(at(4), [{ id: 'bahamut', ok: true, items: 9 }], run2)).toEqual([{ id: 'bahamut', ok: true, items: 9 }]);
+  });
+  it('emails after 6 hours, then once a day, not every run', () => {
+    const s = [{ id: 'bahamut', ok: false, items: 0, failingSince: t0.toISOString() }];
+    expect(sourcesToReport(s, at(4))).toEqual([]);
+    expect(sourcesToReport(s, at(6.8))).toHaveLength(1);
+    expect(sourcesToReport(s, at(8.8))).toEqual([]);
+    expect(sourcesToReport(s, at(30.8))).toHaveLength(1);
+    expect(sourcesToReport([{ id: 'x', ok: true, items: 3 }], at(7))).toEqual([]);
   });
 });

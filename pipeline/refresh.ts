@@ -30,6 +30,7 @@ import type { RawItem, SourceResult } from './sources/types.ts';
 import { parseUbisoftNews } from './sources/ubisoft.ts';
 import { parseBahamutBoard, parseBahamutFirstPost } from './sources/bahamut.ts';
 import { updateDailyLoot } from './daily-loot.ts';
+import { trackHealth, type SourceHealth } from './health.ts';
 import { aiSummaries, needsAi } from './ai.ts';
 import { aiBriefs } from './ai-briefs.ts';
 
@@ -309,7 +310,11 @@ async function main() {
     lastRun: new Date().toISOString(),
     durationMs: Date.now() - startedAt,
     edition: { date, number: edition.editionNumber, items: edition.items.length, zhPending: edition.items.filter((i) => i.headline_zhHant === 'pending').length },
-    sources: results.map((r) => ({ id: r.sourceId, ok: r.ok, items: r.items.length, ...(r.note ? { note: r.note } : {}) })),
+    sources: trackHealth(
+      now,
+      results.map((r) => ({ id: r.sourceId, ok: r.ok, items: r.items.length, ...(r.note ? { note: r.note } : {}) })),
+      (await readJson<{ sources?: SourceHealth[] }>(join(outDir, 'status.json'), {})).sources,
+    ),
     videos: { total: videos.length, youtubeApiConfigured: Boolean(youtubeKey) },
     budget: { youtubeQuotaUnits: youtubeKey ? channels.length * 2 + (videoConfig.searches?.length ?? 0) * 100 + 1 : 0, costUsd: Number(ai.costUsd.toFixed(4)) },
   });
