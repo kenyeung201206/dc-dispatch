@@ -1,7 +1,7 @@
 {
   "date": "2026-11-09",
   "editionNumber": 6,
-  "generatedAt": "2026-11-09T02:48:24.780Z",
+  "generatedAt": "2026-11-09T04:57:45.794Z",
   "meta": {
     "season_en": "Red Horizon",
     "season_zhHant": "Red Horizon 賽季",
@@ -17,7 +17,7 @@
       "title_orig": "[TUY8S3.3] Echoes of Central Park Launch, Crossplay Rollout, Conflict Improvements & More",
       "lang_orig": "en",
       "publishedAt": "2026-11-02T15:45:00.000Z",
-      "fetchedAt": "2026-11-09T02:48:24.780Z",
+      "fetchedAt": "2026-11-09T04:57:45.794Z",
       "category": "updates",
       "tags": [
         "title-update",
@@ -58,7 +58,7 @@
       "title_orig": "The Division 2: Echoes of Central Park DLC is available now!",
       "lang_orig": "en",
       "publishedAt": "2026-11-03T15:00:00.000Z",
-      "fetchedAt": "2026-11-09T02:48:24.780Z",
+      "fetchedAt": "2026-11-09T04:57:45.794Z",
       "category": "missions",
       "tags": [
         "dlc"
@@ -156,7 +156,7 @@
       "title_orig": "The Division 2: Echoes of Central Park Launch Twitch Drops",
       "lang_orig": "en",
       "publishedAt": "2026-11-03T15:00:00.000Z",
-      "fetchedAt": "2026-11-09T02:48:24.780Z",
+      "fetchedAt": "2026-11-09T04:57:45.794Z",
       "category": "community",
       "tags": [
         "twitch-drops",
@@ -273,7 +273,7 @@
       "title_orig": "[TUY8S3.3] Echoes of Central Park Launch, Crossplay Rollout, Conflict Improvements & More",
       "lang_orig": "en",
       "publishedAt": "2026-11-02T15:45:00.000Z",
-      "fetchedAt": "2026-11-09T02:48:24.780Z",
+      "fetchedAt": "2026-11-09T04:57:45.794Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -547,6 +547,33 @@
       "status": "new"
     },
     {
+      "id": "kj9hgo",
+      "sourceId": "youtube",
+      "sourceName": "純天然",
+      "sourceUrl": "https://www.youtube.com/watch?v=GfJwHPy9hJM",
+      "title_orig": "全境封鎖2 - 守護者 \"禿鷹\"毒氣飛機 純純火打法，飛機火力夠就好打 沒打到必躲 盡量15m內戰鬥 超過絕對不能對槍",
+      "lang_orig": "zh",
+      "publishedAt": "2026-11-09T03:28:11.000Z",
+      "fetchedAt": "2026-11-09T04:57:45.794Z",
+      "category": "community",
+      "tags": [
+        "video"
+      ],
+      "importance": 55,
+      "confidence": "community",
+      "headline_en": "pending",
+      "headline_zhHant": "全境封鎖2 - 守護者 \"禿鷹\"毒氣飛機 純純火打法，飛機火力夠就好打 沒打到必躲 盡量15m內戰鬥 超過絕對不能對槍",
+      "summary_en": "pending",
+      "summary_zhHant": "15m內打滿吃走位的 還好掩體多",
+      "summaryKind": "extract",
+      "alsoReportedBy": [],
+      "media": [],
+      "videoId": "GfJwHPy9hJM",
+      "relatedIds": [],
+      "firstSeenAt": "2026-11-09T04:57:45.794Z",
+      "status": "new"
+    },
+    {
       "id": "19xh7fi",
       "sourceId": "youtube",
       "sourceName": "The Rijo",
@@ -601,14 +628,41 @@
       "status": "new"
     },
     {
+      "id": "1basp34",
+      "sourceId": "youtube",
+      "sourceName": "純天然",
+      "sourceUrl": "https://www.youtube.com/watch?v=lY5NsoOyseM",
+      "title_orig": "全境封鎖2 - 守護者 陷阱的\"泥沼\" 純火打法，試了幾次果然還是不打陷阱好打，意外錄到跟泥沼玩蘿蔔蹲",
+      "lang_orig": "zh",
+      "publishedAt": "2026-11-09T02:59:10.000Z",
+      "fetchedAt": "2026-11-09T04:57:45.794Z",
+      "category": "community",
+      "tags": [
+        "video"
+      ],
+      "importance": 53,
+      "confidence": "community",
+      "headline_en": "pending",
+      "headline_zhHant": "全境封鎖2 - 守護者 陷阱的\"泥沼\" 純火打法，試了幾次果然還是不打陷阱好打，意外錄到跟泥沼玩蘿蔔蹲",
+      "summary_en": "pending",
+      "summary_zhHant": "直接硬灌傷害就好 感覺破他技能攻擊欲望很高 PS. 這場滿好笑的 XD",
+      "summaryKind": "extract",
+      "alsoReportedBy": [],
+      "media": [],
+      "videoId": "lY5NsoOyseM",
+      "relatedIds": [],
+      "firstSeenAt": "2026-11-09T04:57:45.794Z",
+      "status": "new"
+    },
+    {
       "id": "1o0915k",
       "sourceId": "bahamut",
       "sourceName": "巴哈姆特 全境封鎖板",
       "sourceUrl": "https://forum.gamer.com.tw/C.php?bsn=24460&snA=32884",
       "title_orig": "【情報】Twitch掉寶 11/10 - 11/17",
       "lang_orig": "zh",
-      "publishedAt": "2026-11-09T01:48:24.780Z",
-      "fetchedAt": "2026-11-09T02:48:24.780Z",
+      "publishedAt": "2026-11-09T01:57:45.794Z",
+      "fetchedAt": "2026-11-09T04:57:45.794Z",
       "category": "community",
       "tags": [],
       "importance": 52,
@@ -632,7 +686,7 @@
       "title_orig": "【情報】11/07 每日戰鬥升級掉落 & 原型商人",
       "lang_orig": "zh",
       "publishedAt": "2026-11-07T04:00:00.000Z",
-      "fetchedAt": "2026-11-09T02:48:24.780Z",
+      "fetchedAt": "2026-11-09T04:57:45.794Z",
       "category": "updates",
       "tags": [],
       "importance": 48,
@@ -656,7 +710,7 @@
       "title_orig": "Last Chance to Pre-Purchase The Division 2: Echoes of Central Park",
       "lang_orig": "en",
       "publishedAt": "2026-10-28T13:29:29.000Z",
-      "fetchedAt": "2026-11-09T02:48:24.780Z",
+      "fetchedAt": "2026-11-09T04:57:45.794Z",
       "category": "missions",
       "tags": [
         "dlc",
@@ -683,7 +737,7 @@
       "title_orig": "【攻略】部分技能的解鎖方式整理",
       "lang_orig": "zh",
       "publishedAt": "2026-11-05T05:49:00.000Z",
-      "fetchedAt": "2026-11-09T02:48:24.780Z",
+      "fetchedAt": "2026-11-09T04:57:45.794Z",
       "category": "builds",
       "tags": [],
       "importance": 44,
@@ -700,32 +754,6 @@
       "status": "new"
     },
     {
-      "id": "kmjycv",
-      "sourceId": "bahamut",
-      "sourceName": "巴哈姆特 全境封鎖板",
-      "sourceUrl": "https://forum.gamer.com.tw/C.php?bsn=24460&snA=32874",
-      "title_orig": "【情報】中央公園的迴響 DLC 夥伴 - 相關資訊",
-      "lang_orig": "zh",
-      "publishedAt": "2026-11-05T04:03:00.000Z",
-      "fetchedAt": "2026-11-09T02:48:24.780Z",
-      "category": "missions",
-      "tags": [
-        "dlc"
-      ],
-      "importance": 44,
-      "confidence": "community",
-      "headline_en": "pending",
-      "headline_zhHant": "【情報】中央公園的迴響 DLC 夥伴 - 相關資訊",
-      "summary_en": "pending",
-      "summary_zhHant": "遊戲內的資訊整理成圖表方便一覽 內容若有錯誤請再指教",
-      "summaryKind": "extract",
-      "alsoReportedBy": [],
-      "media": [],
-      "relatedIds": [],
-      "firstSeenAt": "2026-11-05T04:04:30.015Z",
-      "status": "new"
-    },
-    {
       "id": "rchnq7",
       "sourceId": "steam-news",
       "sourceName": "Ubisoft (via Steam News)",
@@ -733,7 +761,7 @@
       "title_orig": "Echoes of Central Park Launch Livestream",
       "lang_orig": "en",
       "publishedAt": "2026-10-27T16:01:04.000Z",
-      "fetchedAt": "2026-11-09T02:48:24.780Z",
+      "fetchedAt": "2026-11-09T04:57:45.794Z",
       "category": "community",
       "tags": [],
       "importance": 43,
@@ -757,7 +785,7 @@
       "title_orig": "Echoes of Central Park Costume Contest",
       "lang_orig": "en",
       "publishedAt": "2026-10-27T10:34:40.000Z",
-      "fetchedAt": "2026-11-09T02:48:24.780Z",
+      "fetchedAt": "2026-11-09T04:57:45.794Z",
       "category": "community",
       "tags": [],
       "importance": 43,
@@ -774,6 +802,32 @@
       "status": "new"
     },
     {
+      "id": "kmjycv",
+      "sourceId": "bahamut",
+      "sourceName": "巴哈姆特 全境封鎖板",
+      "sourceUrl": "https://forum.gamer.com.tw/C.php?bsn=24460&snA=32874",
+      "title_orig": "【情報】中央公園的迴響 DLC 夥伴 - 相關資訊",
+      "lang_orig": "zh",
+      "publishedAt": "2026-11-05T04:03:00.000Z",
+      "fetchedAt": "2026-11-09T04:57:45.794Z",
+      "category": "missions",
+      "tags": [
+        "dlc"
+      ],
+      "importance": 43,
+      "confidence": "community",
+      "headline_en": "pending",
+      "headline_zhHant": "【情報】中央公園的迴響 DLC 夥伴 - 相關資訊",
+      "summary_en": "pending",
+      "summary_zhHant": "遊戲內的資訊整理成圖表方便一覽 內容若有錯誤請再指教",
+      "summaryKind": "extract",
+      "alsoReportedBy": [],
+      "media": [],
+      "relatedIds": [],
+      "firstSeenAt": "2026-11-05T04:04:30.015Z",
+      "status": "new"
+    },
+    {
       "id": "1l9fm8s",
       "sourceId": "bahamut",
       "sourceName": "巴哈姆特 全境封鎖板",
@@ -781,7 +835,7 @@
       "title_orig": "【情報】*劇透注意* Y8S3/TU29 獵捕行動 Red Horizon 偵查任務 每週統整",
       "lang_orig": "zh",
       "publishedAt": "2026-11-03T17:07:00.000Z",
-      "fetchedAt": "2026-11-09T02:48:24.780Z",
+      "fetchedAt": "2026-11-09T04:57:45.794Z",
       "category": "updates",
       "tags": [],
       "importance": 40,
@@ -805,7 +859,7 @@
       "title_orig": "【心得】無陷阱手T10日蝕複合控場(全汞合金)",
       "lang_orig": "zh",
       "publishedAt": "2026-11-03T05:31:00.000Z",
-      "fetchedAt": "2026-11-09T02:48:24.780Z",
+      "fetchedAt": "2026-11-09T04:57:45.794Z",
       "category": "builds",
       "tags": [],
       "importance": 39,
@@ -829,7 +883,7 @@
       "title_orig": "【情報】【已開機】關機維護公告 - 2026/11/03(二) 16:00 (Y8S3.3 中央公園DLC)，延長1.5小時",
       "lang_orig": "zh",
       "publishedAt": "2026-11-02T16:43:00.000Z",
-      "fetchedAt": "2026-11-09T02:48:24.780Z",
+      "fetchedAt": "2026-11-09T04:57:45.794Z",
       "category": "updates",
       "tags": [
         "dlc"
@@ -855,12 +909,12 @@
       "title_orig": "【情報】全境2 TUY8S3.2 血月高照、創作者合作、升級更新 2F R/MMR BUFF",
       "lang_orig": "zh",
       "publishedAt": "2026-10-27T07:04:00.000Z",
-      "fetchedAt": "2026-11-09T02:48:24.780Z",
+      "fetchedAt": "2026-11-09T04:57:45.794Z",
       "category": "updates",
       "tags": [
         "title-update"
       ],
-      "importance": 25,
+      "importance": 24,
       "confidence": "community",
       "headline_en": "pending",
       "headline_zhHant": "【情報】全境2 TUY8S3.2 血月高照、創作者合作、升級更新 2F R/MMR BUFF",
@@ -878,22 +932,22 @@
     {
       "sourceId": "steam-news",
       "ok": true,
-      "checkedAt": "2026-11-09T02:48:24.780Z"
+      "checkedAt": "2026-11-09T04:57:45.794Z"
     },
     {
       "sourceId": "ubisoft-en",
       "ok": true,
-      "checkedAt": "2026-11-09T02:48:24.780Z"
+      "checkedAt": "2026-11-09T04:57:45.794Z"
     },
     {
       "sourceId": "ubisoft-zh-tw",
       "ok": true,
-      "checkedAt": "2026-11-09T02:48:24.780Z"
+      "checkedAt": "2026-11-09T04:57:45.794Z"
     },
     {
       "sourceId": "bahamut",
       "ok": true,
-      "checkedAt": "2026-11-09T02:48:24.780Z"
+      "checkedAt": "2026-11-09T04:57:45.794Z"
     }
   ]
 }
