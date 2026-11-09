@@ -8,7 +8,8 @@ import { scrubOldYoutube } from '../../pipeline/edition.ts';
 import { exoticsFromArticle, mergeExotics, wikiExotics, wikiLead } from '../../pipeline/exotics.ts';
 import { parseBahaTime, parseBahamutBoard, parseBahamutFirstPost } from '../../pipeline/sources/bahamut.ts';
 import { dailyDate, parseDailyLoot } from '../../pipeline/sources/bahamut-daily.ts';
-import { lootDay, lootIsLate, parseProtoTrack } from '../../pipeline/sources/prototrack.ts';
+import { chineseReward, lootDay, lootIsLate, parseProtoTrack } from '../../pipeline/sources/prototrack.ts';
+import { iconsOnPage, slug, toIcon } from '../../pipeline/loot-icons.ts';
 import { parseUbisoftNews } from '../../pipeline/sources/ubisoft.ts';
 import { saysNothing, videoStories } from '../../pipeline/video/intel-items.ts';
 import type { VideoCandidate } from '../../pipeline/video/videos.ts';
@@ -282,7 +283,7 @@ describe('今日戰鬥升級 (巴哈 daily post)', () => {
   it('every brand and slot has a local in-game icon, and no name points to two entries', () => {
     type E = { en: string; aliases: string[]; icon: string | null };
     const b = JSON.parse(readFileSync('data/brands.json', 'utf8')) as { brands: E[]; sets: E[]; slots: E[] };
-    for (const x of [...b.brands, ...b.slots]) expect(x.icon, x.en).toMatch(/^\/icons\/(brand|slot|weapon)\/[a-z0-9-]+\.png$/);
+    for (const x of [...b.brands, ...b.slots]) expect(x.icon, x.en).toMatch(/^\/icons\/(brand|slot|weapon|gear)\/[a-z0-9-]+\.png$/);
     for (const x of [...b.brands, ...b.sets, ...b.slots]) if (x.icon) expect(existsSync('public' + x.icon), x.icon).toBe(true);
     for (const list of [b.brands, b.sets, b.slots]) {
       const all = list.flatMap((x) => x.aliases);
@@ -343,5 +344,36 @@ describe('今日戰鬥升級 (ProtoTrack.gg text file)', () => {
     expect(lootIsLate('2026-11-07', at('2026-11-08T14:50:00Z'))).toBe(false); // no repeat emails all night
     expect(lootIsLate('2026-11-08', at('2026-11-08T12:50:00Z'))).toBe(false); // up to date
     expect(lootIsLate('2026-11-08', at('2026-11-09T07:50:00Z'))).toBe(false); // before the next reset
+  });
+});
+
+describe('戰鬥升級 names and icons from ProtoTrack', () => {
+  it('knows 餘燼引擎 (a gear set) and 裝備模組 (not a gear slot)', () => {
+    expect(chineseReward('Ember Engine')).toEqual({ reward: '餘燼引擎', kind: 'set' });
+    expect(chineseReward('Gear Mods')).toEqual({ reward: '裝備模組', kind: 'other' });
+    expect(chineseReward('Golan Gear Ltd')).toEqual({ reward: '戈蘭', kind: 'brand' });
+  });
+  it("finds each reward's icon on ProtoTrack's page and which list it belongs to", () => {
+    const html = `<img src="/assets/division2/gearsets/emberengine.png?v=1" data-fallback-srcs="x" data-loot="Ember Engine" onerror="f(this)" alt="">
+      <img src="/assets/division2/brandsets/douglasharding.png?v=1" data-loot="Douglas &amp; Harding" alt="">
+      <img src="/assets/division2/gear/gearmod.png?v=1" data-loot="Gear Mods" alt=""><img src="/assets/discord-server-icons/x.png" alt="">`;
+    expect(iconsOnPage(html)).toEqual([
+      { name: 'Ember Engine', url: 'https://prototrack.gg/assets/division2/gearsets/emberengine.png?v=1', list: 'sets', folder: 'set' },
+      { name: 'Douglas & Harding', url: 'https://prototrack.gg/assets/division2/brandsets/douglasharding.png?v=1', list: 'brands', folder: 'brand' },
+      { name: 'Gear Mods', url: 'https://prototrack.gg/assets/division2/gear/gearmod.png?v=1', list: 'slots', folder: 'gear' },
+    ]);
+    expect(slug('Walker, Harris & Co.')).toBe('walker-harris-and-co');
+  });
+  it('turns an image into a 96x96 icon with a clear edge', async () => {
+    const sharp = (await import('sharp')).default;
+    const src = await sharp({ create: { width: 300, height: 200, channels: 4, background: { r: 0, g: 0, b: 0, alpha: 0 } } })
+      .composite([{ input: { create: { width: 100, height: 100, channels: 4, background: { r: 255, g: 255, b: 255, alpha: 1 } } }, top: 50, left: 100 }])
+      .png()
+      .toBuffer();
+    const out = sharp(await toIcon(src));
+    expect(await out.metadata()).toMatchObject({ width: 96, height: 96, hasAlpha: true });
+    const { data } = await out.raw().toBuffer({ resolveWithObject: true });
+    expect(data[3]).toBe(0); // corner stays transparent
+    expect(data[(48 * 96 + 48) * 4 + 3]).toBe(255); // middle is the emblem
   });
 });

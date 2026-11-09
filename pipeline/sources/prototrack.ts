@@ -31,13 +31,17 @@ const LISTS: [RewardKind, Entry[]][] = [
   ['slot', brands.slots],
 ];
 
+/** True when data/brands.json has this English (or Chinese) name. */
+export const knownReward = (name: string) => LISTS.some(([, list]) => list.some((e) => [e.en, ...e.aliases].some((a) => key(a) === key(name))));
+
 /** English reward name → the Chinese name players use, and its type. */
 export function chineseReward(name: string): { reward: string; kind: RewardKind } {
   for (const [kind, list] of LISTS) {
     const hit = list.find((e) => [e.en, ...e.aliases].some((a) => key(a) === key(name)));
     if (hit) {
-      const weapon = hit.icon?.startsWith('/icons/weapon/');
-      return { reward: hit.aliases.find((a) => CJK.test(a)) ?? hit.en, kind: weapon ? 'weapon' : kind };
+      // Weapons are kept in the slot list; other items (gear mods) aren't a gear slot.
+      const k = hit.icon?.startsWith('/icons/weapon/') ? 'weapon' : hit.icon?.startsWith('/icons/gear/') ? 'other' : kind;
+      return { reward: hit.aliases.find((a) => CJK.test(a)) ?? hit.en, kind: k };
     }
   }
   return { reward: name, kind: 'other' };

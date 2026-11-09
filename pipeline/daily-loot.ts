@@ -6,6 +6,7 @@
 import { readFile, writeFile } from 'node:fs/promises';
 import { politeGet } from './http.ts';
 import { log } from './log.ts';
+import { addMissingIcons } from './loot-icons.ts';
 import { dailyDate, parseDailyLoot, type DailyLoot } from './sources/bahamut-daily.ts';
 import { lootDay, parseProtoTrack, PROTOTRACK_PAGE, PROTOTRACK_TXT } from './sources/prototrack.ts';
 
@@ -34,6 +35,10 @@ export async function updateDailyLoot(now: Date, bahamut?: { title: string; url:
     if (pt && pt.date > have && pt.date <= lootDay(now)) {
       await save({ ...pt, title: '', url: PROTOTRACK_PAGE, source: 'prototrack', fetchedAt: now.toISOString() });
       log('info', 'daily loot', { source: 'prototrack', date: pt.date, missions: pt.missions.length });
+      // A name we don't know yet: take its icon from ProtoTrack (the Chinese name is added by hand later).
+      await addMissingIcons([...pt.missions.map((m) => m.reward), ...pt.vendor]).catch((err) =>
+        log('warn', 'loot icons failed', { error: String(err).slice(0, 120) }),
+      );
       return pt.date;
     }
     if (!pt) log('warn', 'daily loot: ProtoTrack layout not recognised', {});

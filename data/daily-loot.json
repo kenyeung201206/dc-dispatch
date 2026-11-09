@@ -13,12 +13,12 @@
   },
   {
    "place": "白橡木",
-   "reward": "Ember Engine",
-   "kind": "other"
+   "reward": "餘燼引擎",
+   "kind": "set"
   },
   {
    "place": "五角",
-   "reward": "Gear Mods",
+   "reward": "裝備模組",
    "kind": "other"
   },
   {
@@ -34,5 +34,5 @@
  "title": "",
  "url": "https://prototrack.gg/target-loot/target-loot.php",
  "source": "prototrack",
- "fetchedAt": "2026-11-09T08:59:08.477Z"
+ "fetchedAt": "2026-11-09T09:13:09.088Z"
 }

@@ -9,6 +9,11 @@ on:
     - cron: '10 8 * * *'
     - cron: '20 8 * * *'
   workflow_dispatch:
+    inputs:
+      deploy:
+        description: Build and deploy even if the list didn't change (e.g. after a code or icon update)
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -39,7 +44,7 @@ jobs:
         run: node pipeline/loot.ts
 
       - name: Build site + search index
-        if: steps.loot.outputs.changed == 'true'
+        if: steps.loot.outputs.changed == 'true' || inputs.deploy
         run: pnpm run build
         env:
           HUMOUR_LEVEL: ${{ vars.HUMOUR_LEVEL || 'medium' }}
@@ -49,7 +54,7 @@ jobs:
         run: |
           git config user.name "dc-dispatch-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/daily-loot.json
+          git add data/daily-loot.json data/brands.json public/icons
           git commit -m "chore(data): 戰鬥升級 $(date -u +%F)"
           for attempt in 1 2 3; do
             if git push; then break; fi
@@ -59,7 +64,7 @@ jobs:
           done
 
       - name: Deploy to Cloudflare Pages
-        if: steps.loot.outputs.changed == 'true' && vars.CF_PAGES_PROJECT != ''
+        if: (steps.loot.outputs.changed == 'true' || inputs.deploy) && vars.CF_PAGES_PROJECT != ''
         run: |
           if [ -z "$CLOUDFLARE_API_TOKEN" ] || [ -z "$CLOUDFLARE_ACCOUNT_ID" ]; then
             echo "::warning::Cloudflare secrets not set — loot committed but not deployed."

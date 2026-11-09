@@ -471,6 +471,14 @@
     "Breaking Point"
    ],
    "icon": "/icons/set/breaking-point.png"
+  },
+  {
+   "en": "Ember Engine",
+   "aliases": [
+    "餘燼引擎",
+    "Ember Engine"
+   ],
+   "icon": "/icons/set/ember-engine.png"
   }
  ],
  "slots": [
@@ -585,6 +593,15 @@
     "Marksman Rifle"
    ],
    "icon": "/icons/weapon/mmr.png"
+  },
+  {
+   "en": "Gear Mods",
+   "aliases": [
+    "裝備模組",
+    "Gear Mods",
+    "Gear Mod"
+   ],
+   "icon": "/icons/gear/gear-mods.png"
   }
  ]
 }
