@@ -1,7 +1,7 @@
 {
   "date": "2026-11-09",
   "editionNumber": 6,
-  "generatedAt": "2026-11-09T04:57:45.794Z",
+  "generatedAt": "2026-11-09T07:16:25.064Z",
   "meta": {
     "season_en": "Red Horizon",
     "season_zhHant": "Red Horizon 賽季",
@@ -17,7 +17,7 @@
       "title_orig": "[TUY8S3.3] Echoes of Central Park Launch, Crossplay Rollout, Conflict Improvements & More",
       "lang_orig": "en",
       "publishedAt": "2026-11-02T15:45:00.000Z",
-      "fetchedAt": "2026-11-09T04:57:45.794Z",
+      "fetchedAt": "2026-11-09T07:16:25.064Z",
       "category": "updates",
       "tags": [
         "title-update",
@@ -58,7 +58,7 @@
       "title_orig": "The Division 2: Echoes of Central Park DLC is available now!",
       "lang_orig": "en",
       "publishedAt": "2026-11-03T15:00:00.000Z",
-      "fetchedAt": "2026-11-09T04:57:45.794Z",
+      "fetchedAt": "2026-11-09T07:16:25.064Z",
       "category": "missions",
       "tags": [
         "dlc"
@@ -156,7 +156,7 @@
       "title_orig": "The Division 2: Echoes of Central Park Launch Twitch Drops",
       "lang_orig": "en",
       "publishedAt": "2026-11-03T15:00:00.000Z",
-      "fetchedAt": "2026-11-09T04:57:45.794Z",
+      "fetchedAt": "2026-11-09T07:16:25.064Z",
       "category": "community",
       "tags": [
         "twitch-drops",
@@ -273,7 +273,7 @@
       "title_orig": "[TUY8S3.3] Echoes of Central Park Launch, Crossplay Rollout, Conflict Improvements & More",
       "lang_orig": "en",
       "publishedAt": "2026-11-02T15:45:00.000Z",
-      "fetchedAt": "2026-11-09T04:57:45.794Z",
+      "fetchedAt": "2026-11-09T07:16:25.064Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -547,6 +547,60 @@
       "status": "new"
     },
     {
+      "id": "15i2abk",
+      "sourceId": "youtube",
+      "sourceName": "純天然",
+      "sourceUrl": "https://www.youtube.com/watch?v=L24LbWi_LMM",
+      "title_orig": "全境封鎖2 - 守護者 \"空洞\"蜂窩 真純火打法，感覺他最菜 技能隨便解 趁他丟3顆雷猛灌就好",
+      "lang_orig": "zh",
+      "publishedAt": "2026-11-09T03:13:03.000Z",
+      "fetchedAt": "2026-11-09T07:16:25.064Z",
+      "category": "community",
+      "tags": [
+        "video"
+      ],
+      "importance": 55,
+      "confidence": "community",
+      "headline_en": "pending",
+      "headline_zhHant": "全境封鎖2 - 守護者 \"空洞\"蜂窩 真純火打法，感覺他最菜 技能隨便解 趁他丟3顆雷猛灌就好",
+      "summary_en": "pending",
+      "summary_zhHant": "全境封鎖2 - 守護者 \"空洞\"蜂窩 真純火打法，感覺他最菜 技能隨便解 趁他丟3顆雷猛灌就好",
+      "summaryKind": "extract",
+      "alsoReportedBy": [],
+      "media": [],
+      "videoId": "L24LbWi_LMM",
+      "relatedIds": [],
+      "firstSeenAt": "2026-11-09T07:16:25.064Z",
+      "status": "new"
+    },
+    {
+      "id": "hddpxf",
+      "sourceId": "youtube",
+      "sourceName": "純天然",
+      "sourceUrl": "https://www.youtube.com/watch?v=ljpDKNtat-Y",
+      "title_orig": "全境封鎖2 - 守護者 \"荊棘\"反射飛機 超純火打法，別跟他對槍 趁他跑步 翻滾 丟雷 炸技能時一直偷襲他就好",
+      "lang_orig": "zh",
+      "publishedAt": "2026-11-09T03:38:02.000Z",
+      "fetchedAt": "2026-11-09T07:16:25.064Z",
+      "category": "community",
+      "tags": [
+        "video"
+      ],
+      "importance": 55,
+      "confidence": "community",
+      "headline_en": "pending",
+      "headline_zhHant": "全境封鎖2 - 守護者 \"荊棘\"反射飛機 超純火打法，別跟他對槍 趁他跑步 翻滾 丟雷 炸技能時一直偷襲他就好",
+      "summary_en": "pending",
+      "summary_zhHant": "他動作滿多的 應該算好打吧",
+      "summaryKind": "extract",
+      "alsoReportedBy": [],
+      "media": [],
+      "videoId": "ljpDKNtat-Y",
+      "relatedIds": [],
+      "firstSeenAt": "2026-11-09T07:16:25.064Z",
+      "status": "new"
+    },
+    {
       "id": "kj9hgo",
       "sourceId": "youtube",
       "sourceName": "純天然",
@@ -661,11 +715,11 @@
       "sourceUrl": "https://forum.gamer.com.tw/C.php?bsn=24460&snA=32884",
       "title_orig": "【情報】Twitch掉寶 11/10 - 11/17",
       "lang_orig": "zh",
-      "publishedAt": "2026-11-09T01:57:45.794Z",
-      "fetchedAt": "2026-11-09T04:57:45.794Z",
+      "publishedAt": "2026-11-09T01:16:25.064Z",
+      "fetchedAt": "2026-11-09T07:16:25.064Z",
       "category": "community",
       "tags": [],
-      "importance": 52,
+      "importance": 51,
       "confidence": "community",
       "headline_en": "pending",
       "headline_zhHant": "【情報】Twitch掉寶 11/10 - 11/17",
@@ -686,10 +740,10 @@
       "title_orig": "【情報】11/07 每日戰鬥升級掉落 & 原型商人",
       "lang_orig": "zh",
       "publishedAt": "2026-11-07T04:00:00.000Z",
-      "fetchedAt": "2026-11-09T04:57:45.794Z",
+      "fetchedAt": "2026-11-09T07:16:25.064Z",
       "category": "updates",
       "tags": [],
-      "importance": 48,
+      "importance": 47,
       "confidence": "community",
       "headline_en": "pending",
       "headline_zhHant": "【情報】11/07 每日戰鬥升級掉落 & 原型商人",
@@ -710,7 +764,7 @@
       "title_orig": "Last Chance to Pre-Purchase The Division 2: Echoes of Central Park",
       "lang_orig": "en",
       "publishedAt": "2026-10-28T13:29:29.000Z",
-      "fetchedAt": "2026-11-09T04:57:45.794Z",
+      "fetchedAt": "2026-11-09T07:16:25.064Z",
       "category": "missions",
       "tags": [
         "dlc",
@@ -730,30 +784,6 @@
       "status": "new"
     },
     {
-      "id": "hsu80a",
-      "sourceId": "bahamut",
-      "sourceName": "巴哈姆特 全境封鎖板",
-      "sourceUrl": "https://forum.gamer.com.tw/C.php?bsn=24460&snA=32068",
-      "title_orig": "【攻略】部分技能的解鎖方式整理",
-      "lang_orig": "zh",
-      "publishedAt": "2026-11-05T05:49:00.000Z",
-      "fetchedAt": "2026-11-09T04:57:45.794Z",
-      "category": "builds",
-      "tags": [],
-      "importance": 44,
-      "confidence": "community",
-      "headline_en": "pending",
-      "headline_zhHant": "【攻略】部分技能的解鎖方式整理",
-      "summary_en": "pending",
-      "summary_zhHant": "最近小號升 40 發現技能沒有跟主角色同步，需要獨自取得 （太久沒練小號都忘光了） 於是網路上一個個的搜尋各種技能如何解…",
-      "summaryKind": "extract",
-      "alsoReportedBy": [],
-      "media": [],
-      "relatedIds": [],
-      "firstSeenAt": "2026-11-05T04:01:30.015Z",
-      "status": "new"
-    },
-    {
       "id": "rchnq7",
       "sourceId": "steam-news",
       "sourceName": "Ubisoft (via Steam News)",
@@ -761,7 +791,7 @@
       "title_orig": "Echoes of Central Park Launch Livestream",
       "lang_orig": "en",
       "publishedAt": "2026-10-27T16:01:04.000Z",
-      "fetchedAt": "2026-11-09T04:57:45.794Z",
+      "fetchedAt": "2026-11-09T07:16:25.064Z",
       "category": "community",
       "tags": [],
       "importance": 43,
@@ -778,27 +808,27 @@
       "status": "new"
     },
     {
-      "id": "1q5vwna",
-      "sourceId": "steam-news",
-      "sourceName": "Ubisoft (via Steam News)",
-      "sourceUrl": "https://store.steampowered.com/news/app/2221490/view/1847286114048378",
-      "title_orig": "Echoes of Central Park Costume Contest",
-      "lang_orig": "en",
-      "publishedAt": "2026-10-27T10:34:40.000Z",
-      "fetchedAt": "2026-11-09T04:57:45.794Z",
-      "category": "community",
+      "id": "hsu80a",
+      "sourceId": "bahamut",
+      "sourceName": "巴哈姆特 全境封鎖板",
+      "sourceUrl": "https://forum.gamer.com.tw/C.php?bsn=24460&snA=32068",
+      "title_orig": "【攻略】部分技能的解鎖方式整理",
+      "lang_orig": "zh",
+      "publishedAt": "2026-11-05T05:49:00.000Z",
+      "fetchedAt": "2026-11-09T07:16:25.064Z",
+      "category": "builds",
       "tags": [],
       "importance": 43,
-      "confidence": "official",
-      "headline_en": "Echoes of Central Park Costume Contest",
-      "headline_zhHant": "《中央公園的迴響》服裝比賽",
-      "summary_en": "Agents, on November 3rd, we all find out what’s lurking in Central Park.Think you know what it is? Dress the part. No idea?",
-      "summary_zhHant": "pending",
+      "confidence": "community",
+      "headline_en": "pending",
+      "headline_zhHant": "【攻略】部分技能的解鎖方式整理",
+      "summary_en": "pending",
+      "summary_zhHant": "最近小號升 40 發現技能沒有跟主角色同步，需要獨自取得 （太久沒練小號都忘光了） 於是網路上一個個的搜尋各種技能如何解…",
       "summaryKind": "extract",
       "alsoReportedBy": [],
       "media": [],
       "relatedIds": [],
-      "firstSeenAt": "2026-10-27T10:34:40.000Z",
+      "firstSeenAt": "2026-11-05T04:01:30.015Z",
       "status": "new"
     },
     {
@@ -809,7 +839,7 @@
       "title_orig": "【情報】中央公園的迴響 DLC 夥伴 - 相關資訊",
       "lang_orig": "zh",
       "publishedAt": "2026-11-05T04:03:00.000Z",
-      "fetchedAt": "2026-11-09T04:57:45.794Z",
+      "fetchedAt": "2026-11-09T07:16:25.064Z",
       "category": "missions",
       "tags": [
         "dlc"
@@ -828,6 +858,30 @@
       "status": "new"
     },
     {
+      "id": "1q5vwna",
+      "sourceId": "steam-news",
+      "sourceName": "Ubisoft (via Steam News)",
+      "sourceUrl": "https://store.steampowered.com/news/app/2221490/view/1847286114048378",
+      "title_orig": "Echoes of Central Park Costume Contest",
+      "lang_orig": "en",
+      "publishedAt": "2026-10-27T10:34:40.000Z",
+      "fetchedAt": "2026-11-09T07:16:25.064Z",
+      "category": "community",
+      "tags": [],
+      "importance": 42,
+      "confidence": "official",
+      "headline_en": "Echoes of Central Park Costume Contest",
+      "headline_zhHant": "《中央公園的迴響》服裝比賽",
+      "summary_en": "Agents, on November 3rd, we all find out what’s lurking in Central Park.Think you know what it is? Dress the part. No idea?",
+      "summary_zhHant": "pending",
+      "summaryKind": "extract",
+      "alsoReportedBy": [],
+      "media": [],
+      "relatedIds": [],
+      "firstSeenAt": "2026-10-27T10:34:40.000Z",
+      "status": "new"
+    },
+    {
       "id": "1l9fm8s",
       "sourceId": "bahamut",
       "sourceName": "巴哈姆特 全境封鎖板",
@@ -835,7 +889,7 @@
       "title_orig": "【情報】*劇透注意* Y8S3/TU29 獵捕行動 Red Horizon 偵查任務 每週統整",
       "lang_orig": "zh",
       "publishedAt": "2026-11-03T17:07:00.000Z",
-      "fetchedAt": "2026-11-09T04:57:45.794Z",
+      "fetchedAt": "2026-11-09T07:16:25.064Z",
       "category": "updates",
       "tags": [],
       "importance": 40,
@@ -859,7 +913,7 @@
       "title_orig": "【心得】無陷阱手T10日蝕複合控場(全汞合金)",
       "lang_orig": "zh",
       "publishedAt": "2026-11-03T05:31:00.000Z",
-      "fetchedAt": "2026-11-09T04:57:45.794Z",
+      "fetchedAt": "2026-11-09T07:16:25.064Z",
       "category": "builds",
       "tags": [],
       "importance": 39,
@@ -883,7 +937,7 @@
       "title_orig": "【情報】【已開機】關機維護公告 - 2026/11/03(二) 16:00 (Y8S3.3 中央公園DLC)，延長1.5小時",
       "lang_orig": "zh",
       "publishedAt": "2026-11-02T16:43:00.000Z",
-      "fetchedAt": "2026-11-09T04:57:45.794Z",
+      "fetchedAt": "2026-11-09T07:16:25.064Z",
       "category": "updates",
       "tags": [
         "dlc"
@@ -909,7 +963,7 @@
       "title_orig": "【情報】全境2 TUY8S3.2 血月高照、創作者合作、升級更新 2F R/MMR BUFF",
       "lang_orig": "zh",
       "publishedAt": "2026-10-27T07:04:00.000Z",
-      "fetchedAt": "2026-11-09T04:57:45.794Z",
+      "fetchedAt": "2026-11-09T07:16:25.064Z",
       "category": "updates",
       "tags": [
         "title-update"
@@ -932,22 +986,22 @@
     {
       "sourceId": "steam-news",
       "ok": true,
-      "checkedAt": "2026-11-09T04:57:45.794Z"
+      "checkedAt": "2026-11-09T07:16:25.064Z"
     },
     {
       "sourceId": "ubisoft-en",
       "ok": true,
-      "checkedAt": "2026-11-09T04:57:45.794Z"
+      "checkedAt": "2026-11-09T07:16:25.064Z"
     },
     {
       "sourceId": "ubisoft-zh-tw",
       "ok": true,
-      "checkedAt": "2026-11-09T04:57:45.794Z"
+      "checkedAt": "2026-11-09T07:16:25.064Z"
     },
     {
       "sourceId": "bahamut",
       "ok": true,
-      "checkedAt": "2026-11-09T04:57:45.794Z"
+      "checkedAt": "2026-11-09T07:16:25.064Z"
     }
   ]
 }
