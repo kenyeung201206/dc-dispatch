@@ -1,7 +1,7 @@
 {
   "date": "2026-11-09",
   "editionNumber": 6,
-  "generatedAt": "2026-11-08T22:30:57.696Z",
+  "generatedAt": "2026-11-09T00:52:15.837Z",
   "meta": {
     "season_en": "Red Horizon",
     "season_zhHant": "Red Horizon 賽季",
@@ -17,7 +17,7 @@
       "title_orig": "[TUY8S3.3] Echoes of Central Park Launch, Crossplay Rollout, Conflict Improvements & More",
       "lang_orig": "en",
       "publishedAt": "2026-11-02T15:45:00.000Z",
-      "fetchedAt": "2026-11-08T22:30:57.696Z",
+      "fetchedAt": "2026-11-09T00:52:15.837Z",
       "category": "updates",
       "tags": [
         "title-update",
@@ -25,7 +25,7 @@
         "event",
         "pvp"
       ],
-      "importance": 93,
+      "importance": 92,
       "confidence": "official",
       "headline_en": "[TUY8S3.3] Echoes of Central Park Launch, Crossplay Rollout, Conflict Improvements & More",
       "headline_zhHant": "pending",
@@ -58,12 +58,12 @@
       "title_orig": "The Division 2: Echoes of Central Park DLC is available now!",
       "lang_orig": "en",
       "publishedAt": "2026-11-03T15:00:00.000Z",
-      "fetchedAt": "2026-11-08T22:30:57.696Z",
+      "fetchedAt": "2026-11-09T00:52:15.837Z",
       "category": "missions",
       "tags": [
         "dlc"
       ],
-      "importance": 82,
+      "importance": 81,
       "confidence": "official",
       "headline_en": "Echoes of Central Park DLC is out now",
       "headline_zhHant": "《中央公園的迴響》DLC 正式推出",
@@ -156,13 +156,13 @@
       "title_orig": "The Division 2: Echoes of Central Park Launch Twitch Drops",
       "lang_orig": "en",
       "publishedAt": "2026-11-03T15:00:00.000Z",
-      "fetchedAt": "2026-11-08T22:30:57.696Z",
+      "fetchedAt": "2026-11-09T00:52:15.837Z",
       "category": "community",
       "tags": [
         "twitch-drops",
         "exotic"
       ],
-      "importance": 67,
+      "importance": 66,
       "confidence": "official",
       "headline_en": "The Division 2: Echoes of Central Park Launch Twitch Drops",
       "headline_zhHant": "《全境封鎖 2 - 中央公園的迴響》發行 Twitch 掉寶",
@@ -210,6 +210,34 @@
       "status": "new"
     },
     {
+      "id": "1svdei3",
+      "sourceId": "youtube",
+      "sourceName": "TuxedoBandido",
+      "sourceUrl": "https://www.youtube.com/watch?v=BXWtMDaWJUg",
+      "title_orig": "Division 2 Ratel: Best AR at Just TWO Stacks?",
+      "lang_orig": "en",
+      "publishedAt": "2026-11-08T22:48:46.000Z",
+      "fetchedAt": "2026-11-09T00:52:15.837Z",
+      "category": "arsenal",
+      "tags": [
+        "exotic",
+        "video"
+      ],
+      "importance": 64,
+      "confidence": "community",
+      "headline_en": "Division 2 Ratel: Best AR at Just TWO Stacks?",
+      "headline_zhHant": "pending",
+      "summary_en": "Is the Ratel exotic assault rifle the best AR in The Division 2—or is keeping those stacks the real problem?",
+      "summary_zhHant": "pending",
+      "summaryKind": "extract",
+      "alsoReportedBy": [],
+      "media": [],
+      "videoId": "BXWtMDaWJUg",
+      "relatedIds": [],
+      "firstSeenAt": "2026-11-09T00:52:15.837Z",
+      "status": "new"
+    },
+    {
       "id": "jrg9a1",
       "sourceId": "ubisoft-en",
       "sourceName": "Ubisoft",
@@ -217,12 +245,12 @@
       "title_orig": "[TUY8S3.3] Echoes of Central Park Launch, Crossplay Rollout, Conflict Improvements & More",
       "lang_orig": "en",
       "publishedAt": "2026-11-02T15:45:00.000Z",
-      "fetchedAt": "2026-11-08T22:30:57.696Z",
+      "fetchedAt": "2026-11-09T00:52:15.837Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
       ],
-      "importance": 63,
+      "importance": 62,
       "confidence": "official",
       "headline_en": "Known issue (TU Y8S3.3): After completing all Manhunt Scouts marked as High-Value Targets, the Climax Mission…",
       "headline_zhHant": "pending",
@@ -243,6 +271,34 @@
         "riskNote_en": "Known issue listed by Ubisoft. Workaround: Log out and back in to unlock it.",
         "riskNote_zhHant": "pending"
       }
+    },
+    {
+      "id": "iccw28",
+      "sourceId": "youtube",
+      "sourceName": "The Gaming Brigade",
+      "sourceUrl": "https://www.youtube.com/watch?v=MdmrDzyxRQw",
+      "title_orig": "This Is Your LAST CHANCE (Do This RIGHT NOW) The Division 2",
+      "lang_orig": "en",
+      "publishedAt": "2026-11-08T23:05:18.000Z",
+      "fetchedAt": "2026-11-09T00:52:15.837Z",
+      "category": "missions",
+      "tags": [
+        "event",
+        "video"
+      ],
+      "importance": 62,
+      "confidence": "community",
+      "headline_en": "This Is Your LAST CHANCE (Do This RIGHT NOW) The Division 2",
+      "headline_zhHant": "pending",
+      "summary_en": "BONES COFFEE COMPANY AFFILIATE LINK: TODAY I PASS ALONG THE FRIENDLY REMINDER THAT THE 6X XP EVENT IS LIVE IN THE GAME!",
+      "summary_zhHant": "pending",
+      "summaryKind": "extract",
+      "alsoReportedBy": [],
+      "media": [],
+      "videoId": "MdmrDzyxRQw",
+      "relatedIds": [],
+      "firstSeenAt": "2026-11-09T00:52:15.837Z",
+      "status": "new"
     },
     {
       "id": "9y825r",
@@ -270,6 +326,33 @@
       "videoId": "tNueFm0jukE",
       "relatedIds": [],
       "firstSeenAt": "2026-11-08T16:32:47.820Z",
+      "status": "new"
+    },
+    {
+      "id": "wz7qsg",
+      "sourceId": "youtube",
+      "sourceName": "でいとな",
+      "sourceUrl": "https://www.youtube.com/watch?v=BcMMeisYN5Y",
+      "title_orig": "【ディビジョン２】コレは凄い！やばいグローブ『ロード・フォー・ベア』を使った超火力ビルド２選【The Division2最新情報】",
+      "lang_orig": "en",
+      "publishedAt": "2026-11-08T09:39:18.000Z",
+      "fetchedAt": "2026-11-09T00:52:15.837Z",
+      "category": "community",
+      "tags": [
+        "video"
+      ],
+      "importance": 58,
+      "confidence": "community",
+      "headline_en": "【ディビジョン２】コレは凄い！やばいグローブ『ロード・フォー・ベア』を使った超火力ビルド２選【The Division2最新情報】",
+      "headline_zhHant": "pending",
+      "summary_en": "【タイムコード】 ★ひでさん【X】へのリンク先★ ★ハンドラさん【X】へのリンク先★ ★小ネタ・色んな情報を随時募集中★ いつも動画を見てくれてありがとうございます。 『サクッと簡潔に！』をモットーにゲームに関する動画をつくってます！ たまに生放送してますので遊びに来てください！ ★今後の活動の励みになります★ 高評価・チャンネル登録お待ちしてます！ ★主に使っている音楽サイト★ NoCopyrightSounds DOVA-SYNDROME YouTube Official ★ 新しい 【X】アカウント ★ @xxx_Daytona_xxx ★Twitchもマッタリ配信してます★",
+      "summary_zhHant": "pending",
+      "summaryKind": "extract",
+      "alsoReportedBy": [],
+      "media": [],
+      "videoId": "BcMMeisYN5Y",
+      "relatedIds": [],
+      "firstSeenAt": "2026-11-09T00:52:15.837Z",
       "status": "new"
     },
     {
@@ -355,6 +438,33 @@
       "status": "new"
     },
     {
+      "id": "gxtyj6",
+      "sourceId": "youtube",
+      "sourceName": "GCROCK",
+      "sourceUrl": "https://www.youtube.com/watch?v=9kyt_cL4VkU",
+      "title_orig": "ALL CENTRAL PARK COLLECTIBLES! Every Location & How to Find Them | The Division 2",
+      "lang_orig": "en",
+      "publishedAt": "2026-11-09T00:20:22.000Z",
+      "fetchedAt": "2026-11-09T00:52:15.837Z",
+      "category": "community",
+      "tags": [
+        "video"
+      ],
+      "importance": 56,
+      "confidence": "community",
+      "headline_en": "ALL CENTRAL PARK COLLECTIBLES! Every Location & How to Find Them | The Division 2",
+      "headline_zhHant": "pending",
+      "summary_en": "Find ALL collectibles in Echoes of Central Park with this complete The Division 2 collectibles guide!",
+      "summary_zhHant": "pending",
+      "summaryKind": "extract",
+      "alsoReportedBy": [],
+      "media": [],
+      "videoId": "9kyt_cL4VkU",
+      "relatedIds": [],
+      "firstSeenAt": "2026-11-09T00:52:15.837Z",
+      "status": "new"
+    },
+    {
       "id": "krurjo",
       "sourceId": "youtube",
       "sourceName": "Died Again Gaming",
@@ -416,7 +526,7 @@
       "title_orig": "【情報】11/07 每日戰鬥升級掉落 & 原型商人",
       "lang_orig": "zh",
       "publishedAt": "2026-11-07T04:00:00.000Z",
-      "fetchedAt": "2026-11-08T22:30:57.696Z",
+      "fetchedAt": "2026-11-09T00:52:15.837Z",
       "category": "updates",
       "tags": [],
       "importance": 48,
@@ -440,13 +550,13 @@
       "title_orig": "Last Chance to Pre-Purchase The Division 2: Echoes of Central Park",
       "lang_orig": "en",
       "publishedAt": "2026-10-28T13:29:29.000Z",
-      "fetchedAt": "2026-11-08T22:30:57.696Z",
+      "fetchedAt": "2026-11-09T00:52:15.837Z",
       "category": "missions",
       "tags": [
         "dlc",
         "exotic"
       ],
-      "importance": 46,
+      "importance": 45,
       "confidence": "official",
       "headline_en": "Last Chance to Pre-Purchase The Division 2: Echoes of Central Park",
       "headline_zhHant": "《全境封鎖 2 - 中央公園的迴響》預購最後機會",
@@ -460,30 +570,6 @@
       "status": "new"
     },
     {
-      "id": "rchnq7",
-      "sourceId": "steam-news",
-      "sourceName": "Ubisoft (via Steam News)",
-      "sourceUrl": "https://store.steampowered.com/news/app/2221490/view/1847286114049455",
-      "title_orig": "Echoes of Central Park Launch Livestream",
-      "lang_orig": "en",
-      "publishedAt": "2026-10-27T16:01:04.000Z",
-      "fetchedAt": "2026-11-08T22:30:57.696Z",
-      "category": "community",
-      "tags": [],
-      "importance": 44,
-      "confidence": "official",
-      "headline_en": "Echoes of Central Park Launch Livestream",
-      "headline_zhHant": "《中央公園的迴響》發行直播",
-      "summary_en": "Agents, what are you curious about? We'll do our best to cover it live!The Echoes of Central Park Launch Stream goes live on November 2…",
-      "summary_zhHant": "pending",
-      "summaryKind": "extract",
-      "alsoReportedBy": [],
-      "media": [],
-      "relatedIds": [],
-      "firstSeenAt": "2026-10-27T16:01:04.000Z",
-      "status": "new"
-    },
-    {
       "id": "hsu80a",
       "sourceId": "bahamut",
       "sourceName": "巴哈姆特 全境封鎖板",
@@ -491,7 +577,7 @@
       "title_orig": "【攻略】部分技能的解鎖方式整理",
       "lang_orig": "zh",
       "publishedAt": "2026-11-05T05:49:00.000Z",
-      "fetchedAt": "2026-11-08T22:30:57.696Z",
+      "fetchedAt": "2026-11-09T00:52:15.837Z",
       "category": "builds",
       "tags": [],
       "importance": 44,
@@ -515,7 +601,7 @@
       "title_orig": "【情報】中央公園的迴響 DLC 夥伴 - 相關資訊",
       "lang_orig": "zh",
       "publishedAt": "2026-11-05T04:03:00.000Z",
-      "fetchedAt": "2026-11-08T22:30:57.696Z",
+      "fetchedAt": "2026-11-09T00:52:15.837Z",
       "category": "missions",
       "tags": [
         "dlc"
@@ -534,6 +620,30 @@
       "status": "new"
     },
     {
+      "id": "rchnq7",
+      "sourceId": "steam-news",
+      "sourceName": "Ubisoft (via Steam News)",
+      "sourceUrl": "https://store.steampowered.com/news/app/2221490/view/1847286114049455",
+      "title_orig": "Echoes of Central Park Launch Livestream",
+      "lang_orig": "en",
+      "publishedAt": "2026-10-27T16:01:04.000Z",
+      "fetchedAt": "2026-11-09T00:52:15.837Z",
+      "category": "community",
+      "tags": [],
+      "importance": 43,
+      "confidence": "official",
+      "headline_en": "Echoes of Central Park Launch Livestream",
+      "headline_zhHant": "《中央公園的迴響》發行直播",
+      "summary_en": "Agents, what are you curious about? We'll do our best to cover it live!The Echoes of Central Park Launch Stream goes live on November 2…",
+      "summary_zhHant": "pending",
+      "summaryKind": "extract",
+      "alsoReportedBy": [],
+      "media": [],
+      "relatedIds": [],
+      "firstSeenAt": "2026-10-27T16:01:04.000Z",
+      "status": "new"
+    },
+    {
       "id": "1q5vwna",
       "sourceId": "steam-news",
       "sourceName": "Ubisoft (via Steam News)",
@@ -541,7 +651,7 @@
       "title_orig": "Echoes of Central Park Costume Contest",
       "lang_orig": "en",
       "publishedAt": "2026-10-27T10:34:40.000Z",
-      "fetchedAt": "2026-11-08T22:30:57.696Z",
+      "fetchedAt": "2026-11-09T00:52:15.837Z",
       "category": "community",
       "tags": [],
       "importance": 43,
@@ -565,7 +675,7 @@
       "title_orig": "【情報】*劇透注意* Y8S3/TU29 獵捕行動 Red Horizon 偵查任務 每週統整",
       "lang_orig": "zh",
       "publishedAt": "2026-11-03T17:07:00.000Z",
-      "fetchedAt": "2026-11-08T22:30:57.696Z",
+      "fetchedAt": "2026-11-09T00:52:15.837Z",
       "category": "updates",
       "tags": [],
       "importance": 41,
@@ -589,7 +699,7 @@
       "title_orig": "【心得】無陷阱手T10日蝕複合控場(全汞合金)",
       "lang_orig": "zh",
       "publishedAt": "2026-11-03T05:31:00.000Z",
-      "fetchedAt": "2026-11-08T22:30:57.696Z",
+      "fetchedAt": "2026-11-09T00:52:15.837Z",
       "category": "builds",
       "tags": [],
       "importance": 40,
@@ -613,12 +723,12 @@
       "title_orig": "【情報】【已開機】關機維護公告 - 2026/11/03(二) 16:00 (Y8S3.3 中央公園DLC)，延長1.5小時",
       "lang_orig": "zh",
       "publishedAt": "2026-11-02T16:43:00.000Z",
-      "fetchedAt": "2026-11-08T22:30:57.696Z",
+      "fetchedAt": "2026-11-09T00:52:15.837Z",
       "category": "updates",
       "tags": [
         "dlc"
       ],
-      "importance": 39,
+      "importance": 38,
       "confidence": "community",
       "headline_en": "pending",
       "headline_zhHant": "【情報】【已開機】關機維護公告 - 2026/11/03(二) 16:00 (Y8S3.3 中央公園DLC)，延長1.5小時",
@@ -639,7 +749,7 @@
       "title_orig": "【情報】全境2 TUY8S3.2 血月高照、創作者合作、升級更新 2F R/MMR BUFF",
       "lang_orig": "zh",
       "publishedAt": "2026-10-27T07:04:00.000Z",
-      "fetchedAt": "2026-11-08T22:30:57.696Z",
+      "fetchedAt": "2026-11-09T00:52:15.837Z",
       "category": "updates",
       "tags": [
         "title-update"
@@ -665,7 +775,7 @@
       "title_orig": "【情報】［活動警報］復仇者懸賞",
       "lang_orig": "zh",
       "publishedAt": "2026-10-26T11:51:00.000Z",
-      "fetchedAt": "2026-11-08T22:30:57.696Z",
+      "fetchedAt": "2026-11-09T00:52:15.837Z",
       "category": "missions",
       "tags": [],
       "importance": 23,
@@ -686,22 +796,22 @@
     {
       "sourceId": "steam-news",
       "ok": true,
-      "checkedAt": "2026-11-08T22:30:57.696Z"
+      "checkedAt": "2026-11-09T00:52:15.837Z"
     },
     {
       "sourceId": "ubisoft-en",
       "ok": true,
-      "checkedAt": "2026-11-08T22:30:57.696Z"
+      "checkedAt": "2026-11-09T00:52:15.837Z"
     },
     {
       "sourceId": "ubisoft-zh-tw",
       "ok": true,
-      "checkedAt": "2026-11-08T22:30:57.696Z"
+      "checkedAt": "2026-11-09T00:52:15.837Z"
     },
     {
       "sourceId": "bahamut",
       "ok": true,
-      "checkedAt": "2026-11-08T22:30:57.696Z"
+      "checkedAt": "2026-11-09T00:52:15.837Z"
     }
   ]
 }
