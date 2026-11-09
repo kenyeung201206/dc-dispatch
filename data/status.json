@@ -1,6 +1,6 @@
 {
-  "lastRun": "2026-11-09T12:59:22.724Z",
-  "durationMs": 17486,
+  "lastRun": "2026-11-09T14:50:33.782Z",
+  "durationMs": 13117,
   "edition": {
     "date": "2026-11-09",
     "number": 6,
@@ -27,6 +27,11 @@
       "id": "bahamut",
       "ok": true,
       "items": 9
+    },
+    {
+      "id": "bahamut-hot",
+      "ok": true,
+      "items": 5
     }
   ],
   "videos": {
