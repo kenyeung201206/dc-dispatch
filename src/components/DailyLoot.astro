@@ -1,13 +1,14 @@
 ---
 /**
  * 今日戰鬥升級: each mission's targeted reward for the day, with the in-game emblem so readers who don't
- * know brand names can still recognise them. Data: data/daily-loot.json (ProtoTrack.gg right after the 17:00
- * Tokyo reset, 巴哈's pinned daily thread as backup; see pipeline/daily-loot.ts). Icons: public/icons/ (white glyphs made from Ubisoft art on The Division Wiki), shown
- * on a dark tile and tinted like the game: brands and gear slots white, gear sets green. A name we can't match
- * with confidence shows as text, never a guessed logo.
+ * know brand names can still recognise them. Data: data/daily-loot.json at build time (ProtoTrack.gg, 巴哈's
+ * pinned daily thread as backup; see pipeline/daily-loot.ts). On load the box also asks /api/loot (ProtoTrack, live)
+ * and swaps in a newer list, so it changes within a minute of the 17:00 Tokyo reset without waiting for a rebuild.
+ * Icons: public/icons/ (white glyphs from Ubisoft art), on a dark tile tinted like the game: gear sets green,
+ * everything else white. A name we can't match with confidence shows as text, never a guessed logo.
  */
 import loot from '../../data/daily-loot.json' with { type: 'json' };
-import brands from '../../data/brands.json' with { type: 'json' };
+import { LOOT_KINDS, matchReward } from '../lib/loot.ts';
 import { t, type Locale } from '../i18n/index.ts';
 
 interface Props {
@@ -17,85 +18,123 @@ interface Props {
 }
 const { locale, date } = Astro.props;
 const en = locale === 'en';
-const fresh = Date.parse(date) - Date.parse(loot.date) <= 86_400_000 && Date.parse(loot.date) <= Date.parse(date);
+const DAY = 86_400_000;
+const fresh = Date.parse(date) - Date.parse(loot.date) <= DAY && Date.parse(loot.date) <= Date.parse(date);
 
-const norm = (s: string) => s.replace(/\s+/g, '').replace(/＆/g, '&');
-type Entry = { en: string; aliases: string[]; icon: string | null };
-const find = (list: Entry[], name: string) => list.find((b) => b.aliases.some((a) => norm(a) === norm(name)));
-const LISTS = { brand: brands.brands, set: brands.sets, slot: brands.slots } as Record<string, Entry[]>;
-/** The poster's cell colour says which list to look in; an unmarked cell may be any of them. */
-const match = (name: string, kind: string) => {
-  for (const k of LISTS[kind] ? [kind] : ['brand', 'set', 'slot']) {
-    const hit = find(LISTS[k]!, name);
-    if (hit) return { ...hit, tint: k === 'set' ? 'set' : 'white' };
-  }
-  return undefined;
-};
-const rows = loot.missions.map((m) => ({ ...m, hit: match(m.reward, m.kind) }));
-const vendor = loot.vendor.map((v) => ({ name: v, hit: match(v, 'other') }));
-const kindLabel = (k: string) => t(locale, `loot.kind.${['brand', 'set', 'slot', 'weapon'].includes(k) ? k : 'other'}` as never);
+const rows = loot.missions.map((m) => ({ ...m, hit: matchReward(m.reward, m.kind) }));
+const vendor = loot.vendor.map((v) => ({ name: v, hit: matchReward(v, 'other') }));
+const kinds = Object.fromEntries(
+  [...LOOT_KINDS, 'other'].map((k) => [k, t(locale, `loot.kind.${k}` as never)]),
+) as Record<string, string>;
+const kindLabel = (k: string) => kinds[k] ?? kinds.other!;
 const source = loot.source === 'prototrack' ? 'prototrack' : 'bahamut';
-const md = loot.date.slice(5).replace('-', '/');
+const md = (d: string) => d.slice(5).replace('-', '/');
+/** What the live update needs to redraw the box the same way. */
+const labels = JSON.stringify({ en, kinds, credit: t(locale, 'loot.credit.prototrack'), oldest: new Date(Date.parse(date) - DAY).toISOString().slice(0, 10) });
 ---
-{
-  fresh && (
-    <section class="loot" aria-labelledby="loot-h">
-      <h2 id="loot-h" class="hud-label">
-        {t(locale, 'loot.title')} <span class="d">{md}</span>
-      </h2>
-      <ul>
-        {rows.map((r) => (
-          <li class={`k-${r.kind}`}>
-            <span class="place">{r.place}</span>
-            <span class="reward">
-              {r.hit?.icon ? (
-                <span class={`tile t-${r.hit.tint}`} aria-hidden="true">
-                  <span class="glyph" style={`--icon:url(${r.hit.icon})`} />
-                </span>
-              ) : (
-                <span class={`tile none k-${r.kind}`} aria-hidden="true">{r.reward.slice(0, 1)}</span>
-              )}
-              <span class="names">
-                <strong>{en && r.hit ? r.hit.en : r.reward}</strong>
-                <small>
-                  {kindLabel(r.kind)}
-                  {!en && r.hit && <> · {r.hit.en}</>}
-                </small>
-              </span>
+<section class="loot" aria-labelledby="loot-h" data-date={fresh ? loot.date : ''} data-labels={labels} hidden={!fresh}>
+  <h2 id="loot-h" class="hud-label">
+    {t(locale, 'loot.title')} <span class="d">{md(loot.date)}</span>
+  </h2>
+  <ul>
+    {rows.map((r) => (
+      <li class={`k-${r.kind}`}>
+        <span class="place">{r.place}</span>
+        <span class="reward">
+          {r.hit?.icon ? (
+            <span class={`tile t-${r.hit.tint}`} aria-hidden="true">
+              <span class="glyph" style={`--icon:url(${r.hit.icon})`} />
             </span>
-          </li>
-        ))}
-      </ul>
-      {vendor.length > 0 && (
-        <p class="vendor">
-          <strong>{t(locale, 'loot.vendor')}</strong>
-          {vendor.map((v) => (
-            <span class="vitem">
-              {v.hit?.icon && (
-                <span class={`tile sm t-${v.hit.tint}`} aria-hidden="true">
-                  <span class="glyph" style={`--icon:url(${v.hit.icon})`} />
-                </span>
-              )}
-              {en && v.hit ? v.hit.en : v.name}
-            </span>
-          ))}
-        </p>
-      )}
-      <p class="credit">
-        {t(locale, `loot.credit.${source}`)}{' '}
-        <a href={loot.url} rel="noopener noreferrer" target="_blank">{source === 'prototrack' ? 'ProtoTrack.gg' : t(locale, 'loot.source')}</a>
-      </p>
-    </section>
-  )
-}
+          ) : (
+            <span class={`tile none k-${r.kind}`} aria-hidden="true">{r.reward.slice(0, 1)}</span>
+          )}
+          <span class="names">
+            <strong>{en && r.hit ? r.hit.en : r.reward}</strong>
+            <small>
+              {kindLabel(r.kind)}
+              {!en && r.hit && <> · {r.hit.en}</>}
+            </small>
+          </span>
+        </span>
+      </li>
+    ))}
+  </ul>
+  <p class="vendor" hidden={vendor.length === 0}>
+    <strong>{t(locale, 'loot.vendor')}</strong>
+    {vendor.map((v) => (
+      <span class="vitem">
+        {v.hit?.icon && (
+          <span class={`tile sm t-${v.hit.tint}`} aria-hidden="true">
+            <span class="glyph" style={`--icon:url(${v.hit.icon})`} />
+          </span>
+        )}
+        {en && v.hit ? v.hit.en : v.name}
+      </span>
+    ))}
+  </p>
+  <p class="credit">
+    <span class="ct">{t(locale, `loot.credit.${source}`)}</span>{' '}
+    <a href={loot.url} rel="noopener noreferrer" target="_blank">{source === 'prototrack' ? 'ProtoTrack.gg' : t(locale, 'loot.source')}</a>
+  </p>
+</section>
 
-<style>
+<script>
+  type Hit = { en: string; icon: string | null; tint: string } | null;
+  type Live = {
+    status: string;
+    date: string;
+    url: string;
+    missions: { place: string; reward: string; kind: string; hit: Hit }[];
+    vendor: { name: string; hit: Hit }[];
+  };
+  const esc = (s: string) => s.replace(/[&<>"']/g, (c) => `&#${c.charCodeAt(0)};`);
+  const tile = (hit: Hit, fallback: string, kind: string, sm = '') =>
+    hit?.icon
+      ? `<span class="tile${sm} t-${esc(hit.tint)}" aria-hidden="true"><span class="glyph" style="--icon:url(${esc(hit.icon)})"></span></span>`
+      : fallback
+        ? `<span class="tile none k-${esc(kind)}" aria-hidden="true">${esc(fallback)}</span>`
+        : '';
+
+  async function refresh(box: HTMLElement) {
+    const L = JSON.parse(box.dataset.labels ?? '{}') as { en: boolean; kinds: Record<string, string>; credit: string; oldest: string };
+    const res = await fetch('/api/loot', { cache: 'no-store', credentials: 'same-origin' });
+    if (!res.ok) return;
+    const live = (await res.json()) as Live;
+    if (live.status !== 'ok' || live.date <= (box.dataset.date ?? '') || live.date < L.oldest) return;
+    const name = (raw: string, hit: Hit) => esc(L.en && hit ? hit.en : raw);
+    box.querySelector('ul')!.innerHTML = live.missions
+      .map(
+        (m) => `<li class="k-${esc(m.kind)}"><span class="place">${esc(m.place)}</span><span class="reward">${tile(m.hit, [...m.reward][0] ?? '', m.kind)}<span class="names"><strong>${name(m.reward, m.hit)}</strong><small>${esc(L.kinds[m.kind] ?? L.kinds.other ?? '')}${!L.en && m.hit ? ` · ${esc(m.hit.en)}` : ''}</small></span></span></li>`,
+      )
+      .join('');
+    const vendor = box.querySelector<HTMLElement>('.vendor')!;
+    vendor.querySelectorAll('.vitem').forEach((n) => n.remove());
+    vendor.insertAdjacentHTML('beforeend', live.vendor.map((v) => `<span class="vitem">${tile(v.hit, '', '', ' sm')}${name(v.name, v.hit)}</span>`).join(''));
+    vendor.hidden = live.vendor.length === 0;
+    box.querySelector('.d')!.textContent = live.date.slice(5).replace('-', '/');
+    box.querySelector('.ct')!.textContent = L.credit;
+    const a = box.querySelector<HTMLAnchorElement>('.credit a')!;
+    a.href = live.url;
+    a.textContent = 'ProtoTrack.gg';
+    box.dataset.date = live.date;
+    box.hidden = false;
+  }
+
+  for (const box of document.querySelectorAll<HTMLElement>('section.loot[data-labels]')) refresh(box).catch(() => {});
+</script>
+
+<style is:global>
+  /* Global (prefixed with .loot) so rows redrawn by the live update get the same look. */
   .loot {
     margin: var(--space-4) 0;
     padding: var(--space-3) var(--space-3) var(--space-2);
     border: 2px solid var(--ink);
     border-left: 6px solid var(--shd);
     background: var(--paper);
+  }
+  .loot[hidden],
+  .loot .vendor[hidden] {
+    display: none;
   }
   .loot h2 {
     margin: 0 0 var(--space-2);
@@ -122,17 +161,17 @@ const md = loot.date.slice(5).replace('-', '/');
   .loot li:first-child {
     border-top: 0;
   }
-  .place {
+  .loot .place {
     font-weight: 700;
   }
-  .reward {
+  .loot .reward {
     display: flex;
     align-items: center;
     gap: 10px;
     min-width: 0;
   }
   /* The game's look: a dark square with the emblem in white (gear sets in green). */
-  .tile {
+  .loot .tile {
     flex: none;
     display: grid;
     place-items: center;
@@ -141,51 +180,51 @@ const md = loot.date.slice(5).replace('-', '/');
     border: 1px solid #5b6270;
     background: #262a33;
   }
-  .tile.sm {
+  .loot .tile.sm {
     width: 26px;
     height: 26px;
   }
-  .glyph {
+  .loot .glyph {
     width: 82%;
     height: 82%;
     background: #f2f2f2;
     -webkit-mask: var(--icon) center / contain no-repeat;
     mask: var(--icon) center / contain no-repeat;
   }
-  .t-set .glyph {
+  .loot .t-set .glyph {
     background: #2ee59d;
   }
-  .tile.none {
+  .loot .tile.none {
     color: #f2f2f2;
     font: 700 1rem / 1 var(--font-hud);
   }
-  .tile.none.k-set {
+  .loot .tile.none.k-set {
     color: #2ee59d;
   }
-  .names {
+  .loot .names {
     display: grid;
     min-width: 0;
   }
-  .names strong {
+  .loot .names strong {
     overflow-wrap: anywhere;
   }
-  .names small {
+  .loot .names small {
     color: var(--ink-soft);
     font-size: var(--step--1);
   }
-  .vendor {
+  .loot .vendor {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     gap: 6px 14px;
     margin: var(--space-2) 0 0;
   }
-  .vitem {
+  .loot .vitem {
     display: inline-flex;
     align-items: center;
     gap: 6px;
   }
-  .credit {
+  .loot .credit {
     margin: var(--space-1) 0 0;
     color: var(--ink-soft);
     font-size: var(--step--1);
