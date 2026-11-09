@@ -4248,6 +4248,205 @@
         "影片說明未列出具體數值、日期或獎勵內容"
       ],
       "written": "2026-11-09"
+    },
+    "jyj686": {
+      "points": [
+        "官方公布《中央公園的迴響》活動通行證，開放期間為 11 月 10 日至 11 月 24 日",
+        "通行證分免費與付費兩條軌道，獎勵包含面具、武器外觀、服裝與各類補給箱",
+        "付費軌道需 1000 VC",
+        "11 月 24 日前須完成通行證才能領取獎勵"
+      ],
+      "tables": [
+        {
+          "title": "免費軌道獎勵",
+          "columns": [
+            "獎勵",
+            "數量"
+          ],
+          "rows": [
+            [
+              "Mire Mask",
+              "1"
+            ],
+            [
+              "Mire Weapon Skin",
+              "1"
+            ],
+            [
+              "Thorn Mask",
+              "1"
+            ],
+            [
+              "Thorn Weapon Skin",
+              "1"
+            ],
+            [
+              "Guardian Outfit",
+              "1"
+            ],
+            [
+              "Named Item Cache（命名裝備箱）",
+              "2"
+            ]
+          ]
+        },
+        {
+          "title": "付費軌道獎勵（1000 VC）",
+          "columns": [
+            "獎勵",
+            "數量"
+          ],
+          "rows": [
+            [
+              "Specter Mask",
+              "1"
+            ],
+            [
+              "Specter Weapon Skin",
+              "1"
+            ],
+            [
+              "Vulture Mask",
+              "1"
+            ],
+            [
+              "Vulture Weapon Skin",
+              "1"
+            ],
+            [
+              "Hallow Mask",
+              "1"
+            ],
+            [
+              "Hallow Weapon Skin",
+              "1"
+            ],
+            [
+              "Rick Vest and Mask",
+              "1"
+            ],
+            [
+              "Optimization Cache",
+              "3"
+            ],
+            [
+              "Crafting Material Cache",
+              "3"
+            ],
+            [
+              "Exotic Cache（奇特箱）",
+              "2"
+            ],
+            [
+              "Enhanced Legacy Season Cache",
+              "2"
+            ],
+            [
+              "Outfit Token",
+              "1"
+            ]
+          ]
+        }
+      ],
+      "written": "2026-11-09"
+    },
+    "ccqbq5": {
+      "points": [
+        "Steam 公告：舉辦 6 倍 XP 活動，期間 SHD 等級提升速度為平常的 6 倍",
+        "官方稱這是首次推出此類活動",
+        "活動持續至 11 月 10 日"
+      ],
+      "tables": [
+        {
+          "title": "6X XP 活動",
+          "columns": [
+            "項目",
+            "內容"
+          ],
+          "rows": [
+            [
+              "加成",
+              "SHD 等級經驗 6 倍"
+            ],
+            [
+              "截止日",
+              "11 月 10 日"
+            ]
+          ]
+        }
+      ],
+      "body": [
+        "想衝 SHD 等級的玩家，請把握截止日前的時間練等。"
+      ],
+      "written": "2026-11-09"
+    },
+    "gp1kqo": {
+      "points": [
+        "這是 YouTube 玩家影片（社群內容），標題提醒「明天之前」要做的事",
+        "標題提到 Risen Hunter 即將結束、新的 XP 活動與 Golden Bullet",
+        "影片說明沒有列出具體日期、數值或獎勵內容"
+      ],
+      "written": "2026-11-09"
+    },
+    "fs8k1x": {
+      "points": [
+        "這是 YouTube 玩家 Widdz 的配裝影片（社群內容），介紹他認為的最強傷害配裝",
+        "說明稱在第 10 階升級挑戰（Tier 10 Escalation）一次換彈可打出 2.44 億傷害",
+        "核心概念：以 Concentrated Company 四件套搭配 Gear Shift 疊層，再用 Loaded for Bear 與 Turmoil 增傷",
+        "手法是疊層後換到空彈的 Nemesis 換彈，再換回；說明稱不需要 Prototype",
+        "說明另列出裝備、屬性、武器、專精、強化件與技能"
+      ],
+      "tables": [
+        {
+          "title": "配裝重點",
+          "columns": [
+            "項目",
+            "內容"
+          ],
+          "rows": [
+            [
+              "裝備",
+              "Concentrated Company 面具、胸甲（All for One）、背包（One for All）、槍套"
+            ],
+            [
+              "手套",
+              "Loaded for Bear（Afterburn）"
+            ],
+            [
+              "護膝",
+              "Turmoil（Bewildered）"
+            ],
+            [
+              "核心",
+              "6 個紅色（武器傷害）"
+            ],
+            [
+              "屬性",
+              "暴擊率 60%（上限），其餘為暴擊傷害"
+            ],
+            [
+              "武器",
+              "Gear Shift（具名 LMG，Perfectly Measured）疊層；Nemesis 換彈（保持 0 發）；Quickstep 副武器"
+            ],
+            [
+              "專精",
+              "Gunner：拿掉 Coupler（每第 3 次換彈加快 50%），保留擊殺 +5% 射速與 50 發彈匣"
+            ],
+            [
+              "強化件",
+              "1 個 Amalgam，其餘 Echo（Echo 不加成 Afterburn）；Paradox 可選"
+            ],
+            [
+              "技能",
+              "Reviver Hive + Scanner Pulse（可換 Decoy 或 Riot Foam）"
+            ]
+          ]
+        }
+      ],
+      "body": [
+        "說明指出選 CoCo 而非 Striker，是因為 CoCo 提供武器傷害，而 Afterburn 會吃到這項加成。"
+      ],
+      "written": "2026-11-09"
     }
   }
 }
