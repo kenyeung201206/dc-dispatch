@@ -244,7 +244,8 @@
   {
    "en": "Zwiadowka",
    "aliases": [
-    "Zwiadowka"
+    "Zwiadowka",
+    "Zwiadowka Sp. z o.o."
    ],
    "icon": "/icons/brand/zwiadowka.png"
   },
@@ -592,7 +593,8 @@
     "精準步槍",
     "狙擊步槍",
     "神射手步槍",
-    "Marksman Rifle"
+    "Marksman Rifle",
+    "MMR"
    ],
    "icon": "/icons/weapon/mmr.png"
   },

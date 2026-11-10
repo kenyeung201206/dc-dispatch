@@ -14,7 +14,9 @@ export async function onRequestGet(): Promise<Response> {
   try {
     const res = await fetch(PROTOTRACK_TXT, {
       headers: { 'user-agent': 'DCDispatchBot/0.1 (private fan newspaper)' },
-      redirect: 'error',
+      // Cloudflare's runtime only accepts 'follow' or 'manual' ('error' throws there, though Node accepts it).
+      // 'manual' + the res.ok check below refuses a redirect just the same.
+      redirect: 'manual',
       signal: AbortSignal.timeout(8000),
       cf: { cacheTtl: 60, cacheEverything: true },
     } as RequestInit);
@@ -29,7 +31,7 @@ export async function onRequestGet(): Promise<Response> {
       missions: loot.missions.map((m) => ({ ...m, hit: matchReward(m.reward, m.kind) ?? null })),
       vendor: loot.vendor.map((v) => ({ name: v, hit: matchReward(v, 'other') ?? null })),
     });
-  } catch {
-    return json({ status: 'error' }, 502);
+  } catch (err) {
+    return json({ status: 'error', reason: String(err).slice(0, 160) }, 502);
   }
 }
