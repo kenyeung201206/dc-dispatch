@@ -1,7 +1,7 @@
 {
   "date": "2026-11-11",
   "editionNumber": 8,
-  "generatedAt": "2026-11-10T16:46:28.397Z",
+  "generatedAt": "2026-11-10T18:42:35.719Z",
   "meta": {
     "season_en": "Red Horizon",
     "season_zhHant": "Red Horizon 賽季",
@@ -17,7 +17,7 @@
       "title_orig": "The Division 2: Echoes of Central Park Event Pass Twitch Drops",
       "lang_orig": "en",
       "publishedAt": "2026-11-10T16:00:00.000Z",
-      "fetchedAt": "2026-11-10T16:46:28.397Z",
+      "fetchedAt": "2026-11-10T18:42:35.719Z",
       "category": "community",
       "tags": [
         "event",
@@ -59,7 +59,7 @@
       "title_orig": "[TUY8S3.3] Echoes of Central Park Launch, Crossplay Rollout, Conflict Improvements & More",
       "lang_orig": "en",
       "publishedAt": "2026-11-02T15:45:00.000Z",
-      "fetchedAt": "2026-11-10T16:46:28.397Z",
+      "fetchedAt": "2026-11-10T18:42:35.719Z",
       "category": "updates",
       "tags": [
         "title-update",
@@ -100,7 +100,7 @@
       "title_orig": "The Division 2: Echoes of Central Park DLC is available now!",
       "lang_orig": "en",
       "publishedAt": "2026-11-03T15:00:00.000Z",
-      "fetchedAt": "2026-11-10T16:46:28.397Z",
+      "fetchedAt": "2026-11-10T18:42:35.719Z",
       "category": "missions",
       "tags": [
         "dlc"
@@ -125,6 +125,35 @@
       "relatedIds": [],
       "firstSeenAt": "2026-11-03T15:00:00.000Z",
       "status": "updated"
+    },
+    {
+      "id": "r9ssgx",
+      "sourceId": "youtube",
+      "sourceName": "Inaudible",
+      "sourceUrl": "https://www.youtube.com/watch?v=C7TZTDhDBmY",
+      "title_orig": "Testing the new Apex Protocal gearset & The Ratel Exotic AR  - Echoes of Central Park - !inaudible",
+      "lang_orig": "en",
+      "publishedAt": "2026-11-10T16:43:47.000Z",
+      "fetchedAt": "2026-11-10T18:42:35.719Z",
+      "category": "arsenal",
+      "tags": [
+        "dlc",
+        "exotic",
+        "video"
+      ],
+      "importance": 73,
+      "confidence": "community",
+      "headline_en": "Testing the new Apex Protocal gearset & The Ratel Exotic AR  - Echoes of Central Park - !inaudible",
+      "headline_zhHant": "pending",
+      "summary_en": "Like & Subscribe New Division 2 DLC Echoes of Central Park",
+      "summary_zhHant": "pending",
+      "summaryKind": "extract",
+      "alsoReportedBy": [],
+      "media": [],
+      "videoId": "C7TZTDhDBmY",
+      "relatedIds": [],
+      "firstSeenAt": "2026-11-10T18:42:35.719Z",
+      "status": "new"
     },
     {
       "id": "wa4wps",
@@ -198,7 +227,7 @@
       "title_orig": "The Division 2: 6X XP Event",
       "lang_orig": "en",
       "publishedAt": "2026-11-06T10:31:09.000Z",
-      "fetchedAt": "2026-11-10T16:46:28.397Z",
+      "fetchedAt": "2026-11-10T18:42:35.719Z",
       "category": "missions",
       "tags": [
         "event"
@@ -224,7 +253,7 @@
       "title_orig": "The Division 2: Echoes of Central Park Launch Twitch Drops",
       "lang_orig": "en",
       "publishedAt": "2026-11-03T15:00:00.000Z",
-      "fetchedAt": "2026-11-10T16:46:28.397Z",
+      "fetchedAt": "2026-11-10T18:42:35.719Z",
       "category": "community",
       "tags": [
         "twitch-drops",
@@ -250,6 +279,34 @@
       "status": "new"
     },
     {
+      "id": "7vojy3",
+      "sourceId": "youtube",
+      "sourceName": "Drakkyzz",
+      "sourceUrl": "https://www.youtube.com/watch?v=DKZX3ZxgnBA",
+      "title_orig": "COMMENT FARMER L'EVENT PASS 2 FOIS PLUS VITE ?! (GUIDE COMPLET)",
+      "lang_orig": "en",
+      "publishedAt": "2026-11-10T18:00:34.000Z",
+      "fetchedAt": "2026-11-10T18:42:35.719Z",
+      "category": "missions",
+      "tags": [
+        "event",
+        "video"
+      ],
+      "importance": 61,
+      "confidence": "community",
+      "headline_en": "COMMENT FARMER L'EVENT PASS 2 FOIS PLUS VITE ?! (GUIDE COMPLET)",
+      "headline_zhHant": "pending",
+      "summary_en": "Tu veux farmer l'événement de Central Park le plus rapidement possible sur The Division 2 ?",
+      "summary_zhHant": "pending",
+      "summaryKind": "extract",
+      "alsoReportedBy": [],
+      "media": [],
+      "videoId": "DKZX3ZxgnBA",
+      "relatedIds": [],
+      "firstSeenAt": "2026-11-10T18:42:35.719Z",
+      "status": "new"
+    },
+    {
       "id": "jrg9a1",
       "sourceId": "ubisoft-en",
       "sourceName": "Ubisoft",
@@ -257,7 +314,7 @@
       "title_orig": "[TUY8S3.3] Echoes of Central Park Launch, Crossplay Rollout, Conflict Improvements & More",
       "lang_orig": "en",
       "publishedAt": "2026-11-02T15:45:00.000Z",
-      "fetchedAt": "2026-11-10T16:46:28.397Z",
+      "fetchedAt": "2026-11-10T18:42:35.719Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -312,6 +369,60 @@
       "status": "new"
     },
     {
+      "id": "f2uakn",
+      "sourceId": "youtube",
+      "sourceName": "TuxedoBandido",
+      "sourceUrl": "https://www.youtube.com/watch?v=Jc39x6QeCMQ",
+      "title_orig": "Division 2 Matchmaking Gives Me ONE Agent… Then Ghosts Me 💀",
+      "lang_orig": "en",
+      "publishedAt": "2026-11-10T17:30:35.000Z",
+      "fetchedAt": "2026-11-10T18:42:35.719Z",
+      "category": "community",
+      "tags": [
+        "video"
+      ],
+      "importance": 57,
+      "confidence": "community",
+      "headline_en": "Division 2 Matchmaking Gives Me ONE Agent… Then Ghosts Me 💀",
+      "headline_zhHant": "pending",
+      "summary_en": "Division 2 matchmaking gives me ONE agent and then just… stops 💀 Here's the community workaround that might help.",
+      "summary_zhHant": "pending",
+      "summaryKind": "extract",
+      "alsoReportedBy": [],
+      "media": [],
+      "videoId": "Jc39x6QeCMQ",
+      "relatedIds": [],
+      "firstSeenAt": "2026-11-10T18:42:35.719Z",
+      "status": "new"
+    },
+    {
+      "id": "e0m456",
+      "sourceId": "youtube",
+      "sourceName": "Died Again Gaming",
+      "sourceUrl": "https://www.youtube.com/watch?v=YJe5JJjr76A",
+      "title_orig": "Easy Bounty Farming With This Hybrid Skill Build Division 2 #shorts",
+      "lang_orig": "en",
+      "publishedAt": "2026-11-10T17:48:39.000Z",
+      "fetchedAt": "2026-11-10T18:42:35.719Z",
+      "category": "builds",
+      "tags": [
+        "video"
+      ],
+      "importance": 55,
+      "confidence": "community",
+      "headline_en": "Easy Bounty Farming With This Hybrid Skill Build Division 2 #shorts",
+      "headline_zhHant": "pending",
+      "summary_en": "👇 Tap the \"Related Video\" link above the title for the complete breakdown!",
+      "summary_zhHant": "pending",
+      "summaryKind": "extract",
+      "alsoReportedBy": [],
+      "media": [],
+      "videoId": "YJe5JJjr76A",
+      "relatedIds": [],
+      "firstSeenAt": "2026-11-10T18:42:35.719Z",
+      "status": "new"
+    },
+    {
       "id": "6bgvw",
       "sourceId": "youtube",
       "sourceName": "灰帽特工   Gray Hat Agent",
@@ -336,6 +447,33 @@
       "videoId": "VWW6Gn4Td5g",
       "relatedIds": [],
       "firstSeenAt": "2026-11-10T16:46:28.397Z",
+      "status": "new"
+    },
+    {
+      "id": "6qhssl",
+      "sourceId": "youtube",
+      "sourceName": "B站森牧阳",
+      "sourceUrl": "https://www.youtube.com/watch?v=aIbwyDTOdXQ",
+      "title_orig": "全境封锁2：漏腰上衣“芦苇”返厂！持续一周！",
+      "lang_orig": "zh",
+      "publishedAt": "2026-11-10T17:04:02.000Z",
+      "fetchedAt": "2026-11-10T18:42:35.719Z",
+      "category": "community",
+      "tags": [
+        "video"
+      ],
+      "importance": 54,
+      "confidence": "community",
+      "headline_en": "pending",
+      "headline_zhHant": "全境封锁2：漏腰上衣“芦苇”返厂！持续一周！",
+      "summary_en": "pending",
+      "summary_zhHant": "合理讨论，你杆你对，个人观点，仅供参考!",
+      "summaryKind": "extract",
+      "alsoReportedBy": [],
+      "media": [],
+      "videoId": "aIbwyDTOdXQ",
+      "relatedIds": [],
+      "firstSeenAt": "2026-11-10T18:42:35.719Z",
       "status": "new"
     },
     {
@@ -399,8 +537,8 @@
       "sourceUrl": "https://forum.gamer.com.tw/C.php?bsn=24460&snA=32886",
       "title_orig": "【情報】【已開機】關機維護公告 - 2026/11/10(二) 16:30，延長 1 小時",
       "lang_orig": "zh",
-      "publishedAt": "2026-11-10T15:59:28.397Z",
-      "fetchedAt": "2026-11-10T16:46:28.397Z",
+      "publishedAt": "2026-11-10T16:42:35.719Z",
+      "fetchedAt": "2026-11-10T18:42:35.719Z",
       "category": "updates",
       "tags": [],
       "importance": 52,
@@ -424,7 +562,7 @@
       "title_orig": "【情報】11/10 每日戰鬥升級掉落 & 原型商人",
       "lang_orig": "zh",
       "publishedAt": "2026-11-10T04:00:00.000Z",
-      "fetchedAt": "2026-11-10T16:46:28.397Z",
+      "fetchedAt": "2026-11-10T18:42:35.719Z",
       "category": "updates",
       "tags": [],
       "importance": 51,
@@ -448,7 +586,7 @@
       "title_orig": "維護警報",
       "lang_orig": "zh",
       "publishedAt": "2026-11-09T00:00:00Z",
-      "fetchedAt": "2026-11-10T16:46:28.397Z",
+      "fetchedAt": "2026-11-10T18:42:35.719Z",
       "category": "updates",
       "tags": [
         "creator"
@@ -474,7 +612,7 @@
       "title_orig": "Last Chance to Pre-Purchase The Division 2: Echoes of Central Park",
       "lang_orig": "en",
       "publishedAt": "2026-10-28T13:29:29.000Z",
-      "fetchedAt": "2026-11-10T16:46:28.397Z",
+      "fetchedAt": "2026-11-10T18:42:35.719Z",
       "category": "missions",
       "tags": [
         "dlc",
@@ -501,7 +639,7 @@
       "title_orig": "Echoes of Central Park Launch Livestream",
       "lang_orig": "en",
       "publishedAt": "2026-10-27T16:01:04.000Z",
-      "fetchedAt": "2026-11-10T16:46:28.397Z",
+      "fetchedAt": "2026-11-10T18:42:35.719Z",
       "category": "community",
       "tags": [],
       "importance": 40,
@@ -525,7 +663,7 @@
       "title_orig": "Echoes of Central Park Costume Contest",
       "lang_orig": "en",
       "publishedAt": "2026-10-27T10:34:40.000Z",
-      "fetchedAt": "2026-11-10T16:46:28.397Z",
+      "fetchedAt": "2026-11-10T18:42:35.719Z",
       "category": "community",
       "tags": [],
       "importance": 40,
@@ -549,7 +687,7 @@
       "title_orig": "【攻略】部分技能的解鎖方式整理",
       "lang_orig": "zh",
       "publishedAt": "2026-11-05T05:49:00.000Z",
-      "fetchedAt": "2026-11-10T16:46:28.397Z",
+      "fetchedAt": "2026-11-10T18:42:35.719Z",
       "category": "builds",
       "tags": [],
       "importance": 40,
@@ -573,7 +711,7 @@
       "title_orig": "【情報】中央公園的迴響 DLC 夥伴 - 相關資訊",
       "lang_orig": "zh",
       "publishedAt": "2026-11-05T04:03:00.000Z",
-      "fetchedAt": "2026-11-10T16:46:28.397Z",
+      "fetchedAt": "2026-11-10T18:42:35.719Z",
       "category": "missions",
       "tags": [
         "dlc"
@@ -599,7 +737,7 @@
       "title_orig": "【情報】*劇透注意* Y8S3/TU29 獵捕行動 Red Horizon 偵查任務 每週統整",
       "lang_orig": "zh",
       "publishedAt": "2026-11-03T17:07:00.000Z",
-      "fetchedAt": "2026-11-10T16:46:28.397Z",
+      "fetchedAt": "2026-11-10T18:42:35.719Z",
       "category": "updates",
       "tags": [],
       "importance": 37,
@@ -623,7 +761,7 @@
       "title_orig": "【心得】無陷阱手T10日蝕複合控場(全汞合金)",
       "lang_orig": "zh",
       "publishedAt": "2026-11-03T05:31:00.000Z",
-      "fetchedAt": "2026-11-10T16:46:28.397Z",
+      "fetchedAt": "2026-11-10T18:42:35.719Z",
       "category": "builds",
       "tags": [],
       "importance": 36,
@@ -647,7 +785,7 @@
       "title_orig": "【情報】【已開機】關機維護公告 - 2026/11/03(二) 16:00 (Y8S3.3 中央公園DLC)，延長1.5小時",
       "lang_orig": "zh",
       "publishedAt": "2026-11-02T16:43:00.000Z",
-      "fetchedAt": "2026-11-10T16:46:28.397Z",
+      "fetchedAt": "2026-11-10T18:42:35.719Z",
       "category": "updates",
       "tags": [
         "dlc"
@@ -670,22 +808,22 @@
     {
       "sourceId": "steam-news",
       "ok": true,
-      "checkedAt": "2026-11-10T16:46:28.397Z"
+      "checkedAt": "2026-11-10T18:42:35.719Z"
     },
     {
       "sourceId": "ubisoft-en",
       "ok": true,
-      "checkedAt": "2026-11-10T16:46:28.397Z"
+      "checkedAt": "2026-11-10T18:42:35.719Z"
     },
     {
       "sourceId": "ubisoft-zh-tw",
       "ok": true,
-      "checkedAt": "2026-11-10T16:46:28.397Z"
+      "checkedAt": "2026-11-10T18:42:35.719Z"
     },
     {
       "sourceId": "bahamut",
       "ok": true,
-      "checkedAt": "2026-11-10T16:46:28.397Z"
+      "checkedAt": "2026-11-10T18:42:35.719Z"
     }
   ]
 }
