@@ -1,6 +1,32 @@
 {
   "videos": [
     {
+      "id": "6CdaFflN03Q",
+      "title": "🔴 BACK TO THE GRIND! Tier 10 Escalations | The Division 2",
+      "channelName": "GCROCK",
+      "channelUrl": "https://www.youtube.com/channel/UCyRKkittAyXHhjZxqC49cxg",
+      "publishedAt": "2026-11-10T06:17:40.000Z",
+      "durationSec": 19929,
+      "official": false,
+      "row": "more",
+      "checkedAt": "2026-11-10T06:56:40.689Z",
+      "via": "youtube-api",
+      "rumour": false
+    },
+    {
+      "id": "rdTLdO_jpl0",
+      "title": "Division 2 T10 Escalation Solo Without Build, Just Leveling Augments With Broken New Exotic",
+      "channelName": "Rogi",
+      "channelUrl": "https://www.youtube.com/channel/UCFWlodU5IQc9-VDSffJFcAw",
+      "publishedAt": "2026-11-10T06:12:40.000Z",
+      "durationSec": 1332,
+      "official": false,
+      "row": "intel",
+      "checkedAt": "2026-11-10T06:56:40.689Z",
+      "via": "youtube-search",
+      "rumour": false
+    },
+    {
       "id": "dFj7zsoPUmg",
       "title": "Division 2",
       "channelName": "RAMBO52___",
@@ -9,7 +35,7 @@
       "durationSec": 1171,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-10T04:46:30.389Z",
+      "checkedAt": "2026-11-10T06:56:40.689Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -22,7 +48,7 @@
       "durationSec": 201,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-10T04:46:30.389Z",
+      "checkedAt": "2026-11-10T06:56:40.689Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -35,7 +61,7 @@
       "durationSec": 11,
       "official": false,
       "row": "build-guides",
-      "checkedAt": "2026-11-10T04:46:30.389Z",
+      "checkedAt": "2026-11-10T06:56:40.689Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -45,9 +71,10 @@
       "channelName": "Died Again Gaming",
       "channelUrl": "https://www.youtube.com/channel/UCrK99e79TwSpgElDb-r-Lpg",
       "publishedAt": "2026-11-10T00:38:26.000Z",
+      "durationSec": 13389,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-10T04:46:30.389Z",
+      "checkedAt": "2026-11-10T06:56:40.689Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -60,7 +87,7 @@
       "durationSec": 6922,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-10T04:46:30.389Z",
+      "checkedAt": "2026-11-10T06:56:40.689Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -73,7 +100,7 @@
       "durationSec": 2094,
       "official": false,
       "row": "build-guides",
-      "checkedAt": "2026-11-10T04:46:30.389Z",
+      "checkedAt": "2026-11-10T06:56:40.689Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -86,7 +113,7 @@
       "durationSec": 538,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-10T04:46:30.389Z",
+      "checkedAt": "2026-11-10T06:56:40.689Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -99,7 +126,7 @@
       "durationSec": 5332,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-10T04:46:30.389Z",
+      "checkedAt": "2026-11-10T06:56:40.689Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -112,7 +139,7 @@
       "durationSec": 725,
       "official": false,
       "row": "intel",
-      "checkedAt": "2026-11-10T04:46:30.389Z",
+      "checkedAt": "2026-11-10T06:56:40.689Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -125,7 +152,7 @@
       "durationSec": 599,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-10T04:46:30.389Z",
+      "checkedAt": "2026-11-10T06:56:40.689Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -138,7 +165,7 @@
       "durationSec": 233,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-10T04:46:30.389Z",
+      "checkedAt": "2026-11-10T06:56:40.689Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -151,7 +178,7 @@
       "durationSec": 137,
       "official": false,
       "row": "intel",
-      "checkedAt": "2026-11-10T04:46:30.389Z",
+      "checkedAt": "2026-11-10T06:56:40.689Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -164,7 +191,7 @@
       "durationSec": 680,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-10T04:46:30.389Z",
+      "checkedAt": "2026-11-10T06:56:40.689Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -177,7 +204,7 @@
       "durationSec": 501,
       "official": false,
       "row": "patch-breakdowns",
-      "checkedAt": "2026-11-10T04:46:30.389Z",
+      "checkedAt": "2026-11-10T06:56:40.689Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -190,7 +217,7 @@
       "durationSec": 794,
       "official": false,
       "row": "build-guides",
-      "checkedAt": "2026-11-10T04:46:30.389Z",
+      "checkedAt": "2026-11-10T06:56:40.689Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -203,7 +230,7 @@
       "durationSec": 41,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-10T04:46:30.389Z",
+      "checkedAt": "2026-11-10T06:56:40.689Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -216,7 +243,7 @@
       "durationSec": 596,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-10T04:46:30.389Z",
+      "checkedAt": "2026-11-10T06:56:40.689Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -229,7 +256,7 @@
       "durationSec": 564,
       "official": false,
       "row": "build-guides",
-      "checkedAt": "2026-11-10T04:46:30.389Z",
+      "checkedAt": "2026-11-10T06:56:40.689Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -242,20 +269,7 @@
       "durationSec": 1492,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-10T04:46:30.389Z",
-      "via": "youtube-api",
-      "rumour": false
-    },
-    {
-      "id": "6CdaFflN03Q",
-      "title": "🔴 BACK TO THE GRIND! Tier 10 Escalations | The Division 2",
-      "channelName": "GCROCK",
-      "channelUrl": "https://www.youtube.com/channel/UCyRKkittAyXHhjZxqC49cxg",
-      "publishedAt": "2026-11-09T12:10:00.000Z",
-      "durationSec": 19929,
-      "official": false,
-      "row": "more",
-      "checkedAt": "2026-11-10T04:46:30.389Z",
+      "checkedAt": "2026-11-10T06:56:40.689Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -268,7 +282,7 @@
       "durationSec": 382,
       "official": false,
       "row": "intel",
-      "checkedAt": "2026-11-10T04:46:30.389Z",
+      "checkedAt": "2026-11-10T06:56:40.689Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -281,7 +295,7 @@
       "durationSec": 8668,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-10T04:46:30.389Z",
+      "checkedAt": "2026-11-10T06:56:40.689Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -294,7 +308,7 @@
       "durationSec": 6398,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-10T04:46:30.389Z",
+      "checkedAt": "2026-11-10T06:56:40.689Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -307,7 +321,7 @@
       "durationSec": 177,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-10T04:46:30.389Z",
+      "checkedAt": "2026-11-10T06:56:40.689Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -320,7 +334,7 @@
       "durationSec": 156,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-10T04:46:30.389Z",
+      "checkedAt": "2026-11-10T06:56:40.689Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -333,7 +347,7 @@
       "durationSec": 167,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-10T04:46:30.389Z",
+      "checkedAt": "2026-11-10T06:56:40.689Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -346,7 +360,7 @@
       "durationSec": 166,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-10T04:46:30.389Z",
+      "checkedAt": "2026-11-10T06:56:40.689Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -359,7 +373,7 @@
       "durationSec": 106,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-10T04:46:30.389Z",
+      "checkedAt": "2026-11-10T06:56:40.689Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -372,7 +386,7 @@
       "durationSec": 2122,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-10T04:46:30.389Z",
+      "checkedAt": "2026-11-10T06:56:40.689Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -385,7 +399,7 @@
       "durationSec": 3206,
       "official": false,
       "row": "build-guides",
-      "checkedAt": "2026-11-10T04:46:30.389Z",
+      "checkedAt": "2026-11-10T06:56:40.689Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -398,7 +412,7 @@
       "durationSec": 1350,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-10T04:46:30.389Z",
+      "checkedAt": "2026-11-10T06:56:40.689Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -411,7 +425,7 @@
       "durationSec": 1059,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-10T04:46:30.389Z",
+      "checkedAt": "2026-11-10T06:56:40.689Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -424,21 +438,8 @@
       "durationSec": 774,
       "official": false,
       "row": "build-guides",
-      "checkedAt": "2026-11-10T04:46:30.389Z",
+      "checkedAt": "2026-11-10T06:56:40.689Z",
       "via": "youtube-search",
-      "rumour": false
-    },
-    {
-      "id": "b3MvIJRI9FU",
-      "title": "The BIGGEST Reveal The Campaign Hid From Us... | Division 2: Echoes Of Central Park",
-      "channelName": "RogueGold",
-      "channelUrl": "https://www.youtube.com/channel/UCRbAtGPNumGV868iZ8brEDw",
-      "publishedAt": "2026-11-08T19:32:50.000Z",
-      "durationSec": 679,
-      "official": false,
-      "row": "more",
-      "checkedAt": "2026-11-10T04:46:30.389Z",
-      "via": "youtube-api",
       "rumour": false
     },
     {
@@ -450,7 +451,7 @@
       "durationSec": 92,
       "official": true,
       "row": "trailers",
-      "checkedAt": "2026-11-10T04:46:30.389Z",
+      "checkedAt": "2026-11-10T06:56:40.689Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -463,7 +464,7 @@
       "durationSec": 7035,
       "official": true,
       "row": "more",
-      "checkedAt": "2026-11-10T04:46:30.389Z",
+      "checkedAt": "2026-11-10T06:56:40.689Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -476,7 +477,7 @@
       "durationSec": 342,
       "official": true,
       "row": "more",
-      "checkedAt": "2026-11-10T04:46:30.389Z",
+      "checkedAt": "2026-11-10T06:56:40.689Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -489,7 +490,7 @@
       "publishedAt": "2026-11-02T13:48:39.000Z",
       "official": true,
       "row": "more",
-      "checkedAt": "2026-11-10T04:46:30.389Z",
+      "checkedAt": "2026-11-10T06:56:40.689Z",
       "via": "ubisoft-page",
       "rumour": false
     },
@@ -502,7 +503,7 @@
       "publishedAt": "2026-10-30T18:16:35.000Z",
       "official": true,
       "row": "trailers",
-      "checkedAt": "2026-11-10T04:46:30.389Z",
+      "checkedAt": "2026-11-10T06:56:40.689Z",
       "via": "ubisoft-page",
       "rumour": false
     },
@@ -515,7 +516,7 @@
       "publishedAt": "2026-10-13T13:30:33.000Z",
       "official": true,
       "row": "trailers",
-      "checkedAt": "2026-11-10T04:46:30.389Z",
+      "checkedAt": "2026-11-10T06:56:40.689Z",
       "via": "ubisoft-page",
       "rumour": false
     }
