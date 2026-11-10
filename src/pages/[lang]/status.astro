@@ -37,6 +37,13 @@ const SOURCE_NAMES_ZH: Record<string, string> = {
   </header>
 
   <p class="stale" hidden data-stale>{t(locale, 'status.stale')}</p>
+  {
+    status.degraded && (
+      <p class="stale" data-degraded>
+        {t(locale, 'status.degraded')} <small>{status.degraded.failed.join(' · ')}</small>
+      </p>
+    )
+  }
 
   <dl class="grid">
     <div class="card">
@@ -92,7 +99,7 @@ const SOURCE_NAMES_ZH: Record<string, string> = {
     const hours = Math.floor((Date.now() - Date.parse(el.dataset.ago ?? '')) / HOUR);
     if (Number.isNaN(hours)) return;
     el.textContent = ` (${(el.dataset.template ?? '{n}').replace('{n}', String(hours))})`;
-    if (hours > 36) document.querySelector<HTMLElement>('[data-stale]')!.hidden = false;
+    if (hours > 6) document.querySelector<HTMLElement>('[data-stale]')!.hidden = false;
   });
   const live = document.querySelector<HTMLElement>('[data-live-status]');
   if (live) {

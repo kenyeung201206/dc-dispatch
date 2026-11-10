@@ -12,6 +12,7 @@ on:
 
 permissions:
   contents: write # commit the new edition back to the repo
+  actions: read # publish-gate: did this code already pass CI?
 
 concurrency:
   group: daily-edition
@@ -26,6 +27,8 @@ jobs:
     timeout-minutes: 20
     steps:
       - uses: actions/checkout@v7.0.1
+        with:
+          fetch-depth: 60 # publish-gate compares the code with recent commits that passed CI
       - uses: pnpm/action-setup@v6.1.0
       - uses: actions/setup-node@v7.1.0
         with:
@@ -48,15 +51,28 @@ jobs:
           AI_MODEL: ${{ vars.AI_MODEL }}
           AI_DAILY_BUDGET_USD: ${{ vars.AI_DAILY_BUDGET_USD }}
 
+      # A failed check doesn't stop the paper by itself: publish-gate decides (see scripts/publish-gate.ts).
       - name: Check
-        run: pnpm run i18n:check && pnpm run test
+        id: check
+        continue-on-error: true
+        run: |
+          set -o pipefail
+          (pnpm run i18n:check && pnpm run test) 2>&1 | tee check.log
+
+      - name: Decide whether to publish
+        id: gate
+        run: node scripts/publish-gate.ts "${{ steps.check.outcome }}" check.log
+        env:
+          GH_TOKEN: ${{ github.token }}
 
       - name: Build site + search index
+        if: steps.gate.outputs.publish == 'true'
         run: pnpm run build
         env:
           HUMOUR_LEVEL: ${{ vars.HUMOUR_LEVEL || 'medium' }}
 
       - name: Commit the edition
+        if: steps.gate.outputs.publish == 'true'
         run: |
           git config user.name "dc-dispatch-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -75,16 +91,32 @@ jobs:
           fi
 
       - name: Deploy to Cloudflare Pages
-        if: ${{ vars.CF_PAGES_PROJECT != '' }}
+        if: steps.gate.outputs.publish == 'true' && vars.CF_PAGES_PROJECT != ''
         run: |
           if [ -z "$CLOUDFLARE_API_TOKEN" ] || [ -z "$CLOUDFLARE_ACCOUNT_ID" ]; then
             echo "::warning::Cloudflare secrets not set yet — edition committed but not deployed. See docs/DEPLOY.md step 4."
             exit 0
           fi
-          pnpm exec wrangler pages deploy dist --project-name="${{ vars.CF_PAGES_PROJECT }}" --branch=main --commit-dirty=true
+          # Cloudflare sometimes rejects an upload: try again (3 tries, 30 s / 90 s apart).
+          for attempt in 1 2 3; do
+            if pnpm exec wrangler pages deploy dist --project-name="${{ vars.CF_PAGES_PROJECT }}" --branch=main --commit-dirty=true; then exit 0; fi
+            echo "::warning::Deploy rejected (attempt $attempt)"; [ "$attempt" = 3 ] || sleep $((attempt * 30 + (attempt - 1) * 30))
+          done
+          echo "::error::Cloudflare rejected the deploy 3 times. The edition is committed; the next run deploys it."; exit 1
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
 
       - name: Fail loudly if the paper is stale
+        if: steps.gate.outputs.publish == 'true'
         run: node scripts/check-stale.ts 36
+
+      # Plain-language report. Failing here makes GitHub email the owner; the auto-retry (retry.yml) skips
+      # runs that failed only at this step, since the paper was already published.
+      - name: Report problems
+        if: always() && steps.gate.outputs.reason != ''
+        run: |
+          echo "::error::$REASON"
+          exit 1
+        env:
+          REASON: ${{ steps.gate.outputs.reason }}

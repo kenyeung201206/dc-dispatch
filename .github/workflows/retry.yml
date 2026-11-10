@@ -1,0 +1,33 @@
+name: Auto-retry
+
+# "Try again another time": when the robot (Daily edition) or the loot run fails, re-run its failed job once,
+# 5 minutes later, so a network hiccup or a Cloudflare/GitHub blip doesn't cost a 2-hour update.
+# Skipped when the run failed only at "Report problems" (the paper was already published, in safe mode) and
+# never retries a retry. A second failure is left failed, so GitHub emails the owner.
+on:
+  workflow_run:
+    workflows: ['Daily edition', 'Daily loot']
+    types: [completed]
+
+permissions:
+  actions: write
+
+jobs:
+  retry:
+    if: github.event.workflow_run.conclusion == 'failure' && github.event.workflow_run.run_attempt == 1
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Re-run the failed job once
+        run: |
+          failed=$(gh run view "$RUN" --repo "$REPO" --json jobs --jq '[.jobs[].steps[] | select(.conclusion == "failure") | .name] | join(", ")')
+          echo "Failed steps: $failed"
+          if [ "$failed" = "Report problems" ]; then echo "Already published (safe mode): not retrying."; exit 0; fi
+          sleep 300
+          gh run rerun "$RUN" --repo "$REPO" --failed
+          echo "::notice::Re-running \"$NAME\" (failed at: $failed)."
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RUN: ${{ github.event.workflow_run.id }}
+          REPO: ${{ github.repository }}
+          NAME: ${{ github.event.workflow_run.name }}

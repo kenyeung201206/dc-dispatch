@@ -299,6 +299,8 @@ export const RunStatusSchema = z.object({
   sources: z.array(z.object({ id: z.string(), ok: z.boolean(), items: z.number().int(), note: z.string().optional(), failingSince: z.iso.datetime({ offset: true }).optional() })),
   videos: z.object({ total: z.number().int(), youtubeApiConfigured: z.boolean() }),
   budget: z.object({ youtubeQuotaUnits: z.number().int(), costUsd: z.number() }),
+  /** Set when the last update was published in safe mode (a data-dependent check failed; scripts/publish-gate.ts). */
+  degraded: z.object({ at: z.iso.datetime({ offset: true }), failed: z.array(z.string()) }).optional(),
 });
 export type RunStatus = z.infer<typeof RunStatusSchema>;
 
