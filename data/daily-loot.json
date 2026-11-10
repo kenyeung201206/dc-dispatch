@@ -1,38 +1,38 @@
 {
- "date": "2026-11-09",
+ "date": "2026-11-10",
  "missions": [
   {
-   "place": "美術館",
-   "reward": "戈蘭",
+   "place": "The Tombs",
+   "reward": "電力",
    "kind": "brand"
   },
   {
    "place": "曼寧",
-   "reward": "突擊步槍",
-   "kind": "weapon"
+   "reward": "阿爾拉蒂",
+   "kind": "brand"
   },
   {
-   "place": "白橡木",
-   "reward": "餘燼引擎",
+   "place": "Bank Headquarters",
+   "reward": "真實愛國者",
    "kind": "set"
   },
   {
-   "place": "五角",
-   "reward": "裝備模組",
-   "kind": "other"
+   "place": "American History Museum",
+   "reward": "Zwiadowka",
+   "kind": "brand"
   },
   {
-   "place": "國防實驗室",
-   "reward": "手槍",
-   "kind": "weapon"
+   "place": "Space Administration HQ",
+   "reward": "先鋒",
+   "kind": "set"
   }
  ],
  "vendor": [
-  "手槍",
-  "背包"
+  "精準步槍",
+  "面罩"
  ],
  "title": "",
  "url": "https://prototrack.gg/target-loot/target-loot.php",
  "source": "prototrack",
- "fetchedAt": "2026-11-09T09:13:09.088Z"
+ "fetchedAt": "2026-11-10T08:39:09.768Z"
 }
