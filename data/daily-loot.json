@@ -2,7 +2,7 @@
  "date": "2026-11-10",
  "missions": [
   {
-   "place": "The Tombs",
+   "place": "墳墓",
    "reward": "電力",
    "kind": "brand"
   },
@@ -12,17 +12,17 @@
    "kind": "brand"
   },
   {
-   "place": "銀行總部",
+   "place": "銀行",
    "reward": "真實愛國者",
    "kind": "set"
   },
   {
-   "place": "美國歷史博物館",
-   "reward": "Zwiadowka",
+   "place": "歷史博物館",
+   "reward": "茲維多",
    "kind": "brand"
   },
   {
-   "place": "太空總署總部",
+   "place": "太空總署",
    "reward": "先鋒",
    "kind": "set"
   }

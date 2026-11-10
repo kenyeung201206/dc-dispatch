@@ -1,11 +1,11 @@
 {
-  "lastRun": "2026-11-10T14:50:12.846Z",
-  "durationMs": 20289,
+  "lastRun": "2026-11-10T16:46:46.801Z",
+  "durationMs": 18404,
   "edition": {
-    "date": "2026-11-10",
-    "number": 7,
-    "items": 44,
-    "zhPending": 26
+    "date": "2026-11-11",
+    "number": 8,
+    "items": 23,
+    "zhPending": 7
   },
   "sources": [
     {
@@ -16,12 +16,12 @@
     {
       "id": "ubisoft-en",
       "ok": true,
-      "items": 8
+      "items": 9
     },
     {
       "id": "ubisoft-zh-tw",
       "ok": true,
-      "items": 8
+      "items": 9
     },
     {
       "id": "bahamut",

@@ -414,6 +414,24 @@
       "tags": [
         "news"
       ]
+    },
+    {
+      "kind": "image",
+      "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/23RMG5i3ZTr1OaqYrUfmpS/2dc8119c6bbe9a8f8d39eb3b4e080378/TCTD2_Y8S8_TwD_960x540.jpg?w=1600",
+      "alt_en": "Official image for \"The Division 2: Echoes of Central Park Event Pass Twitch Drops\"",
+      "alt_zhHant": "官方新聞圖片：The Division 2: Echoes of Central Park Event Pass Twitch Drops",
+      "license": "Official promotional image © Ubisoft Entertainment. Shown unmodified, with credit, on a private non-commercial site.",
+      "attribution": "Ubisoft",
+      "attributionUrl": "https://www.ubisoft.com/en-us/game/the-division/the-division-2/news-updates/5jeY7kzIeBLvfHja0iBIuX/the-division-2-echoes-of-central-park-event-pass-twitch-drops",
+      "aiGenerated": false,
+      "id": "ubi-5jeY7kzIeBLvfHja0iBIuX",
+      "width": 1600,
+      "height": 900,
+      "urlSmall": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/23RMG5i3ZTr1OaqYrUfmpS/2dc8119c6bbe9a8f8d39eb3b4e080378/TCTD2_Y8S8_TwD_960x540.jpg?w=640",
+      "widthSmall": 640,
+      "tags": [
+        "news"
+      ]
     }
   ],
   "sectionBanners": {
