@@ -1,6 +1,19 @@
 {
   "videos": [
     {
+      "id": "tsSGSkLMmKA",
+      "title": "Farming the 6X XP Event | PSN |🪓🥷 DAG 🔴LIVE | Division 2",
+      "channelName": "Died Again Gaming",
+      "channelUrl": "https://www.youtube.com/channel/UCrK99e79TwSpgElDb-r-Lpg",
+      "publishedAt": "2026-11-10T07:47:29.000Z",
+      "durationSec": 13400,
+      "official": false,
+      "row": "more",
+      "checkedAt": "2026-11-10T08:52:56.188Z",
+      "via": "youtube-api",
+      "rumour": false
+    },
+    {
       "id": "6CdaFflN03Q",
       "title": "🔴 BACK TO THE GRIND! Tier 10 Escalations | The Division 2",
       "channelName": "GCROCK",
@@ -9,7 +22,7 @@
       "durationSec": 19929,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-10T06:56:40.689Z",
+      "checkedAt": "2026-11-10T08:52:56.188Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -22,7 +35,7 @@
       "durationSec": 1332,
       "official": false,
       "row": "intel",
-      "checkedAt": "2026-11-10T06:56:40.689Z",
+      "checkedAt": "2026-11-10T08:52:56.188Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -35,7 +48,7 @@
       "durationSec": 1171,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-10T06:56:40.689Z",
+      "checkedAt": "2026-11-10T08:52:56.188Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -48,7 +61,7 @@
       "durationSec": 201,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-10T06:56:40.689Z",
+      "checkedAt": "2026-11-10T08:52:56.188Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -61,20 +74,7 @@
       "durationSec": 11,
       "official": false,
       "row": "build-guides",
-      "checkedAt": "2026-11-10T06:56:40.689Z",
-      "via": "youtube-api",
-      "rumour": false
-    },
-    {
-      "id": "tsSGSkLMmKA",
-      "title": "Farming the 6X XP Event | PSN |🪓🥷 DAG 🔴LIVE | Division 2",
-      "channelName": "Died Again Gaming",
-      "channelUrl": "https://www.youtube.com/channel/UCrK99e79TwSpgElDb-r-Lpg",
-      "publishedAt": "2026-11-10T00:38:26.000Z",
-      "durationSec": 13389,
-      "official": false,
-      "row": "more",
-      "checkedAt": "2026-11-10T06:56:40.689Z",
+      "checkedAt": "2026-11-10T08:52:56.188Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -87,7 +87,7 @@
       "durationSec": 6922,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-10T06:56:40.689Z",
+      "checkedAt": "2026-11-10T08:52:56.188Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -100,7 +100,7 @@
       "durationSec": 2094,
       "official": false,
       "row": "build-guides",
-      "checkedAt": "2026-11-10T06:56:40.689Z",
+      "checkedAt": "2026-11-10T08:52:56.188Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -113,7 +113,7 @@
       "durationSec": 538,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-10T06:56:40.689Z",
+      "checkedAt": "2026-11-10T08:52:56.188Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -126,7 +126,7 @@
       "durationSec": 5332,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-10T06:56:40.689Z",
+      "checkedAt": "2026-11-10T08:52:56.188Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -139,7 +139,7 @@
       "durationSec": 725,
       "official": false,
       "row": "intel",
-      "checkedAt": "2026-11-10T06:56:40.689Z",
+      "checkedAt": "2026-11-10T08:52:56.188Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -152,7 +152,7 @@
       "durationSec": 599,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-10T06:56:40.689Z",
+      "checkedAt": "2026-11-10T08:52:56.188Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -165,7 +165,7 @@
       "durationSec": 233,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-10T06:56:40.689Z",
+      "checkedAt": "2026-11-10T08:52:56.188Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -178,7 +178,7 @@
       "durationSec": 137,
       "official": false,
       "row": "intel",
-      "checkedAt": "2026-11-10T06:56:40.689Z",
+      "checkedAt": "2026-11-10T08:52:56.188Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -191,7 +191,7 @@
       "durationSec": 680,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-10T06:56:40.689Z",
+      "checkedAt": "2026-11-10T08:52:56.188Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -204,7 +204,7 @@
       "durationSec": 501,
       "official": false,
       "row": "patch-breakdowns",
-      "checkedAt": "2026-11-10T06:56:40.689Z",
+      "checkedAt": "2026-11-10T08:52:56.188Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -217,7 +217,7 @@
       "durationSec": 794,
       "official": false,
       "row": "build-guides",
-      "checkedAt": "2026-11-10T06:56:40.689Z",
+      "checkedAt": "2026-11-10T08:52:56.188Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -230,7 +230,7 @@
       "durationSec": 41,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-10T06:56:40.689Z",
+      "checkedAt": "2026-11-10T08:52:56.188Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -243,7 +243,7 @@
       "durationSec": 596,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-10T06:56:40.689Z",
+      "checkedAt": "2026-11-10T08:52:56.188Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -256,7 +256,7 @@
       "durationSec": 564,
       "official": false,
       "row": "build-guides",
-      "checkedAt": "2026-11-10T06:56:40.689Z",
+      "checkedAt": "2026-11-10T08:52:56.188Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -269,7 +269,7 @@
       "durationSec": 1492,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-10T06:56:40.689Z",
+      "checkedAt": "2026-11-10T08:52:56.188Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -282,7 +282,7 @@
       "durationSec": 382,
       "official": false,
       "row": "intel",
-      "checkedAt": "2026-11-10T06:56:40.689Z",
+      "checkedAt": "2026-11-10T08:52:56.188Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -295,7 +295,7 @@
       "durationSec": 8668,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-10T06:56:40.689Z",
+      "checkedAt": "2026-11-10T08:52:56.188Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -308,7 +308,7 @@
       "durationSec": 6398,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-10T06:56:40.689Z",
+      "checkedAt": "2026-11-10T08:52:56.188Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -321,7 +321,7 @@
       "durationSec": 177,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-10T06:56:40.689Z",
+      "checkedAt": "2026-11-10T08:52:56.188Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -334,7 +334,7 @@
       "durationSec": 156,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-10T06:56:40.689Z",
+      "checkedAt": "2026-11-10T08:52:56.188Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -347,7 +347,7 @@
       "durationSec": 167,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-10T06:56:40.689Z",
+      "checkedAt": "2026-11-10T08:52:56.188Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -360,7 +360,7 @@
       "durationSec": 166,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-10T06:56:40.689Z",
+      "checkedAt": "2026-11-10T08:52:56.188Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -373,7 +373,7 @@
       "durationSec": 106,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-10T06:56:40.689Z",
+      "checkedAt": "2026-11-10T08:52:56.188Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -386,7 +386,7 @@
       "durationSec": 2122,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-10T06:56:40.689Z",
+      "checkedAt": "2026-11-10T08:52:56.188Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -399,7 +399,7 @@
       "durationSec": 3206,
       "official": false,
       "row": "build-guides",
-      "checkedAt": "2026-11-10T06:56:40.689Z",
+      "checkedAt": "2026-11-10T08:52:56.188Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -412,7 +412,7 @@
       "durationSec": 1350,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-10T06:56:40.689Z",
+      "checkedAt": "2026-11-10T08:52:56.188Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -425,7 +425,7 @@
       "durationSec": 1059,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-10T06:56:40.689Z",
+      "checkedAt": "2026-11-10T08:52:56.188Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -438,7 +438,7 @@
       "durationSec": 774,
       "official": false,
       "row": "build-guides",
-      "checkedAt": "2026-11-10T06:56:40.689Z",
+      "checkedAt": "2026-11-10T08:52:56.188Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -451,7 +451,7 @@
       "durationSec": 92,
       "official": true,
       "row": "trailers",
-      "checkedAt": "2026-11-10T06:56:40.689Z",
+      "checkedAt": "2026-11-10T08:52:56.188Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -464,7 +464,7 @@
       "durationSec": 7035,
       "official": true,
       "row": "more",
-      "checkedAt": "2026-11-10T06:56:40.689Z",
+      "checkedAt": "2026-11-10T08:52:56.188Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -477,7 +477,7 @@
       "durationSec": 342,
       "official": true,
       "row": "more",
-      "checkedAt": "2026-11-10T06:56:40.689Z",
+      "checkedAt": "2026-11-10T08:52:56.188Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -490,7 +490,7 @@
       "publishedAt": "2026-11-02T13:48:39.000Z",
       "official": true,
       "row": "more",
-      "checkedAt": "2026-11-10T06:56:40.689Z",
+      "checkedAt": "2026-11-10T08:52:56.188Z",
       "via": "ubisoft-page",
       "rumour": false
     },
@@ -503,7 +503,7 @@
       "publishedAt": "2026-10-30T18:16:35.000Z",
       "official": true,
       "row": "trailers",
-      "checkedAt": "2026-11-10T06:56:40.689Z",
+      "checkedAt": "2026-11-10T08:52:56.188Z",
       "via": "ubisoft-page",
       "rumour": false
     },
@@ -516,7 +516,7 @@
       "publishedAt": "2026-10-13T13:30:33.000Z",
       "official": true,
       "row": "trailers",
-      "checkedAt": "2026-11-10T06:56:40.689Z",
+      "checkedAt": "2026-11-10T08:52:56.188Z",
       "via": "ubisoft-page",
       "rumour": false
     }
