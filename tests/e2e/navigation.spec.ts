@@ -1,3 +1,4 @@
+import { readFileSync } from 'node:fs';
 import { expect, test } from '@playwright/test';
 
 const desktopOnly = (w?: number) => (w ?? 1440) < 768;
@@ -86,7 +87,9 @@ test('desktop: nav has archive, patch tracker and search', async ({ page }) => {
 test('status page shows last refresh and source health in both languages', async ({ page }) => {
   await page.goto('/en/status/');
   await expect(page.getByText('Last refresh')).toBeVisible();
-  await expect(page.locator('.src tbody tr')).toHaveCount(4);
+  // One row per source in data/status.json (the robot adds sources over time, so don't hard-code the count).
+  const sources = (JSON.parse(readFileSync('data/status.json', 'utf8')) as { sources: unknown[] }).sources.length;
+  await expect(page.locator('.src tbody tr')).toHaveCount(sources);
   await expect(page.locator('.src tbody')).toContainText('巴哈姆特');
   await expect(page.locator('[data-live-status]')).not.toHaveText('Checking…');
   await page.goto('/zh-hant/status/');

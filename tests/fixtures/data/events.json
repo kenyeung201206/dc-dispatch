@@ -1,0 +1,48 @@
+{
+  "_note": "Limited-time events with official dates (Asia/Tokyo calendar days, end inclusive). Guides matched to an event disappear the day after it ends. Add new events from Ubisoft's notes; 'match' lists words in guide titles (EN or 中文).",
+  "events": [
+    {
+      "id": "red-moon-unleashed-2026",
+      "name_en": "Red Moon Unleashed",
+      "name_zhHant": "血月高照",
+      "start": "2026-10-15",
+      "end": "2026-11-03",
+      "match": [
+        "Red Moon",
+        "血月",
+        "萬聖",
+        "万圣",
+        "Halloween",
+        "復仇者懸賞",
+        "月亮教"
+      ],
+      "source": "https://www.ubisoft.com/en-us/game/the-division/the-division-2/news-updates/7uzKuy4iB0MtOJfsXAr3TO/tuy8s32-red-moon-unleashed-creator-collaboration-escalation-updates-more"
+    },
+    {
+      "id": "shepherd-2026-11",
+      "name_en": "Shepherd Event",
+      "name_zhHant": "Shepherd 活動",
+      "start": "2026-11-17",
+      "end": "2026-11-26",
+      "match": [
+        "Shepherd",
+        "牧羊人"
+      ],
+      "source": "https://www.ubisoft.com/en-us/game/the-division/the-division-2/news-updates/7L8TlD1Hv0XC1prOD8mdte/tuy8s33-crossplay-rollout-conflict-improvements-more"
+    },
+    {
+      "id": "echoes-twitch-drops-2026-11",
+      "name_en": "Echoes of Central Park Twitch Drops",
+      "name_zhHant": "中央公園的迴響 Twitch 掉寶",
+      "start": "2026-11-03",
+      "end": "2026-11-10",
+      "match": [
+        "Twitch Drops",
+        "Twitch掉寶",
+        "Twitch 掉寶",
+        "掉寶"
+      ],
+      "source": "https://www.ubisoft.com/en-us/game/the-division/the-division-2/news-updates/5EEgwKS6kDqyvUFo5PJYsB/the-division-2-echoes-of-central-park-launch-twitch-drops"
+    }
+  ]
+}

@@ -1,3 +1,5 @@
+// Frozen copies of the robot's data files (tests/fixtures/data): the robot changes the real ones every run,
+// and a test that counts live posts would block publishing (it did on 2026-11-10).
 import { readFileSync } from 'node:fs';
 import { describe, expect, it } from 'vitest';
 import { agoToDate, mergeFeed, parsePostsPage } from '../../pipeline/creator-feed.ts';
@@ -9,7 +11,7 @@ const page = (...posts: unknown[]) =>
   `<html><script>var ytInitialData = ${JSON.stringify({ contents: { tabs: [{ items: posts }] } })};</script></html>`;
 
 const now = new Date('2026-11-20T03:00:00Z');
-const data = () => CreatorPostsSchema.parse(JSON.parse(readFileSync('data/creator-posts.json', 'utf8')));
+const data = () => CreatorPostsSchema.parse(JSON.parse(readFileSync('tests/fixtures/data/creator-posts.json', 'utf8')));
 
 describe('灰帽特工 posts tab → site data', () => {
   it('reads posts, unwrapping YouTube redirect links', () => {

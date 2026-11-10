@@ -5,7 +5,7 @@ import { parseUbisoftNews } from '../../pipeline/sources/ubisoft.ts';
 import { CreatorPostsSchema, GameEventLogSchema, ItemSchema } from '../../src/schema/item.ts';
 import { creatorPostStories } from '../../pipeline/creator-posts.ts';
 
-const events = GameEventLogSchema.parse(JSON.parse(readFileSync('data/events.json', 'utf8'))).events;
+const events = GameEventLogSchema.parse(JSON.parse(readFileSync('tests/fixtures/data/events.json', 'utf8'))).events;
 
 describe('guide expiry', () => {
   it('ties event guides to the event end, others to 60 days', () => {
@@ -54,7 +54,7 @@ describe('events from Ubisoft notes', () => {
 });
 
 describe('灰帽特工 curated posts', () => {
-  const file = JSON.parse(readFileSync('data/creator-posts.json', 'utf8'));
+  const file = JSON.parse(readFileSync('tests/fixtures/data/creator-posts.json', 'utf8'));
 
   it('the data file is valid and the mission series is complete', () => {
     const data = CreatorPostsSchema.parse(file);
