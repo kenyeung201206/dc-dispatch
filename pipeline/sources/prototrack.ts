@@ -5,24 +5,18 @@
  * English names become the Chinese names 巴哈 posts use (data/brands.json); unknown names stay in English.
  */
 import brands from '../../data/brands.json' with { type: 'json' };
+import places from '../../data/places.json' with { type: 'json' };
 import type { DailyLoot, RewardKind } from './bahamut-daily.ts';
 
 export const PROTOTRACK_TXT = 'https://prototrack.gg/target-loot/target-loot-current.txt';
 export const PROTOTRACK_PAGE = 'https://prototrack.gg/target-loot/target-loot.php';
 
-/** Mission names as 巴哈's daily post writes them (checked against both sources' 11/07 lists). */
-const PLACES: [string, string][] = [
-  ['The Art Museum', '美術館'],
-  ['Manning National Zoo', '曼寧'],
-  ['Camp White Oak', '白橡木'],
-  ['The Pentagon', '五角'],
-  ['DARPA Research Labs', '國防實驗室'],
-];
-
 /** "Negotiators Dilemma" = "Negotiator's Dilemma", "Kneepad" = "Kneepads", "SMGs" = "SMG". */
-const key = (s: string) => s.toLowerCase().replace(/[^a-z0-9]/g, '').replace(/s$/, '');
-const PLACE: Record<string, string> = Object.fromEntries(PLACES.map(([en, zh]) => [key(en), zh]));
-const CJK = /[㐀-鿿]/;
+export const nameKey = (s: string) => s.toLowerCase().replace(/[^a-z0-9]/g, '').replace(/s$/, '');
+const key = nameKey;
+/** Mission names as 巴哈's daily post writes them (data/places.json; the robot learns new ones). */
+const PLACE: Record<string, string> = Object.fromEntries(Object.entries(places.places as Record<string, string>).map(([en, zh]) => [key(en), zh]));
+export const CJK = /[㐀-鿿]/;
 
 type Entry = { en: string; aliases: string[]; icon: string | null };
 const LISTS: [RewardKind, Entry[]][] = [
@@ -49,6 +43,17 @@ export function chineseReward(name: string): { reward: string; kind: RewardKind 
 
 /** Reads the text file. Returns undefined if it doesn't look like the expected layout. */
 export function parseProtoTrack(txt: string): Pick<DailyLoot, 'date' | 'missions' | 'vendor'> | undefined {
+  const raw = parseProtoTrackEnglish(txt);
+  if (!raw) return undefined;
+  return {
+    date: raw.date,
+    missions: raw.missions.map((m) => ({ place: PLACE[key(m.place)] ?? m.place, ...chineseReward(m.reward) })),
+    vendor: raw.vendor.map((v) => chineseReward(v).reward),
+  };
+}
+
+/** The file as ProtoTrack wrote it (English names), for matching against 巴哈's list. */
+export function parseProtoTrackEnglish(txt: string): { date: string; missions: { place: string; reward: string }[]; vendor: string[] } | undefined {
   const date = /^Date:\s*(\d{4}-\d{2}-\d{2})\s*$/m.exec(txt)?.[1];
   const section = (name: string) => {
     const at = txt.search(new RegExp(`^${name}:\\s*$`, 'm'));
@@ -57,8 +62,8 @@ export function parseProtoTrack(txt: string): Pick<DailyLoot, 'date' | 'missions
     const end = lines.findIndex((l) => !/^\s*-\s/.test(l));
     return (end < 0 ? lines : lines.slice(0, end)).map((l) => /^\s*-\s*([^:]+):\s*(.+?)\s*$/.exec(l)).filter((m) => !!m);
   };
-  const missions = section('Missions').map(([, place, reward]) => ({ place: PLACE[key(place!)] ?? place!.trim(), ...chineseReward(reward!) }));
-  const vendor = section('Vendor Caches').map(([, , item]) => chineseReward(item!).reward);
+  const missions = section('Missions').map(([, place, reward]) => ({ place: place!.trim(), reward: reward!.trim() }));
+  const vendor = section('Vendor Caches').map(([, , item]) => item!.trim());
   if (!date || !missions.length || missions.length > 12) return undefined;
   return { date, missions, vendor };
 }

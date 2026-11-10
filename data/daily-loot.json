@@ -34,5 +34,27 @@
  "title": "",
  "url": "https://prototrack.gg/target-loot/target-loot.php",
  "source": "prototrack",
- "fetchedAt": "2026-11-10T08:39:09.768Z"
+ "fetchedAt": "2026-11-10T08:39:09.768Z",
+ "english": [
+  {
+   "place": "The Tombs",
+   "reward": "Electrique"
+  },
+  {
+   "place": "Manning National Zoo",
+   "reward": "Airaldi Holdings"
+  },
+  {
+   "place": "Bank Headquarters",
+   "reward": "True Patriot"
+  },
+  {
+   "place": "American History Museum",
+   "reward": "Zwiadowka Sp. z o.o"
+  },
+  {
+   "place": "Space Administration HQ",
+   "reward": "Tip of the Spear"
+  }
+ ]
 }

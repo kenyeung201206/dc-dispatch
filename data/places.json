@@ -1,0 +1,10 @@
+{
+ "_note": "戰鬥升級 mission names: ProtoTrack's English name → the Chinese name 巴哈's daily post uses. The robot adds new ones itself when 巴哈 and ProtoTrack list the same day in the same order (pipeline/learn-names.ts).",
+ "places": {
+  "The Art Museum": "美術館",
+  "Manning National Zoo": "曼寧",
+  "Camp White Oak": "白橡木",
+  "The Pentagon": "五角",
+  "DARPA Research Labs": "國防實驗室"
+ }
+}

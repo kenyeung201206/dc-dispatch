@@ -15,6 +15,8 @@ export interface DailyLoot {
   /** Where the list came from: ProtoTrack.gg (fast, ~2 min after reset) or 巴哈's post (backup). */
   source: 'prototrack' | 'bahamut';
   missions: { place: string; reward: string; kind: RewardKind }[];
+  /** ProtoTrack's own English names, same order as missions (for learning Chinese names from 巴哈 later). */
+  english?: { place: string; reward: string }[];
   vendor: string[];
   fetchedAt: string;
 }
