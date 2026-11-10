@@ -1,7 +1,7 @@
 {
   "date": "2026-11-10",
   "editionNumber": 7,
-  "generatedAt": "2026-11-10T10:49:18.329Z",
+  "generatedAt": "2026-11-10T12:54:03.732Z",
   "meta": {
     "season_en": "Red Horizon",
     "season_zhHant": "Red Horizon 賽季",
@@ -17,7 +17,7 @@
       "title_orig": "The Division 2: Echoes of Central Park Event Pass",
       "lang_orig": "en",
       "publishedAt": "2026-11-09T15:45:00.000Z",
-      "fetchedAt": "2026-11-10T10:49:18.329Z",
+      "fetchedAt": "2026-11-10T12:54:03.732Z",
       "category": "missions",
       "tags": [
         "event",
@@ -51,7 +51,7 @@
       "title_orig": "[TUY8S3.3] Echoes of Central Park Launch, Crossplay Rollout, Conflict Improvements & More",
       "lang_orig": "en",
       "publishedAt": "2026-11-02T15:45:00.000Z",
-      "fetchedAt": "2026-11-10T10:49:18.329Z",
+      "fetchedAt": "2026-11-10T12:54:03.732Z",
       "category": "updates",
       "tags": [
         "title-update",
@@ -92,7 +92,7 @@
       "title_orig": "The Division 2: Echoes of Central Park DLC is available now!",
       "lang_orig": "en",
       "publishedAt": "2026-11-03T15:00:00.000Z",
-      "fetchedAt": "2026-11-10T10:49:18.329Z",
+      "fetchedAt": "2026-11-10T12:54:03.732Z",
       "category": "missions",
       "tags": [
         "dlc"
@@ -306,7 +306,7 @@
       "title_orig": "The Division 2: 6X XP Event",
       "lang_orig": "en",
       "publishedAt": "2026-11-06T10:31:09.000Z",
-      "fetchedAt": "2026-11-10T10:49:18.329Z",
+      "fetchedAt": "2026-11-10T12:54:03.732Z",
       "category": "missions",
       "tags": [
         "event"
@@ -332,7 +332,7 @@
       "title_orig": "The Division 2: Echoes of Central Park Launch Twitch Drops",
       "lang_orig": "en",
       "publishedAt": "2026-11-03T15:00:00.000Z",
-      "fetchedAt": "2026-11-10T10:49:18.329Z",
+      "fetchedAt": "2026-11-10T12:54:03.732Z",
       "category": "community",
       "tags": [
         "twitch-drops",
@@ -450,7 +450,7 @@
       "title_orig": "[TUY8S3.3] Echoes of Central Park Launch, Crossplay Rollout, Conflict Improvements & More",
       "lang_orig": "en",
       "publishedAt": "2026-11-02T15:45:00.000Z",
-      "fetchedAt": "2026-11-10T10:49:18.329Z",
+      "fetchedAt": "2026-11-10T12:54:03.732Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -673,6 +673,33 @@
       "status": "new"
     },
     {
+      "id": "15kqkzg",
+      "sourceId": "youtube",
+      "sourceName": "Drakkyzz",
+      "sourceUrl": "https://www.youtube.com/watch?v=HM0MpzXD6rI",
+      "title_orig": "J'AI JAMAIS VU UN BUILD AUSSI ABUSÉ SUR THE DIVISION 2 !!!",
+      "lang_orig": "en",
+      "publishedAt": "2026-11-10T11:40:23.000Z",
+      "fetchedAt": "2026-11-10T12:54:03.732Z",
+      "category": "builds",
+      "tags": [
+        "video"
+      ],
+      "importance": 57,
+      "confidence": "community",
+      "headline_en": "J'AI JAMAIS VU UN BUILD AUSSI ABUSÉ SUR THE DIVISION 2 !!!",
+      "headline_zhHant": "pending",
+      "summary_en": "🔥 1,9 MILLION D’ARMURE, 1,4 MILLION DE DÉGÂTS PAR BALLE… Ce build SOLO sur The Division 2 est complètement fou !",
+      "summary_zhHant": "pending",
+      "summaryKind": "extract",
+      "alsoReportedBy": [],
+      "media": [],
+      "videoId": "HM0MpzXD6rI",
+      "relatedIds": [],
+      "firstSeenAt": "2026-11-10T12:54:03.732Z",
+      "status": "new"
+    },
+    {
       "id": "crp63w",
       "sourceId": "youtube",
       "sourceName": "GCROCK",
@@ -864,14 +891,41 @@
       "status": "new"
     },
     {
+      "id": "12qvxvc",
+      "sourceId": "youtube",
+      "sourceName": "PS & PC 遊戲交流區-主頻道",
+      "sourceUrl": "https://www.youtube.com/watch?v=wmwHzmxjkx0",
+      "title_orig": "PS5　全境封鎖2　GTA6已安裝再等8天",
+      "lang_orig": "zh",
+      "publishedAt": "2026-11-10T12:48:02.000Z",
+      "fetchedAt": "2026-11-10T12:54:03.732Z",
+      "category": "community",
+      "tags": [
+        "video"
+      ],
+      "importance": 52,
+      "confidence": "community",
+      "headline_en": "pending",
+      "headline_zhHant": "PS5　全境封鎖2　GTA6已安裝再等8天",
+      "summary_en": "pending",
+      "summary_zhHant": "PS&PC遊戲交流區",
+      "summaryKind": "extract",
+      "alsoReportedBy": [],
+      "media": [],
+      "videoId": "wmwHzmxjkx0",
+      "relatedIds": [],
+      "firstSeenAt": "2026-11-10T12:54:03.732Z",
+      "status": "new"
+    },
+    {
       "id": "1ok88ji",
       "sourceId": "bahamut",
       "sourceName": "巴哈姆特 全境封鎖板",
       "sourceUrl": "https://forum.gamer.com.tw/C.php?bsn=24460&snA=32886",
       "title_orig": "【情報】關機維護公告 - 2026/11/10(二) 16:30",
       "lang_orig": "zh",
-      "publishedAt": "2026-11-10T00:49:18.329Z",
-      "fetchedAt": "2026-11-10T10:49:18.329Z",
+      "publishedAt": "2026-11-09T23:54:03.732Z",
+      "fetchedAt": "2026-11-10T12:54:03.732Z",
       "category": "updates",
       "tags": [],
       "importance": 51,
@@ -895,7 +949,7 @@
       "title_orig": "【情報】11/09 每日戰鬥升級掉落 & 原型商人",
       "lang_orig": "zh",
       "publishedAt": "2026-11-09T04:00:00.000Z",
-      "fetchedAt": "2026-11-10T10:49:18.329Z",
+      "fetchedAt": "2026-11-10T12:54:03.732Z",
       "category": "updates",
       "tags": [],
       "importance": 49,
@@ -919,7 +973,7 @@
       "title_orig": "【情報】Twitch掉寶 11/10 - 11/17",
       "lang_orig": "zh",
       "publishedAt": "2026-11-09T01:16:00.000Z",
-      "fetchedAt": "2026-11-10T10:49:18.329Z",
+      "fetchedAt": "2026-11-10T12:54:03.732Z",
       "category": "community",
       "tags": [],
       "importance": 49,
@@ -943,7 +997,7 @@
       "title_orig": "維護警報",
       "lang_orig": "zh",
       "publishedAt": "2026-11-09T00:00:00Z",
-      "fetchedAt": "2026-11-10T10:49:18.329Z",
+      "fetchedAt": "2026-11-10T12:54:03.732Z",
       "category": "updates",
       "tags": [
         "creator"
@@ -969,7 +1023,7 @@
       "title_orig": "Last Chance to Pre-Purchase The Division 2: Echoes of Central Park",
       "lang_orig": "en",
       "publishedAt": "2026-10-28T13:29:29.000Z",
-      "fetchedAt": "2026-11-10T10:49:18.329Z",
+      "fetchedAt": "2026-11-10T12:54:03.732Z",
       "category": "missions",
       "tags": [
         "dlc",
@@ -996,7 +1050,7 @@
       "title_orig": "【攻略】部分技能的解鎖方式整理",
       "lang_orig": "zh",
       "publishedAt": "2026-11-05T05:49:00.000Z",
-      "fetchedAt": "2026-11-10T10:49:18.329Z",
+      "fetchedAt": "2026-11-10T12:54:03.732Z",
       "category": "builds",
       "tags": [],
       "importance": 41,
@@ -1013,32 +1067,6 @@
       "status": "new"
     },
     {
-      "id": "kmjycv",
-      "sourceId": "bahamut",
-      "sourceName": "巴哈姆特 全境封鎖板",
-      "sourceUrl": "https://forum.gamer.com.tw/C.php?bsn=24460&snA=32874",
-      "title_orig": "【情報】中央公園的迴響 DLC 夥伴 - 相關資訊",
-      "lang_orig": "zh",
-      "publishedAt": "2026-11-05T04:03:00.000Z",
-      "fetchedAt": "2026-11-10T10:49:18.329Z",
-      "category": "missions",
-      "tags": [
-        "dlc"
-      ],
-      "importance": 41,
-      "confidence": "community",
-      "headline_en": "pending",
-      "headline_zhHant": "【情報】中央公園的迴響 DLC 夥伴 - 相關資訊",
-      "summary_en": "pending",
-      "summary_zhHant": "遊戲內的資訊整理成圖表方便一覽 內容若有錯誤請再指教",
-      "summaryKind": "extract",
-      "alsoReportedBy": [],
-      "media": [],
-      "relatedIds": [],
-      "firstSeenAt": "2026-11-05T04:04:30.015Z",
-      "status": "new"
-    },
-    {
       "id": "rchnq7",
       "sourceId": "steam-news",
       "sourceName": "Ubisoft (via Steam News)",
@@ -1046,7 +1074,7 @@
       "title_orig": "Echoes of Central Park Launch Livestream",
       "lang_orig": "en",
       "publishedAt": "2026-10-27T16:01:04.000Z",
-      "fetchedAt": "2026-11-10T10:49:18.329Z",
+      "fetchedAt": "2026-11-10T12:54:03.732Z",
       "category": "community",
       "tags": [],
       "importance": 40,
@@ -1070,7 +1098,7 @@
       "title_orig": "Echoes of Central Park Costume Contest",
       "lang_orig": "en",
       "publishedAt": "2026-10-27T10:34:40.000Z",
-      "fetchedAt": "2026-11-10T10:49:18.329Z",
+      "fetchedAt": "2026-11-10T12:54:03.732Z",
       "category": "community",
       "tags": [],
       "importance": 40,
@@ -1087,6 +1115,32 @@
       "status": "new"
     },
     {
+      "id": "kmjycv",
+      "sourceId": "bahamut",
+      "sourceName": "巴哈姆特 全境封鎖板",
+      "sourceUrl": "https://forum.gamer.com.tw/C.php?bsn=24460&snA=32874",
+      "title_orig": "【情報】中央公園的迴響 DLC 夥伴 - 相關資訊",
+      "lang_orig": "zh",
+      "publishedAt": "2026-11-05T04:03:00.000Z",
+      "fetchedAt": "2026-11-10T12:54:03.732Z",
+      "category": "missions",
+      "tags": [
+        "dlc"
+      ],
+      "importance": 40,
+      "confidence": "community",
+      "headline_en": "pending",
+      "headline_zhHant": "【情報】中央公園的迴響 DLC 夥伴 - 相關資訊",
+      "summary_en": "pending",
+      "summary_zhHant": "遊戲內的資訊整理成圖表方便一覽 內容若有錯誤請再指教",
+      "summaryKind": "extract",
+      "alsoReportedBy": [],
+      "media": [],
+      "relatedIds": [],
+      "firstSeenAt": "2026-11-05T04:04:30.015Z",
+      "status": "new"
+    },
+    {
       "id": "1l9fm8s",
       "sourceId": "bahamut",
       "sourceName": "巴哈姆特 全境封鎖板",
@@ -1094,10 +1148,10 @@
       "title_orig": "【情報】*劇透注意* Y8S3/TU29 獵捕行動 Red Horizon 偵查任務 每週統整",
       "lang_orig": "zh",
       "publishedAt": "2026-11-03T17:07:00.000Z",
-      "fetchedAt": "2026-11-10T10:49:18.329Z",
+      "fetchedAt": "2026-11-10T12:54:03.732Z",
       "category": "updates",
       "tags": [],
-      "importance": 38,
+      "importance": 37,
       "confidence": "community",
       "headline_en": "pending",
       "headline_zhHant": "【情報】*劇透注意* Y8S3/TU29 獵捕行動 Red Horizon 偵查任務 每週統整",
@@ -1118,10 +1172,10 @@
       "title_orig": "【心得】無陷阱手T10日蝕複合控場(全汞合金)",
       "lang_orig": "zh",
       "publishedAt": "2026-11-03T05:31:00.000Z",
-      "fetchedAt": "2026-11-10T10:49:18.329Z",
+      "fetchedAt": "2026-11-10T12:54:03.732Z",
       "category": "builds",
       "tags": [],
-      "importance": 37,
+      "importance": 36,
       "confidence": "community",
       "headline_en": "pending",
       "headline_zhHant": "【心得】無陷阱手T10日蝕複合控場(全汞合金)",
@@ -1142,7 +1196,7 @@
       "title_orig": "【情報】【已開機】關機維護公告 - 2026/11/03(二) 16:00 (Y8S3.3 中央公園DLC)，延長1.5小時",
       "lang_orig": "zh",
       "publishedAt": "2026-11-02T16:43:00.000Z",
-      "fetchedAt": "2026-11-10T10:49:18.329Z",
+      "fetchedAt": "2026-11-10T12:54:03.732Z",
       "category": "updates",
       "tags": [
         "dlc"
@@ -1165,22 +1219,22 @@
     {
       "sourceId": "steam-news",
       "ok": true,
-      "checkedAt": "2026-11-10T10:49:18.329Z"
+      "checkedAt": "2026-11-10T12:54:03.732Z"
     },
     {
       "sourceId": "ubisoft-en",
       "ok": true,
-      "checkedAt": "2026-11-10T10:49:18.329Z"
+      "checkedAt": "2026-11-10T12:54:03.732Z"
     },
     {
       "sourceId": "ubisoft-zh-tw",
       "ok": true,
-      "checkedAt": "2026-11-10T10:49:18.329Z"
+      "checkedAt": "2026-11-10T12:54:03.732Z"
     },
     {
       "sourceId": "bahamut",
       "ok": true,
-      "checkedAt": "2026-11-10T10:49:18.329Z"
+      "checkedAt": "2026-11-10T12:54:03.732Z"
     }
   ]
 }
