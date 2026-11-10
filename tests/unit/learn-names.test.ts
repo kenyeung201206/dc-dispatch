@@ -65,3 +65,10 @@ describe('learning Chinese names from 巴哈 (same day, same order)', () => {
     expect(used).toBeUndefined(); // 手槍 belongs to Pistol, so position 4 disagrees
   });
 });
+
+describe('full names from other sources', () => {
+  it("are only a fallback: 巴哈's own name is still learned and wins", () => {
+    const p = { ...places(['The Pentagon']), fromOtherSources: { 'The Pentagon': '五角大廈' } };
+    expect(learnNames(english, chinese, p, brands())?.places).toEqual({ 'The Pentagon': '五角' });
+  });
+});

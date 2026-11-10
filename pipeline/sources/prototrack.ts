@@ -15,7 +15,10 @@ export const PROTOTRACK_PAGE = 'https://prototrack.gg/target-loot/target-loot.ph
 export const nameKey = (s: string) => s.toLowerCase().replace(/[^a-z0-9]/g, '').replace(/s$/, '');
 const key = nameKey;
 /** Mission names as 巴哈's daily post writes them (data/places.json; the robot learns new ones). */
-const PLACE: Record<string, string> = Object.fromEntries(Object.entries(places.places as Record<string, string>).map(([en, zh]) => [key(en), zh]));
+const PLACE: Record<string, string> = Object.fromEntries(
+  // 巴哈's own names win over full names from other sources.
+  Object.entries({ ...(places.fromOtherSources as Record<string, string>), ...(places.places as Record<string, string>) }).map(([en, zh]) => [key(en), zh]),
+);
 export const CJK = /[㐀-鿿]/;
 
 type Entry = { en: string; aliases: string[]; icon: string | null };

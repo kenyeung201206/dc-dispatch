@@ -1,10 +1,15 @@
 {
- "_note": "戰鬥升級 mission names: ProtoTrack's English name → the Chinese name 巴哈's daily post uses. The robot adds new ones itself when 巴哈 and ProtoTrack list the same day in the same order (pipeline/learn-names.ts).",
+ "_note": "戰鬥升級 mission names. places = the names 巴哈's daily post uses (the robot adds new ones itself when 巴哈 and ProtoTrack list the same day in the same order; pipeline/learn-names.ts). fromOtherSources = full names confirmed in other 巴哈 posts, shown only until 巴哈's daily post teaches its own name.",
  "places": {
   "The Art Museum": "美術館",
   "Manning National Zoo": "曼寧",
   "Camp White Oak": "白橡木",
   "The Pentagon": "五角",
   "DARPA Research Labs": "國防實驗室"
+ },
+ "fromOtherSources": {
+  "Bank Headquarters": "銀行總部",
+  "American History Museum": "美國歷史博物館",
+  "Space Administration HQ": "太空總署總部"
  }
 }
