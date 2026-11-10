@@ -11,7 +11,8 @@
     "UgkxxbbR0nra2dptHTha262Bpd2bQKDgI9QU",
     "UgkxCgPGH82TdbRxWO1Q2aiBJTFtV0mMpWsT",
     "UgkxH913onsC8nvRyty1hM-1ngqv_Iu_jNrc",
-    "UgkxCgrDsTP7KSzTgbQBoiBDpbYzx6nDS4rk"
+    "UgkxCgrDsTP7KSzTgbQBoiBDpbYzx6nDS4rk",
+    "UgkxNvbhteNUDXtR-OIEnvniFwYPtAAQKaOX"
   ],
   "creator": {
     "name": "灰帽特工 Gray Hat Agent",
@@ -201,6 +202,19 @@
     }
   ],
   "posts": [
+    {
+      "id": "post-yptaaqkaox",
+      "title_zhHant": "11月的第二輪twitch掉寶現已開啟",
+      "title_en": "11月的第二輪twitch掉寶現已開啟",
+      "text_zhHant": "在11月10日至11月17日期間進入twitch全境封鎖合作直播間，觀看達到指定時長即可獲得限定獎勵!",
+      "text_en": "在11月10日至11月17日期間進入twitch全境封鎖合作直播間，觀看達到指定時長即可獲得限定獎勵!",
+      "category": "community",
+      "publishedAt": "2026-11-10",
+      "postUrl": "https://www.youtube.com/post/UgkxNvbhteNUDXtR-OIEnvniFwYPtAAQKaOX",
+      "seen": "2026-11-10",
+      "until": "2026-12-01",
+      "auto": true
+    },
     {
       "id": "post-yzx6nds4rk",
       "title_zhHant": "維護警報",
