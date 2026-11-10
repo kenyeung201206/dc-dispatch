@@ -10,7 +10,8 @@
     "UgkxWX4e-8qxkrEOH7nnUotwU1gdvZeerJkE",
     "UgkxxbbR0nra2dptHTha262Bpd2bQKDgI9QU",
     "UgkxCgPGH82TdbRxWO1Q2aiBJTFtV0mMpWsT",
-    "UgkxH913onsC8nvRyty1hM-1ngqv_Iu_jNrc"
+    "UgkxH913onsC8nvRyty1hM-1ngqv_Iu_jNrc",
+    "UgkxCgrDsTP7KSzTgbQBoiBDpbYzx6nDS4rk"
   ],
   "creator": {
     "name": "灰帽特工 Gray Hat Agent",
@@ -200,6 +201,19 @@
     }
   ],
   "posts": [
+    {
+      "id": "post-yzx6nds4rk",
+      "title_zhHant": "維護警報",
+      "title_en": "維護警報",
+      "text_zhHant": "為了部署跨平台基礎設施更新 遊戲將於11月10日下午4:30分進行停機維護。 預計停機時長:5小時",
+      "text_en": "為了部署跨平台基礎設施更新 遊戲將於11月10日下午4:30分進行停機維護。 預計停機時長:5小時",
+      "category": "updates",
+      "publishedAt": "2026-11-09",
+      "postUrl": "https://www.youtube.com/post/UgkxCgrDsTP7KSzTgbQBoiBDpbYzx6nDS4rk",
+      "seen": "2026-11-10",
+      "until": "2026-11-30",
+      "auto": true
+    },
     {
       "id": "twitch-drops-2026-11-03",
       "title_zhHant": "11 月第一輪 Twitch 掉寶開跑",
