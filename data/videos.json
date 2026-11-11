@@ -1,6 +1,32 @@
 {
   "videos": [
     {
+      "id": "7i84JdUmclg",
+      "title": "MAX OUT BRAYLEIGH CALLAHAN Companion Talents! #TheDivision2 #BrayleighCallahan #CompanionTalents",
+      "channelName": "ManaWar Gaming",
+      "channelUrl": "https://www.youtube.com/channel/UCrLMaFhu9SYwosWBgqm0tMQ",
+      "publishedAt": "2026-11-11T04:17:10.000Z",
+      "durationSec": 171,
+      "official": false,
+      "row": "more",
+      "checkedAt": "2026-11-11T04:52:46.338Z",
+      "via": "youtube-api",
+      "rumour": false
+    },
+    {
+      "id": "WKjlSqTHs-8",
+      "title": "Golden Bullet Time! | PSN |🪓🥷 DAG 🔴LIVE | Division 2",
+      "channelName": "Died Again Gaming",
+      "channelUrl": "https://www.youtube.com/channel/UCrK99e79TwSpgElDb-r-Lpg",
+      "publishedAt": "2026-11-11T02:48:58.000Z",
+      "durationSec": 8068,
+      "official": false,
+      "row": "more",
+      "checkedAt": "2026-11-11T04:52:46.338Z",
+      "via": "youtube-api",
+      "rumour": false
+    },
+    {
       "id": "EaX2WEDGquI",
       "title": "New \"Specter's Gloves\" Are A MENACE... | Division 2 Y8S3 PVP Build",
       "channelName": "RogueGold",
@@ -9,7 +35,7 @@
       "durationSec": 514,
       "official": false,
       "row": "build-guides",
-      "checkedAt": "2026-11-11T02:44:24.137Z",
+      "checkedAt": "2026-11-11T04:52:46.338Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -22,7 +48,7 @@
       "durationSec": 1876,
       "official": false,
       "row": "build-guides",
-      "checkedAt": "2026-11-11T02:44:24.137Z",
+      "checkedAt": "2026-11-11T04:52:46.338Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -35,7 +61,7 @@
       "durationSec": 1810,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-11T02:44:24.137Z",
+      "checkedAt": "2026-11-11T04:52:46.338Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -48,20 +74,7 @@
       "durationSec": 368,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-11T02:44:24.137Z",
-      "via": "youtube-api",
-      "rumour": false
-    },
-    {
-      "id": "WKjlSqTHs-8",
-      "title": "Golden Bullet Time! | PSN |🪓🥷 DAG 🔴LIVE | Division 2",
-      "channelName": "Died Again Gaming",
-      "channelUrl": "https://www.youtube.com/channel/UCrK99e79TwSpgElDb-r-Lpg",
-      "publishedAt": "2026-11-11T00:10:13.000Z",
-      "durationSec": 8068,
-      "official": false,
-      "row": "more",
-      "checkedAt": "2026-11-11T02:44:24.137Z",
+      "checkedAt": "2026-11-11T04:52:46.338Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -74,7 +87,7 @@
       "durationSec": 34263,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-11T02:44:24.137Z",
+      "checkedAt": "2026-11-11T04:52:46.338Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -87,7 +100,7 @@
       "durationSec": 104,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-11T02:44:24.137Z",
+      "checkedAt": "2026-11-11T04:52:46.338Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -100,7 +113,7 @@
       "durationSec": 676,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-11T02:44:24.137Z",
+      "checkedAt": "2026-11-11T04:52:46.338Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -113,7 +126,7 @@
       "durationSec": 11215,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-11T02:44:24.137Z",
+      "checkedAt": "2026-11-11T04:52:46.338Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -126,7 +139,7 @@
       "durationSec": 982,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-11T02:44:24.137Z",
+      "checkedAt": "2026-11-11T04:52:46.338Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -139,7 +152,7 @@
       "durationSec": 266,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-11T02:44:24.137Z",
+      "checkedAt": "2026-11-11T04:52:46.338Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -152,7 +165,7 @@
       "durationSec": 381,
       "official": false,
       "row": "build-guides",
-      "checkedAt": "2026-11-11T02:44:24.137Z",
+      "checkedAt": "2026-11-11T04:52:46.338Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -165,7 +178,7 @@
       "durationSec": 70,
       "official": false,
       "row": "build-guides",
-      "checkedAt": "2026-11-11T02:44:24.137Z",
+      "checkedAt": "2026-11-11T04:52:46.338Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -178,7 +191,7 @@
       "durationSec": 35,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-11T02:44:24.137Z",
+      "checkedAt": "2026-11-11T04:52:46.338Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -191,7 +204,7 @@
       "durationSec": 36,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-11T02:44:24.137Z",
+      "checkedAt": "2026-11-11T04:52:46.338Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -204,7 +217,7 @@
       "durationSec": 4440,
       "official": false,
       "row": "intel",
-      "checkedAt": "2026-11-11T02:44:24.137Z",
+      "checkedAt": "2026-11-11T04:52:46.338Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -217,7 +230,7 @@
       "durationSec": 376,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-11T02:44:24.137Z",
+      "checkedAt": "2026-11-11T04:52:46.338Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -230,7 +243,7 @@
       "durationSec": 1526,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-11T02:44:24.137Z",
+      "checkedAt": "2026-11-11T04:52:46.338Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -243,7 +256,7 @@
       "durationSec": 525,
       "official": false,
       "row": "build-guides",
-      "checkedAt": "2026-11-11T02:44:24.137Z",
+      "checkedAt": "2026-11-11T04:52:46.338Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -256,7 +269,7 @@
       "durationSec": 21571,
       "official": false,
       "row": "intel",
-      "checkedAt": "2026-11-11T02:44:24.137Z",
+      "checkedAt": "2026-11-11T04:52:46.338Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -269,7 +282,7 @@
       "durationSec": 900,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-11T02:44:24.137Z",
+      "checkedAt": "2026-11-11T04:52:46.338Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -295,7 +308,7 @@
       "durationSec": 5337,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-11T02:44:24.137Z",
+      "checkedAt": "2026-11-11T04:52:46.338Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -321,7 +334,7 @@
       "durationSec": 1163,
       "official": false,
       "row": "build-guides",
-      "checkedAt": "2026-11-11T02:44:24.137Z",
+      "checkedAt": "2026-11-11T04:52:46.338Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -334,7 +347,7 @@
       "durationSec": 625,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-11T02:44:24.137Z",
+      "checkedAt": "2026-11-11T04:52:46.338Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -347,7 +360,7 @@
       "durationSec": 141,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-11T02:44:24.137Z",
+      "checkedAt": "2026-11-11T04:52:46.338Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -360,7 +373,7 @@
       "durationSec": 13400,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-11T02:44:24.137Z",
+      "checkedAt": "2026-11-11T04:52:46.338Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -373,7 +386,7 @@
       "durationSec": 19929,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-11T02:44:24.137Z",
+      "checkedAt": "2026-11-11T04:52:46.338Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -386,7 +399,7 @@
       "durationSec": 1332,
       "official": false,
       "row": "intel",
-      "checkedAt": "2026-11-11T02:44:24.137Z",
+      "checkedAt": "2026-11-11T04:52:46.338Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -399,7 +412,7 @@
       "durationSec": 1171,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-11T02:44:24.137Z",
+      "checkedAt": "2026-11-11T04:52:46.338Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -412,7 +425,7 @@
       "durationSec": 201,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-11T02:44:24.137Z",
+      "checkedAt": "2026-11-11T04:52:46.338Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -425,20 +438,7 @@
       "durationSec": 11,
       "official": false,
       "row": "build-guides",
-      "checkedAt": "2026-11-11T02:44:24.137Z",
-      "via": "youtube-api",
-      "rumour": false
-    },
-    {
-      "id": "s6d4JBPpvuA",
-      "title": "《全境封鎖 2》Tom Clancy’s The Division 2   新寵兒 鼬獾  您喜歡還請謝謝訂閱   (王偉遊戲直播)",
-      "channelName": "王偉",
-      "channelUrl": "https://www.youtube.com/channel/UCoMK4Qk2nvBqq6NOUkDVgCg",
-      "publishedAt": "2026-11-10T00:22:21.000Z",
-      "durationSec": 6922,
-      "official": false,
-      "row": "more",
-      "checkedAt": "2026-11-11T02:44:24.137Z",
+      "checkedAt": "2026-11-11T04:52:46.338Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -490,7 +490,7 @@
       "publishedAt": "2026-11-02T13:48:39.000Z",
       "official": true,
       "row": "more",
-      "checkedAt": "2026-11-11T02:44:24.137Z",
+      "checkedAt": "2026-11-11T04:52:46.338Z",
       "via": "ubisoft-page",
       "rumour": false
     },
@@ -503,7 +503,7 @@
       "publishedAt": "2026-10-30T18:16:35.000Z",
       "official": true,
       "row": "trailers",
-      "checkedAt": "2026-11-11T02:44:24.137Z",
+      "checkedAt": "2026-11-11T04:52:46.338Z",
       "via": "ubisoft-page",
       "rumour": false
     },
