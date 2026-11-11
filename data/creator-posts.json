@@ -12,7 +12,8 @@
     "UgkxCgPGH82TdbRxWO1Q2aiBJTFtV0mMpWsT",
     "UgkxH913onsC8nvRyty1hM-1ngqv_Iu_jNrc",
     "UgkxCgrDsTP7KSzTgbQBoiBDpbYzx6nDS4rk",
-    "UgkxNvbhteNUDXtR-OIEnvniFwYPtAAQKaOX"
+    "UgkxNvbhteNUDXtR-OIEnvniFwYPtAAQKaOX",
+    "UgkxSN_-cqtuZKQFmhEU8pO3Y-g48oD2Kw9L"
   ],
   "creator": {
     "name": "灰帽特工 Gray Hat Agent",
@@ -202,6 +203,19 @@
     }
   ],
   "posts": [
+    {
+      "id": "post-g48od2kw9l",
+      "title_zhHant": "維護警報⚠️",
+      "title_en": "維護警報⚠️",
+      "text_zhHant": "📅 11月12日，星期四 下午4:30分 ⏳ 預計停機時間為6小時 🔸本次維護內容包括： - 將PC玩家遷移至跨平台伺服器。 - 提升伺服器整體穩定性。 - 修正影響「大師難度任務」的配對問題。 - 暫時調整「蓄勢待發」奇特手套的傷害值，以解決傷害過高導致伺服器不穩定的問題。我們計劃在第四季推出永久修復方案後，恢復此調整。 🔸匹配系統更新： 我們也修正了玩家無法組隊（兩人以上）的配對問題。現在您應該可以正常組隊了。",
+      "text_en": "📅 11月12日，星期四 下午4:30分 ⏳ 預計停機時間為6小時 🔸本次維護內容包括： - 將PC玩家遷移至跨平台伺服器。 - 提升伺服器整體穩定性。 - 修正影響「大師難度任務」的配對問題。 - 暫時調整「蓄勢待發」奇特手套的傷害值，以解決傷害過高導致伺服器不穩定的問題。我們計劃在第四季推出永久修復方案後，恢復此調整。 🔸匹配系統更新： 我們也修正了玩家無法組隊（兩人以上）的配對問題。現在您應該可以正常組隊了。",
+      "category": "updates",
+      "publishedAt": "2026-11-11",
+      "postUrl": "https://www.youtube.com/post/UgkxSN_-cqtuZKQFmhEU8pO3Y-g48oD2Kw9L",
+      "seen": "2026-11-11",
+      "until": "2026-12-02",
+      "auto": true
+    },
     {
       "id": "post-yptaaqkaox",
       "title_zhHant": "11月的第二輪twitch掉寶現已開啟",
