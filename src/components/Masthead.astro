@@ -30,6 +30,8 @@ const bgPool = library.images
     credit: locale === 'en' ? i.attribution : sourceZh(i.attribution),
     creditUrl: i.attributionUrl,
   }));
+/** The site owner's own YouTube channel, linked at the top of every page. */
+const OWNER_CHANNEL = 'https://www.youtube.com/channel/UCjG8IjAkwj1G7VyHVzDbbFw';
 const season = edition.meta ? (locale === 'en' ? edition.meta.season_en : edition.meta.season_zhHant) : null;
 ---
 <!-- Phone: compact sticky bar -->
@@ -65,6 +67,9 @@ const season = edition.meta ? (locale === 'en' ? edition.meta.season_en : editio
       <button class="chip-btn" type="button" data-theme-toggle aria-label={t(locale, 'theme.toggle')}>
         <span class="when-day">◐ {t(locale, 'theme.night')}</span><span class="when-night">◑ {t(locale, 'theme.day')}</span>
       </button>
+    </div>
+    <div class="rail-yt">
+      <a class="yt" href={OWNER_CHANNEL} target="_blank" rel="noopener noreferrer"><span class="yt-play" aria-hidden="true">▶</span>{t(locale, 'owner.youtube')} ↗</a>
     </div>
   </dl>
 </header>
@@ -317,6 +322,34 @@ const season = edition.meta ? (locale === 'en' ? edition.meta.season_en : editio
     margin: 0;
     min-width: 0;
     overflow-wrap: anywhere;
+  }
+  .rail > .rail-yt {
+    grid-column: 1 / -1;
+    display: block;
+    margin-top: 8px;
+    position: relative;
+    z-index: 1;
+  }
+  .yt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    min-height: var(--tap);
+    padding: 4px 10px;
+    background: #c4302b;
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    border: 1.5px solid #c4302b;
+  }
+  .yt:hover,
+  .yt:focus-visible {
+    background: #a32622;
+    color: #fff;
+  }
+  .yt-play {
+    font-size: 0.8em;
   }
   .rail > .rail-tools {
     grid-column: 1 / -1;
