@@ -1,7 +1,7 @@
 {
   "date": "2026-11-11",
   "editionNumber": 8,
-  "generatedAt": "2026-11-10T22:36:32.778Z",
+  "generatedAt": "2026-11-11T00:50:04.938Z",
   "meta": {
     "season_en": "Red Horizon",
     "season_zhHant": "Red Horizon 賽季",
@@ -17,7 +17,7 @@
       "title_orig": "The Division 2: Echoes of Central Park Event Pass Twitch Drops",
       "lang_orig": "en",
       "publishedAt": "2026-11-10T16:00:00.000Z",
-      "fetchedAt": "2026-11-10T22:36:32.778Z",
+      "fetchedAt": "2026-11-11T00:50:04.938Z",
       "category": "community",
       "tags": [
         "event",
@@ -59,7 +59,7 @@
       "title_orig": "[TUY8S3.3] Echoes of Central Park Launch, Crossplay Rollout, Conflict Improvements & More",
       "lang_orig": "en",
       "publishedAt": "2026-11-02T15:45:00.000Z",
-      "fetchedAt": "2026-11-10T22:36:32.778Z",
+      "fetchedAt": "2026-11-11T00:50:04.938Z",
       "category": "updates",
       "tags": [
         "title-update",
@@ -100,7 +100,7 @@
       "title_orig": "The Division 2: Echoes of Central Park DLC is available now!",
       "lang_orig": "en",
       "publishedAt": "2026-11-03T15:00:00.000Z",
-      "fetchedAt": "2026-11-10T22:36:32.778Z",
+      "fetchedAt": "2026-11-11T00:50:04.938Z",
       "category": "missions",
       "tags": [
         "dlc"
@@ -227,7 +227,7 @@
       "title_orig": "The Division 2: 6X XP Event",
       "lang_orig": "en",
       "publishedAt": "2026-11-06T10:31:09.000Z",
-      "fetchedAt": "2026-11-10T22:36:32.778Z",
+      "fetchedAt": "2026-11-11T00:50:04.938Z",
       "category": "missions",
       "tags": [
         "event"
@@ -281,7 +281,7 @@
       "title_orig": "The Division 2: Echoes of Central Park Launch Twitch Drops",
       "lang_orig": "en",
       "publishedAt": "2026-11-03T15:00:00.000Z",
-      "fetchedAt": "2026-11-10T22:36:32.778Z",
+      "fetchedAt": "2026-11-11T00:50:04.938Z",
       "category": "community",
       "tags": [
         "twitch-drops",
@@ -402,7 +402,7 @@
       "title_orig": "[TUY8S3.3] Echoes of Central Park Launch, Crossplay Rollout, Conflict Improvements & More",
       "lang_orig": "en",
       "publishedAt": "2026-11-02T15:45:00.000Z",
-      "fetchedAt": "2026-11-10T22:36:32.778Z",
+      "fetchedAt": "2026-11-11T00:50:04.938Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -513,6 +513,33 @@
       "status": "new"
     },
     {
+      "id": "p3ec8l",
+      "sourceId": "youtube",
+      "sourceName": "Died Again Gaming",
+      "sourceUrl": "https://www.youtube.com/watch?v=WKjlSqTHs-8",
+      "title_orig": "Golden Bullet Time! | PSN |🪓🥷 DAG 🔴LIVE | Division 2",
+      "lang_orig": "en",
+      "publishedAt": "2026-11-11T00:10:13.000Z",
+      "fetchedAt": "2026-11-11T00:50:04.938Z",
+      "category": "community",
+      "tags": [
+        "video"
+      ],
+      "importance": 55,
+      "confidence": "community",
+      "headline_en": "Golden Bullet Time! | PSN |🪓🥷 DAG 🔴LIVE | Division 2",
+      "headline_zhHant": "pending",
+      "summary_en": "Live streaming The Division 2! Today we are playing, chilling, and testing out new builds in the open world.",
+      "summary_zhHant": "pending",
+      "summaryKind": "extract",
+      "alsoReportedBy": [],
+      "media": [],
+      "videoId": "WKjlSqTHs-8",
+      "relatedIds": [],
+      "firstSeenAt": "2026-11-11T00:50:04.938Z",
+      "status": "new"
+    },
+    {
       "id": "e0m456",
       "sourceId": "youtube",
       "sourceName": "Died Again Gaming",
@@ -564,6 +591,61 @@
       "videoId": "VWW6Gn4Td5g",
       "relatedIds": [],
       "firstSeenAt": "2026-11-10T16:46:28.397Z",
+      "status": "new"
+    },
+    {
+      "id": "19lewr0",
+      "sourceId": "youtube",
+      "sourceName": "Streamer House",
+      "sourceUrl": "https://www.youtube.com/watch?v=pvxLoaNwaZU",
+      "title_orig": "The Division 2 — Jesus Hunts Exotics and Unleashes Golden Bullet",
+      "lang_orig": "en",
+      "publishedAt": "2026-11-10T15:10:21.000Z",
+      "fetchedAt": "2026-11-11T00:50:04.938Z",
+      "category": "updates",
+      "tags": [
+        "exotic",
+        "video"
+      ],
+      "importance": 54,
+      "confidence": "community",
+      "headline_en": "The Division 2 — Jesus Hunts Exotics and Unleashes Golden Bullet",
+      "headline_zhHant": "pending",
+      "summary_en": "Jesus hunts elusive gear in Tom Clancy's The Division 2, tests Iron Will vs. crit, then proves why Golden Bullet is must-see chaos.",
+      "summary_zhHant": "pending",
+      "summaryKind": "extract",
+      "alsoReportedBy": [],
+      "media": [],
+      "videoId": "pvxLoaNwaZU",
+      "relatedIds": [],
+      "firstSeenAt": "2026-11-11T00:50:04.938Z",
+      "status": "new"
+    },
+    {
+      "id": "7ax7gz",
+      "sourceId": "youtube",
+      "sourceName": "純天然",
+      "sourceUrl": "https://www.youtube.com/watch?v=JqtNg2iL-ao",
+      "title_orig": "全境封鎖2 - 黃金子彈+法夫納=悖論警長? 卑鄙餘燼: 這次我正大光明",
+      "lang_orig": "zh",
+      "publishedAt": "2026-11-11T00:34:33.000Z",
+      "fetchedAt": "2026-11-11T00:50:04.938Z",
+      "category": "community",
+      "tags": [
+        "video"
+      ],
+      "importance": 54,
+      "confidence": "community",
+      "headline_en": "pending",
+      "headline_zhHant": "全境封鎖2 - 黃金子彈+法夫納=悖論警長? 卑鄙餘燼: 這次我正大光明",
+      "summary_en": "pending",
+      "summary_zhHant": "全境封鎖2 - 黃金子彈+法夫納=悖論警長? 卑鄙餘燼: 這次我正大光明",
+      "summaryKind": "extract",
+      "alsoReportedBy": [],
+      "media": [],
+      "videoId": "JqtNg2iL-ao",
+      "relatedIds": [],
+      "firstSeenAt": "2026-11-11T00:50:04.938Z",
       "status": "new"
     },
     {
@@ -648,6 +730,30 @@
       "status": "new"
     },
     {
+      "id": "g5zpjp",
+      "sourceId": "bahamut",
+      "sourceName": "巴哈姆特 全境封鎖板",
+      "sourceUrl": "https://forum.gamer.com.tw/C.php?bsn=24460&snA=32090",
+      "title_orig": "【心得】裝備專精系統心得",
+      "lang_orig": "zh",
+      "publishedAt": "2026-11-11T00:42:04.938Z",
+      "fetchedAt": "2026-11-11T00:50:04.938Z",
+      "category": "arsenal",
+      "tags": [],
+      "importance": 52,
+      "confidence": "community",
+      "headline_en": "pending",
+      "headline_zhHant": "【心得】裝備專精系統心得",
+      "summary_en": "pending",
+      "summary_zhHant": "先附上人權 前言 為什麼想寫這個？ 因為不知道為什麼最近看到很多人在問專精 裝備專精系統本意是給已經走進畢業大門內的老手…",
+      "summaryKind": "extract",
+      "alsoReportedBy": [],
+      "media": [],
+      "relatedIds": [],
+      "firstSeenAt": "2026-11-11T00:50:04.938Z",
+      "status": "new"
+    },
+    {
       "id": "1ok88ji",
       "sourceId": "bahamut",
       "sourceName": "巴哈姆特 全境封鎖板",
@@ -655,7 +761,7 @@
       "title_orig": "【情報】【已開機】關機維護公告 - 2026/11/10(二) 16:30，延長 1 小時",
       "lang_orig": "zh",
       "publishedAt": "2026-11-10T15:59:00.000Z",
-      "fetchedAt": "2026-11-10T22:36:32.778Z",
+      "fetchedAt": "2026-11-11T00:50:04.938Z",
       "category": "updates",
       "tags": [],
       "importance": 51,
@@ -679,7 +785,7 @@
       "title_orig": "【情報】11/10 每日戰鬥升級掉落 & 原型商人",
       "lang_orig": "zh",
       "publishedAt": "2026-11-10T04:00:00.000Z",
-      "fetchedAt": "2026-11-10T22:36:32.778Z",
+      "fetchedAt": "2026-11-11T00:50:04.938Z",
       "category": "updates",
       "tags": [],
       "importance": 50,
@@ -703,7 +809,7 @@
       "title_orig": "11月的第二輪twitch掉寶現已開啟",
       "lang_orig": "zh",
       "publishedAt": "2026-11-10T00:00:00Z",
-      "fetchedAt": "2026-11-10T22:36:32.778Z",
+      "fetchedAt": "2026-11-11T00:50:04.938Z",
       "category": "community",
       "tags": [
         "creator"
@@ -729,7 +835,7 @@
       "title_orig": "維護警報",
       "lang_orig": "zh",
       "publishedAt": "2026-11-09T00:00:00Z",
-      "fetchedAt": "2026-11-10T22:36:32.778Z",
+      "fetchedAt": "2026-11-11T00:50:04.938Z",
       "category": "updates",
       "tags": [
         "creator"
@@ -755,7 +861,7 @@
       "title_orig": "Last Chance to Pre-Purchase The Division 2: Echoes of Central Park",
       "lang_orig": "en",
       "publishedAt": "2026-10-28T13:29:29.000Z",
-      "fetchedAt": "2026-11-10T22:36:32.778Z",
+      "fetchedAt": "2026-11-11T00:50:04.938Z",
       "category": "missions",
       "tags": [
         "dlc",
@@ -782,7 +888,7 @@
       "title_orig": "Echoes of Central Park Launch Livestream",
       "lang_orig": "en",
       "publishedAt": "2026-10-27T16:01:04.000Z",
-      "fetchedAt": "2026-11-10T22:36:32.778Z",
+      "fetchedAt": "2026-11-11T00:50:04.938Z",
       "category": "community",
       "tags": [],
       "importance": 40,
@@ -806,7 +912,7 @@
       "title_orig": "Echoes of Central Park Costume Contest",
       "lang_orig": "en",
       "publishedAt": "2026-10-27T10:34:40.000Z",
-      "fetchedAt": "2026-11-10T22:36:32.778Z",
+      "fetchedAt": "2026-11-11T00:50:04.938Z",
       "category": "community",
       "tags": [],
       "importance": 40,
@@ -830,7 +936,7 @@
       "title_orig": "【攻略】部分技能的解鎖方式整理",
       "lang_orig": "zh",
       "publishedAt": "2026-11-05T05:49:00.000Z",
-      "fetchedAt": "2026-11-10T22:36:32.778Z",
+      "fetchedAt": "2026-11-11T00:50:04.938Z",
       "category": "builds",
       "tags": [],
       "importance": 40,
@@ -854,12 +960,12 @@
       "title_orig": "【情報】中央公園的迴響 DLC 夥伴 - 相關資訊",
       "lang_orig": "zh",
       "publishedAt": "2026-11-05T04:03:00.000Z",
-      "fetchedAt": "2026-11-10T22:36:32.778Z",
+      "fetchedAt": "2026-11-11T00:50:04.938Z",
       "category": "missions",
       "tags": [
         "dlc"
       ],
-      "importance": 40,
+      "importance": 39,
       "confidence": "community",
       "headline_en": "pending",
       "headline_zhHant": "【情報】中央公園的迴響 DLC 夥伴 - 相關資訊",
@@ -880,10 +986,10 @@
       "title_orig": "【情報】*劇透注意* Y8S3/TU29 獵捕行動 Red Horizon 偵查任務 每週統整",
       "lang_orig": "zh",
       "publishedAt": "2026-11-03T17:07:00.000Z",
-      "fetchedAt": "2026-11-10T22:36:32.778Z",
+      "fetchedAt": "2026-11-11T00:50:04.938Z",
       "category": "updates",
       "tags": [],
-      "importance": 37,
+      "importance": 36,
       "confidence": "community",
       "headline_en": "pending",
       "headline_zhHant": "【情報】*劇透注意* Y8S3/TU29 獵捕行動 Red Horizon 偵查任務 每週統整",
@@ -904,7 +1010,7 @@
       "title_orig": "【心得】無陷阱手T10日蝕複合控場(全汞合金)",
       "lang_orig": "zh",
       "publishedAt": "2026-11-03T05:31:00.000Z",
-      "fetchedAt": "2026-11-10T22:36:32.778Z",
+      "fetchedAt": "2026-11-11T00:50:04.938Z",
       "category": "builds",
       "tags": [],
       "importance": 35,
@@ -928,7 +1034,7 @@
       "title_orig": "【情報】【已開機】關機維護公告 - 2026/11/03(二) 16:00 (Y8S3.3 中央公園DLC)，延長1.5小時",
       "lang_orig": "zh",
       "publishedAt": "2026-11-02T16:43:00.000Z",
-      "fetchedAt": "2026-11-10T22:36:32.778Z",
+      "fetchedAt": "2026-11-11T00:50:04.938Z",
       "category": "updates",
       "tags": [
         "dlc"
@@ -951,22 +1057,22 @@
     {
       "sourceId": "steam-news",
       "ok": true,
-      "checkedAt": "2026-11-10T22:36:32.778Z"
+      "checkedAt": "2026-11-11T00:50:04.938Z"
     },
     {
       "sourceId": "ubisoft-en",
       "ok": true,
-      "checkedAt": "2026-11-10T22:36:32.778Z"
+      "checkedAt": "2026-11-11T00:50:04.938Z"
     },
     {
       "sourceId": "ubisoft-zh-tw",
       "ok": true,
-      "checkedAt": "2026-11-10T22:36:32.778Z"
+      "checkedAt": "2026-11-11T00:50:04.938Z"
     },
     {
       "sourceId": "bahamut",
       "ok": true,
-      "checkedAt": "2026-11-10T22:36:32.778Z"
+      "checkedAt": "2026-11-11T00:50:04.938Z"
     }
   ]
 }
