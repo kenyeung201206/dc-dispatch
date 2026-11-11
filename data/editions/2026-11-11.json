@@ -1,7 +1,7 @@
 {
   "date": "2026-11-11",
   "editionNumber": 8,
-  "generatedAt": "2026-11-11T12:56:35.683Z",
+  "generatedAt": "2026-11-11T14:49:50.032Z",
   "meta": {
     "season_en": "Red Horizon",
     "season_zhHant": "Red Horizon 賽季",
@@ -17,7 +17,7 @@
       "title_orig": "The Division 2: Echoes of Central Park Event Pass Twitch Drops",
       "lang_orig": "en",
       "publishedAt": "2026-11-10T16:00:00.000Z",
-      "fetchedAt": "2026-11-11T12:56:35.683Z",
+      "fetchedAt": "2026-11-11T14:49:50.032Z",
       "category": "community",
       "tags": [
         "event",
@@ -59,7 +59,7 @@
       "title_orig": "[TUY8S3.3] Echoes of Central Park Launch, Crossplay Rollout, Conflict Improvements & More",
       "lang_orig": "en",
       "publishedAt": "2026-11-02T15:45:00.000Z",
-      "fetchedAt": "2026-11-11T12:56:35.683Z",
+      "fetchedAt": "2026-11-11T14:49:50.032Z",
       "category": "updates",
       "tags": [
         "title-update",
@@ -100,7 +100,7 @@
       "title_orig": "The Division 2: Echoes of Central Park DLC is available now!",
       "lang_orig": "en",
       "publishedAt": "2026-11-03T15:00:00.000Z",
-      "fetchedAt": "2026-11-11T12:56:35.683Z",
+      "fetchedAt": "2026-11-11T14:49:50.032Z",
       "category": "missions",
       "tags": [
         "dlc"
@@ -255,7 +255,7 @@
       "title_orig": "The Division 2: 6X XP Event",
       "lang_orig": "en",
       "publishedAt": "2026-11-06T10:31:09.000Z",
-      "fetchedAt": "2026-11-11T12:56:35.683Z",
+      "fetchedAt": "2026-11-11T14:49:50.032Z",
       "category": "missions",
       "tags": [
         "event"
@@ -368,7 +368,7 @@
       "title_orig": "The Division 2: Echoes of Central Park Launch Twitch Drops",
       "lang_orig": "en",
       "publishedAt": "2026-11-03T15:00:00.000Z",
-      "fetchedAt": "2026-11-11T12:56:35.683Z",
+      "fetchedAt": "2026-11-11T14:49:50.032Z",
       "category": "community",
       "tags": [
         "twitch-drops",
@@ -513,7 +513,7 @@
       "title_orig": "[TUY8S3.3] Echoes of Central Park Launch, Crossplay Rollout, Conflict Improvements & More",
       "lang_orig": "en",
       "publishedAt": "2026-11-02T15:45:00.000Z",
-      "fetchedAt": "2026-11-11T12:56:35.683Z",
+      "fetchedAt": "2026-11-11T14:49:50.032Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -539,6 +539,34 @@
         "riskNote_en": "Known issue listed by Ubisoft. Workaround: Log out and back in to unlock it.",
         "riskNote_zhHant": "pending"
       }
+    },
+    {
+      "id": "akvsgk",
+      "sourceId": "youtube",
+      "sourceName": "widdz",
+      "sourceUrl": "https://www.youtube.com/watch?v=B1sny0IbaYs",
+      "title_orig": "The Narrator of Central Park Joined my Squad (The Division 2)",
+      "lang_orig": "en",
+      "publishedAt": "2026-11-11T14:08:28.000Z",
+      "fetchedAt": "2026-11-11T14:49:50.032Z",
+      "category": "missions",
+      "tags": [
+        "dlc",
+        "video"
+      ],
+      "importance": 57,
+      "confidence": "community",
+      "headline_en": "The Narrator of Central Park Joined my Squad (The Division 2)",
+      "headline_zhHant": "pending",
+      "summary_en": "I got the voice of the Narrator from Echoes of Central Park on my stream!",
+      "summary_zhHant": "pending",
+      "summaryKind": "extract",
+      "alsoReportedBy": [],
+      "media": [],
+      "videoId": "B1sny0IbaYs",
+      "relatedIds": [],
+      "firstSeenAt": "2026-11-11T14:49:50.032Z",
+      "status": "new"
     },
     {
       "id": "1bogu6v",
@@ -620,6 +648,33 @@
       "videoId": "Jc39x6QeCMQ",
       "relatedIds": [],
       "firstSeenAt": "2026-11-10T18:42:35.719Z",
+      "status": "new"
+    },
+    {
+      "id": "dzn108",
+      "sourceId": "youtube",
+      "sourceName": "widdz",
+      "sourceUrl": "https://www.youtube.com/watch?v=OU746i2Xm24",
+      "title_orig": "So I met the Narrator of Central Park (The Division 2)",
+      "lang_orig": "en",
+      "publishedAt": "2026-11-11T13:53:23.000Z",
+      "fetchedAt": "2026-11-11T14:49:50.032Z",
+      "category": "community",
+      "tags": [
+        "video"
+      ],
+      "importance": 56,
+      "confidence": "community",
+      "headline_en": "So I met the Narrator of Central Park (The Division 2)",
+      "headline_zhHant": "pending",
+      "summary_en": "▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ Like my work and wanna support me? ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ Follow my other social media sites and never miss a video! ▶Business inquiries only: widdzDOTA@gmail.com",
+      "summary_zhHant": "pending",
+      "summaryKind": "extract",
+      "alsoReportedBy": [],
+      "media": [],
+      "videoId": "OU746i2Xm24",
+      "relatedIds": [],
+      "firstSeenAt": "2026-11-11T14:49:50.032Z",
       "status": "new"
     },
     {
@@ -986,7 +1041,7 @@
       "title_orig": "【情報】11/11 每日戰鬥升級掉落 & 原型商人",
       "lang_orig": "zh",
       "publishedAt": "2026-11-11T04:00:00.000Z",
-      "fetchedAt": "2026-11-11T12:56:35.683Z",
+      "fetchedAt": "2026-11-11T14:49:50.032Z",
       "category": "updates",
       "tags": [],
       "importance": 51,
@@ -1009,8 +1064,8 @@
       "sourceUrl": "https://forum.gamer.com.tw/C.php?bsn=24460&snA=32090",
       "title_orig": "【心得】裝備專精系統心得",
       "lang_orig": "zh",
-      "publishedAt": "2026-11-11T00:56:35.683Z",
-      "fetchedAt": "2026-11-11T12:56:35.683Z",
+      "publishedAt": "2026-11-11T00:49:50.032Z",
+      "fetchedAt": "2026-11-11T14:49:50.032Z",
       "category": "arsenal",
       "tags": [],
       "importance": 51,
@@ -1034,7 +1089,7 @@
       "title_orig": "【情報】【已開機】關機維護公告 - 2026/11/10(二) 16:30，延長 1 小時",
       "lang_orig": "zh",
       "publishedAt": "2026-11-10T15:59:00.000Z",
-      "fetchedAt": "2026-11-11T12:56:35.683Z",
+      "fetchedAt": "2026-11-11T14:49:50.032Z",
       "category": "updates",
       "tags": [],
       "importance": 50,
@@ -1058,7 +1113,7 @@
       "title_orig": "11月的第二輪twitch掉寶現已開啟",
       "lang_orig": "zh",
       "publishedAt": "2026-11-10T00:00:00Z",
-      "fetchedAt": "2026-11-11T12:56:35.683Z",
+      "fetchedAt": "2026-11-11T14:49:50.032Z",
       "category": "community",
       "tags": [
         "creator"
@@ -1084,12 +1139,12 @@
       "title_orig": "維護警報",
       "lang_orig": "zh",
       "publishedAt": "2026-11-09T00:00:00Z",
-      "fetchedAt": "2026-11-11T12:56:35.683Z",
+      "fetchedAt": "2026-11-11T14:49:50.032Z",
       "category": "updates",
       "tags": [
         "creator"
       ],
-      "importance": 47,
+      "importance": 46,
       "confidence": "community",
       "headline_en": "維護警報",
       "headline_zhHant": "維護警報",
@@ -1110,7 +1165,7 @@
       "title_orig": "Last Chance to Pre-Purchase The Division 2: Echoes of Central Park",
       "lang_orig": "en",
       "publishedAt": "2026-10-28T13:29:29.000Z",
-      "fetchedAt": "2026-11-11T12:56:35.683Z",
+      "fetchedAt": "2026-11-11T14:49:50.032Z",
       "category": "missions",
       "tags": [
         "dlc",
@@ -1137,7 +1192,7 @@
       "title_orig": "Echoes of Central Park Launch Livestream",
       "lang_orig": "en",
       "publishedAt": "2026-10-27T16:01:04.000Z",
-      "fetchedAt": "2026-11-11T12:56:35.683Z",
+      "fetchedAt": "2026-11-11T14:49:50.032Z",
       "category": "community",
       "tags": [],
       "importance": 40,
@@ -1161,7 +1216,7 @@
       "title_orig": "Echoes of Central Park Costume Contest",
       "lang_orig": "en",
       "publishedAt": "2026-10-27T10:34:40.000Z",
-      "fetchedAt": "2026-11-11T12:56:35.683Z",
+      "fetchedAt": "2026-11-11T14:49:50.032Z",
       "category": "community",
       "tags": [],
       "importance": 40,
@@ -1185,10 +1240,10 @@
       "title_orig": "【攻略】部分技能的解鎖方式整理",
       "lang_orig": "zh",
       "publishedAt": "2026-11-05T05:49:00.000Z",
-      "fetchedAt": "2026-11-11T12:56:35.683Z",
+      "fetchedAt": "2026-11-11T14:49:50.032Z",
       "category": "builds",
       "tags": [],
-      "importance": 39,
+      "importance": 38,
       "confidence": "community",
       "headline_en": "pending",
       "headline_zhHant": "【攻略】部分技能的解鎖方式整理",
@@ -1209,7 +1264,7 @@
       "title_orig": "【情報】中央公園的迴響 DLC 夥伴 - 相關資訊",
       "lang_orig": "zh",
       "publishedAt": "2026-11-05T04:03:00.000Z",
-      "fetchedAt": "2026-11-11T12:56:35.683Z",
+      "fetchedAt": "2026-11-11T14:49:50.032Z",
       "category": "missions",
       "tags": [
         "dlc"
@@ -1235,7 +1290,7 @@
       "title_orig": "【情報】*劇透注意* Y8S3/TU29 獵捕行動 Red Horizon 偵查任務 每週統整",
       "lang_orig": "zh",
       "publishedAt": "2026-11-03T17:07:00.000Z",
-      "fetchedAt": "2026-11-11T12:56:35.683Z",
+      "fetchedAt": "2026-11-11T14:49:50.032Z",
       "category": "updates",
       "tags": [],
       "importance": 35,
@@ -1259,7 +1314,7 @@
       "title_orig": "【心得】無陷阱手T10日蝕複合控場(全汞合金)",
       "lang_orig": "zh",
       "publishedAt": "2026-11-03T05:31:00.000Z",
-      "fetchedAt": "2026-11-11T12:56:35.683Z",
+      "fetchedAt": "2026-11-11T14:49:50.032Z",
       "category": "builds",
       "tags": [],
       "importance": 34,
@@ -1283,7 +1338,7 @@
       "title_orig": "【情報】【已開機】關機維護公告 - 2026/11/03(二) 16:00 (Y8S3.3 中央公園DLC)，延長1.5小時",
       "lang_orig": "zh",
       "publishedAt": "2026-11-02T16:43:00.000Z",
-      "fetchedAt": "2026-11-11T12:56:35.683Z",
+      "fetchedAt": "2026-11-11T14:49:50.032Z",
       "category": "updates",
       "tags": [
         "dlc"
@@ -1306,22 +1361,22 @@
     {
       "sourceId": "steam-news",
       "ok": true,
-      "checkedAt": "2026-11-11T12:56:35.683Z"
+      "checkedAt": "2026-11-11T14:49:50.032Z"
     },
     {
       "sourceId": "ubisoft-en",
       "ok": true,
-      "checkedAt": "2026-11-11T12:56:35.683Z"
+      "checkedAt": "2026-11-11T14:49:50.032Z"
     },
     {
       "sourceId": "ubisoft-zh-tw",
       "ok": true,
-      "checkedAt": "2026-11-11T12:56:35.683Z"
+      "checkedAt": "2026-11-11T14:49:50.032Z"
     },
     {
       "sourceId": "bahamut",
       "ok": true,
-      "checkedAt": "2026-11-11T12:56:35.683Z"
+      "checkedAt": "2026-11-11T14:49:50.032Z"
     }
   ]
 }
