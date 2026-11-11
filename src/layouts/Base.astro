@@ -22,13 +22,13 @@ const { locale, title } = Astro.props;
 const pageTitle = title ? `${title} · ${t(locale, 'site.name')}` : t(locale, 'site.name');
 ---
 <!doctype html>
-<html lang={HTML_LANG[locale]} data-theme="day">
+<html lang={HTML_LANG[locale]} data-theme="night">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="robots" content="noindex, nofollow" />
-    <meta name="theme-color" content="#f3eee3" media="(prefers-color-scheme: light)" />
-    <meta name="theme-color" content="#121416" media="(prefers-color-scheme: dark)" />
+    <!-- Browser/phone bar colour: matches the theme (night by default; updated by the script below and the toggle). -->
+    <meta name="theme-color" content="#121416" />
     <!-- Home-screen app (iOS + Android). The manifest needs the sign-in cookie on the way back, hence use-credentials. -->
     <link rel="manifest" href="/manifest.webmanifest" crossorigin="use-credentials" />
     <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32.png" />
@@ -40,14 +40,14 @@ const pageTitle = title ? `${title} · ${t(locale, 'site.name')}` : t(locale, 's
     <meta name="apple-mobile-web-app-status-bar-style" content="default" />
     <title>{pageTitle}</title>
     <script is:inline>
-      // Pick the theme before first paint: saved choice, else the OS setting, else Day.
+      // Pick the theme before first paint: the reader's saved choice, else 夜報 (Night) — easier on the eyes.
       (function () {
         var t = null;
         try { t = localStorage.getItem('dcd.theme'); } catch (e) {}
-        if (t !== 'day' && t !== 'night') {
-          t = window.matchMedia && matchMedia('(prefers-color-scheme: dark)').matches ? 'night' : 'day';
-        }
+        if (t !== 'day' && t !== 'night') t = 'night';
         document.documentElement.dataset.theme = t;
+        var bar = document.querySelector('meta[name="theme-color"]');
+        if (bar) bar.setAttribute('content', t === 'day' ? '#f3eee3' : '#121416');
       })();
       // Opening or reloading a page starts at the top (browsers otherwise restore the last position,
       // e.g. the bottom of the long front page). Going Back still returns to where you were.
@@ -92,6 +92,7 @@ const pageTitle = title ? `${title} · ${t(locale, 'site.name')}` : t(locale, 's
           const root = document.documentElement;
           const next = root.dataset.theme === 'night' ? 'day' : 'night';
           root.dataset.theme = next;
+          document.querySelector('meta[name="theme-color"]')?.setAttribute('content', next === 'day' ? '#f3eee3' : '#121416');
           try {
             localStorage.setItem('dcd.theme', next);
           } catch {}

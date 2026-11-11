@@ -26,21 +26,23 @@ test('language switch keeps the page and is remembered', async ({ page }) => {
   await expect(page).toHaveURL(/\/zh-hant\/$/);
 });
 
-test('theme toggle switches Day/Night and survives reload', async ({ page }) => {
+test('starts in 夜報 (Night) even on a light OS; 日報 (Day) button switches and survives reload', async ({ page }) => {
   await page.emulateMedia({ colorScheme: 'light' });
   await page.goto('/en/');
   const html = page.locator('html');
-  await expect(html).toHaveAttribute('data-theme', 'day');
+  await expect(html).toHaveAttribute('data-theme', 'night');
   await page.locator('[data-theme-toggle]:visible').first().click();
-  await expect(html).toHaveAttribute('data-theme', 'night');
+  await expect(html).toHaveAttribute('data-theme', 'day');
+  await expect(page.locator('meta[name="theme-color"]')).toHaveAttribute('content', '#f3eee3');
   await page.reload();
-  await expect(html).toHaveAttribute('data-theme', 'night');
+  await expect(html).toHaveAttribute('data-theme', 'day');
 });
 
-test('follows the OS dark setting on first visit', async ({ page }) => {
+test('a dark OS also starts in 夜報 (Night)', async ({ page }) => {
   await page.emulateMedia({ colorScheme: 'dark' });
   await page.goto('/en/');
   await expect(page.locator('html')).toHaveAttribute('data-theme', 'night');
+  await expect(page.locator('meta[name="theme-color"]')).toHaveAttribute('content', '#121416');
 });
 
 for (const lang of ['en', 'zh-hant']) {
