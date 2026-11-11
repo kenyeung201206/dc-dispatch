@@ -44,7 +44,13 @@ const riskNote = item.glitch
   : null;
 const reportHref = `mailto:?subject=${encodeURIComponent(`[DC Dispatch] Translation issue: ${item.id}`)}&body=${encodeURIComponent(`Story: ${item.headline_en}\nPage: ${routes.story(locale, item.id)}\n\nWhat's wrong:\n`)}`;
 ---
-<Paper locale={locale} title={untranslated ? t(locale, 'story.noZh.title') : headline.text} current={item.category}>
+<Paper
+  locale={locale}
+  title={untranslated ? t(locale, 'story.noZh.title') : headline.text}
+  current={item.category}
+  description={untranslated || summary.pending ? undefined : summary.text.slice(0, 200)}
+  image={photo?.image.url ?? (item.videoId ? `https://i.ytimg.com/vi/${item.videoId}/hqdefault.jpg` : undefined)}
+>
   {
     untranslated && (
       <article class="story-page nozh">

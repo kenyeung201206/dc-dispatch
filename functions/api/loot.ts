@@ -1,5 +1,5 @@
 /**
- * GET /api/loot → today's 戰鬥升級 list, read live from ProtoTrack.gg (behind the site lock like everything else).
+ * GET /api/loot → today's 戰鬥升級 list, read live from ProtoTrack.gg (public, no sign-in).
  * The box on the front page asks this on load, so the new list shows within a minute of ProtoTrack posting it
  * (~2 min after the 17:00 Tokyo reset), without waiting for a GitHub run. Cloudflare keeps ProtoTrack's file for
  * 60 s, so readers reloading never send ProtoTrack more than about one request a minute.
@@ -13,7 +13,7 @@ const json = (body: unknown, status = 200) => new Response(JSON.stringify(body),
 export async function onRequestGet(): Promise<Response> {
   try {
     const res = await fetch(PROTOTRACK_TXT, {
-      headers: { 'user-agent': 'DCDispatchBot/0.1 (private fan newspaper)' },
+      headers: { 'user-agent': 'DCDispatchBot/0.1 (non-commercial fan newspaper)' },
       // Cloudflare's runtime only accepts 'follow' or 'manual' ('error' throws there, though Node accepts it).
       // 'manual' + the res.ok check below refuses a redirect just the same.
       redirect: 'manual',

@@ -1,11 +1,14 @@
 import { expect, test } from '@playwright/test';
 
-test('view counter: hidden when the counter is off, shown in the banner when it answers', async ({ page }) => {
+test('public site: no password, no sign-out link, a privacy page and a link preview card', async ({ page }) => {
   await page.goto('/zh-hant/');
-  await expect(page.locator('[data-views]')).toBeHidden();
-  await page.route('**/api/views', (r) => r.fulfill({ json: { status: 'ok', total: 1234, today: 12 } }));
-  await page.goto('/zh-hant/');
-  await expect(page.locator('[data-views] dd')).toHaveText('1,234 次（今日 12）');
+  await expect(page.locator('meta[name="robots"]')).toHaveCount(0);
+  await expect(page.locator('meta[property="og:image"]')).toHaveAttribute('content', /^https:\/\//);
+  await expect(page.locator('link[rel="canonical"]')).toHaveAttribute('href', 'https://dc-dispatch.pages.dev/zh-hant/');
+  await expect(page.locator('footer a[href="/__logout"]')).toHaveCount(0);
+  await page.locator('footer').getByRole('link', { name: '隱私與版權' }).click();
+  await expect(page.locator('h1')).toHaveText('隱私與版權');
+  await expect(page.locator('.privacy a[href*="youtube.com/channel/"]')).toHaveCount(1);
 });
 
 test('floating back-to-top button appears after scrolling and returns to the top', async ({ page }) => {
@@ -196,20 +199,11 @@ test('masthead banner: a random Division 2 picture, never the same twice in a ro
   await expect(title.locator('.title-name')).toHaveCSS('color', 'rgb(243, 238, 227)');
 });
 
-test('收藏: ☆ asks who is reading once, saves, shows in 我的收藏, and removes', async ({ page }) => {
+test('收藏: ☆ saves on this device (no name, nothing sent), shows in 我的收藏, and removes', async ({ page }) => {
   await page.route(/(youtube-nocookie\.com|ytimg\.com|staticctf\.ubisoft\.com|steamstatic\.com)/, (r) => r.abort());
-  // Stand-in for /api/favs (the real one runs on Cloudflare): one list per name, newest first.
-  const lists = new Map<string, { id: string; at: string }[]>();
-  await page.route('**/api/favs**', async (r) => {
-    const req = r.request();
-    if (req.method() === 'POST') {
-      const { who, id, on } = req.postDataJSON();
-      const rest = (lists.get(who) ?? []).filter((f) => f.id !== id);
-      lists.set(who, on ? [{ id, at: new Date().toISOString() }, ...rest] : rest);
-      return r.fulfill({ json: { status: 'ok', favs: lists.get(who) } });
-    }
-    const who = new URL(req.url()).searchParams.get('who') ?? '';
-    return r.fulfill({ json: { status: 'ok', favs: lists.get(who) ?? [] } });
+  const sent: string[] = [];
+  page.on('request', (req) => {
+    if (req.url().includes('/api/favs')) sent.push(req.url());
   });
 
   await page.goto('/zh-hant/section/arsenal/');
@@ -218,27 +212,22 @@ test('收藏: ☆ asks who is reading once, saves, shows in 我的收藏, and re
   const star = card.locator('[data-fav]');
   await expect(star).toHaveAttribute('aria-label', '加入收藏');
   await star.click();
-  await expect(page.getByRole('dialog', { name: '誰在看？' })).toBeVisible();
-  await expect(page.getByRole('dialog').getByRole('button')).toHaveText(['阿肥', 'Alice', 'Andy哥', 'Keroro', '取消']);
-  await page.getByRole('button', { name: 'Andy哥', exact: true }).click();
+  await expect(page.getByRole('dialog')).toHaveCount(0);
   await expect(star).toHaveAttribute('aria-pressed', 'true');
   await expect(star).toHaveText('★');
-  expect(lists.get('Andy哥')?.length).toBe(1);
 
-  // The story page shows it as saved too, and the second star never asks again.
+  // The story page shows it as saved too.
   await page.goto(href!);
   await expect(page.locator('.favrow [data-fav]')).toHaveAttribute('aria-pressed', 'true');
-  // This device remembers who it belongs to: another ☆ saves straight away, no question.
   await page.goto('/zh-hant/section/arsenal/');
   await page.locator('.story [data-fav]').nth(1).click();
-  await expect(page.getByRole('dialog')).toBeHidden();
   await expect(page.locator('.story [data-fav]').nth(1)).toHaveAttribute('aria-pressed', 'true');
   await page.locator('.story [data-fav]').nth(1).click(); // undo, so 我的收藏 below has one story
   await expect(page.locator('.story [data-fav]').nth(1)).toHaveAttribute('aria-pressed', 'false');
 
   // 我的收藏 from the top bar / rail
   await page.goto('/zh-hant/favorites/');
-  await expect(page.getByText('目前使用者：Andy哥')).toBeVisible();
+  await expect(page.getByText('收藏只存在這個瀏覽器裡')).toBeVisible();
   const row = page.locator('[data-favlist] li');
   await expect(row).toHaveCount(1);
   await expect(row.locator('h2 a')).toHaveAttribute('href', href!);
@@ -246,6 +235,16 @@ test('收藏: ☆ asks who is reading once, saves, shows in 我的收藏, and re
   await expect(row).toHaveCount(0);
   await expect(page.getByText('還沒有收藏')).toBeVisible();
   expect(await page.evaluate(() => document.documentElement.scrollWidth - innerWidth)).toBeLessThanOrEqual(0);
+  expect(sent).toEqual([]);
+});
+
+test('收藏: a list saved under a household name before the change carries over', async ({ page }) => {
+  await page.route(/(youtube-nocookie\.com|ytimg\.com|staticctf\.ubisoft\.com|steamstatic\.com)/, (r) => r.abort());
+  await page.goto('/zh-hant/section/arsenal/');
+  const id = (await page.locator('.story [data-fav]').first().getAttribute('data-fav'))!;
+  await page.evaluate((id) => localStorage.setItem('dcd.favs', JSON.stringify({ who: '阿肥', favs: [{ id, at: '2026-11-10T00:00:00.000Z' }] })), id);
+  await page.goto('/zh-hant/favorites/');
+  await expect(page.locator('[data-favlist] li')).toHaveCount(1);
 });
 
 test('過刊: a past day opens on that day, not on today', async ({ page }) => {

@@ -1,0 +1,134 @@
+---
+/** 隱私與版權 / Privacy & rights: what the site keeps, what other services see, and how to ask for a removal. */
+import Paper from '../../layouts/Paper.astro';
+import { LOCALES, t, type Locale } from '../../i18n/index.ts';
+import { OWNER_CHANNEL } from '../../lib/owner.ts';
+
+export function getStaticPaths() {
+  return LOCALES.map((lang) => ({ params: { lang } }));
+}
+const locale = Astro.params.lang as Locale;
+const UPDATED = '2026-11-12';
+
+const links = {
+  cloudflare: 'https://www.cloudflare.com/privacypolicy/',
+  google: 'https://policies.google.com/privacy',
+  twitch: 'https://www.twitch.tv/p/legal/privacy-notice/',
+};
+
+type Block = { h: string; p: (string | { text: string; href: string })[][] };
+const zh: Block[] = [
+  {
+    h: '這是什麼網站',
+    p: [['華盛頓每日快報是非官方、非商業的《全境封鎖 2》粉絲新聞網站。沒有廣告、沒有帳號、不收費，也不收集你的姓名、電郵或其他個人資料。']],
+  },
+  {
+    h: '本站記錄的東西',
+    p: [
+      ['到訪人數：使用 Cloudflare Web Analytics 計算。它不使用 cookie、不追蹤個人，只提供總數（例如今日有多少次到訪）。網站頂部顯示的到訪次數就是來自這裡。'],
+      ['你的瀏覽器裡的設定：語言、日報/夜報、我的收藏、上次到訪時間，都只存在你自己的瀏覽器（localStorage），不會傳到我們的伺服器，別人看不到。清除瀏覽器的網站資料就會全部刪除。收藏只在你用的那台手機或電腦上。'],
+      ['主機：網站放在 Cloudflare。和所有網站一樣，Cloudflare 會處理連線資料（例如 IP 位址）來傳送網頁和阻擋攻擊。詳見 ', { text: 'Cloudflare 隱私政策', href: links.cloudflare }, '。'],
+    ],
+  },
+  {
+    h: '其他網站的內容',
+    p: [
+      ['YouTube 影片：按下播放之前不會載入任何 YouTube 內容。播放時使用 youtube-nocookie.com，Google 可能會設定自己的 cookie。詳見 ', { text: 'Google 隱私權政策', href: links.google }, '。'],
+      ['Twitch 直播與精華：同樣是按下才載入。詳見 ', { text: 'Twitch 隱私權聲明', href: links.twitch }, '。'],
+      ['圖片：部分遊戲圖片直接從 Ubisoft 和 Steam 的伺服器載入，所以它們會收到你的連線，但不會知道你是從本站過去的。'],
+    ],
+  },
+  {
+    h: '版權與移除',
+    p: [
+      ['《全境封鎖 2》名稱、商標與遊戲圖片屬於 Ubisoft Entertainment；影片屬於各位創作者；巴哈姆特的討論串只顯示標題並連回原文。摘要都是我們自己寫的短文，並附上原文連結。'],
+      ['如果你是內容的權利人或發文者，希望我們移除某些內容，請聯絡我們，我們會盡快處理。'],
+    ],
+  },
+  {
+    h: '聯絡',
+    p: [['請到 ', { text: '特工阿肥的 YouTube 頻道', href: OWNER_CHANNEL }, ' 留言。']],
+  },
+];
+const en: Block[] = [
+  {
+    h: 'What this site is',
+    p: [['The DC Dispatch is an unofficial, non-commercial Division 2 fan news site. No ads, no accounts, no fees, and we don’t collect your name, email or other personal details.']],
+  },
+  {
+    h: 'What the site keeps',
+    p: [
+      ['Visitor numbers: counted with Cloudflare Web Analytics, which uses no cookies and doesn’t track individuals; it only gives totals (such as visits today). The visit count at the top of the site comes from there.'],
+      ['Settings in your browser: language, day/night theme, your favorites and your last visit time are stored only in your own browser (localStorage). They are never sent to our server and nobody else can see them. Clearing the site’s data in your browser deletes them. Favorites stay on the phone or computer you saved them on.'],
+      ['Hosting: the site runs on Cloudflare. Like any web host, Cloudflare handles connection data (such as IP addresses) to deliver pages and block attacks. See the ', { text: 'Cloudflare privacy policy', href: links.cloudflare }, '.'],
+    ],
+  },
+  {
+    h: 'Content from other sites',
+    p: [
+      ['YouTube videos: nothing from YouTube loads until you press play. Players use youtube-nocookie.com; Google may set its own cookies once a video plays. See the ', { text: 'Google Privacy Policy', href: links.google }, '.'],
+      ['Twitch streams and clips: also load only when you press play. See the ', { text: 'Twitch Privacy Notice', href: links.twitch }, '.'],
+      ['Pictures: some game pictures load straight from Ubisoft’s and Steam’s servers, so they see your connection, but not that you came from this site.'],
+    ],
+  },
+  {
+    h: 'Rights and removals',
+    p: [
+      ['Tom Clancy’s The Division 2, its marks and game art belong to Ubisoft Entertainment; videos belong to their creators; 巴哈姆特 threads appear as titles linking back to the original. Summaries are our own short write-ups with a link to the source.'],
+      ['If you own something shown here, or wrote a post we link to, and want it removed, contact us and we’ll take it down quickly.'],
+    ],
+  },
+  {
+    h: 'Contact',
+    p: [['Leave a comment on ', { text: '特工阿肥’s YouTube channel', href: OWNER_CHANNEL }, '.']],
+  },
+];
+const blocks = locale === 'en' ? en : zh;
+---
+<Paper locale={locale} title={t(locale, 'privacy.title')} description={t(locale, 'privacy.description')}>
+  <article class="privacy">
+    <h1>{t(locale, 'privacy.title')}</h1>
+    <p class="updated">{t(locale, 'privacy.updated')} <time datetime={UPDATED}>{UPDATED}</time></p>
+    {
+      blocks.map((b) => (
+        <section>
+          <h2>{b.h}</h2>
+          {b.p.map((para) => (
+            <p>
+              {para.map((part) =>
+                typeof part === 'string' ? part : (
+                  <a href={part.href} target="_blank" rel="noopener noreferrer">
+                    {part.text} ↗
+                  </a>
+                ),
+              )}
+            </p>
+          ))}
+        </section>
+      ))
+    }
+  </article>
+</Paper>
+
+<style>
+  .privacy {
+    max-width: 68ch;
+    margin: var(--space-4) auto var(--space-6);
+  }
+  .privacy h1 {
+    margin: 0 0 var(--space-2);
+    font: 900 var(--step-3) / 1.1 var(--font-display);
+  }
+  .updated {
+    color: var(--ink-soft);
+    font: 400 0.8125rem / 1.4 var(--font-hud);
+  }
+  .privacy h2 {
+    margin: var(--space-5) 0 var(--space-2);
+    font: 800 var(--step-1) / 1.3 var(--font-display);
+  }
+  .privacy p {
+    margin: 0 0 var(--space-3);
+    line-height: 1.7;
+  }
+</style>

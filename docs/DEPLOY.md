@@ -1,5 +1,7 @@
 # Deploy: private site + daily edition
 
+> **Public version:** the password lock below is removed on branch `public-launch`. See [PUBLIC-LAUNCH.md](PUBLIC-LAUNCH.md); the password steps no longer apply after that merge.
+
 End state: `https://dc-dispatch.pages.dev` asks for a password, each device stays signed in for 30 days, and a new edition appears every morning at 06:00 Tokyo.
 
 **Why a password and not Cloudflare Access:** Access (email codes) needs Cloudflare Zero Trust, which asks for a payment card even on the free plan. On 2026-11-04 the owner chose not to add a card, so the site uses its own password lock (`functions/_middleware.ts`) on the free Pages plan instead.

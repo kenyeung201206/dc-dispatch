@@ -11,26 +11,50 @@ import '@fontsource/ibm-plex-mono/latin-600.css';
 import '@fontsource/noto-serif-tc/500.css';
 import '@fontsource/noto-serif-tc/900.css';
 import '../styles/global.css';
-import { HTML_LANG, t, type Locale } from '../i18n/index.ts';
+import { HTML_LANG, LOCALES, switchLocalePath, t, type Locale } from '../i18n/index.ts';
 import FavKit from '../components/FavKit.astro';
+import { library } from '../lib/images.ts';
 
 interface Props {
   locale: Locale;
   title?: string;
+  /** One or two sentences for Google results and link previews (Facebook, LINE…). */
+  description?: string;
+  /** Picture for link previews (absolute https URL). Defaults to the current key art. */
+  image?: string;
+  /** Pages that should stay out of Google (404, joke pages). */
+  noindex?: boolean;
 }
-const { locale, title } = Astro.props;
+const { locale, title, description = t(locale, 'site.description'), image, noindex = false } = Astro.props;
 const pageTitle = title ? `${title} · ${t(locale, 'site.name')}` : t(locale, 'site.name');
+const site = Astro.site ?? new URL('https://dc-dispatch.pages.dev');
+const canonical = new URL(Astro.url.pathname, site).href;
+const keyArt = library.images.find((i) => i.tags?.includes('keyart'));
+const shareImage = image ?? keyArt?.url;
 ---
 <!doctype html>
 <html lang={HTML_LANG[locale]} data-theme="night">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-    <meta name="robots" content="noindex, nofollow" />
+    {noindex && <meta name="robots" content="noindex" />}
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    {LOCALES.map((l) => <link rel="alternate" hreflang={HTML_LANG[l]} href={new URL(switchLocalePath(Astro.url.pathname, l), site).href} />)}
+    <link rel="alternate" hreflang="x-default" href={new URL(switchLocalePath(Astro.url.pathname, 'zh-hant'), site).href} />
+    <!-- Link preview card (Facebook, LINE, Discord, X…) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content={t(locale, 'site.name')} />
+    <meta property="og:title" content={title ?? t(locale, 'site.name')} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:locale" content={locale === 'en' ? 'en_US' : 'zh_TW'} />
+    {shareImage && <meta property="og:image" content={shareImage} />}
+    <meta name="twitter:card" content="summary_large_image" />
     <!-- Browser/phone bar colour: matches the theme (night by default; updated by the script below and the toggle). -->
     <meta name="theme-color" content="#121416" />
-    <!-- Home-screen app (iOS + Android). The manifest needs the sign-in cookie on the way back, hence use-credentials. -->
-    <link rel="manifest" href="/manifest.webmanifest" crossorigin="use-credentials" />
+    <!-- Home-screen app (iOS + Android). -->
+    <link rel="manifest" href="/manifest.webmanifest" />
     <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32.png" />
     <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
     <meta name="mobile-web-app-capable" content="yes" />
@@ -76,7 +100,7 @@ const pageTitle = title ? `${title} · ${t(locale, 'site.name')}` : t(locale, 's
       <div class="wrap">
         <p>{t(locale, 'footer.disclaimer')}</p>
         <p>{t(locale, 'footer.aiNote')}</p>
-        <p><a href={`/${locale}/status/`}>{t(locale, 'footer.status')}</a> · <a href="/__logout">{t(locale, 'footer.signOut')}</a></p>
+        <p><a href={`/${locale}/status/`}>{t(locale, 'footer.status')}</a> · <a href={`/${locale}/privacy/`}>{t(locale, 'footer.privacy')}</a></p>
       </div>
     </footer>
     <script>

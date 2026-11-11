@@ -1,10 +1,10 @@
 import type { Category } from '../src/schema/item.ts';
 
 /** Identifies the pipeline politely, with no personal contact details. */
-export const USER_AGENT = 'Mozilla/5.0 (compatible; DCDispatchBot/0.1; private fan newspaper)';
+export const USER_AGENT = 'Mozilla/5.0 (compatible; DCDispatchBot/0.1; non-commercial fan newspaper)';
 
 /** The fetcher refuses any host not on this list (SSRF guard). */
-export const ALLOWED_HOSTS = new Set(['api.steampowered.com', 'www.ubisoft.com', 'www.youtube.com', 'www.googleapis.com', 'forum.gamer.com.tw', 'thedivision.fandom.com', 'api.anthropic.com', 'prototrack.gg']);
+export const ALLOWED_HOSTS = new Set(['api.steampowered.com', 'www.ubisoft.com', 'www.youtube.com', 'www.googleapis.com', 'forum.gamer.com.tw', 'thedivision.fandom.com', 'api.anthropic.com', 'prototrack.gg', 'api.cloudflare.com']);
 
 export const TIMEZONE = 'Asia/Tokyo';
 export const STEAM_APP_ID = 2221490;

@@ -1,5 +1,5 @@
 ---
-/** 我的收藏: the current reader's saved stories, newest saved first (list comes from FavKit / /api/favs). */
+/** 我的收藏: stories saved on this device, newest saved first (list comes from FavKit, kept in this browser only). */
 import Paper from '../../layouts/Paper.astro';
 import { LOCALES, t, type Locale, type UiKey } from '../../i18n/index.ts';
 import { allItems, localized, readableIn } from '../../lib/editions.ts';
@@ -27,13 +27,7 @@ const index = Object.fromEntries(
 <Paper locale={locale} title={t(locale, 'fav.page')}>
   <section class="favpage">
     <h1>☆ {t(locale, 'fav.page')}</h1>
-    <p class="wholine" data-wholine hidden>
-      <span data-who-name data-fmt={t(locale, 'fav.current')}></span>
-      <button type="button" class="link" data-who-switch>{t(locale, 'fav.switch')}</button>
-    </p>
-    <p class="pick" data-pick hidden>
-      {t(locale, 'fav.pick')} <button type="button" class="link" data-who-switch>{t(locale, 'fav.who.title')}</button>
-    </p>
+    <p class="device">{t(locale, 'fav.device')}</p>
     <p class="empty" data-empty hidden>{t(locale, 'fav.empty')}</p>
     <ol class="favlist" data-favlist></ol>
     <template data-row>
@@ -57,21 +51,12 @@ const index = Object.fromEntries(
     margin: var(--space-3) 0 var(--space-2);
     font: 900 var(--step-3) / 1.1 var(--font-display);
   }
-  .wholine,
-  .pick,
+  .device,
   .empty {
     color: var(--ink-soft);
   }
-  .link {
-    min-height: 44px;
-    padding: 0 6px;
-    border: 0;
-    background: none;
-    color: var(--shd-ink);
-    font: inherit;
-    font-weight: 700;
-    text-decoration: underline;
-    cursor: pointer;
+  .device {
+    font-size: 0.875rem;
   }
   .favlist {
     margin: var(--space-3) 0 0;
@@ -122,18 +107,12 @@ const index = Object.fromEntries(
   const labels = document.querySelector<HTMLElement>('[data-labels]')!.dataset;
   const list = document.querySelector<HTMLOListElement>('[data-favlist]')!;
   const tpl = document.querySelector<HTMLTemplateElement>('[data-row]')!;
-  const wholine = document.querySelector<HTMLElement>('[data-wholine]')!;
-  const whoName = document.querySelector<HTMLElement>('[data-who-name]')!;
-  const pick = document.querySelector<HTMLElement>('[data-pick]')!;
   const empty = document.querySelector<HTMLElement>('[data-empty]')!;
   const fmt = new Intl.DateTimeFormat(labels.lang, { month: 'short', day: 'numeric', timeZone: 'Asia/Tokyo' });
-  const removeLabel = document.querySelector<HTMLElement>('[data-who-dialog]')?.dataset.favRemove ?? '';
+  const removeLabel = document.querySelector<HTMLElement>('[data-fav-labels]')?.dataset.favRemove ?? '';
 
-  function render(who: string, favs: Fav[]) {
-    wholine.hidden = !who;
-    pick.hidden = Boolean(who);
-    whoName.textContent = (whoName.dataset.fmt ?? '{who}').replace('{who}', who);
-    empty.hidden = !who || favs.length > 0;
+  function render(favs: Fav[]) {
+    empty.hidden = favs.length > 0;
     list.replaceChildren(
       ...favs.map((f) => {
         const row = tpl.content.firstElementChild!.cloneNode(true) as HTMLLIElement;
@@ -163,10 +142,7 @@ const index = Object.fromEntries(
     );
   }
 
-  const state = (window as unknown as { dcdFavs?: () => { who: string; favs: Fav[] } }).dcdFavs?.();
-  render(state?.who ?? '', state?.favs ?? []);
-  document.addEventListener('dcd:favs', (e) => {
-    const d = (e as CustomEvent<{ who: string; favs: Fav[] }>).detail;
-    render(d.who, d.favs);
-  });
+  const state = (window as unknown as { dcdFavs?: () => { favs: Fav[] } }).dcdFavs?.();
+  render(state?.favs ?? []);
+  document.addEventListener('dcd:favs', (e) => render((e as CustomEvent<{ favs: Fav[] }>).detail.favs));
 </script>

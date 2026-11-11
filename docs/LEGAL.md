@@ -4,15 +4,15 @@ Not legal advice. Researched 2026-11-04. Each rule below is enforced in code (se
 
 ## Ubisoft
 - **No dedicated fan-site / brand-usage policy was found.** The only public creator policy is the [Ubisoft Video Policy](https://www.ubisoft.com/en-us/videopolicy.html) (last updated 01/2016): non-commercial fan content encouraged; "simple duplication of our official trailers … is not in keeping" with it; no charging for access; questions → videorights@ubisoft.com.
-- **Our stance (updated 2026-11-04, owner's decision):** the site is private (two readers behind Cloudflare Access), so it shows **Ubisoft's own published promotional images** — Steam store screenshots and the header images of official Ubisoft news posts.
+- **Our stance (updated 2026-11-04, owner's decision):** the site was private when this was decided; it is now public and non-commercial (2026-11-12, owner's decision to keep everything). It shows **Ubisoft's own published promotional images** — Steam store screenshots and the header images of official Ubisoft news posts.
   - Loaded directly from Ubisoft/Steam servers (`shared.akamai.steamstatic.com`, `staticctf.ubisoft.com`), not copied into the repo; shown unmodified (crop-to-fit only).
   - Every picture carries a visible "Photo: Ubisoft ↗" credit linking to where it was published (`data/images.json`, enforced by schema).
   - Generic gameplay shots used on a story they don't come from are labelled **"File photo / 資料照片"**; non-Division-2 stories (Franchise Desk) never get Division 2 file photos.
   - **Never:** images extracted from the game's installed files, fan art without permission, or making the site public with these images. If the site is ever shared publicly, swap to original art first.
   - Copyright still applies to private use; this is a low-risk, owner-accepted choice, not a licence.
 - Trailers are shown only through the official YouTube embed of Ubisoft's own upload.
-- **Footer disclaimer (EN):** "Unofficial fan project. Not affiliated with, endorsed or sponsored by Ubisoft. Tom Clancy's The Division 2 and related marks are trademarks of Ubisoft Entertainment. Private and non-commercial."
-- **Footer disclaimer (zh-Hant):** 「非官方粉絲專案，與 Ubisoft 無任何隸屬、背書或贊助關係。《全境封鎖 2》及相關商標為 Ubisoft Entertainment 所有。僅供私人、非商業用途。」
+- **Footer disclaimer (EN):** "Unofficial fan project. Not affiliated with, endorsed or sponsored by Ubisoft. Tom Clancy's The Division 2 and related marks are trademarks of Ubisoft Entertainment. Non-commercial, no ads." (was "Private and non-commercial." before going public)
+- **Footer disclaimer (zh-Hant):** 「非官方粉絲專案，與 Ubisoft 無任何隸屬、背書或贊助關係。《全境封鎖 2》及相關商標為 Ubisoft Entertainment 所有。非商業用途，沒有廣告。」
 - No official wording exists to copy, so this is our own text.
 
 ## YouTube API Services ([Developer Policies](https://developers.google.com/youtube/terms/developer-policies))
@@ -40,7 +40,7 @@ Not legal advice. Researched 2026-11-04. Each rule below is enforced in code (se
 - Text is CC BY-SA 3.0. → only used to cross-check glossary terms; any reused text credited + link.
 
 ## Our own privacy
-- Private (password lock in `functions/_middleware.ts`: every request needs a signed 30-day HttpOnly cookie), `noindex`, `robots.txt` Disallow: /, no analytics, no third-party requests until a video is clicked.
+- Public since branch `public-launch` (see docs/PUBLIC-LAUNCH.md): no password, listed on Google, privacy page at /privacy/. Cookie-free Cloudflare Web Analytics for visit totals only; favorites stay in the reader's browser; no third-party requests until a video is clicked (pictures load from Ubisoft/Steam with no referrer).
 
 ## Enforcement in code (Phase 1+)
 - Schema: every item requires `sourceUrl`; every media item requires `license` + `attribution` → CI fails otherwise.

@@ -1,6 +1,6 @@
 # The DC Dispatch · 華盛頓每日快報
 
-A private, bilingual (EN / 繁體中文) daily newspaper about *Tom Clancy's The Division 2*, for two readers.
+A public, non-commercial, bilingual (EN / 繁體中文) daily newspaper about *Tom Clancy's The Division 2*, by 特工阿肥.
 Unofficial fan project, not affiliated with Ubisoft.
 
 **Status:** Phase 4 (pipeline v1, all core pages). See `DIVISION2_SITE_BRIEF.md` for the full spec and `docs/` for research.

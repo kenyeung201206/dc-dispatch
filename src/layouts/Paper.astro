@@ -16,8 +16,11 @@ interface Props {
   edition?: Edition;
   /** Which nav item is active; anything but the front page gets the compact phone header. */
   current?: Category | 'archive' | 'patches' | 'search' | 'guides';
+  /** For Google results and link previews (see Base). */
+  description?: string;
+  image?: string;
 }
-const { locale, title, edition = latestEdition(), current } = Astro.props;
+const { locale, title, edition = latestEdition(), current, description, image } = Astro.props;
 // Inner pages: phones show only the compact sticky bar, so the page starts on the first screen.
 const compact = current !== 'front-page';
 const tickerLines = edition.items
@@ -29,7 +32,7 @@ const navSections: Category[] = [...CATEGORIES];
 /** Where Return goes when there's no page to go back to: the story's section, else the front page. */
 const backHref = current && (CATEGORIES as readonly string[]).includes(current) && current !== 'front-page' && !Astro.url.pathname.includes('/section/') ? routes.section(locale, current as Category) : routes.home(locale);
 ---
-<Base locale={locale} title={title}>
+<Base locale={locale} title={title} description={description} image={image}>
   <Fragment slot="masthead">
     <div class:list={['mh', compact && 'compact']}>
       <Masthead locale={locale} edition={edition} />
