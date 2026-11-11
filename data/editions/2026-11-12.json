@@ -1,7 +1,7 @@
 {
   "date": "2026-11-12",
   "editionNumber": 9,
-  "generatedAt": "2026-11-11T16:49:26.026Z",
+  "generatedAt": "2026-11-11T18:50:04.185Z",
   "meta": {
     "season_en": "Red Horizon",
     "season_zhHant": "Red Horizon 賽季",
@@ -17,7 +17,7 @@
       "title_orig": "The Division 2: Echoes of Central Park Event Pass Twitch Drops",
       "lang_orig": "en",
       "publishedAt": "2026-11-10T16:00:00.000Z",
-      "fetchedAt": "2026-11-11T16:49:26.026Z",
+      "fetchedAt": "2026-11-11T18:50:04.185Z",
       "category": "community",
       "tags": [
         "event",
@@ -59,7 +59,7 @@
       "title_orig": "[TUY8S3.3] Echoes of Central Park Launch, Crossplay Rollout, Conflict Improvements & More",
       "lang_orig": "en",
       "publishedAt": "2026-11-02T15:45:00.000Z",
-      "fetchedAt": "2026-11-11T16:49:26.026Z",
+      "fetchedAt": "2026-11-11T18:50:04.185Z",
       "category": "updates",
       "tags": [
         "title-update",
@@ -67,7 +67,7 @@
         "event",
         "pvp"
       ],
-      "importance": 87,
+      "importance": 86,
       "confidence": "official",
       "headline_en": "[TUY8S3.3] Echoes of Central Park Launch, Crossplay Rollout, Conflict Improvements & More",
       "headline_zhHant": "pending",
@@ -100,7 +100,7 @@
       "title_orig": "The Division 2: Echoes of Central Park DLC is available now!",
       "lang_orig": "en",
       "publishedAt": "2026-11-03T15:00:00.000Z",
-      "fetchedAt": "2026-11-11T16:49:26.026Z",
+      "fetchedAt": "2026-11-11T18:50:04.185Z",
       "category": "missions",
       "tags": [
         "dlc"
@@ -169,7 +169,7 @@
       "title_orig": "The Division 2: 6X XP Event",
       "lang_orig": "en",
       "publishedAt": "2026-11-06T10:31:09.000Z",
-      "fetchedAt": "2026-11-11T16:49:26.026Z",
+      "fetchedAt": "2026-11-11T18:50:04.185Z",
       "category": "missions",
       "tags": [
         "event"
@@ -188,6 +188,62 @@
       "status": "new"
     },
     {
+      "id": "y8m927",
+      "sourceId": "youtube",
+      "sourceName": "Kamikazevondoom",
+      "sourceUrl": "https://www.youtube.com/watch?v=cIg83Wn86Ho",
+      "title_orig": "*NEW CENTRAL PARK GUARDIAN EXOTIC* The Division 2: \"RATEL\" Exotic AR (Full Review & Build Breakdown)",
+      "lang_orig": "en",
+      "publishedAt": "2026-11-11T16:25:17.000Z",
+      "fetchedAt": "2026-11-11T18:50:04.185Z",
+      "category": "arsenal",
+      "tags": [
+        "exotic",
+        "video"
+      ],
+      "importance": 63,
+      "confidence": "community",
+      "headline_en": "*NEW CENTRAL PARK GUARDIAN EXOTIC* The Division 2: \"RATEL\" Exotic AR (Full Review & Build Breakdown)",
+      "headline_zhHant": "pending",
+      "summary_en": "Enjoy! Join this channel to get access to perks: Don't forget to mash that LIKE AND SUBSCRIBE to the channel.",
+      "summary_zhHant": "pending",
+      "summaryKind": "extract",
+      "alsoReportedBy": [],
+      "media": [],
+      "videoId": "cIg83Wn86Ho",
+      "relatedIds": [],
+      "firstSeenAt": "2026-11-11T18:50:04.185Z",
+      "status": "new"
+    },
+    {
+      "id": "19y3f3t",
+      "sourceId": "youtube",
+      "sourceName": "Kamikazevondoom",
+      "sourceUrl": "https://www.youtube.com/watch?v=eGpTBYybFQo",
+      "title_orig": "*BREAKING NEWS* The Division 2: SERVERS DOWN TOMORROW to add CROSSPLAY SERVERS & NERF BEAR GLOVES...",
+      "lang_orig": "en",
+      "publishedAt": "2026-11-11T18:33:17.000Z",
+      "fetchedAt": "2026-11-11T18:50:04.185Z",
+      "category": "community",
+      "tags": [
+        "crossplay",
+        "video"
+      ],
+      "importance": 62,
+      "confidence": "community",
+      "headline_en": "*BREAKING NEWS* The Division 2: SERVERS DOWN TOMORROW to add CROSSPLAY SERVERS & NERF BEAR GLOVES...",
+      "headline_zhHant": "pending",
+      "summary_en": "Enjoy! Join this channel to get access to perks: Don't forget to mash that LIKE AND SUBSCRIBE to the channel.",
+      "summary_zhHant": "pending",
+      "summaryKind": "extract",
+      "alsoReportedBy": [],
+      "media": [],
+      "videoId": "eGpTBYybFQo",
+      "relatedIds": [],
+      "firstSeenAt": "2026-11-11T18:50:04.185Z",
+      "status": "new"
+    },
+    {
       "id": "1sx320d",
       "sourceId": "ubisoft-en",
       "sourceName": "Ubisoft",
@@ -195,7 +251,7 @@
       "title_orig": "The Division 2: Echoes of Central Park Launch Twitch Drops",
       "lang_orig": "en",
       "publishedAt": "2026-11-03T15:00:00.000Z",
-      "fetchedAt": "2026-11-11T16:49:26.026Z",
+      "fetchedAt": "2026-11-11T18:50:04.185Z",
       "category": "community",
       "tags": [
         "twitch-drops",
@@ -218,6 +274,63 @@
       "imageId": "ubi-5EEgwKS6kDqyvUFo5PJYsB",
       "relatedIds": [],
       "firstSeenAt": "2026-11-03T15:00:00.000Z",
+      "status": "new"
+    },
+    {
+      "id": "ybd4yf",
+      "sourceId": "youtube",
+      "sourceName": "TuxedoBandido",
+      "sourceUrl": "https://www.youtube.com/watch?v=nCuBbygx4mg",
+      "title_orig": "Division 2 Event Pass: Nodes Are the Best Farm (200 vs 117)",
+      "lang_orig": "en",
+      "publishedAt": "2026-11-11T17:30:13.000Z",
+      "fetchedAt": "2026-11-11T18:50:04.185Z",
+      "category": "missions",
+      "tags": [
+        "event",
+        "video"
+      ],
+      "importance": 61,
+      "confidence": "community",
+      "headline_en": "Division 2 Event Pass: Nodes Are the Best Farm (200 vs 117)",
+      "headline_zhHant": "pending",
+      "summary_en": "Division 2 Event Pass: nodes are the best farm. I tested it: nodes paid 200, control points only 117, and Guardians didn't move my pass…",
+      "summary_zhHant": "pending",
+      "summaryKind": "extract",
+      "alsoReportedBy": [],
+      "media": [],
+      "videoId": "nCuBbygx4mg",
+      "relatedIds": [],
+      "firstSeenAt": "2026-11-11T18:50:04.185Z",
+      "status": "new"
+    },
+    {
+      "id": "1t4o616",
+      "sourceId": "youtube",
+      "sourceName": "King Macho",
+      "sourceUrl": "https://www.youtube.com/watch?v=ywLblwb5D2A",
+      "title_orig": "Loaded for Bear Gets Nerfed Tomorrow! | The Division 2",
+      "lang_orig": "en",
+      "publishedAt": "2026-11-11T17:56:44.000Z",
+      "fetchedAt": "2026-11-11T18:50:04.185Z",
+      "category": "updates",
+      "tags": [
+        "exotic",
+        "season",
+        "video"
+      ],
+      "importance": 61,
+      "confidence": "community",
+      "headline_en": "Loaded for Bear Gets Nerfed Tomorrow! | The Division 2",
+      "headline_zhHant": "pending",
+      "summary_en": "The Loaded for Bear Exotic Gloves are getting a temporary damage nerf in The Division 2.",
+      "summary_zhHant": "pending",
+      "summaryKind": "extract",
+      "alsoReportedBy": [],
+      "media": [],
+      "videoId": "ywLblwb5D2A",
+      "relatedIds": [],
+      "firstSeenAt": "2026-11-11T18:50:04.185Z",
       "status": "new"
     },
     {
@@ -249,6 +362,33 @@
       "status": "new"
     },
     {
+      "id": "od73of",
+      "sourceId": "youtube",
+      "sourceName": "The Gaming Brigade",
+      "sourceUrl": "https://www.youtube.com/watch?v=2Wngki7Hk68",
+      "title_orig": "EMERGENCY UPDATE! Matchmaking Bug Fix, Damage Bug Update,  & MORE! | The Division 2",
+      "lang_orig": "en",
+      "publishedAt": "2026-11-11T17:40:34.000Z",
+      "fetchedAt": "2026-11-11T18:50:04.185Z",
+      "category": "community",
+      "tags": [
+        "video"
+      ],
+      "importance": 58,
+      "confidence": "community",
+      "headline_en": "EMERGENCY UPDATE! Matchmaking Bug Fix, Damage Bug Update,  & MORE! | The Division 2",
+      "headline_zhHant": "pending",
+      "summary_en": "BONES COFFEE COMPANY AFFILIATE LINK: TODAY I TALK ABOUT A FEW FIXES THAT WILL BE CHANGED TOMORROW. Follow On Twitter @GamingBrigadeTV",
+      "summary_zhHant": "pending",
+      "summaryKind": "extract",
+      "alsoReportedBy": [],
+      "media": [],
+      "videoId": "2Wngki7Hk68",
+      "relatedIds": [],
+      "firstSeenAt": "2026-11-11T18:50:04.185Z",
+      "status": "new"
+    },
+    {
       "id": "jrg9a1",
       "sourceId": "ubisoft-en",
       "sourceName": "Ubisoft",
@@ -256,12 +396,12 @@
       "title_orig": "[TUY8S3.3] Echoes of Central Park Launch, Crossplay Rollout, Conflict Improvements & More",
       "lang_orig": "en",
       "publishedAt": "2026-11-02T15:45:00.000Z",
-      "fetchedAt": "2026-11-11T16:49:26.026Z",
+      "fetchedAt": "2026-11-11T18:50:04.185Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
       ],
-      "importance": 57,
+      "importance": 56,
       "confidence": "official",
       "headline_en": "Known issue (TU Y8S3.3): After completing all Manhunt Scouts marked as High-Value Targets, the Climax Mission…",
       "headline_zhHant": "pending",
@@ -311,6 +451,87 @@
       "status": "new"
     },
     {
+      "id": "sj92k4",
+      "sourceId": "youtube",
+      "sourceName": "TuxedoBandido",
+      "sourceUrl": "https://www.youtube.com/watch?v=e_8eS7I4S9w",
+      "title_orig": "Division 2's Single Best Solo Build Right Now (Fafnir Core Strength)",
+      "lang_orig": "en",
+      "publishedAt": "2026-11-11T18:43:25.000Z",
+      "fetchedAt": "2026-11-11T18:50:04.185Z",
+      "category": "builds",
+      "tags": [
+        "video"
+      ],
+      "importance": 52,
+      "confidence": "community",
+      "headline_en": "Division 2's Single Best Solo Build Right Now (Fafnir Core Strength)",
+      "headline_zhHant": "pending",
+      "summary_en": "The Division 2 Fafnir Core Strength build is my go-to for solo PVE: Solo Legendary, Central Park, Retaliations and the open world.",
+      "summary_zhHant": "pending",
+      "summaryKind": "extract",
+      "alsoReportedBy": [],
+      "media": [],
+      "videoId": "e_8eS7I4S9w",
+      "relatedIds": [],
+      "firstSeenAt": "2026-11-11T18:50:04.185Z",
+      "status": "new"
+    },
+    {
+      "id": "abn1to",
+      "sourceId": "youtube",
+      "sourceName": "B站森牧阳",
+      "sourceUrl": "https://www.youtube.com/watch?v=qk431h7VHEA",
+      "title_orig": "全境封锁2：新奇特突步“獾式”获取方法、武器介绍、天赋演示！",
+      "lang_orig": "zh",
+      "publishedAt": "2026-11-11T18:28:40.000Z",
+      "fetchedAt": "2026-11-11T18:50:04.185Z",
+      "category": "arsenal",
+      "tags": [
+        "video"
+      ],
+      "importance": 52,
+      "confidence": "community",
+      "headline_en": "pending",
+      "headline_zhHant": "全境封锁2：新奇特突步“獾式”获取方法、武器介绍、天赋演示！",
+      "summary_en": "pending",
+      "summary_zhHant": "合理讨论，你杆你对，个人观点，仅供参考!",
+      "summaryKind": "extract",
+      "alsoReportedBy": [],
+      "media": [],
+      "videoId": "qk431h7VHEA",
+      "relatedIds": [],
+      "firstSeenAt": "2026-11-11T18:50:04.185Z",
+      "status": "new"
+    },
+    {
+      "id": "14gocqm",
+      "sourceId": "youtube",
+      "sourceName": "RAMBO52___",
+      "sourceUrl": "https://www.youtube.com/watch?v=uCQKEilfuuw",
+      "title_orig": "Tom Clancy's The Division 2 How to get to this collectible",
+      "lang_orig": "en",
+      "publishedAt": "2026-11-11T18:23:27.000Z",
+      "fetchedAt": "2026-11-11T18:50:04.185Z",
+      "category": "community",
+      "tags": [
+        "video"
+      ],
+      "importance": 52,
+      "confidence": "community",
+      "headline_en": "Tom Clancy's The Division 2 How to get to this collectible",
+      "headline_zhHant": "pending",
+      "summary_en": "How to get to this collectible",
+      "summary_zhHant": "pending",
+      "summaryKind": "extract",
+      "alsoReportedBy": [],
+      "media": [],
+      "videoId": "uCQKEilfuuw",
+      "relatedIds": [],
+      "firstSeenAt": "2026-11-11T18:50:04.185Z",
+      "status": "new"
+    },
+    {
       "id": "1rkg22m",
       "sourceId": "bahamut",
       "sourceName": "巴哈姆特 全境封鎖板",
@@ -318,7 +539,7 @@
       "title_orig": "【情報】11/11 每日戰鬥升級掉落 & 原型商人",
       "lang_orig": "zh",
       "publishedAt": "2026-11-11T04:00:00.000Z",
-      "fetchedAt": "2026-11-11T16:49:26.026Z",
+      "fetchedAt": "2026-11-11T18:50:04.185Z",
       "category": "updates",
       "tags": [],
       "importance": 51,
@@ -342,10 +563,10 @@
       "title_orig": "【心得】裝備專精系統心得",
       "lang_orig": "zh",
       "publishedAt": "2026-11-11T00:41:00.000Z",
-      "fetchedAt": "2026-11-11T16:49:26.026Z",
+      "fetchedAt": "2026-11-11T18:50:04.185Z",
       "category": "arsenal",
       "tags": [],
-      "importance": 51,
+      "importance": 50,
       "confidence": "community",
       "headline_en": "pending",
       "headline_zhHant": "【心得】裝備專精系統心得",
@@ -366,7 +587,7 @@
       "title_orig": "【情報】【已開機】關機維護公告 - 2026/11/10(二) 16:30，延長 1 小時",
       "lang_orig": "zh",
       "publishedAt": "2026-11-10T15:59:00.000Z",
-      "fetchedAt": "2026-11-11T16:49:26.026Z",
+      "fetchedAt": "2026-11-11T18:50:04.185Z",
       "category": "updates",
       "tags": [],
       "importance": 50,
@@ -390,7 +611,7 @@
       "title_orig": "11月的第二輪twitch掉寶現已開啟",
       "lang_orig": "zh",
       "publishedAt": "2026-11-10T00:00:00Z",
-      "fetchedAt": "2026-11-11T16:49:26.026Z",
+      "fetchedAt": "2026-11-11T18:50:04.185Z",
       "category": "community",
       "tags": [
         "creator"
@@ -416,7 +637,7 @@
       "title_orig": "維護警報",
       "lang_orig": "zh",
       "publishedAt": "2026-11-09T00:00:00Z",
-      "fetchedAt": "2026-11-11T16:49:26.026Z",
+      "fetchedAt": "2026-11-11T18:50:04.185Z",
       "category": "updates",
       "tags": [
         "creator"
@@ -442,7 +663,7 @@
       "title_orig": "Last Chance to Pre-Purchase The Division 2: Echoes of Central Park",
       "lang_orig": "en",
       "publishedAt": "2026-10-28T13:29:29.000Z",
-      "fetchedAt": "2026-11-11T16:49:26.026Z",
+      "fetchedAt": "2026-11-11T18:50:04.185Z",
       "category": "missions",
       "tags": [
         "dlc",
@@ -469,7 +690,7 @@
       "title_orig": "Echoes of Central Park Launch Livestream",
       "lang_orig": "en",
       "publishedAt": "2026-10-27T16:01:04.000Z",
-      "fetchedAt": "2026-11-11T16:49:26.026Z",
+      "fetchedAt": "2026-11-11T18:50:04.185Z",
       "category": "community",
       "tags": [],
       "importance": 40,
@@ -493,7 +714,7 @@
       "title_orig": "Echoes of Central Park Costume Contest",
       "lang_orig": "en",
       "publishedAt": "2026-10-27T10:34:40.000Z",
-      "fetchedAt": "2026-11-11T16:49:26.026Z",
+      "fetchedAt": "2026-11-11T18:50:04.185Z",
       "category": "community",
       "tags": [],
       "importance": 40,
@@ -517,7 +738,7 @@
       "title_orig": "【攻略】部分技能的解鎖方式整理",
       "lang_orig": "zh",
       "publishedAt": "2026-11-05T05:49:00.000Z",
-      "fetchedAt": "2026-11-11T16:49:26.026Z",
+      "fetchedAt": "2026-11-11T18:50:04.185Z",
       "category": "builds",
       "tags": [],
       "importance": 38,
@@ -541,7 +762,7 @@
       "title_orig": "【情報】中央公園的迴響 DLC 夥伴 - 相關資訊",
       "lang_orig": "zh",
       "publishedAt": "2026-11-05T04:03:00.000Z",
-      "fetchedAt": "2026-11-11T16:49:26.026Z",
+      "fetchedAt": "2026-11-11T18:50:04.185Z",
       "category": "missions",
       "tags": [
         "dlc"
@@ -567,7 +788,7 @@
       "title_orig": "【情報】*劇透注意* Y8S3/TU29 獵捕行動 Red Horizon 偵查任務 每週統整",
       "lang_orig": "zh",
       "publishedAt": "2026-11-03T17:07:00.000Z",
-      "fetchedAt": "2026-11-11T16:49:26.026Z",
+      "fetchedAt": "2026-11-11T18:50:04.185Z",
       "category": "updates",
       "tags": [],
       "importance": 35,
@@ -591,7 +812,7 @@
       "title_orig": "【心得】無陷阱手T10日蝕複合控場(全汞合金)",
       "lang_orig": "zh",
       "publishedAt": "2026-11-03T05:31:00.000Z",
-      "fetchedAt": "2026-11-11T16:49:26.026Z",
+      "fetchedAt": "2026-11-11T18:50:04.185Z",
       "category": "builds",
       "tags": [],
       "importance": 34,
@@ -615,7 +836,7 @@
       "title_orig": "【情報】【已開機】關機維護公告 - 2026/11/03(二) 16:00 (Y8S3.3 中央公園DLC)，延長1.5小時",
       "lang_orig": "zh",
       "publishedAt": "2026-11-02T16:43:00.000Z",
-      "fetchedAt": "2026-11-11T16:49:26.026Z",
+      "fetchedAt": "2026-11-11T18:50:04.185Z",
       "category": "updates",
       "tags": [
         "dlc"
@@ -638,22 +859,22 @@
     {
       "sourceId": "steam-news",
       "ok": true,
-      "checkedAt": "2026-11-11T16:49:26.026Z"
+      "checkedAt": "2026-11-11T18:50:04.185Z"
     },
     {
       "sourceId": "ubisoft-en",
       "ok": true,
-      "checkedAt": "2026-11-11T16:49:26.026Z"
+      "checkedAt": "2026-11-11T18:50:04.185Z"
     },
     {
       "sourceId": "ubisoft-zh-tw",
       "ok": true,
-      "checkedAt": "2026-11-11T16:49:26.026Z"
+      "checkedAt": "2026-11-11T18:50:04.185Z"
     },
     {
       "sourceId": "bahamut",
       "ok": true,
-      "checkedAt": "2026-11-11T16:49:26.026Z"
+      "checkedAt": "2026-11-11T18:50:04.185Z"
     }
   ]
 }
