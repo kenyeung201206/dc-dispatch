@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-11T04:52:46.338Z",
+  "updatedAt": "2026-11-11T07:00:04.593Z",
   "topics": [
     {
       "id": "32876",
@@ -20,15 +20,6 @@
       "lastReplyAt": "2026-11-06T14:10:00.000Z"
     },
     {
-      "id": "32868",
-      "tag": "問題",
-      "title": "【問題】奇特優勢打擊問題",
-      "url": "https://forum.gamer.com.tw/C.php?bsn=24460&snA=32868",
-      "replies": 18,
-      "views": 1381,
-      "lastReplyAt": "2026-11-04T05:50:00.000Z"
-    },
-    {
       "id": "32873",
       "tag": "問題",
       "title": "【問題】新「DLC」有六個技能，我只找到五個，請問第六個在哪？",
@@ -43,8 +34,17 @@
       "title": "【閒聊】老新手回鍋想請問目前環境",
       "url": "https://forum.gamer.com.tw/C.php?bsn=24460&snA=32869",
       "replies": 12,
-      "views": 2842,
-      "lastReplyAt": "2026-11-11T04:03:46.338Z"
+      "views": 2847,
+      "lastReplyAt": "2026-11-11T05:00:04.593Z"
+    },
+    {
+      "id": "32882",
+      "tag": "閒聊",
+      "title": "【閒聊】虫合 ?!",
+      "url": "https://forum.gamer.com.tw/C.php?bsn=24460&snA=32882",
+      "replies": 11,
+      "views": 1133,
+      "lastReplyAt": "2026-11-08T12:17:00.000Z"
     }
   ]
 }
