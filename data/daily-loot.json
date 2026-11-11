@@ -1,60 +1,60 @@
 {
- "date": "2026-11-10",
+ "date": "2026-11-11",
  "missions": [
   {
    "place": "墳墓",
-   "reward": "電力",
-   "kind": "brand"
+   "reward": "鑄造廠",
+   "kind": "set"
   },
   {
    "place": "曼寧",
-   "reward": "阿爾拉蒂",
+   "reward": "阿爾卑斯",
    "kind": "brand"
   },
   {
    "place": "銀行",
-   "reward": "真實愛國者",
-   "kind": "set"
+   "reward": "冷漠",
+   "kind": "brand"
   },
   {
    "place": "歷史博物館",
-   "reward": "茲維多",
+   "reward": "貝爾斯通",
    "kind": "brand"
   },
   {
    "place": "太空總署",
-   "reward": "先鋒",
+   "reward": "王牌",
    "kind": "set"
   }
  ],
  "vendor": [
-  "精準步槍",
-  "面罩"
+  "突擊步槍",
+  "槍套"
+ ],
+ "english": [
+  {
+   "place": "The Tombs",
+   "reward": "Foundry Bulwark"
+  },
+  {
+   "place": "Manning National Zoo",
+   "reward": "Alps Summit Armaments"
+  },
+  {
+   "place": "Bank Headquarters",
+   "reward": "Lengmo"
+  },
+  {
+   "place": "American History Museum",
+   "reward": "Belstone Armory"
+  },
+  {
+   "place": "Space Administration HQ",
+   "reward": "Aces & Eights"
+  }
  ],
  "title": "",
  "url": "https://prototrack.gg/target-loot/target-loot.php",
  "source": "prototrack",
- "fetchedAt": "2026-11-10T08:39:09.768Z",
- "english": [
-  {
-   "place": "The Tombs",
-   "reward": "Electrique"
-  },
-  {
-   "place": "Manning National Zoo",
-   "reward": "Airaldi Holdings"
-  },
-  {
-   "place": "Bank Headquarters",
-   "reward": "True Patriot"
-  },
-  {
-   "place": "American History Museum",
-   "reward": "Zwiadowka Sp. z o.o"
-  },
-  {
-   "place": "Space Administration HQ",
-   "reward": "Tip of the Spear"
-  }
- ]
+ "fetchedAt": "2026-11-11T08:51:16.650Z"
 }
