@@ -1,11 +1,11 @@
 {
-  "lastRun": "2026-11-12T12:58:37.588Z",
-  "durationMs": 13949,
+  "lastRun": "2026-11-12T14:51:24.448Z",
+  "durationMs": 65319,
   "edition": {
     "date": "2026-11-12",
     "number": 9,
-    "items": 49,
-    "zhPending": 31
+    "items": 51,
+    "zhPending": 32
   },
   "sources": [
     {
@@ -25,13 +25,17 @@
     },
     {
       "id": "bahamut",
-      "ok": true,
-      "items": 10
+      "ok": false,
+      "items": 0,
+      "note": "Error: HTTP 403",
+      "failingSince": "2026-11-12T14:50:19.129Z"
     },
     {
       "id": "bahamut-hot",
-      "ok": true,
-      "items": 5
+      "ok": false,
+      "items": 0,
+      "note": "Error: 巴哈 board page not fetched this run",
+      "failingSince": "2026-11-12T14:50:19.129Z"
     }
   ],
   "videos": {
