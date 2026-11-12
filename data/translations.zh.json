@@ -884,6 +884,51 @@
       "headline": "Severs 回歸與公開直播遊玩影片",
       "summary": "玩家直播影片，標題提到新內容、削弱與增強，說明未列具體內容。",
       "summaryKind": "original"
+    },
+    "hej7xr": {
+      "headline": "已知問題：救人評級不一致",
+      "summary": "Escalation 救人所得的玩家評級可能不一致，也可能重複計算。",
+      "summaryKind": "original"
+    },
+    "1ttmry9": {
+      "headline": "已知問題：Legendary 領地控制儲物箱無戰利品",
+      "summary": "全域難度為 Legendary 時，一般與菁英領地控制的裝備儲物箱不會給戰利品。",
+      "summaryKind": "original"
+    },
+    "1gkc4z7": {
+      "headline": "已知問題：Heroic 控制點具名敵人掉原型裝備",
+      "summary": "全域難度為 Heroic 時，控制點的具名敵人可能掉落原型裝備。",
+      "summaryKind": "original"
+    },
+    "1rxclrc": {
+      "headline": "已知問題：Legendary 任務首領名稱為暫代",
+      "summary": "新的 Legendary 主線任務首領目前使用暫代名稱。",
+      "summaryKind": "original"
+    },
+    "tion2p": {
+      "headline": "已知問題：報復行動介面顯示 Legendary",
+      "summary": "從 Legendary 開放世界開始的 Heroic 報復行動，介面可能誤顯示 Legendary。",
+      "summaryKind": "original"
+    },
+    "37y6no": {
+      "headline": "已知問題：非 White Tusk 派系用 Heroic 強度",
+      "summary": "Legendary 開放世界中，White Tusk 以外的派系使用 Heroic 強度。",
+      "summaryKind": "original"
+    },
+    "qy8rcm": {
+      "headline": "已知問題：開放世界 White Tusk 較弱",
+      "summary": "Legendary 開放世界的 White Tusk 生命與護甲少於 Legendary 主線任務。",
+      "summaryKind": "original"
+    },
+    "qfv8ho": {
+      "headline": "Morse 夥伴天賦全升滿教學影片",
+      "summary": "玩家影片，介紹突擊型夥伴 Morse Feeney 的天賦與技能升級，描述未列具體數值。",
+      "summaryKind": "original"
+    },
+    "1sv8unc": {
+      "headline": "Severs 回歸與揭露直播遊玩影片",
+      "summary": "玩家直播影片，標題提到新內容、削弱與增強，說明未列具體內容。",
+      "summaryKind": "original"
     }
   },
   "videos": {
