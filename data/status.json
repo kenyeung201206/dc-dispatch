@@ -1,11 +1,11 @@
 {
-  "lastRun": "2026-11-12T14:51:24.448Z",
-  "durationMs": 65319,
+  "lastRun": "2026-11-12T16:55:46.381Z",
+  "durationMs": 13534,
   "edition": {
-    "date": "2026-11-12",
-    "number": 9,
-    "items": 51,
-    "zhPending": 32
+    "date": "2026-11-13",
+    "number": 10,
+    "items": 38,
+    "zhPending": 23
   },
   "sources": [
     {
@@ -25,17 +25,13 @@
     },
     {
       "id": "bahamut",
-      "ok": false,
-      "items": 0,
-      "note": "Error: HTTP 403",
-      "failingSince": "2026-11-12T14:50:19.129Z"
+      "ok": true,
+      "items": 10
     },
     {
       "id": "bahamut-hot",
-      "ok": false,
-      "items": 0,
-      "note": "Error: 巴哈 board page not fetched this run",
-      "failingSince": "2026-11-12T14:50:19.129Z"
+      "ok": true,
+      "items": 5
     }
   ],
   "videos": {
@@ -45,5 +41,11 @@
   "budget": {
     "youtubeQuotaUnits": 311,
     "costUsd": 0
+  },
+  "degraded": {
+    "at": "2026-11-12T16:55:55.000Z",
+    "failed": [
+      "zh.test.ts > Chinese-only pages > exotics and patches have Chinese, and change lines line up one-to-one"
+    ]
   }
 }

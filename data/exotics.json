@@ -1,6 +1,21 @@
 {
   "exotics": [
     {
+      "name": "Forward Observer",
+      "type": "Mask",
+      "talent": "Strike Order",
+      "text": "Enemies you aim at for 1s (2s in PvP) are pulsed and marked for 4s.",
+      "status": "pts",
+      "confidence": "official",
+      "firstSeen": "2026-11-12T16:00:00.000Z",
+      "sources": [
+        {
+          "name": "Ubisoft",
+          "url": "https://www.ubisoft.com/en-us/game/the-division/the-division-2/news-updates/1wrUJ1HzY6BF8zzO4AMhJ3/spearfall-pts-patch-notes"
+        }
+      ]
+    },
+    {
       "name": "Loaded for Bear",
       "type": "Gloves",
       "talent": "Afterburn",

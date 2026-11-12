@@ -432,6 +432,24 @@
       "tags": [
         "news"
       ]
+    },
+    {
+      "kind": "image",
+      "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/3J2IitgsZBYeyE1vvZLdYz/17df7b4027e747c8eeb1f7b3fc2cebbc/Spearfall_PTS_Patch_Notes_Thumbnail_960x540.jpg?w=1600",
+      "alt_en": "Official image for \"Spearfall PTS Patch Notes\"",
+      "alt_zhHant": "官方新聞圖片：Spearfall PTS Patch Notes",
+      "license": "Official promotional image © Ubisoft Entertainment. Shown unmodified, with credit, on a private non-commercial site.",
+      "attribution": "Ubisoft",
+      "attributionUrl": "https://www.ubisoft.com/en-us/game/the-division/the-division-2/news-updates/1wrUJ1HzY6BF8zzO4AMhJ3/spearfall-pts-patch-notes",
+      "aiGenerated": false,
+      "id": "ubi-1wrUJ1HzY6BF8zzO4AMhJ3",
+      "width": 1600,
+      "height": 900,
+      "urlSmall": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/3J2IitgsZBYeyE1vvZLdYz/17df7b4027e747c8eeb1f7b3fc2cebbc/Spearfall_PTS_Patch_Notes_Thumbnail_960x540.jpg?w=640",
+      "widthSmall": 640,
+      "tags": [
+        "news"
+      ]
     }
   ],
   "sectionBanners": {

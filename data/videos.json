@@ -1,6 +1,44 @@
 {
   "videos": [
     {
+      "id": "tGCIhp4I0NA",
+      "title": "*SEVERS ARE BACK & REVEAL STREAM* The Division 2 Gameplay: NEW CONTENT, NERFS, Insane Buffs, & More!",
+      "channelName": "Kamikazevondoom",
+      "channelUrl": "https://www.youtube.com/channel/UCWd5S9-AEf26j0wY3P8TOhw",
+      "publishedAt": "2026-11-12T16:46:19.000Z",
+      "durationSec": 8382,
+      "official": false,
+      "row": "more",
+      "checkedAt": "2026-11-12T16:55:32.847Z",
+      "via": "youtube-api",
+      "rumour": false
+    },
+    {
+      "id": "C1QxVTFxaXk",
+      "title": "*SEVERS ARE BACK & REVEAL STREAM* The Division 2 Gameplay: NEW CONTENT, NERFS, Insane Buffs, & More!",
+      "channelName": "Kamikazevondoom",
+      "channelUrl": "https://www.youtube.com/channel/UCWd5S9-AEf26j0wY3P8TOhw",
+      "publishedAt": "2026-11-12T16:42:00.000Z",
+      "official": false,
+      "row": "more",
+      "checkedAt": "2026-11-12T16:55:32.847Z",
+      "via": "youtube-api",
+      "rumour": false
+    },
+    {
+      "id": "Tx4draay4ec",
+      "title": "MAX OUT MORSE Companion Talents! #TheDivision2 #MorseFeeney #CompanionTalents",
+      "channelName": "ManaWar Gaming",
+      "channelUrl": "https://www.youtube.com/channel/UCrLMaFhu9SYwosWBgqm0tMQ",
+      "publishedAt": "2026-11-12T16:36:29.000Z",
+      "durationSec": 175,
+      "official": false,
+      "row": "more",
+      "checkedAt": "2026-11-12T16:55:32.847Z",
+      "via": "youtube-api",
+      "rumour": false
+    },
+    {
       "id": "m-njCCVJhB4",
       "title": "🔴 SEASON 4 PTS REVEAL! Dev Stream & T10 Escalations LIVE | The Division 2",
       "channelName": "GCROCK",
@@ -8,7 +46,7 @@
       "publishedAt": "2026-11-12T13:29:09.000Z",
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-12T14:50:19.129Z",
+      "checkedAt": "2026-11-12T16:55:32.847Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -21,7 +59,7 @@
       "durationSec": 568,
       "official": false,
       "row": "intel",
-      "checkedAt": "2026-11-12T14:50:19.129Z",
+      "checkedAt": "2026-11-12T16:55:32.847Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -34,7 +72,7 @@
       "durationSec": 180,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-12T14:50:19.129Z",
+      "checkedAt": "2026-11-12T16:55:32.847Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -47,7 +85,7 @@
       "durationSec": 1242,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-12T14:50:19.129Z",
+      "checkedAt": "2026-11-12T16:55:32.847Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -60,7 +98,20 @@
       "durationSec": 661,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-12T14:50:19.129Z",
+      "checkedAt": "2026-11-12T16:55:32.847Z",
+      "via": "youtube-search",
+      "rumour": false
+    },
+    {
+      "id": "BE26GMBV3bw",
+      "title": "The Division 2 | The Overlooked Exotic Glove That Fixes The Ratel (LEGENDARY APPROVED)",
+      "channelName": "SHD Workshop",
+      "channelUrl": "https://www.youtube.com/channel/UCUTNbOtDCtvRYYbRhuX9PFg",
+      "publishedAt": "2026-11-12T05:11:52.000Z",
+      "durationSec": 535,
+      "official": false,
+      "row": "intel",
+      "checkedAt": "2026-11-12T16:55:32.847Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -86,7 +137,7 @@
       "durationSec": 588,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-12T14:50:19.129Z",
+      "checkedAt": "2026-11-12T16:55:32.847Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -99,7 +150,7 @@
       "durationSec": 481,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-12T14:50:19.129Z",
+      "checkedAt": "2026-11-12T16:55:32.847Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -112,7 +163,7 @@
       "durationSec": 38,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-12T14:50:19.129Z",
+      "checkedAt": "2026-11-12T16:55:32.847Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -125,7 +176,7 @@
       "durationSec": 106,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-12T14:50:19.129Z",
+      "checkedAt": "2026-11-12T16:55:32.847Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -138,7 +189,7 @@
       "durationSec": 732,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-12T14:50:19.129Z",
+      "checkedAt": "2026-11-12T16:55:32.847Z",
       "via": "youtube-api",
       "rumour": true
     },
@@ -151,7 +202,7 @@
       "durationSec": 528,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-12T14:50:19.129Z",
+      "checkedAt": "2026-11-12T16:55:32.847Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -164,7 +215,7 @@
       "durationSec": 1346,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-12T14:50:19.129Z",
+      "checkedAt": "2026-11-12T16:55:32.847Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -177,7 +228,7 @@
       "durationSec": 425,
       "official": false,
       "row": "intel",
-      "checkedAt": "2026-11-12T14:50:19.129Z",
+      "checkedAt": "2026-11-12T16:55:32.847Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -190,7 +241,7 @@
       "durationSec": 28734,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-12T14:50:19.129Z",
+      "checkedAt": "2026-11-12T16:55:32.847Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -203,7 +254,7 @@
       "durationSec": 120,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-12T14:50:19.129Z",
+      "checkedAt": "2026-11-12T16:55:32.847Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -216,7 +267,7 @@
       "durationSec": 180,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-12T14:50:19.129Z",
+      "checkedAt": "2026-11-12T16:55:32.847Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -242,7 +293,7 @@
       "durationSec": 670,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-12T14:50:19.129Z",
+      "checkedAt": "2026-11-12T16:55:32.847Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -255,7 +306,7 @@
       "durationSec": 563,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-12T14:50:19.129Z",
+      "checkedAt": "2026-11-12T16:55:32.847Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -268,7 +319,7 @@
       "durationSec": 180,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-12T14:50:19.129Z",
+      "checkedAt": "2026-11-12T16:55:32.847Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -281,7 +332,7 @@
       "durationSec": 10381,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-12T14:50:19.129Z",
+      "checkedAt": "2026-11-12T16:55:32.847Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -307,7 +358,7 @@
       "durationSec": 164,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-12T14:50:19.129Z",
+      "checkedAt": "2026-11-12T16:55:32.847Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -320,7 +371,7 @@
       "durationSec": 489,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-12T14:50:19.129Z",
+      "checkedAt": "2026-11-12T16:55:32.847Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -333,7 +384,7 @@
       "durationSec": 23,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-12T14:50:19.129Z",
+      "checkedAt": "2026-11-12T16:55:32.847Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -346,7 +397,7 @@
       "durationSec": 40,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-12T14:50:19.129Z",
+      "checkedAt": "2026-11-12T16:55:32.847Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -359,7 +410,7 @@
       "durationSec": 102,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-12T14:50:19.129Z",
+      "checkedAt": "2026-11-12T16:55:32.847Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -372,7 +423,7 @@
       "durationSec": 4034,
       "official": false,
       "row": "build-guides",
-      "checkedAt": "2026-11-12T14:50:19.129Z",
+      "checkedAt": "2026-11-12T16:55:32.847Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -385,59 +436,7 @@
       "durationSec": 672,
       "official": false,
       "row": "build-guides",
-      "checkedAt": "2026-11-12T14:50:19.129Z",
-      "via": "youtube-api",
-      "rumour": false
-    },
-    {
-      "id": "xTjvPNr_1Ds",
-      "title": "THE DIVISION 2! CENTRAL PARK DLC EIN FLOP? DIE COMMMUNITY SAGT JA!",
-      "channelName": "supermarioluf",
-      "channelUrl": "https://www.youtube.com/channel/UCKbKbmCZi1KfQejkxfR3QyA",
-      "publishedAt": "2026-11-11T14:15:11.000Z",
-      "durationSec": 906,
-      "official": false,
-      "row": "more",
-      "checkedAt": "2026-11-12T07:04:05.799Z",
-      "via": "youtube-search",
-      "rumour": false
-    },
-    {
-      "id": "B1sny0IbaYs",
-      "title": "I Played With the Real Narrator of Central Park (The Division 2)",
-      "channelName": "widdz",
-      "channelUrl": "https://www.youtube.com/channel/UC1h4ld2anwjT4NEbqFOJRXQ",
-      "publishedAt": "2026-11-11T14:08:28.000Z",
-      "durationSec": 1257,
-      "official": false,
-      "row": "more",
-      "checkedAt": "2026-11-12T14:50:19.129Z",
-      "via": "youtube-api",
-      "rumour": false
-    },
-    {
-      "id": "IRD2YGHYNvY",
-      "title": "The Division 2's New DLC Revealed Some MAJOR Issues in the Game... Here's How We Would FIX Them.",
-      "channelName": "SaxTalksGames",
-      "channelUrl": "https://www.youtube.com/channel/UCsBDy4rnNmB31KifYwLI6QQ",
-      "publishedAt": "2026-11-11T13:57:37.000Z",
-      "durationSec": 3755,
-      "official": false,
-      "row": "more",
-      "checkedAt": "2026-11-12T07:04:05.799Z",
-      "via": "youtube-search",
-      "rumour": false
-    },
-    {
-      "id": "OU746i2Xm24",
-      "title": "So I met the Narrator of Central Park (The Division 2)",
-      "channelName": "widdz",
-      "channelUrl": "https://www.youtube.com/channel/UC1h4ld2anwjT4NEbqFOJRXQ",
-      "publishedAt": "2026-11-11T13:53:23.000Z",
-      "durationSec": 21,
-      "official": false,
-      "row": "more",
-      "checkedAt": "2026-11-12T14:50:19.129Z",
+      "checkedAt": "2026-11-12T16:55:32.847Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -489,7 +488,7 @@
       "publishedAt": "2026-11-02T13:48:39.000Z",
       "official": true,
       "row": "more",
-      "checkedAt": "2026-11-12T14:50:19.129Z",
+      "checkedAt": "2026-11-12T16:55:32.847Z",
       "via": "ubisoft-page",
       "rumour": false
     },
@@ -502,7 +501,7 @@
       "publishedAt": "2026-10-30T18:16:35.000Z",
       "official": true,
       "row": "trailers",
-      "checkedAt": "2026-11-12T14:50:19.129Z",
+      "checkedAt": "2026-11-12T16:55:32.847Z",
       "via": "ubisoft-page",
       "rumour": false
     },
