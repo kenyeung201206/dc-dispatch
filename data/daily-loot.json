@@ -1,60 +1,60 @@
 {
- "date": "2026-11-11",
+ "date": "2026-11-12",
  "missions": [
   {
    "place": "墳墓",
-   "reward": "鑄造廠",
-   "kind": "set"
+   "reward": "先驅工業",
+   "kind": "brand"
   },
   {
    "place": "曼寧",
-   "reward": "阿爾卑斯",
-   "kind": "brand"
+   "reward": "手槍",
+   "kind": "weapon"
   },
   {
    "place": "銀行",
-   "reward": "冷漠",
-   "kind": "brand"
+   "reward": "奧提茲",
+   "kind": "set"
   },
   {
    "place": "歷史博物館",
-   "reward": "貝爾斯通",
-   "kind": "brand"
+   "reward": "精密組裝",
+   "kind": "set"
   },
   {
    "place": "太空總署",
-   "reward": "王牌",
-   "kind": "set"
+   "reward": "步槍",
+   "kind": "weapon"
   }
  ],
  "vendor": [
-  "突擊步槍",
-  "槍套"
+  "精準步槍",
+  "Chest Pieces"
  ],
  "english": [
   {
    "place": "The Tombs",
-   "reward": "Foundry Bulwark"
+   "reward": "Uzina Getica"
   },
   {
    "place": "Manning National Zoo",
-   "reward": "Alps Summit Armaments"
+   "reward": "Pistol"
   },
   {
    "place": "Bank Headquarters",
-   "reward": "Lengmo"
+   "reward": "Ortiz Exuro"
   },
   {
    "place": "American History Museum",
-   "reward": "Belstone Armory"
+   "reward": "Measured Assembly"
   },
   {
    "place": "Space Administration HQ",
-   "reward": "Aces & Eights"
+   "reward": "Rifle"
   }
  ],
  "title": "",
  "url": "https://prototrack.gg/target-loot/target-loot.php",
  "source": "prototrack",
- "fetchedAt": "2026-11-11T08:51:16.650Z"
+ "fetchedAt": "2026-11-12T08:18:58.473Z"
 }
