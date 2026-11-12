@@ -482,6 +482,14 @@
     "餘燼"
    ],
    "icon": "/icons/set/ember-engine.png"
+  },
+  {
+   "en": "Measured Assembly",
+   "aliases": [
+    "精密組裝",
+    "Measured Assembly"
+   ],
+   "icon": "/icons/set/measured-assembly.png"
   }
  ],
  "slots": [
