@@ -834,6 +834,56 @@
       "headline": "第 4 季 PTS 公開直播與 T10 挑戰",
       "summary": "實況主同步觀看官方第 4 季 PTS 開發者直播，並挑戰 Tier 10 Escalations。",
       "summaryKind": "original"
+    },
+    "15yr4ky": {
+      "headline": "Spearfall PTS 改動總覽",
+      "summary": "官方公布賽季測試服內容：傳奇難度、Escalation、原型裝備、新裝備與修飾詞，11/13–11/16 限 PC。",
+      "summaryKind": "original"
+    },
+    "1ypems3": {
+      "headline": "已知問題：Schematic 清單顯示錯誤類別",
+      "summary": "替原型裝備選 Schematic 時，清單可能列出不屬於該武器類別或裝備欄位的項目。",
+      "summaryKind": "original"
+    },
+    "1blg61e": {
+      "headline": "已知問題：Schematic 屬性變更超出欄位數",
+      "summary": "部分 Schematic 提供的屬性變更多於裝備可用的欄位數。",
+      "summaryKind": "original"
+    },
+    "1e2o3a6": {
+      "headline": "已知問題：Unbreakable 回甲 100%",
+      "summary": "Unbreakable 可能回復 100% 護甲，而非設計的 95%。",
+      "summaryKind": "original"
+    },
+    "t35ov9": {
+      "headline": "已知問題：Reformation 爆頭加成失效",
+      "summary": "爆頭可能無法觸發 Reformation 的技能修復加成。",
+      "summaryKind": "original"
+    },
+    "1u6r63n": {
+      "headline": "已知問題：Brave Draw 缺菁英減傷",
+      "summary": "Brave Draw 缺少菁英減傷加成。",
+      "summaryKind": "original"
+    },
+    "1113vdw": {
+      "headline": "建議優先測試 Core Build 指令",
+      "summary": "官方建議 Escalation 測試以 Core Build 為主；Marked 與 Collaboration 也可玩，但可能有錯誤。",
+      "summaryKind": "original"
+    },
+    "cj4ae2": {
+      "headline": "已知問題：HUD 的任務目標與評級消失",
+      "summary": "開始新的 Escalation 任務時，任務目標與玩家評級可能從 HUD 消失。",
+      "summaryKind": "original"
+    },
+    "1t6dqwc": {
+      "headline": "Ratel 搭 Rugged Gauntlets 配裝實測",
+      "summary": "玩家影片：Ratel 配 Rugged Gauntlets 與 Turmoil 護膝，作者稱傳奇單人清場比 St. Elmo's 快。",
+      "summaryKind": "original"
+    },
+    "z7iin2": {
+      "headline": "Severs 回歸與公開直播遊玩影片",
+      "summary": "玩家直播影片，標題提到新內容、削弱與增強，說明未列具體內容。",
+      "summaryKind": "original"
     }
   },
   "videos": {

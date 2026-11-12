@@ -6640,6 +6640,254 @@
         "說明沒有列出任何第 4 季的具體內容或數值，需看直播本身"
       ],
       "written": "2026-11-12"
+    },
+    "15yr4ky": {
+      "points": [
+        "官方公布「Spearfall」賽季公開測試伺服器（PTS）改動：傳奇難度、Escalation、原型裝備、新裝備與賽季修飾詞",
+        "PTS 僅限 PC；測試期間 11 月 13 日開放至 11 月 16 日",
+        "傳奇難度擴充為四個主線任務，傳奇開放世界僅限華盛頓特區，由 White Tusk 取代 Black Tusk",
+        "新增「未知科技」強化軌與主動／被動修飾詞，敵人的 Contra-Augment 需打弱點取消",
+        "新增奇特 AR August、奇特面罩 Forward Observer、套裝 Field General"
+      ],
+      "tables": [
+        {
+          "title": "PTS 時程",
+          "columns": [
+            "項目",
+            "時間"
+          ],
+          "rows": [
+            [
+              "開放",
+              "11 月 13 日（五）8 AM ET／5 AM PT／2 PM CET"
+            ],
+            [
+              "關閉",
+              "11 月 16 日（一）8 AM ET／5 AM PT／2 PM CET"
+            ]
+          ]
+        },
+        {
+          "title": "未知科技強化軌（各段數值範圍）",
+          "columns": [
+            "階段",
+            "強化一",
+            "強化二"
+          ],
+          "rows": [
+            [
+              "第 I 段",
+              "射速 2–6%",
+              "擊殺回復護甲 5–10%"
+            ],
+            [
+              "第 II 段",
+              "技能傷害 5–10%",
+              "技能修復 5–25%"
+            ],
+            [
+              "第 III 段",
+              "武器操控 2–10%",
+              "菁英減傷 2–6%"
+            ],
+            [
+              "第 IV 段",
+              "狀態效果 6–12%",
+              "技能加速 10–20%"
+            ],
+            [
+              "第 V 段",
+              "Augment 效率 4–20%",
+              "危害防護 4–20%"
+            ]
+          ]
+        },
+        {
+          "title": "主動修飾詞持續時間",
+          "columns": [
+            "修飾詞",
+            "類型",
+            "秒數"
+          ],
+          "rows": [
+            [
+              "Mirrored Sabotage",
+              "Quantum／Echo",
+              "45"
+            ],
+            [
+              "Mirrored Sabotage",
+              "Amalgam",
+              "30"
+            ],
+            [
+              "Mirrored Sabotage",
+              "Anomaly",
+              "25"
+            ],
+            [
+              "Mirrored Boost",
+              "Quantum／Echo",
+              "45"
+            ],
+            [
+              "Mirrored Boost",
+              "Amalgam／Anomaly",
+              "40"
+            ],
+            [
+              "Advanced Lethality",
+              "—",
+              "60（每次傷害 2% 機率獲得 1% 對護甲傷害）"
+            ]
+          ]
+        },
+        {
+          "title": "Escalation「Marked」獵人層數上限",
+          "columns": [
+            "人數",
+            "上限"
+          ],
+          "rows": [
+            [
+              "單人",
+              "12"
+            ],
+            [
+              "2 人",
+              "每人 9"
+            ],
+            [
+              "3 人",
+              "每人 6"
+            ],
+            [
+              "4 人",
+              "每人 3"
+            ]
+          ]
+        }
+      ],
+      "body": [
+        "未知科技點數：擊殺帶敵對修飾詞的敵人得 1 點（助攻也算），取消 Contra-Augment 則得與其啟動等級（1–5）相同的點數。",
+        "Escalation 與第一個 Tier 於等級 40 解鎖；原型裝備升級需要專精等級 30，並以原型核心直接選擇 Augment。PTS 新角色附滿級原型裝備與命名裝備。"
+      ],
+      "written": "2026-11-13"
+    },
+    "1ypems3": {
+      "points": [
+        "已知問題（官方）：替原型裝備選擇 Schematic 時，清單可能出現適用於其他武器類別或裝備欄位的 Schematic"
+      ],
+      "written": "2026-11-13"
+    },
+    "1blg61e": {
+      "points": [
+        "已知問題（官方）：部分 Schematic 提供的屬性變更數量，比裝備的欄位數還多"
+      ],
+      "written": "2026-11-13"
+    },
+    "1e2o3a6": {
+      "points": [
+        "已知問題（官方）：Unbreakable 可能回復 100% 護甲，而不是 95%"
+      ],
+      "written": "2026-11-13"
+    },
+    "t35ov9": {
+      "points": [
+        "已知問題（官方）：爆頭可能無法觸發 Reformation 的技能修復加成"
+      ],
+      "written": "2026-11-13"
+    },
+    "1u6r63n": {
+      "points": [
+        "已知問題（官方）：Brave Draw 缺少菁英減傷（Protection from Elites）加成"
+      ],
+      "written": "2026-11-13"
+    },
+    "1113vdw": {
+      "points": [
+        "官方建議（PTS 已知問題頁）：Escalation 測試請優先集中在 Core Build 指令",
+        "Marked 與 Collaboration 也能玩，但兩者都可能遇到錯誤"
+      ],
+      "written": "2026-11-13"
+    },
+    "cj4ae2": {
+      "points": [
+        "已知問題（官方）：完成或失敗上一場 Escalation 任務後開始新任務時，任務目標與玩家評級可能從 HUD 消失"
+      ],
+      "written": "2026-11-13"
+    },
+    "1t6dqwc": {
+      "points": [
+        "玩家影片（非官方）：SHD Workshop 分享 The Ratel 搭配 Rugged Gauntlets 的配裝",
+        "作者表示才玩第一天，傳奇難度單人通關成績明顯比先前快，且在其測試中清場速度比 St. Elmo's 快",
+        "建議在頂部放 3–4 個藍色核心，讓層數有時間疊起；搭配 Turmoil 護膝與 Rugged Gauntlets，打完 2 個彈匣後表現最佳",
+        "影片章節涵蓋 Voracious 天賦說明、Rugged Gauntlets 如何改善換彈、Striker 與 Turmoil 護膝、4-2 配置、傳奇 DUA 兩個房間實測"
+      ],
+      "tables": [
+        {
+          "title": "影片章節",
+          "columns": [
+            "時間",
+            "內容"
+          ],
+          "rows": [
+            [
+              "00:00",
+              "介紹與 The Ratel 概覽"
+            ],
+            [
+              "00:43",
+              "Voracious 天賦"
+            ],
+            [
+              "01:47",
+              "Rugged Gauntlets 與換彈"
+            ],
+            [
+              "02:16",
+              "Striker 與 Turmoil 護膝"
+            ],
+            [
+              "02:56",
+              "專精、技能與數值（4-2 配置）"
+            ],
+            [
+              "03:36",
+              "傳奇 DUA 第 1 間戰鬥測試"
+            ],
+            [
+              "04:36",
+              "與 St. Elmo's 的清場速度比較"
+            ],
+            [
+              "05:03",
+              "彈藥經濟與 Gunner 搭配"
+            ],
+            [
+              "05:28",
+              "高輸出時 Turmoil 的狀況"
+            ],
+            [
+              "06:14",
+              "第 2 間戰鬥測試"
+            ],
+            [
+              "08:27",
+              "總結與配裝評價"
+            ]
+          ]
+        }
+      ],
+      "written": "2026-11-13"
+    },
+    "z7iin2": {
+      "points": [
+        "玩家直播影片（非官方）：Kamikazevondoom 的「Severs 回歸與公開直播」遊玩影片",
+        "從標題看，內容涉及新內容、削弱與增強等改動；影片說明沒有列出任何具體內容或數值",
+        "具體改動請以官方公告為準"
+      ],
+      "written": "2026-11-13"
     }
   }
 }
