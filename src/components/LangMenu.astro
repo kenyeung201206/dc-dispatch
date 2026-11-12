@@ -1,0 +1,97 @@
+---
+/** Language button: shows the current language (繁 / 简 / EN) and opens a small menu with all three. */
+import { HTML_LANG, LANG_NAME, LANG_SHORT, LOCALES, switchLocalePath, t, type Locale } from '../i18n/index.ts';
+
+interface Props {
+  locale: Locale;
+}
+const { locale } = Astro.props;
+---
+<details class="langmenu" data-langmenu>
+  <summary class="chip-btn" aria-label={t(locale, 'nav.languageLabel')}>
+    <span lang={HTML_LANG[locale]}>{LANG_SHORT[locale]}</span><span class="caret" aria-hidden="true">▾</span>
+  </summary>
+  <ul>
+    {
+      LOCALES.map((l) => (
+        <li>
+          <a
+            href={switchLocalePath(Astro.url.pathname, l)}
+            hreflang={HTML_LANG[l]}
+            lang={HTML_LANG[l]}
+            data-lang-switch={l}
+            aria-current={l === locale ? 'true' : undefined}
+          >
+            {LANG_NAME[l]}
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+</details>
+
+<style>
+  .langmenu {
+    position: relative;
+  }
+  .langmenu summary {
+    list-style: none;
+    display: inline-flex;
+    gap: 4px;
+  }
+  .langmenu summary::-webkit-details-marker {
+    display: none;
+  }
+  .caret {
+    font-size: 0.7em;
+  }
+  .langmenu ul {
+    position: absolute;
+    right: 0;
+    top: calc(100% + 4px);
+    z-index: 40;
+    min-width: 9.5rem;
+    margin: 0;
+    padding: 4px 0;
+    list-style: none;
+    background: var(--paper);
+    color: var(--ink);
+    border: 1.5px solid var(--ink);
+    box-shadow: 0 4px 12px rgb(0 0 0 / 0.3);
+  }
+  .langmenu a {
+    display: flex;
+    align-items: center;
+    min-height: var(--tap);
+    padding: 0 14px;
+    color: inherit;
+    text-decoration: none;
+    font: 600 0.9375rem / 1.2 var(--font-cjk);
+  }
+  .langmenu a[lang='en'] {
+    font-family: var(--font-hud);
+  }
+  .langmenu a:hover,
+  .langmenu a:focus-visible {
+    background: var(--panel);
+    color: var(--panel-ink);
+  }
+  .langmenu a[aria-current='true']::after {
+    content: '✓';
+    margin-left: auto;
+    padding-left: 12px;
+    color: var(--shd);
+  }
+</style>
+
+<script>
+  // Close the menu when tapping elsewhere or pressing Escape.
+  document.addEventListener('click', (e) => {
+    document.querySelectorAll<HTMLDetailsElement>('[data-langmenu][open]').forEach((d) => {
+      if (!d.contains(e.target as Node)) d.open = false;
+    });
+  });
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') document.querySelectorAll<HTMLDetailsElement>('[data-langmenu][open]').forEach((d) => (d.open = false));
+  });
+</script>

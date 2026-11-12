@@ -1,5 +1,5 @@
 import { EditionSchema, type Edition, type Item } from '../schema/item.ts';
-import type { Locale } from '../i18n/index.ts';
+import { textLocale, type Locale } from '../i18n/index.ts';
 import { getImage } from './images.ts';
 import { hasZh, withZh } from './zh.ts';
 import { zhTerms } from './terms.ts';
@@ -101,7 +101,7 @@ const WEATHER = {
 } as const;
 
 export function weatherFor(date: string, locale: Locale): string {
-  const list = WEATHER[locale];
+  const list = WEATHER[textLocale(locale)];
   const n = [...date].reduce((s, c) => s + c.charCodeAt(0), 0);
   return list[n % list.length]!;
 }

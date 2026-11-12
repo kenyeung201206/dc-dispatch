@@ -86,3 +86,11 @@
   --focus: #ff8a94;
   color-scheme: dark;
 }
+
+/* 简体中文 pages: the Simplified Chinese cut of the same font (glyphs load only for characters a page uses). */
+:root:lang(zh-Hans) {
+  --font-display: 'Playfair Display', 'Noto Serif SC', 'Noto Serif TC', Georgia, serif;
+  --font-body: 'Libre Caslon Text', 'Noto Serif SC', 'Noto Serif TC', Georgia, serif;
+  --font-hud: 'IBM Plex Mono', 'Noto Serif SC', 'Noto Serif TC', ui-monospace, monospace;
+  --font-cjk: 'Noto Serif SC', 'Noto Serif TC', serif;
+}

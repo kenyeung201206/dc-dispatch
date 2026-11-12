@@ -18,12 +18,34 @@ test('front page renders in both languages with correct lang tags', async ({ pag
   await expect(page.locator('.story.lead .headline')).toHaveText(/[㐀-鿿]|[A-Za-z]/);
 });
 
-test('language switch keeps the page and is remembered', async ({ page }) => {
-  await page.goto('/en/');
-  await page.locator('[data-lang-switch]:visible').first().click();
-  await expect(page).toHaveURL(/\/zh-hant\/$/);
+test('first visit opens in Traditional Chinese; the language menu switches and is remembered', async ({ page }) => {
   await page.goto('/');
   await expect(page).toHaveURL(/\/zh-hant\/$/);
+  const menu = page.locator('[data-langmenu]:visible').first();
+  await expect(menu.locator('summary')).toHaveText(/繁/);
+  await menu.locator('summary').click();
+  await expect(menu.locator('a')).toHaveText(['繁體中文', '简体中文', 'English']);
+  await menu.locator('[data-lang-switch="zh-hans"]').click();
+  await expect(page).toHaveURL(/\/zh-hans\/$/);
+  await expect(page.locator('html')).toHaveAttribute('lang', 'zh-Hans');
+  await expect(page).toHaveTitle('华盛顿每日快报');
+  await page.goto('/');
+  await expect(page).toHaveURL(/\/zh-hans\/$/);
+  // The menu on a 简体 page still offers 繁體中文 in Traditional characters.
+  const back = page.locator('[data-langmenu]:visible').first();
+  await back.locator('summary').click();
+  await back.locator('[data-lang-switch="en"]').click();
+  await expect(page).toHaveURL(/\/en\/$/);
+  await page.goto('/');
+  await expect(page).toHaveURL(/\/en\/$/);
+});
+
+test('a browser set to Simplified Chinese starts on 简体中文', async ({ browser }) => {
+  const ctx = await browser.newContext({ locale: 'zh-CN' });
+  const page = await ctx.newPage();
+  await page.goto('/');
+  await expect(page).toHaveURL(/\/zh-hans\/$/);
+  await ctx.close();
 });
 
 test('starts in 夜報 (Night) even on a light OS; 日報 (Day) button switches and survives reload', async ({ page }) => {
@@ -57,7 +79,7 @@ test('phone: tap targets in the sticky bar and section nav are at least 44px', a
   const w = page.viewportSize()?.width ?? 1440;
   test.skip(!isPhone(w), 'phone only');
   await page.goto('/en/');
-  const targets = page.locator('[data-bar] a, [data-bar] button, nav a');
+  const targets = page.locator('[data-bar] a:visible, [data-bar] button, [data-bar] summary, nav a');
   const n = await targets.count();
   expect(n).toBeGreaterThan(5);
   for (let i = 0; i < n; i++) {

@@ -10,6 +10,7 @@
 import loot from '../../data/daily-loot.json' with { type: 'json' };
 import { LOOT_KINDS, matchReward } from '../lib/loot.ts';
 import { t, type Locale } from '../i18n/index.ts';
+import { asciiJson, hansTable } from '../lib/hans.ts';
 
 interface Props {
   locale: Locale;
@@ -18,6 +19,8 @@ interface Props {
 }
 const { locale, date } = Astro.props;
 const en = locale === 'en';
+/** 简体 pages: character table so the live list (fetched in Traditional) shows in Simplified too. */
+const hans = locale === 'zh-hans' ? asciiJson(hansTable()) : undefined;
 const DAY = 86_400_000;
 const fresh = Date.parse(date) - Date.parse(loot.date) <= DAY && Date.parse(loot.date) <= Date.parse(date);
 
@@ -32,7 +35,7 @@ const md = (d: string) => d.slice(5).replace('-', '/');
 /** What the live update needs to redraw the box the same way. */
 const labels = JSON.stringify({ en, kinds, credit: t(locale, 'loot.credit.prototrack'), oldest: new Date(Date.parse(date) - DAY).toISOString().slice(0, 10) });
 ---
-<section class="loot" aria-labelledby="loot-h" data-date={fresh ? loot.date : ''} data-labels={labels} hidden={!fresh}>
+<section class="loot" aria-labelledby="loot-h" data-date={fresh ? loot.date : ''} data-labels={labels} data-hans={hans} hidden={!fresh}>
   <h2 id="loot-h" class="hud-label">
     {t(locale, 'loot.title')} <span class="d">{md(loot.date)}</span>
   </h2>
@@ -101,10 +104,12 @@ const labels = JSON.stringify({ en, kinds, credit: t(locale, 'loot.credit.protot
     if (!res.ok) return;
     const live = (await res.json()) as Live;
     if (live.status !== 'ok' || live.date <= (box.dataset.date ?? '') || live.date < L.oldest) return;
-    const name = (raw: string, hit: Hit) => esc(L.en && hit ? hit.en : raw);
+    const table = JSON.parse(box.dataset.hans ?? 'null') as Record<string, string> | null;
+    const zh = (s: string) => (table ? [...s].map((c) => table[c] ?? c).join('') : s);
+    const name = (raw: string, hit: Hit) => esc(L.en && hit ? hit.en : zh(raw));
     box.querySelector('ul')!.innerHTML = live.missions
       .map(
-        (m) => `<li class="k-${esc(m.kind)}"><span class="place">${esc(m.place)}</span><span class="reward">${tile(m.hit, [...m.reward][0] ?? '', m.kind)}<span class="names"><strong>${name(m.reward, m.hit)}</strong><small>${esc(L.kinds[m.kind] ?? L.kinds.other ?? '')}${!L.en && m.hit ? ` · ${esc(m.hit.en)}` : ''}</small></span></span></li>`,
+        (m) => `<li class="k-${esc(m.kind)}"><span class="place">${esc(zh(m.place))}</span><span class="reward">${tile(m.hit, [...m.reward][0] ?? '', m.kind)}<span class="names"><strong>${name(m.reward, m.hit)}</strong><small>${esc(L.kinds[m.kind] ?? L.kinds.other ?? '')}${!L.en && m.hit ? ` · ${esc(m.hit.en)}` : ''}</small></span></span></li>`,
       )
       .join('');
     const vendor = box.querySelector<HTMLElement>('.vendor')!;

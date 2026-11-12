@@ -4,7 +4,7 @@
  * before that only the thumbnail image (i.ytimg.com, cookieless) is shown. Playback starts on the tap
  * because the tap is the reader pressing play — never on page load.
  */
-import { formatDate, t, type Locale } from '../i18n/index.ts';
+import { formatDate, isZh, t, type Locale } from '../i18n/index.ts';
 import { formatDuration } from '../lib/videos.ts';
 import type { Video } from '../schema/item.ts';
 import { hasChinese } from '../lib/zh.ts';
@@ -15,11 +15,11 @@ interface Props {
   size?: 'large' | 'card';
 }
 const { locale, video, size = 'card' } = Astro.props;
-const id = locale === 'zh-hant' && video.idZh ? video.idZh : video.id;
-const title = locale === 'zh-hant' && video.titleZh ? video.titleZh : video.title;
+const id = isZh(locale) && video.idZh ? video.idZh : video.id;
+const title = isZh(locale) && video.titleZh ? video.titleZh : video.title;
 const duration = formatDuration(video.durationSec);
-/** Chinese readers watching a non-Chinese video: ask YouTube for Traditional Chinese subtitles (auto-translated if needed). */
-const cc = locale === 'zh-hant' && !hasChinese(video.title) && !video.idZh ? 'zh-Hant' : undefined;
+/** Chinese readers watching a non-Chinese video: ask YouTube for Chinese subtitles in their script (auto-translated if needed). */
+const cc = isZh(locale) && !hasChinese(video.title) && !video.idZh ? (locale === 'zh-hans' ? 'zh-Hans' : 'zh-Hant') : undefined;
 ---
 <figure class:list={['vf', size]} data-yt={id} data-title={title} data-cc={cc}>
   <div class="frame">
@@ -38,7 +38,7 @@ const cc = locale === 'zh-hant' && !hasChinese(video.title) && !video.idZh ? 'zh
     </button>
   </div>
   <figcaption>
-    <span class="vt" lang={locale === 'zh-hant' && video.titleZh ? 'zh-Hant-TW' : undefined}>{title}</span>
+    <span class="vt" lang={isZh(locale) && video.titleZh ? 'zh-Hant-TW' : undefined}>{title}</span>
     <span class="meta">
       {video.official && <span class="off">{t(locale, 'watch.official')}</span>}
       {video.rumour && <span class="off rum">{t(locale, 'confidence.rumour')}</span>}

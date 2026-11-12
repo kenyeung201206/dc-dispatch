@@ -3,7 +3,7 @@
  * never states game facts, written natively in each language (not translated line by line).
  * Everything is deterministic by date, so the same edition always tells the same jokes.
  */
-import type { Locale } from '../i18n/index.ts';
+import { textLocale, type Locale } from '../i18n/index.ts';
 import type { Edition, Patch } from '../schema/item.ts';
 
 export type HumourLevel = 'light' | 'medium' | 'full';
@@ -32,7 +32,7 @@ function pickN<T>(list: readonly T[], n: number, rnd: () => number): T[] {
   return out;
 }
 
-type Bi = Record<Locale, readonly string[]>;
+type Bi = Record<'en' | 'zh-hant', readonly string[]>;
 
 const TICKER: Bi = {
   en: [
@@ -77,7 +77,7 @@ const CLASSIFIEDS: Bi = {
 };
 
 /** Jokes that only run when today's paper has a matching story (by tag). */
-const NEWS_CLASSIFIEDS: Record<string, Record<Locale, string>> = {
+const NEWS_CLASSIFIEDS: Record<string, Record<'en' | 'zh-hant', string>> = {
   crossplay: {
     en: 'FOR SALE: PC leaderboard rank, lightly used. Collection before November 10, for obvious reasons.',
     'zh-hant': '出售：PC 排行榜名次，八成新。請於 11 月 10 日前取貨，原因你懂的。',
@@ -231,22 +231,22 @@ export interface BackPage {
 }
 
 export function backPage(locale: Locale, edition: Edition, latestPatch?: Patch, level = humourLevel()): BackPage {
-  const rnd = seeded(`${edition.date}|${locale}`);
+  const rnd = seeded(`${edition.date}|${textLocale(locale)}`);
   const tags = new Set(edition.items.flatMap((i) => i.tags));
   const topical = Object.entries(NEWS_CLASSIFIEDS)
     .filter(([tag]) => tags.has(tag))
-    .map(([, j]) => j[locale]);
+    .map(([, j]) => j[textLocale(locale)]);
   const n = level === 'full' ? 4 : level === 'light' ? 2 : 3;
-  const classifieds = [...pickN(topical, Math.min(2, topical.length), rnd), ...pickN(CLASSIFIEDS[locale], n, rnd)].slice(0, n);
-  const signs = SIGNS[locale];
-  const preds = pickN(PREDICTIONS[locale], signs.length, rnd);
-  const word = pick(SCRAMBLE_WORDS[locale], rnd);
+  const classifieds = [...pickN(topical, Math.min(2, topical.length), rnd), ...pickN(CLASSIFIEDS[textLocale(locale)], n, rnd)].slice(0, n);
+  const signs = SIGNS[textLocale(locale)];
+  const preds = pickN(PREDICTIONS[textLocale(locale)], signs.length, rnd);
+  const word = pick(SCRAMBLE_WORDS[textLocale(locale)], rnd);
   return {
     classifieds,
     horoscope: signs.map((sign, i) => ({ sign, text: preds[i % preds.length]! })),
-    letter: pick(LETTERS[locale], rnd),
-    agent: pick(AGENT_OF_THE_DAY[locale], rnd),
-    forecast: pick(FORECAST[locale], rnd),
+    letter: pick(LETTERS[textLocale(locale)], rnd),
+    agent: pick(AGENT_OF_THE_DAY[textLocale(locale)], rnd),
+    forecast: pick(FORECAST[textLocale(locale)], rnd),
     nerf: nerfOMeter(locale, latestPatch),
     scramble: { puzzle: scramble(word, rnd), answer: word },
   };
@@ -255,9 +255,9 @@ export function backPage(locale: Locale, edition: Edition, latestPatch?: Patch, 
 /** Ticker tail jokes for the day (none at "light"). */
 export function tickerJokes(locale: Locale, date: string, level = humourLevel()): string[] {
   if (level === 'light') return [];
-  return pickN(TICKER[locale], level === 'full' ? 2 : 1, seeded(`ticker|${date}|${locale}`));
+  return pickN(TICKER[textLocale(locale)], level === 'full' ? 2 : 1, seeded(`ticker|${date}|${textLocale(locale)}`));
 }
 
 export function agentOfTheDay(locale: Locale, date: string): string {
-  return pick(AGENT_OF_THE_DAY[locale], seeded(`${date}|${locale}`));
+  return pick(AGENT_OF_THE_DAY[textLocale(locale)], seeded(`${date}|${textLocale(locale)}`));
 }

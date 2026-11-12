@@ -18,9 +18,15 @@ test('language switch on a story page keeps the same story', async ({ page }) =>
   await page.goto('/en/');
   const href = await page.locator('.story.lead .headline a').getAttribute('href');
   await page.goto(href!);
-  await page.locator('[data-lang-switch]:visible').first().click();
+  const menu = page.locator('[data-langmenu]:visible').first();
+  await menu.locator('summary').click();
+  await menu.locator('[data-lang-switch="zh-hant"]').click();
   await expect(page).toHaveURL(href!.replace('/en/', '/zh-hant/'));
   await expect(page.locator('html')).toHaveAttribute('lang', 'zh-Hant-TW');
+  await menu.locator('summary').click();
+  await page.locator('[data-langmenu]:visible').first().locator('[data-lang-switch="zh-hans"]').click();
+  await expect(page).toHaveURL(href!.replace('/en/', '/zh-hans/'));
+  await expect(page.locator('html')).toHaveAttribute('lang', 'zh-Hans');
 });
 
 for (const lang of ['en', 'zh-hant']) {

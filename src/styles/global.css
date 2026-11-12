@@ -35,8 +35,8 @@ body {
   background-size: auto, 28px 48px;
 }
 
-:lang(zh-Hant-TW) body,
-body:lang(zh-Hant-TW) {
+:lang(zh) body,
+body:lang(zh) {
   line-height: 1.75;
   text-autospace: normal; /* CJK/Latin spacing where supported */
   line-break: strict;

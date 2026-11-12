@@ -175,6 +175,9 @@ importers:
       '@fontsource/libre-caslon-text':
         specifier: 5.3.0
         version: 5.3.0
+      '@fontsource/noto-serif-sc':
+        specifier: 5.3.1
+        version: 5.3.1
       '@fontsource/noto-serif-tc':
         specifier: 5.3.1
         version: 5.3.1
@@ -197,6 +200,9 @@ importers:
       '@types/node':
         specifier: 24.19.2
         version: 24.19.2
+      opencc-js:
+        specifier: 1.4.2
+        version: 1.4.2
       pagefind:
         specifier: 1.6.0
         version: 1.6.0
@@ -663,6 +669,9 @@ packages:
 
   '@fontsource/libre-caslon-text@5.3.0':
     resolution: {integrity: sha512-zuGBMEtekNBbeH4YIbL2sUu8BZKFGr1o6b41v/QPnWaEAOgZHSf4ZFdr90YmRbE3uB5G1oAEIIACgwnFRk/F7w==}
+
+  '@fontsource/noto-serif-sc@5.3.1':
+    resolution: {integrity: sha512-nIK2HyNGcUi2TGwIfrk2MItkh0O3Y5+TI8iPfPSzoNY6uyXYfQ9qqch8czk3aa1VhV4EU52uwCYCe1UDKJELpg==}
 
   '@fontsource/noto-serif-tc@5.3.1':
     resolution: {integrity: sha512-bX+7aXbMU9IyncD2v00P4E+aciwQl2e9F9qmHp3H3By+hQVh6bwa4rR2RD0QP/Vtt+9mwgjEPzsnEKb2oyIxog==}
@@ -1629,6 +1638,9 @@ packages:
 
   oniguruma-to-es@4.3.6:
     resolution: {integrity: sha512-csuQ9x3Yr0cEIs/Zgx/OEt9iBw9vqIunAPQkx19R/fiMq2oGVTgcMqO/V3Ybqefr1TBvosI6jU539ksaBULJyA==}
+
+  opencc-js@1.4.2:
+    resolution: {integrity: sha512-EdcspgdROiCCZDM+jZR6Pa670xW+EW2QhctPBQ8gRjg6lrx4IHEl+2s+kt5izk/TkxVRgdWuFgaGkaEdIUfdaw==}
 
   p-limit@7.3.3:
     resolution: {integrity: sha512-SKgVvDU5TNIxQ4r30U75BNLC6a+6GOEjngrk/ysM5+Zu3oJuk1SC5ApzIzY/7PjCEjoVPMWJ0zho/4QUiEB7TQ==}
@@ -2611,6 +2623,8 @@ snapshots:
 
   '@fontsource/libre-caslon-text@5.3.0': {}
 
+  '@fontsource/noto-serif-sc@5.3.1': {}
+
   '@fontsource/noto-serif-tc@5.3.1': {}
 
   '@fontsource/playfair-display@5.3.0': {}
@@ -3523,6 +3537,8 @@ snapshots:
       oniguruma-parser: 0.12.2
       regex: 6.1.0
       regex-recursion: 6.0.2
+
+  opencc-js@1.4.2: {}
 
   p-limit@7.3.3:
     dependencies:

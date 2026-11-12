@@ -10,6 +10,8 @@ import '@fontsource/ibm-plex-mono/latin-400.css';
 import '@fontsource/ibm-plex-mono/latin-600.css';
 import '@fontsource/noto-serif-tc/500.css';
 import '@fontsource/noto-serif-tc/900.css';
+import '@fontsource/noto-serif-sc/500.css';
+import '@fontsource/noto-serif-sc/900.css';
 import '../styles/global.css';
 import { HTML_LANG, LOCALES, switchLocalePath, t, type Locale } from '../i18n/index.ts';
 import FavKit from '../components/FavKit.astro';
@@ -48,7 +50,7 @@ const shareImage = image ?? keyArt?.url;
     <meta property="og:title" content={title ?? t(locale, 'site.name')} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonical} />
-    <meta property="og:locale" content={locale === 'en' ? 'en_US' : 'zh_TW'} />
+    <meta property="og:locale" content={{ en: 'en_US', 'zh-hant': 'zh_TW', 'zh-hans': 'zh_CN' }[locale]} />
     {shareImage && <meta property="og:image" content={shareImage} />}
     <meta name="twitter:card" content="summary_large_image" />
     <!-- Browser/phone bar colour: matches the theme (night by default; updated by the script below and the toggle). -->

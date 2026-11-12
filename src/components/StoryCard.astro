@@ -107,8 +107,8 @@ const day = new Intl.DateTimeFormat(locale === 'en' ? 'en' : 'zh-Hant-TW', {
     font: 700 var(--step-1) / 1.2 var(--font-display);
     text-wrap: balance;
   }
-  :lang(zh-Hant-TW) .headline,
-  .headline:lang(zh-Hant-TW) {
+  :lang(zh) .headline,
+  .headline:lang(zh) {
     font-family: var(--font-cjk);
     font-weight: 900;
     line-height: 1.35;
@@ -137,7 +137,7 @@ const day = new Intl.DateTimeFormat(locale === 'en' ? 'en' : 'zh-Hant-TW', {
     color: var(--shd-ink);
   }
   /* 首字強調 */
-  :lang(zh-Hant-TW) .dropcap::first-letter {
+  :lang(zh) .dropcap::first-letter {
     font-weight: 900;
     font-size: 1.5em;
     color: var(--shd-ink);

@@ -1,25 +1,27 @@
 ---
-// Root: send the reader to their remembered language, or detect it on the first visit.
+// Root: send the reader to their remembered language. First visit: Traditional Chinese, except browsers set to
+// Simplified Chinese (mainland China, Singapore) get 简体中文. English readers switch with the language button.
 ---
 <!doctype html>
-<html lang="en">
+<html lang="zh-Hant-TW">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="robots" content="noindex" />
-    <title>The DC Dispatch</title>
+    <title>華盛頓每日快報 · The DC Dispatch</title>
     <script is:inline>
       (function () {
         var lang = null;
         try { lang = localStorage.getItem('dcd.lang'); } catch (e) {}
-        if (lang !== 'en' && lang !== 'zh-hant') {
-          lang = /^zh/i.test(navigator.language || '') ? 'zh-hant' : 'en';
+        if (lang !== 'en' && lang !== 'zh-hant' && lang !== 'zh-hans') {
+          var nav = (navigator.languages && navigator.languages[0]) || navigator.language || '';
+          lang = /^zh-(cn|sg|hans)/i.test(nav) ? 'zh-hans' : 'zh-hant';
         }
         location.replace('/' + lang + '/');
       })();
     </script>
   </head>
   <body>
-    <p><a href="/en/">English</a> · <a href="/zh-hant/" lang="zh-Hant-TW">繁體中文</a></p>
+    <p><a href="/zh-hant/" lang="zh-Hant-TW">繁體中文</a> · <a href="/zh-hans/" lang="zh-Hans">简体中文</a> · <a href="/en/">English</a></p>
   </body>
 </html>
