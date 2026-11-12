@@ -1,15 +1,93 @@
 {
   "videos": [
     {
+      "id": "jTPeu5vRQ7M",
+      "title": "LOGIN FIX IS HERE! ECHO-08 ERROR FIXED! #TheDivision2 #ECHO08 #LoginFix",
+      "channelName": "ManaWar Gaming",
+      "channelUrl": "https://www.youtube.com/channel/UCrLMaFhu9SYwosWBgqm0tMQ",
+      "publishedAt": "2026-11-12T18:44:01.000Z",
+      "durationSec": 179,
+      "official": false,
+      "row": "more",
+      "checkedAt": "2026-11-12T18:47:15.805Z",
+      "via": "youtube-api",
+      "rumour": false
+    },
+    {
+      "id": "d8WTQXrkLuM",
+      "title": "全境封锁2：11.12维护 奇特手套“全副武装”天赋临时改动！",
+      "channelName": "B站森牧阳",
+      "channelUrl": "https://www.youtube.com/channel/UCxxUK5_3ocVwBXDUZxdk76g",
+      "publishedAt": "2026-11-12T18:21:10.000Z",
+      "durationSec": 66,
+      "official": false,
+      "row": "more",
+      "checkedAt": "2026-11-12T18:47:15.805Z",
+      "via": "youtube-api",
+      "rumour": false
+    },
+    {
+      "id": "rKJ_1Z3iprc",
+      "title": "I Found A Secret Hunter Mask At Capital Building in Division 2 #shorts",
+      "channelName": "Died Again Gaming",
+      "channelUrl": "https://www.youtube.com/channel/UCrK99e79TwSpgElDb-r-Lpg",
+      "publishedAt": "2026-11-12T18:04:51.000Z",
+      "durationSec": 41,
+      "official": false,
+      "row": "more",
+      "checkedAt": "2026-11-12T18:47:15.805Z",
+      "via": "youtube-api",
+      "rumour": true
+    },
+    {
+      "id": "9G1irbgqx2E",
+      "title": "*BREAKING NEWS* The Division 2: LEGENDARY OPEN WORLD, NEW PROTOTYPE, NEW ESCALATIONS, & More...",
+      "channelName": "Kamikazevondoom",
+      "channelUrl": "https://www.youtube.com/channel/UCWd5S9-AEf26j0wY3P8TOhw",
+      "publishedAt": "2026-11-12T17:37:21.000Z",
+      "durationSec": 754,
+      "official": false,
+      "row": "more",
+      "checkedAt": "2026-11-12T18:47:15.805Z",
+      "via": "youtube-api",
+      "rumour": false
+    },
+    {
+      "id": "20OWgfeB02w",
+      "title": "LEGENDARY OPEN WORLD and New LEGENDARY MISSIONS! #thedivision2 #Y8S4 #LegendaryOpenWorld",
+      "channelName": "ManaWar Gaming",
+      "channelUrl": "https://www.youtube.com/channel/UCrLMaFhu9SYwosWBgqm0tMQ",
+      "publishedAt": "2026-11-12T17:35:10.000Z",
+      "durationSec": 179,
+      "official": false,
+      "row": "more",
+      "checkedAt": "2026-11-12T18:47:15.805Z",
+      "via": "youtube-api",
+      "rumour": false
+    },
+    {
+      "id": "C_pxrvEYgcA",
+      "title": "Legendary Open World + New Main Missions | The Division 2",
+      "channelName": "The Gaming Brigade",
+      "channelUrl": "https://www.youtube.com/channel/UCnqbdVhRhYh5KQpDtKz8ksg",
+      "publishedAt": "2026-11-12T17:15:21.000Z",
+      "durationSec": 983,
+      "official": false,
+      "row": "more",
+      "checkedAt": "2026-11-12T18:47:15.805Z",
+      "via": "youtube-api",
+      "rumour": false
+    },
+    {
       "id": "tGCIhp4I0NA",
-      "title": "*SEVERS ARE BACK & REVEAL STREAM* The Division 2 Gameplay: NEW CONTENT, NERFS, Insane Buffs, & More!",
+      "title": "*SERVERS ARE BACK & REVEAL STREAM* The Division 2 Gameplay: NEW CONTENT, NERFS, Insane Buffs, & More",
       "channelName": "Kamikazevondoom",
       "channelUrl": "https://www.youtube.com/channel/UCWd5S9-AEf26j0wY3P8TOhw",
       "publishedAt": "2026-11-12T16:46:19.000Z",
       "durationSec": 8382,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-12T16:55:32.847Z",
+      "checkedAt": "2026-11-12T18:47:15.805Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -21,7 +99,7 @@
       "publishedAt": "2026-11-12T16:42:00.000Z",
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-12T16:55:32.847Z",
+      "checkedAt": "2026-11-12T18:47:15.805Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -34,7 +112,7 @@
       "durationSec": 175,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-12T16:55:32.847Z",
+      "checkedAt": "2026-11-12T18:47:15.805Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -46,7 +124,7 @@
       "publishedAt": "2026-11-12T13:29:09.000Z",
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-12T16:55:32.847Z",
+      "checkedAt": "2026-11-12T18:47:15.805Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -59,7 +137,7 @@
       "durationSec": 568,
       "official": false,
       "row": "intel",
-      "checkedAt": "2026-11-12T16:55:32.847Z",
+      "checkedAt": "2026-11-12T18:47:15.805Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -72,7 +150,7 @@
       "durationSec": 180,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-12T16:55:32.847Z",
+      "checkedAt": "2026-11-12T18:47:15.805Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -85,7 +163,7 @@
       "durationSec": 1242,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-12T16:55:32.847Z",
+      "checkedAt": "2026-11-12T18:47:15.805Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -98,7 +176,7 @@
       "durationSec": 661,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-12T16:55:32.847Z",
+      "checkedAt": "2026-11-12T18:47:15.805Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -111,7 +189,7 @@
       "durationSec": 535,
       "official": false,
       "row": "intel",
-      "checkedAt": "2026-11-12T16:55:32.847Z",
+      "checkedAt": "2026-11-12T18:47:15.805Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -137,7 +215,7 @@
       "durationSec": 588,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-12T16:55:32.847Z",
+      "checkedAt": "2026-11-12T18:47:15.805Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -150,7 +228,7 @@
       "durationSec": 481,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-12T16:55:32.847Z",
+      "checkedAt": "2026-11-12T18:47:15.805Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -163,7 +241,7 @@
       "durationSec": 38,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-12T16:55:32.847Z",
+      "checkedAt": "2026-11-12T18:47:15.805Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -176,7 +254,7 @@
       "durationSec": 106,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-12T16:55:32.847Z",
+      "checkedAt": "2026-11-12T18:47:15.805Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -189,7 +267,7 @@
       "durationSec": 732,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-12T16:55:32.847Z",
+      "checkedAt": "2026-11-12T18:47:15.805Z",
       "via": "youtube-api",
       "rumour": true
     },
@@ -202,7 +280,7 @@
       "durationSec": 528,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-12T16:55:32.847Z",
+      "checkedAt": "2026-11-12T18:47:15.805Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -215,7 +293,7 @@
       "durationSec": 1346,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-12T16:55:32.847Z",
+      "checkedAt": "2026-11-12T18:47:15.805Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -228,7 +306,7 @@
       "durationSec": 425,
       "official": false,
       "row": "intel",
-      "checkedAt": "2026-11-12T16:55:32.847Z",
+      "checkedAt": "2026-11-12T18:47:15.805Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -241,7 +319,7 @@
       "durationSec": 28734,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-12T16:55:32.847Z",
+      "checkedAt": "2026-11-12T18:47:15.805Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -254,7 +332,7 @@
       "durationSec": 120,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-12T16:55:32.847Z",
+      "checkedAt": "2026-11-12T18:47:15.805Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -267,7 +345,7 @@
       "durationSec": 180,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-12T16:55:32.847Z",
+      "checkedAt": "2026-11-12T18:47:15.805Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -285,6 +363,19 @@
       "rumour": false
     },
     {
+      "id": "PPIwwOI3uSs",
+      "title": "Division 2: Best Exotics Farm EVER Do This Now",
+      "channelName": "Compy9",
+      "channelUrl": "https://www.youtube.com/channel/UCzPr2Ut6vyEs74iXZh7tRFA",
+      "publishedAt": "2026-11-11T18:41:14.000Z",
+      "durationSec": 954,
+      "official": false,
+      "row": "intel",
+      "checkedAt": "2026-11-12T18:47:15.805Z",
+      "via": "youtube-search",
+      "rumour": false
+    },
+    {
       "id": "eGpTBYybFQo",
       "title": "*BREAKING NEWS* The Division 2: SERVERS DOWN TOMORROW to add CROSSPLAY SERVERS & NERF BEAR GLOVES...",
       "channelName": "Kamikazevondoom",
@@ -293,7 +384,7 @@
       "durationSec": 670,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-12T16:55:32.847Z",
+      "checkedAt": "2026-11-12T18:47:15.805Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -306,7 +397,7 @@
       "durationSec": 563,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-12T16:55:32.847Z",
+      "checkedAt": "2026-11-12T18:47:15.805Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -319,7 +410,7 @@
       "durationSec": 180,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-12T16:55:32.847Z",
+      "checkedAt": "2026-11-12T18:47:15.805Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -332,7 +423,7 @@
       "durationSec": 10381,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-12T16:55:32.847Z",
+      "checkedAt": "2026-11-12T18:47:15.805Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -347,97 +438,6 @@
       "row": "more",
       "checkedAt": "2026-11-12T07:04:05.799Z",
       "via": "youtube-search",
-      "rumour": false
-    },
-    {
-      "id": "ywLblwb5D2A",
-      "title": "Loaded for Bear Gets Nerfed Tomorrow! | The Division 2",
-      "channelName": "King Macho",
-      "channelUrl": "https://www.youtube.com/channel/UC0RO8Ex_8w1ZYp4VoCz7o5w",
-      "publishedAt": "2026-11-11T17:56:44.000Z",
-      "durationSec": 164,
-      "official": false,
-      "row": "more",
-      "checkedAt": "2026-11-12T16:55:32.847Z",
-      "via": "youtube-api",
-      "rumour": false
-    },
-    {
-      "id": "2Wngki7Hk68",
-      "title": "EMERGENCY UPDATE! Matchmaking Bug Fix, Damage Bug Update,  & MORE! | The Division 2",
-      "channelName": "The Gaming Brigade",
-      "channelUrl": "https://www.youtube.com/channel/UCnqbdVhRhYh5KQpDtKz8ksg",
-      "publishedAt": "2026-11-11T17:40:34.000Z",
-      "durationSec": 489,
-      "official": false,
-      "row": "more",
-      "checkedAt": "2026-11-12T16:55:32.847Z",
-      "via": "youtube-api",
-      "rumour": false
-    },
-    {
-      "id": "nCuBbygx4mg",
-      "title": "Division 2 Event Pass: Nodes Are the Best Farm (200 vs 117)",
-      "channelName": "TuxedoBandido",
-      "channelUrl": "https://www.youtube.com/channel/UCWIdBINha5bKeFuvAs7US4A",
-      "publishedAt": "2026-11-11T17:30:13.000Z",
-      "durationSec": 23,
-      "official": false,
-      "row": "more",
-      "checkedAt": "2026-11-12T16:55:32.847Z",
-      "via": "youtube-api",
-      "rumour": false
-    },
-    {
-      "id": "oCT8NGkX74Q",
-      "title": "Division 2 Event Pass Said 250 XP… Then Robbed Me in Broad Daylight 😭",
-      "channelName": "TuxedoBandido",
-      "channelUrl": "https://www.youtube.com/channel/UCWIdBINha5bKeFuvAs7US4A",
-      "publishedAt": "2026-11-11T17:30:06.000Z",
-      "durationSec": 40,
-      "official": false,
-      "row": "more",
-      "checkedAt": "2026-11-12T16:55:32.847Z",
-      "via": "youtube-api",
-      "rumour": false
-    },
-    {
-      "id": "ul6oWQxzanE",
-      "title": "YEAR 8 SEASON 4! NEW PTS Livestream Announced! #TheDivision2 #Year8Season4 #Division2PTS",
-      "channelName": "ManaWar Gaming",
-      "channelUrl": "https://www.youtube.com/channel/UCrLMaFhu9SYwosWBgqm0tMQ",
-      "publishedAt": "2026-11-11T16:36:21.000Z",
-      "durationSec": 102,
-      "official": false,
-      "row": "more",
-      "checkedAt": "2026-11-12T16:55:32.847Z",
-      "via": "youtube-api",
-      "rumour": false
-    },
-    {
-      "id": "cIg83Wn86Ho",
-      "title": "*NEW CENTRAL PARK GUARDIAN EXOTIC* The Division 2: \"RATEL\" Exotic AR (Full Review & Build Breakdown)",
-      "channelName": "Kamikazevondoom",
-      "channelUrl": "https://www.youtube.com/channel/UCWd5S9-AEf26j0wY3P8TOhw",
-      "publishedAt": "2026-11-11T16:25:17.000Z",
-      "durationSec": 4034,
-      "official": false,
-      "row": "build-guides",
-      "checkedAt": "2026-11-12T16:55:32.847Z",
-      "via": "youtube-api",
-      "rumour": false
-    },
-    {
-      "id": "uz40QPc7Rac",
-      "title": "The Division 2 | NEW Overpowered T10 Damage Build That Will Suprise You! | NOT Striker!",
-      "channelName": "Patrick Wolf",
-      "channelUrl": "https://www.youtube.com/channel/UCu9KTVGlwr_iQr3hz24zz6A",
-      "publishedAt": "2026-11-11T16:05:34.000Z",
-      "durationSec": 672,
-      "official": false,
-      "row": "build-guides",
-      "checkedAt": "2026-11-12T16:55:32.847Z",
-      "via": "youtube-api",
       "rumour": false
     },
     {
@@ -488,7 +488,7 @@
       "publishedAt": "2026-11-02T13:48:39.000Z",
       "official": true,
       "row": "more",
-      "checkedAt": "2026-11-12T16:55:32.847Z",
+      "checkedAt": "2026-11-12T18:47:15.805Z",
       "via": "ubisoft-page",
       "rumour": false
     },
@@ -501,7 +501,7 @@
       "publishedAt": "2026-10-30T18:16:35.000Z",
       "official": true,
       "row": "trailers",
-      "checkedAt": "2026-11-12T16:55:32.847Z",
+      "checkedAt": "2026-11-12T18:47:15.805Z",
       "via": "ubisoft-page",
       "rumour": false
     },

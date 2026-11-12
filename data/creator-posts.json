@@ -13,7 +13,8 @@
     "UgkxH913onsC8nvRyty1hM-1ngqv_Iu_jNrc",
     "UgkxCgrDsTP7KSzTgbQBoiBDpbYzx6nDS4rk",
     "UgkxNvbhteNUDXtR-OIEnvniFwYPtAAQKaOX",
-    "UgkxSN_-cqtuZKQFmhEU8pO3Y-g48oD2Kw9L"
+    "UgkxSN_-cqtuZKQFmhEU8pO3Y-g48oD2Kw9L",
+    "UgkxAWyxbbb2Lc5Y4xcB-EfJvBnoZsG2I2qB"
   ],
   "creator": {
     "name": "灰帽特工 Gray Hat Agent",
@@ -203,6 +204,20 @@
     }
   ],
   "posts": [
+    {
+      "id": "post-nozsg2i2qb",
+      "title_zhHant": "新賽季Y8S4的測試服現已開放預載",
+      "title_en": "新賽季Y8S4的測試服現已開放預載",
+      "text_zhHant": "測試服將於11月13日晚9:00開啟 更多細則請見官網:",
+      "text_en": "測試服將於11月13日晚9:00開啟 更多細則請見官網:",
+      "category": "franchise",
+      "publishedAt": "2026-11-12",
+      "link": "https://www.ubisoft.com/ja-jp/game/the-division/the-division-2/news-updates/1wrUJ1HzY6BF8zzO4AMhJ3",
+      "postUrl": "https://www.youtube.com/post/UgkxAWyxbbb2Lc5Y4xcB-EfJvBnoZsG2I2qB",
+      "seen": "2026-11-12",
+      "until": "2026-12-03",
+      "auto": true
+    },
     {
       "id": "post-g48od2kw9l",
       "title_zhHant": "維護警報⚠️",
