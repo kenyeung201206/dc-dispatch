@@ -1,7 +1,7 @@
 {
   "date": "2026-11-12",
   "editionNumber": 9,
-  "generatedAt": "2026-11-12T04:52:53.118Z",
+  "generatedAt": "2026-11-12T07:04:05.799Z",
   "meta": {
     "season_en": "Red Horizon",
     "season_zhHant": "Red Horizon 賽季",
@@ -17,7 +17,7 @@
       "title_orig": "The Division 2: Echoes of Central Park Event Pass Twitch Drops",
       "lang_orig": "en",
       "publishedAt": "2026-11-10T16:00:00.000Z",
-      "fetchedAt": "2026-11-12T04:52:53.118Z",
+      "fetchedAt": "2026-11-12T07:04:05.799Z",
       "category": "community",
       "tags": [
         "event",
@@ -59,7 +59,7 @@
       "title_orig": "[TUY8S3.3] Echoes of Central Park Launch, Crossplay Rollout, Conflict Improvements & More",
       "lang_orig": "en",
       "publishedAt": "2026-11-02T15:45:00.000Z",
-      "fetchedAt": "2026-11-12T04:52:53.118Z",
+      "fetchedAt": "2026-11-12T07:04:05.799Z",
       "category": "updates",
       "tags": [
         "title-update",
@@ -67,7 +67,7 @@
         "event",
         "pvp"
       ],
-      "importance": 86,
+      "importance": 85,
       "confidence": "official",
       "headline_en": "[TUY8S3.3] Echoes of Central Park Launch, Crossplay Rollout, Conflict Improvements & More",
       "headline_zhHant": "pending",
@@ -93,6 +93,36 @@
       "status": "new"
     },
     {
+      "id": "1pm0geu",
+      "sourceId": "youtube",
+      "sourceName": "SirCowdog",
+      "sourceUrl": "https://www.youtube.com/watch?v=2qxJqFnKjcI",
+      "title_orig": "Tom Clancy's The Division 2.  Year 8 Season 3 new account.   CENTRAL PARK DLC. Ep 04",
+      "lang_orig": "en",
+      "publishedAt": "2026-11-12T05:04:51.000Z",
+      "fetchedAt": "2026-11-12T07:04:05.799Z",
+      "category": "missions",
+      "tags": [
+        "dlc",
+        "exotic",
+        "season",
+        "video"
+      ],
+      "importance": 81,
+      "confidence": "community",
+      "headline_en": "Tom Clancy's The Division 2.  Year 8 Season 3 new account.   CENTRAL PARK DLC. Ep 04",
+      "headline_zhHant": "pending",
+      "summary_en": "Kicking off the new DLC in Central Park with a blind playthrough. Slight change of build to include the Iron Will exotic chest piece and…",
+      "summary_zhHant": "pending",
+      "summaryKind": "extract",
+      "alsoReportedBy": [],
+      "media": [],
+      "videoId": "2qxJqFnKjcI",
+      "relatedIds": [],
+      "firstSeenAt": "2026-11-12T07:04:05.799Z",
+      "status": "new"
+    },
+    {
       "id": "7kdlud",
       "sourceId": "ubisoft-en",
       "sourceName": "Ubisoft",
@@ -100,12 +130,12 @@
       "title_orig": "The Division 2: Echoes of Central Park DLC is available now!",
       "lang_orig": "en",
       "publishedAt": "2026-11-03T15:00:00.000Z",
-      "fetchedAt": "2026-11-12T04:52:53.118Z",
+      "fetchedAt": "2026-11-12T07:04:05.799Z",
       "category": "missions",
       "tags": [
         "dlc"
       ],
-      "importance": 75,
+      "importance": 74,
       "confidence": "official",
       "headline_en": "Echoes of Central Park DLC is out now",
       "headline_zhHant": "《中央公園的迴響》DLC 正式推出",
@@ -125,6 +155,35 @@
       "relatedIds": [],
       "firstSeenAt": "2026-11-03T15:00:00.000Z",
       "status": "updated"
+    },
+    {
+      "id": "1ms52vg",
+      "sourceId": "youtube",
+      "sourceName": "SaxTalksGames",
+      "sourceUrl": "https://www.youtube.com/watch?v=IRD2YGHYNvY",
+      "title_orig": "The Division 2's New DLC Revealed Some MAJOR Issues in the Game... Here's How We Would FIX Them.",
+      "lang_orig": "en",
+      "publishedAt": "2026-11-11T13:57:37.000Z",
+      "fetchedAt": "2026-11-12T07:04:05.799Z",
+      "category": "missions",
+      "tags": [
+        "dlc",
+        "exotic",
+        "video"
+      ],
+      "importance": 72,
+      "confidence": "community",
+      "headline_en": "The Division 2's New DLC Revealed Some MAJOR Issues in the Game... Here's How We Would FIX Them.",
+      "headline_zhHant": "pending",
+      "summary_en": "The Division 2 has LONG outlived the developer's original expectations, however it's feeling more and more that “perfect gear” is the thing that may be…",
+      "summary_zhHant": "pending",
+      "summaryKind": "extract",
+      "alsoReportedBy": [],
+      "media": [],
+      "videoId": "IRD2YGHYNvY",
+      "relatedIds": [],
+      "firstSeenAt": "2026-11-12T07:04:05.799Z",
+      "status": "new"
     },
     {
       "id": "wa4wps",
@@ -162,6 +221,34 @@
       }
     },
     {
+      "id": "1njcey4",
+      "sourceId": "youtube",
+      "sourceName": "supermarioluf",
+      "sourceUrl": "https://www.youtube.com/watch?v=xTjvPNr_1Ds",
+      "title_orig": "THE DIVISION 2! CENTRAL PARK DLC EIN FLOP? DIE COMMMUNITY SAGT JA!",
+      "lang_orig": "en",
+      "publishedAt": "2026-11-11T14:15:11.000Z",
+      "fetchedAt": "2026-11-12T07:04:05.799Z",
+      "category": "missions",
+      "tags": [
+        "dlc",
+        "video"
+      ],
+      "importance": 71,
+      "confidence": "community",
+      "headline_en": "THE DIVISION 2! CENTRAL PARK DLC EIN FLOP? DIE COMMMUNITY SAGT JA!",
+      "headline_zhHant": "pending",
+      "summary_en": "Vor über einer Woche ist das DLC erschienen! Wie gut ist es wirklich und welche Verbesserungen müssen her?",
+      "summary_zhHant": "pending",
+      "summaryKind": "extract",
+      "alsoReportedBy": [],
+      "media": [],
+      "videoId": "xTjvPNr_1Ds",
+      "relatedIds": [],
+      "firstSeenAt": "2026-11-12T07:04:05.799Z",
+      "status": "new"
+    },
+    {
       "id": "1cnst27",
       "sourceId": "youtube",
       "sourceName": "ManaWar Gaming",
@@ -192,32 +279,6 @@
       "status": "new"
     },
     {
-      "id": "ccqbq5",
-      "sourceId": "steam-news",
-      "sourceName": "Ubisoft (via Steam News)",
-      "sourceUrl": "https://store.steampowered.com/news/app/2221490/view/1848664643356049",
-      "title_orig": "The Division 2: 6X XP Event",
-      "lang_orig": "en",
-      "publishedAt": "2026-11-06T10:31:09.000Z",
-      "fetchedAt": "2026-11-12T04:52:53.118Z",
-      "category": "missions",
-      "tags": [
-        "event"
-      ],
-      "importance": 63,
-      "confidence": "official",
-      "headline_en": "The Division 2: 6X XP Event",
-      "headline_zhHant": "pending",
-      "summary_en": "For the first time ever, earn SHD levels 6 times faster until November 10.",
-      "summary_zhHant": "pending",
-      "summaryKind": "extract",
-      "alsoReportedBy": [],
-      "media": [],
-      "relatedIds": [],
-      "firstSeenAt": "2026-11-09T16:58:40.968Z",
-      "status": "new"
-    },
-    {
       "id": "y8m927",
       "sourceId": "youtube",
       "sourceName": "Kamikazevondoom",
@@ -243,6 +304,32 @@
       "videoId": "cIg83Wn86Ho",
       "relatedIds": [],
       "firstSeenAt": "2026-11-11T18:50:04.185Z",
+      "status": "new"
+    },
+    {
+      "id": "ccqbq5",
+      "sourceId": "steam-news",
+      "sourceName": "Ubisoft (via Steam News)",
+      "sourceUrl": "https://store.steampowered.com/news/app/2221490/view/1848664643356049",
+      "title_orig": "The Division 2: 6X XP Event",
+      "lang_orig": "en",
+      "publishedAt": "2026-11-06T10:31:09.000Z",
+      "fetchedAt": "2026-11-12T07:04:05.799Z",
+      "category": "missions",
+      "tags": [
+        "event"
+      ],
+      "importance": 62,
+      "confidence": "official",
+      "headline_en": "The Division 2: 6X XP Event",
+      "headline_zhHant": "pending",
+      "summary_en": "For the first time ever, earn SHD levels 6 times faster until November 10.",
+      "summary_zhHant": "pending",
+      "summaryKind": "extract",
+      "alsoReportedBy": [],
+      "media": [],
+      "relatedIds": [],
+      "firstSeenAt": "2026-11-09T16:58:40.968Z",
       "status": "new"
     },
     {
@@ -359,39 +446,6 @@
       "status": "new"
     },
     {
-      "id": "1sx320d",
-      "sourceId": "ubisoft-en",
-      "sourceName": "Ubisoft",
-      "sourceUrl": "https://www.ubisoft.com/en-us/game/the-division/the-division-2/news-updates/5EEgwKS6kDqyvUFo5PJYsB/the-division-2-echoes-of-central-park-launch-twitch-drops",
-      "title_orig": "The Division 2: Echoes of Central Park Launch Twitch Drops",
-      "lang_orig": "en",
-      "publishedAt": "2026-11-03T15:00:00.000Z",
-      "fetchedAt": "2026-11-12T04:52:53.118Z",
-      "category": "community",
-      "tags": [
-        "twitch-drops",
-        "exotic"
-      ],
-      "importance": 60,
-      "confidence": "official",
-      "headline_en": "The Division 2: Echoes of Central Park Launch Twitch Drops",
-      "headline_zhHant": "《全境封鎖 2 - 中央公園的迴響》發行 Twitch 掉寶",
-      "summary_en": "Tune in from November 3 – November 10 to earn exclusive rewards while watching your favorite The Division 2 streamers on Twitch.",
-      "summary_zhHant": "11 月 3 日至 11 月 10 日期間，在 Twitch 上觀看你喜愛的《全境封鎖 2》實況主即可獲得專屬獎勵。",
-      "summaryKind": "extract",
-      "alsoReportedBy": [
-        {
-          "name": "巴哈姆特 全境封鎖板",
-          "url": "https://forum.gamer.com.tw/C.php?bsn=24460&snA=32864"
-        }
-      ],
-      "media": [],
-      "imageId": "ubi-5EEgwKS6kDqyvUFo5PJYsB",
-      "relatedIds": [],
-      "firstSeenAt": "2026-11-03T15:00:00.000Z",
-      "status": "new"
-    },
-    {
       "id": "1s98lcr",
       "sourceId": "youtube",
       "sourceName": "ManaWar Gaming",
@@ -420,6 +474,39 @@
       "status": "new"
     },
     {
+      "id": "1sx320d",
+      "sourceId": "ubisoft-en",
+      "sourceName": "Ubisoft",
+      "sourceUrl": "https://www.ubisoft.com/en-us/game/the-division/the-division-2/news-updates/5EEgwKS6kDqyvUFo5PJYsB/the-division-2-echoes-of-central-park-launch-twitch-drops",
+      "title_orig": "The Division 2: Echoes of Central Park Launch Twitch Drops",
+      "lang_orig": "en",
+      "publishedAt": "2026-11-03T15:00:00.000Z",
+      "fetchedAt": "2026-11-12T07:04:05.799Z",
+      "category": "community",
+      "tags": [
+        "twitch-drops",
+        "exotic"
+      ],
+      "importance": 59,
+      "confidence": "official",
+      "headline_en": "The Division 2: Echoes of Central Park Launch Twitch Drops",
+      "headline_zhHant": "《全境封鎖 2 - 中央公園的迴響》發行 Twitch 掉寶",
+      "summary_en": "Tune in from November 3 – November 10 to earn exclusive rewards while watching your favorite The Division 2 streamers on Twitch.",
+      "summary_zhHant": "11 月 3 日至 11 月 10 日期間，在 Twitch 上觀看你喜愛的《全境封鎖 2》實況主即可獲得專屬獎勵。",
+      "summaryKind": "extract",
+      "alsoReportedBy": [
+        {
+          "name": "巴哈姆特 全境封鎖板",
+          "url": "https://forum.gamer.com.tw/C.php?bsn=24460&snA=32864"
+        }
+      ],
+      "media": [],
+      "imageId": "ubi-5EEgwKS6kDqyvUFo5PJYsB",
+      "relatedIds": [],
+      "firstSeenAt": "2026-11-03T15:00:00.000Z",
+      "status": "new"
+    },
+    {
       "id": "1ehct0b",
       "sourceId": "youtube",
       "sourceName": "Optimus_Grand_RD",
@@ -445,6 +532,34 @@
       "videoId": "3Del0mfCSy0",
       "relatedIds": [],
       "firstSeenAt": "2026-11-12T00:58:44.544Z",
+      "status": "new"
+    },
+    {
+      "id": "164fouw",
+      "sourceId": "youtube",
+      "sourceName": "Drakkyzz",
+      "sourceUrl": "https://www.youtube.com/watch?v=NsdydtCrItw",
+      "title_orig": "GROSSE MAINTENANCE DE 6H ! Le nerf des gants exotiques arrive enfin !",
+      "lang_orig": "en",
+      "publishedAt": "2026-11-11T18:12:30.000Z",
+      "fetchedAt": "2026-11-12T07:04:05.799Z",
+      "category": "updates",
+      "tags": [
+        "crossplay",
+        "video"
+      ],
+      "importance": 58,
+      "confidence": "community",
+      "headline_en": "GROSSE MAINTENANCE DE 6H ! Le nerf des gants exotiques arrive enfin !",
+      "headline_zhHant": "pending",
+      "summary_en": "Une GROSSE maintenance de 6 heures arrive sur THE DIVISION 2 ! Ubisoft prépare plusieurs changements importants pour le jeu, avec notamment le nerf tant…",
+      "summary_zhHant": "pending",
+      "summaryKind": "extract",
+      "alsoReportedBy": [],
+      "media": [],
+      "videoId": "NsdydtCrItw",
+      "relatedIds": [],
+      "firstSeenAt": "2026-11-12T07:04:05.799Z",
       "status": "new"
     },
     {
@@ -586,41 +701,6 @@
       "status": "new"
     },
     {
-      "id": "jrg9a1",
-      "sourceId": "ubisoft-en",
-      "sourceName": "Ubisoft",
-      "sourceUrl": "https://www.ubisoft.com/en-us/game/the-division/the-division-2/news-updates/7L8TlD1Hv0XC1prOD8mdte/tuy8s33-echoes-of-central-park-launch-crossplay-rollout-conflict-improvements-more",
-      "title_orig": "[TUY8S3.3] Echoes of Central Park Launch, Crossplay Rollout, Conflict Improvements & More",
-      "lang_orig": "en",
-      "publishedAt": "2026-11-02T15:45:00.000Z",
-      "fetchedAt": "2026-11-12T04:52:53.118Z",
-      "category": "glitch-watch",
-      "tags": [
-        "known-issue"
-      ],
-      "importance": 56,
-      "confidence": "official",
-      "headline_en": "Known issue (TU Y8S3.3): After completing all Manhunt Scouts marked as High-Value Targets, the Climax Mission…",
-      "headline_zhHant": "pending",
-      "summary_en": "After completing all Manhunt Scouts marked as High-Value Targets, the Climax Mission remains locked in the Scouts menu and does not appear on the map.",
-      "summary_zhHant": "pending",
-      "summaryKind": "extract",
-      "alsoReportedBy": [],
-      "media": [],
-      "relatedIds": [
-        "lmhaez"
-      ],
-      "firstSeenAt": "2026-11-05T06:21:13.290Z",
-      "status": "new",
-      "glitch": {
-        "state": "active",
-        "firstSeen": "2026-11-02",
-        "banRisk": false,
-        "riskNote_en": "Known issue listed by Ubisoft. Workaround: Log out and back in to unlock it.",
-        "riskNote_zhHant": "pending"
-      }
-    },
-    {
       "id": "17jlxmf",
       "sourceId": "youtube",
       "sourceName": "widdz",
@@ -676,6 +756,41 @@
       "status": "new"
     },
     {
+      "id": "jrg9a1",
+      "sourceId": "ubisoft-en",
+      "sourceName": "Ubisoft",
+      "sourceUrl": "https://www.ubisoft.com/en-us/game/the-division/the-division-2/news-updates/7L8TlD1Hv0XC1prOD8mdte/tuy8s33-echoes-of-central-park-launch-crossplay-rollout-conflict-improvements-more",
+      "title_orig": "[TUY8S3.3] Echoes of Central Park Launch, Crossplay Rollout, Conflict Improvements & More",
+      "lang_orig": "en",
+      "publishedAt": "2026-11-02T15:45:00.000Z",
+      "fetchedAt": "2026-11-12T07:04:05.799Z",
+      "category": "glitch-watch",
+      "tags": [
+        "known-issue"
+      ],
+      "importance": 55,
+      "confidence": "official",
+      "headline_en": "Known issue (TU Y8S3.3): After completing all Manhunt Scouts marked as High-Value Targets, the Climax Mission…",
+      "headline_zhHant": "pending",
+      "summary_en": "After completing all Manhunt Scouts marked as High-Value Targets, the Climax Mission remains locked in the Scouts menu and does not appear on the map.",
+      "summary_zhHant": "pending",
+      "summaryKind": "extract",
+      "alsoReportedBy": [],
+      "media": [],
+      "relatedIds": [
+        "lmhaez"
+      ],
+      "firstSeenAt": "2026-11-05T06:21:13.290Z",
+      "status": "new",
+      "glitch": {
+        "state": "active",
+        "firstSeen": "2026-11-02",
+        "banRisk": false,
+        "riskNote_en": "Known issue listed by Ubisoft. Workaround: Log out and back in to unlock it.",
+        "riskNote_zhHant": "pending"
+      }
+    },
+    {
       "id": "1eyvqfl",
       "sourceId": "youtube",
       "sourceName": "純天然",
@@ -725,30 +840,6 @@
       "alsoReportedBy": [],
       "media": [],
       "videoId": "xGOTfjbtNtU",
-      "relatedIds": [],
-      "firstSeenAt": "2026-11-12T00:58:44.544Z",
-      "status": "new"
-    },
-    {
-      "id": "qzpopm",
-      "sourceId": "bahamut",
-      "sourceName": "巴哈姆特 全境封鎖板",
-      "sourceUrl": "https://forum.gamer.com.tw/C.php?bsn=24460&snA=32891",
-      "title_orig": "【情報】關機維護公告 - 2026/11/12(四) 16:30",
-      "lang_orig": "zh",
-      "publishedAt": "2026-11-11T23:52:53.118Z",
-      "fetchedAt": "2026-11-12T04:52:53.118Z",
-      "category": "updates",
-      "tags": [],
-      "importance": 52,
-      "confidence": "community",
-      "headline_en": "pending",
-      "headline_zhHant": "【情報】關機維護公告 - 2026/11/12(四) 16:30",
-      "summary_en": "pending",
-      "summary_zhHant": "關機維護時間：2026 年 11 月 12 日 16:30 開始維護 預計維護 6 小時 本次維護將包含以下項目： 1.…",
-      "summaryKind": "extract",
-      "alsoReportedBy": [],
-      "media": [],
       "relatedIds": [],
       "firstSeenAt": "2026-11-12T00:58:44.544Z",
       "status": "new"
@@ -835,6 +926,30 @@
       "status": "new"
     },
     {
+      "id": "qzpopm",
+      "sourceId": "bahamut",
+      "sourceName": "巴哈姆特 全境封鎖板",
+      "sourceUrl": "https://forum.gamer.com.tw/C.php?bsn=24460&snA=32891",
+      "title_orig": "【情報】關機維護公告 - 2026/11/12(四) 16:30",
+      "lang_orig": "zh",
+      "publishedAt": "2026-11-12T00:04:05.799Z",
+      "fetchedAt": "2026-11-12T07:04:05.799Z",
+      "category": "updates",
+      "tags": [],
+      "importance": 51,
+      "confidence": "community",
+      "headline_en": "pending",
+      "headline_zhHant": "【情報】關機維護公告 - 2026/11/12(四) 16:30",
+      "summary_en": "pending",
+      "summary_zhHant": "關機維護時間：2026 年 11 月 12 日 16:30 開始維護 預計維護 6 小時 本次維護將包含以下項目： 1.…",
+      "summaryKind": "extract",
+      "alsoReportedBy": [],
+      "media": [],
+      "relatedIds": [],
+      "firstSeenAt": "2026-11-12T00:58:44.544Z",
+      "status": "new"
+    },
+    {
       "id": "1rkg22m",
       "sourceId": "bahamut",
       "sourceName": "巴哈姆特 全境封鎖板",
@@ -842,7 +957,7 @@
       "title_orig": "【情報】11/11 每日戰鬥升級掉落 & 原型商人",
       "lang_orig": "zh",
       "publishedAt": "2026-11-11T04:00:00.000Z",
-      "fetchedAt": "2026-11-12T04:52:53.118Z",
+      "fetchedAt": "2026-11-12T07:04:05.799Z",
       "category": "updates",
       "tags": [],
       "importance": 50,
@@ -893,7 +1008,7 @@
       "title_orig": "【心得】裝備專精系統心得",
       "lang_orig": "zh",
       "publishedAt": "2026-11-11T00:41:00.000Z",
-      "fetchedAt": "2026-11-12T04:52:53.118Z",
+      "fetchedAt": "2026-11-12T07:04:05.799Z",
       "category": "arsenal",
       "tags": [],
       "importance": 49,
@@ -917,7 +1032,7 @@
       "title_orig": "【情報】【已開機】關機維護公告 - 2026/11/10(二) 16:30，延長 1 小時",
       "lang_orig": "zh",
       "publishedAt": "2026-11-10T15:59:00.000Z",
-      "fetchedAt": "2026-11-12T04:52:53.118Z",
+      "fetchedAt": "2026-11-12T07:04:05.799Z",
       "category": "updates",
       "tags": [],
       "importance": 49,
@@ -941,7 +1056,7 @@
       "title_orig": "維護警報⚠️",
       "lang_orig": "zh",
       "publishedAt": "2026-11-11T00:00:00Z",
-      "fetchedAt": "2026-11-12T04:52:53.118Z",
+      "fetchedAt": "2026-11-12T07:04:05.799Z",
       "category": "updates",
       "tags": [
         "creator"
@@ -967,7 +1082,7 @@
       "title_orig": "11月的第二輪twitch掉寶現已開啟",
       "lang_orig": "zh",
       "publishedAt": "2026-11-10T00:00:00Z",
-      "fetchedAt": "2026-11-12T04:52:53.118Z",
+      "fetchedAt": "2026-11-12T07:04:05.799Z",
       "category": "community",
       "tags": [
         "creator"
@@ -993,7 +1108,7 @@
       "title_orig": "Last Chance to Pre-Purchase The Division 2: Echoes of Central Park",
       "lang_orig": "en",
       "publishedAt": "2026-10-28T13:29:29.000Z",
-      "fetchedAt": "2026-11-12T04:52:53.118Z",
+      "fetchedAt": "2026-11-12T07:04:05.799Z",
       "category": "missions",
       "tags": [
         "dlc",
@@ -1020,7 +1135,7 @@
       "title_orig": "Echoes of Central Park Launch Livestream",
       "lang_orig": "en",
       "publishedAt": "2026-10-27T16:01:04.000Z",
-      "fetchedAt": "2026-11-12T04:52:53.118Z",
+      "fetchedAt": "2026-11-12T07:04:05.799Z",
       "category": "community",
       "tags": [],
       "importance": 40,
@@ -1044,7 +1159,7 @@
       "title_orig": "Echoes of Central Park Costume Contest",
       "lang_orig": "en",
       "publishedAt": "2026-10-27T10:34:40.000Z",
-      "fetchedAt": "2026-11-12T04:52:53.118Z",
+      "fetchedAt": "2026-11-12T07:04:05.799Z",
       "category": "community",
       "tags": [],
       "importance": 40,
@@ -1068,7 +1183,7 @@
       "title_orig": "【攻略】部分技能的解鎖方式整理",
       "lang_orig": "zh",
       "publishedAt": "2026-11-05T05:49:00.000Z",
-      "fetchedAt": "2026-11-12T04:52:53.118Z",
+      "fetchedAt": "2026-11-12T07:04:05.799Z",
       "category": "builds",
       "tags": [],
       "importance": 37,
@@ -1092,7 +1207,7 @@
       "title_orig": "【情報】中央公園的迴響 DLC 夥伴 - 相關資訊",
       "lang_orig": "zh",
       "publishedAt": "2026-11-05T04:03:00.000Z",
-      "fetchedAt": "2026-11-12T04:52:53.118Z",
+      "fetchedAt": "2026-11-12T07:04:05.799Z",
       "category": "missions",
       "tags": [
         "dlc"
@@ -1118,7 +1233,7 @@
       "title_orig": "【情報】*劇透注意* Y8S3/TU29 獵捕行動 Red Horizon 偵查任務 每週統整",
       "lang_orig": "zh",
       "publishedAt": "2026-11-03T17:07:00.000Z",
-      "fetchedAt": "2026-11-12T04:52:53.118Z",
+      "fetchedAt": "2026-11-12T07:04:05.799Z",
       "category": "updates",
       "tags": [],
       "importance": 34,
@@ -1139,22 +1254,22 @@
     {
       "sourceId": "steam-news",
       "ok": true,
-      "checkedAt": "2026-11-12T04:52:53.118Z"
+      "checkedAt": "2026-11-12T07:04:05.799Z"
     },
     {
       "sourceId": "ubisoft-en",
       "ok": true,
-      "checkedAt": "2026-11-12T04:52:53.118Z"
+      "checkedAt": "2026-11-12T07:04:05.799Z"
     },
     {
       "sourceId": "ubisoft-zh-tw",
       "ok": true,
-      "checkedAt": "2026-11-12T04:52:53.118Z"
+      "checkedAt": "2026-11-12T07:04:05.799Z"
     },
     {
       "sourceId": "bahamut",
       "ok": true,
-      "checkedAt": "2026-11-12T04:52:53.118Z"
+      "checkedAt": "2026-11-12T07:04:05.799Z"
     }
   ]
 }

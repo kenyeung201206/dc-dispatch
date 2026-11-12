@@ -1,6 +1,19 @@
 {
   "videos": [
     {
+      "id": "2qxJqFnKjcI",
+      "title": "Tom Clancy's The Division 2.  Year 8 Season 3 new account.   CENTRAL PARK DLC. Ep 04",
+      "channelName": "SirCowdog",
+      "channelUrl": "https://www.youtube.com/channel/UCUrUakfaMFwB3pMr88nanSg",
+      "publishedAt": "2026-11-12T05:04:51.000Z",
+      "durationSec": 3693,
+      "official": false,
+      "row": "more",
+      "checkedAt": "2026-11-12T07:04:05.799Z",
+      "via": "youtube-search",
+      "rumour": false
+    },
+    {
       "id": "RzqJyypebQo",
       "title": "全境封鎖2 - 想要快速解活動通行證 記得接取首要目標 政令不影響經驗量，另外 黃金子彈風暴好玩哦！",
       "channelName": "純天然",
@@ -9,7 +22,7 @@
       "durationSec": 588,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-12T04:52:53.118Z",
+      "checkedAt": "2026-11-12T07:04:05.799Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -22,7 +35,7 @@
       "durationSec": 481,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-12T04:52:53.118Z",
+      "checkedAt": "2026-11-12T07:04:05.799Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -35,7 +48,7 @@
       "durationSec": 38,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-12T04:52:53.118Z",
+      "checkedAt": "2026-11-12T07:04:05.799Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -48,7 +61,7 @@
       "durationSec": 106,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-12T04:52:53.118Z",
+      "checkedAt": "2026-11-12T07:04:05.799Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -61,7 +74,7 @@
       "durationSec": 732,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-12T04:52:53.118Z",
+      "checkedAt": "2026-11-12T07:04:05.799Z",
       "via": "youtube-api",
       "rumour": true
     },
@@ -74,7 +87,7 @@
       "durationSec": 528,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-12T04:52:53.118Z",
+      "checkedAt": "2026-11-12T07:04:05.799Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -87,7 +100,7 @@
       "durationSec": 1346,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-12T04:52:53.118Z",
+      "checkedAt": "2026-11-12T07:04:05.799Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -100,7 +113,7 @@
       "durationSec": 28734,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-12T04:52:53.118Z",
+      "checkedAt": "2026-11-12T07:04:05.799Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -113,8 +126,8 @@
       "durationSec": 120,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-12T04:52:53.118Z",
-      "via": "youtube-api",
+      "checkedAt": "2026-11-12T07:04:05.799Z",
+      "via": "youtube-search",
       "rumour": false
     },
     {
@@ -126,7 +139,7 @@
       "durationSec": 180,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-12T04:52:53.118Z",
+      "checkedAt": "2026-11-12T07:04:05.799Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -139,7 +152,7 @@
       "durationSec": 1101,
       "official": false,
       "row": "build-guides",
-      "checkedAt": "2026-11-12T04:52:53.118Z",
+      "checkedAt": "2026-11-12T07:04:05.799Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -152,7 +165,7 @@
       "durationSec": 670,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-12T04:52:53.118Z",
+      "checkedAt": "2026-11-12T07:04:05.799Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -165,7 +178,7 @@
       "durationSec": 563,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-12T04:52:53.118Z",
+      "checkedAt": "2026-11-12T07:04:05.799Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -178,7 +191,7 @@
       "durationSec": 180,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-12T04:52:53.118Z",
+      "checkedAt": "2026-11-12T07:04:05.799Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -191,8 +204,21 @@
       "durationSec": 10381,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-12T04:52:53.118Z",
+      "checkedAt": "2026-11-12T07:04:05.799Z",
       "via": "youtube-api",
+      "rumour": false
+    },
+    {
+      "id": "NsdydtCrItw",
+      "title": "GROSSE MAINTENANCE DE 6H ! Le nerf des gants exotiques arrive enfin !",
+      "channelName": "Drakkyzz",
+      "channelUrl": "https://www.youtube.com/channel/UClNSWiXlHYAVE375NQuOzIw",
+      "publishedAt": "2026-11-11T18:12:30.000Z",
+      "durationSec": 374,
+      "official": false,
+      "row": "more",
+      "checkedAt": "2026-11-12T07:04:05.799Z",
+      "via": "youtube-search",
       "rumour": false
     },
     {
@@ -204,7 +230,7 @@
       "durationSec": 164,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-12T04:52:53.118Z",
+      "checkedAt": "2026-11-12T07:04:05.799Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -217,7 +243,7 @@
       "durationSec": 489,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-12T04:52:53.118Z",
+      "checkedAt": "2026-11-12T07:04:05.799Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -230,7 +256,7 @@
       "durationSec": 23,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-12T04:52:53.118Z",
+      "checkedAt": "2026-11-12T07:04:05.799Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -243,7 +269,7 @@
       "durationSec": 40,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-12T04:52:53.118Z",
+      "checkedAt": "2026-11-12T07:04:05.799Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -256,7 +282,7 @@
       "durationSec": 102,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-12T04:52:53.118Z",
+      "checkedAt": "2026-11-12T07:04:05.799Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -269,7 +295,7 @@
       "durationSec": 4034,
       "official": false,
       "row": "build-guides",
-      "checkedAt": "2026-11-12T04:52:53.118Z",
+      "checkedAt": "2026-11-12T07:04:05.799Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -282,8 +308,21 @@
       "durationSec": 672,
       "official": false,
       "row": "build-guides",
-      "checkedAt": "2026-11-12T04:52:53.118Z",
+      "checkedAt": "2026-11-12T07:04:05.799Z",
       "via": "youtube-api",
+      "rumour": false
+    },
+    {
+      "id": "xTjvPNr_1Ds",
+      "title": "THE DIVISION 2! CENTRAL PARK DLC EIN FLOP? DIE COMMMUNITY SAGT JA!",
+      "channelName": "supermarioluf",
+      "channelUrl": "https://www.youtube.com/channel/UCKbKbmCZi1KfQejkxfR3QyA",
+      "publishedAt": "2026-11-11T14:15:11.000Z",
+      "durationSec": 906,
+      "official": false,
+      "row": "more",
+      "checkedAt": "2026-11-12T07:04:05.799Z",
+      "via": "youtube-search",
       "rumour": false
     },
     {
@@ -295,8 +334,21 @@
       "durationSec": 1257,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-12T04:52:53.118Z",
+      "checkedAt": "2026-11-12T07:04:05.799Z",
       "via": "youtube-api",
+      "rumour": false
+    },
+    {
+      "id": "IRD2YGHYNvY",
+      "title": "The Division 2's New DLC Revealed Some MAJOR Issues in the Game... Here's How We Would FIX Them.",
+      "channelName": "SaxTalksGames",
+      "channelUrl": "https://www.youtube.com/channel/UCsBDy4rnNmB31KifYwLI6QQ",
+      "publishedAt": "2026-11-11T13:57:37.000Z",
+      "durationSec": 3755,
+      "official": false,
+      "row": "more",
+      "checkedAt": "2026-11-12T07:04:05.799Z",
+      "via": "youtube-search",
       "rumour": false
     },
     {
@@ -308,7 +360,7 @@
       "durationSec": 21,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-12T04:52:53.118Z",
+      "checkedAt": "2026-11-12T07:04:05.799Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -321,7 +373,7 @@
       "durationSec": 36,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-12T04:52:53.118Z",
+      "checkedAt": "2026-11-12T07:04:05.799Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -334,7 +386,7 @@
       "durationSec": 352,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-12T04:52:53.118Z",
+      "checkedAt": "2026-11-12T07:04:05.799Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -347,7 +399,7 @@
       "durationSec": 1640,
       "official": false,
       "row": "build-guides",
-      "checkedAt": "2026-11-12T04:52:53.118Z",
+      "checkedAt": "2026-11-12T07:04:05.799Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -360,7 +412,7 @@
       "durationSec": 52,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-12T04:52:53.118Z",
+      "checkedAt": "2026-11-12T07:04:05.799Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -373,7 +425,7 @@
       "durationSec": 171,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-12T04:52:53.118Z",
+      "checkedAt": "2026-11-12T07:04:05.799Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -386,59 +438,7 @@
       "durationSec": 8068,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-12T04:52:53.118Z",
-      "via": "youtube-api",
-      "rumour": false
-    },
-    {
-      "id": "EaX2WEDGquI",
-      "title": "New \"Specter's Gloves\" Are A MENACE... | Division 2 Y8S3 PVP Build",
-      "channelName": "RogueGold",
-      "channelUrl": "https://www.youtube.com/channel/UCRbAtGPNumGV868iZ8brEDw",
-      "publishedAt": "2026-11-11T02:20:50.000Z",
-      "durationSec": 514,
-      "official": false,
-      "row": "build-guides",
-      "checkedAt": "2026-11-12T04:52:53.118Z",
-      "via": "youtube-api",
-      "rumour": false
-    },
-    {
-      "id": "nOWNnQ-Ts_g",
-      "title": "BEST CENTRAL PARK EVENT FARM! Rewards, Build & Full Guide | The Division 2",
-      "channelName": "GCROCK",
-      "channelUrl": "https://www.youtube.com/channel/UCyRKkittAyXHhjZxqC49cxg",
-      "publishedAt": "2026-11-11T01:40:57.000Z",
-      "durationSec": 1876,
-      "official": false,
-      "row": "build-guides",
-      "checkedAt": "2026-11-12T04:52:53.118Z",
-      "via": "youtube-api",
-      "rumour": false
-    },
-    {
-      "id": "-gJ9AI7KrKc",
-      "title": "*BUY THESE NOW* RAILSPLITTER, ROCK N' ROLL, & More! The Division 2: Weekly Vendor Reset & Must Buys",
-      "channelName": "Kamikazevondoom",
-      "channelUrl": "https://www.youtube.com/channel/UCWd5S9-AEf26j0wY3P8TOhw",
-      "publishedAt": "2026-11-11T01:30:21.000Z",
-      "durationSec": 1810,
-      "official": false,
-      "row": "more",
-      "checkedAt": "2026-11-12T04:52:53.118Z",
-      "via": "youtube-api",
-      "rumour": false
-    },
-    {
-      "id": "JqtNg2iL-ao",
-      "title": "全境封鎖2 - 黃金子彈+法夫納=悖論警長? 卑鄙餘燼: 這次我正大光明",
-      "channelName": "純天然",
-      "channelUrl": "https://www.youtube.com/channel/UCAGO36FuuShsuvGD9bF1UwQ",
-      "publishedAt": "2026-11-11T00:34:33.000Z",
-      "durationSec": 368,
-      "official": false,
-      "row": "more",
-      "checkedAt": "2026-11-12T04:52:53.118Z",
+      "checkedAt": "2026-11-12T07:04:05.799Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -490,7 +490,7 @@
       "publishedAt": "2026-11-02T13:48:39.000Z",
       "official": true,
       "row": "more",
-      "checkedAt": "2026-11-12T04:52:53.118Z",
+      "checkedAt": "2026-11-12T07:04:05.799Z",
       "via": "ubisoft-page",
       "rumour": false
     },
@@ -503,7 +503,7 @@
       "publishedAt": "2026-10-30T18:16:35.000Z",
       "official": true,
       "row": "trailers",
-      "checkedAt": "2026-11-12T04:52:53.118Z",
+      "checkedAt": "2026-11-12T07:04:05.799Z",
       "via": "ubisoft-page",
       "rumour": false
     },
