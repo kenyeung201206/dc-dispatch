@@ -26,7 +26,7 @@ const kind = (locale !== 'en' && item.summaryKind_zhHant) || item.summaryKind;
 const src = (name: string) => (locale === 'en' ? name : sourceZh(name));
 const H = variant === 'lead' ? 'h2' : 'h3';
 const day = new Intl.DateTimeFormat(locale === 'en' ? 'en' : 'zh-Hant-TW', {
-  timeZone: 'Asia/Tokyo',
+  timeZone: 'Asia/Taipei',
   month: 'short',
   day: 'numeric',
 }).format(new Date(item.publishedAt));

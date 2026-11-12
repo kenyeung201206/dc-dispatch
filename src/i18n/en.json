@@ -247,7 +247,7 @@
   "loot.kind.weapon": "Weapon",
   "loot.kind.other": "Reward",
   "loot.credit.bahamut": "Data from the 巴哈 Division board's daily post · icons: Ubisoft / The Division Wiki ·",
-  "loot.credit.prototrack": "Data: ProtoTrack.gg (players' daily record, out ~2 min after the 17:00 Tokyo reset) · icons: Ubisoft / The Division Wiki ·",
+  "loot.credit.prototrack": "Data: ProtoTrack.gg (players' daily record, out ~2 min after the 16:00 Taiwan/Hong Kong time reset) · icons: Ubisoft / The Division Wiki ·",
   "loot.source": "Original post",
   "latest.titlePast": "Updates that day",
   "badge.new": "NEW",
@@ -267,5 +267,6 @@
   "fav.device": "Favorites are saved in this browser only, so each phone or computer keeps its own list.",
   "privacy.title": "Privacy & rights",
   "privacy.updated": "Last updated",
-  "privacy.description": "What The DC Dispatch keeps (almost nothing), what YouTube and Twitch see, and how to ask for a removal."
+  "privacy.description": "What The DC Dispatch keeps (almost nothing), what YouTube and Twitch see, and how to ask for a removal.",
+  "rail.tz": "UTC+8 · Taiwan / Hong Kong"
 }

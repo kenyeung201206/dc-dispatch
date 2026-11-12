@@ -15,10 +15,10 @@ interface Props {
 const { locale, edition } = Astro.props;
 const other = otherLocale(locale);
 const otherHref = switchLocalePath(Astro.url.pathname, other);
-const dateIso = `${edition.date}T12:00:00+09:00`;
-/** Last robot run, Tokyo time (the paper refreshes every 3 hours). */
+const dateIso = `${edition.date}T12:00:00+08:00`;
+/** Last robot run, Taiwan/Hong Kong time (UTC+8) (the paper refreshes every 3 hours). */
 const updatedAt = edition.generatedAt && !edition.fixture
-  ? new Intl.DateTimeFormat(locale === 'en' ? 'en-GB' : 'zh-Hant-TW', { timeZone: 'Asia/Tokyo', hour: '2-digit', minute: '2-digit', hour12: false }).format(new Date(edition.generatedAt))
+  ? new Intl.DateTimeFormat(locale === 'en' ? 'en-GB' : 'zh-Hant-TW', { timeZone: 'Asia/Taipei', hour: '2-digit', minute: '2-digit', hour12: false }).format(new Date(edition.generatedAt))
   : null;
 /** Banner backgrounds: official key art + in-game screenshots (no news thumbnails, they carry text). */
 const bgPool = library.images
@@ -56,7 +56,7 @@ const season = edition.meta ? (locale === 'en' ? edition.meta.season_en : editio
   <dl class="rail">
     <div><dt>{t(locale, 'rail.edition')}</dt><dd>{t(locale, 'edition.number')} {String(edition.editionNumber).padStart(3, '0')}{locale === 'zh-hant' ? ' 期' : ''}</dd></div>
     <div><dt>{t(locale, 'rail.date')}</dt><dd><time datetime={edition.date}>{formatDate(dateIso, locale)}</time></dd></div>
-    {updatedAt && <div><dt>{t(locale, 'rail.updated')}</dt><dd><time datetime={edition.generatedAt}>{updatedAt}</time></dd></div>}
+    {updatedAt && <div><dt>{t(locale, 'rail.updated')}</dt><dd><time datetime={edition.generatedAt}>{updatedAt}</time> <small class="tz">{t(locale, 'rail.tz')}</small></dd></div>}
     {season && <div><dt>{t(locale, 'rail.season')}</dt><dd>{season} · {edition.meta?.titleUpdate}</dd></div>}
     <div><dt>{t(locale, 'rail.weather')}</dt><dd>{weatherFor(edition.date, locale)}</dd></div>
     <div data-views hidden data-fmt={t(locale, 'rail.viewsFmt')}><dt>{t(locale, 'rail.views')}</dt><dd>—</dd></div>
@@ -321,6 +321,10 @@ const season = edition.meta ? (locale === 'en' ? edition.meta.season_en : editio
     margin: 0;
     min-width: 0;
     overflow-wrap: anywhere;
+  }
+  .rail .tz {
+    opacity: 0.7;
+    font-size: 0.75rem;
   }
   .rail > .rail-yt {
     grid-column: 1 / -1;

@@ -1,7 +1,7 @@
 name: Daily loot
 
-# The 今日戰鬥升級 list, after the game's daily reset (08:00 UTC = 17:00 Tokyo). Checks ProtoTrack.gg's
-# plain-text file at 17:10 and 17:20 Tokyo, and builds and deploys only if the list changed. No YouTube calls,
+# The 今日戰鬥升級 list, after the game's daily reset (08:00 UTC = 16:00 Taiwan/HK time). Checks ProtoTrack.gg's
+# plain-text file at 16:10 and 16:20 Taiwan/HK time, and builds and deploys only if the list changed. No YouTube calls,
 # so no API quota; ~1 Actions minute a run. GitHub often starts scheduled runs late (sometimes by an hour), so this
 # is the backup: the front-page box reads ProtoTrack live through /api/loot. The 2-hourly edition run also checks.
 on:

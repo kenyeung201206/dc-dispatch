@@ -266,7 +266,7 @@ test('過刊: a past day opens on that day, not on today', async ({ page }) => {
     await expect(page.locator('#latest-h')).toHaveText('當日更新');
     // Nothing in that day's box was first published after that day.
     const times = await page.locator('.latest time').evaluateAll((els) => els.map((e) => e.getAttribute('datetime') ?? ''));
-    const endOfDay = Date.parse(`${date}T23:59:59+09:00`);
+    const endOfDay = Date.parse(`${date}T23:59:59+08:00`);
     for (const t of times) expect(Date.parse(t)).toBeLessThanOrEqual(endOfDay);
   }
 });

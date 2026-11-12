@@ -1,4 +1,4 @@
-// Fails when the 今日戰鬥升級 box still shows yesterday's list at 21:00 Tokyo (4 h after the 17:00 reset):
+// Fails when the 今日戰鬥升級 box still shows yesterday's list at 20:00 Taiwan/HK time (4 h after the 17:00 reset):
 // neither ProtoTrack nor 巴哈 had the new list by then, or the loot run broke. Run: node scripts/check-loot.ts
 import { readFileSync } from 'node:fs';
 import { lootDay, lootIsLate } from '../pipeline/sources/prototrack.ts';

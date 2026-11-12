@@ -17,8 +17,8 @@ describe('guide expiry', () => {
   it('removes guides the day after their event ends', () => {
     const g = guidesFromVideos([{ id: 'NsVIcVazgNU', title: '速刷2026血月活動鑰匙 #全境封鎖', publishedAt: '2026-10-20T00:00:00.000Z', official: false, via: 'youtube-api', channelName: '灰帽特工', channelUrl: 'https://www.youtube.com/channel/UCJ2qGCBwyN8d2l9aoWkyShw' }], events, new Date('2026-11-01T00:00:00Z'));
     expect(g[0]!.title).toBe('速刷2026血月活動鑰匙');
-    expect(liveGuides(g, new Date('2026-11-03T12:00:00+09:00'))).toHaveLength(1); // last day of the event
-    expect(liveGuides(g, new Date('2026-11-04T00:30:00+09:00'))).toHaveLength(0); // day after
+    expect(liveGuides(g, new Date('2026-11-03T12:00:00+08:00'))).toHaveLength(1); // last day of the event
+    expect(liveGuides(g, new Date('2026-11-04T00:30:00+08:00'))).toHaveLength(0); // day after
   });
 
   it('drops video guides not re-checked within 30 days', () => {

@@ -6,7 +6,7 @@ export const USER_AGENT = 'Mozilla/5.0 (compatible; DCDispatchBot/0.1; non-comme
 /** The fetcher refuses any host not on this list (SSRF guard). */
 export const ALLOWED_HOSTS = new Set(['api.steampowered.com', 'www.ubisoft.com', 'www.youtube.com', 'www.googleapis.com', 'forum.gamer.com.tw', 'thedivision.fandom.com', 'api.anthropic.com', 'prototrack.gg']);
 
-export const TIMEZONE = 'Asia/Tokyo';
+export const TIMEZONE = 'Asia/Taipei';
 export const STEAM_APP_ID = 2221490;
 
 /** Stories older than this drop out of the edition (active glitches are kept). */

@@ -5,7 +5,7 @@ import { zhTerms } from './terms.ts';
 const parsed = CreatorPostsSchema.safeParse(raw);
 if (!parsed.success) throw new Error(`Invalid data/creator-posts.json: ${parsed.error.message}`);
 
-const today = new Intl.DateTimeFormat('en-CA', { timeZone: 'Asia/Tokyo', year: 'numeric', month: '2-digit', day: '2-digit' }).format(new Date());
+const today = new Intl.DateTimeFormat('en-CA', { timeZone: 'Asia/Taipei', year: 'numeric', month: '2-digit', day: '2-digit' }).format(new Date());
 
 export const creator = parsed.data.creator;
 /** Series and posts still running on the build day; the daily rebuild drops expired ones. */

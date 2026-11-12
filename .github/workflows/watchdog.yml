@@ -3,7 +3,7 @@ name: Stale edition watchdog
 # Fails (GitHub then emails the repo owner, by its normal notification settings) when:
 # - the robot has not published for 6 hours (it is broken, e.g. a test failing, or disabled), or
 # - a story has had no 重點整理 for 12 hours (the scheduled writer keeps skipping it or stopped), or
-# - the 今日戰鬥升級 box still shows yesterday's list at 21:00 Tokyo (checked once a day, on the 12:50 UTC run), or
+# - the 今日戰鬥升級 box still shows yesterday's list at 20:00 Taiwan/HK time (checked once a day, on the 12:50 UTC run), or
 # - a news source (Steam, Ubisoft EN/繁中, 巴哈) has failed or returned nothing for 6 hours (then once a day).
 # Runs about an hour after each robot update (the writer runs every hour at :15).
 on:

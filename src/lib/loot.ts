@@ -1,5 +1,5 @@
 /**
- * Shared by the 今日戰鬥升級 box (DailyLoot.astro, at build time) and /api/loot (live, after the 17:00 Tokyo reset):
+ * Shared by the 今日戰鬥升級 box (DailyLoot.astro, at build time) and /api/loot (live, after the 16:00 Taiwan/HK time reset):
  * a reward name → English name, in-game icon and tint. A name we can't match with confidence gets no icon.
  */
 import brands from '../../data/brands.json' with { type: 'json' };

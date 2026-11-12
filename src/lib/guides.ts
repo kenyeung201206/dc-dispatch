@@ -10,7 +10,7 @@ if (!e.success) throw new Error(`Invalid data/events.json: ${e.error.message}`);
 export const events = e.data.events;
 
 const tokyoToday = () =>
-  new Intl.DateTimeFormat('en-CA', { timeZone: 'Asia/Tokyo', year: 'numeric', month: '2-digit', day: '2-digit' }).format(new Date());
+  new Intl.DateTimeFormat('en-CA', { timeZone: 'Asia/Taipei', year: 'numeric', month: '2-digit', day: '2-digit' }).format(new Date());
 
 /** Guides still running on the day the site is built (the daily rebuild removes expired ones). */
 export const guides: Guide[] = g.data.guides.filter((x) => x.until >= tokyoToday());

@@ -1,6 +1,6 @@
 /**
  * ProtoTrack.gg's plain-text daily file: today's 戰鬥升級 (Escalation) targeted loot and the 原型箱商人 caches,
- * usually saved within ~2 minutes of the daily reset (08:00 UTC = 17:00 Tokyo). robots.txt allows everything.
+ * usually saved within ~2 minutes of the daily reset (08:00 UTC = 16:00 Taiwan/HK time). robots.txt allows everything.
  * Community-kept (players read it in-game; Ubisoft publishes no list). We keep only the facts: mission → reward.
  * English names become the Chinese names 巴哈 posts use (data/brands.json); unknown names stay in English.
  */
@@ -77,7 +77,7 @@ export function lootDay(now: Date): string {
 }
 
 /**
- * True when the box still shows an older day's list 4+ hours after the reset (21:00 Tokyo or later).
+ * True when the box still shows an older day's list 4+ hours after the reset (20:00 Taiwan/HK time or later).
  * Only for the first 2 hours after that, so the watchdog (every 2 h at :50) emails once a day, not all night.
  */
 export function lootIsLate(saved: string, now: Date): boolean {

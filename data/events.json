@@ -1,5 +1,5 @@
 {
-  "_note": "Limited-time events with official dates (Asia/Tokyo calendar days, end inclusive). Guides matched to an event disappear the day after it ends. Add new events from Ubisoft's notes; 'match' lists words in guide titles (EN or 中文).",
+  "_note": "Limited-time events with official dates (Taiwan/Hong Kong (UTC+8) calendar days, end inclusive). Guides matched to an event disappear the day after it ends. Add new events from Ubisoft's notes; 'match' lists words in guide titles (EN or 中文).",
   "events": [
     {
       "id": "red-moon-unleashed-2026",

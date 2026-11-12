@@ -11,7 +11,7 @@ export function getStaticPaths() {
 const locale = Astro.params.lang as Locale;
 const status = RunStatusSchema.parse(raw);
 const when = new Intl.DateTimeFormat(HTML_LANG[locale], {
-  timeZone: 'Asia/Tokyo',
+  timeZone: 'Asia/Taipei',
   dateStyle: 'full',
   timeStyle: 'short',
 }).format(new Date(status.lastRun));

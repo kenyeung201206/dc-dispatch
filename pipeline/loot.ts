@@ -1,6 +1,6 @@
 /**
- * Loot-only update for the 17:00 Tokyo reset (loot.yml): no news, no YouTube, so it costs no API quota.
- * Checks ProtoTrack once (loot.yml runs it at 17:10 and 17:20 Tokyo; the 2-hourly edition run also checks).
+ * Loot-only update for the 16:00 Taiwan/HK time reset (loot.yml): no news, no YouTube, so it costs no API quota.
+ * Checks ProtoTrack once (loot.yml runs it at 16:10 and 16:20 Taiwan/HK time; the 2-hourly edition run also checks).
  * With --until-utc HH:MM it keeps checking every 3 minutes until then. The front-page box also reads ProtoTrack
  * live through /api/loot, so readers see the new list even when GitHub starts these runs late.
  * Writes `changed=true|false` to $GITHUB_OUTPUT so the workflow only builds and deploys when needed.

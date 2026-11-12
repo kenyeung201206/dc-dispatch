@@ -15,9 +15,9 @@ export interface ViewsEnv {
   VIEWS?: KV;
 }
 
-/** Day in Tokyo (the paper's time zone), YYYY-MM-DD. */
+/** Day in Taiwan/Hong Kong time (UTC+8, the paper's time zone), YYYY-MM-DD. */
 export const tokyoDay = (now: number) =>
-  new Intl.DateTimeFormat('en-CA', { timeZone: 'Asia/Tokyo', year: 'numeric', month: '2-digit', day: '2-digit' }).format(new Date(now));
+  new Intl.DateTimeFormat('en-CA', { timeZone: 'Asia/Taipei', year: 'numeric', month: '2-digit', day: '2-digit' }).format(new Date(now));
 
 const DAY_TTL = 40 * 86_400; // daily counters clean themselves up after 40 days
 

@@ -14,7 +14,7 @@ const MONTHS = ['january', 'february', 'march', 'april', 'may', 'june', 'july', 
 const DATE = '(January|February|March|April|May|June|July|August|September|October|November|December) (\\d{1,2})';
 
 const tokyoDate = (d: Date) =>
-  new Intl.DateTimeFormat('en-CA', { timeZone: 'Asia/Tokyo', year: 'numeric', month: '2-digit', day: '2-digit' }).format(d);
+  new Intl.DateTimeFormat('en-CA', { timeZone: 'Asia/Taipei', year: 'numeric', month: '2-digit', day: '2-digit' }).format(d);
 const addDays = (iso: string, days: number) => tokyoDate(new Date(Date.parse(iso) + days * 86_400_000));
 
 /** "EVENT" headings in Ubisoft notes followed by "From <Month D> to <Month D>". */
@@ -111,7 +111,7 @@ export const cleanTitle = (t: string) => t.replace(/#\S+/g, ' ').replace(/\s+/g,
 export function guidesFromPicks(picks: Pick[], events: GameEvent[]): Guide[] {
   return picks.map((p) => {
     const url = p.kind === 'video' && p.videoId ? `https://www.youtube.com/watch?v=${p.videoId}` : p.url!;
-    const publishedAt = new Date(`${p.added}T00:00:00+09:00`).toISOString();
+    const publishedAt = new Date(`${p.added}T00:00:00+08:00`).toISOString();
     const ev = p.eventId ? events.find((e) => e.id === p.eventId) : undefined;
     const timing = p.until ? { until: p.until, eventId: p.eventId } : ev ? { until: ev.end, eventId: ev.id } : untilFor(p.title, publishedAt, events);
     return {

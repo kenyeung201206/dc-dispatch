@@ -12,7 +12,7 @@ describe('switchLocalePath', () => {
 });
 
 describe('formatDate', () => {
-  it('uses Asia/Tokyo, so 21:30 UTC is already the next day', () => {
+  it('uses Taiwan/Hong Kong time (UTC+8), so 21:30 UTC is already the next day', () => {
     expect(formatDate('2026-11-03T21:30:00Z', 'en')).toContain('November 4, 2026');
     expect(formatDate('2026-11-03T21:30:00Z', 'zh-hant')).toContain('2026年11月4日');
   });

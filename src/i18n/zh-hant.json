@@ -247,7 +247,7 @@
   "loot.kind.weapon": "武器",
   "loot.kind.other": "獎勵",
   "loot.credit.bahamut": "資料：巴哈全境封鎖板每日整理 · 圖示：Ubisoft／The Division Wiki ·",
-  "loot.credit.prototrack": "資料：ProtoTrack.gg（玩家每日紀錄，東京時間 17:00 重置後約 2 分鐘更新） · 圖示：Ubisoft／The Division Wiki ·",
+  "loot.credit.prototrack": "資料：ProtoTrack.gg（玩家每日紀錄，台灣／香港時間 16:00 重置後約 2 分鐘更新） · 圖示：Ubisoft／The Division Wiki ·",
   "loot.source": "原文",
   "latest.titlePast": "當日更新",
   "badge.new": "新",
@@ -267,5 +267,6 @@
   "fav.device": "收藏只存在這個瀏覽器裡，每台手機或電腦各有自己的清單。",
   "privacy.title": "隱私與版權",
   "privacy.updated": "最後更新",
-  "privacy.description": "華盛頓每日快報記錄了什麼（幾乎沒有）、YouTube 和 Twitch 會看到什麼，以及如何要求移除內容。"
+  "privacy.description": "華盛頓每日快報記錄了什麼（幾乎沒有）、YouTube 和 Twitch 會看到什麼，以及如何要求移除內容。",
+  "rail.tz": "台灣／香港時間"
 }

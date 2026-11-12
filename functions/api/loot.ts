@@ -1,7 +1,7 @@
 /**
  * GET /api/loot → today's 戰鬥升級 list, read live from ProtoTrack.gg (public, no sign-in).
  * The box on the front page asks this on load, so the new list shows within a minute of ProtoTrack posting it
- * (~2 min after the 17:00 Tokyo reset), without waiting for a GitHub run. Cloudflare keeps ProtoTrack's file for
+ * (~2 min after the 16:00 Taiwan/HK time reset), without waiting for a GitHub run. Cloudflare keeps ProtoTrack's file for
  * 60 s, so readers reloading never send ProtoTrack more than about one request a minute.
  */
 import { lootDay, parseProtoTrack, PROTOTRACK_PAGE, PROTOTRACK_TXT } from '../../pipeline/sources/prototrack.ts';

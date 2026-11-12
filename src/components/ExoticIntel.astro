@@ -18,7 +18,7 @@ const list = (limit ? exotics.slice(0, limit) : exotics).map((e) => {
   return { ...e, name: z.name ?? e.name, talent: z.talent, text: z.text, ours: Boolean(z.name) };
 });
 const day = (iso: string) =>
-  new Intl.DateTimeFormat(locale === 'en' ? 'en' : 'zh-Hant-TW', { month: 'short', day: 'numeric', timeZone: 'Asia/Tokyo' }).format(new Date(iso));
+  new Intl.DateTimeFormat(locale === 'en' ? 'en' : 'zh-Hant-TW', { month: 'short', day: 'numeric', timeZone: 'Asia/Taipei' }).format(new Date(iso));
 ---
 {
   list.length === 0 ? (

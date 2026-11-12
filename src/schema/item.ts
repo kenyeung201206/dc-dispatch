@@ -183,7 +183,7 @@ export const GuideSchema = z.object({
   summary_zhHant: z.string().optional(),
   summary_en: z.string().optional(),
   eventId: z.string().optional(),
-  /** Last day to show (Asia/Tokyo calendar date). */
+  /** Last day to show (Asia/Taipei calendar date). */
   until: z.iso.date(),
   addedBy: z.enum(['auto', 'editor']),
   /** When a video was last confirmed embeddable (YouTube data: refresh within 30 days). */

@@ -108,7 +108,7 @@ const index = Object.fromEntries(
   const list = document.querySelector<HTMLOListElement>('[data-favlist]')!;
   const tpl = document.querySelector<HTMLTemplateElement>('[data-row]')!;
   const empty = document.querySelector<HTMLElement>('[data-empty]')!;
-  const fmt = new Intl.DateTimeFormat(labels.lang, { month: 'short', day: 'numeric', timeZone: 'Asia/Tokyo' });
+  const fmt = new Intl.DateTimeFormat(labels.lang, { month: 'short', day: 'numeric', timeZone: 'Asia/Taipei' });
   const removeLabel = document.querySelector<HTMLElement>('[data-fav-labels]')?.dataset.favRemove ?? '';
 
   function render(favs: Fav[]) {

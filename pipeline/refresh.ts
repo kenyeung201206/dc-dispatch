@@ -114,9 +114,9 @@ async function main() {
   const startedAt = Date.now();
   // Dry runs are pinned to the fixtures' date so results are reproducible.
   const now = args.date
-    ? new Date(`${args.date}T06:00:00+09:00`)
+    ? new Date(`${args.date}T06:00:00+08:00`)
     : dryRun
-      ? new Date('2026-11-04T06:00:00+09:00')
+      ? new Date('2026-11-04T06:00:00+08:00')
       : new Date();
   const date = tokyoDate(now);
   log('info', 'refresh start', { date, dryRun });
