@@ -1,6 +1,58 @@
 {
   "videos": [
     {
+      "id": "m-njCCVJhB4",
+      "title": "🔴 SEASON 4 PTS REVEAL! Dev Stream & T10 Escalations LIVE | The Division 2",
+      "channelName": "GCROCK",
+      "channelUrl": "https://www.youtube.com/channel/UCyRKkittAyXHhjZxqC49cxg",
+      "publishedAt": "2026-11-12T20:28:49.000Z",
+      "durationSec": 22669,
+      "official": false,
+      "row": "more",
+      "checkedAt": "2026-11-12T20:44:24.615Z",
+      "via": "youtube-api",
+      "rumour": false
+    },
+    {
+      "id": "4UkFQ2NxTYA",
+      "title": "Season 4 Spearfall: Everything You Need to Know (The Division 2)",
+      "channelName": "widdz",
+      "channelUrl": "https://www.youtube.com/channel/UC1h4ld2anwjT4NEbqFOJRXQ",
+      "publishedAt": "2026-11-12T20:26:52.000Z",
+      "durationSec": 910,
+      "official": false,
+      "row": "more",
+      "checkedAt": "2026-11-12T20:44:24.615Z",
+      "via": "youtube-api",
+      "rumour": false
+    },
+    {
+      "id": "stEhc8ZTxuI",
+      "title": "LEGENDARY OPEN WORLD, PROTOTYPE SCHEMATICS, & More | Division 2 News",
+      "channelName": "RogueGold",
+      "channelUrl": "https://www.youtube.com/channel/UCRbAtGPNumGV868iZ8brEDw",
+      "publishedAt": "2026-11-12T19:51:17.000Z",
+      "durationSec": 1532,
+      "official": false,
+      "row": "more",
+      "checkedAt": "2026-11-12T20:44:24.615Z",
+      "via": "youtube-api",
+      "rumour": false
+    },
+    {
+      "id": "QRim6CAzGpI",
+      "title": "【字幕】原型校準 白區傳奇 全新玩法 Y8S4 PTS前瞻直播全程回放 #全境封鎖  #全境封鎖2 #全境封鎖3 #thedivision #thedivision2 #thedivision3",
+      "channelName": "灰帽特工   Gray Hat Agent",
+      "channelUrl": "https://www.youtube.com/channel/UCJ2qGCBwyN8d2l9aoWkyShw",
+      "publishedAt": "2026-11-12T19:23:51.000Z",
+      "durationSec": 5282,
+      "official": false,
+      "row": "more",
+      "checkedAt": "2026-11-12T20:44:24.615Z",
+      "via": "youtube-api",
+      "rumour": false
+    },
+    {
       "id": "jTPeu5vRQ7M",
       "title": "LOGIN FIX IS HERE! ECHO-08 ERROR FIXED! #TheDivision2 #ECHO08 #LoginFix",
       "channelName": "ManaWar Gaming",
@@ -9,7 +61,7 @@
       "durationSec": 179,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-12T18:47:15.805Z",
+      "checkedAt": "2026-11-12T20:44:24.615Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -22,7 +74,7 @@
       "durationSec": 66,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-12T18:47:15.805Z",
+      "checkedAt": "2026-11-12T20:44:24.615Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -35,7 +87,7 @@
       "durationSec": 41,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-12T18:47:15.805Z",
+      "checkedAt": "2026-11-12T20:44:24.615Z",
       "via": "youtube-api",
       "rumour": true
     },
@@ -48,7 +100,7 @@
       "durationSec": 754,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-12T18:47:15.805Z",
+      "checkedAt": "2026-11-12T20:44:24.615Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -61,7 +113,7 @@
       "durationSec": 179,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-12T18:47:15.805Z",
+      "checkedAt": "2026-11-12T20:44:24.615Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -74,7 +126,7 @@
       "durationSec": 983,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-12T18:47:15.805Z",
+      "checkedAt": "2026-11-12T20:44:24.615Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -87,7 +139,7 @@
       "durationSec": 8382,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-12T18:47:15.805Z",
+      "checkedAt": "2026-11-12T20:44:24.615Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -99,7 +151,7 @@
       "publishedAt": "2026-11-12T16:42:00.000Z",
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-12T18:47:15.805Z",
+      "checkedAt": "2026-11-12T20:44:24.615Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -112,19 +164,7 @@
       "durationSec": 175,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-12T18:47:15.805Z",
-      "via": "youtube-api",
-      "rumour": false
-    },
-    {
-      "id": "m-njCCVJhB4",
-      "title": "🔴 SEASON 4 PTS REVEAL! Dev Stream & T10 Escalations LIVE | The Division 2",
-      "channelName": "GCROCK",
-      "channelUrl": "https://www.youtube.com/channel/UCyRKkittAyXHhjZxqC49cxg",
-      "publishedAt": "2026-11-12T13:29:09.000Z",
-      "official": false,
-      "row": "more",
-      "checkedAt": "2026-11-12T18:47:15.805Z",
+      "checkedAt": "2026-11-12T20:44:24.615Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -137,7 +177,7 @@
       "durationSec": 568,
       "official": false,
       "row": "intel",
-      "checkedAt": "2026-11-12T18:47:15.805Z",
+      "checkedAt": "2026-11-12T20:44:24.615Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -150,7 +190,7 @@
       "durationSec": 180,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-12T18:47:15.805Z",
+      "checkedAt": "2026-11-12T20:44:24.615Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -163,7 +203,7 @@
       "durationSec": 1242,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-12T18:47:15.805Z",
+      "checkedAt": "2026-11-12T20:44:24.615Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -176,7 +216,7 @@
       "durationSec": 661,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-12T18:47:15.805Z",
+      "checkedAt": "2026-11-12T20:44:24.615Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -189,7 +229,7 @@
       "durationSec": 535,
       "official": false,
       "row": "intel",
-      "checkedAt": "2026-11-12T18:47:15.805Z",
+      "checkedAt": "2026-11-12T20:44:24.615Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -215,7 +255,7 @@
       "durationSec": 588,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-12T18:47:15.805Z",
+      "checkedAt": "2026-11-12T20:44:24.615Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -228,7 +268,7 @@
       "durationSec": 481,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-12T18:47:15.805Z",
+      "checkedAt": "2026-11-12T20:44:24.615Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -254,7 +294,7 @@
       "durationSec": 106,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-12T18:47:15.805Z",
+      "checkedAt": "2026-11-12T20:44:24.615Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -267,7 +307,7 @@
       "durationSec": 732,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-12T18:47:15.805Z",
+      "checkedAt": "2026-11-12T20:44:24.615Z",
       "via": "youtube-api",
       "rumour": true
     },
@@ -280,7 +320,7 @@
       "durationSec": 528,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-12T18:47:15.805Z",
+      "checkedAt": "2026-11-12T20:44:24.615Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -293,7 +333,7 @@
       "durationSec": 1346,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-12T18:47:15.805Z",
+      "checkedAt": "2026-11-12T20:44:24.615Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -306,7 +346,7 @@
       "durationSec": 425,
       "official": false,
       "row": "intel",
-      "checkedAt": "2026-11-12T18:47:15.805Z",
+      "checkedAt": "2026-11-12T20:44:24.615Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -319,7 +359,7 @@
       "durationSec": 28734,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-12T18:47:15.805Z",
+      "checkedAt": "2026-11-12T20:44:24.615Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -332,7 +372,7 @@
       "durationSec": 120,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-12T18:47:15.805Z",
+      "checkedAt": "2026-11-12T20:44:24.615Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -345,7 +385,7 @@
       "durationSec": 180,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-12T18:47:15.805Z",
+      "checkedAt": "2026-11-12T20:44:24.615Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -371,7 +411,7 @@
       "durationSec": 954,
       "official": false,
       "row": "intel",
-      "checkedAt": "2026-11-12T18:47:15.805Z",
+      "checkedAt": "2026-11-12T20:44:24.615Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -384,7 +424,7 @@
       "durationSec": 670,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-12T18:47:15.805Z",
+      "checkedAt": "2026-11-12T20:44:24.615Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -397,47 +437,8 @@
       "durationSec": 563,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-12T18:47:15.805Z",
+      "checkedAt": "2026-11-12T20:44:24.615Z",
       "via": "youtube-api",
-      "rumour": false
-    },
-    {
-      "id": "uCQKEilfuuw",
-      "title": "Tom Clancy's The Division 2 How to get to this collectible",
-      "channelName": "RAMBO52___",
-      "channelUrl": "https://www.youtube.com/channel/UCm_idKyWeK5qzfSSUkCY5pA",
-      "publishedAt": "2026-11-11T18:23:27.000Z",
-      "durationSec": 180,
-      "official": false,
-      "row": "more",
-      "checkedAt": "2026-11-12T18:47:15.805Z",
-      "via": "youtube-api",
-      "rumour": false
-    },
-    {
-      "id": "zK52Rck5gRs",
-      "title": "PS5　全境封鎖2",
-      "channelName": "PS & PC 遊戲交流區-主頻道",
-      "channelUrl": "https://www.youtube.com/channel/UCkd3D6EnMoJ7JSEwJ-MPsFQ",
-      "publishedAt": "2026-11-11T18:12:54.000Z",
-      "durationSec": 10381,
-      "official": false,
-      "row": "more",
-      "checkedAt": "2026-11-12T18:47:15.805Z",
-      "via": "youtube-api",
-      "rumour": false
-    },
-    {
-      "id": "NsdydtCrItw",
-      "title": "GROSSE MAINTENANCE DE 6H ! Le nerf des gants exotiques arrive enfin !",
-      "channelName": "Drakkyzz",
-      "channelUrl": "https://www.youtube.com/channel/UClNSWiXlHYAVE375NQuOzIw",
-      "publishedAt": "2026-11-11T18:12:30.000Z",
-      "durationSec": 374,
-      "official": false,
-      "row": "more",
-      "checkedAt": "2026-11-12T07:04:05.799Z",
-      "via": "youtube-search",
       "rumour": false
     },
     {
@@ -488,7 +489,7 @@
       "publishedAt": "2026-11-02T13:48:39.000Z",
       "official": true,
       "row": "more",
-      "checkedAt": "2026-11-12T18:47:15.805Z",
+      "checkedAt": "2026-11-12T20:44:24.615Z",
       "via": "ubisoft-page",
       "rumour": false
     },
@@ -501,7 +502,7 @@
       "publishedAt": "2026-10-30T18:16:35.000Z",
       "official": true,
       "row": "trailers",
-      "checkedAt": "2026-11-12T18:47:15.805Z",
+      "checkedAt": "2026-11-12T20:44:24.615Z",
       "via": "ubisoft-page",
       "rumour": false
     },
