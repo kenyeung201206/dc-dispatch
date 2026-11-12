@@ -1,6 +1,69 @@
 {
   "videos": [
     {
+      "id": "PhslOiy8CeA",
+      "title": "Legendary Open World coming in Season 4 (The Division 2)",
+      "channelName": "widdz",
+      "channelUrl": "https://www.youtube.com/channel/UC1h4ld2anwjT4NEbqFOJRXQ",
+      "publishedAt": "2026-11-12T22:39:33.000Z",
+      "durationSec": 30,
+      "official": false,
+      "row": "more",
+      "checkedAt": "2026-11-12T22:40:44.694Z",
+      "via": "youtube-api",
+      "rumour": false
+    },
+    {
+      "id": "blra14Z4dB4",
+      "title": "Over 25 MAJOR CHANGES To Exotics (Plus Prima Donna Nerf) The Division 2",
+      "channelName": "The Gaming Brigade",
+      "channelUrl": "https://www.youtube.com/channel/UCnqbdVhRhYh5KQpDtKz8ksg",
+      "publishedAt": "2026-11-12T22:35:11.000Z",
+      "durationSec": 623,
+      "official": false,
+      "row": "patch-breakdowns",
+      "checkedAt": "2026-11-12T22:40:44.694Z",
+      "via": "youtube-api",
+      "rumour": false
+    },
+    {
+      "id": "G8LjbS4iKlI",
+      "title": "Next Season Pestilence & CoCo Getting Buffed Again! | PSN |🪓🥷 DAG 🔴LIVE | Division 2",
+      "channelName": "Died Again Gaming",
+      "channelUrl": "https://www.youtube.com/channel/UCrK99e79TwSpgElDb-r-Lpg",
+      "publishedAt": "2026-11-12T22:09:41.000Z",
+      "official": false,
+      "row": "more",
+      "checkedAt": "2026-11-12T22:40:44.694Z",
+      "via": "youtube-api",
+      "rumour": false
+    },
+    {
+      "id": "N3pNA1gThHU",
+      "title": "PS5　全境封鎖2　拿收藏品",
+      "channelName": "PS & PC 遊戲交流區-主頻道",
+      "channelUrl": "https://www.youtube.com/channel/UCkd3D6EnMoJ7JSEwJ-MPsFQ",
+      "publishedAt": "2026-11-12T21:41:45.000Z",
+      "official": false,
+      "row": "more",
+      "checkedAt": "2026-11-12T22:40:44.694Z",
+      "via": "youtube-api",
+      "rumour": false
+    },
+    {
+      "id": "cKS6LjxPEEU",
+      "title": "Division 2 Y8S4 Spearfall: Legendary Open World Is Finally Here",
+      "channelName": "TuxedoBandido",
+      "channelUrl": "https://www.youtube.com/channel/UCWIdBINha5bKeFuvAs7US4A",
+      "publishedAt": "2026-11-12T20:41:00.000Z",
+      "durationSec": 1328,
+      "official": false,
+      "row": "more",
+      "checkedAt": "2026-11-12T22:40:44.694Z",
+      "via": "youtube-api",
+      "rumour": false
+    },
+    {
       "id": "m-njCCVJhB4",
       "title": "🔴 SEASON 4 PTS REVEAL! Dev Stream & T10 Escalations LIVE | The Division 2",
       "channelName": "GCROCK",
@@ -9,20 +72,20 @@
       "durationSec": 22669,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-12T20:44:24.615Z",
+      "checkedAt": "2026-11-12T22:40:44.694Z",
       "via": "youtube-api",
       "rumour": false
     },
     {
       "id": "4UkFQ2NxTYA",
-      "title": "Season 4 Spearfall: Everything You Need to Know (The Division 2)",
+      "title": "NEW Legendary Open World + Pick Your Augment! Season 4 (The Division 2)",
       "channelName": "widdz",
       "channelUrl": "https://www.youtube.com/channel/UC1h4ld2anwjT4NEbqFOJRXQ",
       "publishedAt": "2026-11-12T20:26:52.000Z",
       "durationSec": 910,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-12T20:44:24.615Z",
+      "checkedAt": "2026-11-12T22:40:44.694Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -35,8 +98,21 @@
       "durationSec": 1532,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-12T20:44:24.615Z",
+      "checkedAt": "2026-11-12T22:40:44.694Z",
       "via": "youtube-api",
+      "rumour": false
+    },
+    {
+      "id": "_87YQzXfihg",
+      "title": "THE DIVISION 2 : ÉNORMES CHANGEMENTS ! La Y8S4 va tout bouleverser ! #division2 #thedivision2",
+      "channelName": "STALL401",
+      "channelUrl": "https://www.youtube.com/channel/UCBZUnSZCj0UL7ZVg9hh7A9A",
+      "publishedAt": "2026-11-12T19:25:44.000Z",
+      "durationSec": 346,
+      "official": false,
+      "row": "more",
+      "checkedAt": "2026-11-12T22:40:44.694Z",
+      "via": "youtube-search",
       "rumour": false
     },
     {
@@ -48,7 +124,7 @@
       "durationSec": 5282,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-12T20:44:24.615Z",
+      "checkedAt": "2026-11-12T22:40:44.694Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -61,7 +137,7 @@
       "durationSec": 179,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-12T20:44:24.615Z",
+      "checkedAt": "2026-11-12T22:40:44.694Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -74,7 +150,7 @@
       "durationSec": 66,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-12T20:44:24.615Z",
+      "checkedAt": "2026-11-12T22:40:44.694Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -87,7 +163,7 @@
       "durationSec": 41,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-12T20:44:24.615Z",
+      "checkedAt": "2026-11-12T22:40:44.694Z",
       "via": "youtube-api",
       "rumour": true
     },
@@ -100,7 +176,7 @@
       "durationSec": 754,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-12T20:44:24.615Z",
+      "checkedAt": "2026-11-12T22:40:44.694Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -113,7 +189,7 @@
       "durationSec": 179,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-12T20:44:24.615Z",
+      "checkedAt": "2026-11-12T22:40:44.694Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -139,7 +215,7 @@
       "durationSec": 8382,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-12T20:44:24.615Z",
+      "checkedAt": "2026-11-12T22:40:44.694Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -151,7 +227,7 @@
       "publishedAt": "2026-11-12T16:42:00.000Z",
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-12T20:44:24.615Z",
+      "checkedAt": "2026-11-12T22:40:44.694Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -164,7 +240,7 @@
       "durationSec": 175,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-12T20:44:24.615Z",
+      "checkedAt": "2026-11-12T22:40:44.694Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -177,7 +253,7 @@
       "durationSec": 568,
       "official": false,
       "row": "intel",
-      "checkedAt": "2026-11-12T20:44:24.615Z",
+      "checkedAt": "2026-11-12T22:40:44.694Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -190,7 +266,7 @@
       "durationSec": 180,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-12T20:44:24.615Z",
+      "checkedAt": "2026-11-12T22:40:44.694Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -203,7 +279,7 @@
       "durationSec": 1242,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-12T20:44:24.615Z",
+      "checkedAt": "2026-11-12T22:40:44.694Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -216,7 +292,7 @@
       "durationSec": 661,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-12T20:44:24.615Z",
+      "checkedAt": "2026-11-12T22:40:44.694Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -229,7 +305,7 @@
       "durationSec": 535,
       "official": false,
       "row": "intel",
-      "checkedAt": "2026-11-12T20:44:24.615Z",
+      "checkedAt": "2026-11-12T22:40:44.694Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -255,7 +331,7 @@
       "durationSec": 588,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-12T20:44:24.615Z",
+      "checkedAt": "2026-11-12T22:40:44.694Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -268,7 +344,7 @@
       "durationSec": 481,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-12T20:44:24.615Z",
+      "checkedAt": "2026-11-12T22:40:44.694Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -281,7 +357,7 @@
       "durationSec": 38,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-12T18:47:15.805Z",
+      "checkedAt": "2026-11-12T22:40:44.694Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -294,7 +370,7 @@
       "durationSec": 106,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-12T20:44:24.615Z",
+      "checkedAt": "2026-11-12T22:40:44.694Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -307,7 +383,7 @@
       "durationSec": 732,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-12T20:44:24.615Z",
+      "checkedAt": "2026-11-12T22:40:44.694Z",
       "via": "youtube-api",
       "rumour": true
     },
@@ -320,7 +396,7 @@
       "durationSec": 528,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-12T20:44:24.615Z",
+      "checkedAt": "2026-11-12T22:40:44.694Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -333,7 +409,7 @@
       "durationSec": 1346,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-12T20:44:24.615Z",
+      "checkedAt": "2026-11-12T22:40:44.694Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -346,7 +422,7 @@
       "durationSec": 425,
       "official": false,
       "row": "intel",
-      "checkedAt": "2026-11-12T20:44:24.615Z",
+      "checkedAt": "2026-11-12T22:40:44.694Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -359,85 +435,7 @@
       "durationSec": 28734,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-12T20:44:24.615Z",
-      "via": "youtube-api",
-      "rumour": false
-    },
-    {
-      "id": "vsXW9sEGwY8",
-      "title": "CROSSPLAY UPDATE! Loaded for Bear NERFED & Matchmaking FIXED! #TheDivision2 #Crossplay",
-      "channelName": "ManaWar Gaming",
-      "channelUrl": "https://www.youtube.com/channel/UCrLMaFhu9SYwosWBgqm0tMQ",
-      "publishedAt": "2026-11-11T20:39:06.000Z",
-      "durationSec": 120,
-      "official": false,
-      "row": "more",
-      "checkedAt": "2026-11-12T20:44:24.615Z",
-      "via": "youtube-api",
-      "rumour": false
-    },
-    {
-      "id": "WBNpp5xKfB4",
-      "title": "GOLDEN BULLET IS BACK! NEW BUFFS and FREE MASK! #TheDivision2 #GoldenBullet #LeadCatcherMask",
-      "channelName": "ManaWar Gaming",
-      "channelUrl": "https://www.youtube.com/channel/UCrLMaFhu9SYwosWBgqm0tMQ",
-      "publishedAt": "2026-11-11T19:45:50.000Z",
-      "durationSec": 180,
-      "official": false,
-      "row": "more",
-      "checkedAt": "2026-11-12T20:44:24.615Z",
-      "via": "youtube-api",
-      "rumour": false
-    },
-    {
-      "id": "e_8eS7I4S9w",
-      "title": "Division 2's Single Best Solo Build Right Now (Fafnir Core Strength)",
-      "channelName": "TuxedoBandido",
-      "channelUrl": "https://www.youtube.com/channel/UCWIdBINha5bKeFuvAs7US4A",
-      "publishedAt": "2026-11-11T18:43:25.000Z",
-      "durationSec": 1101,
-      "official": false,
-      "row": "build-guides",
-      "checkedAt": "2026-11-12T10:55:31.566Z",
-      "via": "youtube-api",
-      "rumour": false
-    },
-    {
-      "id": "PPIwwOI3uSs",
-      "title": "Division 2: Best Exotics Farm EVER Do This Now",
-      "channelName": "Compy9",
-      "channelUrl": "https://www.youtube.com/channel/UCzPr2Ut6vyEs74iXZh7tRFA",
-      "publishedAt": "2026-11-11T18:41:14.000Z",
-      "durationSec": 954,
-      "official": false,
-      "row": "intel",
-      "checkedAt": "2026-11-12T20:44:24.615Z",
-      "via": "youtube-search",
-      "rumour": false
-    },
-    {
-      "id": "eGpTBYybFQo",
-      "title": "*BREAKING NEWS* The Division 2: SERVERS DOWN TOMORROW to add CROSSPLAY SERVERS & NERF BEAR GLOVES...",
-      "channelName": "Kamikazevondoom",
-      "channelUrl": "https://www.youtube.com/channel/UCWd5S9-AEf26j0wY3P8TOhw",
-      "publishedAt": "2026-11-11T18:33:17.000Z",
-      "durationSec": 670,
-      "official": false,
-      "row": "more",
-      "checkedAt": "2026-11-12T20:44:24.615Z",
-      "via": "youtube-api",
-      "rumour": false
-    },
-    {
-      "id": "qk431h7VHEA",
-      "title": "全境封锁2：新奇特突步“獾式”获取方法、武器介绍、天赋演示！",
-      "channelName": "B站森牧阳",
-      "channelUrl": "https://www.youtube.com/channel/UCxxUK5_3ocVwBXDUZxdk76g",
-      "publishedAt": "2026-11-11T18:28:40.000Z",
-      "durationSec": 563,
-      "official": false,
-      "row": "more",
-      "checkedAt": "2026-11-12T20:44:24.615Z",
+      "checkedAt": "2026-11-12T22:40:44.694Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -489,7 +487,7 @@
       "publishedAt": "2026-11-02T13:48:39.000Z",
       "official": true,
       "row": "more",
-      "checkedAt": "2026-11-12T20:44:24.615Z",
+      "checkedAt": "2026-11-12T22:40:44.694Z",
       "via": "ubisoft-page",
       "rumour": false
     },
@@ -502,7 +500,7 @@
       "publishedAt": "2026-10-30T18:16:35.000Z",
       "official": true,
       "row": "trailers",
-      "checkedAt": "2026-11-12T20:44:24.615Z",
+      "checkedAt": "2026-11-12T22:40:44.694Z",
       "via": "ubisoft-page",
       "rumour": false
     },
