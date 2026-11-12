@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-12T10:55:31.566Z",
+  "updatedAt": "2026-11-12T12:58:23.639Z",
   "topics": [
     {
       "id": "32876",
@@ -29,6 +29,15 @@
       "lastReplyAt": "2026-11-06T15:12:00.000Z"
     },
     {
+      "id": "32885",
+      "tag": "問題",
+      "title": "【問題】A8 副武器推薦",
+      "url": "https://forum.gamer.com.tw/C.php?bsn=24460&snA=32885",
+      "replies": 13,
+      "views": 1362,
+      "lastReplyAt": "2026-11-09T08:35:00.000Z"
+    },
+    {
       "id": "32869",
       "tag": "閒聊",
       "title": "【閒聊】老新手回鍋想請問目前環境",
@@ -36,15 +45,6 @@
       "replies": 12,
       "views": 3061,
       "lastReplyAt": "2026-11-11T04:03:00.000Z"
-    },
-    {
-      "id": "32885",
-      "tag": "問題",
-      "title": "【問題】A8 副武器推薦",
-      "url": "https://forum.gamer.com.tw/C.php?bsn=24460&snA=32885",
-      "replies": 12,
-      "views": 1286,
-      "lastReplyAt": "2026-11-09T08:35:00.000Z"
     }
   ]
 }
