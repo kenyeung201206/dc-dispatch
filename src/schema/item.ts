@@ -291,17 +291,6 @@ export const HotTopicsSchema = z.object({
 });
 export type HotTopics = z.infer<typeof HotTopicsSchema>;
 
-/** Visitor counts from Cloudflare Web Analytics (data/visits.json, written by the robot; see pipeline/visits.ts). */
-export const VisitsSchema = z.object({
-  _note: z.string().optional(),
-  updatedAt: z.iso.datetime({ offset: true }).optional(),
-  /** Visits counted by the old built-in counter before the switch to Cloudflare (added to the total). */
-  carriedOver: z.number().int().min(0).default(0),
-  /** Visits per day (Tokyo date → count). */
-  days: z.record(z.iso.date(), z.number().int().min(0)).default({}),
-});
-export type Visits = z.infer<typeof VisitsSchema>;
-
 /** Health of the last pipeline run, for the Status page (data/status.json). No secrets, only booleans. */
 export const RunStatusSchema = z.object({
   lastRun: z.iso.datetime({ offset: true }),

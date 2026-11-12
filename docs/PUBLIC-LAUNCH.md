@@ -2,36 +2,36 @@
 
 What changes when this branch is merged into `main`:
 
-- **No password.** `functions/_middleware.ts` (the lock) is gone; anyone with the link can read the site.
+- **No password.** The lock is gone; `functions/_middleware.ts` now only counts visits. Anyone with the link can read the site.
 - **Google can list it.** No `noindex`, `robots.txt` allows everything except `/api/`, and `pnpm run build` writes
   `dist/sitemap.xml`. Every page has a description, a canonical link and a link-preview card (Facebook, LINE, Discord).
 - **Favorites are per device.** The 「誰在看？」 picker and `/api/favs` are gone. ☆ saves in the reader's own browser
   only; each device's old list carries over automatically.
-- **Visitor number comes from Cloudflare Web Analytics**, read by the robot every run (`pipeline/visits.ts` →
-  `data/visits.json`). The old counter (`/api/views`, KV namespace `VIEWS`) is gone. The number on the site is
-  up to 2 hours behind.
+- **Visitor number: the same built-in counter as before** (`functions/lib/views.ts`, KV namespace `VIEWS`), live,
+  same total as today. Robots (Google, Facebook previews, scripts) are not counted.
 - **Privacy page** at `/zh-hant/privacy/` and `/en/privacy/` (footer link 「隱私與版權」). Contact = 特工阿肥's YouTube channel.
 - `/api/live` (Twitch) remembers its answer for 5 minutes, so many readers still mean few Twitch requests.
 
-## Steps only the owner can do (in this order)
+## The counter's limit
 
-1. **Write down the current visit total** from the site's top panel (到訪次數) before merging. Tell Claude the
-   number; it goes into `carriedOver` in `data/visits.json` so the count doesn't restart at 0.
-2. **Turn on Web Analytics:** Cloudflare dashboard → Workers & Pages → `dc-dispatch` → Metrics → Web Analytics →
-   Enable. Then Analytics & Logs → Web Analytics → open the `dc-dispatch.pages.dev` site and copy its
-   **site tag** (a 32-character id; it's also in the browser address bar while that site's page is open).
-   If the visitor number stays empty after a robot run, the run log says "visits update failed" with
-   Cloudflare's reason — usually the wrong id here.
-3. **Make a read-only token:** dashboard → My Profile → API Tokens → Create Token → Custom token →
-   Permissions: *Account · Account Analytics · Read* → Account resources: your account → Create. Copy the token.
-4. **Add two GitHub secrets** (repo → Settings → Secrets and variables → Actions → New repository secret):
-   `CF_ANALYTICS_TOKEN` = the token, `CF_WEB_ANALYTICS_SITE_TAG` = the site tag.
-   `CLOUDFLARE_ACCOUNT_ID` is already there (used for deploys).
-5. **Merge the branch and deploy** (Claude can do this when you say so). After the next robot run, the visitor
-   number appears in the top panel.
-6. **Clean up (optional, after launch):** delete the Pages secrets `SITE_PASSWORD` and `AUTH_SECRET`
-   (Workers & Pages → dc-dispatch → Settings → Variables and secrets) and the KV namespace `VIEWS`.
-7. **Google (optional, speeds up listing):** add the site in Google Search Console and submit
+Each visit is 2 saves to Cloudflare KV; the free plan allows 1,000 saves a day, so the number stops rising after
+about **500 visits in a day** (it starts again the next day). Pages keep working; only the number pauses.
+Signs you've hit it: Cloudflare dashboard → Workers & Pages → KV → `VIEWS` → Metrics shows ~1,000 writes on a day,
+or the "today" number stops near 500.
+
+If that happens, two ways out:
+- **Cloudflare Web Analytics** (free, no limit, number up to 2 hours behind): already written and tested in commit
+  `21d1f13` on this branch (`pipeline/visits.ts`); Claude can bring it back. Needs a read-only Cloudflare token and
+  the site tag as GitHub secrets.
+- **Workers Paid plan** ($5/month): raises the KV limit far beyond a fan site's traffic; no code change.
+
+## Steps before and after launch
+
+1. **Merge the branch and deploy** (Claude can do this when you say so).
+2. **Check:** open the site in a private window: no password, the paper opens, 到訪次數 shows the same total as before.
+3. **Clean up (optional):** delete the Pages secrets `SITE_PASSWORD` and `AUTH_SECRET`
+   (Workers & Pages → dc-dispatch → Settings → Variables and secrets). Keep the KV namespace `VIEWS` (the counter uses it).
+4. **Google (optional, speeds up listing):** add the site in Google Search Console and submit
    `https://dc-dispatch.pages.dev/sitemap.xml`.
 
 ## Keep it non-commercial

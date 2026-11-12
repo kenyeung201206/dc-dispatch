@@ -1,5 +1,13 @@
 import { expect, test } from '@playwright/test';
 
+test('view counter: hidden when the counter is off, shown in the banner when it answers', async ({ page }) => {
+  await page.goto('/zh-hant/');
+  await expect(page.locator('[data-views]')).toBeHidden();
+  await page.route('**/api/views', (r) => r.fulfill({ json: { status: 'ok', total: 1234, today: 12 } }));
+  await page.goto('/zh-hant/');
+  await expect(page.locator('[data-views] dd')).toHaveText('1,234 次（今日 12）');
+});
+
 test('public site: no password, no sign-out link, a privacy page and a link preview card', async ({ page }) => {
   await page.goto('/zh-hant/');
   await expect(page.locator('meta[name="robots"]')).toHaveCount(0);

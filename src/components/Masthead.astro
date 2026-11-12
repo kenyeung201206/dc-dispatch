@@ -6,7 +6,6 @@ import { routes } from '../lib/routes.ts';
 import type { Edition } from '../schema/item.ts';
 import { library } from '../lib/images.ts';
 import { sourceZh } from '../lib/zh.ts';
-import { visitsLine } from '../lib/visits.ts';
 import { OWNER_CHANNEL } from '../lib/owner.ts';
 
 interface Props {
@@ -32,8 +31,6 @@ const bgPool = library.images
     credit: locale === 'en' ? i.attribution : sourceZh(i.attribution),
     creditUrl: i.attributionUrl,
   }));
-/** Visitor number from Cloudflare (data/visits.json, updated by the robot); hidden until there is one. */
-const visits = visitsLine(locale, t(locale, 'rail.viewsFmt'));
 const season = edition.meta ? (locale === 'en' ? edition.meta.season_en : edition.meta.season_zhHant) : null;
 ---
 <!-- Phone: compact sticky bar -->
@@ -62,7 +59,7 @@ const season = edition.meta ? (locale === 'en' ? edition.meta.season_en : editio
     {updatedAt && <div><dt>{t(locale, 'rail.updated')}</dt><dd><time datetime={edition.generatedAt}>{updatedAt}</time></dd></div>}
     {season && <div><dt>{t(locale, 'rail.season')}</dt><dd>{season} · {edition.meta?.titleUpdate}</dd></div>}
     <div><dt>{t(locale, 'rail.weather')}</dt><dd>{weatherFor(edition.date, locale)}</dd></div>
-    {visits && <div data-views><dt>{t(locale, 'rail.views')}</dt><dd>{visits}</dd></div>}
+    <div data-views hidden data-fmt={t(locale, 'rail.viewsFmt')}><dt>{t(locale, 'rail.views')}</dt><dd>—</dd></div>
     <div class="rail-tools">
       <a class="chip-btn" href={routes.favorites(locale)}>☆ {t(locale, 'fav.page')}</a>
       <a class="chip-btn" href={otherHref} hreflang={HTML_LANG[other]} lang={HTML_LANG[other]} aria-label={t(locale, 'nav.languageLabel')} data-lang-switch={other}>{t(locale, 'nav.language')}</a>
@@ -111,6 +108,20 @@ const season = edition.meta ? (locale === 'en' ? edition.meta.season_en : editio
     img.referrerPolicy = 'no-referrer';
     img.src = src;
   })();
+
+  // View counter (functions/api/views.ts). Hidden unless the counter answers.
+  const box = document.querySelector<HTMLElement>('[data-views]');
+  if (box) {
+    fetch('/api/views', { headers: { accept: 'application/json' }, credentials: 'same-origin' })
+      .then((r) => (r.ok ? r.json() : null))
+      .then((v: { status?: string; total?: number; today?: number } | null) => {
+        if (!v || v.status !== 'ok') return;
+        const n = (x = 0) => x.toLocaleString(document.documentElement.lang || undefined);
+        box.querySelector('dd')!.textContent = (box.dataset.fmt ?? '{total}').replace('{total}', n(v.total)).replace('{today}', n(v.today));
+        box.hidden = false;
+      })
+      .catch(() => {});
+  }
 </script>
 
 <style>

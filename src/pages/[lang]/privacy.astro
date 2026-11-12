@@ -25,7 +25,7 @@ const zh: Block[] = [
   {
     h: '本站記錄的東西',
     p: [
-      ['到訪人數：使用 Cloudflare Web Analytics 計算。它不使用 cookie、不追蹤個人，只提供總數（例如今日有多少次到訪）。網站頂部顯示的到訪次數就是來自這裡。'],
+      ['到訪次數：網站自己計算，只記錄總數和每天的次數，不記錄 IP、不記錄你看了哪些頁面。為了不重複計算，瀏覽器會存一個內容只有「1」的小 cookie，30 分鐘沒開新頁面就自動失效。網站頂部顯示的到訪次數就是這個數字。搜尋引擎等機器人不計算在內。'],
       ['你的瀏覽器裡的設定：語言、日報/夜報、我的收藏、上次到訪時間，都只存在你自己的瀏覽器（localStorage），不會傳到我們的伺服器，別人看不到。清除瀏覽器的網站資料就會全部刪除。收藏只在你用的那台手機或電腦上。'],
       ['主機：網站放在 Cloudflare。和所有網站一樣，Cloudflare 會處理連線資料（例如 IP 位址）來傳送網頁和阻擋攻擊。詳見 ', { text: 'Cloudflare 隱私政策', href: links.cloudflare }, '。'],
     ],
@@ -58,7 +58,7 @@ const en: Block[] = [
   {
     h: 'What the site keeps',
     p: [
-      ['Visitor numbers: counted with Cloudflare Web Analytics, which uses no cookies and doesn’t track individuals; it only gives totals (such as visits today). The visit count at the top of the site comes from there.'],
+      ['Visit count: the site counts visits itself and keeps only a total and a count per day. No IP addresses and no record of which pages you read. To avoid counting you twice, your browser keeps a tiny cookie containing just “1”, which expires after 30 minutes without opening a page. That count is the number at the top of the site. Search-engine robots are not counted.'],
       ['Settings in your browser: language, day/night theme, your favorites and your last visit time are stored only in your own browser (localStorage). They are never sent to our server and nobody else can see them. Clearing the site’s data in your browser deletes them. Favorites stay on the phone or computer you saved them on.'],
       ['Hosting: the site runs on Cloudflare. Like any web host, Cloudflare handles connection data (such as IP addresses) to deliver pages and block attacks. See the ', { text: 'Cloudflare privacy policy', href: links.cloudflare }, '.'],
     ],

@@ -2,71 +2,11 @@ import { mkdtemp, mkdir, rm, writeFile } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { afterEach, describe, expect, it, vi } from 'vitest';
-import { dayStart, mergeVisits, paperDay, parseVisitsResponse, totalVisits, updateVisits } from '../../pipeline/visits.ts';
-import { assertAllowedUrl } from '../../pipeline/http.ts';
-import { VisitsSchema } from '../../src/schema/item.ts';
-import { visitsLine } from '../../src/lib/visits.ts';
 import { pagePaths, sitemapXml } from '../../scripts/sitemap.ts';
 import { _resetLive, onRequestGet } from '../../functions/api/live.ts';
 import { _reset } from '../../functions/lib/twitch.ts';
-
-// 2026-11-12 10:30 Tokyo = 01:30 UTC.
-const now = new Date('2026-11-12T01:30:00Z');
-const empty = VisitsSchema.parse({});
-const answer = (rows: [string, number][]) => ({
-  data: { viewer: { accounts: [{ rumPageloadEventsAdaptiveGroups: rows.map(([h, v]) => ({ sum: { visits: v }, dimensions: { datetimeHour: h } })) }] } },
-  errors: null,
-});
-
-describe('visitor number (Cloudflare Web Analytics)', () => {
-  it('counts days in Tokyo time', () => {
-    expect(paperDay(now)).toBe('2026-11-12');
-    expect(dayStart(now, 2).toISOString()).toBe('2026-11-09T15:00:00.000Z'); // 2026-11-10 00:00 Tokyo
-  });
-
-  it('buckets hours into Tokyo days and replaces only the days it asked about', () => {
-    const prev = { ...empty, carriedOver: 100, days: { '2026-11-08': 7, '2026-11-10': 999 } };
-    const rows = parseVisitsResponse(
-      answer([
-        ['2026-11-10T14:00:00Z', 3], // 23:00 Tokyo, 11-10
-        ['2026-11-10T15:00:00Z', 4], // 00:00 Tokyo, 11-11
-        ['2026-11-12T00:00:00Z', 5], // 09:00 Tokyo, 11-12
-      ]),
-    );
-    const v = mergeVisits(prev, rows, dayStart(now, 2), now);
-    expect(v.days).toEqual({ '2026-11-08': 7, '2026-11-10': 3, '2026-11-11': 4, '2026-11-12': 5 });
-    expect(totalVisits(v)).toBe(119);
-    expect(v.updatedAt).toBe(now.toISOString());
-    expect(() => VisitsSchema.parse(v)).not.toThrow();
-  });
-
-  it('reports Cloudflare errors instead of saving zeros', () => {
-    expect(() => parseVisitsResponse({ errors: [{ message: 'not authorized' }] })).toThrow(/not authorized/);
-    expect(() => parseVisitsResponse({ data: { viewer: { accounts: [] } } })).toThrow(/no account/);
-  });
-
-  it('does nothing without its secrets, and sends the token only to Cloudflare', async () => {
-    const f = vi.fn();
-    expect(await updateVisits(empty, {}, now, f)).toBeUndefined();
-    expect(f).not.toHaveBeenCalled();
-
-    const g = vi.fn(async () => new Response(JSON.stringify(answer([['2026-11-12T00:00:00Z', 2]]))));
-    const v = await updateVisits(empty, { CF_ANALYTICS_TOKEN: 't0k', CLOUDFLARE_ACCOUNT_ID: 'acc', CF_WEB_ANALYTICS_SITE_TAG: 'tag' }, now, g as unknown as typeof fetch);
-    expect(v?.days['2026-11-12']).toBe(2);
-    const [url, init] = g.mock.calls[0] as unknown as [URL, RequestInit];
-    expect(url.href).toBe('https://api.cloudflare.com/client/v4/graphql');
-    expect((init.headers as Record<string, string>).authorization).toBe('Bearer t0k');
-    expect(JSON.parse(String(init.body)).variables).toMatchObject({ accountTag: 'acc', siteTag: 'tag' });
-    expect(() => assertAllowedUrl('https://api.cloudflare.com/client/v4/graphql')).not.toThrow();
-  });
-
-  it('formats the masthead line, hidden until there are counts', () => {
-    expect(visitsLine('zh-hant', '{total} 次（今日 {today}）', empty, '2026-11-12')).toBeNull();
-    const v = { ...empty, updatedAt: now.toISOString(), carriedOver: 1200, days: { '2026-11-11': 30, '2026-11-12': 12 } };
-    expect(visitsLine('zh-hant', '{total} 次（今日 {today}）', v, '2026-11-12')).toBe('1,242 次（今日 12）');
-    expect(visitsLine('en', '{total} ({today} today)', v, '2026-11-13')).toBe('1,242 (0 today)');
-  });
-});
+import { onRequest } from '../../functions/_middleware.ts';
+import { onRequestGet as views } from '../../functions/api/views.ts';
 
 describe('sitemap', () => {
   let dir = '';
@@ -110,5 +50,71 @@ describe('/api/live on a public site', () => {
     expect((await onRequestGet({ env }, t0 + 60_000)).headers.get('cache-control')).toBe('public, max-age=240');
     await onRequestGet({ env }, t0 + 5 * 60_000);
     expect(twitch.mock.calls.length).toBeGreaterThan(calls);
+  });
+});
+
+describe('built-in visit counter on the public site', () => {
+  const BASE = 'https://dc-dispatch.pages.dev';
+  const PHONE = 'Mozilla/5.0 (iPhone; CPU iPhone OS 18_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.0 Mobile/15E148 Safari/604.1';
+  const ok = () => Promise.resolve(new Response('PAGE'));
+  const store = () => {
+    const m = new Map<string, string>();
+    return { m, kv: { get: async (k: string) => m.get(k) ?? null, put: async (k: string, v: string) => void m.set(k, v) } };
+  };
+
+  it('opens pages without any password and counts a visit once', async () => {
+    const { m, kv } = store();
+    const jobs: Promise<unknown>[] = [];
+    let visit = '';
+    const open = async (path: string) => {
+      const res = await onRequest({
+        request: new Request(BASE + path, { headers: { accept: 'text/html', 'user-agent': PHONE, cookie: visit } }),
+        env: { VIEWS: kv },
+        next: ok,
+        waitUntil: (p) => void jobs.push(p),
+      });
+      expect(res.status).toBe(200);
+      expect(await res.text()).toBe('PAGE');
+      visit = (res.headers.get('set-cookie') ?? '').split(';')[0]!;
+    };
+    await open('/zh-hant/');
+    await open('/zh-hant/story/x/');
+    await open('/zh-hant/');
+    await Promise.all(jobs);
+    expect(m.get('total')).toBe('1');
+    expect(visit).toBe('dcd_visit=1');
+    visit = ''; // 30 minutes later
+    await open('/en/');
+    await Promise.all(jobs);
+    expect(m.get('total')).toBe('2');
+    expect((await (await views({ env: { VIEWS: kv } })).json())).toMatchObject({ status: 'ok', total: 2 });
+  });
+
+  it('does not count robots, scripts, prefetches or API calls', async () => {
+    const { m, kv } = store();
+    const jobs: Promise<unknown>[] = [];
+    const go = (path: string, headers: Record<string, string>) =>
+      onRequest({ request: new Request(BASE + path, { headers }), env: { VIEWS: kv }, next: ok, waitUntil: (p) => void jobs.push(p) });
+    const html = { accept: 'text/html' };
+    for (const ua of [
+      'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)',
+      'Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm) Chrome/116 Safari/537.36',
+      'facebookexternalhit/1.1 (+http://www.facebook.com/externalhit_uatext.php)',
+      'Mozilla/5.0 (compatible; Discordbot/2.0; +https://discordapp.com)',
+      'curl/8.5.0',
+      '',
+    ])
+      await go('/zh-hant/', { ...html, 'user-agent': ua });
+    await go('/zh-hant/', { ...html, 'user-agent': PHONE, 'sec-purpose': 'prefetch' });
+    await go('/api/views', { accept: 'application/json', 'user-agent': PHONE });
+    await Promise.all(jobs);
+    expect(m.get('total')).toBeUndefined();
+  });
+
+  it('pages still open when the counter storage is missing or broken', async () => {
+    const broken = { get: async () => { throw new Error('down'); }, put: async () => {} };
+    const req = () => new Request(BASE + '/zh-hant/', { headers: { accept: 'text/html', 'user-agent': PHONE } });
+    expect((await onRequest({ request: req(), env: { VIEWS: broken }, next: ok, waitUntil: () => {} })).status).toBe(200);
+    expect((await onRequest({ request: req(), env: {}, next: ok })).status).toBe(200);
   });
 });

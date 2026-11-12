@@ -42,13 +42,18 @@ async function waitReady() {
 
 await waitReady();
 const timer = setTimeout(() => fail('no answer within 60 s'), 60_000);
-const home = await fetch(`${base}/en/`, { redirect: 'manual' });
+// A reader's browser: the visit counter (functions/_middleware.ts) runs and sets its visit cookie.
+const browser = { accept: 'text/html', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36' };
+const home = await fetch(`${base}/en/`, { headers: browser, redirect: 'manual' });
 if (home.status !== 200) fail(`/en/ answered ${home.status} (the public site should open without a password)`);
+if (!(home.headers.get('set-cookie') ?? '').startsWith('dcd_visit=1')) fail('the visit counter did not run on /en/');
+const views = (await (await fetch(`${base}/api/views`)).json().catch(() => ({}))) as { status?: string; total?: number };
+if (views.status !== 'ok') fail(`/api/views answered ${JSON.stringify(views)}`);
 
 const res = await fetch(`${base}/api/loot`, { redirect: 'manual' });
 const body = (await res.json().catch(() => ({}))) as { status?: string; date?: string; reason?: string };
 if (res.status === 200 && (body.status === 'ok' || body.status === 'none')) {
-  console.log(`OK: site opens without a password; /api/loot works on Cloudflare's runtime (${body.status} ${body.date ?? ''}).`);
+  console.log(`OK: site opens without a password; visit counter works; /api/loot works on Cloudflare's runtime (${body.status} ${body.date ?? ''}).`);
 } else if (res.status === 502 && (!body.reason || /fetch failed|network|timed? ?out|abort/i.test(body.reason))) {
   // ProtoTrack itself down or unreachable from here: not a bug in our code.
   console.warn(`WARN: /api/loot couldn't reach ProtoTrack (${body.reason ?? 'HTTP error'}); the code itself ran fine.`);

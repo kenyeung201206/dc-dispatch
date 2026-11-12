@@ -40,7 +40,7 @@ Not legal advice. Researched 2026-11-04. Each rule below is enforced in code (se
 - Text is CC BY-SA 3.0. → only used to cross-check glossary terms; any reused text credited + link.
 
 ## Our own privacy
-- Public since branch `public-launch` (see docs/PUBLIC-LAUNCH.md): no password, listed on Google, privacy page at /privacy/. Cookie-free Cloudflare Web Analytics for visit totals only; favorites stay in the reader's browser; no third-party requests until a video is clicked (pictures load from Ubisoft/Steam with no referrer).
+- Public since branch `public-launch` (see docs/PUBLIC-LAUNCH.md): no password, listed on Google, privacy page at /privacy/. Built-in visit counter (totals only, a plain "1" visit cookie, robots not counted); favorites stay in the reader's browser; no third-party requests until a video is clicked (pictures load from Ubisoft/Steam with no referrer).
 
 ## Enforcement in code (Phase 1+)
 - Schema: every item requires `sourceUrl`; every media item requires `license` + `attribution` → CI fails otherwise.

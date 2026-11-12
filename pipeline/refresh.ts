@@ -8,7 +8,7 @@
 import { mkdir, readdir, readFile, writeFile } from 'node:fs/promises';
 import { join } from 'node:path';
 import { parseArgs } from 'node:util';
-import { BriefsZhSchema, CreatorPostsSchema, EditionSchema, HotTopicsSchema, ImageLibrarySchema, VisitsSchema, ExoticLogSchema, GameEventLogSchema, GuideLogSchema, PatchLogSchema, RunStatusSchema, VideoLibrarySchema, type Edition, type Item } from '../src/schema/item.ts';
+import { BriefsZhSchema, CreatorPostsSchema, EditionSchema, HotTopicsSchema, ImageLibrarySchema, ExoticLogSchema, GameEventLogSchema, GuideLogSchema, PatchLogSchema, RunStatusSchema, VideoLibrarySchema, type Edition, type Item } from '../src/schema/item.ts';
 import { parsePatch, upsertPatches } from './patches.ts';
 import { buildVideos } from './video/build.ts';
 import { searchVideos } from './video/youtube.ts';
@@ -31,7 +31,6 @@ import { parseUbisoftNews } from './sources/ubisoft.ts';
 import { parseBahamutBoard, parseBahamutFirstPost, parseBahamutHot } from './sources/bahamut.ts';
 import { updateDailyLoot } from './daily-loot.ts';
 import { trackHealth, type SourceHealth } from './health.ts';
-import { totalVisits, updateVisits } from './visits.ts';
 import { aiSummaries, needsAi } from './ai.ts';
 import { aiBriefs } from './ai-briefs.ts';
 
@@ -319,19 +318,6 @@ async function main() {
   } catch (err) {
     hotHealth.note = String(err).slice(0, 200);
     log('warn', 'hot topics failed', { error: hotHealth.note });
-  }
-
-  // Visitor number from Cloudflare Web Analytics (skipped without its secrets; a failure keeps the old counts).
-  if (!dryRun) {
-    try {
-      const visits = await updateVisits(VisitsSchema.parse(await readJson('data/visits.json', {})), process.env, now);
-      if (visits) {
-        await writeFile('data/visits.json', JSON.stringify(VisitsSchema.parse(visits), null, 2) + '\n');
-        log('info', 'visits updated', { total: totalVisits(visits) });
-      } else log('info', 'Cloudflare analytics secrets not set: visitor number skipped');
-    } catch (err) {
-      log('warn', 'visits update failed', { error: String(err).slice(0, 200) });
-    }
   }
 
   // Status page data: only counts and booleans, never key values.
