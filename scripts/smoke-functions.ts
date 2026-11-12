@@ -49,6 +49,10 @@ if (home.status !== 200) fail(`/en/ answered ${home.status} (the public site sho
 if (!(home.headers.get('set-cookie') ?? '').startsWith('dcd_visit=1')) fail('the visit counter did not run on /en/');
 const views = (await (await fetch(`${base}/api/views`)).json().catch(() => ({}))) as { status?: string; total?: number };
 if (views.status !== 'ok') fail(`/api/views answered ${JSON.stringify(views)}`);
+// Google Search Console ownership file: must answer at this exact address, without a redirect.
+const google = await fetch(`${base}/google8ddb948929cb670a.html`, { redirect: 'manual' });
+if (google.status !== 200 || (await google.text()) !== 'google-site-verification: google8ddb948929cb670a.html')
+  fail(`/google8ddb948929cb670a.html answered ${google.status} (Google verification would fail)`);
 
 const res = await fetch(`${base}/api/loot`, { redirect: 'manual' });
 const body = (await res.json().catch(() => ({}))) as { status?: string; date?: string; reason?: string };
