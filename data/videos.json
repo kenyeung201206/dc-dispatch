@@ -1,6 +1,19 @@
 {
   "videos": [
     {
+      "id": "aydQk0Ef6SQ",
+      "title": "Loaded for Bear Got Adjusted… | The Division 2",
+      "channelName": "King Macho",
+      "channelUrl": "https://www.youtube.com/channel/UC0RO8Ex_8w1ZYp4VoCz7o5w",
+      "publishedAt": "2026-11-13T02:03:27.000Z",
+      "durationSec": 203,
+      "official": false,
+      "row": "more",
+      "checkedAt": "2026-11-13T02:42:27.750Z",
+      "via": "youtube-search",
+      "rumour": false
+    },
+    {
       "id": "GFEsCcbXZ0w",
       "title": "SPEARFALL PTS PATCH NOTES ARE HUGE! My Honest Thoughts & Reactions | The Division 2",
       "channelName": "GCROCK",
@@ -9,7 +22,7 @@
       "durationSec": 4472,
       "official": false,
       "row": "patch-breakdowns",
-      "checkedAt": "2026-11-13T00:55:35.334Z",
+      "checkedAt": "2026-11-13T02:42:27.750Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -22,7 +35,7 @@
       "durationSec": 4833,
       "official": false,
       "row": "patch-breakdowns",
-      "checkedAt": "2026-11-13T00:55:35.334Z",
+      "checkedAt": "2026-11-13T02:42:27.750Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -35,7 +48,7 @@
       "durationSec": 30,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-13T00:55:35.334Z",
+      "checkedAt": "2026-11-13T02:42:27.750Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -48,7 +61,7 @@
       "durationSec": 623,
       "official": false,
       "row": "patch-breakdowns",
-      "checkedAt": "2026-11-13T00:55:35.334Z",
+      "checkedAt": "2026-11-13T02:42:27.750Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -60,7 +73,7 @@
       "publishedAt": "2026-11-12T22:09:41.000Z",
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-13T00:55:35.334Z",
+      "checkedAt": "2026-11-13T02:42:27.750Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -73,7 +86,7 @@
       "durationSec": 4099,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-13T00:55:35.334Z",
+      "checkedAt": "2026-11-13T02:42:27.750Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -86,7 +99,7 @@
       "durationSec": 1328,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-13T00:55:35.334Z",
+      "checkedAt": "2026-11-13T02:42:27.750Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -99,7 +112,7 @@
       "durationSec": 22669,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-13T00:55:35.334Z",
+      "checkedAt": "2026-11-13T02:42:27.750Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -112,7 +125,7 @@
       "durationSec": 910,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-13T00:55:35.334Z",
+      "checkedAt": "2026-11-13T02:42:27.750Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -125,7 +138,7 @@
       "durationSec": 1532,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-13T00:55:35.334Z",
+      "checkedAt": "2026-11-13T02:42:27.750Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -138,7 +151,7 @@
       "durationSec": 346,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-13T00:55:35.334Z",
+      "checkedAt": "2026-11-13T02:42:27.750Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -151,7 +164,7 @@
       "durationSec": 5282,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-13T00:55:35.334Z",
+      "checkedAt": "2026-11-13T02:42:27.750Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -164,7 +177,7 @@
       "durationSec": 179,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-13T00:55:35.334Z",
+      "checkedAt": "2026-11-13T02:42:27.750Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -177,7 +190,7 @@
       "durationSec": 66,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-13T00:55:35.334Z",
+      "checkedAt": "2026-11-13T02:42:27.750Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -190,7 +203,7 @@
       "durationSec": 41,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-13T00:55:35.334Z",
+      "checkedAt": "2026-11-13T02:42:27.750Z",
       "via": "youtube-api",
       "rumour": true
     },
@@ -203,7 +216,7 @@
       "durationSec": 754,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-13T00:55:35.334Z",
+      "checkedAt": "2026-11-13T02:42:27.750Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -216,7 +229,7 @@
       "durationSec": 179,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-13T00:55:35.334Z",
+      "checkedAt": "2026-11-13T02:42:27.750Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -242,7 +255,7 @@
       "durationSec": 8382,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-13T00:55:35.334Z",
+      "checkedAt": "2026-11-13T02:42:27.750Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -254,7 +267,7 @@
       "publishedAt": "2026-11-12T16:42:00.000Z",
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-13T00:55:35.334Z",
+      "checkedAt": "2026-11-13T02:42:27.750Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -267,7 +280,7 @@
       "durationSec": 175,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-13T00:55:35.334Z",
+      "checkedAt": "2026-11-13T02:42:27.750Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -280,7 +293,7 @@
       "durationSec": 568,
       "official": false,
       "row": "intel",
-      "checkedAt": "2026-11-13T00:55:35.334Z",
+      "checkedAt": "2026-11-13T02:42:27.750Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -293,7 +306,7 @@
       "durationSec": 180,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-13T00:55:35.334Z",
+      "checkedAt": "2026-11-13T02:42:27.750Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -306,7 +319,7 @@
       "durationSec": 1242,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-13T00:55:35.334Z",
+      "checkedAt": "2026-11-13T02:42:27.750Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -319,20 +332,20 @@
       "durationSec": 661,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-13T00:55:35.334Z",
+      "checkedAt": "2026-11-13T02:42:27.750Z",
       "via": "youtube-search",
       "rumour": false
     },
     {
       "id": "BE26GMBV3bw",
-      "title": "The Division 2 | The Overlooked Exotic Glove That Fixes The Ratel (LEGENDARY APPROVED)",
+      "title": "The Division 2 | The Ratel + Rugged Gauntlets Build (THIS IS NOW MY FAVORITE LEGENDARY BUILD!)",
       "channelName": "SHD Workshop",
       "channelUrl": "https://www.youtube.com/channel/UCUTNbOtDCtvRYYbRhuX9PFg",
       "publishedAt": "2026-11-12T05:11:52.000Z",
       "durationSec": 535,
       "official": false,
-      "row": "intel",
-      "checkedAt": "2026-11-13T00:55:35.334Z",
+      "row": "build-guides",
+      "checkedAt": "2026-11-13T02:42:27.750Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -358,7 +371,7 @@
       "durationSec": 588,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-13T00:55:35.334Z",
+      "checkedAt": "2026-11-13T02:42:27.750Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -371,7 +384,7 @@
       "durationSec": 481,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-13T00:55:35.334Z",
+      "checkedAt": "2026-11-13T02:42:27.750Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -384,7 +397,7 @@
       "durationSec": 38,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-13T00:55:35.334Z",
+      "checkedAt": "2026-11-13T02:42:27.750Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -397,7 +410,7 @@
       "durationSec": 106,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-13T00:55:35.334Z",
+      "checkedAt": "2026-11-13T02:42:27.750Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -410,7 +423,7 @@
       "durationSec": 732,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-13T00:55:35.334Z",
+      "checkedAt": "2026-11-13T02:42:27.750Z",
       "via": "youtube-api",
       "rumour": true
     },
@@ -423,21 +436,8 @@
       "durationSec": 528,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-13T00:55:35.334Z",
+      "checkedAt": "2026-11-13T02:42:27.750Z",
       "via": "youtube-api",
-      "rumour": false
-    },
-    {
-      "id": "3Del0mfCSy0",
-      "title": "DIVISION 2  DeSlayer",
-      "channelName": "Optimus_Grand_RD",
-      "channelUrl": "https://www.youtube.com/channel/UCnLFEcyk5dNGrA265C0ddsA",
-      "publishedAt": "2026-11-11T22:47:46.000Z",
-      "durationSec": 1346,
-      "official": false,
-      "row": "more",
-      "checkedAt": "2026-11-13T00:55:35.334Z",
-      "via": "youtube-search",
       "rumour": false
     },
     {
@@ -488,7 +488,7 @@
       "publishedAt": "2026-11-02T13:48:39.000Z",
       "official": true,
       "row": "more",
-      "checkedAt": "2026-11-13T00:55:35.334Z",
+      "checkedAt": "2026-11-13T02:42:27.750Z",
       "via": "ubisoft-page",
       "rumour": false
     },
@@ -501,7 +501,7 @@
       "publishedAt": "2026-10-30T18:16:35.000Z",
       "official": true,
       "row": "trailers",
-      "checkedAt": "2026-11-13T00:55:35.334Z",
+      "checkedAt": "2026-11-13T02:42:27.750Z",
       "via": "ubisoft-page",
       "rumour": false
     },

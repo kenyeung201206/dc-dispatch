@@ -1,11 +1,11 @@
 {
-  "lastRun": "2026-11-13T00:55:54.034Z",
-  "durationMs": 18700,
+  "lastRun": "2026-11-13T02:42:43.555Z",
+  "durationMs": 15805,
   "edition": {
     "date": "2026-11-13",
     "number": 10,
-    "items": 56,
-    "zhPending": 37
+    "items": 57,
+    "zhPending": 38
   },
   "sources": [
     {
@@ -43,7 +43,7 @@
     "costUsd": 0
   },
   "degraded": {
-    "at": "2026-11-13T00:56:00.682Z",
+    "at": "2026-11-13T02:42:51.126Z",
     "failed": [
       "zh.test.ts > Chinese-only pages > exotics and patches have Chinese, and change lines line up one-to-one"
     ]
