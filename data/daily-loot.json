@@ -1,60 +1,60 @@
 {
- "date": "2026-11-12",
+ "date": "2026-11-13",
  "missions": [
   {
    "place": "墳墓",
-   "reward": "先驅工業",
+   "reward": "閃耀猴子",
    "kind": "brand"
   },
   {
    "place": "曼寧",
-   "reward": "手槍",
-   "kind": "weapon"
+   "reward": "貝爾斯通",
+   "kind": "brand"
   },
   {
    "place": "銀行",
-   "reward": "奧提茲",
-   "kind": "set"
+   "reward": "手套",
+   "kind": "slot"
   },
   {
    "place": "歷史博物館",
-   "reward": "精密組裝",
-   "kind": "set"
+   "reward": "突擊步槍",
+   "kind": "weapon"
   },
   {
    "place": "太空總署",
-   "reward": "步槍",
-   "kind": "weapon"
+   "reward": "裝配工",
+   "kind": "set"
   }
  ],
  "vendor": [
-  "精準步槍",
-  "Chest Pieces"
+  "手槍",
+  "槍套"
  ],
  "english": [
   {
    "place": "The Tombs",
-   "reward": "Uzina Getica"
+   "reward": "Shiny Monkey Gear"
   },
   {
    "place": "Manning National Zoo",
-   "reward": "Pistol"
+   "reward": "Belstone Armory"
   },
   {
    "place": "Bank Headquarters",
-   "reward": "Ortiz Exuro"
+   "reward": "Gloves"
   },
   {
    "place": "American History Museum",
-   "reward": "Measured Assembly"
+   "reward": "Assault Rifle"
   },
   {
    "place": "Space Administration HQ",
-   "reward": "Rifle"
+   "reward": "Rigger"
   }
  ],
  "title": "",
  "url": "https://prototrack.gg/target-loot/target-loot.php",
  "source": "prototrack",
- "fetchedAt": "2026-11-12T08:18:58.473Z"
+ "fetchedAt": "2026-11-13T08:51:52.635Z"
 }
