@@ -7644,6 +7644,123 @@
         "影片說明欄僅指出另有連結的配裝影片，未列出其他數據"
       ],
       "written": "2026-11-13"
+    },
+    "yey3rb": {
+      "points": [
+        "YouTube 玩家影片（非官方）：介紹《全境封鎖2》第 8 年第 4 季的「升級（Escalation）」大改版",
+        "影片說明指出，Ubisoft 公布的改動會讓特工更能掌控難度、玩法修飾、進度與獎勵",
+        "每次開跑前，可分別選擇 Escalation 指令（Directive）與階級（Tier）",
+        "計時器（run timer）將被移除",
+        "階級總數減少，各階級之間的難度落差會更明顯"
+      ],
+      "tables": [
+        {
+          "title": "Escalation 改動",
+          "columns": [
+            "項目",
+            "作用"
+          ],
+          "rows": [
+            [
+              "Directive",
+              "決定玩法方式"
+            ],
+            [
+              "Tier",
+              "決定敵人難度與可得的 Prototype Gear 獎勵"
+            ],
+            [
+              "Run timer",
+              "移除"
+            ],
+            [
+              "Tier 總數",
+              "減少"
+            ]
+          ]
+        }
+      ],
+      "written": "2026-11-13"
+    },
+    "ow5e2h": {
+      "points": [
+        "YouTube 實況影片（非官方）：玩家在第 4 季 PTS 測試新的傳奇任務（Legendary missions）與 Escalation",
+        "說明欄表示會測試難度、查看改動，並分享第一印象",
+        "實況討論重點：新傳奇內容是否有足夠挑戰、Escalation 手感如何、改動是否正確",
+        "說明欄提到在 Twitch 觀看並綁定 Ubisoft 帳號可獲得 Twitch Drops",
+        "說明欄未列出具體數據"
+      ],
+      "written": "2026-11-13"
+    },
+    "11s8taq": {
+      "points": [
+        "YouTube 玩家攻略影片（非官方）：中央公園「Echoes of Central Park」4 個隱藏獵人面具位置",
+        "4 個面具：Piercing Gaze、Murder、Craquelure、Shapeless；全部取得可解鎖 Specter's Gloves",
+        "Piercing Gaze 與 Murder 任何時間都能拿；Craquelure 與 Shapeless 只能在夜間",
+        "Craquelure 需關閉所有指令（directives），且須留在同一場連線，否則要重來"
+      ],
+      "tables": [
+        {
+          "title": "面具條件",
+          "columns": [
+            "面具",
+            "時間",
+            "備註",
+            "影片時間"
+          ],
+          "rows": [
+            [
+              "Piercing Gaze",
+              "任何時間",
+              "—",
+              "0:50"
+            ],
+            [
+              "Murder",
+              "任何時間",
+              "—",
+              "2:38"
+            ],
+            [
+              "Craquelure",
+              "夜間",
+              "關閉所有指令",
+              "5:20"
+            ],
+            [
+              "Shapeless",
+              "夜間",
+              "7 卷錄音帶",
+              "8:10"
+            ]
+          ]
+        },
+        {
+          "title": "夜間規則",
+          "columns": [
+            "項目",
+            "數值"
+          ],
+          "rows": [
+            [
+              "遊戲內夜間",
+              "21:00 至 05:00"
+            ],
+            [
+              "現實時間",
+              "約 25 分鐘"
+            ],
+            [
+              "完成獎勵",
+              "Specter's Gloves（11:18）"
+            ]
+          ]
+        }
+      ],
+      "body": [
+        "夜間面具建議在遊戲內 21:00 一到就開始，以免時間不夠。"
+      ],
+      "written": "2026-11-13"
     }
   }
 }
