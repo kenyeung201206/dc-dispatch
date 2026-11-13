@@ -1,7 +1,7 @@
 {
   "date": "2026-11-13",
   "editionNumber": 10,
-  "generatedAt": "2026-11-12T22:40:44.694Z",
+  "generatedAt": "2026-11-13T00:55:35.334Z",
   "meta": {
     "season_en": "Red Horizon",
     "season_zhHant": "Red Horizon 賽季",
@@ -17,7 +17,7 @@
       "title_orig": "The Division 2: Echoes of Central Park Event Pass Twitch Drops",
       "lang_orig": "en",
       "publishedAt": "2026-11-10T16:00:00.000Z",
-      "fetchedAt": "2026-11-12T22:40:44.694Z",
+      "fetchedAt": "2026-11-13T00:55:35.334Z",
       "category": "community",
       "tags": [
         "event",
@@ -52,6 +52,47 @@
       "status": "new"
     },
     {
+      "id": "lmhaez",
+      "sourceId": "ubisoft-en",
+      "sourceName": "Ubisoft",
+      "sourceUrl": "https://www.ubisoft.com/en-us/game/the-division/the-division-2/news-updates/7L8TlD1Hv0XC1prOD8mdte/tuy8s33-echoes-of-central-park-launch-crossplay-rollout-conflict-improvements-more",
+      "title_orig": "[TUY8S3.3] Echoes of Central Park Launch, Crossplay Rollout, Conflict Improvements & More",
+      "lang_orig": "en",
+      "publishedAt": "2026-11-02T15:45:00.000Z",
+      "fetchedAt": "2026-11-13T00:55:35.334Z",
+      "category": "updates",
+      "tags": [
+        "title-update",
+        "crossplay",
+        "event",
+        "pvp"
+      ],
+      "importance": 84,
+      "confidence": "official",
+      "headline_en": "[TUY8S3.3] Echoes of Central Park Launch, Crossplay Rollout, Conflict Improvements & More",
+      "headline_zhHant": "pending",
+      "summary_en": "Echoes of Central Park is out now. See what else is coming in Y8S3.3, including the Crossplay rollout, Conflict improvements, updated Friend Referral rewards, and…",
+      "summary_zhHant": "pending",
+      "summaryKind": "extract",
+      "alsoReportedBy": [
+        {
+          "name": "Ubisoft (via Steam News)",
+          "url": "https://store.steampowered.com/news/app/2221490/view/1847920302248716"
+        },
+        {
+          "name": "巴哈姆特 全境封鎖板",
+          "url": "https://forum.gamer.com.tw/C.php?bsn=24460&snA=32861"
+        }
+      ],
+      "media": [],
+      "imageId": "ubi-tu-y8s3-3",
+      "relatedIds": [
+        "jrg9a1"
+      ],
+      "firstSeenAt": "2026-11-05T06:21:13.290Z",
+      "status": "new"
+    },
+    {
       "id": "15yr4ky",
       "sourceId": "ubisoft-en",
       "sourceName": "Ubisoft",
@@ -59,7 +100,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-12T22:40:44.694Z",
+      "fetchedAt": "2026-11-13T00:55:35.334Z",
       "category": "updates",
       "tags": [
         "known-issue",
@@ -95,43 +136,6 @@
       "status": "new"
     },
     {
-      "id": "lmhaez",
-      "sourceId": "ubisoft-en",
-      "sourceName": "Ubisoft",
-      "sourceUrl": "https://www.ubisoft.com/en-us/game/the-division/the-division-2/news-updates/7L8TlD1Hv0XC1prOD8mdte/tuy8s33-echoes-of-central-park-launch-crossplay-rollout-conflict-improvements-more",
-      "title_orig": "[TUY8S3.3] Echoes of Central Park Launch, Crossplay Rollout, Conflict Improvements & More",
-      "lang_orig": "en",
-      "publishedAt": "2026-11-02T15:45:00.000Z",
-      "fetchedAt": "2026-11-12T22:40:44.694Z",
-      "category": "updates",
-      "tags": [
-        "title-update",
-        "crossplay",
-        "event",
-        "pvp"
-      ],
-      "importance": 76,
-      "confidence": "official",
-      "headline_en": "[TUY8S3.3] Echoes of Central Park Launch, Crossplay Rollout, Conflict Improvements & More",
-      "headline_zhHant": "pending",
-      "summary_en": "Echoes of Central Park is out now. See what else is coming in Y8S3.3, including the Crossplay rollout, Conflict improvements, updated Friend Referral rewards, and…",
-      "summary_zhHant": "pending",
-      "summaryKind": "extract",
-      "alsoReportedBy": [
-        {
-          "name": "Ubisoft (via Steam News)",
-          "url": "https://store.steampowered.com/news/app/2221490/view/1847920302248716"
-        }
-      ],
-      "media": [],
-      "imageId": "ubi-tu-y8s3-3",
-      "relatedIds": [
-        "jrg9a1"
-      ],
-      "firstSeenAt": "2026-11-05T06:21:13.290Z",
-      "status": "new"
-    },
-    {
       "id": "7kdlud",
       "sourceId": "ubisoft-en",
       "sourceName": "Ubisoft",
@@ -139,7 +143,7 @@
       "title_orig": "The Division 2: Echoes of Central Park DLC is available now!",
       "lang_orig": "en",
       "publishedAt": "2026-11-03T15:00:00.000Z",
-      "fetchedAt": "2026-11-12T22:40:44.694Z",
+      "fetchedAt": "2026-11-13T00:55:35.334Z",
       "category": "missions",
       "tags": [
         "dlc"
@@ -292,7 +296,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-12T22:40:44.694Z",
+      "fetchedAt": "2026-11-13T00:55:35.334Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -355,7 +359,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-12T22:40:44.694Z",
+      "fetchedAt": "2026-11-13T00:55:35.334Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -390,7 +394,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-12T22:40:44.694Z",
+      "fetchedAt": "2026-11-13T00:55:35.334Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -425,7 +429,7 @@
       "title_orig": "The Division 2: 6X XP Event",
       "lang_orig": "en",
       "publishedAt": "2026-11-06T10:31:09.000Z",
-      "fetchedAt": "2026-11-12T22:40:44.694Z",
+      "fetchedAt": "2026-11-13T00:55:35.334Z",
       "category": "missions",
       "tags": [
         "event"
@@ -451,7 +455,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-12T22:40:44.694Z",
+      "fetchedAt": "2026-11-13T00:55:35.334Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -542,7 +546,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-12T22:40:44.694Z",
+      "fetchedAt": "2026-11-13T00:55:35.334Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -604,7 +608,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-12T22:40:44.694Z",
+      "fetchedAt": "2026-11-13T00:55:35.334Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -639,7 +643,7 @@
       "title_orig": "The Division 2: Echoes of Central Park Launch Twitch Drops",
       "lang_orig": "en",
       "publishedAt": "2026-11-03T15:00:00.000Z",
-      "fetchedAt": "2026-11-12T22:40:44.694Z",
+      "fetchedAt": "2026-11-13T00:55:35.334Z",
       "category": "community",
       "tags": [
         "twitch-drops",
@@ -662,6 +666,33 @@
       "imageId": "ubi-5EEgwKS6kDqyvUFo5PJYsB",
       "relatedIds": [],
       "firstSeenAt": "2026-11-03T15:00:00.000Z",
+      "status": "new"
+    },
+    {
+      "id": "1988qen",
+      "sourceId": "youtube",
+      "sourceName": "Kamikazevondoom",
+      "sourceUrl": "https://www.youtube.com/watch?v=FNy592EMpRk",
+      "title_orig": "*CRAZIEST PATCH NOTES EVER* The Division 2 HEARTBREAKER BUFF, New Legendary Content, & INSANE NERFS!",
+      "lang_orig": "en",
+      "publishedAt": "2026-11-12T23:15:07.000Z",
+      "fetchedAt": "2026-11-13T00:55:35.334Z",
+      "category": "updates",
+      "tags": [
+        "video"
+      ],
+      "importance": 58,
+      "confidence": "community",
+      "headline_en": "*CRAZIEST PATCH NOTES EVER* The Division 2 HEARTBREAKER BUFF, New Legendary Content, & INSANE NERFS!",
+      "headline_zhHant": "pending",
+      "summary_en": "Enjoy! Join this channel to get access to perks: Don't forget to mash that LIKE AND SUBSCRIBE to the channel.",
+      "summary_zhHant": "pending",
+      "summaryKind": "extract",
+      "alsoReportedBy": [],
+      "media": [],
+      "videoId": "FNy592EMpRk",
+      "relatedIds": [],
+      "firstSeenAt": "2026-11-13T00:55:35.334Z",
       "status": "new"
     },
     {
@@ -727,7 +758,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-12T22:40:44.694Z",
+      "fetchedAt": "2026-11-13T00:55:35.334Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -816,7 +847,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-12T22:40:44.694Z",
+      "fetchedAt": "2026-11-13T00:55:35.334Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -844,6 +875,33 @@
       }
     },
     {
+      "id": "sdxb0t",
+      "sourceId": "youtube",
+      "sourceName": "GCROCK",
+      "sourceUrl": "https://www.youtube.com/watch?v=GFEsCcbXZ0w",
+      "title_orig": "SPEARFALL PTS PATCH NOTES ARE HUGE! My Honest Thoughts & Reactions | The Division 2",
+      "lang_orig": "en",
+      "publishedAt": "2026-11-12T23:52:28.000Z",
+      "fetchedAt": "2026-11-13T00:55:35.334Z",
+      "category": "updates",
+      "tags": [
+        "video"
+      ],
+      "importance": 56,
+      "confidence": "community",
+      "headline_en": "SPEARFALL PTS PATCH NOTES ARE HUGE! My Honest Thoughts & Reactions | The Division 2",
+      "headline_zhHant": "pending",
+      "summary_en": "The Division 2 Spearfall PTS patch notes are here, and WOW... there is A LOT to talk about!",
+      "summary_zhHant": "pending",
+      "summaryKind": "extract",
+      "alsoReportedBy": [],
+      "media": [],
+      "videoId": "GFEsCcbXZ0w",
+      "relatedIds": [],
+      "firstSeenAt": "2026-11-13T00:55:35.334Z",
+      "status": "new"
+    },
+    {
       "id": "1ttmry9",
       "sourceId": "ubisoft-en",
       "sourceName": "Ubisoft",
@@ -851,7 +909,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-12T22:40:44.694Z",
+      "fetchedAt": "2026-11-13T00:55:35.334Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -967,7 +1025,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-12T22:40:44.694Z",
+      "fetchedAt": "2026-11-13T00:55:35.334Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -1002,7 +1060,7 @@
       "title_orig": "[TUY8S3.3] Echoes of Central Park Launch, Crossplay Rollout, Conflict Improvements & More",
       "lang_orig": "en",
       "publishedAt": "2026-11-02T15:45:00.000Z",
-      "fetchedAt": "2026-11-12T22:40:44.694Z",
+      "fetchedAt": "2026-11-13T00:55:35.334Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -1064,7 +1122,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-12T22:40:44.694Z",
+      "fetchedAt": "2026-11-13T00:55:35.334Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -1126,7 +1184,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-12T22:40:44.694Z",
+      "fetchedAt": "2026-11-13T00:55:35.334Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -1152,30 +1210,6 @@
         "riskNote_en": "Known issue listed by Ubisoft. No workaround yet.",
         "riskNote_zhHant": "pending"
       }
-    },
-    {
-      "id": "q5qvmp",
-      "sourceId": "bahamut",
-      "sourceName": "巴哈姆特 全境封鎖板",
-      "sourceUrl": "https://forum.gamer.com.tw/C.php?bsn=24460&snA=32894",
-      "title_orig": "【情報】TU30 / Y8S4 PTS Patchnote翻譯",
-      "lang_orig": "zh",
-      "publishedAt": "2026-11-12T18:40:44.694Z",
-      "fetchedAt": "2026-11-12T22:40:44.694Z",
-      "category": "updates",
-      "tags": [],
-      "importance": 52,
-      "confidence": "community",
-      "headline_en": "pending",
-      "headline_zhHant": "【情報】TU30 / Y8S4 PTS Patchnote翻譯",
-      "summary_en": "pending",
-      "summary_zhHant": "原文公告 以下為AI機翻並且由筆者稍微潤飾過 2F為Y8S4裝備平衡性改動翻譯 《全境封鎖 2》Spearfall PT…",
-      "summaryKind": "extract",
-      "alsoReportedBy": [],
-      "media": [],
-      "relatedIds": [],
-      "firstSeenAt": "2026-11-12T18:47:15.805Z",
-      "status": "new"
     },
     {
       "id": "u6eqo3",
@@ -1240,7 +1274,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-12T22:40:44.694Z",
+      "fetchedAt": "2026-11-13T00:55:35.334Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -1268,6 +1302,30 @@
       }
     },
     {
+      "id": "q5qvmp",
+      "sourceId": "bahamut",
+      "sourceName": "巴哈姆特 全境封鎖板",
+      "sourceUrl": "https://forum.gamer.com.tw/C.php?bsn=24460&snA=32894",
+      "title_orig": "【情報】TU30 / Y8S4 PTS Patchnote翻譯",
+      "lang_orig": "zh",
+      "publishedAt": "2026-11-12T18:55:35.334Z",
+      "fetchedAt": "2026-11-13T00:55:35.334Z",
+      "category": "updates",
+      "tags": [],
+      "importance": 51,
+      "confidence": "community",
+      "headline_en": "pending",
+      "headline_zhHant": "【情報】TU30 / Y8S4 PTS Patchnote翻譯",
+      "summary_en": "pending",
+      "summary_zhHant": "原文公告 以下為AI機翻並且由筆者稍微潤飾過 2F為Y8S4裝備平衡性改動翻譯 《全境封鎖 2》Spearfall PT…",
+      "summaryKind": "extract",
+      "alsoReportedBy": [],
+      "media": [],
+      "relatedIds": [],
+      "firstSeenAt": "2026-11-12T18:47:15.805Z",
+      "status": "new"
+    },
+    {
       "id": "qy8rcm",
       "sourceId": "ubisoft-en",
       "sourceName": "Ubisoft",
@@ -1275,7 +1333,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-12T22:40:44.694Z",
+      "fetchedAt": "2026-11-13T00:55:35.334Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -1310,7 +1368,7 @@
       "title_orig": "【情報】【已開機】關機維護公告 - 2026/11/12(四) 16:30",
       "lang_orig": "zh",
       "publishedAt": "2026-11-11T23:46:00.000Z",
-      "fetchedAt": "2026-11-12T22:40:44.694Z",
+      "fetchedAt": "2026-11-13T00:55:35.334Z",
       "category": "updates",
       "tags": [],
       "importance": 50,
@@ -1334,7 +1392,7 @@
       "title_orig": "新賽季Y8S4的測試服現已開放預載",
       "lang_orig": "zh",
       "publishedAt": "2026-11-12T00:00:00Z",
-      "fetchedAt": "2026-11-12T22:40:44.694Z",
+      "fetchedAt": "2026-11-13T00:55:35.334Z",
       "category": "franchise",
       "tags": [
         "creator"
@@ -1387,7 +1445,7 @@
       "title_orig": "【情報】11/11 每日戰鬥升級掉落 & 原型商人",
       "lang_orig": "zh",
       "publishedAt": "2026-11-11T04:00:00.000Z",
-      "fetchedAt": "2026-11-12T22:40:44.694Z",
+      "fetchedAt": "2026-11-13T00:55:35.334Z",
       "category": "updates",
       "tags": [],
       "importance": 48,
@@ -1411,7 +1469,7 @@
       "title_orig": "【心得】裝備專精系統心得",
       "lang_orig": "zh",
       "publishedAt": "2026-11-11T00:41:00.000Z",
-      "fetchedAt": "2026-11-12T22:40:44.694Z",
+      "fetchedAt": "2026-11-13T00:55:35.334Z",
       "category": "arsenal",
       "tags": [],
       "importance": 48,
@@ -1435,7 +1493,7 @@
       "title_orig": "維護警報⚠️",
       "lang_orig": "zh",
       "publishedAt": "2026-11-11T00:00:00Z",
-      "fetchedAt": "2026-11-12T22:40:44.694Z",
+      "fetchedAt": "2026-11-13T00:55:35.334Z",
       "category": "updates",
       "tags": [
         "creator"
@@ -1461,7 +1519,7 @@
       "title_orig": "【情報】【已開機】關機維護公告 - 2026/11/10(二) 16:30，延長 1 小時",
       "lang_orig": "zh",
       "publishedAt": "2026-11-10T15:59:00.000Z",
-      "fetchedAt": "2026-11-12T22:40:44.694Z",
+      "fetchedAt": "2026-11-13T00:55:35.334Z",
       "category": "updates",
       "tags": [],
       "importance": 47,
@@ -1478,32 +1536,6 @@
       "status": "new"
     },
     {
-      "id": "1v36m6f",
-      "sourceId": "creator-posts",
-      "sourceName": "灰帽特工 Gray Hat Agent",
-      "sourceUrl": "https://www.youtube.com/post/UgkxNvbhteNUDXtR-OIEnvniFwYPtAAQKaOX",
-      "title_orig": "11月的第二輪twitch掉寶現已開啟",
-      "lang_orig": "zh",
-      "publishedAt": "2026-11-10T00:00:00Z",
-      "fetchedAt": "2026-11-12T22:40:44.694Z",
-      "category": "community",
-      "tags": [
-        "creator"
-      ],
-      "importance": 46,
-      "confidence": "community",
-      "headline_en": "11月的第二輪twitch掉寶現已開啟",
-      "headline_zhHant": "11月的第二輪twitch掉寶現已開啟",
-      "summary_en": "在11月10日至11月17日期間進入twitch全境封鎖合作直播間，觀看達到指定時長即可獲得限定獎勵!",
-      "summary_zhHant": "在11月10日至11月17日期間進入twitch全境封鎖合作直播間，觀看達到指定時長即可獲得限定獎勵!",
-      "summaryKind": "original",
-      "alsoReportedBy": [],
-      "media": [],
-      "relatedIds": [],
-      "firstSeenAt": "2026-11-10T22:36:32.778Z",
-      "status": "new"
-    },
-    {
       "id": "1k3dbt0",
       "sourceId": "steam-news",
       "sourceName": "Ubisoft (via Steam News)",
@@ -1511,7 +1543,7 @@
       "title_orig": "Last Chance to Pre-Purchase The Division 2: Echoes of Central Park",
       "lang_orig": "en",
       "publishedAt": "2026-10-28T13:29:29.000Z",
-      "fetchedAt": "2026-11-12T22:40:44.694Z",
+      "fetchedAt": "2026-11-13T00:55:35.334Z",
       "category": "missions",
       "tags": [
         "dlc",
@@ -1538,7 +1570,7 @@
       "title_orig": "Echoes of Central Park Launch Livestream",
       "lang_orig": "en",
       "publishedAt": "2026-10-27T16:01:04.000Z",
-      "fetchedAt": "2026-11-12T22:40:44.694Z",
+      "fetchedAt": "2026-11-13T00:55:35.334Z",
       "category": "community",
       "tags": [],
       "importance": 40,
@@ -1562,7 +1594,7 @@
       "title_orig": "Echoes of Central Park Costume Contest",
       "lang_orig": "en",
       "publishedAt": "2026-10-27T10:34:40.000Z",
-      "fetchedAt": "2026-11-12T22:40:44.694Z",
+      "fetchedAt": "2026-11-13T00:55:35.334Z",
       "category": "community",
       "tags": [],
       "importance": 40,
@@ -1586,7 +1618,7 @@
       "title_orig": "【攻略】部分技能的解鎖方式整理",
       "lang_orig": "zh",
       "publishedAt": "2026-11-05T05:49:00.000Z",
-      "fetchedAt": "2026-11-12T22:40:44.694Z",
+      "fetchedAt": "2026-11-13T00:55:35.334Z",
       "category": "builds",
       "tags": [],
       "importance": 35,
@@ -1610,7 +1642,7 @@
       "title_orig": "【情報】中央公園的迴響 DLC 夥伴 - 相關資訊",
       "lang_orig": "zh",
       "publishedAt": "2026-11-05T04:03:00.000Z",
-      "fetchedAt": "2026-11-12T22:40:44.694Z",
+      "fetchedAt": "2026-11-13T00:55:35.334Z",
       "category": "missions",
       "tags": [
         "dlc"
@@ -1636,7 +1668,7 @@
       "title_orig": "【情報】*劇透注意* Y8S3/TU29 獵捕行動 Red Horizon 偵查任務 每週統整",
       "lang_orig": "zh",
       "publishedAt": "2026-11-03T17:07:00.000Z",
-      "fetchedAt": "2026-11-12T22:40:44.694Z",
+      "fetchedAt": "2026-11-13T00:55:35.334Z",
       "category": "updates",
       "tags": [],
       "importance": 32,
@@ -1657,22 +1689,22 @@
     {
       "sourceId": "steam-news",
       "ok": true,
-      "checkedAt": "2026-11-12T22:40:44.694Z"
+      "checkedAt": "2026-11-13T00:55:35.334Z"
     },
     {
       "sourceId": "ubisoft-en",
       "ok": true,
-      "checkedAt": "2026-11-12T22:40:44.694Z"
+      "checkedAt": "2026-11-13T00:55:35.334Z"
     },
     {
       "sourceId": "ubisoft-zh-tw",
       "ok": true,
-      "checkedAt": "2026-11-12T22:40:44.694Z"
+      "checkedAt": "2026-11-13T00:55:35.334Z"
     },
     {
       "sourceId": "bahamut",
       "ok": true,
-      "checkedAt": "2026-11-12T22:40:44.694Z"
+      "checkedAt": "2026-11-13T00:55:35.334Z"
     }
   ]
 }

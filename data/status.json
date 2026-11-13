@@ -1,11 +1,11 @@
 {
-  "lastRun": "2026-11-12T22:40:59.996Z",
-  "durationMs": 15302,
+  "lastRun": "2026-11-13T00:55:54.034Z",
+  "durationMs": 18700,
   "edition": {
     "date": "2026-11-13",
     "number": 10,
-    "items": 55,
-    "zhPending": 35
+    "items": 56,
+    "zhPending": 37
   },
   "sources": [
     {
@@ -26,7 +26,7 @@
     {
       "id": "bahamut",
       "ok": true,
-      "items": 10
+      "items": 11
     },
     {
       "id": "bahamut-hot",
@@ -43,7 +43,7 @@
     "costUsd": 0
   },
   "degraded": {
-    "at": "2026-11-12T22:41:06.387Z",
+    "at": "2026-11-13T00:56:00.682Z",
     "failed": [
       "zh.test.ts > Chinese-only pages > exotics and patches have Chinese, and change lines line up one-to-one"
     ]
