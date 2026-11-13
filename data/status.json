@@ -1,6 +1,6 @@
 {
-  "lastRun": "2026-11-13T16:49:44.241Z",
-  "durationMs": 45715,
+  "lastRun": "2026-11-13T18:45:32.664Z",
+  "durationMs": 15948,
   "edition": {
     "date": "2026-11-14",
     "number": 11,
@@ -43,7 +43,7 @@
     "costUsd": 0
   },
   "degraded": {
-    "at": "2026-11-13T16:49:51.795Z",
+    "at": "2026-11-13T18:45:38.507Z",
     "failed": [
       "zh.test.ts > Chinese-only pages > exotics and patches have Chinese, and change lines line up one-to-one"
     ]
