@@ -1,6 +1,18 @@
 {
   "videos": [
     {
+      "id": "YWw9mYYOaIM",
+      "title": "Division 2 Tier 10 Farming",
+      "channelName": "Leighhockey",
+      "channelUrl": "https://www.youtube.com/channel/UCYvMgVogduxSbJnj55d481w",
+      "publishedAt": "2026-11-13T14:27:35.000Z",
+      "official": false,
+      "row": "more",
+      "checkedAt": "2026-11-13T14:48:58.410Z",
+      "via": "youtube-api",
+      "rumour": false
+    },
+    {
       "id": "sLR7Ud9aPTw",
       "title": "🔴 NEW LEGENDARY MISSIONS & ESCALATION! Season 4 PTS LIVE | The Division 2",
       "channelName": "GCROCK",
@@ -8,7 +20,7 @@
       "publishedAt": "2026-11-13T12:21:43.000Z",
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-13T12:55:59.702Z",
+      "checkedAt": "2026-11-13T14:48:58.410Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -21,7 +33,7 @@
       "durationSec": 179,
       "official": false,
       "row": "patch-breakdowns",
-      "checkedAt": "2026-11-13T12:55:59.702Z",
+      "checkedAt": "2026-11-13T14:48:58.410Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -34,7 +46,7 @@
       "durationSec": 4102,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-13T12:55:59.702Z",
+      "checkedAt": "2026-11-13T14:48:58.410Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -47,7 +59,7 @@
       "durationSec": 732,
       "official": false,
       "row": "build-guides",
-      "checkedAt": "2026-11-13T12:55:59.702Z",
+      "checkedAt": "2026-11-13T14:48:58.410Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -60,7 +72,7 @@
       "durationSec": 32,
       "official": false,
       "row": "intel",
-      "checkedAt": "2026-11-13T12:55:59.702Z",
+      "checkedAt": "2026-11-13T14:48:58.410Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -73,7 +85,7 @@
       "durationSec": 22111,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-13T12:55:59.702Z",
+      "checkedAt": "2026-11-13T14:48:58.410Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -86,7 +98,7 @@
       "durationSec": 244,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-13T12:55:59.702Z",
+      "checkedAt": "2026-11-13T14:48:58.410Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -99,7 +111,7 @@
       "durationSec": 203,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-13T12:55:59.702Z",
+      "checkedAt": "2026-11-13T14:48:58.410Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -112,7 +124,7 @@
       "durationSec": 4472,
       "official": false,
       "row": "patch-breakdowns",
-      "checkedAt": "2026-11-13T12:55:59.702Z",
+      "checkedAt": "2026-11-13T14:48:58.410Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -125,7 +137,7 @@
       "durationSec": 4833,
       "official": false,
       "row": "patch-breakdowns",
-      "checkedAt": "2026-11-13T12:55:59.702Z",
+      "checkedAt": "2026-11-13T14:48:58.410Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -138,7 +150,7 @@
       "durationSec": 30,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-13T12:55:59.702Z",
+      "checkedAt": "2026-11-13T14:48:58.410Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -151,7 +163,7 @@
       "durationSec": 623,
       "official": false,
       "row": "patch-breakdowns",
-      "checkedAt": "2026-11-13T12:55:59.702Z",
+      "checkedAt": "2026-11-13T14:48:58.410Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -164,7 +176,7 @@
       "durationSec": 1328,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-13T12:55:59.702Z",
+      "checkedAt": "2026-11-13T14:48:58.410Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -177,7 +189,7 @@
       "durationSec": 22669,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-13T12:55:59.702Z",
+      "checkedAt": "2026-11-13T14:48:58.410Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -190,7 +202,7 @@
       "durationSec": 910,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-13T12:55:59.702Z",
+      "checkedAt": "2026-11-13T14:48:58.410Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -203,7 +215,7 @@
       "durationSec": 1532,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-13T12:55:59.702Z",
+      "checkedAt": "2026-11-13T14:48:58.410Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -216,7 +228,7 @@
       "durationSec": 346,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-13T12:55:59.702Z",
+      "checkedAt": "2026-11-13T14:48:58.410Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -229,7 +241,7 @@
       "durationSec": 5282,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-13T12:55:59.702Z",
+      "checkedAt": "2026-11-13T14:48:58.410Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -242,7 +254,7 @@
       "durationSec": 179,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-13T12:55:59.702Z",
+      "checkedAt": "2026-11-13T14:48:58.410Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -255,7 +267,7 @@
       "durationSec": 66,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-13T12:55:59.702Z",
+      "checkedAt": "2026-11-13T14:48:58.410Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -268,7 +280,7 @@
       "durationSec": 41,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-13T12:55:59.702Z",
+      "checkedAt": "2026-11-13T14:48:58.410Z",
       "via": "youtube-api",
       "rumour": true
     },
@@ -281,7 +293,7 @@
       "durationSec": 754,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-13T12:55:59.702Z",
+      "checkedAt": "2026-11-13T14:48:58.410Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -294,7 +306,7 @@
       "durationSec": 179,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-13T12:55:59.702Z",
+      "checkedAt": "2026-11-13T14:48:58.410Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -320,7 +332,7 @@
       "durationSec": 8382,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-13T12:55:59.702Z",
+      "checkedAt": "2026-11-13T14:48:58.410Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -332,7 +344,7 @@
       "publishedAt": "2026-11-12T16:42:00.000Z",
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-13T12:55:59.702Z",
+      "checkedAt": "2026-11-13T14:48:58.410Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -345,7 +357,7 @@
       "durationSec": 175,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-13T12:55:59.702Z",
+      "checkedAt": "2026-11-13T14:48:58.410Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -358,7 +370,7 @@
       "durationSec": 568,
       "official": false,
       "row": "intel",
-      "checkedAt": "2026-11-13T12:55:59.702Z",
+      "checkedAt": "2026-11-13T14:48:58.410Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -371,7 +383,7 @@
       "durationSec": 180,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-13T12:55:59.702Z",
+      "checkedAt": "2026-11-13T14:48:58.410Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -384,8 +396,21 @@
       "durationSec": 1242,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-13T12:55:59.702Z",
+      "checkedAt": "2026-11-13T14:48:58.410Z",
       "via": "youtube-api",
+      "rumour": false
+    },
+    {
+      "id": "0yrvMs7hUFM",
+      "title": "The Division 2 RANT Maintenance, Stability, Matchmaking and Crossplay (Ratel Exotic AR Gameplay)!",
+      "channelName": "GasMarijo",
+      "channelUrl": "https://www.youtube.com/channel/UCicEg8qW2QSCVbQJlUXQmJA",
+      "publishedAt": "2026-11-12T10:50:49.000Z",
+      "durationSec": 1201,
+      "official": false,
+      "row": "intel",
+      "checkedAt": "2026-11-13T14:48:58.410Z",
+      "via": "youtube-search",
       "rumour": false
     },
     {
@@ -397,7 +422,7 @@
       "durationSec": 661,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-13T12:55:59.702Z",
+      "checkedAt": "2026-11-13T14:48:58.410Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -412,32 +437,6 @@
       "row": "build-guides",
       "checkedAt": "2026-11-13T04:53:22.817Z",
       "via": "youtube-search",
-      "rumour": false
-    },
-    {
-      "id": "2qxJqFnKjcI",
-      "title": "Tom Clancy's The Division 2.  Year 8 Season 3 new account.   CENTRAL PARK DLC. Ep 04",
-      "channelName": "SirCowdog",
-      "channelUrl": "https://www.youtube.com/channel/UCUrUakfaMFwB3pMr88nanSg",
-      "publishedAt": "2026-11-12T05:04:51.000Z",
-      "durationSec": 3693,
-      "official": false,
-      "row": "more",
-      "checkedAt": "2026-11-12T07:04:05.799Z",
-      "via": "youtube-search",
-      "rumour": false
-    },
-    {
-      "id": "RzqJyypebQo",
-      "title": "全境封鎖2 - 想要快速解活動通行證 記得接取首要目標 政令不影響經驗量，另外 黃金子彈風暴好玩哦！",
-      "channelName": "純天然",
-      "channelUrl": "https://www.youtube.com/channel/UCAGO36FuuShsuvGD9bF1UwQ",
-      "publishedAt": "2026-11-12T04:21:55.000Z",
-      "durationSec": 588,
-      "official": false,
-      "row": "more",
-      "checkedAt": "2026-11-13T12:55:59.702Z",
-      "via": "youtube-api",
       "rumour": false
     },
     {
@@ -488,7 +487,7 @@
       "publishedAt": "2026-11-02T13:48:39.000Z",
       "official": true,
       "row": "more",
-      "checkedAt": "2026-11-13T12:55:59.702Z",
+      "checkedAt": "2026-11-13T14:48:58.410Z",
       "via": "ubisoft-page",
       "rumour": false
     },
@@ -501,7 +500,7 @@
       "publishedAt": "2026-10-30T18:16:35.000Z",
       "official": true,
       "row": "trailers",
-      "checkedAt": "2026-11-13T12:55:59.702Z",
+      "checkedAt": "2026-11-13T14:48:58.410Z",
       "via": "ubisoft-page",
       "rumour": false
     },

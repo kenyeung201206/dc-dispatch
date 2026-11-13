@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-13T12:55:59.702Z",
+  "updatedAt": "2026-11-13T14:48:58.410Z",
   "topics": [
     {
       "id": "32876",
@@ -9,15 +9,6 @@
       "replies": 26,
       "views": 4037,
       "lastReplyAt": "2026-11-09T19:15:00.000Z"
-    },
-    {
-      "id": "32878",
-      "tag": "討論",
-      "title": "【討論】頂峰協定套裝疑問?",
-      "url": "https://forum.gamer.com.tw/C.php?bsn=24460&snA=32878",
-      "replies": 25,
-      "views": 1748,
-      "lastReplyAt": "2026-11-06T14:10:00.000Z"
     },
     {
       "id": "32873",
@@ -45,6 +36,15 @@
       "replies": 13,
       "views": 1362,
       "lastReplyAt": "2026-11-09T08:35:00.000Z"
+    },
+    {
+      "id": "32892",
+      "tag": "問題",
+      "title": "【問題】誤刪 Division 2 遊戲角色還救得回來嗎？",
+      "url": "https://forum.gamer.com.tw/C.php?bsn=24460&snA=32892",
+      "replies": 12,
+      "views": 938,
+      "lastReplyAt": "2026-11-12T04:33:00.000Z"
     }
   ]
 }
