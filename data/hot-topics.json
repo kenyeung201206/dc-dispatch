@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-13T14:48:58.410Z",
+  "updatedAt": "2026-11-13T16:48:58.526Z",
   "topics": [
     {
       "id": "32876",
@@ -9,15 +9,6 @@
       "replies": 26,
       "views": 4037,
       "lastReplyAt": "2026-11-09T19:15:00.000Z"
-    },
-    {
-      "id": "32873",
-      "tag": "問題",
-      "title": "【問題】新「DLC」有六個技能，我只找到五個，請問第六個在哪？",
-      "url": "https://forum.gamer.com.tw/C.php?bsn=24460&snA=32873",
-      "replies": 16,
-      "views": 3445,
-      "lastReplyAt": "2026-11-06T15:12:00.000Z"
     },
     {
       "id": "32869",
@@ -43,8 +34,17 @@
       "title": "【問題】誤刪 Division 2 遊戲角色還救得回來嗎？",
       "url": "https://forum.gamer.com.tw/C.php?bsn=24460&snA=32892",
       "replies": 12,
-      "views": 938,
+      "views": 1363,
       "lastReplyAt": "2026-11-12T04:33:00.000Z"
+    },
+    {
+      "id": "32882",
+      "tag": "閒聊",
+      "title": "【閒聊】虫合 ?!",
+      "url": "https://forum.gamer.com.tw/C.php?bsn=24460&snA=32882",
+      "replies": 11,
+      "views": 1327,
+      "lastReplyAt": "2026-11-08T12:17:00.000Z"
     }
   ]
 }
