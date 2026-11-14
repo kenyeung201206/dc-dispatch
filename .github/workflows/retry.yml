@@ -1,20 +1,56 @@
 name: Auto-retry
 
-# "Try again another time": when the robot (Daily edition) or the loot run fails, re-run its failed job once,
-# 5 minutes later, so a network hiccup or a Cloudflare/GitHub blip doesn't cost a 2-hour update.
-# Skipped when the run failed only at "Report problems" (the paper was already published, in safe mode) and
-# never retries a retry. A second failure is left failed, so GitHub emails the owner.
+# When the robot (Daily edition), the loot run, publishing write-ups or CI fails:
+# 1. record: write what broke into data/problems.json (failed steps + the error lines), so the self-repair
+#    routine (docs/SELF_REPAIR.md, a cloud Claude routine, hourly) can read it, fix the cause and mark it fixed;
+# 2. retry: re-run the failed job once, 5 minutes later, so a network/Cloudflare/GitHub blip doesn't cost an
+#    update. Not when it was already published in safe mode (failed only at "Report problems"), not for CI,
+#    and never a retry of a retry.
 on:
   workflow_run:
-    workflows: ['Daily edition', 'Daily loot']
+    workflows: ['Daily edition', 'Daily loot', 'Publish write-ups', 'CI']
     types: [completed]
 
 permissions:
   actions: write
+  contents: write
+
+concurrency:
+  group: problems-file
+  cancel-in-progress: false
 
 jobs:
+  record:
+    if: github.event.workflow_run.conclusion == 'failure'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v7.0.1
+      - uses: actions/setup-node@v7.1.0
+        with:
+          node-version: 24
+      - name: Write the failure into data/problems.json
+        run: |
+          failed=$(gh run view "$RUN" --repo "$REPO" --json jobs --jq '[.jobs[].steps[] | select(.conclusion == "failure") | .name] | join(", ")')
+          gh run view "$RUN" --repo "$REPO" --log-failed > failed.log 2>/dev/null || true
+          node scripts/record-problem.ts "$NAME" "$URL" "$failed" failed.log
+          git config user.name "dc-dispatch-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/problems.json
+          git commit -m "chore(ops): record failed run of $NAME" || exit 0
+          for attempt in 1 2 3; do
+            if git push; then break; fi
+            git pull --rebase -X theirs origin main
+          done
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RUN: ${{ github.event.workflow_run.id }}
+          REPO: ${{ github.repository }}
+          NAME: ${{ github.event.workflow_run.name }}
+          URL: ${{ github.event.workflow_run.html_url }}
+
   retry:
-    if: github.event.workflow_run.conclusion == 'failure' && github.event.workflow_run.run_attempt == 1
+    if: github.event.workflow_run.conclusion == 'failure' && github.event.workflow_run.run_attempt == 1 && github.event.workflow_run.name != 'CI'
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:

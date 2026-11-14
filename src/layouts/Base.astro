@@ -152,23 +152,41 @@ const shareImage = image ?? keyArt?.url;
         }),
       );
 
-      // 新 badges: stories published since this reader's last visit (per browser; a visit = a break of 30+ min).
+      // 新 badges: stories this reader hasn't had a chance to see yet (per browser; a visit = a break of 30+ min).
+      // Remembers story ids, not just times: on Chinese pages a story only appears once its Chinese is written
+      // (often ~2 h after the English), so "published since your last visit" missed it for frequent readers
+      // (2026-11-14, iPhone). A story stays 新 through the visit where it first shows, and is seen from the next.
       // First visit: the last 12 hours. Never older than 3 days.
       (() => {
         const H = 3_600_000;
         const now = Date.now();
-        let prev = now - 12 * H;
+        const badges = [...document.querySelectorAll<HTMLElement>('[data-new-badge]')];
+        const ids = badges.map((b) => b.dataset.storyId ?? '').filter(Boolean);
+        let seen = new Set<string>();
+        let first = false;
         try {
           const last = Number(localStorage.getItem('dcd.lastSeen')) || 0;
-          const saved = Number(localStorage.getItem('dcd.prevVisit')) || 0;
-          prev = last && now - last < 0.5 * H ? saved || prev : last || prev;
-          localStorage.setItem('dcd.prevVisit', String(prev));
+          first = !last;
+          const stored = localStorage.getItem('dcd.seenIds');
+          seen = new Set(stored ? (JSON.parse(stored) as string[]) : []);
+          let visit = new Set<string>(JSON.parse(localStorage.getItem('dcd.visitIds') ?? '[]') as string[]);
+          if (stored === null && last) {
+            // Readers from before ids were kept: what was already out at their last visit counts as seen.
+            badges.forEach((b) => Date.parse(b.dataset.firstSeen ?? '') <= last && b.dataset.storyId && seen.add(b.dataset.storyId));
+          }
+          if (last && now - last >= 0.5 * H) {
+            visit.forEach((id) => seen.add(id));
+            visit = new Set();
+          }
+          ids.forEach((id) => !seen.has(id) && visit.add(id));
+          localStorage.setItem('dcd.seenIds', JSON.stringify([...seen].slice(-800)));
+          localStorage.setItem('dcd.visitIds', JSON.stringify([...visit].slice(-300)));
           localStorage.setItem('dcd.lastSeen', String(now));
         } catch {}
-        const since = Math.max(prev, now - 72 * H);
-        document.querySelectorAll<HTMLElement>('[data-new-badge]').forEach((b) => {
+        badges.forEach((b) => {
           const t = Date.parse(b.dataset.firstSeen ?? '');
-          if (t > since) b.hidden = false;
+          if (!(t > now - (first ? 12 : 72) * H)) return;
+          if (!seen.has(b.dataset.storyId ?? '')) b.hidden = false;
         });
       })();
 

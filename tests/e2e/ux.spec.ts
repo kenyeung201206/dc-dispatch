@@ -148,26 +148,48 @@ test('最新更新 box sits above the lead story, newest first, without hashtag 
   for (const h of await box.locator('li a').allTextContents()) expect(h).not.toMatch(/#[^\s\d]/);
 });
 
-test('新 badges: stories since your last visit; gone once you have seen them', async ({ page }) => {
+test('新 badges: stories you have not seen yet; gone on your next visit', async ({ page }) => {
   await page.route(/(youtube-nocookie\.com|ytimg\.com)/, (r) => r.abort());
   await page.goto('/zh-hant/');
   // Long-ago last visit: everything from the last 3 days is new to you.
   await page.evaluate(() => {
     localStorage.setItem('dcd.lastSeen', '1');
-    localStorage.removeItem('dcd.prevVisit');
+    ['dcd.seenIds', 'dcd.visitIds', 'dcd.prevVisit'].forEach((k) => localStorage.removeItem(k));
   });
   await page.reload();
   const shown = page.locator('[data-new-badge]:not([hidden])');
   const ages = await shown.evaluateAll((els) => els.map((e) => Date.now() - Date.parse((e as HTMLElement).dataset.firstSeen!)));
   for (const a of ages) expect(a).toBeLessThan(72 * 3_600_000 + 60_000);
-  // Seen just now (same visit): nothing new.
-  await page.evaluate(() => {
-    const now = String(Date.now());
-    localStorage.setItem('dcd.lastSeen', now);
-    localStorage.setItem('dcd.prevVisit', now);
-  });
+  const before = ages.length;
+  // Same visit (reload a minute later): still new, so you can finish reading.
   await page.reload();
-  await expect(page.locator('[data-new-badge]:not([hidden])')).toHaveCount(0);
+  await expect(shown).toHaveCount(before);
+  // Next visit (an hour later): what you could see last time is no longer new.
+  await page.evaluate(() => localStorage.setItem('dcd.lastSeen', String(Date.now() - 3_600_000)));
+  await page.reload();
+  await expect(shown).toHaveCount(0);
+});
+
+test('新 badges: a story that shows up later (e.g. once its Chinese is written) is new even if it was published before your last visit', async ({ page }) => {
+  await page.route(/(youtube-nocookie\.com|ytimg\.com)/, (r) => r.abort());
+  await page.goto('/zh-hant/');
+  const ids = await page.locator('[data-new-badge]').evaluateAll((els) =>
+    els.filter((e) => Date.now() - Date.parse((e as HTMLElement).dataset.firstSeen!) < 72 * 3_600_000).map((e) => (e as HTMLElement).dataset.storyId!),
+  );
+  test.skip(ids.length === 0, 'no stories from the last 3 days in this build');
+  const late = ids[0]!;
+  // Visited 1 hour ago and saw everything except `late` (it wasn't on the Chinese page yet).
+  await page.evaluate(
+    ([all, late]) => {
+      localStorage.setItem('dcd.seenIds', JSON.stringify(all.filter((id) => id !== late)));
+      localStorage.setItem('dcd.visitIds', '[]');
+      localStorage.setItem('dcd.lastSeen', String(Date.now() - 3_600_000));
+    },
+    [ids, late] as const,
+  );
+  await page.reload();
+  const shown = await page.locator('[data-new-badge]:not([hidden])').evaluateAll((els) => [...new Set(els.map((e) => (e as HTMLElement).dataset.storyId))]);
+  expect(shown).toEqual([late]);
 });
 
 test('最新更新: 顯示更多 opens 10 more at a time, grouped by day, then 收合 folds back', async ({ page }) => {

@@ -87,7 +87,7 @@ const moreVideos = videosFor(locale).filter((v) => v.id !== vod?.id).slice(0, 2)
             ) : (
               <li data-n={r.n} hidden={r.n >= LATEST_FIRST}>
                 <p class="lm">
-                  <span class="newb" data-new-badge data-first-seen={r.item.firstSeenAt} hidden>{t(locale, 'badge.new')}</span>
+                  <span class="newb" data-new-badge data-story-id={r.item.id} data-first-seen={r.item.firstSeenAt} hidden>{t(locale, 'badge.new')}</span>
                   <time class="hud-label" datetime={r.item.firstSeenAt}>{clock(r.item.firstSeenAt!)}</time>
                   <span class="sec">· {t(locale, `section.${r.item.category}` as UiKey)}</span>
                 </p>
