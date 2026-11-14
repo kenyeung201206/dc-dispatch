@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { failedChecks } from '../../scripts/publish-gate.ts';
+import { alreadyReported, failedChecks } from '../../scripts/publish-gate.ts';
 
 describe('publish gate: names the failed checks in the email and on the status page', () => {
   it('reads failing test names from the real 2026-11-10 robot log', () => {
@@ -13,5 +13,18 @@ describe('publish gate: names the failed checks in the email and on the status p
   it('falls back to a readable label', () => {
     expect(failedChecks('i18n check failed:\n  en: missing "x"')).toEqual(['i18n check (Chinese/English labels)']);
     expect(failedChecks('something odd')).toEqual(['unknown check (see the run log)']);
+  });
+});
+
+describe('publish gate: one email a day per problem', () => {
+  const now = new Date('2026-11-14T02:00:00Z');
+  const prev = { at: '2026-11-13T20:00:00Z', failed: ['zh.test.ts > exotics have Chinese'] };
+  it('stays quiet when the same checks failed and were reported less than 24 h ago', () => {
+    expect(alreadyReported(['zh.test.ts > exotics have Chinese'], prev, now)).toBe('2026-11-13T20:00:00Z');
+  });
+  it('reports again for a different problem, or after 24 h', () => {
+    expect(alreadyReported(['guides.test.ts > something else'], prev, now)).toBeUndefined();
+    expect(alreadyReported(prev.failed, { ...prev, at: '2026-11-13T01:00:00Z' }, now)).toBeUndefined();
+    expect(alreadyReported(prev.failed, undefined, now)).toBeUndefined();
   });
 });

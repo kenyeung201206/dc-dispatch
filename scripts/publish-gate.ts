@@ -37,6 +37,25 @@ export function codePassedCi(sha: string): boolean {
     .some((good) => spawnSync('git', ['diff', '--quiet', good, sha, '--', '.', ':(exclude)data', ':(exclude)public/icons']).status === 0);
 }
 
+/** The safe-mode record from the last published run (data/status.json as committed). */
+function previousDegraded(): { at: string; failed: string[] } | undefined {
+  const r = spawnSync('git', ['show', 'HEAD:data/status.json'], { encoding: 'utf8' });
+  try {
+    return r.status === 0 ? JSON.parse(r.stdout).degraded : undefined;
+  } catch {
+    return undefined;
+  }
+}
+
+/**
+ * When the same checks already failed and were emailed less than 24 h ago, returns when that started
+ * (so the owner gets one email a day per problem, not one every 2 hours). Otherwise undefined.
+ */
+export function alreadyReported(failed: string[], prev: { at: string; failed: string[] } | undefined, now: Date): string | undefined {
+  if (!prev || prev.failed.join('\n') !== failed.join('\n')) return undefined;
+  return now.getTime() - Date.parse(prev.at) < 24 * 3_600_000 ? prev.at : undefined;
+}
+
 if (process.argv[1]?.endsWith('publish-gate.ts')) {
   if (outcome === 'success') {
     out('publish', 'true');
@@ -47,12 +66,14 @@ if (process.argv[1]?.endsWith('publish-gate.ts')) {
     const sha = process.env.GITHUB_SHA ?? '';
     if (sha && codePassedCi(sha)) {
       const status = JSON.parse(readFileSync('data/status.json', 'utf8'));
-      status.degraded = { at: new Date().toISOString(), failed };
+      const since = alreadyReported(failed, previousDegraded(), new Date());
+      status.degraded = { at: since ?? new Date().toISOString(), failed };
       writeFileSync('data/status.json', JSON.stringify(status, null, 2) + '\n');
       out('publish', 'true');
       out('degraded', 'true');
-      out('reason', `Published in safe mode. A check failed, but this code passed CI, so the cause is today's data: ${failed.join('; ')}`);
-      console.log(`Safe mode: ${failed.join('; ')}`);
+      // Same problem already emailed in the last 24 h: record it, but don't email again every 2 hours.
+      if (!since) out('reason', `Published in safe mode. A check failed, but this code passed CI, so the cause is today's data: ${failed.join('; ')}`);
+      console.log(`Safe mode${since ? ` (same problem since ${since}, already reported)` : ''}: ${failed.join('; ')}`);
     } else {
       out('publish', 'false');
       out('degraded', 'false');
