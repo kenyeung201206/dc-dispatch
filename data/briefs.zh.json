@@ -7909,6 +7909,108 @@
         "說明欄只有頻道與商店連結，沒有提供遊戲細節"
       ],
       "written": "2026-11-14"
+    },
+    "6puvw9": {
+      "points": [
+        "玩家影片（非官方）：實況主 DJTICKLE 在 Year 8 Season 4「Spearfall」公開測試伺服器（PTS）建立新角色，逐項介紹新內容",
+        "影片提醒：這是 PTS 畫面、仍在製作中，第 4 季上線前內容可能變動",
+        "影片提到的新內容：Legendary 難度與 Escalation 模式、新奇特武器 August（Convergent）、新奇特面具 Forward Observer（Strike Order）",
+        "另有 Field General 套裝（Helping Hand、Blitz 胸甲、Water Boy 背包）、4 個 Legendary 任務與每日／每週 Legendary 專案",
+        "Protolab 方面：Prototype Credits、更換強化模組與圖紙；新命名裝備為 Magnet、Siphon、Hearty、Thrive"
+      ],
+      "tables": [
+        {
+          "title": "影片章節（時間點）",
+          "columns": [
+            "時間",
+            "內容"
+          ],
+          "rows": [
+            [
+              "0:29",
+              "PTS 新角色與免費測試裝備"
+            ],
+            [
+              "0:59",
+              "Legendary 難度"
+            ],
+            [
+              "1:20",
+              "Escalation 選單與風格"
+            ],
+            [
+              "2:35",
+              "August 新奇特武器"
+            ],
+            [
+              "3:41",
+              "Power Spike 與 Blackout"
+            ],
+            [
+              "4:30",
+              "Field General 套裝"
+            ],
+            [
+              "6:25",
+              "Forward Observer 新奇特面具"
+            ],
+            [
+              "7:24",
+              "Unknown Technologies 詞綴"
+            ],
+            [
+              "8:30",
+              "Advanced Lethality、Mirrored Sabotage 與 Mirrored Boost"
+            ],
+            [
+              "11:21",
+              "敵方 Contra-Augments"
+            ],
+            [
+              "12:22",
+              "4 個 Legendary 任務與獎勵"
+            ],
+            [
+              "13:08",
+              "每日與每週 Legendary 專案"
+            ],
+            [
+              "13:28",
+              "Prototype Credits"
+            ],
+            [
+              "13:45",
+              "Protolab：更換強化模組與圖紙"
+            ],
+            [
+              "18:07",
+              "新命名裝備"
+            ],
+            [
+              "18:57",
+              "Expertise 新增項目"
+            ],
+            [
+              "20:25",
+              "Expertise 中的技能"
+            ],
+            [
+              "21:37",
+              "Open All Caches"
+            ]
+          ]
+        }
+      ],
+      "written": "2026-11-14"
+    },
+    "1ahmd5b": {
+      "points": [
+        "玩家影片（非官方）：介紹百爆（暴擊）步槍「響尾蛇」的特殊玩法，標題稱不打頭也能單發高傷",
+        "標題所述成果：3 槍打碎大盾、1 槍打胸口傷害達千萬",
+        "說明欄提到：不適合在遠距離使用，否則吃不到加成（BUFF）",
+        "說明欄提到：特定情況可瞬間打出高傷；作者試過搭配守護者爆甲、一輪打死，但機會難得，不建議硬要使用"
+      ],
+      "written": "2026-11-14"
     }
   }
 }
