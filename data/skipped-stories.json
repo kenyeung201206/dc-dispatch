@@ -1,45 +1,49 @@
 {
- "_note": "Stories the 重點整理 writer found nothing to summarise from (e.g. a YouTube video whose description is only a channel intro). They are dropped from the edition (site build and robot) and ignored by the watchdog. Written by the writer (docs/BRIEF_WRITER.md step 3).",
- "items": {
-  "5nm9s2": {
-   "reason": "影片說明只是頻道簡介，沒有可寫的事實",
-   "at": "2026-11-14T05:23:47Z"
-  },
-  "tzle63": {
-   "reason": "沒有影片說明，標題只是直播或閒聊",
-   "at": "2026-11-14T05:23:47Z"
-  },
-  "qas29t": {
-   "reason": "沒有影片說明，標題只是直播或閒聊",
-   "at": "2026-11-14T05:23:47Z"
-  },
-  "4md0qj": {
-   "reason": "沒有影片說明，標題只是直播或閒聊",
-   "at": "2026-11-14T05:23:47Z"
-  },
-  "15g9k5n": {
-   "reason": "影片說明只有一個 PSN ID",
-   "at": "2026-11-14T05:23:47Z"
-  },
-  "1w4ymuu": {
-   "reason": "沒有影片說明，標題內容太少",
-   "at": "2026-11-14T05:23:47Z"
-  },
-  "1huslta": {
-   "reason": "影片說明只是頻道宣傳，沒有可寫的事實",
-   "at": "2026-11-14T12:00:00Z"
-  },
-  "1qzsj1i": {
-   "reason": "說明只有 PvP 直播閒聊與聊天指令清單",
-   "at": "2026-11-14T12:00:00Z"
-  },
-  "wl64hb": {
-   "reason": "說明只有籠統的配裝宣傳，沒有具體事實",
-   "at": "2026-11-14T12:00:00Z"
-  },
-  "rd2666": {
-   "reason": "沒有影片說明，標題沒有具體事實",
-   "at": "2026-11-14T12:00:00Z"
+  "_note": "Stories the 重點整理 writer found nothing to summarise from (e.g. a YouTube video whose description is only a channel intro). They are dropped from the edition (site build and robot) and ignored by the watchdog. Written by the writer (docs/BRIEF_WRITER.md step 3).",
+  "items": {
+    "5nm9s2": {
+      "reason": "影片說明只是頻道簡介，沒有可寫的事實",
+      "at": "2026-11-14T05:23:47Z"
+    },
+    "tzle63": {
+      "reason": "沒有影片說明，標題只是直播或閒聊",
+      "at": "2026-11-14T05:23:47Z"
+    },
+    "qas29t": {
+      "reason": "沒有影片說明，標題只是直播或閒聊",
+      "at": "2026-11-14T05:23:47Z"
+    },
+    "4md0qj": {
+      "reason": "沒有影片說明，標題只是直播或閒聊",
+      "at": "2026-11-14T05:23:47Z"
+    },
+    "15g9k5n": {
+      "reason": "影片說明只有一個 PSN ID",
+      "at": "2026-11-14T05:23:47Z"
+    },
+    "1w4ymuu": {
+      "reason": "沒有影片說明，標題內容太少",
+      "at": "2026-11-14T05:23:47Z"
+    },
+    "1huslta": {
+      "reason": "影片說明只是頻道宣傳，沒有可寫的事實",
+      "at": "2026-11-14T12:00:00Z"
+    },
+    "1qzsj1i": {
+      "reason": "說明只有 PvP 直播閒聊與聊天指令清單",
+      "at": "2026-11-14T12:00:00Z"
+    },
+    "wl64hb": {
+      "reason": "說明只有籠統的配裝宣傳，沒有具體事實",
+      "at": "2026-11-14T12:00:00Z"
+    },
+    "rd2666": {
+      "reason": "沒有影片說明，標題沒有具體事實",
+      "at": "2026-11-14T12:00:00Z"
+    },
+    "hq0zbb": {
+      "reason": "沒有影片說明，標題只是直播閒聊",
+      "at": "2026-11-14T12:00:00Z"
+    }
   }
- }
 }
