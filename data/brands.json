@@ -616,6 +616,14 @@
     "Gear Mod"
    ],
    "icon": "/icons/gear/gear-mods.png"
+  },
+  {
+   "en": "Skill Mods",
+   "aliases": [
+    "Skill Mods"
+   ],
+   "icon": "/icons/gear/skill-mods.png",
+   "auto": true
   }
  ]
 }
