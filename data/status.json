@@ -1,6 +1,6 @@
 {
-  "lastRun": "2026-11-14T08:44:50.762Z",
-  "durationMs": 24641,
+  "lastRun": "2026-11-14T10:37:25.106Z",
+  "durationMs": 20696,
   "edition": {
     "date": "2026-11-14",
     "number": 11,
@@ -39,7 +39,7 @@
     "youtubeApiConfigured": true
   },
   "budget": {
-    "youtubeQuotaUnits": 587,
+    "youtubeQuotaUnits": 591,
     "costUsd": 0
   }
 }
