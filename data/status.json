@@ -1,6 +1,6 @@
 {
-  "lastRun": "2026-11-14T00:50:30.772Z",
-  "durationMs": 13602,
+  "lastRun": "2026-11-14T02:44:17.577Z",
+  "durationMs": 13749,
   "edition": {
     "date": "2026-11-14",
     "number": 11,
@@ -41,11 +41,5 @@
   "budget": {
     "youtubeQuotaUnits": 311,
     "costUsd": 0
-  },
-  "degraded": {
-    "at": "2026-11-14T00:50:38.638Z",
-    "failed": [
-      "zh.test.ts > Chinese-only pages > exotics and patches have Chinese, and change lines line up one-to-one"
-    ]
   }
 }
