@@ -222,17 +222,19 @@
       "id": "UCv76gJEe_Q7IntBUltz3ulQ",
       "name": "KGMN-LR",
       "official": false
+    },
+    {
+      "id": "UCgpnbE0vEaucQbVnIYCiq_w",
+      "name": "고요한 도보 여행자 (Silent Walker Gaming)",
+      "official": false
+    },
+    {
+      "id": "UCx3wlNlbXFYvfd0ImC9aEYg",
+      "name": "Michael Rebirth Studio",
+      "official": false
     }
   ],
   "discovered": {
-    "UCgpnbE0vEaucQbVnIYCiq_w": {
-      "name": "고요한 도보 여행자 (Silent Walker Gaming)",
-      "videos": [
-        "I2hNyF-ubl8",
-        "rS0zNxV89l8"
-      ],
-      "firstSeen": "2026-11-14T05:20:56.435Z"
-    },
     "UCXe278vjK7IGbilVblPUmmQ": {
       "name": "Corpop",
       "videos": [
@@ -329,13 +331,6 @@
       "name": "Ranger de Manny",
       "videos": [
         "oxYJ0MghEj8"
-      ],
-      "firstSeen": "2026-11-14T05:20:56.435Z"
-    },
-    "UCx3wlNlbXFYvfd0ImC9aEYg": {
-      "name": "Michael Rebirth Studio",
-      "videos": [
-        "WHEQBZPVb6E"
       ],
       "firstSeen": "2026-11-14T05:20:56.435Z"
     },
@@ -526,7 +521,8 @@
     "UC_7wENYjAtQAYis5bE8aC9A": {
       "name": "H0T P1CKLE",
       "videos": [
-        "2RdBh5CS8dg"
+        "2RdBh5CS8dg",
+        "YfUSOHweCUE"
       ],
       "firstSeen": "2026-11-14T05:20:56.435Z"
     },
@@ -568,7 +564,8 @@
     "UCGys15HeaCRtduEHRaNwpVA": {
       "name": "Ryse Plays",
       "videos": [
-        "8Vrg6W0ltb4"
+        "8Vrg6W0ltb4",
+        "3yp2wqMXkYk"
       ],
       "firstSeen": "2026-11-14T05:20:56.435Z"
     },
@@ -688,7 +685,8 @@
     "UCsk8k798-L2ZC9mQSrTI7iQ": {
       "name": "まいくろぺーさー",
       "videos": [
-        "u4anWRoukx0"
+        "u4anWRoukx0",
+        "oI5Yna4pib8"
       ],
       "firstSeen": "2026-11-14T05:20:56.435Z"
     },
@@ -792,6 +790,125 @@
         "WZhMpDoZVLs"
       ],
       "firstSeen": "2026-11-14T05:20:56.435Z"
+    },
+    "UCz5PM7y8ox56tr-xQW5EI0Q": {
+      "name": " GhostfaceBR_TTV",
+      "videos": [
+        "7Jfv0wr82Kk"
+      ],
+      "firstSeen": "2026-11-14T06:51:29.604Z"
+    },
+    "UC_9_XvNaidc90pGJcZojfUA": {
+      "name": "ЛуиН20 ",
+      "videos": [
+        "Qe_V6vSpERA"
+      ],
+      "firstSeen": "2026-11-14T06:51:29.604Z"
+    },
+    "UC-_ro_5rUt5ZcMVrTG7j-4A": {
+      "name": "The Daddy Otaku",
+      "videos": [
+        "MI6lZTQXBJw"
+      ],
+      "firstSeen": "2026-11-14T06:51:29.604Z"
+    },
+    "UCc30Nl1ScicMJN7lVKRNuUA": {
+      "name": "Hgamer30",
+      "videos": [
+        "9zOvRrdwC9U"
+      ],
+      "firstSeen": "2026-11-14T06:51:29.604Z"
+    },
+    "UC4x9lpDUehSJf1X_TevuG1w": {
+      "name": "PcGameBuilds",
+      "videos": [
+        "p-bSX4wNZuE"
+      ],
+      "firstSeen": "2026-11-14T06:51:29.604Z"
+    },
+    "UC7fOnkw7KYi8bnNs-d1zi9g": {
+      "name": "alegameplay",
+      "videos": [
+        "TU-MmRKSM6s"
+      ],
+      "firstSeen": "2026-11-14T06:51:29.604Z"
+    },
+    "UCwCcWm8ij2So-BFzC6awNUw": {
+      "name": "V/ Lucifer de Dante",
+      "videos": [
+        "Csyb_a7k434"
+      ],
+      "firstSeen": "2026-11-14T06:51:29.604Z"
+    },
+    "UCEEHCPcoEbvnF3PUaIiRs9w": {
+      "name": "OH Report",
+      "videos": [
+        "ehBdhas22ao"
+      ],
+      "firstSeen": "2026-11-14T06:51:29.604Z"
+    },
+    "UC118MnMCTQ1db6no4jbIxTQ": {
+      "name": "PFX LALMONI",
+      "videos": [
+        "WEi7nsMx5PE"
+      ],
+      "firstSeen": "2026-11-14T06:51:29.604Z"
+    },
+    "UCUoLEmgdksuBguTGmcZe-KQ": {
+      "name": "Tombro87",
+      "videos": [
+        "soCWJdFEyqM"
+      ],
+      "firstSeen": "2026-11-14T06:51:29.604Z"
+    },
+    "UCi-rMMca6oGJOSvD37HNpbQ": {
+      "name": "Daddy Ruff",
+      "videos": [
+        "w8B5f00Y-Ek"
+      ],
+      "firstSeen": "2026-11-14T06:51:29.604Z"
+    },
+    "UCS90y2IvLSNew8NkWaQxUyQ": {
+      "name": "Steve M Robledo",
+      "videos": [
+        "fiNZH_N96hU"
+      ],
+      "firstSeen": "2026-11-14T06:51:29.604Z"
+    },
+    "UCWwC9omdiFyZuI_9Y6c9qbA": {
+      "name": "Kenneth Koerperich",
+      "videos": [
+        "Jd-WbCviAAw"
+      ],
+      "firstSeen": "2026-11-14T06:51:29.604Z"
+    },
+    "UC2Jj8gt23VKkMnfFcOGDd-Q": {
+      "name": "たこち げぇむ日記",
+      "videos": [
+        "oC02nqBONQQ"
+      ],
+      "firstSeen": "2026-11-14T06:51:29.604Z"
+    },
+    "UCWPLaLUNiJfSuNaV4HMtc6A": {
+      "name": "Jellynx Stream Archive",
+      "videos": [
+        "hCJqZVRBXAw"
+      ],
+      "firstSeen": "2026-11-14T06:51:29.604Z"
+    },
+    "UCEfT9m_jzQaESe5kXZYsUIg": {
+      "name": "Hans",
+      "videos": [
+        "cd50uAgjGyE"
+      ],
+      "firstSeen": "2026-11-14T06:51:29.604Z"
+    },
+    "UC0MqG40nlzKvkOFprrHT-UQ": {
+      "name": "YUNGBACH",
+      "videos": [
+        "dVOO99Jhf6g"
+      ],
+      "firstSeen": "2026-11-14T06:51:29.604Z"
     }
   }
 }
