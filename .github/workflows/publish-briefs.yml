@@ -9,6 +9,7 @@ on:
     paths:
       - data/briefs.zh.json
       - data/translations.zh.json
+      - data/term-names.json
 
 permissions:
   contents: read
