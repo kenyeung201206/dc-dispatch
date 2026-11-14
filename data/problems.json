@@ -1,4 +1,18 @@
 {
  "_note": "Failed GitHub Actions runs, written by .github/workflows/retry.yml. The self-repair routine (docs/SELF_REPAIR.md) fixes open ones and sets status to fixed or needs-owner with a note.",
- "problems": []
+ "problems": [
+  {
+   "id": "selftest-1",
+   "workflow": "Self-repair end-to-end test",
+   "url": "",
+   "at": "2026-11-14T02:16:42.508Z",
+   "lastSeen": "2026-11-14T02:16:42.508Z",
+   "seen": 1,
+   "failedSteps": "(none: test entry)",
+   "signature": "Test entry, no real failure: the checks on current main should all pass",
+   "log": "This entry was added by the owner's Claude session to test the self-repair routine end to end. Nothing actually failed.",
+   "status": "open",
+   "attempts": 0
+  }
+ ]
 }
