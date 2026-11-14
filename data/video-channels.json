@@ -252,6 +252,11 @@
       "id": "UCQzbIAqQRBT-F-VmBMDikqg",
       "name": "Starz Gamer",
       "official": false
+    },
+    {
+      "id": "UCvLYN4nQoeKKmKsgZUM8Nsw",
+      "name": "Joker Farina",
+      "official": false
     }
   ],
   "discovered": {
@@ -478,7 +483,8 @@
     "UCxX4BegLiA0zvv71928gxEw": {
       "name": "widdzTV",
       "videos": [
-        "JNulVsF-dUk"
+        "JNulVsF-dUk",
+        "fdKcbInxxi8"
       ],
       "firstSeen": "2026-11-14T05:20:56.435Z"
     },
@@ -646,14 +652,6 @@
       ],
       "firstSeen": "2026-11-14T05:20:56.435Z"
     },
-    "UCvLYN4nQoeKKmKsgZUM8Nsw": {
-      "name": "Joker Farina",
-      "videos": [
-        "XzJdlSz5Tgs",
-        "lOYHPUCMyho"
-      ],
-      "firstSeen": "2026-11-14T05:20:56.435Z"
-    },
     "UCBeGoiBkmCsjg--y4nkaU9w": {
       "name": "Baldão Games",
       "videos": [
@@ -714,7 +712,8 @@
     "UC4zN3bc1IdCfy2D_2PBXqoA": {
       "name": "Faidwoizn -TV",
       "videos": [
-        "FH8rX6XsoZs"
+        "FH8rX6XsoZs",
+        "Y0MLLk3T1DU"
       ],
       "firstSeen": "2026-11-14T05:20:56.435Z"
     },
@@ -1253,7 +1252,8 @@
     "UCXUxp8_yus7v11zgplX7HCg": {
       "name": "JAE",
       "videos": [
-        "gO1gC2fiitY"
+        "gO1gC2fiitY",
+        "s-aVUNeUIvg"
       ],
       "firstSeen": "2026-11-14T12:39:46.976Z"
     },
@@ -1302,7 +1302,8 @@
     "UCRTTtMCMaxoKT11U1MekmwQ": {
       "name": "Atlasbasket",
       "videos": [
-        "MFFQLPlyeH4"
+        "MFFQLPlyeH4",
+        "blyTRyF1xfM"
       ],
       "firstSeen": "2026-11-14T12:39:46.976Z"
     },
@@ -1326,6 +1327,132 @@
         "jKVnM6GRI64"
       ],
       "firstSeen": "2026-11-14T12:39:46.976Z"
+    },
+    "UCGrQ9rOpSTR_j_mQZhdDOQw": {
+      "name": "SEDOYPAPA",
+      "videos": [
+        "pezWwZ2Qlw0"
+      ],
+      "firstSeen": "2026-11-14T14:37:14.492Z"
+    },
+    "UC26C-aZXOoMvnxqzx8iOQkw": {
+      "name": "RP GAMEPLAY",
+      "videos": [
+        "uXww1TVxBF8"
+      ],
+      "firstSeen": "2026-11-14T14:37:14.492Z"
+    },
+    "UC2Tm4OVrrd-2QDLX55hizhQ": {
+      "name": "NothingButSkillz",
+      "videos": [
+        "lRaMaDQe7ck"
+      ],
+      "firstSeen": "2026-11-14T14:37:14.492Z"
+    },
+    "UCxKUlUu49U2oblu6ngBaG1g": {
+      "name": "PILOT - BIH",
+      "videos": [
+        "8yOTpRG7-m0"
+      ],
+      "firstSeen": "2026-11-14T14:37:14.492Z"
+    },
+    "UCZ7JvPfWZ7v21Sj3FQnJQ3g": {
+      "name": "xLOKILLOx VODs",
+      "videos": [
+        "q0YwED0W2D8"
+      ],
+      "firstSeen": "2026-11-14T14:37:14.492Z"
+    },
+    "UCNCjhqjuOLxr5e_8TsUxR9A": {
+      "name": "SzogunYT",
+      "videos": [
+        "D7SH0_EOu9s"
+      ],
+      "firstSeen": "2026-11-14T14:37:14.492Z"
+    },
+    "UC7w1u7bbtNPHD9B-w1B3nzw": {
+      "name": "AGENT MARK GAMING",
+      "videos": [
+        "HKqlAyvsxYY"
+      ],
+      "firstSeen": "2026-11-14T14:37:14.492Z"
+    },
+    "UCLqyf5w-MnSF32AGS3eEBoA": {
+      "name": "Mr Exos Gamer",
+      "videos": [
+        "mnjNctq5tZ4"
+      ],
+      "firstSeen": "2026-11-14T14:37:14.492Z"
+    },
+    "UCDJoD6SZAJLAXx0sF0tQJCQ": {
+      "name": "Sendy",
+      "videos": [
+        "RfGAB3JoI6k"
+      ],
+      "firstSeen": "2026-11-14T14:37:14.492Z"
+    },
+    "UCkERblT6VS591g9ho69kUvQ": {
+      "name": "Juan Francisco Pérez Millos",
+      "videos": [
+        "brsA3vNqwZs"
+      ],
+      "firstSeen": "2026-11-14T14:37:14.492Z"
+    },
+    "UCsB8KzWPGhh3GLFX1zFO0sA": {
+      "name": "Sir Deornoth",
+      "videos": [
+        "SMRth6QMGmU"
+      ],
+      "firstSeen": "2026-11-14T14:37:14.492Z"
+    },
+    "UCTRSdhfAdfN0j5O53gDxI3g": {
+      "name": "ゼ !",
+      "videos": [
+        "FAJQnLSdXTA"
+      ],
+      "firstSeen": "2026-11-14T14:37:14.492Z"
+    },
+    "UCWvWELT3-0Hr4s93O_89W0g": {
+      "name": "FearWhatGaming",
+      "videos": [
+        "i3WgB5xIoyo"
+      ],
+      "firstSeen": "2026-11-14T14:37:14.492Z"
+    },
+    "UC6WvGodPyoV8tmN9vkvbRXA": {
+      "name": "Fajachico",
+      "videos": [
+        "8LM7ah7K8hY"
+      ],
+      "firstSeen": "2026-11-14T14:37:14.492Z"
+    },
+    "UCMssiYa5XswdShtpQLWm4lw": {
+      "name": "Majestic Formula Racing League",
+      "videos": [
+        "oUP06QznwOo"
+      ],
+      "firstSeen": "2026-11-14T14:37:14.492Z"
+    },
+    "UCJAjApnsw29BrDk0L_BjhPw": {
+      "name": "Los Maquiavelicos MVL",
+      "videos": [
+        "80EjWqIPo4A"
+      ],
+      "firstSeen": "2026-11-14T14:37:14.492Z"
+    },
+    "UCS6XODcS6eXtfJCQ7F4StBQ": {
+      "name": "Xp Gaming",
+      "videos": [
+        "HFuCHgJ3CQc"
+      ],
+      "firstSeen": "2026-11-14T14:37:14.492Z"
+    },
+    "UCbwIVIawd-wO5enC_41uwIQ": {
+      "name": "SAMCROCS_WOLF",
+      "videos": [
+        "8mLCDte3A10"
+      ],
+      "firstSeen": "2026-11-14T14:37:14.492Z"
     }
   }
 }
