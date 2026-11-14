@@ -1,184 +1,193 @@
 {
- "_note": "YouTube channels to follow (needs YOUTUBE_API_KEY). Only uploads whose title mentions The Division are used, and each video must be public + embeddable + not made-for-kids. Edit freely. \"searches\" = daily YouTube searches (100 quota units each) for creator intel; results show only if they mention The Division.",
- "channels": [
-  {
-   "id": "UC0KU8F9jJqSLS11LRXvFWmg",
-   "name": "Ubisoft",
-   "handle": "@Ubisoft",
-   "official": true
-  },
-  {
-   "id": "UCyRKkittAyXHhjZxqC49cxg",
-   "name": "GCROCK",
-   "handle": "@GCROCK",
-   "official": false
-  },
-  {
-   "id": "UC1h4ld2anwjT4NEbqFOJRXQ",
-   "name": "widdz",
-   "handle": "@widdz",
-   "official": false
-  },
-  {
-   "id": "UCrK99e79TwSpgElDb-r-Lpg",
-   "name": "Died Again Gaming",
-   "handle": "@DiedAgainGaming",
-   "official": false
-  },
-  {
-   "id": "UCWd5S9-AEf26j0wY3P8TOhw",
-   "name": "Kamikazevondoom",
-   "handle": "@Kamikazevondoom",
-   "official": false
-  }
- ],
- "searches": [
-  {
-   "q": "全境封鎖2 攻略",
-   "lang": "zh-Hant"
-  },
-  {
-   "q": "全境封锁2 攻略",
-   "lang": "zh-Hans"
-  },
-  {
-   "q": "the division 2 new exotic",
-   "lang": "en"
-  }
- ],
- "guideCreators": [
-  {
-   "id": "UCJ2qGCBwyN8d2l9aoWkyShw",
-   "name": "灰帽特工 Gray Hat Agent",
-   "handle": "@灰帽特工",
-   "official": false
-  }
- ],
- "follow": [
-  {
-   "id": "UCyRKkittAyXHhjZxqC49cxg",
-   "name": "GCROCK",
-   "official": false
-  },
-  {
-   "id": "UCm_idKyWeK5qzfSSUkCY5pA",
-   "name": "RAMBO52___",
-   "official": false
-  },
-  {
-   "id": "UC1h4ld2anwjT4NEbqFOJRXQ",
-   "name": "widdz",
-   "official": false
-  },
-  {
-   "id": "UCrK99e79TwSpgElDb-r-Lpg",
-   "name": "Died Again Gaming",
-   "official": false
-  },
-  {
-   "id": "UCWd5S9-AEf26j0wY3P8TOhw",
-   "name": "Kamikazevondoom",
-   "official": false
-  },
-  {
-   "id": "UCRbAtGPNumGV868iZ8brEDw",
-   "name": "RogueGold",
-   "official": false
-  },
-  {
-   "id": "UCp1vIDATDxjAJV4ojAodiOQ",
-   "name": "Champion Dreamers Gaming",
-   "official": false
-  },
-  {
-   "id": "UCTchb3jtnEocEXkhc7dzyTA",
-   "name": "LittleNobody",
-   "official": false
-  },
-  {
-   "id": "UCWIdBINha5bKeFuvAs7US4A",
-   "name": "TuxedoBandido",
-   "official": false
-  },
-  {
-   "id": "UCZ1BJT1Myb-O7haZ0fI1yeQ",
-   "name": "AnYTime Gaming",
-   "official": false
-  },
-  {
-   "id": "UCezbsoSj2tVSfNJZO7m5KAQ",
-   "name": "AntaqanTV",
-   "official": false
-  },
-  {
-   "id": "UCYvMgVogduxSbJnj55d481w",
-   "name": "Leighhockey",
-   "official": false
-  },
-  {
-   "id": "UCSnfKAEM25en_ebV97B93cg",
-   "name": "Sydesti",
-   "official": false
-  },
-  {
-   "id": "UC0RO8Ex_8w1ZYp4VoCz7o5w",
-   "name": "King Macho",
-   "official": false
-  },
-  {
-   "id": "UCrLMaFhu9SYwosWBgqm0tMQ",
-   "name": "ManaWar Gaming",
-   "official": false
-  },
-  {
-   "id": "UCu9KTVGlwr_iQr3hz24zz6A",
-   "name": "Patrick Wolf",
-   "official": false
-  },
-  {
-   "id": "UC_hEthT-rqSPTxC7IpvxGhw",
-   "name": "V1rtualzZ",
-   "official": false
-  },
-  {
-   "id": "UCnqbdVhRhYh5KQpDtKz8ksg",
-   "name": "The Gaming Brigade",
-   "official": false
-  },
-  {
-   "id": "UCzp1Bf9WeE-qINzF-QEzPVA",
-   "name": "伊彣",
-   "official": false
-  },
-  {
-   "id": "UCkd3D6EnMoJ7JSEwJ-MPsFQ",
-   "name": "PS & PC 遊戲交流區",
-   "official": false
-  },
-  {
-   "id": "UCoMK4Qk2nvBqq6NOUkDVgCg",
-   "name": "王偉",
-   "official": false
-  },
-  {
-   "id": "UCbJ8rH3kLjEa3H0PN1qktoQ",
-   "name": "叫我RHeige",
-   "official": false
-  },
-  {
-   "id": "UCAGO36FuuShsuvGD9bF1UwQ",
-   "name": "純天然",
-   "official": false
-  },
-  {
-   "id": "UCmi1OSMoQgswe8arnwowz8A",
-   "name": "邪神弱鴨",
-   "official": false
-  },
-  {
-   "id": "UCxxUK5_3ocVwBXDUZxdk76g",
-   "name": "B站森牧阳",
-   "official": false
-  }
- ]
+  "_note": "YouTube channels to follow (needs YOUTUBE_API_KEY). Only uploads whose title mentions The Division are used, and each video must be public + embeddable + not made-for-kids. Edit freely. \"searches\" = daily YouTube searches (100 quota units each) for creator intel; results show only if they mention The Division.",
+  "channels": [
+    {
+      "id": "UC0KU8F9jJqSLS11LRXvFWmg",
+      "name": "Ubisoft",
+      "handle": "@Ubisoft",
+      "official": true
+    },
+    {
+      "id": "UCyRKkittAyXHhjZxqC49cxg",
+      "name": "GCROCK",
+      "handle": "@GCROCK",
+      "official": false
+    },
+    {
+      "id": "UC1h4ld2anwjT4NEbqFOJRXQ",
+      "name": "widdz",
+      "handle": "@widdz",
+      "official": false
+    },
+    {
+      "id": "UCrK99e79TwSpgElDb-r-Lpg",
+      "name": "Died Again Gaming",
+      "handle": "@DiedAgainGaming",
+      "official": false
+    },
+    {
+      "id": "UCWd5S9-AEf26j0wY3P8TOhw",
+      "name": "Kamikazevondoom",
+      "handle": "@Kamikazevondoom",
+      "official": false
+    }
+  ],
+  "searches": [
+    {
+      "q": "the division 2",
+      "lang": "en"
+    },
+    {
+      "q": "division 2 build",
+      "lang": "en"
+    },
+    {
+      "q": "division 2 news",
+      "lang": "en"
+    },
+    {
+      "q": "全境封鎖2",
+      "lang": "zh-Hant"
+    },
+    {
+      "q": "全境封锁2",
+      "lang": "zh-Hans"
+    }
+  ],
+  "guideCreators": [
+    {
+      "id": "UCJ2qGCBwyN8d2l9aoWkyShw",
+      "name": "灰帽特工 Gray Hat Agent",
+      "handle": "@灰帽特工",
+      "official": false
+    }
+  ],
+  "follow": [
+    {
+      "id": "UCyRKkittAyXHhjZxqC49cxg",
+      "name": "GCROCK",
+      "official": false
+    },
+    {
+      "id": "UCm_idKyWeK5qzfSSUkCY5pA",
+      "name": "RAMBO52___",
+      "official": false
+    },
+    {
+      "id": "UC1h4ld2anwjT4NEbqFOJRXQ",
+      "name": "widdz",
+      "official": false
+    },
+    {
+      "id": "UCrK99e79TwSpgElDb-r-Lpg",
+      "name": "Died Again Gaming",
+      "official": false
+    },
+    {
+      "id": "UCWd5S9-AEf26j0wY3P8TOhw",
+      "name": "Kamikazevondoom",
+      "official": false
+    },
+    {
+      "id": "UCRbAtGPNumGV868iZ8brEDw",
+      "name": "RogueGold",
+      "official": false
+    },
+    {
+      "id": "UCp1vIDATDxjAJV4ojAodiOQ",
+      "name": "Champion Dreamers Gaming",
+      "official": false
+    },
+    {
+      "id": "UCTchb3jtnEocEXkhc7dzyTA",
+      "name": "LittleNobody",
+      "official": false
+    },
+    {
+      "id": "UCWIdBINha5bKeFuvAs7US4A",
+      "name": "TuxedoBandido",
+      "official": false
+    },
+    {
+      "id": "UCZ1BJT1Myb-O7haZ0fI1yeQ",
+      "name": "AnYTime Gaming",
+      "official": false
+    },
+    {
+      "id": "UCezbsoSj2tVSfNJZO7m5KAQ",
+      "name": "AntaqanTV",
+      "official": false
+    },
+    {
+      "id": "UCYvMgVogduxSbJnj55d481w",
+      "name": "Leighhockey",
+      "official": false
+    },
+    {
+      "id": "UCSnfKAEM25en_ebV97B93cg",
+      "name": "Sydesti",
+      "official": false
+    },
+    {
+      "id": "UC0RO8Ex_8w1ZYp4VoCz7o5w",
+      "name": "King Macho",
+      "official": false
+    },
+    {
+      "id": "UCrLMaFhu9SYwosWBgqm0tMQ",
+      "name": "ManaWar Gaming",
+      "official": false
+    },
+    {
+      "id": "UCu9KTVGlwr_iQr3hz24zz6A",
+      "name": "Patrick Wolf",
+      "official": false
+    },
+    {
+      "id": "UC_hEthT-rqSPTxC7IpvxGhw",
+      "name": "V1rtualzZ",
+      "official": false
+    },
+    {
+      "id": "UCnqbdVhRhYh5KQpDtKz8ksg",
+      "name": "The Gaming Brigade",
+      "official": false
+    },
+    {
+      "id": "UCzp1Bf9WeE-qINzF-QEzPVA",
+      "name": "伊彣",
+      "official": false
+    },
+    {
+      "id": "UCkd3D6EnMoJ7JSEwJ-MPsFQ",
+      "name": "PS & PC 遊戲交流區",
+      "official": false
+    },
+    {
+      "id": "UCoMK4Qk2nvBqq6NOUkDVgCg",
+      "name": "王偉",
+      "official": false
+    },
+    {
+      "id": "UCbJ8rH3kLjEa3H0PN1qktoQ",
+      "name": "叫我RHeige",
+      "official": false
+    },
+    {
+      "id": "UCAGO36FuuShsuvGD9bF1UwQ",
+      "name": "純天然",
+      "official": false
+    },
+    {
+      "id": "UCmi1OSMoQgswe8arnwowz8A",
+      "name": "邪神弱鴨",
+      "official": false
+    },
+    {
+      "id": "UCxxUK5_3ocVwBXDUZxdk76g",
+      "name": "B站森牧阳",
+      "official": false
+    }
+  ],
+  "discovered": {}
 }

@@ -13,6 +13,7 @@ import { parsePatch, upsertPatches } from './patches.ts';
 import { buildVideos } from './video/build.ts';
 import { searchVideos } from './video/youtube.ts';
 import { videoStories } from './video/intel-items.ts';
+import { trackCreators } from './video/discover.ts';
 import { creatorPostStories } from './creator-posts.ts';
 import { mergeFeed, parsePostsPage } from './creator-feed.ts';
 import { exoticsFromArticle, mergeExotics, wikiExotics } from './exotics.ts';
@@ -154,6 +155,7 @@ async function main() {
     searches?: { q: string; lang?: string }[];
     guideCreators?: { id: string; name: string; official: boolean }[];
     follow?: { id: string; name: string; official: boolean }[];
+    discovered?: Record<string, { name: string; videos: string[]; firstSeen: string }>;
   }>('data/video-channels.json', { channels: [] });
   const channels = videoConfig.channels;
   const youtubeKey = dryRun ? undefined : process.env.YOUTUBE_API_KEY;
@@ -164,6 +166,12 @@ async function main() {
   // Followed creators: their newest uploads cost ~2 quota units per channel (a search costs 100), so most
   // creator news comes from here; the few searches only discover new creators.
   const followed = await fetchChannelVideos(videoConfig.follow ?? [], youtubeKey, now);
+  // Creators found by the searches whose Division videos keep turning up join the follow list (see discover.ts).
+  if (!dryRun && youtubeKey) {
+    const added = trackCreators(videoConfig, searched, now);
+    if (added.length) log('info', 'new creators followed', { added });
+    await writeFile('data/video-channels.json', JSON.stringify(videoConfig, null, 2) + '\n');
+  }
   // Only videos from the last 24 hours become stories: with an update every 2 hours that is just what was
   // uploaded since the last few runs, so an update brings a handful of new videos, never a backlog of old ones.
   const recent = (v: { publishedAt: string }) => now.getTime() - Date.parse(v.publishedAt) <= 86_400_000;
@@ -331,7 +339,7 @@ async function main() {
       (await readJson<{ sources?: SourceHealth[] }>(join(outDir, 'status.json'), {})).sources,
     ),
     videos: { total: videos.length, youtubeApiConfigured: Boolean(youtubeKey) },
-    budget: { youtubeQuotaUnits: youtubeKey ? channels.length * 2 + (videoConfig.searches?.length ?? 0) * 100 + 1 : 0, costUsd: Number(ai.costUsd.toFixed(4)) },
+    budget: { youtubeQuotaUnits: youtubeKey ? (channels.length + (videoConfig.follow?.length ?? 0) + (videoConfig.guideCreators?.length ?? 0)) * 2 + (videoConfig.searches?.length ?? 0) * 101 : 0, costUsd: Number(ai.costUsd.toFixed(4)) },
   });
   await writeFile(join(outDir, 'status.json'), JSON.stringify(status, null, 2) + '\n');
 

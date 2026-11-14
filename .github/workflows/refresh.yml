@@ -1,8 +1,9 @@
 name: Daily edition
 
 # Every 2 hours (UTC 00, 02, …, 22 = Taiwan/HK 08, 10, …, 06). Same-day runs update that day's edition (same
-# edition number). YouTube quota per run: 3 searches x 100 + ~25 followed creators x 2 + 灰帽特工 x 2 + Watch Now
-# channels ~10 = about 360 units, x 12 runs = about 4,300 of 10,000/day. Free Actions minutes: ~1-2 min/run.
+# edition number). YouTube quota per run: 5 searches x 101 (50 results each, last 24 h) + followed creators x 2
+# (25 now, auto-grows to at most 60: pipeline/video/discover.ts) + Watch Now channels ~10 = about 580-650 units,
+# x 12 runs = about 7,000-7,800 of 10,000/day. Free Actions minutes: ~1-2 min/run.
 # The 重點整理 writer starts right after each run (Claude routine, GitHub push trigger).
 # Also runnable by hand from the Actions tab.
 on:
@@ -76,7 +77,7 @@ jobs:
         run: |
           git config user.name "dc-dispatch-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/editions data/images.json data/patches.json data/videos.json data/status.json data/exotics.json data/guides.json data/events.json data/creator-posts.json data/briefs.zh.json data/source-notes.json data/daily-loot.json data/brands.json data/places.json data/hot-topics.json public/icons
+          git add data/editions data/images.json data/patches.json data/videos.json data/status.json data/exotics.json data/guides.json data/events.json data/creator-posts.json data/briefs.zh.json data/source-notes.json data/daily-loot.json data/brands.json data/places.json data/hot-topics.json data/video-channels.json public/icons
           if [ -f data/ai-cache.json ]; then git add data/ai-cache.json; fi
           if git diff --cached --quiet; then echo "No data changes"; else
             git commit -m "chore(data): edition $(TZ=Asia/Taipei date +%F)"

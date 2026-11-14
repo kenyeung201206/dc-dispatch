@@ -123,9 +123,9 @@ const SearchList = z.object({ items: z.array(z.object({ id: z.object({ videoId: 
 const DIVISION = /division|全境封鎖|全境封锁/i;
 
 /**
- * Daily creator scan: YouTube search for new Division 2 videos (last 3 days) per query, then one
- * videos.list call to confirm public + embeddable + not made for kids. Quota: 100 units per query
- * + 1 per videos.list call (about 400/day for 4 queries; the free quota is 10,000).
+ * Creator scan: YouTube search for new Division 2 videos (last 24 hours, newest first, 50 per query — the same
+ * 100 quota units as 15), then videos.list calls to confirm public + embeddable + not made for kids.
+ * Quota: 100 units per query + 1 per 50 videos looked up. Only videos from the last 24 h become stories.
  */
 export async function searchVideos(
   queries: { q: string; lang?: string }[],
@@ -134,11 +134,11 @@ export async function searchVideos(
   get = politeGet,
 ): Promise<VideoCandidate[]> {
   if (!key || !queries.length) return [];
-  const since = new Date(now.getTime() - 3 * 86_400_000).toISOString();
+  const since = new Date(now.getTime() - 86_400_000).toISOString();
   const ids = new Set<string>();
   for (const { q, lang } of queries) {
     try {
-      const params = new URLSearchParams({ part: 'id', type: 'video', order: 'date', maxResults: '15', q, publishedAfter: since });
+      const params = new URLSearchParams({ part: 'id', type: 'video', order: 'date', maxResults: '50', q, publishedAfter: since });
       if (lang) params.set('relevanceLanguage', lang);
       const res = SearchList.parse(JSON.parse(await get(`https://www.googleapis.com/youtube/v3/search?${params}&key=${encodeURIComponent(key)}`)));
       for (const i of res.items) if (i.id.videoId) ids.add(i.id.videoId);
