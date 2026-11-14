@@ -292,6 +292,9 @@ async function main() {
 
   const overrides = OverridesSchema.parse(await readJson('data/overrides.json', {}));
   const edition = assembleEdition({ date, now, fresh, results, previous: await previousEdition(date), overrides, firstSeen: dryRun ? new Map() : await firstSeenIndex() });
+  // Stories the 重點整理 writer found nothing to summarise from leave the edition (data/skipped-stories.json).
+  const skippedIds = (await readJson<{ items?: Record<string, unknown> }>('data/skipped-stories.json', {})).items ?? {};
+  edition.items = edition.items.filter((i) => !(i.id in skippedIds));
   // 巴哈 pinned daily threads make one story per day from the same link: keep only the newest day.
   {
     const newest = new Map<string, Item>();

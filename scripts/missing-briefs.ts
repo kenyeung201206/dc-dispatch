@@ -8,6 +8,10 @@ import { readdirSync, readFileSync } from 'node:fs';
 
 const briefs = JSON.parse(readFileSync('data/briefs.zh.json', 'utf8')).items as Record<string, unknown>;
 const tr = JSON.parse(readFileSync('data/translations.zh.json', 'utf8')).items as Record<string, unknown>;
+let skipped: Record<string, unknown> = {};
+try {
+  skipped = JSON.parse(readFileSync('data/skipped-stories.json', 'utf8')).items ?? {};
+} catch {}
 // Video descriptions saved by the robot (YouTube API); the cloud can't load youtube.com itself.
 let notes: Record<string, { text: string }> = {};
 try {
@@ -24,6 +28,7 @@ for (const f of files) {
   const pending = (v?: string) => !v || v === 'pending';
   const missing = (e.items as { id: string; sourceId: string; sourceUrl: string; title_orig: string; headline_zhHant?: string; summary_zhHant?: string }[])
     // Also stories that have a 重點整理 but still no Chinese title/summary (Chinese pages hide those).
+    .filter((i) => !(i.id in skipped))
     .filter((i) => !briefs[i.id] || ((pending(i.headline_zhHant) || pending(i.summary_zhHant)) && !tr[i.id]))
     .map((i) => ({
       hasBrief: Boolean(briefs[i.id]),

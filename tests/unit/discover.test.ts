@@ -28,3 +28,38 @@ describe('new Division 2 creators found by the searches', () => {
     expect(c.discovered).toEqual({});
   });
 });
+
+describe('only the best 3–6 new videos per update (owner request 2026-11-14)', async () => {
+  const { videoStories, thinVideo, MAX_VIDEO_STORIES } = await import('../../pipeline/video/intel-items.ts');
+  const desc = 'This build guide covers the exotic chest, the new gear set bonuses, every talent you need for Heroic, and how to farm the parts.';
+  const v = (id: string, ch: number, title: string, views = 100, description = desc) => ({
+    id: `vid${id}`.padEnd(11, 'x'),
+    title,
+    channelName: `C${ch}`,
+    channelUrl: `https://www.youtube.com/channel/C${ch}`,
+    publishedAt: '2026-11-14T03:00:00.000Z',
+    official: false,
+    via: 'youtube-api' as const,
+    search: true,
+    views,
+    description,
+  });
+  it('drops live streams and Shorts that have almost no description', () => {
+    expect(thinVideo({ title: '🔴 LIVE Division 2 farming', description: 'join discord' })).toBe(true);
+    expect(thinVideo({ title: 'BEST BUILD #shorts', description: '' })).toBe(true);
+    expect(thinVideo({ title: '🔴 LIVE Division 2 farming', description: desc })).toBe(false);
+    expect(thinVideo({ title: 'Lively build guide', description: '' })).toBe(false);
+  });
+  it('picks at most 6, one per creator, interesting topics and real descriptions first', () => {
+    const pool = [
+      ...Array.from({ length: 10 }, (_, i) => v(String(i), i, `Division 2 new exotic build ${i}`, 1000 + i)),
+      v('dup', 0, 'Division 2 another build from the same creator', 99999),
+      v('nodesc', 50, 'Division 2 exotic build with no description', 99999, ''),
+    ];
+    const picked = videoStories(pool as never, new Date('2026-11-14T05:00:00Z'));
+    expect(MAX_VIDEO_STORIES).toBe(6);
+    expect(picked).toHaveLength(6);
+    expect(new Set(picked.map((p) => p.sourceName)).size).toBe(6);
+    expect(picked.map((p) => p.title_orig)).not.toContain('Division 2 exotic build with no description');
+  });
+});

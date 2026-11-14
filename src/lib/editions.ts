@@ -3,7 +3,9 @@ import { textLocale, type Locale } from '../i18n/index.ts';
 import { getImage } from './images.ts';
 import { hasZh, withZh } from './zh.ts';
 import { zhTerms } from './terms.ts';
+import skippedRaw from '../../data/skipped-stories.json' with { type: 'json' };
 
+const skipped = (skippedRaw as { items: Record<string, unknown> }).items;
 const files = import.meta.glob<{ default: unknown }>('../../data/editions/*.json', { eager: true });
 
 /** All editions, validated at build time, newest first. A bad file fails the build. */
@@ -12,8 +14,9 @@ export const editions: Edition[] = Object.entries(files)
     const parsed = EditionSchema.safeParse(mod.default);
     if (!parsed.success) throw new Error(`Invalid edition ${path}: ${parsed.error.message}`);
     for (const item of parsed.data.items) if (item.imageId) getImage(item.imageId); // fails on a bad id
-    // Editor translations fill English-only stories for Chinese readers.
-    return { ...parsed.data, items: parsed.data.items.map(withZh) };
+    // Editor translations fill English-only stories for Chinese readers. Stories the writer found nothing to
+    // summarise from (data/skipped-stories.json) are left out.
+    return { ...parsed.data, items: parsed.data.items.filter((i) => !(i.id in skipped)).map(withZh) };
   })
   .sort((a, b) => b.date.localeCompare(a.date));
 

@@ -23,7 +23,11 @@ const items = JSON.parse(readFileSync(`data/editions/${file}`, 'utf8')).items as
   publishedAt: string;
 }[];
 const now = Date.now();
-const late = items.filter((i) => !briefs[i.id] && (now - Date.parse(i.firstSeenAt ?? i.publishedAt)) / 3_600_000 > maxHours);
+let skipped: Record<string, unknown> = {};
+try {
+  skipped = JSON.parse(readFileSync('data/skipped-stories.json', 'utf8')).items ?? {};
+} catch {}
+const late = items.filter((i) => !briefs[i.id] && !(i.id in skipped) && (now - Date.parse(i.firstSeenAt ?? i.publishedAt)) / 3_600_000 > maxHours);
 
 if (late.length) {
   console.error(`MISSING 重點整理: ${late.length} story/stories in ${file} still have none after ${maxHours} h.`);

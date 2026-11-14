@@ -9,9 +9,13 @@ import { score } from '../score.ts';
 import { detectLang, extractChars, extractWords, stableId } from '../text.ts';
 import { RUMOUR_WORDS, type VideoCandidate } from './videos.ts';
 
-export const MAX_VIDEO_STORIES = 12;
-/** At most this many stories from one creator per run, so no channel floods the page. */
-export const MAX_PER_CHANNEL = 2;
+/**
+ * New video stories per update (every ~2 h). The owner wants only the 3–6 most interesting and useful ones,
+ * not a flood (2026-11-14): the wide searches are for choosing the best, not for showing more. Half Chinese.
+ */
+export const MAX_VIDEO_STORIES = 6;
+/** At most this many stories from one creator per update, so the few places go to different creators. */
+export const MAX_PER_CHANNEL = 1;
 /** Intel-ish topics get picked first, then by views. */
 const INTERESTING = /\b(exotic|PTS|leak|datamin\w*|unreleased|build|meta|new season|patch|hotfix|bug|glitch|exploit)\b|奇特|配裝|攻略|漏洞|爆料|新賽季/i;
 
@@ -38,11 +42,25 @@ export function saysNothing(v: Pick<VideoCandidate, 'title' | 'description'>): b
   return rest.length < 3 && cleanDescription(v.description).length < 20;
 }
 
+/**
+ * A live stream or Short with almost no description: there is nothing to write a 重點整理 from, and with the
+ * wider searches (2026-11-14) many of these turned up. Others the writer can't use go on data/skipped-stories.json.
+ */
+export function thinVideo(v: Pick<VideoCandidate, 'title' | 'description'>): boolean {
+  return cleanDescription(v.description).length < 60 && /\blive\b|\bstream|直播|🔴|#shorts?\b/i.test(v.title);
+}
+
 export function videoStories(videos: VideoCandidate[], now: Date): Item[] {
   const perChannel = new Map<string, number>();
   const ranked = [...videos]
-    .filter((v) => v.search && !saysNothing(v))
-    .sort((a, b) => Number(INTERESTING.test(b.title)) - Number(INTERESTING.test(a.title)) || (b.views ?? 0) - (a.views ?? 0))
+    .filter((v) => v.search && !saysNothing(v) && !thinVideo(v))
+    // Most interesting topic first, then ones with a real description (so they get a 重點整理), then most viewed.
+    .sort(
+      (a, b) =>
+        Number(INTERESTING.test(b.title)) - Number(INTERESTING.test(a.title)) ||
+        Number(cleanDescription(b.description).length >= 120) - Number(cleanDescription(a.description).length >= 120) ||
+        (b.views ?? 0) - (a.views ?? 0),
+    )
     .filter((v) => {
       const k = v.channelUrl ?? v.channelName ?? v.id;
       const n = perChannel.get(k) ?? 0;

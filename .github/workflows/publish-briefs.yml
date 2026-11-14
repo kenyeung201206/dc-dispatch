@@ -10,6 +10,7 @@ on:
       - data/briefs.zh.json
       - data/translations.zh.json
       - data/term-names.json
+      - data/skipped-stories.json
 
 permissions:
   contents: read

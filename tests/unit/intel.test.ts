@@ -125,7 +125,7 @@ describe('YouTube creator scan (mocked API)', () => {
 
   it('turns leak videos into RUMOUR stories with the video attached', () => {
     const v: VideoCandidate = { id: 'aaaaaaaaaaa', title: 'Division 2 LEAKED exotic coming next season!', publishedAt: '2026-11-03T00:00:00.000Z', official: false, via: 'youtube-search', search: true, views: 5000, channelName: 'Creator', description: 'New exotic leaked.\n#division2' };
-    const zh: VideoCandidate = { ...v, id: 'ddddddddddd', title: '全境封鎖2 新奇特武器實測', views: 100 };
+    const zh: VideoCandidate = { ...v, id: 'ddddddddddd', title: '全境封鎖2 新奇特武器實測', views: 100, channelName: 'Another creator' };
     const items = videoStories([v, zh], NOW);
     expect(items[0]).toMatchObject({ confidence: 'rumour', videoId: 'aaaaaaaaaaa', sourceId: 'youtube', summaryKind: 'extract' });
     const z = items.find((i) => i.videoId === 'ddddddddddd')!;
@@ -138,7 +138,7 @@ describe('YouTube creator scan (mocked API)', () => {
     const en = Array.from({ length: 16 }, (_, n): VideoCandidate => ({ id: `e${n}`.padEnd(11, 'x'), title: `Division 2 new exotic build ${n}`, channelUrl: `https://www.youtube.com/channel/c${n}`, publishedAt: '2026-11-03T00:00:00.000Z', official: false, via: 'youtube-search', search: true, views: 50_000 }));
     const zh: VideoCandidate = { ...en[0]!, id: 'zzzzzzzzzzz', title: '全境封鎖2 蜜獾怎麼拿', channelUrl: 'https://www.youtube.com/channel/zh', views: 10 };
     const ids = videoStories([...en, zh], NOW).map((i) => i.videoId);
-    expect(ids).toHaveLength(12);
+    expect(ids).toHaveLength(6); // only the best 6 per update (owner request 2026-11-14)
     expect(ids).toContain('zzzzzzzzzzz');
   });
 
@@ -151,9 +151,9 @@ describe('YouTube creator scan (mocked API)', () => {
     expect(videoStories([base], NOW)).toEqual([]);
   });
 
-  it('takes at most 2 videos from one creator per run', () => {
+  it('takes at most 1 video from one creator per update', () => {
     const same = Array.from({ length: 5 }, (_, n): VideoCandidate => ({ id: `s${n}`.padEnd(11, 'x'), title: `Division 2 build ${n}`, channelUrl: 'https://www.youtube.com/channel/one', publishedAt: '2026-11-03T00:00:00.000Z', official: false, via: 'youtube-api', search: true, views: 100 - n }));
-    expect(videoStories(same, NOW).map((i) => i.videoId)).toEqual(['s0xxxxxxxxx', 's1xxxxxxxxx']);
+    expect(videoStories(same, NOW).map((i) => i.videoId)).toEqual(['s0xxxxxxxxx']);
   });
 });
 
