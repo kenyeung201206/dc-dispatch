@@ -247,6 +247,11 @@
       "id": "UCT54dHazQoDkAmhEonGXRkA",
       "name": "Jacky Fang",
       "official": false
+    },
+    {
+      "id": "UCQzbIAqQRBT-F-VmBMDikqg",
+      "name": "Starz Gamer",
+      "official": false
     }
   ],
   "discovered": {
@@ -451,7 +456,8 @@
     "UCkleJ54n9UtVV2vanVsAaiQ": {
       "name": "Kaamoplay",
       "videos": [
-        "_F3wr1rj7Os"
+        "_F3wr1rj7Os",
+        "bLaA6Csu6Fg"
       ],
       "firstSeen": "2026-11-14T05:20:56.435Z"
     },
@@ -494,14 +500,6 @@
       "name": "FlamingFox",
       "videos": [
         "7GjQavtKupw"
-      ],
-      "firstSeen": "2026-11-14T05:20:56.435Z"
-    },
-    "UCQzbIAqQRBT-F-VmBMDikqg": {
-      "name": "Starz Gamer",
-      "videos": [
-        "tf-eAr8cBxY",
-        "PYlI2PiL1iY"
       ],
       "firstSeen": "2026-11-14T05:20:56.435Z"
     },
@@ -1236,6 +1234,98 @@
         "-RsIUnk20Bg"
       ],
       "firstSeen": "2026-11-14T10:37:04.410Z"
+    },
+    "UCYH7PRedzAZFR_mMAwcvBUA": {
+      "name": "DJKSEB",
+      "videos": [
+        "5TcdDVAUo20",
+        "3i0QJSwVpEM"
+      ],
+      "firstSeen": "2026-11-14T12:39:46.976Z"
+    },
+    "UCbgtP3M6-IrQ9bjjc6I1TIw": {
+      "name": "Diablotex Channel",
+      "videos": [
+        "9zG8OT8GLz0"
+      ],
+      "firstSeen": "2026-11-14T12:39:46.976Z"
+    },
+    "UCXUxp8_yus7v11zgplX7HCg": {
+      "name": "JAE",
+      "videos": [
+        "gO1gC2fiitY"
+      ],
+      "firstSeen": "2026-11-14T12:39:46.976Z"
+    },
+    "UC2J7rrYtxhEtXTHM66Akcjg": {
+      "name": "Welldragoon4526",
+      "videos": [
+        "ZevWVEHfgMs"
+      ],
+      "firstSeen": "2026-11-14T12:39:46.976Z"
+    },
+    "UCINNpGcgSF8kgnMQj0-CRQA": {
+      "name": "Varsity Football32Playoffs",
+      "videos": [
+        "R4FpGSGGJS8"
+      ],
+      "firstSeen": "2026-11-14T12:39:46.976Z"
+    },
+    "UCzwF9UO-KTo7loy2FC63yGg": {
+      "name": "GaN3sH_GaMiNg ॐ",
+      "videos": [
+        "6KaUc_0Rjwg"
+      ],
+      "firstSeen": "2026-11-14T12:39:46.976Z"
+    },
+    "UC3MRlPJtAXszgPpc5eV9vkQ": {
+      "name": "Wicked",
+      "videos": [
+        "fYjzU-oCe1c"
+      ],
+      "firstSeen": "2026-11-14T12:39:46.976Z"
+    },
+    "UC1LjXEU4GpUF026wf80bfcw": {
+      "name": "AdamantiumWoL",
+      "videos": [
+        "CHjoyCZW-U0"
+      ],
+      "firstSeen": "2026-11-14T12:39:46.976Z"
+    },
+    "UC30_06uwhUOt55XvHDVLuxA": {
+      "name": "MAXKEIBA-GAMINGch",
+      "videos": [
+        "k-6ywgK3dT8"
+      ],
+      "firstSeen": "2026-11-14T12:39:46.976Z"
+    },
+    "UCRTTtMCMaxoKT11U1MekmwQ": {
+      "name": "Atlasbasket",
+      "videos": [
+        "MFFQLPlyeH4"
+      ],
+      "firstSeen": "2026-11-14T12:39:46.976Z"
+    },
+    "UCnaiVkYRT1MXLK3_hVo2ZrQ": {
+      "name": "Krael1c",
+      "videos": [
+        "h0TcsxHRfbY"
+      ],
+      "firstSeen": "2026-11-14T12:39:46.976Z"
+    },
+    "UCkbagLV7cSm9yk2SPoWE-hw": {
+      "name": "iWatchBattles_JKG",
+      "videos": [
+        "mPoypB9pq9Q"
+      ],
+      "firstSeen": "2026-11-14T12:39:46.976Z"
+    },
+    "UCaDgtcBbHXWKa-sJW5lyx-A": {
+      "name": "L.A. The Division ",
+      "videos": [
+        "jKVnM6GRI64"
+      ],
+      "firstSeen": "2026-11-14T12:39:46.976Z"
     }
   }
 }
