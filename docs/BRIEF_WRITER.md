@@ -23,7 +23,7 @@ Chinese 「重點整理」 for stories that don't have one yet, then pushes. A p
 1. `git pull`.
 2. Run `node scripts/missing-briefs.ts`. It prints the newest edition's stories with no 重點整理 (keys of
    `data/briefs.zh.json` → `items`). Use exactly that list; don't write your own check. Empty `missing` → stop (no commit).
-   `needsZhTitle: true` → also do step 5 for that story.
+   `needsZhTitle: true` → also do step 5 for that story. `hasBrief: true` → it already has its 重點整理: do only step 5.
 3. For each missing story (at most 10 per run), read its `sourceUrl`:
    - Ubisoft / other web pages: fetch the page.
    - Steam (`store.steampowered.com/news/...`): the page is script-rendered; use

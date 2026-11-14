@@ -23,8 +23,10 @@ for (const f of files) {
   if (e.fixture) continue;
   const pending = (v?: string) => !v || v === 'pending';
   const missing = (e.items as { id: string; sourceId: string; sourceUrl: string; title_orig: string; headline_zhHant?: string; summary_zhHant?: string }[])
-    .filter((i) => !briefs[i.id])
+    // Also stories that have a 重點整理 but still no Chinese title/summary (Chinese pages hide those).
+    .filter((i) => !briefs[i.id] || ((pending(i.headline_zhHant) || pending(i.summary_zhHant)) && !tr[i.id]))
     .map((i) => ({
+      hasBrief: Boolean(briefs[i.id]),
       id: i.id,
       sourceId: i.sourceId,
       sourceUrl: i.sourceUrl,
