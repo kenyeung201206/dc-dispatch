@@ -1,6 +1,57 @@
 {
   "videos": [
     {
+      "id": "wsuA8YEp56A",
+      "title": "FIRST LOOK At The Division 2: Spearfall...",
+      "channelName": "RogueGold",
+      "channelUrl": "https://www.youtube.com/channel/UCRbAtGPNumGV868iZ8brEDw",
+      "publishedAt": "2026-11-13T23:26:28.000Z",
+      "official": false,
+      "row": "more",
+      "checkedAt": "2026-11-14T00:50:17.170Z",
+      "via": "youtube-api",
+      "rumour": true
+    },
+    {
+      "id": "K2Sc297lKsU",
+      "title": "8 MAJOR CHANGES To Gear Sets! (HUGE BUFFS) Plus Legendary Open World! | The Division 2",
+      "channelName": "The Gaming Brigade",
+      "channelUrl": "https://www.youtube.com/channel/UCnqbdVhRhYh5KQpDtKz8ksg",
+      "publishedAt": "2026-11-13T23:22:20.000Z",
+      "durationSec": 558,
+      "official": false,
+      "row": "patch-breakdowns",
+      "checkedAt": "2026-11-14T00:50:17.170Z",
+      "via": "youtube-api",
+      "rumour": false
+    },
+    {
+      "id": "ympkoJDwYQk",
+      "title": "🔴 LIVE - NEW CENTRAL PARK EVENT PASS! REWARDS & GOLDEN BULLET! | The Division 2",
+      "channelName": "MrNellyGB",
+      "channelUrl": "https://www.youtube.com/channel/UCSK3ua3HmB81yyGl8V7bsvw",
+      "publishedAt": "2026-11-13T22:43:43.000Z",
+      "durationSec": 9079,
+      "official": false,
+      "row": "more",
+      "checkedAt": "2026-11-14T00:50:17.170Z",
+      "via": "youtube-search",
+      "rumour": false
+    },
+    {
+      "id": "LjP_fe9SZNw",
+      "title": "*FARM THESE NOW* The Division 2: Red Moon Bounties Drop RAID, INCURSION, & Other EXCLUSIVE Exotics!",
+      "channelName": "Kamikazevondoom",
+      "channelUrl": "https://www.youtube.com/channel/UCWd5S9-AEf26j0wY3P8TOhw",
+      "publishedAt": "2026-11-13T22:32:19.000Z",
+      "durationSec": 972,
+      "official": false,
+      "row": "more",
+      "checkedAt": "2026-11-14T00:50:17.170Z",
+      "via": "youtube-api",
+      "rumour": false
+    },
+    {
       "id": "Uib1EptKc10",
       "title": "This Regulus Build Is RIDICULOUS With Golden Bullet! | The Division 2",
       "channelName": "King Macho",
@@ -9,7 +60,7 @@
       "durationSec": 237,
       "official": false,
       "row": "build-guides",
-      "checkedAt": "2026-11-13T22:39:56.032Z",
+      "checkedAt": "2026-11-14T00:50:17.170Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -22,7 +73,7 @@
       "durationSec": 24537,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-13T22:39:56.032Z",
+      "checkedAt": "2026-11-14T00:50:17.170Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -35,7 +86,7 @@
       "durationSec": 7818,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-13T22:39:56.032Z",
+      "checkedAt": "2026-11-14T00:50:17.170Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -61,7 +112,7 @@
       "durationSec": 3913,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-13T22:39:56.032Z",
+      "checkedAt": "2026-11-14T00:50:17.170Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -74,7 +125,7 @@
       "durationSec": 51,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-13T22:39:56.032Z",
+      "checkedAt": "2026-11-14T00:50:17.170Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -86,9 +137,9 @@
       "publishedAt": "2026-11-13T16:05:10.000Z",
       "durationSec": 594,
       "official": false,
-      "row": "intel",
-      "checkedAt": "2026-11-13T22:39:56.032Z",
-      "via": "youtube-search",
+      "row": "more",
+      "checkedAt": "2026-11-14T00:50:17.170Z",
+      "via": "youtube-api",
       "rumour": false
     },
     {
@@ -100,21 +151,8 @@
       "durationSec": 147,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-13T22:39:56.032Z",
+      "checkedAt": "2026-11-14T00:50:17.170Z",
       "via": "youtube-api",
-      "rumour": false
-    },
-    {
-      "id": "ympkoJDwYQk",
-      "title": "🔴 LIVE - NEW CENTRAL PARK EVENT PASS! REWARDS & GOLDEN BULLET! | The Division 2",
-      "channelName": "MrNellyGB",
-      "channelUrl": "https://www.youtube.com/channel/UCSK3ua3HmB81yyGl8V7bsvw",
-      "publishedAt": "2026-11-13T15:17:28.000Z",
-      "durationSec": 9079,
-      "official": false,
-      "row": "more",
-      "checkedAt": "2026-11-13T22:39:56.032Z",
-      "via": "youtube-search",
       "rumour": false
     },
     {
@@ -126,7 +164,7 @@
       "durationSec": 120,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-13T22:39:56.032Z",
+      "checkedAt": "2026-11-14T00:50:17.170Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -139,7 +177,7 @@
       "durationSec": 7959,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-13T22:39:56.032Z",
+      "checkedAt": "2026-11-14T00:50:17.170Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -152,7 +190,7 @@
       "durationSec": 179,
       "official": false,
       "row": "patch-breakdowns",
-      "checkedAt": "2026-11-13T22:39:56.032Z",
+      "checkedAt": "2026-11-14T00:50:17.170Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -165,7 +203,7 @@
       "durationSec": 4102,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-13T22:39:56.032Z",
+      "checkedAt": "2026-11-14T00:50:17.170Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -178,7 +216,7 @@
       "durationSec": 732,
       "official": false,
       "row": "build-guides",
-      "checkedAt": "2026-11-13T22:39:56.032Z",
+      "checkedAt": "2026-11-14T00:50:17.170Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -191,7 +229,7 @@
       "durationSec": 32,
       "official": false,
       "row": "intel",
-      "checkedAt": "2026-11-13T22:39:56.032Z",
+      "checkedAt": "2026-11-14T00:50:17.170Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -204,7 +242,7 @@
       "durationSec": 22111,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-13T22:39:56.032Z",
+      "checkedAt": "2026-11-14T00:50:17.170Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -217,7 +255,7 @@
       "durationSec": 244,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-13T22:39:56.032Z",
+      "checkedAt": "2026-11-14T00:50:17.170Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -230,7 +268,7 @@
       "durationSec": 203,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-13T22:39:56.032Z",
+      "checkedAt": "2026-11-14T00:50:17.170Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -243,7 +281,7 @@
       "durationSec": 4472,
       "official": false,
       "row": "patch-breakdowns",
-      "checkedAt": "2026-11-13T22:39:56.032Z",
+      "checkedAt": "2026-11-14T00:50:17.170Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -256,7 +294,7 @@
       "durationSec": 4833,
       "official": false,
       "row": "patch-breakdowns",
-      "checkedAt": "2026-11-13T20:47:29.293Z",
+      "checkedAt": "2026-11-14T00:50:17.170Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -269,7 +307,7 @@
       "durationSec": 30,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-13T22:39:56.032Z",
+      "checkedAt": "2026-11-14T00:50:17.170Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -282,7 +320,7 @@
       "durationSec": 623,
       "official": false,
       "row": "patch-breakdowns",
-      "checkedAt": "2026-11-13T22:39:56.032Z",
+      "checkedAt": "2026-11-14T00:50:17.170Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -295,7 +333,7 @@
       "durationSec": 1328,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-13T22:39:56.032Z",
+      "checkedAt": "2026-11-14T00:50:17.170Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -308,7 +346,7 @@
       "durationSec": 22669,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-13T22:39:56.032Z",
+      "checkedAt": "2026-11-14T00:50:17.170Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -321,7 +359,7 @@
       "durationSec": 910,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-13T22:39:56.032Z",
+      "checkedAt": "2026-11-14T00:50:17.170Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -334,7 +372,7 @@
       "durationSec": 1532,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-13T22:39:56.032Z",
+      "checkedAt": "2026-11-14T00:50:17.170Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -347,7 +385,7 @@
       "durationSec": 346,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-13T22:39:56.032Z",
+      "checkedAt": "2026-11-14T00:50:17.170Z",
       "via": "youtube-search",
       "rumour": false
     },
@@ -360,7 +398,7 @@
       "durationSec": 5282,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-13T22:39:56.032Z",
+      "checkedAt": "2026-11-14T00:50:17.170Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -373,7 +411,7 @@
       "durationSec": 179,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-13T22:39:56.032Z",
+      "checkedAt": "2026-11-14T00:50:17.170Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -386,7 +424,7 @@
       "durationSec": 66,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-13T22:39:56.032Z",
+      "checkedAt": "2026-11-14T00:50:17.170Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -399,48 +437,9 @@
       "durationSec": 41,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-13T22:39:56.032Z",
+      "checkedAt": "2026-11-14T00:50:17.170Z",
       "via": "youtube-api",
       "rumour": true
-    },
-    {
-      "id": "9G1irbgqx2E",
-      "title": "*BREAKING NEWS* The Division 2: LEGENDARY OPEN WORLD, NEW PROTOTYPE, NEW ESCALATIONS, & More...",
-      "channelName": "Kamikazevondoom",
-      "channelUrl": "https://www.youtube.com/channel/UCWd5S9-AEf26j0wY3P8TOhw",
-      "publishedAt": "2026-11-12T17:37:21.000Z",
-      "durationSec": 754,
-      "official": false,
-      "row": "more",
-      "checkedAt": "2026-11-13T20:47:29.293Z",
-      "via": "youtube-api",
-      "rumour": false
-    },
-    {
-      "id": "20OWgfeB02w",
-      "title": "LEGENDARY OPEN WORLD and New LEGENDARY MISSIONS! #thedivision2 #Y8S4 #LegendaryOpenWorld",
-      "channelName": "ManaWar Gaming",
-      "channelUrl": "https://www.youtube.com/channel/UCrLMaFhu9SYwosWBgqm0tMQ",
-      "publishedAt": "2026-11-12T17:35:10.000Z",
-      "durationSec": 179,
-      "official": false,
-      "row": "more",
-      "checkedAt": "2026-11-13T22:39:56.032Z",
-      "via": "youtube-api",
-      "rumour": false
-    },
-    {
-      "id": "C_pxrvEYgcA",
-      "title": "Legendary Open World + New Main Missions | The Division 2",
-      "channelName": "The Gaming Brigade",
-      "channelUrl": "https://www.youtube.com/channel/UCnqbdVhRhYh5KQpDtKz8ksg",
-      "publishedAt": "2026-11-12T17:15:21.000Z",
-      "durationSec": 983,
-      "official": false,
-      "row": "more",
-      "checkedAt": "2026-11-12T20:44:24.615Z",
-      "via": "youtube-api",
-      "rumour": false
     },
     {
       "id": "cUeQ0dbbvLo",
@@ -490,7 +489,7 @@
       "publishedAt": "2026-11-02T13:48:39.000Z",
       "official": true,
       "row": "more",
-      "checkedAt": "2026-11-13T22:39:56.032Z",
+      "checkedAt": "2026-11-14T00:50:17.170Z",
       "via": "ubisoft-page",
       "rumour": false
     },
@@ -503,7 +502,7 @@
       "publishedAt": "2026-10-30T18:16:35.000Z",
       "official": true,
       "row": "trailers",
-      "checkedAt": "2026-11-13T22:39:56.032Z",
+      "checkedAt": "2026-11-14T00:50:17.170Z",
       "via": "ubisoft-page",
       "rumour": false
     },
