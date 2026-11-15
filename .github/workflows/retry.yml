@@ -3,7 +3,7 @@ name: Auto-retry
 # When the robot (Daily edition), the loot run, publishing write-ups or CI fails:
 # 1. record: write what broke into data/problems.json (failed steps + the error lines), so the self-repair
 #    routine (docs/SELF_REPAIR.md, a cloud Claude routine, hourly) can read it, fix the cause and mark it fixed;
-# 2. retry: re-run the failed job once, 5 minutes later, so a network/Cloudflare/GitHub blip doesn't cost an
+# 2. retry: re-run the failed job once, 1 minute later, so a network/Cloudflare/GitHub blip doesn't cost an
 #    update. Not when it was already published in safe mode (failed only at "Report problems"), not for CI,
 #    and never a retry of a retry.
 on:
@@ -59,7 +59,7 @@ jobs:
           failed=$(gh run view "$RUN" --repo "$REPO" --json jobs --jq '[.jobs[].steps[] | select(.conclusion == "failure") | .name] | join(", ")')
           echo "Failed steps: $failed"
           if [ "$failed" = "Report problems" ]; then echo "Already published (safe mode): not retrying."; exit 0; fi
-          sleep 300
+          sleep 60 # GitHub bills waiting time too
           gh run rerun "$RUN" --repo "$REPO" --failed
           echo "::notice::Re-running \"$NAME\" (failed at: $failed)."
         env:

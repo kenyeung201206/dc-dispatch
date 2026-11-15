@@ -3,6 +3,13 @@ name: CI
 on:
   push:
     branches: [main]
+    # Data and text-only pushes (the robot's and the writer's, many a day) don't change code: no full test run.
+    # They are still checked: the robot and "Publish write-ups" run the unit tests before publishing.
+    paths-ignore:
+      - 'data/**'
+      - 'docs/**'
+      - '**/*.md'
+      - 'public/icons/**'
   pull_request:
 
 env:
