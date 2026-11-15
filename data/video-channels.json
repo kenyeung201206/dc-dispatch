@@ -287,6 +287,26 @@
       "id": "UCc156vAGD6rJOHoqBBkyaNQ",
       "name": "paulik40",
       "official": false
+    },
+    {
+      "id": "UC_7wENYjAtQAYis5bE8aC9A",
+      "name": "H0T P1CKLE",
+      "official": false
+    },
+    {
+      "id": "UCGMomYycNr7UiMEGmSCXCFA",
+      "name": "Eugine Real Talk TV",
+      "official": false
+    },
+    {
+      "id": "UCgDdszBhhpqkNQc6t4YOCNw",
+      "name": "TheHardwareGuru",
+      "official": false
+    },
+    {
+      "id": "UCWwC9omdiFyZuI_9Y6c9qbA",
+      "name": "Kenneth Koerperich",
+      "official": false
     }
   ],
   "discovered": {
@@ -413,14 +433,6 @@
       ],
       "firstSeen": "2026-11-14T05:20:56.435Z"
     },
-    "UCGMomYycNr7UiMEGmSCXCFA": {
-      "name": "Eugine Real Talk TV",
-      "videos": [
-        "1w6a5Kpsmls",
-        "Lmj2_vZD_fU"
-      ],
-      "firstSeen": "2026-11-14T05:20:56.435Z"
-    },
     "UCrce-BAxXIWyQM42i7GyiLQ": {
       "name": "Skyrider Infinity",
       "videos": [
@@ -452,7 +464,8 @@
     "UC1FqN404t0IwX_MEoMAZ0EA": {
       "name": "Afflicted Gamer",
       "videos": [
-        "Sy4FSunsjQQ"
+        "Sy4FSunsjQQ",
+        "KYADK5M03jg"
       ],
       "firstSeen": "2026-11-14T05:20:56.435Z"
     },
@@ -556,14 +569,6 @@
       ],
       "firstSeen": "2026-11-14T05:20:56.435Z"
     },
-    "UC_7wENYjAtQAYis5bE8aC9A": {
-      "name": "H0T P1CKLE",
-      "videos": [
-        "2RdBh5CS8dg",
-        "YfUSOHweCUE"
-      ],
-      "firstSeen": "2026-11-14T05:20:56.435Z"
-    },
     "UCM2cajIxkL988BFM-qFUMJg": {
       "name": "La Taberna de Wirmin",
       "videos": [
@@ -581,7 +586,8 @@
     "UC_aE7gapu3LVrSaG9xJsQ6w": {
       "name": "GAMINGGODTV",
       "videos": [
-        "3ohTgIWESBQ"
+        "3ohTgIWESBQ",
+        "9Bk76u_FtO4"
       ],
       "firstSeen": "2026-11-14T05:20:56.435Z"
     },
@@ -684,14 +690,6 @@
       "name": "Stronblack",
       "videos": [
         "Z5aogzQB-vA"
-      ],
-      "firstSeen": "2026-11-14T05:20:56.435Z"
-    },
-    "UCgDdszBhhpqkNQc6t4YOCNw": {
-      "name": "TheHardwareGuru",
-      "videos": [
-        "Ufa057X7CUc",
-        "tk-w7emvplU"
       ],
       "firstSeen": "2026-11-14T05:20:56.435Z"
     },
@@ -888,14 +886,6 @@
       "name": "Steve M Robledo",
       "videos": [
         "fiNZH_N96hU"
-      ],
-      "firstSeen": "2026-11-14T06:51:29.604Z"
-    },
-    "UCWwC9omdiFyZuI_9Y6c9qbA": {
-      "name": "Kenneth Koerperich",
-      "videos": [
-        "Jd-WbCviAAw",
-        "K5P4w3pt8CY"
       ],
       "firstSeen": "2026-11-14T06:51:29.604Z"
     },
@@ -1121,7 +1111,8 @@
     "UCsRqSR7hHQpp0JJGS4LpirA": {
       "name": "クニクニゲエム",
       "videos": [
-        "-EDM75TiWfI"
+        "-EDM75TiWfI",
+        "kM63UGfFXOg"
       ],
       "firstSeen": "2026-11-14T10:37:04.410Z"
     },
@@ -1893,6 +1884,160 @@
         "GidDzlDKrkA"
       ],
       "firstSeen": "2026-11-14T22:31:16.400Z"
+    },
+    "UCVGRoO-TssBjIAwgnJaInSw": {
+      "name": "Canedo Himura",
+      "videos": [
+        "yWxV9t4zlyI"
+      ],
+      "firstSeen": "2026-11-15T00:50:39.032Z"
+    },
+    "UC46iCB2F0Yxcs4TwQ-l9GhA": {
+      "name": "Sharkolino Games",
+      "videos": [
+        "agQ_KgzavUY"
+      ],
+      "firstSeen": "2026-11-15T00:50:39.032Z"
+    },
+    "UCxx-lgD9psL-QAamQLER3bQ": {
+      "name": "KR4VEN",
+      "videos": [
+        "bMJREfVg0BQ"
+      ],
+      "firstSeen": "2026-11-15T00:50:39.032Z"
+    },
+    "UC_Dkx3YtGpI4cmqmOpT59iA": {
+      "name": "Sheaffer 117",
+      "videos": [
+        "ZcSCQNHP4N8"
+      ],
+      "firstSeen": "2026-11-15T00:50:39.032Z"
+    },
+    "UCO8ZVWs1MIJIXaNsoClMY3A": {
+      "name": "ジュリアス",
+      "videos": [
+        "_upbI_MWEI0"
+      ],
+      "firstSeen": "2026-11-15T00:50:39.032Z"
+    },
+    "UC3ISPO3xnhdQeGegxAoaiRQ": {
+      "name": "ApeMan0145",
+      "videos": [
+        "zBO7TQwSgkY"
+      ],
+      "firstSeen": "2026-11-15T00:50:39.032Z"
+    },
+    "UCUoT60mkyR81KNIHmEYyeFQ": {
+      "name": "Abrax",
+      "videos": [
+        "oycSeAEUycw"
+      ],
+      "firstSeen": "2026-11-15T00:50:39.032Z"
+    },
+    "UC9f8nxz9eGYwu6YbR4L-Vzw": {
+      "name": "SuGuRio (SuGu)",
+      "videos": [
+        "IaOdHV11Uto"
+      ],
+      "firstSeen": "2026-11-15T00:50:39.032Z"
+    },
+    "UC0AACojB5bCd0A9HRbEGa0Q": {
+      "name": "Dante L",
+      "videos": [
+        "zRANlNevafM"
+      ],
+      "firstSeen": "2026-11-15T00:50:39.032Z"
+    },
+    "UC6-caXeMl9a15EayiPg3RgA": {
+      "name": "Angry Dragon Gameing",
+      "videos": [
+        "dUUJEayKUFU"
+      ],
+      "firstSeen": "2026-11-15T00:50:39.032Z"
+    },
+    "UCzLxrvEO7r13OpyV6Fq_SHQ": {
+      "name": "RICK SIGALES",
+      "videos": [
+        "EAGfnVu4Jmg"
+      ],
+      "firstSeen": "2026-11-15T00:50:39.032Z"
+    },
+    "UCNUT8dvcpioXc97n-58MakQ": {
+      "name": "Big606mike ",
+      "videos": [
+        "qHGS9kwILzo"
+      ],
+      "firstSeen": "2026-11-15T00:50:39.032Z"
+    },
+    "UCwEhksf7w3ZE6LDkxRdE_Ww": {
+      "name": "Dexsimao",
+      "videos": [
+        "F7QihbeTf80"
+      ],
+      "firstSeen": "2026-11-15T00:50:39.032Z"
+    },
+    "UCHwQ7wDIYS0oHbcTN9pXxbg": {
+      "name": "Seb. M.",
+      "videos": [
+        "RkEx3N-Ck0o"
+      ],
+      "firstSeen": "2026-11-15T00:50:39.032Z"
+    },
+    "UCzu967viUqLOzQgnKwYElrg": {
+      "name": "MassPistols",
+      "videos": [
+        "Xn7925npXg8"
+      ],
+      "firstSeen": "2026-11-15T00:50:39.032Z"
+    },
+    "UCdtbPLL6Tl3CpszrsJyRLeQ": {
+      "name": "Curts Corner Of Curiosities",
+      "videos": [
+        "sX4MzywdsHI"
+      ],
+      "firstSeen": "2026-11-15T00:50:39.032Z"
+    },
+    "UCsTyUUeTIz5D0zuFTU47d4w": {
+      "name": "🐈茶々丸のゲーム小屋🐈",
+      "videos": [
+        "wnf6GWLcSiY"
+      ],
+      "firstSeen": "2026-11-15T00:50:39.032Z"
+    },
+    "UCtz_ssyeyWgRTBT01NajgrA": {
+      "name": "BIG-POTATOO بيج بوتيتو",
+      "videos": [
+        "_gstcfldU-o"
+      ],
+      "firstSeen": "2026-11-15T00:50:39.032Z"
+    },
+    "UCklwxZo7iHyB1rPg8gC9ioQ": {
+      "name": "九州の民あきぽん",
+      "videos": [
+        "IGHWLMebmig"
+      ],
+      "firstSeen": "2026-11-15T00:50:39.032Z"
+    },
+    "UCxqGbgmmFIlOgI9ymx-LY3A": {
+      "name": "Clã Noob The Division ",
+      "videos": [
+        "2D7qynq6sCc"
+      ],
+      "firstSeen": "2026-11-15T00:50:39.032Z"
+    },
+    "UCOVMisvigwfrnOrQT3yy3Iw": {
+      "name": "Kudoji_Ultra",
+      "videos": [
+        "W_kTSWqKeN4"
+      ],
+      "firstSeen": "2026-11-15T00:50:39.032Z"
+    },
+    "UC1Y3GafcgRR8VRa0S9GMF_w": {
+      "name": "mirza米孜",
+      "videos": [
+        "pXdTvicvkko"
+      ],
+      "firstSeen": "2026-11-15T00:50:39.032Z"
     }
   }
 }
