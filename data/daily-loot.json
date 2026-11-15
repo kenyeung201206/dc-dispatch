@@ -1,60 +1,60 @@
 {
- "date": "2026-11-14",
+ "date": "2026-11-15",
  "missions": [
   {
    "place": "墳墓",
-   "reward": "女皇",
-   "kind": "brand"
-  },
-  {
-   "place": "曼寧",
    "reward": "槍套",
    "kind": "slot"
   },
   {
+   "place": "曼寧",
+   "reward": "護膝",
+   "kind": "slot"
+  },
+  {
    "place": "銀行",
-   "reward": "突襲者",
+   "reward": "獵人怒火",
    "kind": "set"
   },
   {
    "place": "歷史博物館",
-   "reward": "技能配件",
-   "kind": "other"
+   "reward": "烏茲娜 ‧ 蓋蒂卡",
+   "kind": "brand"
   },
   {
    "place": "太空總署",
-   "reward": "未來主動權",
+   "reward": "大師",
    "kind": "set"
   }
  ],
  "vendor": [
-  "輕機槍",
-  "背包"
+  "突擊步槍",
+  "手套"
  ],
  "english": [
   {
    "place": "The Tombs",
-   "reward": "Empress International"
-  },
-  {
-   "place": "Manning National Zoo",
    "reward": "Holster"
   },
   {
+   "place": "Manning National Zoo",
+   "reward": "Kneepad"
+  },
+  {
    "place": "Bank Headquarters",
-   "reward": "Strikers Battlegear"
+   "reward": "Hunters Fury"
   },
   {
    "place": "American History Museum",
-   "reward": "Skill Mods"
+   "reward": "Uzina Getica"
   },
   {
    "place": "Space Administration HQ",
-   "reward": "Future Initiative"
+   "reward": "Virtuoso"
   }
  ],
  "title": "",
  "url": "https://prototrack.gg/target-loot/target-loot.php",
  "source": "prototrack",
- "fetchedAt": "2026-11-14T08:44:26.121Z"
+ "fetchedAt": "2026-11-15T09:10:58.014Z"
 }

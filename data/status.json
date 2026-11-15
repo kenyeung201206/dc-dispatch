@@ -1,11 +1,11 @@
 {
-  "lastRun": "2026-11-15T06:55:22.827Z",
-  "durationMs": 26151,
+  "lastRun": "2026-11-15T09:11:22.742Z",
+  "durationMs": 24728,
   "edition": {
     "date": "2026-11-15",
     "number": 12,
-    "items": 45,
-    "zhPending": 26
+    "items": 46,
+    "zhPending": 27
   },
   "sources": [
     {
@@ -39,7 +39,11 @@
     "youtubeApiConfigured": true
   },
   "budget": {
-    "youtubeQuotaUnits": 629,
+    "youtubeQuotaUnits": 635,
     "costUsd": 0
-  }
+  },
+  "newTopics": 3,
+  "recentNewTopics": [
+    3
+  ]
 }
