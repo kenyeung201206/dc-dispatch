@@ -8799,6 +8799,38 @@
         }
       ],
       "written": "2026-11-15"
+    },
+    "3zscxu": {
+      "points": [
+        "影片介紹（依標題）：GCROCK XTRA 頻道（Lady Rock 的直播與額外內容）在第 8 年 Spearfall PTS 首度挑戰新的 Legendary 難度任務",
+        "說明稱 PTS 新增 4 個 Legendary 任務，這次直接打 Grand Washington Hotel",
+        "為第一次嘗試的未剪輯實錄，說明表示沒看攻略、沒有教學",
+        "為 PTS 內容，正式上線前可能變動"
+      ],
+      "tables": [
+        {
+          "title": "影片重點",
+          "columns": [
+            "項目",
+            "內容"
+          ],
+          "rows": [
+            [
+              "新增 Legendary 任務數",
+              "4"
+            ],
+            [
+              "本次任務",
+              "Grand Washington Hotel"
+            ],
+            [
+              "性質",
+              "首次嘗試實錄"
+            ]
+          ]
+        }
+      ],
+      "written": "2026-11-15"
     }
   }
 }
