@@ -5,6 +5,8 @@ import { hasZh, withZh } from './zh.ts';
 import { zhTerms } from './terms.ts';
 import skippedRaw from '../../data/skipped-stories.json' with { type: 'json' };
 
+/** 巴哈's daily 戰鬥升級 thread has its own box; it is not a news story (owner, 2026-11-15). */
+const isDailyLootThread = (i: { sourceId: string; title_orig: string }) => i.sourceId === 'bahamut' && /每日戰鬥升級/.test(i.title_orig);
 const skipped = (skippedRaw as { items: Record<string, unknown> }).items;
 const files = import.meta.glob<{ default: unknown }>('../../data/editions/*.json', { eager: true });
 
@@ -16,7 +18,7 @@ export const editions: Edition[] = Object.entries(files)
     for (const item of parsed.data.items) if (item.imageId) getImage(item.imageId); // fails on a bad id
     // Editor translations fill English-only stories for Chinese readers. Stories the writer found nothing to
     // summarise from (data/skipped-stories.json) are left out.
-    return { ...parsed.data, items: parsed.data.items.filter((i) => !(i.id in skipped)).map(withZh) };
+    return { ...parsed.data, items: parsed.data.items.filter((i) => !(i.id in skipped) && !isDailyLootThread(i)).map(withZh) };
   })
   .sort((a, b) => b.date.localeCompare(a.date));
 
