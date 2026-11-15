@@ -32,6 +32,8 @@ import { parseUbisoftNews } from './sources/ubisoft.ts';
 import { parseBahamutBoard, parseBahamutFirstPost, parseBahamutHot } from './sources/bahamut.ts';
 import { updateDailyLoot } from './daily-loot.ts';
 import { trackHealth, type SourceHealth } from './health.ts';
+import { lowVolume } from './volume.ts';
+import { record as recordProblem, type Problems } from '../scripts/record-problem.ts';
 import { aiSummaries, needsAi } from './ai.ts';
 import { aiBriefs } from './ai-briefs.ts';
 
@@ -340,10 +342,28 @@ async function main() {
   }
 
   // Status page data: only counts and booleans, never key values.
+  // Update volume (owner requirement: 3–6 new topics per update). Three low updates in a row is a bug: it goes to
+  // data/problems.json, which starts the self-repair routine (docs/SELF_REPAIR.md). No email unless it stays unfixed.
+  const nowIso = now.toISOString();
+  const newTopics = edition.items.filter((i) => i.firstSeenAt === nowIso).length;
+  const prevStatus = await readJson<{ recentNewTopics?: number[] }>(join(outDir, 'status.json'), {});
+  const recentNewTopics = [...(prevStatus.recentNewTopics ?? []), newTopics].slice(-6);
+  if (!dryRun && lowVolume(recentNewTopics)) {
+    const file = await readJson<Problems>('data/problems.json', { _note: '', problems: [] });
+    recordProblem(
+      file,
+      { workflow: 'Daily edition', url: '', failedSteps: 'update volume', log: `Low update volume: new topics in the last updates ${recentNewTopics.join(', ')} (owner requires 3–6 per update, DIVISION2_SITE_BRIEF.md §4.3a)` },
+      now,
+    );
+    await writeFile('data/problems.json', JSON.stringify(file, null, 1) + '\n');
+    log('warn', 'low update volume', { recentNewTopics });
+  }
   const status = RunStatusSchema.parse({
     lastRun: new Date().toISOString(),
     durationMs: Date.now() - startedAt,
     edition: { date, number: edition.editionNumber, items: edition.items.length, zhPending: edition.items.filter((i) => i.headline_zhHant === 'pending').length },
+    newTopics,
+    recentNewTopics,
     sources: trackHealth(
       now,
       [...results.map((r) => ({ id: r.sourceId, ok: r.ok, items: r.items.length, ...(r.note ? { note: r.note } : {}) })), hotHealth],

@@ -301,6 +301,10 @@ export const RunStatusSchema = z.object({
   budget: z.object({ youtubeQuotaUnits: z.number().int(), costUsd: z.number() }),
   /** Set when the last update was published in safe mode (a data-dependent check failed; scripts/publish-gate.ts). */
   degraded: z.object({ at: z.iso.datetime({ offset: true }), failed: z.array(z.string()) }).optional(),
+  /** New topics (stories seen for the first time) in this update, and in the last few (newest last). The owner
+   *  requires 3–6 per update (DIVISION2_SITE_BRIEF.md §4.3a). */
+  newTopics: z.number().int().min(0).optional(),
+  recentNewTopics: z.array(z.number().int().min(0)).optional(),
 });
 export type RunStatus = z.infer<typeof RunStatusSchema>;
 

@@ -77,7 +77,7 @@ jobs:
         run: |
           git config user.name "dc-dispatch-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/editions data/images.json data/patches.json data/videos.json data/status.json data/exotics.json data/guides.json data/events.json data/creator-posts.json data/briefs.zh.json data/source-notes.json data/daily-loot.json data/brands.json data/places.json data/hot-topics.json data/video-channels.json public/icons
+          git add data/editions data/images.json data/patches.json data/videos.json data/status.json data/exotics.json data/guides.json data/events.json data/creator-posts.json data/briefs.zh.json data/source-notes.json data/daily-loot.json data/brands.json data/places.json data/hot-topics.json data/video-channels.json data/problems.json public/icons
           if [ -f data/ai-cache.json ]; then git add data/ai-cache.json; fi
           if git diff --cached --quiet; then echo "No data changes"; else
             git commit -m "chore(data): edition $(TZ=Asia/Taipei date +%F)"

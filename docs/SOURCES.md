@@ -34,3 +34,20 @@ Checked 2026-11-04. Reliability: A = official, B = established press/creator, C 
 ## YouTube channel allowlist (initial, edit `data/video-channels.json`)
 Found via 2026 Division 2 build/guide videos; each passed the embed check today: Ubisoft (official), GCROCK, widdz, Died Again Gaming, Kamikazevondoom. Only uploads mentioning "Division" from the last 60 days are used.
 
+
+## Checked 2026-11-15 (looking for more daily Division 2 topics)
+
+| Source | Decision | Why |
+|---|---|---|
+| itemlevel.net | reject | robots.txt blocks ClaudeBot / Claude-Web / anthropic-ai (our writer is an AI) |
+| devtrackers.gg (the-division) | reject | same: blocks Anthropic's agents |
+| keengamer.com | reject | blocks ClaudeBot |
+| gamespot.com | reject | blocks Anthropic's agents |
+| pcgamesn.com | reject for now | allowed, but no Division 2 feed (main feed had 0 Division items) |
+| gnn.gamer.com.tw (巴哈 GNN) | reject for now | allowed, feed had 0 Division items; re-check at a big launch |
+| allthings.how | reject | feeds return 410/403 |
+| discussions.ubisoft.com | reject | Ubisoft's forums have closed (moved to Discord) |
+| reddit.com/r/thedivision | reject | robots.txt disallows all bots (checked 2026-11-09) |
+
+So the daily volume comes from YouTube (wide searches, best ≤6 per update, favourites first), plus Ubisoft, Steam
+and 巴哈. Owner requirement: 3–6 new topics per update (DIVISION2_SITE_BRIEF.md §4.3a).

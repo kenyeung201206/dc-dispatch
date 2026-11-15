@@ -179,6 +179,19 @@ Find and summarise (with links): Ubisoft's current **fan site / fan content / br
 - Mark confidence honestly. Rumours and "someone on a forum says" never appear on the Front Page without the label.
 - Detect **follow-ups** (e.g. a glitch later patched) and update the original item's status instead of making duplicates.
 
+### 4.3a Update volume — owner requirement (2026-11-15, non-negotiable)
+- **Every update (about every 2 hours) must bring 3–6 new topics** to the site: new, interesting and useful for
+  Division 2 players. Not 0–1, and not a flood: never more than 6 new video stories per update.
+- Search **all** sources deeply (official news, 巴哈, YouTube and any allowed news source), then **publish only the
+  best 3–6**. Wide searching is for choosing, not for showing more.
+- New uploads from favourite creators (灰帽特工, the owner's channel 特工阿肥 — see `data/video-channels.json`
+  `favourites`) are always included.
+- A picked story must not silently disappear: if the writer can't summarise it, it still gets a Chinese title and a
+  short honest introduction from its title; it is dropped only when there is truly nothing to say.
+- The daily 戰鬥升級 post is **not** a topic (it has its own box).
+- If updates keep bringing fewer than 3 new topics, treat it as a bug to fix (find more sources or fix selection),
+  not as "there was no news".
+
 ### 4.4 Summaries & translation (AI-assisted, human-verifiable)
 - Use the Anthropic API (model chosen from current docs; key via `ANTHROPIC_API_KEY`) to write **short original summaries** (≤ 80 words) — **never republish full articles or long quotes**. Quote ≤ 25 words max where needed, with attribution.
 - Output EN and 繁體中文 natively (not machine-literal). Use `data/glossary.json` for consistent official terms (e.g. Agent, SHD, Dark Zone, Specializations, named items, brand/gear-set names) — **research official Taiwan localisation terms** for The Division 2 and justify entries with sources.

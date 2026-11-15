@@ -20,6 +20,14 @@ what you did. The owner reads Chinese and wants the site to fix itself; they don
         `data/brands.json` or `data/places.json` **only with a name confirmed by a source** (Ubisoft 繁中, a 巴哈
         post, ProtoTrack); say which source in the commit message. No confirmed name → see step 4;
       - code that works in Node but not on Cloudflare → fix it and make sure `scripts/smoke-functions.ts` covers it.
+      - **Low update volume** (`failedSteps: "update volume"`): the owner requires 3–6 new topics per update
+        (`DIVISION2_SITE_BRIEF.md` §4.3a). Look at `data/status.json` `recentNewTopics`, the newest edition (which
+        stories are new, from which source), `data/skipped-stories.json` (is the writer dropping picked videos?)
+        and `data/video-channels.json` (searches, follow list). Fix the selection or the writer rules so good stories
+        get through. Never show more than 6 new videos per update, never add a source whose robots.txt disallows
+        bots or that blocks Anthropic's agents (ClaudeBot, Claude-Web, anthropic-ai), never lower the bar by
+        publishing empty or non-Chinese/English videos. If a quiet news day is the real cause (nothing new anywhere),
+        set `fixed` with a note saying so.
    4. Set `"status": "needs-owner"` (and stop working on it) when the fix needs any of: editing anything in
       `.github/workflows/`, secrets or settings, deleting or weakening a test just to make it pass, a game fact or
       Chinese name you can't confirm, or more than a small, clearly safe change. Write a short `note` in Traditional
