@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-15T10:38:45.977Z",
+  "updatedAt": "2026-11-15T12:42:15.029Z",
   "topics": [
     {
       "id": "32876",
@@ -20,6 +20,15 @@
       "lastReplyAt": "2026-11-11T04:03:00.000Z"
     },
     {
+      "id": "32885",
+      "tag": "問題",
+      "title": "【問題】A8 副武器推薦",
+      "url": "https://forum.gamer.com.tw/C.php?bsn=24460&snA=32885",
+      "replies": 13,
+      "views": 1588,
+      "lastReplyAt": "2026-11-09T08:35:00.000Z"
+    },
+    {
       "id": "32892",
       "tag": "問題",
       "title": "【問題】誤刪 Division 2 遊戲角色還救得回來嗎？",
@@ -29,22 +38,13 @@
       "lastReplyAt": "2026-11-12T04:33:00.000Z"
     },
     {
-      "id": "32885",
+      "id": "32883",
       "tag": "問題",
-      "title": "【問題】A8 副武器推薦",
-      "url": "https://forum.gamer.com.tw/C.php?bsn=24460&snA=32885",
-      "replies": 13,
-      "views": 1362,
-      "lastReplyAt": "2026-11-09T08:35:00.000Z"
-    },
-    {
-      "id": "32882",
-      "tag": "閒聊",
-      "title": "【閒聊】虫合 ?!",
-      "url": "https://forum.gamer.com.tw/C.php?bsn=24460&snA=32882",
-      "replies": 11,
-      "views": 1327,
-      "lastReplyAt": "2026-11-08T12:17:00.000Z"
+      "title": "【問題】中央公園奇特突擊步槍能夠重複刷取嗎？",
+      "url": "https://forum.gamer.com.tw/C.php?bsn=24460&snA=32883",
+      "replies": 10,
+      "views": 2167,
+      "lastReplyAt": "2026-11-11T03:00:00.000Z"
     }
   ]
 }
