@@ -1,7 +1,7 @@
 {
   "date": "2026-11-16",
   "editionNumber": 13,
-  "generatedAt": "2026-11-15T16:35:47.148Z",
+  "generatedAt": "2026-11-15T18:37:29.803Z",
   "meta": {
     "season_en": "Red Horizon",
     "season_zhHant": "Red Horizon 賽季",
@@ -17,7 +17,7 @@
       "title_orig": "The Division 2: Echoes of Central Park Event Pass Twitch Drops",
       "lang_orig": "en",
       "publishedAt": "2026-11-10T16:00:00.000Z",
-      "fetchedAt": "2026-11-15T16:35:47.148Z",
+      "fetchedAt": "2026-11-15T18:37:29.803Z",
       "category": "community",
       "tags": [
         "event",
@@ -39,59 +39,12 @@
         {
           "name": "Ubisoft (via Steam News)",
           "url": "https://store.steampowered.com/news/app/2221490/view/1848664643356077"
-        },
-        {
-          "name": "巴哈姆特 全境封鎖板",
-          "url": "https://forum.gamer.com.tw/C.php?bsn=24460&snA=32884"
         }
       ],
       "media": [],
       "imageId": "ubi-5jeY7kzIeBLvfHja0iBIuX",
       "relatedIds": [],
       "firstSeenAt": "2026-11-10T16:46:28.397Z",
-      "status": "new"
-    },
-    {
-      "id": "15yr4ky",
-      "sourceId": "ubisoft-en",
-      "sourceName": "Ubisoft",
-      "sourceUrl": "https://www.ubisoft.com/en-us/game/the-division/the-division-2/news-updates/1wrUJ1HzY6BF8zzO4AMhJ3/spearfall-pts-patch-notes",
-      "title_orig": "Spearfall PTS Patch Notes",
-      "lang_orig": "en",
-      "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-15T16:35:47.148Z",
-      "category": "updates",
-      "tags": [
-        "known-issue",
-        "season"
-      ],
-      "importance": 72,
-      "confidence": "official",
-      "headline_en": "Spearfall PTS Patch Notes",
-      "headline_zhHant": "pending",
-      "summary_en": "Try what’s coming in the new season and help us shape it before release. The Public Test Server includes updates to Legendary difficulty, Escalation, and…",
-      "summary_zhHant": "pending",
-      "summaryKind": "extract",
-      "alsoReportedBy": [],
-      "media": [],
-      "imageId": "ubi-1wrUJ1HzY6BF8zzO4AMhJ3",
-      "relatedIds": [
-        "1ypems3",
-        "1blg61e",
-        "1e2o3a6",
-        "t35ov9",
-        "1u6r63n",
-        "1113vdw",
-        "cj4ae2",
-        "hej7xr",
-        "1ttmry9",
-        "1gkc4z7",
-        "1rxclrc",
-        "tion2p",
-        "37y6no",
-        "qy8rcm"
-      ],
-      "firstSeenAt": "2026-11-12T16:55:32.847Z",
       "status": "new"
     },
     {
@@ -130,6 +83,49 @@
       }
     },
     {
+      "id": "15yr4ky",
+      "sourceId": "ubisoft-en",
+      "sourceName": "Ubisoft",
+      "sourceUrl": "https://www.ubisoft.com/en-us/game/the-division/the-division-2/news-updates/1wrUJ1HzY6BF8zzO4AMhJ3/spearfall-pts-patch-notes",
+      "title_orig": "Spearfall PTS Patch Notes",
+      "lang_orig": "en",
+      "publishedAt": "2026-11-12T16:00:00.000Z",
+      "fetchedAt": "2026-11-15T18:37:29.803Z",
+      "category": "updates",
+      "tags": [
+        "known-issue",
+        "season"
+      ],
+      "importance": 71,
+      "confidence": "official",
+      "headline_en": "Spearfall PTS Patch Notes",
+      "headline_zhHant": "pending",
+      "summary_en": "Try what’s coming in the new season and help us shape it before release. The Public Test Server includes updates to Legendary difficulty, Escalation, and…",
+      "summary_zhHant": "pending",
+      "summaryKind": "extract",
+      "alsoReportedBy": [],
+      "media": [],
+      "imageId": "ubi-1wrUJ1HzY6BF8zzO4AMhJ3",
+      "relatedIds": [
+        "1ypems3",
+        "1blg61e",
+        "1e2o3a6",
+        "t35ov9",
+        "1u6r63n",
+        "1113vdw",
+        "cj4ae2",
+        "hej7xr",
+        "1ttmry9",
+        "1gkc4z7",
+        "1rxclrc",
+        "tion2p",
+        "37y6no",
+        "qy8rcm"
+      ],
+      "firstSeenAt": "2026-11-12T16:55:32.847Z",
+      "status": "new"
+    },
+    {
       "id": "lmhaez",
       "sourceId": "ubisoft-en",
       "sourceName": "Ubisoft",
@@ -137,7 +133,7 @@
       "title_orig": "[TUY8S3.3] Echoes of Central Park Launch, Crossplay Rollout, Conflict Improvements & More",
       "lang_orig": "en",
       "publishedAt": "2026-11-02T15:45:00.000Z",
-      "fetchedAt": "2026-11-15T16:35:47.148Z",
+      "fetchedAt": "2026-11-15T18:37:29.803Z",
       "category": "updates",
       "tags": [
         "title-update",
@@ -174,7 +170,7 @@
       "title_orig": "The Division 2: Echoes of Central Park DLC is available now!",
       "lang_orig": "en",
       "publishedAt": "2026-11-03T15:00:00.000Z",
-      "fetchedAt": "2026-11-15T16:35:47.148Z",
+      "fetchedAt": "2026-11-15T18:37:29.803Z",
       "category": "missions",
       "tags": [
         "dlc"
@@ -257,6 +253,62 @@
       "status": "new"
     },
     {
+      "id": "126embg",
+      "sourceId": "youtube",
+      "sourceName": "widdzTV",
+      "sourceUrl": "https://www.youtube.com/watch?v=JLazf4EVPPk",
+      "title_orig": "All 4 NEW Legendary Missions + Open World! Full Gameplay (The Division 2 PTS)",
+      "lang_orig": "en",
+      "publishedAt": "2026-11-15T04:57:27.000Z",
+      "fetchedAt": "2026-11-15T18:37:29.803Z",
+      "category": "updates",
+      "tags": [
+        "season",
+        "video"
+      ],
+      "importance": 64,
+      "confidence": "community",
+      "headline_en": "All 4 NEW Legendary Missions + Open World! Full Gameplay (The Division 2 PTS)",
+      "headline_zhHant": "pending",
+      "summary_en": "All four new Legendary missions from the Spearfall PTS (Season 4), uncut, played as a group of four.",
+      "summary_zhHant": "pending",
+      "summaryKind": "extract",
+      "alsoReportedBy": [],
+      "media": [],
+      "videoId": "JLazf4EVPPk",
+      "relatedIds": [],
+      "firstSeenAt": "2026-11-15T18:37:29.803Z",
+      "status": "new"
+    },
+    {
+      "id": "su8034",
+      "sourceId": "youtube",
+      "sourceName": "Kamikazevondoom",
+      "sourceUrl": "https://www.youtube.com/watch?v=iwZ9iygfgSs",
+      "title_orig": "*BREAKING NEWS* The Division 2: NEW LEAD CATCHER MASK, PTS is Live, & EXOTIC TEMP NERF Explained...",
+      "lang_orig": "en",
+      "publishedAt": "2026-11-14T22:44:18.000Z",
+      "fetchedAt": "2026-11-15T18:37:29.803Z",
+      "category": "updates",
+      "tags": [
+        "exotic",
+        "video"
+      ],
+      "importance": 63,
+      "confidence": "community",
+      "headline_en": "*BREAKING NEWS* The Division 2: NEW LEAD CATCHER MASK, PTS is Live, & EXOTIC TEMP NERF Explained...",
+      "headline_zhHant": "pending",
+      "summary_en": "Enjoy! Join this channel to get access to perks: Don't forget to mash that LIKE AND SUBSCRIBE to the channel.",
+      "summary_zhHant": "pending",
+      "summaryKind": "extract",
+      "alsoReportedBy": [],
+      "media": [],
+      "videoId": "iwZ9iygfgSs",
+      "relatedIds": [],
+      "firstSeenAt": "2026-11-15T18:37:29.803Z",
+      "status": "new"
+    },
+    {
       "id": "1ypems3",
       "sourceId": "ubisoft-en",
       "sourceName": "Ubisoft",
@@ -264,12 +316,12 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-15T16:35:47.148Z",
+      "fetchedAt": "2026-11-15T18:37:29.803Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
       ],
-      "importance": 58,
+      "importance": 57,
       "confidence": "official",
       "headline_en": "Known issue: When selecting a Schematic for a Prototype item, the list may show…",
       "headline_zhHant": "pending",
@@ -292,6 +344,61 @@
       }
     },
     {
+      "id": "1gbo9hf",
+      "sourceId": "youtube",
+      "sourceName": "Joker Farina",
+      "sourceUrl": "https://www.youtube.com/watch?v=Z2RZ34Sdrt0",
+      "title_orig": "ARE GUARDIANS EVEN ABLE TO KILL THIS BUILD?! #division2builds #bestbuilds  #shorts",
+      "lang_orig": "en",
+      "publishedAt": "2026-11-14T21:48:57.000Z",
+      "fetchedAt": "2026-11-15T18:37:29.803Z",
+      "category": "builds",
+      "tags": [
+        "video"
+      ],
+      "importance": 57,
+      "confidence": "community",
+      "headline_en": "ARE GUARDIANS EVEN ABLE TO KILL THIS BUILD?! #division2builds #bestbuilds  #shorts",
+      "headline_zhHant": "pending",
+      "summary_en": "🔥 THE DIVISION 2 | ARMAS FORTES, BUILDS META E DICAS DE ENDGAME Seja bem-vindo ao canal!",
+      "summary_zhHant": "pending",
+      "summaryKind": "extract",
+      "alsoReportedBy": [],
+      "media": [],
+      "videoId": "Z2RZ34Sdrt0",
+      "relatedIds": [],
+      "firstSeenAt": "2026-11-15T18:37:29.803Z",
+      "status": "new"
+    },
+    {
+      "id": "12oi61v",
+      "sourceId": "youtube",
+      "sourceName": "GageGrizzly",
+      "sourceUrl": "https://www.youtube.com/watch?v=NOVvDfywgAw",
+      "title_orig": "THE DIVISION 2: NEW HYBRID PvP BUILD! SPOTTER + FLATLINE DAMAGE IS INSANE!",
+      "lang_orig": "en",
+      "publishedAt": "2026-11-15T13:30:23.000Z",
+      "fetchedAt": "2026-11-15T18:37:29.803Z",
+      "category": "dark-zone",
+      "tags": [
+        "pvp",
+        "video"
+      ],
+      "importance": 57,
+      "confidence": "community",
+      "headline_en": "THE DIVISION 2: NEW HYBRID PvP BUILD! SPOTTER + FLATLINE DAMAGE IS INSANE!",
+      "headline_zhHant": "pending",
+      "summary_en": "Looking for a powerful Division 2 PvP hybrid build that combines high weapon damage with incredible skill utility?",
+      "summary_zhHant": "pending",
+      "summaryKind": "extract",
+      "alsoReportedBy": [],
+      "media": [],
+      "videoId": "NOVvDfywgAw",
+      "relatedIds": [],
+      "firstSeenAt": "2026-11-15T18:37:29.803Z",
+      "status": "new"
+    },
+    {
       "id": "1blg61e",
       "sourceId": "ubisoft-en",
       "sourceName": "Ubisoft",
@@ -299,12 +406,12 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-15T16:35:47.148Z",
+      "fetchedAt": "2026-11-15T18:37:29.803Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
       ],
-      "importance": 57,
+      "importance": 56,
       "confidence": "official",
       "headline_en": "Known issue: Some Schematics offer more attribute changes than the item has slots for",
       "headline_zhHant": "pending",
@@ -327,6 +434,60 @@
       }
     },
     {
+      "id": "fvbd8",
+      "sourceId": "youtube",
+      "sourceName": "Computer Games",
+      "sourceUrl": "https://www.youtube.com/watch?v=B8XMJdYNrPQ",
+      "title_orig": "The Division 2 | 73% PFE Gold Build | Central Park Echoes | TigerCat",
+      "lang_orig": "en",
+      "publishedAt": "2026-11-15T09:02:08.000Z",
+      "fetchedAt": "2026-11-15T18:37:29.803Z",
+      "category": "builds",
+      "tags": [
+        "video"
+      ],
+      "importance": 56,
+      "confidence": "community",
+      "headline_en": "The Division 2 | 73% PFE Gold Build | Central Park Echoes | TigerCat",
+      "headline_zhHant": "pending",
+      "summary_en": "The Division 2 gameplay showcasing an ultimate Golden Tank Build featuring 73% Protection from Elites (PFE) and 104% Hazard Protection in Central Park Echoes.",
+      "summary_zhHant": "pending",
+      "summaryKind": "extract",
+      "alsoReportedBy": [],
+      "media": [],
+      "videoId": "B8XMJdYNrPQ",
+      "relatedIds": [],
+      "firstSeenAt": "2026-11-15T18:37:29.803Z",
+      "status": "new"
+    },
+    {
+      "id": "e5smyo",
+      "sourceId": "youtube",
+      "sourceName": "PurePrime",
+      "sourceUrl": "https://www.youtube.com/watch?v=9iPgrCcsUMc",
+      "title_orig": "Prototype Schematics ~ Upgrade your Prototype | Y8S4 PTS | The Division 2",
+      "lang_orig": "en",
+      "publishedAt": "2026-11-15T16:30:01.000Z",
+      "fetchedAt": "2026-11-15T18:37:29.803Z",
+      "category": "updates",
+      "tags": [
+        "video"
+      ],
+      "importance": 56,
+      "confidence": "community",
+      "headline_en": "Prototype Schematics ~ Upgrade your Prototype | Y8S4 PTS | The Division 2",
+      "headline_zhHant": "pending",
+      "summary_en": "📺 Subscribe To My Channel ⭕Get Exclusive Rewards by Joining our YouTube Members⭕ ⭐Claim your PurePrime Arm Patch ►Timestamps ►Community - Discord - Twitch -…",
+      "summary_zhHant": "pending",
+      "summaryKind": "extract",
+      "alsoReportedBy": [],
+      "media": [],
+      "videoId": "9iPgrCcsUMc",
+      "relatedIds": [],
+      "firstSeenAt": "2026-11-15T18:37:29.803Z",
+      "status": "new"
+    },
+    {
       "id": "1e2o3a6",
       "sourceId": "ubisoft-en",
       "sourceName": "Ubisoft",
@@ -334,51 +495,16 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-15T16:35:47.148Z",
-      "category": "glitch-watch",
-      "tags": [
-        "known-issue"
-      ],
-      "importance": 56,
-      "confidence": "official",
-      "headline_en": "Known issue: Unbreakable may repair 100% of your Armor instead of 95%",
-      "headline_zhHant": "pending",
-      "summary_en": "Unbreakable may repair 100% of your Armor instead of 95%.",
-      "summary_zhHant": "pending",
-      "summaryKind": "extract",
-      "alsoReportedBy": [],
-      "media": [],
-      "relatedIds": [
-        "15yr4ky"
-      ],
-      "firstSeenAt": "2026-11-12T16:55:32.847Z",
-      "status": "new",
-      "glitch": {
-        "state": "active",
-        "firstSeen": "2026-11-12",
-        "banRisk": false,
-        "riskNote_en": "Known issue listed by Ubisoft. No workaround yet.",
-        "riskNote_zhHant": "pending"
-      }
-    },
-    {
-      "id": "t35ov9",
-      "sourceId": "ubisoft-en",
-      "sourceName": "Ubisoft",
-      "sourceUrl": "https://www.ubisoft.com/en-us/game/the-division/the-division-2/news-updates/1wrUJ1HzY6BF8zzO4AMhJ3/spearfall-pts-patch-notes",
-      "title_orig": "Spearfall PTS Patch Notes",
-      "lang_orig": "en",
-      "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-15T16:35:47.148Z",
+      "fetchedAt": "2026-11-15T18:37:29.803Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
       ],
       "importance": 55,
       "confidence": "official",
-      "headline_en": "Known issue: Headshots may fail to trigger Reformation’s Skill Repair bonus",
+      "headline_en": "Known issue: Unbreakable may repair 100% of your Armor instead of 95%",
       "headline_zhHant": "pending",
-      "summary_en": "Headshots may fail to trigger Reformation’s Skill Repair bonus.",
+      "summary_en": "Unbreakable may repair 100% of your Armor instead of 95%.",
       "summary_zhHant": "pending",
       "summaryKind": "extract",
       "alsoReportedBy": [],
@@ -404,7 +530,7 @@
       "title_orig": "The Division 2: 6X XP Event",
       "lang_orig": "en",
       "publishedAt": "2026-11-06T10:31:09.000Z",
-      "fetchedAt": "2026-11-15T16:35:47.148Z",
+      "fetchedAt": "2026-11-15T18:37:29.803Z",
       "category": "missions",
       "tags": [
         "event"
@@ -423,6 +549,41 @@
       "status": "new"
     },
     {
+      "id": "t35ov9",
+      "sourceId": "ubisoft-en",
+      "sourceName": "Ubisoft",
+      "sourceUrl": "https://www.ubisoft.com/en-us/game/the-division/the-division-2/news-updates/1wrUJ1HzY6BF8zzO4AMhJ3/spearfall-pts-patch-notes",
+      "title_orig": "Spearfall PTS Patch Notes",
+      "lang_orig": "en",
+      "publishedAt": "2026-11-12T16:00:00.000Z",
+      "fetchedAt": "2026-11-15T18:37:29.803Z",
+      "category": "glitch-watch",
+      "tags": [
+        "known-issue"
+      ],
+      "importance": 54,
+      "confidence": "official",
+      "headline_en": "Known issue: Headshots may fail to trigger Reformation’s Skill Repair bonus",
+      "headline_zhHant": "pending",
+      "summary_en": "Headshots may fail to trigger Reformation’s Skill Repair bonus.",
+      "summary_zhHant": "pending",
+      "summaryKind": "extract",
+      "alsoReportedBy": [],
+      "media": [],
+      "relatedIds": [
+        "15yr4ky"
+      ],
+      "firstSeenAt": "2026-11-12T16:55:32.847Z",
+      "status": "new",
+      "glitch": {
+        "state": "active",
+        "firstSeen": "2026-11-12",
+        "banRisk": false,
+        "riskNote_en": "Known issue listed by Ubisoft. No workaround yet.",
+        "riskNote_zhHant": "pending"
+      }
+    },
+    {
       "id": "1u6r63n",
       "sourceId": "ubisoft-en",
       "sourceName": "Ubisoft",
@@ -430,12 +591,12 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-15T16:35:47.148Z",
+      "fetchedAt": "2026-11-15T18:37:29.803Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
       ],
-      "importance": 54,
+      "importance": 53,
       "confidence": "official",
       "headline_en": "Known issue: Brave Draw is missing its Protection from Elites bonus",
       "headline_zhHant": "pending",
@@ -465,12 +626,12 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-15T16:35:47.148Z",
+      "fetchedAt": "2026-11-15T18:37:29.803Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
       ],
-      "importance": 53,
+      "importance": 52,
       "confidence": "official",
       "headline_en": "Known issue: We recommend focusing your Escalation testing on Core Build directive.",
       "headline_zhHant": "pending",
@@ -491,74 +652,6 @@
         "riskNote_en": "Known issue listed by Ubisoft. No workaround yet.",
         "riskNote_zhHant": "pending"
       }
-    },
-    {
-      "id": "cj4ae2",
-      "sourceId": "ubisoft-en",
-      "sourceName": "Ubisoft",
-      "sourceUrl": "https://www.ubisoft.com/en-us/game/the-division/the-division-2/news-updates/1wrUJ1HzY6BF8zzO4AMhJ3/spearfall-pts-patch-notes",
-      "title_orig": "Spearfall PTS Patch Notes",
-      "lang_orig": "en",
-      "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-15T16:35:47.148Z",
-      "category": "glitch-watch",
-      "tags": [
-        "known-issue"
-      ],
-      "importance": 52,
-      "confidence": "official",
-      "headline_en": "Known issue: Mission objectives and Player Rating may disappear from the HUD when you…",
-      "headline_zhHant": "pending",
-      "summary_en": "Mission objectives and Player Rating may disappear from the HUD when you start a new Escalation mission after completing or failing the previous one.",
-      "summary_zhHant": "pending",
-      "summaryKind": "extract",
-      "alsoReportedBy": [],
-      "media": [],
-      "relatedIds": [
-        "15yr4ky"
-      ],
-      "firstSeenAt": "2026-11-12T16:55:32.847Z",
-      "status": "new",
-      "glitch": {
-        "state": "active",
-        "firstSeen": "2026-11-12",
-        "banRisk": false,
-        "riskNote_en": "Known issue listed by Ubisoft. No workaround yet.",
-        "riskNote_zhHant": "pending"
-      }
-    },
-    {
-      "id": "1sx320d",
-      "sourceId": "ubisoft-en",
-      "sourceName": "Ubisoft",
-      "sourceUrl": "https://www.ubisoft.com/en-us/game/the-division/the-division-2/news-updates/5EEgwKS6kDqyvUFo5PJYsB/the-division-2-echoes-of-central-park-launch-twitch-drops",
-      "title_orig": "The Division 2: Echoes of Central Park Launch Twitch Drops",
-      "lang_orig": "en",
-      "publishedAt": "2026-11-03T15:00:00.000Z",
-      "fetchedAt": "2026-11-15T16:35:47.148Z",
-      "category": "community",
-      "tags": [
-        "twitch-drops",
-        "exotic"
-      ],
-      "importance": 52,
-      "confidence": "official",
-      "headline_en": "The Division 2: Echoes of Central Park Launch Twitch Drops",
-      "headline_zhHant": "《全境封鎖 2 - 中央公園的迴響》發行 Twitch 掉寶",
-      "summary_en": "Tune in from November 3 – November 10 to earn exclusive rewards while watching your favorite The Division 2 streamers on Twitch.",
-      "summary_zhHant": "11 月 3 日至 11 月 10 日期間，在 Twitch 上觀看你喜愛的《全境封鎖 2》實況主即可獲得專屬獎勵。",
-      "summaryKind": "extract",
-      "alsoReportedBy": [
-        {
-          "name": "巴哈姆特 全境封鎖板",
-          "url": "https://forum.gamer.com.tw/C.php?bsn=24460&snA=32864"
-        }
-      ],
-      "media": [],
-      "imageId": "ubi-5EEgwKS6kDqyvUFo5PJYsB",
-      "relatedIds": [],
-      "firstSeenAt": "2026-11-03T15:00:00.000Z",
-      "status": "new"
     },
     {
       "id": "1oxqfri",
@@ -588,6 +681,41 @@
       "status": "new"
     },
     {
+      "id": "cj4ae2",
+      "sourceId": "ubisoft-en",
+      "sourceName": "Ubisoft",
+      "sourceUrl": "https://www.ubisoft.com/en-us/game/the-division/the-division-2/news-updates/1wrUJ1HzY6BF8zzO4AMhJ3/spearfall-pts-patch-notes",
+      "title_orig": "Spearfall PTS Patch Notes",
+      "lang_orig": "en",
+      "publishedAt": "2026-11-12T16:00:00.000Z",
+      "fetchedAt": "2026-11-15T18:37:29.803Z",
+      "category": "glitch-watch",
+      "tags": [
+        "known-issue"
+      ],
+      "importance": 51,
+      "confidence": "official",
+      "headline_en": "Known issue: Mission objectives and Player Rating may disappear from the HUD when you…",
+      "headline_zhHant": "pending",
+      "summary_en": "Mission objectives and Player Rating may disappear from the HUD when you start a new Escalation mission after completing or failing the previous one.",
+      "summary_zhHant": "pending",
+      "summaryKind": "extract",
+      "alsoReportedBy": [],
+      "media": [],
+      "relatedIds": [
+        "15yr4ky"
+      ],
+      "firstSeenAt": "2026-11-12T16:55:32.847Z",
+      "status": "new",
+      "glitch": {
+        "state": "active",
+        "firstSeen": "2026-11-12",
+        "banRisk": false,
+        "riskNote_en": "Known issue listed by Ubisoft. No workaround yet.",
+        "riskNote_zhHant": "pending"
+      }
+    },
+    {
       "id": "hej7xr",
       "sourceId": "ubisoft-en",
       "sourceName": "Ubisoft",
@@ -595,12 +723,12 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-15T16:35:47.148Z",
+      "fetchedAt": "2026-11-15T18:37:29.803Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
       ],
-      "importance": 51,
+      "importance": 50,
       "confidence": "official",
       "headline_en": "Known issue: Player Rating from revives can be inconsistent.",
       "headline_zhHant": "pending",
@@ -630,12 +758,12 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-15T16:35:47.148Z",
+      "fetchedAt": "2026-11-15T18:37:29.803Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
       ],
-      "importance": 50,
+      "importance": 49,
       "confidence": "official",
       "headline_en": "Known issue: Gear stashes in both regular and Elite Territory Control activities fail to…",
       "headline_zhHant": "pending",
@@ -665,51 +793,16 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-15T16:35:47.148Z",
-      "category": "glitch-watch",
-      "tags": [
-        "known-issue"
-      ],
-      "importance": 49,
-      "confidence": "official",
-      "headline_en": "Known issue: Named enemies at Control Points can drop Prototype Gear while Global Difficulty…",
-      "headline_zhHant": "pending",
-      "summary_en": "Named enemies at Control Points can drop Prototype Gear while Global Difficulty is set to Heroic.",
-      "summary_zhHant": "pending",
-      "summaryKind": "extract",
-      "alsoReportedBy": [],
-      "media": [],
-      "relatedIds": [
-        "15yr4ky"
-      ],
-      "firstSeenAt": "2026-11-12T16:55:32.847Z",
-      "status": "new",
-      "glitch": {
-        "state": "active",
-        "firstSeen": "2026-11-12",
-        "banRisk": false,
-        "riskNote_en": "Known issue listed by Ubisoft. No workaround yet.",
-        "riskNote_zhHant": "pending"
-      }
-    },
-    {
-      "id": "1rxclrc",
-      "sourceId": "ubisoft-en",
-      "sourceName": "Ubisoft",
-      "sourceUrl": "https://www.ubisoft.com/en-us/game/the-division/the-division-2/news-updates/1wrUJ1HzY6BF8zzO4AMhJ3/spearfall-pts-patch-notes",
-      "title_orig": "Spearfall PTS Patch Notes",
-      "lang_orig": "en",
-      "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-15T16:35:47.148Z",
+      "fetchedAt": "2026-11-15T18:37:29.803Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
       ],
       "importance": 48,
       "confidence": "official",
-      "headline_en": "Known issue: Bosses in the new Legendary Main Missions have placeholder names",
+      "headline_en": "Known issue: Named enemies at Control Points can drop Prototype Gear while Global Difficulty…",
       "headline_zhHant": "pending",
-      "summary_en": "Bosses in the new Legendary Main Missions have placeholder names.",
+      "summary_en": "Named enemies at Control Points can drop Prototype Gear while Global Difficulty is set to Heroic.",
       "summary_zhHant": "pending",
       "summaryKind": "extract",
       "alsoReportedBy": [],
@@ -735,7 +828,7 @@
       "title_orig": "[TUY8S3.3] Echoes of Central Park Launch, Crossplay Rollout, Conflict Improvements & More",
       "lang_orig": "en",
       "publishedAt": "2026-11-02T15:45:00.000Z",
-      "fetchedAt": "2026-11-15T16:35:47.148Z",
+      "fetchedAt": "2026-11-15T18:37:29.803Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -763,23 +856,23 @@
       }
     },
     {
-      "id": "tion2p",
+      "id": "1rxclrc",
       "sourceId": "ubisoft-en",
       "sourceName": "Ubisoft",
       "sourceUrl": "https://www.ubisoft.com/en-us/game/the-division/the-division-2/news-updates/1wrUJ1HzY6BF8zzO4AMhJ3/spearfall-pts-patch-notes",
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-15T16:35:47.148Z",
+      "fetchedAt": "2026-11-15T18:37:29.803Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
       ],
       "importance": 47,
       "confidence": "official",
-      "headline_en": "Known issue: A Heroic Retaliation started from the Legendary Open World may show Legendary…",
+      "headline_en": "Known issue: Bosses in the new Legendary Main Missions have placeholder names",
       "headline_zhHant": "pending",
-      "summary_en": "A Heroic Retaliation started from the Legendary Open World may show Legendary in the UI. The Retaliation itself runs on Heroic.",
+      "summary_en": "Bosses in the new Legendary Main Missions have placeholder names.",
       "summary_zhHant": "pending",
       "summaryKind": "extract",
       "alsoReportedBy": [],
@@ -805,7 +898,7 @@
       "title_orig": "【情報】TU30 / Y8S4 PTS Patchnote翻譯",
       "lang_orig": "zh",
       "publishedAt": "2026-11-13T07:31:00.000Z",
-      "fetchedAt": "2026-11-15T16:35:47.148Z",
+      "fetchedAt": "2026-11-15T14:38:52.779Z",
       "category": "updates",
       "tags": [],
       "importance": 47,
@@ -822,6 +915,41 @@
       "status": "new"
     },
     {
+      "id": "tion2p",
+      "sourceId": "ubisoft-en",
+      "sourceName": "Ubisoft",
+      "sourceUrl": "https://www.ubisoft.com/en-us/game/the-division/the-division-2/news-updates/1wrUJ1HzY6BF8zzO4AMhJ3/spearfall-pts-patch-notes",
+      "title_orig": "Spearfall PTS Patch Notes",
+      "lang_orig": "en",
+      "publishedAt": "2026-11-12T16:00:00.000Z",
+      "fetchedAt": "2026-11-15T18:37:29.803Z",
+      "category": "glitch-watch",
+      "tags": [
+        "known-issue"
+      ],
+      "importance": 46,
+      "confidence": "official",
+      "headline_en": "Known issue: A Heroic Retaliation started from the Legendary Open World may show Legendary…",
+      "headline_zhHant": "pending",
+      "summary_en": "A Heroic Retaliation started from the Legendary Open World may show Legendary in the UI. The Retaliation itself runs on Heroic.",
+      "summary_zhHant": "pending",
+      "summaryKind": "extract",
+      "alsoReportedBy": [],
+      "media": [],
+      "relatedIds": [
+        "15yr4ky"
+      ],
+      "firstSeenAt": "2026-11-12T16:55:32.847Z",
+      "status": "new",
+      "glitch": {
+        "state": "active",
+        "firstSeen": "2026-11-12",
+        "banRisk": false,
+        "riskNote_en": "Known issue listed by Ubisoft. No workaround yet.",
+        "riskNote_zhHant": "pending"
+      }
+    },
+    {
       "id": "37y6no",
       "sourceId": "ubisoft-en",
       "sourceName": "Ubisoft",
@@ -829,12 +957,12 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-15T16:35:47.148Z",
+      "fetchedAt": "2026-11-15T18:37:29.803Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
       ],
-      "importance": 46,
+      "importance": 45,
       "confidence": "official",
       "headline_en": "Known issue: Enemies from factions other than White Tusk use Heroic scaling in the…",
       "headline_zhHant": "pending",
@@ -864,12 +992,12 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-15T16:35:47.148Z",
+      "fetchedAt": "2026-11-15T18:37:29.803Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
       ],
-      "importance": 45,
+      "importance": 44,
       "confidence": "official",
       "headline_en": "Known issue: White Tusk have less Health and Armor in the Legendary Open World…",
       "headline_zhHant": "pending",
@@ -892,6 +1020,34 @@
       }
     },
     {
+      "id": "1sx320d",
+      "sourceId": "ubisoft-en",
+      "sourceName": "Ubisoft",
+      "sourceUrl": "https://www.ubisoft.com/en-us/game/the-division/the-division-2/news-updates/5EEgwKS6kDqyvUFo5PJYsB/the-division-2-echoes-of-central-park-launch-twitch-drops",
+      "title_orig": "The Division 2: Echoes of Central Park Launch Twitch Drops",
+      "lang_orig": "en",
+      "publishedAt": "2026-11-03T15:00:00.000Z",
+      "fetchedAt": "2026-11-15T18:37:29.803Z",
+      "category": "community",
+      "tags": [
+        "twitch-drops",
+        "exotic"
+      ],
+      "importance": 44,
+      "confidence": "official",
+      "headline_en": "The Division 2: Echoes of Central Park Launch Twitch Drops",
+      "headline_zhHant": "《全境封鎖 2 - 中央公園的迴響》發行 Twitch 掉寶",
+      "summary_en": "Tune in from November 3 – November 10 to earn exclusive rewards while watching your favorite The Division 2 streamers on Twitch.",
+      "summary_zhHant": "11 月 3 日至 11 月 10 日期間，在 Twitch 上觀看你喜愛的《全境封鎖 2》實況主即可獲得專屬獎勵。",
+      "summaryKind": "extract",
+      "alsoReportedBy": [],
+      "media": [],
+      "imageId": "ubi-5EEgwKS6kDqyvUFo5PJYsB",
+      "relatedIds": [],
+      "firstSeenAt": "2026-11-03T15:00:00.000Z",
+      "status": "new"
+    },
+    {
       "id": "qzpopm",
       "sourceId": "bahamut",
       "sourceName": "巴哈姆特 全境封鎖板",
@@ -899,7 +1055,7 @@
       "title_orig": "【情報】【已開機】關機維護公告 - 2026/11/12(四) 16:30",
       "lang_orig": "zh",
       "publishedAt": "2026-11-11T23:46:00.000Z",
-      "fetchedAt": "2026-11-15T16:35:47.148Z",
+      "fetchedAt": "2026-11-15T14:38:52.779Z",
       "category": "updates",
       "tags": [],
       "importance": 44,
@@ -923,7 +1079,7 @@
       "title_orig": "【心得】裝備專精系統心得",
       "lang_orig": "zh",
       "publishedAt": "2026-11-11T00:41:00.000Z",
-      "fetchedAt": "2026-11-15T16:35:47.148Z",
+      "fetchedAt": "2026-11-15T14:38:52.779Z",
       "category": "arsenal",
       "tags": [],
       "importance": 42,
@@ -947,7 +1103,7 @@
       "title_orig": "【情報】【已開機】關機維護公告 - 2026/11/10(二) 16:30，延長 1 小時",
       "lang_orig": "zh",
       "publishedAt": "2026-11-10T15:59:00.000Z",
-      "fetchedAt": "2026-11-15T16:35:47.148Z",
+      "fetchedAt": "2026-11-15T14:38:52.779Z",
       "category": "updates",
       "tags": [],
       "importance": 41,
@@ -971,7 +1127,7 @@
       "title_orig": "Last Chance to Pre-Purchase The Division 2: Echoes of Central Park",
       "lang_orig": "en",
       "publishedAt": "2026-10-28T13:29:29.000Z",
-      "fetchedAt": "2026-11-15T16:35:47.148Z",
+      "fetchedAt": "2026-11-15T18:37:29.803Z",
       "category": "missions",
       "tags": [
         "dlc",
@@ -998,7 +1154,7 @@
       "title_orig": "Echoes of Central Park Launch Livestream",
       "lang_orig": "en",
       "publishedAt": "2026-10-27T16:01:04.000Z",
-      "fetchedAt": "2026-11-15T16:35:47.148Z",
+      "fetchedAt": "2026-11-15T18:37:29.803Z",
       "category": "community",
       "tags": [],
       "importance": 40,
@@ -1022,7 +1178,7 @@
       "title_orig": "Echoes of Central Park Costume Contest",
       "lang_orig": "en",
       "publishedAt": "2026-10-27T10:34:40.000Z",
-      "fetchedAt": "2026-11-15T16:35:47.148Z",
+      "fetchedAt": "2026-11-15T18:37:29.803Z",
       "category": "community",
       "tags": [],
       "importance": 40,
@@ -1046,7 +1202,7 @@
       "title_orig": "【攻略】部分技能的解鎖方式整理",
       "lang_orig": "zh",
       "publishedAt": "2026-11-05T05:49:00.000Z",
-      "fetchedAt": "2026-11-15T16:35:47.148Z",
+      "fetchedAt": "2026-11-15T14:38:52.779Z",
       "category": "builds",
       "tags": [],
       "importance": 30,
@@ -1070,12 +1226,12 @@
       "title_orig": "【情報】中央公園的迴響 DLC 夥伴 - 相關資訊",
       "lang_orig": "zh",
       "publishedAt": "2026-11-05T04:03:00.000Z",
-      "fetchedAt": "2026-11-15T16:35:47.148Z",
+      "fetchedAt": "2026-11-15T14:38:52.779Z",
       "category": "missions",
       "tags": [
         "dlc"
       ],
-      "importance": 29,
+      "importance": 30,
       "confidence": "community",
       "headline_en": "pending",
       "headline_zhHant": "【情報】中央公園的迴響 DLC 夥伴 - 相關資訊",
@@ -1096,10 +1252,10 @@
       "title_orig": "【情報】*劇透注意* Y8S3/TU29 獵捕行動 Red Horizon 偵查任務 每週統整",
       "lang_orig": "zh",
       "publishedAt": "2026-11-03T17:07:00.000Z",
-      "fetchedAt": "2026-11-15T16:35:47.148Z",
+      "fetchedAt": "2026-11-15T14:38:52.779Z",
       "category": "updates",
       "tags": [],
-      "importance": 26,
+      "importance": 27,
       "confidence": "community",
       "headline_en": "pending",
       "headline_zhHant": "【情報】*劇透注意* Y8S3/TU29 獵捕行動 Red Horizon 偵查任務 每週統整",
@@ -1117,22 +1273,23 @@
     {
       "sourceId": "steam-news",
       "ok": true,
-      "checkedAt": "2026-11-15T16:35:47.148Z"
+      "checkedAt": "2026-11-15T18:37:29.803Z"
     },
     {
       "sourceId": "ubisoft-en",
       "ok": true,
-      "checkedAt": "2026-11-15T16:35:47.148Z"
+      "checkedAt": "2026-11-15T18:37:29.803Z"
     },
     {
       "sourceId": "ubisoft-zh-tw",
       "ok": true,
-      "checkedAt": "2026-11-15T16:35:47.148Z"
+      "checkedAt": "2026-11-15T18:37:29.803Z"
     },
     {
       "sourceId": "bahamut",
-      "ok": true,
-      "checkedAt": "2026-11-15T16:35:47.148Z"
+      "ok": false,
+      "checkedAt": "2026-11-15T18:37:29.803Z",
+      "note": "Error: HTTP 403"
     }
   ]
 }
