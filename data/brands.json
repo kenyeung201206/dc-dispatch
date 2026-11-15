@@ -491,6 +491,14 @@
     "Measured Assembly"
    ],
    "icon": "/icons/set/measured-assembly.png"
+  },
+  {
+   "en": "Virtuoso",
+   "aliases": [
+    "大師",
+    "Virtuoso"
+   ],
+   "icon": "/icons/set/virtuoso.png"
   }
  ],
  "slots": [

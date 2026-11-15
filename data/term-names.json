@@ -1,55 +1,260 @@
 {
  "_note": "English game terms → the Chinese name players use. On Chinese pages the first time a term appears in English, the Chinese name is added after it: 'Forward Observer（前進觀測員）' (src/lib/terms.ts). Only names confirmed by the source given (巴哈 translations/posts, Ubisoft 繁中, BWIKI); never guessed. The 重點整理 writer adds new ones (docs/BRIEF_WRITER.md). 巴哈 = forum.gamer.com.tw/C.php?bsn=24460&snA=<number>.",
  "terms": [
-  { "en": "Escalation", "zh": "戰鬥升級", "source": "巴哈 32484 (TU27 PTS 翻譯), 巴哈每日戰鬥升級帖" },
-  { "en": "Escalations", "zh": "戰鬥升級", "source": "巴哈 32484" },
-  { "en": "PTS", "zh": "公開測試伺服器", "source": "巴哈 32331, 32894 (PTS 翻譯)" },
-  { "en": "Event Pass", "zh": "活動通行證", "source": "巴哈 32433" },
-  { "en": "Season Pass", "zh": "季票", "source": "巴哈 31906" },
-  { "en": "Prototype Gear", "zh": "原型裝備", "source": "巴哈 32484" },
-  { "en": "Prototype Cores", "zh": "原型核心", "source": "巴哈 32484, 32894" },
-  { "en": "Prototype Attributes", "zh": "原型屬性", "source": "巴哈 32484" },
-  { "en": "Augments", "zh": "強化模組", "source": "巴哈 32484" },
-  { "en": "Augment", "zh": "強化模組", "source": "巴哈 32484" },
-  { "en": "Mutators", "zh": "變異效果", "source": "巴哈 32484" },
-  { "en": "Hostile Countermeasures", "zh": "敵方反制措施", "source": "巴哈 32331, 32484" },
-  { "en": "Quantum", "zh": "量子", "source": "巴哈 32484" },
-  { "en": "Amalgam", "zh": "汞合金", "source": "巴哈 32484" },
-  { "en": "Core Strength", "zh": "核心力量", "source": "巴哈 32484" },
-  { "en": "Overheal", "zh": "超量治療", "source": "巴哈 32484" },
-  { "en": "Unyielding", "zh": "不屈", "source": "巴哈 32484" },
-  { "en": "Crossplay", "zh": "跨平台遊玩", "source": "巴哈 32861 (TU29.3 翻譯)" },
-  { "en": "Afterburn", "zh": "後燃", "source": "巴哈 32861" },
-  { "en": "Echoes of Central Park", "zh": "中央公園的迴響", "source": "巴哈 32861; Ubisoft 繁中" },
-  { "en": "Red Horizon", "zh": "烈焰地平線", "source": "巴哈 32755 (TU29/Y8S3 烈焰地平線 Red Horizon 版本更新資訊)" },
-  { "en": "August", "zh": "八月", "source": "巴哈 32894 (TU30/Y8S4 PTS 翻譯)" },
-  { "en": "Forward Observer", "zh": "前進觀測員", "source": "巴哈 32894" },
-  { "en": "Strike Order", "zh": "攻擊命令", "source": "巴哈 32894" },
-  { "en": "Field General", "zh": "戰地將軍", "source": "巴哈 32894" },
-  { "en": "Perfect Technophobia", "zh": "完美科技恐懼症", "source": "巴哈 32894" },
-  { "en": "Technophobia", "zh": "科技恐懼症", "source": "巴哈 32894" },
-  { "en": "Power Spike", "zh": "功率尖峰", "source": "巴哈 32894" },
-  { "en": "Provocator", "zh": "挑戰者", "source": "巴哈 31766" },
-  { "en": "Oxpecker", "zh": "牛椋鳥", "source": "巴哈 31906" },
-  { "en": "Equalizer", "zh": "平衡者", "source": "巴哈 32331" },
-  { "en": "All for One", "zh": "一人為眾", "source": "巴哈 32331" },
-  { "en": "One for All", "zh": "眾人為一", "source": "巴哈 32331" },
-  { "en": "Jammer", "zh": "干擾者", "source": "巴哈 32331" },
-  { "en": "Companions", "zh": "夥伴", "source": "巴哈 32331" },
-  { "en": "Companion", "zh": "夥伴", "source": "巴哈 32331" },
-  { "en": "Nemesis", "zh": "復仇女神", "source": "巴哈 攻略 writes 復仇女神（Nemesis）(found by web search 2026-11-14; post not opened)" },
-  { "en": "Pestilence", "zh": "鼠疫", "source": "BWIKI 奇特物品 (簡中 wiki)" },
-  { "en": "Regulus", "zh": "王子左輪", "source": "BWIKI 奇特物品 (簡中 wiki: 王子左轮)" },
-  { "en": "Expertise", "zh": "裝備專精", "source": "Ubisoft 繁中 (data/glossary.json)" },
-  { "en": "Dark Zone", "zh": "暗區", "source": "Ubisoft 繁中 (data/glossary.json)" },
-  { "en": "Disavowed", "zh": "毀誓", "source": "Ubisoft 繁中 (data/glossary.json)" },
-  { "en": "Red Moon Unleashed", "zh": "血月高照", "source": "Ubisoft 繁中 (data/glossary.json)" },
-  { "en": "Negotiator's Dilemma", "zh": "談判者", "source": "巴哈每日戰鬥升級帖" },
-  { "en": "Foundry Bulwark", "zh": "鑄造廠", "source": "巴哈每日戰鬥升級帖" },
-  { "en": "Aces & Eights", "zh": "王牌", "source": "巴哈每日戰鬥升級帖" },
-  { "en": "Tip of the Spear", "zh": "先鋒", "source": "巴哈每日戰鬥升級帖" },
-  { "en": "True Patriot", "zh": "真實愛國者", "source": "巴哈每日戰鬥升級帖" },
-  { "en": "Ember Engine", "zh": "餘燼引擎", "source": "巴哈 32768 (Y8S3 餘燼引擎燃燒控)" },
-  { "en": "Measured Assembly", "zh": "精密組裝", "source": "the owner's in-game screenshot (2026-11-12)" }
+  {
+   "en": "Escalation",
+   "zh": "戰鬥升級",
+   "source": "巴哈 32484 (TU27 PTS 翻譯), 巴哈每日戰鬥升級帖"
+  },
+  {
+   "en": "Escalations",
+   "zh": "戰鬥升級",
+   "source": "巴哈 32484"
+  },
+  {
+   "en": "PTS",
+   "zh": "公開測試伺服器",
+   "source": "巴哈 32331, 32894 (PTS 翻譯)"
+  },
+  {
+   "en": "Event Pass",
+   "zh": "活動通行證",
+   "source": "巴哈 32433"
+  },
+  {
+   "en": "Season Pass",
+   "zh": "季票",
+   "source": "巴哈 31906"
+  },
+  {
+   "en": "Prototype Gear",
+   "zh": "原型裝備",
+   "source": "巴哈 32484"
+  },
+  {
+   "en": "Prototype Cores",
+   "zh": "原型核心",
+   "source": "巴哈 32484, 32894"
+  },
+  {
+   "en": "Prototype Attributes",
+   "zh": "原型屬性",
+   "source": "巴哈 32484"
+  },
+  {
+   "en": "Augments",
+   "zh": "強化模組",
+   "source": "巴哈 32484"
+  },
+  {
+   "en": "Augment",
+   "zh": "強化模組",
+   "source": "巴哈 32484"
+  },
+  {
+   "en": "Mutators",
+   "zh": "變異效果",
+   "source": "巴哈 32484"
+  },
+  {
+   "en": "Hostile Countermeasures",
+   "zh": "敵方反制措施",
+   "source": "巴哈 32331, 32484"
+  },
+  {
+   "en": "Quantum",
+   "zh": "量子",
+   "source": "巴哈 32484"
+  },
+  {
+   "en": "Amalgam",
+   "zh": "汞合金",
+   "source": "巴哈 32484"
+  },
+  {
+   "en": "Core Strength",
+   "zh": "核心力量",
+   "source": "巴哈 32484"
+  },
+  {
+   "en": "Overheal",
+   "zh": "超量治療",
+   "source": "巴哈 32484"
+  },
+  {
+   "en": "Unyielding",
+   "zh": "不屈",
+   "source": "巴哈 32484"
+  },
+  {
+   "en": "Crossplay",
+   "zh": "跨平台遊玩",
+   "source": "巴哈 32861 (TU29.3 翻譯)"
+  },
+  {
+   "en": "Afterburn",
+   "zh": "後燃",
+   "source": "巴哈 32861"
+  },
+  {
+   "en": "Echoes of Central Park",
+   "zh": "中央公園的迴響",
+   "source": "巴哈 32861; Ubisoft 繁中"
+  },
+  {
+   "en": "Red Horizon",
+   "zh": "烈焰地平線",
+   "source": "巴哈 32755 (TU29/Y8S3 烈焰地平線 Red Horizon 版本更新資訊)"
+  },
+  {
+   "en": "August",
+   "zh": "八月",
+   "source": "巴哈 32894 (TU30/Y8S4 PTS 翻譯)"
+  },
+  {
+   "en": "Forward Observer",
+   "zh": "前進觀測員",
+   "source": "巴哈 32894"
+  },
+  {
+   "en": "Strike Order",
+   "zh": "攻擊命令",
+   "source": "巴哈 32894"
+  },
+  {
+   "en": "Field General",
+   "zh": "戰地將軍",
+   "source": "巴哈 32894"
+  },
+  {
+   "en": "Perfect Technophobia",
+   "zh": "完美科技恐懼症",
+   "source": "巴哈 32894"
+  },
+  {
+   "en": "Technophobia",
+   "zh": "科技恐懼症",
+   "source": "巴哈 32894"
+  },
+  {
+   "en": "Power Spike",
+   "zh": "功率尖峰",
+   "source": "巴哈 32894"
+  },
+  {
+   "en": "Provocator",
+   "zh": "挑戰者",
+   "source": "巴哈 31766"
+  },
+  {
+   "en": "Oxpecker",
+   "zh": "牛椋鳥",
+   "source": "巴哈 31906"
+  },
+  {
+   "en": "Equalizer",
+   "zh": "平衡者",
+   "source": "巴哈 32331"
+  },
+  {
+   "en": "All for One",
+   "zh": "一人為眾",
+   "source": "巴哈 32331"
+  },
+  {
+   "en": "One for All",
+   "zh": "眾人為一",
+   "source": "巴哈 32331"
+  },
+  {
+   "en": "Jammer",
+   "zh": "干擾者",
+   "source": "巴哈 32331"
+  },
+  {
+   "en": "Companions",
+   "zh": "夥伴",
+   "source": "巴哈 32331"
+  },
+  {
+   "en": "Companion",
+   "zh": "夥伴",
+   "source": "巴哈 32331"
+  },
+  {
+   "en": "Nemesis",
+   "zh": "復仇女神",
+   "source": "巴哈 攻略 writes 復仇女神（Nemesis）(found by web search 2026-11-14; post not opened)"
+  },
+  {
+   "en": "Pestilence",
+   "zh": "鼠疫",
+   "source": "BWIKI 奇特物品 (簡中 wiki)"
+  },
+  {
+   "en": "Regulus",
+   "zh": "王子左輪",
+   "source": "BWIKI 奇特物品 (簡中 wiki: 王子左轮)"
+  },
+  {
+   "en": "Expertise",
+   "zh": "裝備專精",
+   "source": "Ubisoft 繁中 (data/glossary.json)"
+  },
+  {
+   "en": "Dark Zone",
+   "zh": "暗區",
+   "source": "Ubisoft 繁中 (data/glossary.json)"
+  },
+  {
+   "en": "Disavowed",
+   "zh": "毀誓",
+   "source": "Ubisoft 繁中 (data/glossary.json)"
+  },
+  {
+   "en": "Red Moon Unleashed",
+   "zh": "血月高照",
+   "source": "Ubisoft 繁中 (data/glossary.json)"
+  },
+  {
+   "en": "Negotiator's Dilemma",
+   "zh": "談判者",
+   "source": "巴哈每日戰鬥升級帖"
+  },
+  {
+   "en": "Foundry Bulwark",
+   "zh": "鑄造廠",
+   "source": "巴哈每日戰鬥升級帖"
+  },
+  {
+   "en": "Aces & Eights",
+   "zh": "王牌",
+   "source": "巴哈每日戰鬥升級帖"
+  },
+  {
+   "en": "Tip of the Spear",
+   "zh": "先鋒",
+   "source": "巴哈每日戰鬥升級帖"
+  },
+  {
+   "en": "True Patriot",
+   "zh": "真實愛國者",
+   "source": "巴哈每日戰鬥升級帖"
+  },
+  {
+   "en": "Ember Engine",
+   "zh": "餘燼引擎",
+   "source": "巴哈 32768 (Y8S3 餘燼引擎燃燒控)"
+  },
+  {
+   "en": "Measured Assembly",
+   "zh": "精密組裝",
+   "source": "the owner's in-game screenshot (2026-11-12)"
+  },
+  {
+   "en": "Virtuoso",
+   "zh": "大師",
+   "source": "the owner's in-game screenshot (2026-11-15)"
+  }
  ]
 }
