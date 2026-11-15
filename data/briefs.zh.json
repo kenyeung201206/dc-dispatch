@@ -8880,6 +8880,165 @@
         "此影片沒有說明文字，只能依標題介紹"
       ],
       "written": "2026-11-15"
+    },
+    "126embg": {
+      "points": [
+        "影片介紹：創作者 widdz 的第 4 季 PTS 影片，完整（未剪輯）通關 4 個新的傳奇難度任務",
+        "4 人小隊進行；他在 Air & Space 與 Hotel 擔任坦克，ViewPoint 與 Space Administration HQ 改打輸出",
+        "另含 1 個小隊傳奇控制點與 1 個單人傳奇控制點",
+        "說明文字提醒：這是 PTS 畫面，數值、獎勵與難度在正式上線前可能改變"
+      ],
+      "tables": [
+        {
+          "title": "影片章節",
+          "columns": [
+            "時間",
+            "內容",
+            "角色"
+          ],
+          "rows": [
+            [
+              "0:00",
+              "Air & Space Museum",
+              "坦克"
+            ],
+            [
+              "11:12",
+              "Grand Washington Hotel",
+              "坦克"
+            ],
+            [
+              "24:20",
+              "ViewPoint Museum",
+              "輸出"
+            ],
+            [
+              "47:23",
+              "Space Administration HQ",
+              "輸出"
+            ],
+            [
+              "1:09:53",
+              "傳奇控制點－小隊（MLK Memorial Library）",
+              "—"
+            ],
+            [
+              "1:22:58",
+              "傳奇控制點－單人（Crash Site）",
+              "—"
+            ]
+          ]
+        }
+      ],
+      "written": "2026-11-16"
+    },
+    "su8034": {
+      "points": [
+        "影片介紹（依標題）：英文影片，標題提到 PTS 已開放、新的 Lead Catcher 面罩，以及奇特裝備暫時性削弱的說明",
+        "影片說明文字沒有內容細節，實際說法與數字未提供，只能依標題介紹"
+      ],
+      "written": "2026-11-16"
+    },
+    "1gbo9hf": {
+      "points": [
+        "影片介紹（依標題）：短影片，標題問「守護者（Guardians）能不能擊倒這套配裝」",
+        "頻道以葡萄牙語介紹《全境封鎖 2》的配裝、武器與終局攻略",
+        "影片實際內容與結果未提供，只能依標題與頻道簡介介紹"
+      ],
+      "written": "2026-11-16"
+    },
+    "12oi61v": {
+      "points": [
+        "影片介紹：PvP 混合型配裝，核心是胸甲天賦 Spotter 與武器天賦 Flatline 的搭配",
+        "Spotter 與 Flatline 能提高對被脈衝標記敵人的武器傷害，Spotter 也提高對其技能傷害",
+        "配裝使用 3 個技能層級，保留技能功能的同時兼顧武器傷害",
+        "新的 Howl Pulse 用來定住逼近的敵人；Oxidizer 用來把敵人逼出掩體、打亂其位置"
+      ],
+      "body": [
+        "說明文字稱這套配裝適合想在 PvP 中兼顧輸出與技能控場的玩家；實際成效以影片為準。"
+      ],
+      "written": "2026-11-16"
+    },
+    "fvbd8": {
+      "points": [
+        "影片介紹：「黃金坦克」配裝展示，場景為 Central Park Echoes",
+        "說明文字指出該配裝有 73% 菁英減傷（PFE）與 104% 危害防護"
+      ],
+      "tables": [
+        {
+          "title": "配裝數值",
+          "columns": [
+            "項目",
+            "數值"
+          ],
+          "rows": [
+            [
+              "菁英減傷（PFE）",
+              "73%"
+            ],
+            [
+              "危害防護",
+              "104%"
+            ]
+          ]
+        }
+      ],
+      "written": "2026-11-16"
+    },
+    "e5smyo": {
+      "points": [
+        "影片介紹：第 4 季 PTS 的 Prototype 原型裝備升級教學，創作者為 PurePrime",
+        "依章節涵蓋 Schematics、Protolab、Optimization、Extra Attribute、Weapons、Recalibration 與範例",
+        "說明文字沒有寫出具體數值，實際數字以影片為準"
+      ],
+      "tables": [
+        {
+          "title": "影片章節",
+          "columns": [
+            "時間",
+            "內容"
+          ],
+          "rows": [
+            [
+              "00:00",
+              "Intro"
+            ],
+            [
+              "00:40",
+              "Schematics"
+            ],
+            [
+              "01:51",
+              "Protolab"
+            ],
+            [
+              "03:12",
+              "Optimization"
+            ],
+            [
+              "04:30",
+              "Extra Attribute"
+            ],
+            [
+              "09:31",
+              "Weapons"
+            ],
+            [
+              "12:56",
+              "Recalibration"
+            ],
+            [
+              "14:25",
+              "Example"
+            ],
+            [
+              "15:36",
+              "Outro"
+            ]
+          ]
+        }
+      ],
+      "written": "2026-11-16"
     }
   }
 }
