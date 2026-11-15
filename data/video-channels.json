@@ -64,6 +64,11 @@
   ],
   "follow": [
     {
+      "id": "UCjG8IjAkwj1G7VyHVzDbbFw",
+      "name": "特工阿肥",
+      "official": false
+    },
+    {
       "id": "UCyRKkittAyXHhjZxqC49cxg",
       "name": "GCROCK",
       "official": false
@@ -2396,5 +2401,15 @@
       ],
       "firstSeen": "2026-11-15T06:54:56.676Z"
     }
-  }
+  },
+  "favourites": [
+    {
+      "id": "UCJ2qGCBwyN8d2l9aoWkyShw",
+      "name": "灰帽特工 Gray Hat Agent"
+    },
+    {
+      "id": "UCjG8IjAkwj1G7VyHVzDbbFw",
+      "name": "特工阿肥"
+    }
+  ]
 }

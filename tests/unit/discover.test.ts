@@ -63,3 +63,25 @@ describe('only the best 3–6 new videos per update (owner request 2026-11-14)',
     expect(picked.map((p) => p.title_orig)).not.toContain('Division 2 exotic build with no description');
   });
 });
+
+describe('favourites and readable titles (owner request 2026-11-15)', async () => {
+  const { videoStories, readableTitle } = await import('../../pipeline/video/intel-items.ts');
+  const long = 'Full walkthrough of the build: gear, talents, attributes, rotation and how to farm every piece in Heroic and Legendary.';
+  const v = (id: string, ch: string, title: string, views: number, favourite = false) => ({
+    id: id.padEnd(11, 'x'), title, channelName: ch, channelUrl: `https://www.youtube.com/channel/${ch}`,
+    publishedAt: '2026-11-15T03:00:00.000Z', official: false, via: 'youtube-api' as const, search: true, views, description: long, favourite,
+  });
+  it("灰帽特工's new video is picked even when bigger channels have more views", () => {
+    const pool = [
+      ...Array.from({ length: 8 }, (_, i) => v(`zh${i}`, `big${i}`, `全境封鎖2 新奇特配裝 ${i}`, 90_000 + i)),
+      v('fav', 'grayhat', '全境封鎖2 Y8S4 原型裝備校準全攻略', 50, true),
+    ];
+    expect(videoStories(pool as never, new Date('2026-11-15T05:00:00Z')).map((i) => i.videoId)).toContain('favxxxxxxxx');
+  });
+  it('keeps Chinese and English titles only', () => {
+    expect(readableTitle('全境封鎖2 你也可以是控場之神')).toBe(true);
+    expect(readableTitle('Division 2 August Exotic AR Is a LASER BEAM')).toBe(true);
+    expect(readableTitle('LE NOUVEAU BUILD MÉTAS DU DLC ! Core Strength')).toBe(false);
+    expect(readableTitle('😈💀 A TÚLÉLÉS ÉS A PUSZTÍTÁS MESTERE!')).toBe(false);
+  });
+});

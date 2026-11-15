@@ -19,6 +19,8 @@ export interface VideoCandidate {
   search?: boolean;
   description?: string;
   views?: number;
+  /** From a favourite creator (data/video-channels.json guideCreators): always picked first. */
+  favourite?: boolean;
 }
 
 /** Leak / datamine / unreleased wording ⇒ RUMOUR stamp. */

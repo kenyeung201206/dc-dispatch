@@ -129,7 +129,11 @@ async function main() {
     await updateDailyLoot(now, daily);
   }
   const zhById = new Map(results.find((r) => r.sourceId === 'ubisoft-zh-tw')!.items.map((i) => [i.externalId, i]));
-  const english = results.filter((r) => r.sourceId !== 'ubisoft-zh-tw').flatMap((r) => r.items);
+  // 巴哈's daily 戰鬥升級 thread feeds the loot box above; it isn't a news story (the owner asked, 2026-11-15).
+  const english = results
+    .filter((r) => r.sourceId !== 'ubisoft-zh-tw')
+    .flatMap((r) => r.items)
+    .filter((i) => !(i.sourceId === 'bahamut' && /每日戰鬥升級/.test(i.title)));
 
   const images = ImageLibrarySchema.parse(await readJson('data/images.json', {}));
   const stories = dedupe(english);
@@ -156,16 +160,20 @@ async function main() {
     guideCreators?: { id: string; name: string; official: boolean }[];
     follow?: { id: string; name: string; official: boolean }[];
     discovered?: Record<string, { name: string; videos: string[]; firstSeen: string }>;
+    favourites?: { id: string; name: string }[];
   }>('data/video-channels.json', { channels: [] });
   const channels = videoConfig.channels;
   const youtubeKey = dryRun ? undefined : process.env.YOUTUBE_API_KEY;
   // Watch Now: official videos from Ubisoft pages + allowlisted channels (with a key), each verified embeddable.
   // Creator scan: daily YouTube searches (needs the key); best ones also become stories.
   const searched = await searchVideos(videoConfig.searches ?? [], youtubeKey, now);
-  const guideVideos = await fetchChannelVideos(videoConfig.guideCreators ?? [], youtubeKey, now);
+  const guideVideos = (await fetchChannelVideos(videoConfig.guideCreators ?? [], youtubeKey, now)).map((v) => ({ ...v, favourite: true }));
   // Followed creators: their newest uploads cost ~2 quota units per channel (a search costs 100), so most
   // creator news comes from here; the few searches only discover new creators.
-  const followed = await fetchChannelVideos(videoConfig.follow ?? [], youtubeKey, now);
+  // Favourite creators (data/video-channels.json `favourites`: 灰帽特工, the owner's own channel) are always picked first.
+  const favIds = (videoConfig.favourites ?? []).map((f) => f.id);
+  const isFav = (v: { channelUrl?: string }) => favIds.some((id) => v.channelUrl?.endsWith(id));
+  const followed = (await fetchChannelVideos(videoConfig.follow ?? [], youtubeKey, now)).map((v) => (isFav(v) ? { ...v, favourite: true } : v));
   // Creators found by the searches whose Division videos keep turning up join the follow list (see discover.ts).
   if (!dryRun && youtubeKey) {
     const added = trackCreators(videoConfig, searched, now);

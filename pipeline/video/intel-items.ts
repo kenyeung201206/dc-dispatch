@@ -50,13 +50,21 @@ export function thinVideo(v: Pick<VideoCandidate, 'title' | 'description'>): boo
   return cleanDescription(v.description).length < 60 && /\blive\b|\bstream|直播|🔴|#shorts?\b/i.test(v.title);
 }
 
+/** Readers read Chinese or English: titles in other languages (French, Hungarian…) are left out. */
+export function readableTitle(title: string): boolean {
+  const lang = detectLang(title);
+  return lang === 'zh' || (lang === 'en' && !/[\u00C0-\u017F]/.test(title));
+}
+
 export function videoStories(videos: VideoCandidate[], now: Date): Item[] {
   const perChannel = new Map<string, number>();
   const ranked = [...videos]
-    .filter((v) => v.search && !saysNothing(v) && !thinVideo(v))
+    .filter((v) => v.search && !saysNothing(v) && !thinVideo(v) && readableTitle(v.title))
     // Most interesting topic first, then ones with a real description (so they get a 重點整理), then most viewed.
     .sort(
       (a, b) =>
+        // Favourite creators (灰帽特工, the owner's channel) first: their new videos are never pushed out.
+        Number(Boolean(b.favourite)) - Number(Boolean(a.favourite)) ||
         Number(INTERESTING.test(b.title)) - Number(INTERESTING.test(a.title)) ||
         Number(cleanDescription(b.description).length >= 120) - Number(cleanDescription(a.description).length >= 120) ||
         (b.views ?? 0) - (a.views ?? 0),

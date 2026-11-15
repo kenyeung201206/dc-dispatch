@@ -35,11 +35,16 @@ Chinese 「重點整理」 for stories that don't have one yet, then pushes. A p
    - YouTube (`youtube.com/watch?v=`): **never fetch youtube.com** (it blocks cloud requests). Use the story's
      `sourceText` from step 2 (the description and chapters, saved by the robot from the YouTube API). You cannot
      watch the video, so say only what the description says, plus official facts already on the site
-     (`data/briefs.zh.json`). No `sourceText` → write from the title alone only if it states clear facts
-     (what the video covers), in 2–3 points; otherwise skip.
+     (`data/briefs.zh.json`).
+     **Description is only promotion** (channel intro, links, Discord, sponsors) **or missing, but the title names
+     a topic** (a build, an exotic, a mission, a season, a patch, a guide…) → still write it, as a short video
+     introduction: 2–3 points, the first one starting 「影片介紹（依標題）：」, saying what the video is about and what
+     kind of video it is (build, guide, first look, mission run…), and who made it. Only what the title says; no
+     claims about results, numbers or opinions it doesn't state. Videos are the site's most-read section and the
+     robot already picked the best few (owner, 2026-11-15), so keep them unless there is truly nothing to say.
    - Can't read the source (blocked, empty) → skip that story this run.
-   - Read it, but there is **nothing to summarise** (a YouTube description that is only a channel intro, links,
-     a gamer ID; a live stream or Short with no facts in the title) → add it to `data/skipped-stories.json`:
+   - Read it, but there is **nothing to summarise**: the title names no topic either (e.g. just 「直播」/"LIVE chill
+     stream", a gamer ID, emojis), or the title is not Chinese or English → add it to `data/skipped-stories.json`:
      `"<id>": { "reason": "short Traditional Chinese reason", "at": "<ISO time>" }`. The site and the robot drop
      it, so its place goes to a better story, and it is never listed for you again.
 4. Add an entry to `data/briefs.zh.json`:
