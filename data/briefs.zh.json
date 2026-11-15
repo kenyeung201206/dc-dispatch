@@ -8641,6 +8641,82 @@
         "影片長度約 12 分 44 秒；影片說明只重複標題，沒有其他細節，詳情請看影片。"
       ],
       "written": "2026-11-15"
+    },
+    "wr55da": {
+      "points": [
+        "影片介紹：德國創作者 Dessano 在遊戲內展示 Spearfall（第 8 年第 4 季）的新裝備，內容來自 PTS（公開測試伺服器），並非正式版。",
+        "介紹的裝備：奇特突擊步槍 August、奇特面具 Forward Observer、套裝 Field General，以及全部 6 件新命名裝備。",
+        "說明提到：August 透過身體命中累積爆頭加成；Forward Observer 會讓被標記的敵人對整個小隊更脆弱；Field General 則提供隊友加成。",
+        "6 件命名裝備為 Magnet、Siphon、Thrive、Hearty、Blackout、Power Spike，影片會逐一說明其數值與天賦。",
+        "影片說明提醒：畫面與數值取自 PTS，到賽季正式開始前仍可能更動。"
+      ],
+      "tables": [
+        {
+          "title": "影片介紹的新內容",
+          "columns": [
+            "類型",
+            "名稱"
+          ],
+          "rows": [
+            [
+              "奇特突擊步槍",
+              "August"
+            ],
+            [
+              "奇特面具",
+              "Forward Observer"
+            ],
+            [
+              "套裝",
+              "Field General"
+            ],
+            [
+              "命名裝備（共 6 件）",
+              "Magnet、Siphon、Thrive、Hearty、Blackout、Power Spike"
+            ]
+          ]
+        }
+      ],
+      "written": "2026-11-15"
+    },
+    "19kuma1": {
+      "points": [
+        "影片介紹（依標題）：創作者的《全境封鎖 2》影片（直式短片），主題是用 Iron Will 配裝刷「Golden Bullet」活動。",
+        "影片說明只有頻道介紹與連結，沒有其他細節，詳情請看影片。"
+      ],
+      "written": "2026-11-15"
+    },
+    "1gkaqkq": {
+      "points": [
+        "影片介紹：創作者分享以 Ember Engine 為核心的配裝，目標是完成 T10 內容，同時為全隊提供輔助。",
+        "特色是彈性：背包有 3 種選擇，可依隊伍需求替換。",
+        "胸甲可選 Rush Down 或 Perfect Tag Team；技能為新的 Hollow Pulse 與 Tactician Drone。",
+        "創作者在說明中表示，這套配裝能支援隊友、擴散狀態效果或提高全隊傷害，不必固定一種玩法。"
+      ],
+      "tables": [
+        {
+          "title": "背包選項",
+          "columns": [
+            "背包",
+            "說明中的用途"
+          ],
+          "rows": [
+            [
+              "Birdie's Quick Fix",
+              "為隊伍提供更多輔助"
+            ],
+            [
+              "Creeping Death",
+              "擴散狀態效果並提供額外控場"
+            ],
+            [
+              "Perfect Opportunistic（命名背包）",
+              "偏向團隊，提高對敵人的傷害輸出"
+            ]
+          ]
+        }
+      ],
+      "written": "2026-11-15"
     }
   }
 }
