@@ -9236,6 +9236,82 @@
         "具體配置未提供，請看影片"
       ],
       "written": "2026-11-16"
+    },
+    "22759v": {
+      "points": [
+        "影片介紹（依標題）：GCROCK XTRA 頻道的 PTS 影片，首次挑戰 Viewpoint Museum 傳奇難度任務，屬玩家影片",
+        "說明欄稱 Spearfall PTS 新增四個傳奇任務（Legendary Missions），這支影片挑戰其中的 Viewpoint Museum",
+        "內容是第一次嘗試的完整實機遊玩，展示遭遇戰、戰鬥與挑戰，沒有攻略或教學"
+      ],
+      "written": "2026-11-16"
+    },
+    "bz4io4": {
+      "points": [
+        "影片介紹（依標題）：玩家 EllisDee789 的狙擊配裝影片，在 Space Administration HQ 以 T10 戰鬥升級（Escalation）展示 Prima Donna 狙擊配裝",
+        "說明欄稱這是一擊必殺的 DPS 配裝，靠高額狙擊傷害與穩定爆頭，在敵人出現後迅速清除",
+        "主武器為奇特 Mk20 SSR 「Prima Donna」，搭配 Aces & Eights 套裝、奇特胸甲 Iron Will 與 Melon Baller 等",
+        "具體數值見下表，完整配置請看影片"
+      ],
+      "tables": [
+        {
+          "title": "說明欄列出的主要裝備",
+          "columns": [
+            "裝備",
+            "說明欄所述效果"
+          ],
+          "rows": [
+            [
+              "Prima Donna（奇特 Mk20 SSR）",
+              "脫戰時累積 10 層，每層 +12.5% 增幅傷害；受傷時消耗 1 層完全修復該次傷害；每 3 秒回復 1 層"
+            ],
+            [
+              "The Artist's Tool（Perfect Rifleman + ACOG 4.0x 瞄準鏡）",
+              "爆頭獲得 +11% 武器傷害，持續 5 秒，最多疊到 +66%；瞄準鏡提供 +50% 最佳射程"
+            ],
+            [
+              "Quickstep（Sport Mode）",
+              "+20% 移動速度"
+            ],
+            [
+              "Aces & Eights（套裝）",
+              "+30% 精準步槍傷害、+30% 步槍傷害、+30% 爆頭傷害、+30% 武器操控；完成一手牌後下幾發子彈獲得 75% 增幅傷害：Four of a Kind 4 發、Full House 3 發、Aces & Eights 2 發"
+            ],
+            [
+              "Iron Will（奇特胸甲）",
+              "PvE 中每 2 秒，下一發身體命中算作爆頭傷害"
+            ],
+            [
+              "Melon Baller（Perfect Concussion）",
+              "爆頭 5 秒內 +20% 總武器傷害；爆頭擊殺 10 秒內 +15% 總武器傷害"
+            ]
+          ]
+        }
+      ],
+      "written": "2026-11-16"
+    },
+    "lae7gz": {
+      "points": [
+        "影片介紹（依標題）：PlumConch836 的玩家影片，介紹一套簡單的衝突（Conflict）配裝，用來刷 Prometheus 點數（Prometheus Credits）",
+        "標題指這套配裝適合不玩 PvP 的玩家",
+        "說明欄只有頻道連結與其他配裝影片列表，具體配置請看影片"
+      ],
+      "written": "2026-11-16"
+    },
+    "1fag53u": {
+      "points": [
+        "影片介紹（依標題）：玩家影片，介紹更強的控制選項，標題提到泡沫（Foam）常在中途被敵人反擊打死，以及火焰控不住「胖胖」",
+        "說明欄稱沿用熟悉的老牌 Banshee 配法，以致盲與電擊為主，套裝用日蝕（Eclipse）",
+        "說明欄表示忘了拍裝備欄，具體配置請看影片"
+      ],
+      "written": "2026-11-16"
+    },
+    "1lxpxy8": {
+      "points": [
+        "影片介紹（依標題）：玩家影片，介紹坦克兼補血混合配裝（Tank-Healer Hybrid）",
+        "標題稱這套配裝有 120 萬護甲回復（Armor Regen）與 120 萬額外護甲（Bonus Armor）",
+        "作者在說明欄請分享時註明出處，具體配置請看影片"
+      ],
+      "written": "2026-11-16"
     }
   }
 }
