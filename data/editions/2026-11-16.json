@@ -1,7 +1,7 @@
 {
   "date": "2026-11-16",
   "editionNumber": 13,
-  "generatedAt": "2026-11-16T11:14:02.168Z",
+  "generatedAt": "2026-11-16T14:54:58.803Z",
   "meta": {
     "season_en": "Red Horizon",
     "season_zhHant": "Red Horizon 賽季",
@@ -17,14 +17,14 @@
       "title_orig": "The Division 2: Echoes of Central Park Event Pass Twitch Drops",
       "lang_orig": "en",
       "publishedAt": "2026-11-10T16:00:00.000Z",
-      "fetchedAt": "2026-11-16T11:14:02.168Z",
+      "fetchedAt": "2026-11-16T14:54:58.803Z",
       "category": "community",
       "tags": [
         "event",
         "twitch-drops",
         "exotic"
       ],
-      "importance": 79,
+      "importance": 78,
       "confidence": "official",
       "headline_en": "The Division 2: Echoes of Central Park Event Pass Twitch Drops",
       "headline_zhHant": "pending",
@@ -122,7 +122,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-16T11:14:02.168Z",
+      "fetchedAt": "2026-11-16T14:54:58.803Z",
       "category": "updates",
       "tags": [
         "known-issue",
@@ -170,7 +170,7 @@
       "title_orig": "[TUY8S3.3] Echoes of Central Park Launch, Crossplay Rollout, Conflict Improvements & More",
       "lang_orig": "en",
       "publishedAt": "2026-11-02T15:45:00.000Z",
-      "fetchedAt": "2026-11-16T11:14:02.168Z",
+      "fetchedAt": "2026-11-16T14:54:58.803Z",
       "category": "updates",
       "tags": [
         "title-update",
@@ -235,7 +235,7 @@
       "title_orig": "The Division 2: Echoes of Central Park DLC is available now!",
       "lang_orig": "en",
       "publishedAt": "2026-11-03T15:00:00.000Z",
-      "fetchedAt": "2026-11-16T11:14:02.168Z",
+      "fetchedAt": "2026-11-16T14:54:58.803Z",
       "category": "missions",
       "tags": [
         "dlc"
@@ -290,6 +290,34 @@
       "status": "new"
     },
     {
+      "id": "fyapub",
+      "sourceId": "youtube",
+      "sourceName": "DJTICKLE",
+      "sourceUrl": "https://www.youtube.com/watch?v=v_LNB0tzh-0",
+      "title_orig": "Field General Is ALMOST Great... New Gear Set Tested - Division 2 Spearfall PTS",
+      "lang_orig": "en",
+      "publishedAt": "2026-11-16T13:38:28.000Z",
+      "fetchedAt": "2026-11-16T14:54:58.803Z",
+      "category": "updates",
+      "tags": [
+        "season",
+        "video"
+      ],
+      "importance": 64,
+      "confidence": "community",
+      "headline_en": "Field General Is ALMOST Great... New Gear Set Tested - Division 2 Spearfall PTS",
+      "headline_zhHant": "pending",
+      "summary_en": "I re-tested the new Field General gear set on the Year 8 Season 4 Spearfall PTS - what it actually does for YOU and for…",
+      "summary_zhHant": "pending",
+      "summaryKind": "extract",
+      "alsoReportedBy": [],
+      "media": [],
+      "videoId": "v_LNB0tzh-0",
+      "relatedIds": [],
+      "firstSeenAt": "2026-11-16T14:54:58.803Z",
+      "status": "new"
+    },
+    {
       "id": "126embg",
       "sourceId": "youtube",
       "sourceName": "widdzTV",
@@ -315,6 +343,34 @@
       "videoId": "JLazf4EVPPk",
       "relatedIds": [],
       "firstSeenAt": "2026-11-15T18:37:29.803Z",
+      "status": "new"
+    },
+    {
+      "id": "gw3d3q",
+      "sourceId": "youtube",
+      "sourceName": "widdzTV",
+      "sourceUrl": "https://www.youtube.com/watch?v=X8qXWbRuKNE",
+      "title_orig": "Season 4 PTS! Drops on Twitch / widdz (The Division 2)",
+      "lang_orig": "en",
+      "publishedAt": "2026-11-16T14:22:20.000Z",
+      "fetchedAt": "2026-11-16T14:54:58.803Z",
+      "category": "updates",
+      "tags": [
+        "season",
+        "video"
+      ],
+      "importance": 63,
+      "confidence": "community",
+      "headline_en": "Season 4 PTS! Drops on Twitch / widdz (The Division 2)",
+      "headline_zhHant": "pending",
+      "summary_en": "▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ Like my work and wanna support me? ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ Follow my other social media sites and never miss a video!",
+      "summary_zhHant": "pending",
+      "summaryKind": "extract",
+      "alsoReportedBy": [],
+      "media": [],
+      "videoId": "X8qXWbRuKNE",
+      "relatedIds": [],
+      "firstSeenAt": "2026-11-16T14:54:58.803Z",
       "status": "new"
     },
     {
@@ -427,6 +483,33 @@
       "videoId": "0T9E244NcmE",
       "relatedIds": [],
       "firstSeenAt": "2026-11-15T20:33:46.862Z",
+      "status": "new"
+    },
+    {
+      "id": "1arxx39",
+      "sourceId": "youtube",
+      "sourceName": "Drakkyzz",
+      "sourceUrl": "https://www.youtube.com/watch?v=aCht-fIYYsE",
+      "title_orig": "The Division 2 : ce build DPS brute rivalise avec un Striker !",
+      "lang_orig": "en",
+      "publishedAt": "2026-11-16T13:24:36.000Z",
+      "fetchedAt": "2026-11-16T14:54:58.803Z",
+      "category": "builds",
+      "tags": [
+        "video"
+      ],
+      "importance": 57,
+      "confidence": "community",
+      "headline_en": "The Division 2 : ce build DPS brute rivalise avec un Striker !",
+      "headline_zhHant": "pending",
+      "summary_en": "Tu cherches un build DPS brute sur The Division 2 capable de rivaliser avec le Striker ?",
+      "summary_zhHant": "pending",
+      "summaryKind": "extract",
+      "alsoReportedBy": [],
+      "media": [],
+      "videoId": "aCht-fIYYsE",
+      "relatedIds": [],
+      "firstSeenAt": "2026-11-16T14:54:58.803Z",
       "status": "new"
     },
     {
@@ -574,7 +657,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-16T11:14:02.168Z",
+      "fetchedAt": "2026-11-16T14:54:58.803Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -600,6 +683,33 @@
         "riskNote_en": "Known issue listed by Ubisoft. No workaround yet.",
         "riskNote_zhHant": "pending"
       }
+    },
+    {
+      "id": "12l9av7",
+      "sourceId": "youtube",
+      "sourceName": "小肥牛",
+      "sourceUrl": "https://www.youtube.com/watch?v=9h3fe8SBstA",
+      "title_orig": "🐮牛哥 全境封鎖2 11/16 排隊進場中",
+      "lang_orig": "zh",
+      "publishedAt": "2026-11-16T12:18:39.000Z",
+      "fetchedAt": "2026-11-16T14:54:58.803Z",
+      "category": "community",
+      "tags": [
+        "video"
+      ],
+      "importance": 56,
+      "confidence": "community",
+      "headline_en": "pending",
+      "headline_zhHant": "🐮牛哥 全境封鎖2 11/16 排隊進場中",
+      "summary_en": "pending",
+      "summary_zhHant": "PSN ID:WILDARMS_Andy",
+      "summaryKind": "extract",
+      "alsoReportedBy": [],
+      "media": [],
+      "videoId": "9h3fe8SBstA",
+      "relatedIds": [],
+      "firstSeenAt": "2026-11-16T14:54:58.803Z",
+      "status": "new"
     },
     {
       "id": "fxbrnx",
@@ -745,7 +855,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-16T11:14:02.168Z",
+      "fetchedAt": "2026-11-16T14:54:58.803Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -1161,7 +1271,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-16T11:14:02.168Z",
+      "fetchedAt": "2026-11-16T14:54:58.803Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -1189,29 +1299,30 @@
       }
     },
     {
-      "id": "ccqbq5",
-      "sourceId": "steam-news",
-      "sourceName": "Ubisoft (via Steam News)",
-      "sourceUrl": "https://store.steampowered.com/news/app/2221490/view/1848664643356049",
-      "title_orig": "The Division 2: 6X XP Event",
-      "lang_orig": "en",
-      "publishedAt": "2026-11-06T10:31:09.000Z",
-      "fetchedAt": "2026-11-16T11:14:02.168Z",
+      "id": "iarcmi",
+      "sourceId": "youtube",
+      "sourceName": "珞雪嵐 RakuSetsu_Ran Ch.",
+      "sourceUrl": "https://www.youtube.com/watch?v=L4I5HWvDtYw",
+      "title_orig": "【全境封鎖2/Tom Clancy's The Division 2】黃金子彈最後一天，把中央公園的任務打一打！YT訂閱累積中 歡迎聊天【珞雪嵐 Rakusetsu Ran】",
+      "lang_orig": "zh",
+      "publishedAt": "2026-11-16T12:34:33.000Z",
+      "fetchedAt": "2026-11-16T14:54:58.803Z",
       "category": "missions",
       "tags": [
-        "event"
+        "video"
       ],
       "importance": 54,
-      "confidence": "official",
-      "headline_en": "The Division 2: 6X XP Event",
-      "headline_zhHant": "pending",
-      "summary_en": "For the first time ever, earn SHD levels 6 times faster until November 10.",
-      "summary_zhHant": "pending",
+      "confidence": "community",
+      "headline_en": "pending",
+      "headline_zhHant": "【全境封鎖2/Tom Clancy's The Division 2】黃金子彈最後一天，把中央公園的任務打一打！YT訂閱累積中 歡迎聊天【珞雪嵐 Rakusetsu Ran】",
+      "summary_en": "pending",
+      "summary_zhHant": "回來華盛頓當特工啦！ 如果願意支持一下主播會很感謝的！",
       "summaryKind": "extract",
       "alsoReportedBy": [],
       "media": [],
+      "videoId": "L4I5HWvDtYw",
       "relatedIds": [],
-      "firstSeenAt": "2026-11-09T16:58:40.968Z",
+      "firstSeenAt": "2026-11-16T14:54:58.803Z",
       "status": "new"
     },
     {
@@ -1384,7 +1495,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-16T11:14:02.168Z",
+      "fetchedAt": "2026-11-16T14:54:58.803Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -1410,6 +1521,32 @@
         "riskNote_en": "Known issue listed by Ubisoft. No workaround yet.",
         "riskNote_zhHant": "pending"
       }
+    },
+    {
+      "id": "ccqbq5",
+      "sourceId": "steam-news",
+      "sourceName": "Ubisoft (via Steam News)",
+      "sourceUrl": "https://store.steampowered.com/news/app/2221490/view/1848664643356049",
+      "title_orig": "The Division 2: 6X XP Event",
+      "lang_orig": "en",
+      "publishedAt": "2026-11-06T10:31:09.000Z",
+      "fetchedAt": "2026-11-16T14:54:58.803Z",
+      "category": "missions",
+      "tags": [
+        "event"
+      ],
+      "importance": 53,
+      "confidence": "official",
+      "headline_en": "The Division 2: 6X XP Event",
+      "headline_zhHant": "pending",
+      "summary_en": "For the first time ever, earn SHD levels 6 times faster until November 10.",
+      "summary_zhHant": "pending",
+      "summaryKind": "extract",
+      "alsoReportedBy": [],
+      "media": [],
+      "relatedIds": [],
+      "firstSeenAt": "2026-11-09T16:58:40.968Z",
+      "status": "new"
     },
     {
       "id": "1oqmeg",
@@ -1474,7 +1611,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-16T11:14:02.168Z",
+      "fetchedAt": "2026-11-16T14:54:58.803Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -1581,193 +1718,28 @@
       "relatedIds": [],
       "firstSeenAt": "2026-11-15T16:35:47.148Z",
       "status": "new"
-    },
-    {
-      "id": "1e2o3a6",
-      "sourceId": "ubisoft-en",
-      "sourceName": "Ubisoft",
-      "sourceUrl": "https://www.ubisoft.com/en-us/game/the-division/the-division-2/news-updates/1wrUJ1HzY6BF8zzO4AMhJ3/spearfall-pts-patch-notes",
-      "title_orig": "Spearfall PTS Patch Notes",
-      "lang_orig": "en",
-      "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-16T11:14:02.168Z",
-      "category": "glitch-watch",
-      "tags": [
-        "known-issue"
-      ],
-      "importance": 51,
-      "confidence": "official",
-      "headline_en": "Known issue: Unbreakable may repair 100% of your Armor instead of 95%",
-      "headline_zhHant": "pending",
-      "summary_en": "Unbreakable may repair 100% of your Armor instead of 95%.",
-      "summary_zhHant": "pending",
-      "summaryKind": "extract",
-      "alsoReportedBy": [],
-      "media": [],
-      "relatedIds": [
-        "15yr4ky"
-      ],
-      "firstSeenAt": "2026-11-12T16:55:32.847Z",
-      "status": "new",
-      "glitch": {
-        "state": "active",
-        "firstSeen": "2026-11-12",
-        "banRisk": false,
-        "riskNote_en": "Known issue listed by Ubisoft. No workaround yet.",
-        "riskNote_zhHant": "pending"
-      }
-    },
-    {
-      "id": "1lsfrn8",
-      "sourceId": "youtube",
-      "sourceName": "Frank",
-      "sourceUrl": "https://www.youtube.com/watch?v=6XxbRGOztrs",
-      "title_orig": "P-Type Flip Trick | Y8S3 Build Workaround (The Division 2)",
-      "lang_orig": "en",
-      "publishedAt": "2026-11-15T23:43:53.000Z",
-      "fetchedAt": "2026-11-16T11:14:02.168Z",
-      "category": "glitch-watch",
-      "tags": [
-        "video"
-      ],
-      "importance": 51,
-      "confidence": "community",
-      "headline_en": "P-Type Flip Trick | Y8S3 Build Workaround (The Division 2)",
-      "headline_zhHant": "pending",
-      "summary_en": "A cool method for gaining more than just 1 max roll attribute when flipping a gear piece to prototype.",
-      "summary_zhHant": "pending",
-      "summaryKind": "extract",
-      "alsoReportedBy": [],
-      "media": [],
-      "videoId": "6XxbRGOztrs",
-      "relatedIds": [],
-      "firstSeenAt": "2026-11-16T11:14:02.168Z",
-      "status": "new"
-    },
-    {
-      "id": "t35ov9",
-      "sourceId": "ubisoft-en",
-      "sourceName": "Ubisoft",
-      "sourceUrl": "https://www.ubisoft.com/en-us/game/the-division/the-division-2/news-updates/1wrUJ1HzY6BF8zzO4AMhJ3/spearfall-pts-patch-notes",
-      "title_orig": "Spearfall PTS Patch Notes",
-      "lang_orig": "en",
-      "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-16T11:14:02.168Z",
-      "category": "glitch-watch",
-      "tags": [
-        "known-issue"
-      ],
-      "importance": 50,
-      "confidence": "official",
-      "headline_en": "Known issue: Headshots may fail to trigger Reformation’s Skill Repair bonus",
-      "headline_zhHant": "pending",
-      "summary_en": "Headshots may fail to trigger Reformation’s Skill Repair bonus.",
-      "summary_zhHant": "pending",
-      "summaryKind": "extract",
-      "alsoReportedBy": [],
-      "media": [],
-      "relatedIds": [
-        "15yr4ky"
-      ],
-      "firstSeenAt": "2026-11-12T16:55:32.847Z",
-      "status": "new",
-      "glitch": {
-        "state": "active",
-        "firstSeen": "2026-11-12",
-        "banRisk": false,
-        "riskNote_en": "Known issue listed by Ubisoft. No workaround yet.",
-        "riskNote_zhHant": "pending"
-      }
-    },
-    {
-      "id": "1sx320d",
-      "sourceId": "ubisoft-en",
-      "sourceName": "Ubisoft",
-      "sourceUrl": "https://www.ubisoft.com/en-us/game/the-division/the-division-2/news-updates/5EEgwKS6kDqyvUFo5PJYsB/the-division-2-echoes-of-central-park-launch-twitch-drops",
-      "title_orig": "The Division 2: Echoes of Central Park Launch Twitch Drops",
-      "lang_orig": "en",
-      "publishedAt": "2026-11-03T15:00:00.000Z",
-      "fetchedAt": "2026-11-16T11:14:02.168Z",
-      "category": "community",
-      "tags": [
-        "twitch-drops",
-        "exotic"
-      ],
-      "importance": 50,
-      "confidence": "official",
-      "headline_en": "The Division 2: Echoes of Central Park Launch Twitch Drops",
-      "headline_zhHant": "《全境封鎖 2 - 中央公園的迴響》發行 Twitch 掉寶",
-      "summary_en": "Tune in from November 3 – November 10 to earn exclusive rewards while watching your favorite The Division 2 streamers on Twitch.",
-      "summary_zhHant": "11 月 3 日至 11 月 10 日期間，在 Twitch 上觀看你喜愛的《全境封鎖 2》實況主即可獲得專屬獎勵。",
-      "summaryKind": "extract",
-      "alsoReportedBy": [
-        {
-          "name": "巴哈姆特 全境封鎖板",
-          "url": "https://forum.gamer.com.tw/C.php?bsn=24460&snA=32864"
-        }
-      ],
-      "media": [],
-      "imageId": "ubi-5EEgwKS6kDqyvUFo5PJYsB",
-      "relatedIds": [],
-      "firstSeenAt": "2026-11-03T15:00:00.000Z",
-      "status": "new"
-    },
-    {
-      "id": "1u6r63n",
-      "sourceId": "ubisoft-en",
-      "sourceName": "Ubisoft",
-      "sourceUrl": "https://www.ubisoft.com/en-us/game/the-division/the-division-2/news-updates/1wrUJ1HzY6BF8zzO4AMhJ3/spearfall-pts-patch-notes",
-      "title_orig": "Spearfall PTS Patch Notes",
-      "lang_orig": "en",
-      "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-16T11:14:02.168Z",
-      "category": "glitch-watch",
-      "tags": [
-        "known-issue"
-      ],
-      "importance": 49,
-      "confidence": "official",
-      "headline_en": "Known issue: Brave Draw is missing its Protection from Elites bonus",
-      "headline_zhHant": "pending",
-      "summary_en": "Brave Draw is missing its Protection from Elites bonus.",
-      "summary_zhHant": "pending",
-      "summaryKind": "extract",
-      "alsoReportedBy": [],
-      "media": [],
-      "relatedIds": [
-        "15yr4ky"
-      ],
-      "firstSeenAt": "2026-11-12T16:55:32.847Z",
-      "status": "new",
-      "glitch": {
-        "state": "active",
-        "firstSeen": "2026-11-12",
-        "banRisk": false,
-        "riskNote_en": "Known issue listed by Ubisoft. No workaround yet.",
-        "riskNote_zhHant": "pending"
-      }
     }
   ],
   "sources": [
     {
       "sourceId": "steam-news",
       "ok": true,
-      "checkedAt": "2026-11-16T11:14:02.168Z"
+      "checkedAt": "2026-11-16T14:54:58.803Z"
     },
     {
       "sourceId": "ubisoft-en",
       "ok": true,
-      "checkedAt": "2026-11-16T11:14:02.168Z"
+      "checkedAt": "2026-11-16T14:54:58.803Z"
     },
     {
       "sourceId": "ubisoft-zh-tw",
       "ok": true,
-      "checkedAt": "2026-11-16T11:14:02.168Z"
+      "checkedAt": "2026-11-16T14:54:58.803Z"
     },
     {
       "sourceId": "bahamut",
       "ok": true,
-      "checkedAt": "2026-11-16T11:14:02.168Z"
+      "checkedAt": "2026-11-16T14:54:58.803Z"
     }
   ]
 }
