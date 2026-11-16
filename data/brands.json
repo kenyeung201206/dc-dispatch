@@ -501,6 +501,14 @@
     "Virtuoso"
    ],
    "icon": "/icons/set/virtuoso.png"
+  },
+  {
+   "en": "Ortiz: Reficere",
+   "aliases": [
+    "Ortiz: Reficere"
+   ],
+   "icon": "/icons/set/ortiz-reficere.png",
+   "auto": true
   }
  ],
  "slots": [

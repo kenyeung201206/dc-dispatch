@@ -1,60 +1,60 @@
 {
- "date": "2026-11-15",
+ "date": "2026-11-16",
  "missions": [
   {
    "place": "墳墓",
-   "reward": "槍套",
-   "kind": "slot"
-  },
-  {
-   "place": "曼寧",
-   "reward": "護膝",
-   "kind": "slot"
-  },
-  {
-   "place": "銀行",
    "reward": "獵人怒火",
    "kind": "set"
   },
   {
+   "place": "曼寧",
+   "reward": "茲維多",
+   "kind": "brand"
+  },
+  {
+   "place": "銀行",
+   "reward": "面罩",
+   "kind": "slot"
+  },
+  {
    "place": "歷史博物館",
-   "reward": "烏茲娜 ‧ 蓋蒂卡",
+   "reward": "飛龍",
    "kind": "brand"
   },
   {
    "place": "太空總署",
-   "reward": "大師",
-   "kind": "set"
+   "reward": "Ortiz: Reficere",
+   "kind": "other"
   }
  ],
  "vendor": [
   "突擊步槍",
-  "手套"
+  "槍套"
  ],
  "english": [
   {
    "place": "The Tombs",
-   "reward": "Holster"
-  },
-  {
-   "place": "Manning National Zoo",
-   "reward": "Kneepad"
-  },
-  {
-   "place": "Bank Headquarters",
    "reward": "Hunters Fury"
   },
   {
+   "place": "Manning National Zoo",
+   "reward": "Zwiadowka Sp. z o.o"
+  },
+  {
+   "place": "Bank Headquarters",
+   "reward": "Mask"
+  },
+  {
    "place": "American History Museum",
-   "reward": "Uzina Getica"
+   "reward": "Wyvern Wear"
   },
   {
    "place": "Space Administration HQ",
-   "reward": "Virtuoso"
+   "reward": "Ortiz: Reficere"
   }
  ],
  "title": "",
  "url": "https://prototrack.gg/target-loot/target-loot.php",
  "source": "prototrack",
- "fetchedAt": "2026-11-15T09:10:58.014Z"
+ "fetchedAt": "2026-11-16T08:29:59.776Z"
 }
