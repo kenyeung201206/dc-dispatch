@@ -20,6 +20,8 @@ export function failedChecks(log: string): string[] {
   const plain = log.replace(/(?:\x1b|\^\[)\[[0-9;]*m/g, '');
   const tests = [...plain.matchAll(/\bFAIL\s+(tests\/\S+ > .+?)\s*$/gm)].map((m) => m[1]!.replace(/^tests\/unit\//, ''));
   if (tests.length) return [...new Set(tests)].slice(0, 5);
+  const dupes = [...plain.matchAll(/FAIL (duplicate Chinese title[^\n]*)/g)].map((m) => m[1]!.trim());
+  if (dupes.length) return dupes.slice(0, 5);
   if (/i18n check failed/.test(plain)) return ['i18n check (Chinese/English labels)'];
   return ['unknown check (see the run log)'];
 }

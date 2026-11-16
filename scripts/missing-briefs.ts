@@ -1,6 +1,6 @@
 /**
  * Lists the newest edition's stories that have no 重點整理 yet (used by the scheduled writer,
- * docs/BRIEF_WRITER.md). Prints JSON: [{ id, sourceId, sourceUrl, title, headline_zhHant, needsZhTitle, sourceText? }].
+ * docs/BRIEF_WRITER.md). Prints JSON: [{ id, sourceId, sourceUrl, title, partOfArticle?, partTitle?, partText?, headline_zhHant, needsZhTitle, sourceText? }].
  * sourceText = the video description the robot saved (data/source-notes.json), when there is one.
  *   node scripts/missing-briefs.ts
  */
@@ -26,7 +26,13 @@ for (const f of files) {
   const e = JSON.parse(readFileSync(`data/editions/${f}`, 'utf8'));
   if (e.fixture) continue;
   const pending = (v?: string) => !v || v === 'pending';
-  const missing = (e.items as { id: string; sourceId: string; sourceUrl: string; title_orig: string; headline_zhHant?: string; summary_zhHant?: string }[])
+  type Story = { id: string; sourceId: string; sourceUrl: string; title_orig: string; headline_en?: string; summary_en?: string; headline_zhHant?: string; summary_zhHant?: string };
+  const all = e.items as Story[];
+  // One article can make several stories (each known issue in patch notes is its own story). Those share the
+  // article's title and link, so the writer gets each one's own text, and must write only about that part
+  // (2026-11-16: four known issues all got the whole article's summary and looked like duplicates).
+  const sameLink = (i: Story) => all.filter((x) => x.sourceUrl === i.sourceUrl).length > 1;
+  const missing = all
     // Also stories that have a 重點整理 but still no Chinese title/summary (Chinese pages hide those).
     .filter((i) => !(i.id in skipped))
     .filter((i) => !briefs[i.id] || ((pending(i.headline_zhHant) || pending(i.summary_zhHant)) && !tr[i.id]))
@@ -36,6 +42,7 @@ for (const f of files) {
       sourceId: i.sourceId,
       sourceUrl: i.sourceUrl,
       title: i.title_orig,
+      ...(sameLink(i) ? { partOfArticle: true, partTitle: i.headline_en, partText: i.summary_en } : {}),
       headline_zhHant: i.headline_zhHant,
       needsZhTitle: (pending(i.headline_zhHant) || pending(i.summary_zhHant)) && !tr[i.id],
       ...(notes[i.id] ? { sourceText: notes[i.id]!.text } : {}),

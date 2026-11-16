@@ -46,7 +46,7 @@ jobs:
         continue-on-error: true
         run: |
           set -o pipefail
-          (pnpm run i18n:check && pnpm run test) 2>&1 | tee check.log
+          (pnpm run i18n:check && pnpm run test && node scripts/check-duplicate-titles.ts) 2>&1 | tee check.log
       - name: Decide whether to publish
         id: gate
         run: node scripts/publish-gate.ts "${{ steps.check.outcome }}" check.log

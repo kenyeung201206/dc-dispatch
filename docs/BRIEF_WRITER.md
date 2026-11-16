@@ -47,6 +47,11 @@ Chinese 「重點整理」 for stories that don't have one yet, then pushes. A p
      stream", a gamer ID, emojis), or the title is not Chinese or English → add it to `data/skipped-stories.json`:
      `"<id>": { "reason": "short Traditional Chinese reason", "at": "<ISO time>" }`. The site and the robot drop
      it, so its place goes to a better story, and it is never listed for you again.
+3b. **Part of a longer article** (`partOfArticle: true`): one article made several stories, e.g. each known issue
+   in patch notes. They share the article's `title` and `sourceUrl`, so **write only about this part**, from
+   `partTitle` / `partText`: its own Chinese title (e.g. 「已知問題：…」 naming the item), a summary of that one
+   point, and 1–3 points. Never give it the whole article's title or summary: every story needs its own title
+   (`node scripts/check-duplicate-titles.ts` fails otherwise; 2026-11-16 four known issues looked like duplicates).
 4. Add an entry to `data/briefs.zh.json`:
    ```json
    "<id>": {
@@ -72,7 +77,7 @@ Chinese 「重點整理」 for stories that don't have one yet, then pushes. A p
      2 s); at most 5 lookups per run.
    - Found → add `{ "en": "<exact English>", "zh": "<Chinese>", "source": "巴哈 <snA> (<post title>)" }` (or the
      Ubisoft URL). Not found → leave it out; never translate it yourself and never guess.
-6. Check: `pnpm install --frozen-lockfile && pnpm run test` (the briefs tests check ids, row lengths and Chinese).
+6. Check: `pnpm install --frozen-lockfile && pnpm run test && node scripts/check-duplicate-titles.ts` (the briefs tests check ids, row lengths and Chinese).
    Fix any failure in your own entries; never edit tests.
 7. Commit only `data/briefs.zh.json`, `data/translations.zh.json`, `data/term-names.json` and `data/skipped-stories.json`:
    `git commit -m "chore(data): 重點整理 for N new stories"`, then `git push` (on rejection: `git pull --rebase`, push again).
