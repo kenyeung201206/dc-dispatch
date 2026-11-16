@@ -505,10 +505,11 @@
   {
    "en": "Ortiz: Reficere",
    "aliases": [
+    "奧提茲 : 修復",
+    "奧提茲：修復",
     "Ortiz: Reficere"
    ],
-   "icon": "/icons/set/ortiz-reficere.png",
-   "auto": true
+   "icon": "/icons/set/ortiz-reficere.png"
   }
  ],
  "slots": [
