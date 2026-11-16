@@ -1,7 +1,7 @@
 {
   "date": "2026-11-16",
   "editionNumber": 13,
-  "generatedAt": "2026-11-16T08:29:59.776Z",
+  "generatedAt": "2026-11-16T11:14:02.168Z",
   "meta": {
     "season_en": "Red Horizon",
     "season_zhHant": "Red Horizon 賽季",
@@ -17,7 +17,7 @@
       "title_orig": "The Division 2: Echoes of Central Park Event Pass Twitch Drops",
       "lang_orig": "en",
       "publishedAt": "2026-11-10T16:00:00.000Z",
-      "fetchedAt": "2026-11-16T08:29:59.776Z",
+      "fetchedAt": "2026-11-16T11:14:02.168Z",
       "category": "community",
       "tags": [
         "event",
@@ -39,6 +39,10 @@
         {
           "name": "Ubisoft (via Steam News)",
           "url": "https://store.steampowered.com/news/app/2221490/view/1848664643356077"
+        },
+        {
+          "name": "巴哈姆特 全境封鎖板",
+          "url": "https://forum.gamer.com.tw/C.php?bsn=24460&snA=32884"
         }
       ],
       "media": [],
@@ -118,7 +122,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-16T08:29:59.776Z",
+      "fetchedAt": "2026-11-16T11:14:02.168Z",
       "category": "updates",
       "tags": [
         "known-issue",
@@ -166,7 +170,7 @@
       "title_orig": "[TUY8S3.3] Echoes of Central Park Launch, Crossplay Rollout, Conflict Improvements & More",
       "lang_orig": "en",
       "publishedAt": "2026-11-02T15:45:00.000Z",
-      "fetchedAt": "2026-11-16T08:29:59.776Z",
+      "fetchedAt": "2026-11-16T11:14:02.168Z",
       "category": "updates",
       "tags": [
         "title-update",
@@ -174,7 +178,7 @@
         "event",
         "pvp"
       ],
-      "importance": 69,
+      "importance": 68,
       "confidence": "official",
       "headline_en": "[TUY8S3.3] Echoes of Central Park Launch, Crossplay Rollout, Conflict Improvements & More",
       "headline_zhHant": "pending",
@@ -194,40 +198,6 @@
       ],
       "firstSeenAt": "2026-11-05T06:21:13.290Z",
       "status": "new"
-    },
-    {
-      "id": "7kdlud",
-      "sourceId": "ubisoft-en",
-      "sourceName": "Ubisoft",
-      "sourceUrl": "https://www.ubisoft.com/en-us/game/the-division/the-division-2/news-updates/4yCTNp7RZ1Fdm1kMKYgndg/the-division-2-echoes-of-central-park-dlc-is-available-now",
-      "title_orig": "The Division 2: Echoes of Central Park DLC is available now!",
-      "lang_orig": "en",
-      "publishedAt": "2026-11-03T15:00:00.000Z",
-      "fetchedAt": "2026-11-16T08:29:59.776Z",
-      "category": "missions",
-      "tags": [
-        "dlc"
-      ],
-      "importance": 66,
-      "confidence": "official",
-      "headline_en": "Echoes of Central Park DLC is out now",
-      "headline_zhHant": "《中央公園的迴響》DLC 正式推出",
-      "summary_en": "The new paid expansion launched on November 3 alongside Title Update Y8S3.3. Ubisoft's launch coverage highlights a horror-tinged story, new endgame activities and skill variants.",
-      "summary_zhHant": "全新付費擴充內容已於 11 月 3 日隨第 Y8S3.3 號遊戲更新一同推出。官方介紹的重點包括帶有恐怖氛圍的劇情、新的終局活動與技能變體。",
-      "summaryKind": "original",
-      "alsoReportedBy": [
-        {
-          "name": "Ubisoft (via Steam News)",
-          "url": "https://store.steampowered.com/news/app/2221490/view/1847920302252931"
-        }
-      ],
-      "whyItMatters_en": "New story and endgame content — and the reason your clan chat just got very loud.",
-      "whyItMatters_zhHant": "新劇情加上新終局內容，難怪戰隊頻道突然熱鬧起來。",
-      "media": [],
-      "imageId": "ubi-echoes-keyart",
-      "relatedIds": [],
-      "firstSeenAt": "2026-11-03T15:00:00.000Z",
-      "status": "updated"
     },
     {
       "id": "skchbj",
@@ -256,6 +226,40 @@
       "relatedIds": [],
       "firstSeenAt": "2026-11-15T16:35:47.148Z",
       "status": "new"
+    },
+    {
+      "id": "7kdlud",
+      "sourceId": "ubisoft-en",
+      "sourceName": "Ubisoft",
+      "sourceUrl": "https://www.ubisoft.com/en-us/game/the-division/the-division-2/news-updates/4yCTNp7RZ1Fdm1kMKYgndg/the-division-2-echoes-of-central-park-dlc-is-available-now",
+      "title_orig": "The Division 2: Echoes of Central Park DLC is available now!",
+      "lang_orig": "en",
+      "publishedAt": "2026-11-03T15:00:00.000Z",
+      "fetchedAt": "2026-11-16T11:14:02.168Z",
+      "category": "missions",
+      "tags": [
+        "dlc"
+      ],
+      "importance": 65,
+      "confidence": "official",
+      "headline_en": "Echoes of Central Park DLC is out now",
+      "headline_zhHant": "《中央公園的迴響》DLC 正式推出",
+      "summary_en": "The new paid expansion launched on November 3 alongside Title Update Y8S3.3. Ubisoft's launch coverage highlights a horror-tinged story, new endgame activities and skill variants.",
+      "summary_zhHant": "全新付費擴充內容已於 11 月 3 日隨第 Y8S3.3 號遊戲更新一同推出。官方介紹的重點包括帶有恐怖氛圍的劇情、新的終局活動與技能變體。",
+      "summaryKind": "original",
+      "alsoReportedBy": [
+        {
+          "name": "Ubisoft (via Steam News)",
+          "url": "https://store.steampowered.com/news/app/2221490/view/1847920302252931"
+        }
+      ],
+      "whyItMatters_en": "New story and endgame content — and the reason your clan chat just got very loud.",
+      "whyItMatters_zhHant": "新劇情加上新終局內容，難怪戰隊頻道突然熱鬧起來。",
+      "media": [],
+      "imageId": "ubi-echoes-keyart",
+      "relatedIds": [],
+      "firstSeenAt": "2026-11-03T15:00:00.000Z",
+      "status": "updated"
     },
     {
       "id": "im6u2r",
@@ -426,6 +430,34 @@
       "status": "new"
     },
     {
+      "id": "13wqzr0",
+      "sourceId": "youtube",
+      "sourceName": "Reflex",
+      "sourceUrl": "https://www.youtube.com/watch?v=Pt6tZ_3A118",
+      "title_orig": "Vertigo Exotic LMG With Striker Build gameplay (Division 2)",
+      "lang_orig": "en",
+      "publishedAt": "2026-11-16T05:37:41.000Z",
+      "fetchedAt": "2026-11-16T11:14:02.168Z",
+      "category": "arsenal",
+      "tags": [
+        "exotic",
+        "video"
+      ],
+      "importance": 57,
+      "confidence": "community",
+      "headline_en": "Vertigo Exotic LMG With Striker Build gameplay (Division 2)",
+      "headline_zhHant": "pending",
+      "summary_en": "Vertigo Exotic LMG With Striker Build gameplay (Division 2)",
+      "summary_zhHant": "pending",
+      "summaryKind": "extract",
+      "alsoReportedBy": [],
+      "media": [],
+      "videoId": "Pt6tZ_3A118",
+      "relatedIds": [],
+      "firstSeenAt": "2026-11-16T11:14:02.168Z",
+      "status": "new"
+    },
+    {
       "id": "7dcf3b",
       "sourceId": "youtube",
       "sourceName": "FragSavage",
@@ -542,7 +574,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-16T08:29:59.776Z",
+      "fetchedAt": "2026-11-16T11:14:02.168Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -568,6 +600,33 @@
         "riskNote_en": "Known issue listed by Ubisoft. No workaround yet.",
         "riskNote_zhHant": "pending"
       }
+    },
+    {
+      "id": "fxbrnx",
+      "sourceId": "youtube",
+      "sourceName": "Round2Gaming",
+      "sourceUrl": "https://www.youtube.com/watch?v=e7qxfjqK8fk",
+      "title_orig": "🔫The Division 2 | Cap 78: ¡La build no se arma sola! | Round2Gaming: The Maniac",
+      "lang_orig": "en",
+      "publishedAt": "2026-11-16T09:58:28.000Z",
+      "fetchedAt": "2026-11-16T11:14:02.168Z",
+      "category": "builds",
+      "tags": [
+        "video"
+      ],
+      "importance": 56,
+      "confidence": "community",
+      "headline_en": "🔫The Division 2 | Cap 78: ¡La build no se arma sola! | Round2Gaming: The Maniac",
+      "headline_zhHant": "pending",
+      "summary_en": "🎮 Capítulo 78 | Tom Clancy's The Division 2 🔧 ¡BANDITAAAAAAAA! ¡HOY TOCA FARMEO, MIS ESTIMADOS HIJOS DE LA REATA!",
+      "summary_zhHant": "pending",
+      "summaryKind": "extract",
+      "alsoReportedBy": [],
+      "media": [],
+      "videoId": "e7qxfjqK8fk",
+      "relatedIds": [],
+      "firstSeenAt": "2026-11-16T11:14:02.168Z",
+      "status": "new"
     },
     {
       "id": "1tkwkrq",
@@ -686,7 +745,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-16T08:29:59.776Z",
+      "fetchedAt": "2026-11-16T11:14:02.168Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -1102,7 +1161,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-16T08:29:59.776Z",
+      "fetchedAt": "2026-11-16T11:14:02.168Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -1137,7 +1196,7 @@
       "title_orig": "The Division 2: 6X XP Event",
       "lang_orig": "en",
       "publishedAt": "2026-11-06T10:31:09.000Z",
-      "fetchedAt": "2026-11-16T08:29:59.776Z",
+      "fetchedAt": "2026-11-16T11:14:02.168Z",
       "category": "missions",
       "tags": [
         "event"
@@ -1153,6 +1212,33 @@
       "media": [],
       "relatedIds": [],
       "firstSeenAt": "2026-11-09T16:58:40.968Z",
+      "status": "new"
+    },
+    {
+      "id": "1yrjpol",
+      "sourceId": "youtube",
+      "sourceName": "xTEE-RAYx",
+      "sourceUrl": "https://www.youtube.com/watch?v=qjOhDdZz16c",
+      "title_orig": "The Division 2 Hybrid Striker Rifle Build",
+      "lang_orig": "en",
+      "publishedAt": "2026-11-16T05:20:27.000Z",
+      "fetchedAt": "2026-11-16T11:14:02.168Z",
+      "category": "builds",
+      "tags": [
+        "video"
+      ],
+      "importance": 54,
+      "confidence": "community",
+      "headline_en": "The Division 2 Hybrid Striker Rifle Build",
+      "headline_zhHant": "pending",
+      "summary_en": "Also, shout out to these agents running legendary 👇 [SUR] brahianrpoo [BSK] henryfire9 [TNT] The_Blues_Man000",
+      "summary_zhHant": "pending",
+      "summaryKind": "extract",
+      "alsoReportedBy": [],
+      "media": [],
+      "videoId": "qjOhDdZz16c",
+      "relatedIds": [],
+      "firstSeenAt": "2026-11-16T11:14:02.168Z",
       "status": "new"
     },
     {
@@ -1298,7 +1384,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-16T08:29:59.776Z",
+      "fetchedAt": "2026-11-16T11:14:02.168Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -1388,7 +1474,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-16T08:29:59.776Z",
+      "fetchedAt": "2026-11-16T11:14:02.168Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -1414,6 +1500,33 @@
         "riskNote_en": "Known issue listed by Ubisoft. No workaround yet.",
         "riskNote_zhHant": "pending"
       }
+    },
+    {
+      "id": "8wzb8e",
+      "sourceId": "youtube",
+      "sourceName": "MistrWiggles",
+      "sourceUrl": "https://www.youtube.com/watch?v=wzdXgfTs76Q",
+      "title_orig": "*100% Disrupt Resistance* The Division 2: Foundry Bulwark Build",
+      "lang_orig": "en",
+      "publishedAt": "2026-11-16T08:32:52.000Z",
+      "fetchedAt": "2026-11-16T11:14:02.168Z",
+      "category": "builds",
+      "tags": [
+        "video"
+      ],
+      "importance": 52,
+      "confidence": "community",
+      "headline_en": "*100% Disrupt Resistance* The Division 2: Foundry Bulwark Build",
+      "headline_zhHant": "pending",
+      "summary_en": "Viable in all PvE content difficulties & modes.",
+      "summary_zhHant": "pending",
+      "summaryKind": "extract",
+      "alsoReportedBy": [],
+      "media": [],
+      "videoId": "wzdXgfTs76Q",
+      "relatedIds": [],
+      "firstSeenAt": "2026-11-16T11:14:02.168Z",
+      "status": "new"
     },
     {
       "id": "1skkjjl",
@@ -1477,7 +1590,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-16T08:29:59.776Z",
+      "fetchedAt": "2026-11-16T11:14:02.168Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -1505,6 +1618,33 @@
       }
     },
     {
+      "id": "1lsfrn8",
+      "sourceId": "youtube",
+      "sourceName": "Frank",
+      "sourceUrl": "https://www.youtube.com/watch?v=6XxbRGOztrs",
+      "title_orig": "P-Type Flip Trick | Y8S3 Build Workaround (The Division 2)",
+      "lang_orig": "en",
+      "publishedAt": "2026-11-15T23:43:53.000Z",
+      "fetchedAt": "2026-11-16T11:14:02.168Z",
+      "category": "glitch-watch",
+      "tags": [
+        "video"
+      ],
+      "importance": 51,
+      "confidence": "community",
+      "headline_en": "P-Type Flip Trick | Y8S3 Build Workaround (The Division 2)",
+      "headline_zhHant": "pending",
+      "summary_en": "A cool method for gaining more than just 1 max roll attribute when flipping a gear piece to prototype.",
+      "summary_zhHant": "pending",
+      "summaryKind": "extract",
+      "alsoReportedBy": [],
+      "media": [],
+      "videoId": "6XxbRGOztrs",
+      "relatedIds": [],
+      "firstSeenAt": "2026-11-16T11:14:02.168Z",
+      "status": "new"
+    },
+    {
       "id": "t35ov9",
       "sourceId": "ubisoft-en",
       "sourceName": "Ubisoft",
@@ -1512,7 +1652,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-16T08:29:59.776Z",
+      "fetchedAt": "2026-11-16T11:14:02.168Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -1540,6 +1680,39 @@
       }
     },
     {
+      "id": "1sx320d",
+      "sourceId": "ubisoft-en",
+      "sourceName": "Ubisoft",
+      "sourceUrl": "https://www.ubisoft.com/en-us/game/the-division/the-division-2/news-updates/5EEgwKS6kDqyvUFo5PJYsB/the-division-2-echoes-of-central-park-launch-twitch-drops",
+      "title_orig": "The Division 2: Echoes of Central Park Launch Twitch Drops",
+      "lang_orig": "en",
+      "publishedAt": "2026-11-03T15:00:00.000Z",
+      "fetchedAt": "2026-11-16T11:14:02.168Z",
+      "category": "community",
+      "tags": [
+        "twitch-drops",
+        "exotic"
+      ],
+      "importance": 50,
+      "confidence": "official",
+      "headline_en": "The Division 2: Echoes of Central Park Launch Twitch Drops",
+      "headline_zhHant": "《全境封鎖 2 - 中央公園的迴響》發行 Twitch 掉寶",
+      "summary_en": "Tune in from November 3 – November 10 to earn exclusive rewards while watching your favorite The Division 2 streamers on Twitch.",
+      "summary_zhHant": "11 月 3 日至 11 月 10 日期間，在 Twitch 上觀看你喜愛的《全境封鎖 2》實況主即可獲得專屬獎勵。",
+      "summaryKind": "extract",
+      "alsoReportedBy": [
+        {
+          "name": "巴哈姆特 全境封鎖板",
+          "url": "https://forum.gamer.com.tw/C.php?bsn=24460&snA=32864"
+        }
+      ],
+      "media": [],
+      "imageId": "ubi-5EEgwKS6kDqyvUFo5PJYsB",
+      "relatedIds": [],
+      "firstSeenAt": "2026-11-03T15:00:00.000Z",
+      "status": "new"
+    },
+    {
       "id": "1u6r63n",
       "sourceId": "ubisoft-en",
       "sourceName": "Ubisoft",
@@ -1547,7 +1720,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-16T08:29:59.776Z",
+      "fetchedAt": "2026-11-16T11:14:02.168Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -1573,193 +1746,28 @@
         "riskNote_en": "Known issue listed by Ubisoft. No workaround yet.",
         "riskNote_zhHant": "pending"
       }
-    },
-    {
-      "id": "1113vdw",
-      "sourceId": "ubisoft-en",
-      "sourceName": "Ubisoft",
-      "sourceUrl": "https://www.ubisoft.com/en-us/game/the-division/the-division-2/news-updates/1wrUJ1HzY6BF8zzO4AMhJ3/spearfall-pts-patch-notes",
-      "title_orig": "Spearfall PTS Patch Notes",
-      "lang_orig": "en",
-      "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-16T08:29:59.776Z",
-      "category": "glitch-watch",
-      "tags": [
-        "known-issue"
-      ],
-      "importance": 48,
-      "confidence": "official",
-      "headline_en": "Known issue: We recommend focusing your Escalation testing on Core Build directive.",
-      "headline_zhHant": "pending",
-      "summary_en": "We recommend focusing your Escalation testing on Core Build directive. Marked and Collaboration are also available to try, and you may encounter bugs with both…",
-      "summary_zhHant": "pending",
-      "summaryKind": "extract",
-      "alsoReportedBy": [],
-      "media": [],
-      "relatedIds": [
-        "15yr4ky"
-      ],
-      "firstSeenAt": "2026-11-12T16:55:32.847Z",
-      "status": "new",
-      "glitch": {
-        "state": "active",
-        "firstSeen": "2026-11-12",
-        "banRisk": false,
-        "riskNote_en": "Known issue listed by Ubisoft. No workaround yet.",
-        "riskNote_zhHant": "pending"
-      }
-    },
-    {
-      "id": "cj4ae2",
-      "sourceId": "ubisoft-en",
-      "sourceName": "Ubisoft",
-      "sourceUrl": "https://www.ubisoft.com/en-us/game/the-division/the-division-2/news-updates/1wrUJ1HzY6BF8zzO4AMhJ3/spearfall-pts-patch-notes",
-      "title_orig": "Spearfall PTS Patch Notes",
-      "lang_orig": "en",
-      "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-16T08:29:59.776Z",
-      "category": "glitch-watch",
-      "tags": [
-        "known-issue"
-      ],
-      "importance": 47,
-      "confidence": "official",
-      "headline_en": "Known issue: Mission objectives and Player Rating may disappear from the HUD when you…",
-      "headline_zhHant": "pending",
-      "summary_en": "Mission objectives and Player Rating may disappear from the HUD when you start a new Escalation mission after completing or failing the previous one.",
-      "summary_zhHant": "pending",
-      "summaryKind": "extract",
-      "alsoReportedBy": [],
-      "media": [],
-      "relatedIds": [
-        "15yr4ky"
-      ],
-      "firstSeenAt": "2026-11-12T16:55:32.847Z",
-      "status": "new",
-      "glitch": {
-        "state": "active",
-        "firstSeen": "2026-11-12",
-        "banRisk": false,
-        "riskNote_en": "Known issue listed by Ubisoft. No workaround yet.",
-        "riskNote_zhHant": "pending"
-      }
-    },
-    {
-      "id": "jrg9a1",
-      "sourceId": "ubisoft-en",
-      "sourceName": "Ubisoft",
-      "sourceUrl": "https://www.ubisoft.com/en-us/game/the-division/the-division-2/news-updates/7L8TlD1Hv0XC1prOD8mdte/tuy8s33-echoes-of-central-park-launch-crossplay-rollout-conflict-improvements-more",
-      "title_orig": "[TUY8S3.3] Echoes of Central Park Launch, Crossplay Rollout, Conflict Improvements & More",
-      "lang_orig": "en",
-      "publishedAt": "2026-11-02T15:45:00.000Z",
-      "fetchedAt": "2026-11-16T08:29:59.776Z",
-      "category": "glitch-watch",
-      "tags": [
-        "known-issue"
-      ],
-      "importance": 47,
-      "confidence": "official",
-      "headline_en": "Known issue (TU Y8S3.3): After completing all Manhunt Scouts marked as High-Value Targets, the Climax Mission…",
-      "headline_zhHant": "pending",
-      "summary_en": "After completing all Manhunt Scouts marked as High-Value Targets, the Climax Mission remains locked in the Scouts menu and does not appear on the map.",
-      "summary_zhHant": "pending",
-      "summaryKind": "extract",
-      "alsoReportedBy": [],
-      "media": [],
-      "relatedIds": [
-        "lmhaez"
-      ],
-      "firstSeenAt": "2026-11-05T06:21:13.290Z",
-      "status": "new",
-      "glitch": {
-        "state": "active",
-        "firstSeen": "2026-11-02",
-        "banRisk": false,
-        "riskNote_en": "Known issue listed by Ubisoft. Workaround: Log out and back in to unlock it.",
-        "riskNote_zhHant": "pending"
-      }
-    },
-    {
-      "id": "q5qvmp",
-      "sourceId": "bahamut",
-      "sourceName": "巴哈姆特 全境封鎖板",
-      "sourceUrl": "https://forum.gamer.com.tw/C.php?bsn=24460&snA=32894",
-      "title_orig": "【情報】TU30 / Y8S4 PTS Patchnote翻譯",
-      "lang_orig": "zh",
-      "publishedAt": "2026-11-13T07:31:00.000Z",
-      "fetchedAt": "2026-11-15T14:38:52.779Z",
-      "category": "updates",
-      "tags": [],
-      "importance": 47,
-      "confidence": "community",
-      "headline_en": "pending",
-      "headline_zhHant": "【情報】TU30 / Y8S4 PTS Patchnote翻譯",
-      "summary_en": "pending",
-      "summary_zhHant": "原文公告 以下為AI機翻並且由筆者稍微潤飾過 2F為Y8S4裝備平衡性改動翻譯 《全境封鎖 2》Spearfall PT…",
-      "summaryKind": "extract",
-      "alsoReportedBy": [],
-      "media": [],
-      "relatedIds": [],
-      "firstSeenAt": "2026-11-12T18:47:15.805Z",
-      "status": "new"
-    },
-    {
-      "id": "hej7xr",
-      "sourceId": "ubisoft-en",
-      "sourceName": "Ubisoft",
-      "sourceUrl": "https://www.ubisoft.com/en-us/game/the-division/the-division-2/news-updates/1wrUJ1HzY6BF8zzO4AMhJ3/spearfall-pts-patch-notes",
-      "title_orig": "Spearfall PTS Patch Notes",
-      "lang_orig": "en",
-      "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-16T08:29:59.776Z",
-      "category": "glitch-watch",
-      "tags": [
-        "known-issue"
-      ],
-      "importance": 46,
-      "confidence": "official",
-      "headline_en": "Known issue: Player Rating from revives can be inconsistent.",
-      "headline_zhHant": "pending",
-      "summary_en": "Player Rating from revives can be inconsistent. You may earn Rating for reviving yourself or a teammate who has died.",
-      "summary_zhHant": "pending",
-      "summaryKind": "extract",
-      "alsoReportedBy": [],
-      "media": [],
-      "relatedIds": [
-        "15yr4ky"
-      ],
-      "firstSeenAt": "2026-11-12T16:55:32.847Z",
-      "status": "new",
-      "glitch": {
-        "state": "active",
-        "firstSeen": "2026-11-12",
-        "banRisk": false,
-        "riskNote_en": "Known issue listed by Ubisoft. No workaround yet.",
-        "riskNote_zhHant": "pending"
-      }
     }
   ],
   "sources": [
     {
       "sourceId": "steam-news",
       "ok": true,
-      "checkedAt": "2026-11-16T08:29:59.776Z"
+      "checkedAt": "2026-11-16T11:14:02.168Z"
     },
     {
       "sourceId": "ubisoft-en",
       "ok": true,
-      "checkedAt": "2026-11-16T08:29:59.776Z"
+      "checkedAt": "2026-11-16T11:14:02.168Z"
     },
     {
       "sourceId": "ubisoft-zh-tw",
       "ok": true,
-      "checkedAt": "2026-11-16T08:29:59.776Z"
+      "checkedAt": "2026-11-16T11:14:02.168Z"
     },
     {
       "sourceId": "bahamut",
-      "ok": false,
-      "checkedAt": "2026-11-16T08:29:59.776Z",
-      "note": "Error: HTTP 403"
+      "ok": true,
+      "checkedAt": "2026-11-16T11:14:02.168Z"
     }
   ]
 }

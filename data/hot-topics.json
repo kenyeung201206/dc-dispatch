@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-16T05:28:00.592Z",
+  "updatedAt": "2026-11-16T11:14:02.168Z",
   "topics": [
     {
       "id": "32876",
@@ -29,15 +29,6 @@
       "lastReplyAt": "2026-11-11T04:03:00.000Z"
     },
     {
-      "id": "32885",
-      "tag": "問題",
-      "title": "【問題】A8 副武器推薦",
-      "url": "https://forum.gamer.com.tw/C.php?bsn=24460&snA=32885",
-      "replies": 13,
-      "views": 1588,
-      "lastReplyAt": "2026-11-09T08:35:00.000Z"
-    },
-    {
       "id": "32883",
       "tag": "問題",
       "title": "【問題】中央公園奇特突擊步槍能夠重複刷取嗎？",
@@ -45,6 +36,15 @@
       "replies": 10,
       "views": 2167,
       "lastReplyAt": "2026-11-11T03:00:00.000Z"
+    },
+    {
+      "id": "32889",
+      "tag": "問題",
+      "title": "【問題】守護者觸發不了",
+      "url": "https://forum.gamer.com.tw/C.php?bsn=24460&snA=32889",
+      "replies": 5,
+      "views": 811,
+      "lastReplyAt": "2026-11-11T12:19:00.000Z"
     }
   ]
 }
