@@ -9657,6 +9657,80 @@
         "這是玩家直播，細節以影片為準"
       ],
       "written": "2026-11-16"
+    },
+    "1c65b8s": {
+      "points": [
+        "影片介紹（依標題）：玩家分享抽到奇特（Exotic）手套的幸運瞬間",
+        "標題與說明欄只有幾個標籤，沒有其他細節",
+        "這是玩家短片，細節以影片為準"
+      ],
+      "written": "2026-11-17"
+    },
+    "88dglr": {
+      "points": [
+        "影片介紹：玩家 EllisDee789 在 Potomac Event Center 的 T10 戰鬥升級中展示 Bluescreen「Tipping Scales」DPS 配裝",
+        "說明欄表示配裝適用於傳奇難度、高階戰鬥升級與終局 PvE",
+        "武器：Bluescreen 奇特 LMG、Lexington 突擊步槍（Optimist 天賦）、Quickstep 手槍（Sport Mode，裝備時移動速度 +20%）",
+        "裝備：4 件 Tipping Scales（含背包）；Equalizer 指名胸甲；Exodus 奇特手套（護甲破裂時放煙霧彈脫離戰鬥並回復）",
+        "技能與專長：Gunner 專長（Minigun）、Decoy、Reviver Hive",
+        "這是玩家影片，細節以影片為準"
+      ],
+      "tables": [
+        {
+          "title": "4 件 Tipping Scales 加成（說明欄）",
+          "columns": [
+            "項目",
+            "數值"
+          ],
+          "rows": [
+            [
+              "彈匣容量",
+              "+30%"
+            ],
+            [
+              "LMG 傷害",
+              "+30%"
+            ],
+            [
+              "武器操控",
+              "最高 +25%"
+            ],
+            [
+              "爆擊傷害（持續開火）",
+              "最高 +200%"
+            ],
+            [
+              "背包 Snowball 每層爆擊傷害",
+              "4% → 7%"
+            ]
+          ]
+        }
+      ],
+      "written": "2026-11-17"
+    },
+    "1gmpg9n": {
+      "points": [
+        "影片介紹：玩家的傳奇難度 Striker 高 DPS 配裝單人實機影片",
+        "說明欄表示為 4K 60FPS、無旁白",
+        "這是玩家影片，細節以影片為準"
+      ],
+      "written": "2026-11-17"
+    },
+    "owyiit": {
+      "points": [
+        "影片介紹：玩家 Vortex 社群展示 Ember Engine 全控場（Full CC）配裝",
+        "說明欄表示配裝用來控制敵人、鎖住整個房間，讓小隊更輕鬆",
+        "內容包含火焰為主的玩法與團隊友善的控場",
+        "這是玩家影片，細節以影片為準"
+      ],
+      "written": "2026-11-17"
+    },
+    "sbrqm9": {
+      "points": [
+        "已知問題（Spearfall PTS 更新說明）：在華盛頓特區把全域難度設為傳奇時，White Tusk 以外派系的敵人仍然使用英雄級（Heroic）的難度縮放",
+        "這是 PTS 測試服的已知問題，尚未說明修正時間"
+      ],
+      "written": "2026-11-17"
     }
   }
 }
