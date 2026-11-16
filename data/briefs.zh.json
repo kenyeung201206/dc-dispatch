@@ -10195,6 +10195,154 @@
         }
       ],
       "written": "2026-11-17"
+    },
+    "cjz6je": {
+      "points": [
+        "影片介紹（依標題）：玩家頻道的新聞類影片，標題提到開發團隊回應伺服器問題，以及跨平台（Crossplay）「明天」上線",
+        "影片說明只有頻道簡介與標籤，沒有其他細節；內容以影片為準，非官方公告",
+        "官方維護與跨平台資訊請以本站其他官方報導為準"
+      ],
+      "written": "2026-11-17"
+    },
+    "mmped3": {
+      "points": [
+        "玩家 Widdz 的新版升級戰（Escalation）指南影片，依說明為第 4 賽季 Spearfall 的 PTS 畫面，難度、獎勵與數字上線前可能改動",
+        "介紹第 1 至第 4 階、三種風格（Marked、Core Build、Collaboration）、Player Rating 如何影響原型裝備掉落",
+        "作者組滿隊伍以 Core Build 打第 4 階，也用三套不同配裝單人挑戰，最後給出評價與修改建議",
+        "影片說明含贊助（Opera GX）廣告"
+      ],
+      "tables": [
+        {
+          "title": "影片章節（依說明）",
+          "columns": [
+            "時間",
+            "內容"
+          ],
+          "rows": [
+            [
+              "0:00",
+              "新升級戰是否太簡單"
+            ],
+            [
+              "0:41",
+              "第 1–4 階"
+            ],
+            [
+              "1:17",
+              "計時、每週輪替與配對"
+            ],
+            [
+              "1:30",
+              "風格：Marked（Hunter 層數＋手槍）"
+            ],
+            [
+              "2:24",
+              "風格：Core Build（紅、藍、黃）"
+            ],
+            [
+              "3:29",
+              "組隊時 Core Build 的分工"
+            ],
+            [
+              "4:20",
+              "風格：Collaboration（Resolve＋Wounded）"
+            ],
+            [
+              "4:49",
+              "Player Rating 說明"
+            ],
+            [
+              "5:30",
+              "滿隊打第 4 階"
+            ],
+            [
+              "6:53",
+              "單人三次、三套配裝"
+            ],
+            [
+              "9:23",
+              "第 4 階單人技巧"
+            ],
+            [
+              "9:44",
+              "作者評價"
+            ],
+            [
+              "11:45",
+              "作者想改的地方"
+            ]
+          ]
+        }
+      ],
+      "written": "2026-11-17"
+    },
+    "1dd680l": {
+      "points": [
+        "玩家影片（依說明整理）：介紹 Y8S4 Spearfall PTS 公開的新奇特裝備、新套裝與武器",
+        "奇特突擊步槍 August：天賦 Convergent，命中身體累積層數，達標後下次換彈消耗層數，換來大幅精準度與爆頭傷害加成",
+        "奇特面具 Forward Observer：天賦 Strike Order，瞄準敵人會脈衝標記，使其受到的所有傷害增加；標記敵人被擊殺時，參與擊殺的隊友修復護甲",
+        "新套裝 Field General：天賦 Helping Hand，傷害敵人會替隊友標記，擊殺標記目標給團隊增益（技能效率、額外護甲、對無掩體目標傷害），並替你與隊友產生護甲包",
+        "新命名武器 Blackout X-45 與 Power Spike 1886，皆具 Perfect Technophobia（對技能代理與機械敵人傷害提高）",
+        "新命名裝備四件：Magnet、Siphon、Thrive、Hearty；說明另附 Y8S4 裝備平衡與原型裝備 PvP 調整文件連結"
+      ],
+      "tables": [
+        {
+          "title": "Y8S4 新物品（依影片說明）",
+          "columns": [
+            "名稱",
+            "類型",
+            "天賦／特色"
+          ],
+          "rows": [
+            [
+              "August",
+              "奇特突擊步槍",
+              "Convergent"
+            ],
+            [
+              "Forward Observer",
+              "奇特面具",
+              "Strike Order"
+            ],
+            [
+              "Field General",
+              "套裝",
+              "Helping Hand"
+            ],
+            [
+              "Blackout X-45",
+              "命名武器",
+              "Perfect Technophobia"
+            ],
+            [
+              "Power Spike 1886",
+              "命名武器",
+              "Perfect Technophobia"
+            ],
+            [
+              "Magnet、Siphon、Thrive、Hearty",
+              "命名裝備",
+              "（說明未述）"
+            ]
+          ]
+        }
+      ],
+      "written": "2026-11-17"
+    },
+    "o95q1j": {
+      "points": [
+        "影片介紹（依標題）：玩家頻道 Gaming Brigade 的快速整理，談下賽季奇特與裝備的「30 多項」重大改動（增強與削弱）",
+        "影片說明只提到內容是對下季變化的簡要說明，並附官方更新說明連結，沒有列出個別改動",
+        "具體數字請看官方更新說明，本篇不推測內容"
+      ],
+      "written": "2026-11-17"
+    },
+    "443j7a": {
+      "points": [
+        "影片介紹（依標題）：玩家 DJTICKLE 的短影片（Shorts），介紹 Specter's Gloves 可作為 Contractor's Gloves 的替代品",
+        "影片說明只有頻道簡介與社群連結，沒有其他細節；效果與數字以影片為準"
+      ],
+      "written": "2026-11-17"
     }
   }
 }
