@@ -9435,6 +9435,77 @@
         "作者為 faidwoizn，影片以 AI 配音與自製圖解製作"
       ],
       "written": "2026-11-16"
+    },
+    "1mze78y": {
+      "points": [
+        "影片介紹（依標題）：GCROCK XTRA 頻道的實機影片，首次挑戰 PTS 上新的傳奇難度「Space Administration HQ」",
+        "說明欄表示 Spearfall PTS 帶來 4 個新的傳奇任務，這支影片是其中太空總署總部的第一次嘗試",
+        "說明欄稱全程不看攻略、不看教學，呈現第一次遊玩的過程",
+        "這是玩家影片，細節以影片為準"
+      ],
+      "written": "2026-11-16"
+    },
+    "1vofcek": {
+      "points": [
+        "影片介紹（依標題）：玩家分享「Negotiator's Dilemma」配裝，標題稱可輕鬆完成終局內容",
+        "作者說明是應觀眾要求而做，會逐一說明使用的裝備並提供替代選擇",
+        "作者建議把它當成範本，再依自己的裝備與隊伍調整",
+        "說明欄另附傳奇難度太空任務、Y8S3 追捕任務與傷害類型說明等其他影片"
+      ],
+      "written": "2026-11-16"
+    },
+    "h02orh": {
+      "points": [
+        "這是玩家影片：Pestilence「Tipping Scales」輸出配裝，在 Capitol Building 的 T10 Escalation 中展示",
+        "配裝主打高暴擊傷害，並靠 Pestilence 的持續傷害壓制敵人",
+        "武器為 Pestilence 奇特 LMG、Lexington 命名突擊步槍（Optimist）、Quickstep 命名手槍（Sports Mode）",
+        "裝備為 4 件 Tipping Scales（含背包）、Exodus 手套、取自 Unit Alloys 的 Equalizer 胸甲",
+        "技能為 Decoy 與 Revive Hive"
+      ],
+      "tables": [
+        {
+          "title": "配裝數值（依說明欄）",
+          "columns": [
+            "項目",
+            "效果"
+          ],
+          "rows": [
+            [
+              "4 件 Tipping Scales",
+              "彈匣容量 +30%、LMG 傷害 +30%"
+            ],
+            [
+              "Full Throttle",
+              "最高武器操控 +25%、暴擊傷害 +200%"
+            ],
+            [
+              "Tipping Scales 背包",
+              "Full Throttle 暴擊傷害最高提高到 +350%"
+            ],
+            [
+              "Quickstep（Sports Mode）",
+              "移動速度 +20%"
+            ],
+            [
+              "Exodus 手套",
+              "護甲被打破時投放煙霧彈，敵人 2 秒內看不到你；脫離戰鬥後護甲與生命全部恢復"
+            ],
+            [
+              "Equalizer 胸甲",
+              "射速 +5%；Perfect Obliterate 最高武器傷害 +24%"
+            ]
+          ]
+        }
+      ],
+      "written": "2026-11-16"
+    },
+    "1heumxc": {
+      "points": [
+        "影片介紹（依標題）：TigerCat 的傳奇難度 Stronghold 馬拉松單人遊玩，使用高傷害 Striker 配裝",
+        "說明欄表示為 4K 畫質、無解說，呈現完整的戰術遊玩",
+        "這是玩家影片，細節以影片為準"
+      ],
+      "written": "2026-11-16"
     }
   }
 }
