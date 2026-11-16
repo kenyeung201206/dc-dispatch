@@ -14,7 +14,8 @@
     "UgkxCgrDsTP7KSzTgbQBoiBDpbYzx6nDS4rk",
     "UgkxNvbhteNUDXtR-OIEnvniFwYPtAAQKaOX",
     "UgkxSN_-cqtuZKQFmhEU8pO3Y-g48oD2Kw9L",
-    "UgkxAWyxbbb2Lc5Y4xcB-EfJvBnoZsG2I2qB"
+    "UgkxAWyxbbb2Lc5Y4xcB-EfJvBnoZsG2I2qB",
+    "UgkxXD9szFD-_3Gb_rApxdbKjzZ3sd2b8U7I"
   ],
   "creator": {
     "name": "灰帽特工 Gray Hat Agent",
@@ -204,6 +205,19 @@
     }
   ],
   "posts": [
+    {
+      "id": "post-z3sd2b8u7i",
+      "title_zhHant": "維護警報",
+      "title_en": "維護警報",
+      "text_zhHant": "為了使XBOX和PSN平台特工遷移至跨平台服務器 遊戲將於11月17日下午3:00進行停機維護。 預計時長:8小時 維護完成後遊戲將正式啟用跨平台功能",
+      "text_en": "為了使XBOX和PSN平台特工遷移至跨平台服務器 遊戲將於11月17日下午3:00進行停機維護。 預計時長:8小時 維護完成後遊戲將正式啟用跨平台功能",
+      "category": "updates",
+      "publishedAt": "2026-11-16",
+      "postUrl": "https://www.youtube.com/post/UgkxXD9szFD-_3Gb_rApxdbKjzZ3sd2b8U7I",
+      "seen": "2026-11-16",
+      "until": "2026-12-07",
+      "auto": true
+    },
     {
       "id": "post-nozsg2i2qb",
       "title_zhHant": "新賽季Y8S4的測試服現已開放預載",

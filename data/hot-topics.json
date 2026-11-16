@@ -1,15 +1,6 @@
 {
-  "updatedAt": "2026-11-16T18:49:36.706Z",
+  "updatedAt": "2026-11-16T20:45:05.849Z",
   "topics": [
-    {
-      "id": "32876",
-      "tag": "問題",
-      "title": "【問題】請問中央公園的五個獵人怎麼打？",
-      "url": "https://forum.gamer.com.tw/C.php?bsn=24460&snA=32876",
-      "replies": 26,
-      "views": 4434,
-      "lastReplyAt": "2026-11-09T19:15:00.000Z"
-    },
     {
       "id": "32892",
       "tag": "問題",
@@ -45,6 +36,15 @@
       "replies": 5,
       "views": 811,
       "lastReplyAt": "2026-11-11T12:19:00.000Z"
+    },
+    {
+      "id": "32896",
+      "tag": "問題",
+      "title": "【問題】(已解決) 聲音有bug還沒解決?",
+      "url": "https://forum.gamer.com.tw/C.php?bsn=24460&snA=32896",
+      "replies": 5,
+      "views": 147,
+      "lastReplyAt": "2026-11-14T13:57:00.000Z"
     }
   ]
 }
