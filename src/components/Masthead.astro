@@ -31,6 +31,12 @@ const bgPool = library.images
     creditUrl: i.attributionUrl,
   }));
 const season = edition.meta ? (locale === 'en' ? edition.meta.season_en : edition.meta.season_zhHant) : null;
+/** Ubisoft's official live status page, in the reader's language. */
+const statusPage = `https://www.ubisoft.com/${locale === 'en' ? 'en-us' : 'zh-tw'}/game/the-division/the-division-2/status`;
+const srvLabels = JSON.stringify({
+  normal: t(locale, 'srv.normal'), normalTip: t(locale, 'srv.normalTip'), scheduled: t(locale, 'srv.scheduled'),
+  maintenance: t(locale, 'srv.maintenance'), until: t(locale, 'srv.until'), unknown: t(locale, 'srv.unknown'), tip: t(locale, 'srv.tip'),
+});
 ---
 <!-- Phone: compact sticky bar -->
 <div class="bar" data-bar>
@@ -43,6 +49,10 @@ const season = edition.meta ? (locale === 'en' ? edition.meta.season_en : editio
 
 <header class="masthead">
   <div class="title" data-banner={JSON.stringify(bgPool)}>
+    <!-- Server status: from 巴哈's maintenance announcements (/api/server-status); links to Ubisoft's live page. -->
+    <a class="srv s-unknown" data-srv data-labels={srvLabels} href={statusPage} target="_blank" rel="noopener noreferrer" title={t(locale, 'srv.tip')}>
+      <span class="srv-dot" aria-hidden="true"></span><span class="srv-text">{t(locale, 'srv.unknown')}</span><span aria-hidden="true"> ↗</span>
+    </a>
     <p class="title-name">
       <button type="button" class="hex-btn" data-hex aria-label={t(locale, 'egg.scan')}><Hex size={52} /></button>
       <span>{locale === 'en' ? 'The DC Dispatch' : '華盛頓每日快報'}</span>
@@ -73,6 +83,44 @@ const season = edition.meta ? (locale === 'en' ? edition.meta.season_en : editio
 </header>
 
 <script>
+  // Server status badge (see /api/server-status). Times shown in Taiwan/Hong Kong time.
+  {
+    const srv = document.querySelector<HTMLAnchorElement>('[data-srv]');
+    if (srv) {
+      const L = JSON.parse(srv.dataset.labels ?? '{}') as Record<string, string>;
+      const text = srv.querySelector<HTMLElement>('.srv-text')!;
+      const fmt = (iso: string, withDate: boolean) =>
+        new Intl.DateTimeFormat(document.documentElement.lang.startsWith('en') ? 'en-GB' : 'zh-Hant-TW', {
+          timeZone: 'Asia/Taipei', hour: '2-digit', minute: '2-digit', hour12: false, ...(withDate ? { month: 'numeric', day: 'numeric' } : {}),
+        }).format(new Date(iso));
+      type S = { state: string; start?: string; end?: string };
+      let timer: number | undefined;
+      const show = (s: S) => {
+        const now = Date.now();
+        // Announced times pass while the page is open: switch on the minute, without waiting for a re-check.
+        if (s.state === 'scheduled' && s.start && now >= Date.parse(s.start)) s = { ...s, state: 'maintenance' };
+        if (s.state === 'maintenance' && s.end && now >= Date.parse(s.end)) s = { state: 'normal' };
+        srv.className = `srv s-${s.state}`;
+        if (s.state === 'scheduled') text.textContent = L.scheduled!.replace('{time}', fmt(s.start!, true));
+        else if (s.state === 'maintenance') text.textContent = s.end ? `${L.maintenance} · ${L.until!.replace('{time}', fmt(s.end, false))}` : L.maintenance!;
+        else text.textContent = s.state === 'normal' ? L.normal! : L.unknown!;
+        srv.title = s.state === 'normal' ? L.normalTip! : L.tip!;
+        clearTimeout(timer);
+        const next = s.state === 'scheduled' ? s.start : s.state === 'maintenance' ? s.end : undefined;
+        if (next) {
+          const wait = Date.parse(next) - Date.now();
+          if (wait > 0 && wait < 2 ** 31 - 1) timer = window.setTimeout(() => show(s), wait + 500);
+        }
+      };
+      const check = () =>
+        fetch('/api/server-status')
+          .then((r) => (r.ok ? r.json() : null))
+          .then((s: S | null) => s && show(s))
+          .catch(() => {});
+      check();
+      window.setInterval(check, 5 * 60_000);
+    }
+  }
   // Random Division 2 picture behind the masthead on every visit (never the same one twice in a row).
   (() => {
     const box = document.querySelector<HTMLElement>('.masthead .title[data-banner]');
@@ -162,6 +210,44 @@ const season = edition.meta ? (locale === 'en' ? edition.meta.season_en : editio
   .title {
     position: relative;
     padding: 20px var(--gutter) 14px;
+  }
+  /* Server status badge: small, top right of the banner. */
+  .srv {
+    position: absolute;
+    top: 8px;
+    right: var(--gutter);
+    z-index: 2;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 3px 9px;
+    border: 1px solid rgb(255 255 255 / 0.35);
+    border-radius: 999px;
+    background: rgb(12 13 14 / 0.72);
+    color: #f2f2f2;
+    font: 600 var(--step--1) / 1.3 var(--font-hud);
+    text-decoration: none;
+    white-space: nowrap;
+  }
+  .srv:hover {
+    border-color: #f2f2f2;
+  }
+  .srv-dot {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: #8a8f98;
+  }
+  .s-normal .srv-dot {
+    background: #2ee59d;
+    box-shadow: 0 0 6px #2ee59d;
+  }
+  .s-scheduled .srv-dot {
+    background: #f5c518;
+  }
+  .s-maintenance .srv-dot {
+    background: #ff6a00;
+    box-shadow: 0 0 6px #ff6a00;
   }
   /* Random banner picture: dark shade on the left so the nameplate stays readable in Day and Night. */
   .title.has-bg {

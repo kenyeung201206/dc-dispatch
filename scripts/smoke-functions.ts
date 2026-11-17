@@ -64,6 +64,12 @@ if (res.status === 200 && (body.status === 'ok' || body.status === 'none')) {
 } else {
   fail(`/api/loot answered ${res.status} ${JSON.stringify(body)}`);
 }
+// Banner server-status badge (巴哈 maintenance announcements).
+const srv = await fetch(`${base}/api/server-status`, { redirect: 'manual' });
+const sb = (await srv.json().catch(() => ({}))) as { state?: string; reason?: string };
+if (srv.status !== 200 || !['normal', 'scheduled', 'maintenance', 'unknown'].includes(sb.state ?? '')) fail(`/api/server-status answered ${srv.status} ${JSON.stringify(sb)}`);
+else if (sb.state === 'unknown' && !/fetch failed|network|timed? ?out|abort|HTTP \d|巴哈 refused/i.test(sb.reason ?? '')) fail(`/api/server-status crashed on Cloudflare: ${sb.reason}`);
+else console.log(`OK: /api/server-status works on Cloudflare's runtime (${sb.state}${sb.reason ? ': ' + sb.reason : ''}).`);
 clearTimeout(timer);
 stop();
 process.exit(0);
