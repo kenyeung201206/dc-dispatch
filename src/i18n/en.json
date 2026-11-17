@@ -241,7 +241,6 @@
   "srv.normalTip": "No maintenance announced (巴哈 / Ubisoft). Tap for Ubisoft’s live status.",
   "srv.scheduled": "Maintenance {time}",
   "srv.maintenance": "Maintenance now",
-  "srv.until": "until about {time}",
   "srv.unknown": "Server status",
   "srv.tip": "From 巴哈’s maintenance announcements, updated about every 5 minutes. Tap for Ubisoft’s live status.",
   "rail.updated": "Updated",

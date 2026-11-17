@@ -35,7 +35,7 @@ const season = edition.meta ? (locale === 'en' ? edition.meta.season_en : editio
 const statusPage = `https://www.ubisoft.com/${locale === 'en' ? 'en-us' : 'zh-tw'}/game/the-division/the-division-2/status`;
 const srvLabels = JSON.stringify({
   normal: t(locale, 'srv.normal'), normalTip: t(locale, 'srv.normalTip'), scheduled: t(locale, 'srv.scheduled'),
-  maintenance: t(locale, 'srv.maintenance'), until: t(locale, 'srv.until'), unknown: t(locale, 'srv.unknown'), tip: t(locale, 'srv.tip'),
+  maintenance: t(locale, 'srv.maintenance'), unknown: t(locale, 'srv.unknown'), tip: t(locale, 'srv.tip'),
 });
 ---
 <!-- Phone: compact sticky bar -->
@@ -102,7 +102,8 @@ const srvLabels = JSON.stringify({
         if (s.state === 'maintenance' && s.end && now >= Date.parse(s.end)) s = { state: 'normal' };
         srv.className = `srv s-${s.state}`;
         if (s.state === 'scheduled') text.textContent = L.scheduled!.replace('{time}', fmt(s.start!, true));
-        else if (s.state === 'maintenance') text.textContent = s.end ? `${L.maintenance} · ${L.until!.replace('{time}', fmt(s.end, false))}` : L.maintenance!;
+        // Just 「維護中」: the expected end time isn't reliable (extensions, 加碼維護), so it isn't shown (owner, 2026-11-18).
+        else if (s.state === 'maintenance') text.textContent = L.maintenance!;
         else text.textContent = s.state === 'normal' ? L.normal! : L.unknown!;
         srv.title = s.state === 'normal' ? L.normalTip! : L.tip!;
         clearTimeout(timer);
@@ -278,13 +279,22 @@ const srvLabels = JSON.stringify({
       animation: none;
     }
   }
+  /* Photo credit: top left, beside the corner mark (the server-status badge is top right). On narrow phones it drops
+     one line lower, so a long badge (預定維護 11/20 16:00) never reaches it. */
   .bg-credit {
     position: absolute;
-    right: 18px;
-    top: 6px;
+    left: 30px;
+    top: 9px;
+    z-index: 1;
     margin: 0;
     font: 400 0.6875rem / 1.4 var(--font-hud);
     color: rgb(243 238 227 / 0.85);
+    text-shadow: 0 1px 2px rgb(0 0 0 / 0.8);
+  }
+  @media (max-width: 520px) {
+    .bg-credit {
+      top: 40px;
+    }
   }
   .bg-credit a {
     color: inherit;
