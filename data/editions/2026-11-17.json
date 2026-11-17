@@ -1,7 +1,7 @@
 {
   "date": "2026-11-17",
   "editionNumber": 14,
-  "generatedAt": "2026-11-17T12:56:06.069Z",
+  "generatedAt": "2026-11-17T14:52:12.860Z",
   "meta": {
     "season_en": "Red Horizon",
     "season_zhHant": "Red Horizon 賽季",
@@ -17,7 +17,7 @@
       "title_orig": "The Division 2: Echoes of Central Park Event Pass Twitch Drops",
       "lang_orig": "en",
       "publishedAt": "2026-11-10T16:00:00.000Z",
-      "fetchedAt": "2026-11-17T12:56:06.069Z",
+      "fetchedAt": "2026-11-17T14:52:12.860Z",
       "category": "community",
       "tags": [
         "event",
@@ -116,6 +116,43 @@
       "status": "new"
     },
     {
+      "id": "lmhaez",
+      "sourceId": "ubisoft-en",
+      "sourceName": "Ubisoft",
+      "sourceUrl": "https://www.ubisoft.com/en-us/game/the-division/the-division-2/news-updates/7L8TlD1Hv0XC1prOD8mdte/tuy8s33-echoes-of-central-park-launch-crossplay-rollout-conflict-improvements-more",
+      "title_orig": "[TUY8S3.3] Echoes of Central Park Launch, Crossplay Rollout, Conflict Improvements & More",
+      "lang_orig": "en",
+      "publishedAt": "2026-11-02T15:45:00.000Z",
+      "fetchedAt": "2026-11-17T14:52:12.860Z",
+      "category": "updates",
+      "tags": [
+        "title-update",
+        "crossplay",
+        "event",
+        "pvp"
+      ],
+      "importance": 68,
+      "confidence": "official",
+      "headline_en": "[TUY8S3.3] Echoes of Central Park Launch, Crossplay Rollout, Conflict Improvements & More",
+      "headline_zhHant": "pending",
+      "summary_en": "Echoes of Central Park is out now. See what else is coming in Y8S3.3, including the Crossplay rollout, Conflict improvements, updated Friend Referral rewards, and…",
+      "summary_zhHant": "pending",
+      "summaryKind": "extract",
+      "alsoReportedBy": [
+        {
+          "name": "Ubisoft (via Steam News)",
+          "url": "https://store.steampowered.com/news/app/2221490/view/1847920302248716"
+        }
+      ],
+      "media": [],
+      "imageId": "ubi-tu-y8s3-3",
+      "relatedIds": [
+        "jrg9a1"
+      ],
+      "firstSeenAt": "2026-11-05T06:21:13.290Z",
+      "status": "new"
+    },
+    {
       "id": "15yr4ky",
       "sourceId": "ubisoft-en",
       "sourceName": "Ubisoft",
@@ -123,13 +160,13 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-17T12:56:06.069Z",
+      "fetchedAt": "2026-11-17T14:52:12.860Z",
       "category": "updates",
       "tags": [
         "known-issue",
         "season"
       ],
-      "importance": 68,
+      "importance": 67,
       "confidence": "official",
       "headline_en": "Spearfall PTS Patch Notes",
       "headline_zhHant": "pending",
@@ -161,43 +198,6 @@
         "sbrqm9"
       ],
       "firstSeenAt": "2026-11-12T16:55:32.847Z",
-      "status": "new"
-    },
-    {
-      "id": "lmhaez",
-      "sourceId": "ubisoft-en",
-      "sourceName": "Ubisoft",
-      "sourceUrl": "https://www.ubisoft.com/en-us/game/the-division/the-division-2/news-updates/7L8TlD1Hv0XC1prOD8mdte/tuy8s33-echoes-of-central-park-launch-crossplay-rollout-conflict-improvements-more",
-      "title_orig": "[TUY8S3.3] Echoes of Central Park Launch, Crossplay Rollout, Conflict Improvements & More",
-      "lang_orig": "en",
-      "publishedAt": "2026-11-02T15:45:00.000Z",
-      "fetchedAt": "2026-11-17T12:56:06.069Z",
-      "category": "updates",
-      "tags": [
-        "title-update",
-        "crossplay",
-        "event",
-        "pvp"
-      ],
-      "importance": 68,
-      "confidence": "official",
-      "headline_en": "[TUY8S3.3] Echoes of Central Park Launch, Crossplay Rollout, Conflict Improvements & More",
-      "headline_zhHant": "pending",
-      "summary_en": "Echoes of Central Park is out now. See what else is coming in Y8S3.3, including the Crossplay rollout, Conflict improvements, updated Friend Referral rewards, and…",
-      "summary_zhHant": "pending",
-      "summaryKind": "extract",
-      "alsoReportedBy": [
-        {
-          "name": "Ubisoft (via Steam News)",
-          "url": "https://store.steampowered.com/news/app/2221490/view/1847920302248716"
-        }
-      ],
-      "media": [],
-      "imageId": "ubi-tu-y8s3-3",
-      "relatedIds": [
-        "jrg9a1"
-      ],
-      "firstSeenAt": "2026-11-05T06:21:13.290Z",
       "status": "new"
     },
     {
@@ -576,7 +576,7 @@
       "title_orig": "The Division 2: Echoes of Central Park DLC is available now!",
       "lang_orig": "en",
       "publishedAt": "2026-11-03T15:00:00.000Z",
-      "fetchedAt": "2026-11-17T12:56:06.069Z",
+      "fetchedAt": "2026-11-17T14:52:12.860Z",
       "category": "missions",
       "tags": [
         "dlc"
@@ -796,6 +796,33 @@
       "status": "new"
     },
     {
+      "id": "qofm2d",
+      "sourceId": "youtube",
+      "sourceName": "Joker Farina",
+      "sourceUrl": "https://www.youtube.com/watch?v=IAUTXtCUUog",
+      "title_orig": "IS THIS THE BEST WEAPON FOR AN IMMORTALITY BUILD?! #division2builds #bestbuilds #shorts",
+      "lang_orig": "en",
+      "publishedAt": "2026-11-17T11:46:31.000Z",
+      "fetchedAt": "2026-11-17T14:52:12.860Z",
+      "category": "builds",
+      "tags": [
+        "video"
+      ],
+      "importance": 57,
+      "confidence": "community",
+      "headline_en": "IS THIS THE BEST WEAPON FOR AN IMMORTALITY BUILD?! #division2builds #bestbuilds #shorts",
+      "headline_zhHant": "pending",
+      "summary_en": "🔥 THE DIVISION 2 | ARMAS FORTES, BUILDS META E DICAS DE ENDGAME Seja bem-vindo ao canal!",
+      "summary_zhHant": "pending",
+      "summaryKind": "extract",
+      "alsoReportedBy": [],
+      "media": [],
+      "videoId": "IAUTXtCUUog",
+      "relatedIds": [],
+      "firstSeenAt": "2026-11-17T14:52:12.860Z",
+      "status": "new"
+    },
+    {
       "id": "n3c4i",
       "sourceId": "youtube",
       "sourceName": "Joker Farina",
@@ -933,6 +960,33 @@
       "status": "new"
     },
     {
+      "id": "owyiit",
+      "sourceId": "youtube",
+      "sourceName": "Vortex SHD",
+      "sourceUrl": "https://www.youtube.com/watch?v=HLxssUGO2ns",
+      "title_orig": "🔥 CAN'T MOVE! This Ember Engine Build LOCKS DOWN Entire Rooms! | The Division 2",
+      "lang_orig": "en",
+      "publishedAt": "2026-11-16T15:00:03.000Z",
+      "fetchedAt": "2026-11-17T14:52:12.860Z",
+      "category": "builds",
+      "tags": [
+        "video"
+      ],
+      "importance": 56,
+      "confidence": "community",
+      "headline_en": "🔥 CAN'T MOVE! This Ember Engine Build LOCKS DOWN Entire Rooms! | The Division 2",
+      "headline_zhHant": "pending",
+      "summary_en": "🔥 **WELCOME, AGENTS!** What happens when you combine the Ember Engine with FULL CROWD CONTROL? You turn entire rooms into a lockdown zone!",
+      "summary_zhHant": "pending",
+      "summaryKind": "extract",
+      "alsoReportedBy": [],
+      "media": [],
+      "videoId": "HLxssUGO2ns",
+      "relatedIds": [],
+      "firstSeenAt": "2026-11-17T14:52:12.860Z",
+      "status": "new"
+    },
+    {
       "id": "1bthzcy",
       "sourceId": "youtube",
       "sourceName": "GCROCK XTRA",
@@ -1066,41 +1120,6 @@
       "relatedIds": [],
       "firstSeenAt": "2026-11-16T17:06:28.026Z",
       "status": "new"
-    },
-    {
-      "id": "1w2a0q7",
-      "sourceId": "ubisoft-en",
-      "sourceName": "Ubisoft",
-      "sourceUrl": "https://www.ubisoft.com/en-us/game/the-division/the-division-2/news-updates/1wrUJ1HzY6BF8zzO4AMhJ3/spearfall-pts-patch-notes",
-      "title_orig": "Spearfall PTS Patch Notes",
-      "lang_orig": "en",
-      "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-17T12:56:06.069Z",
-      "category": "glitch-watch",
-      "tags": [
-        "known-issue"
-      ],
-      "importance": 54,
-      "confidence": "official",
-      "headline_en": "Known issue: Capacitor: The Muzzle Mod grants 30% Critical Hit Damage instead of th…",
-      "headline_zhHant": "pending",
-      "summary_en": "Capacitor: The Muzzle Mod grants 30% Critical Hit Damage instead of th eintended 20%",
-      "summary_zhHant": "pending",
-      "summaryKind": "extract",
-      "alsoReportedBy": [],
-      "media": [],
-      "relatedIds": [
-        "15yr4ky"
-      ],
-      "firstSeenAt": "2026-11-16T02:50:16.192Z",
-      "status": "new",
-      "glitch": {
-        "state": "active",
-        "firstSeen": "2026-11-12",
-        "banRisk": false,
-        "riskNote_en": "Known issue listed by Ubisoft. No workaround yet.",
-        "riskNote_zhHant": "pending"
-      }
     },
     {
       "id": "1q04q8g",
@@ -1404,23 +1423,23 @@
       "status": "new"
     },
     {
-      "id": "y6mkzc",
+      "id": "1w2a0q7",
       "sourceId": "ubisoft-en",
       "sourceName": "Ubisoft",
       "sourceUrl": "https://www.ubisoft.com/en-us/game/the-division/the-division-2/news-updates/1wrUJ1HzY6BF8zzO4AMhJ3/spearfall-pts-patch-notes",
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-17T12:56:06.069Z",
+      "fetchedAt": "2026-11-17T14:52:12.860Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
       ],
       "importance": 53,
       "confidence": "official",
-      "headline_en": "Known issue: Measured Assembly: The 4 piece Talent description shows +1 Skill Tier per…",
+      "headline_en": "Known issue: Capacitor: The Muzzle Mod grants 30% Critical Hit Damage instead of th…",
       "headline_zhHant": "pending",
-      "summary_en": "Measured Assembly: The 4 piece Talent description shows +1 Skill Tier per ally within range of your Hive or Smart Cover.",
+      "summary_en": "Capacitor: The Muzzle Mod grants 30% Critical Hit Damage instead of th eintended 20%",
       "summary_zhHant": "pending",
       "summaryKind": "extract",
       "alsoReportedBy": [],
@@ -1520,23 +1539,23 @@
       "status": "new"
     },
     {
-      "id": "98qmb5",
+      "id": "y6mkzc",
       "sourceId": "ubisoft-en",
       "sourceName": "Ubisoft",
       "sourceUrl": "https://www.ubisoft.com/en-us/game/the-division/the-division-2/news-updates/1wrUJ1HzY6BF8zzO4AMhJ3/spearfall-pts-patch-notes",
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-17T12:56:06.069Z",
+      "fetchedAt": "2026-11-17T14:52:12.860Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
       ],
       "importance": 52,
       "confidence": "official",
-      "headline_en": "Known issue: Heartbreaker: The 4 piece and Backpack Talent descriptions show 1.3% base Bonus…",
+      "headline_en": "Known issue: Measured Assembly: The 4 piece Talent description shows +1 Skill Tier per…",
       "headline_zhHant": "pending",
-      "summary_en": "Heartbreaker: The 4 piece and Backpack Talent descriptions show 1.3% base Bonus Armor per stack.",
+      "summary_en": "Measured Assembly: The 4 piece Talent description shows +1 Skill Tier per ally within range of your Hive or Smart Cover.",
       "summary_zhHant": "pending",
       "summaryKind": "extract",
       "alsoReportedBy": [],
@@ -1553,6 +1572,59 @@
         "riskNote_en": "Known issue listed by Ubisoft. No workaround yet.",
         "riskNote_zhHant": "pending"
       }
+    },
+    {
+      "id": "orsv5u",
+      "sourceId": "bahamut",
+      "sourceName": "巴哈姆特 全境封鎖板",
+      "sourceUrl": "https://forum.gamer.com.tw/C.php?bsn=24460&snA=32899",
+      "title_orig": "【心得】『18米戰神』中央公園DLC新技能：戰利品系統",
+      "lang_orig": "zh",
+      "publishedAt": "2026-11-17T14:25:12.860Z",
+      "fetchedAt": "2026-11-17T14:52:12.860Z",
+      "category": "missions",
+      "tags": [
+        "dlc"
+      ],
+      "importance": 52,
+      "confidence": "community",
+      "headline_en": "pending",
+      "headline_zhHant": "【心得】『18米戰神』中央公園DLC新技能：戰利品系統",
+      "summary_en": "pending",
+      "summary_zhHant": "Hey guys 重度守衛無人機成癮症患者又來了。 減傷跟盾系一直都是我蠻喜歡的穩定型打法，這次出了新的減傷無人機當然要…",
+      "summaryKind": "extract",
+      "alsoReportedBy": [],
+      "media": [],
+      "relatedIds": [],
+      "firstSeenAt": "2026-11-17T14:52:12.860Z",
+      "status": "new"
+    },
+    {
+      "id": "ghkq8v",
+      "sourceId": "youtube",
+      "sourceName": "Ms686",
+      "sourceUrl": "https://www.youtube.com/watch?v=QXIBMgQWuRo",
+      "title_orig": "阿嬤說你還不能走　全境封鎖2 配裝　配置",
+      "lang_orig": "zh",
+      "publishedAt": "2026-11-16T23:03:45.000Z",
+      "fetchedAt": "2026-11-17T14:52:12.860Z",
+      "category": "builds",
+      "tags": [
+        "video"
+      ],
+      "importance": 52,
+      "confidence": "community",
+      "headline_en": "pending",
+      "headline_zhHant": "阿嬤說你還不能走　全境封鎖2 配裝　配置",
+      "summary_en": "pending",
+      "summary_zhHant": "阿嬤說你還不能走　全境封鎖2 配裝　配置",
+      "summaryKind": "extract",
+      "alsoReportedBy": [],
+      "media": [],
+      "videoId": "QXIBMgQWuRo",
+      "relatedIds": [],
+      "firstSeenAt": "2026-11-17T14:52:12.860Z",
+      "status": "new"
     },
     {
       "id": "7thljw",
@@ -1608,82 +1680,28 @@
       "relatedIds": [],
       "firstSeenAt": "2026-11-17T10:56:39.640Z",
       "status": "new"
-    },
-    {
-      "id": "13boze7",
-      "sourceId": "youtube",
-      "sourceName": "Streamer House",
-      "sourceUrl": "https://www.youtube.com/watch?v=i_hdTC9dP9Q",
-      "title_orig": "The Division 2 Crit Build Sweep and Legendary Chaos with Inevitable",
-      "lang_orig": "en",
-      "publishedAt": "2026-11-17T06:04:17.000Z",
-      "fetchedAt": "2026-11-17T07:05:38.189Z",
-      "category": "builds",
-      "tags": [
-        "video"
-      ],
-      "importance": 52,
-      "confidence": "community",
-      "headline_en": "The Division 2 Crit Build Sweep and Legendary Chaos with Inevitable",
-      "headline_zhHant": "pending",
-      "summary_en": "Watch Inevitable tune a hard-hitting build in The Division 2, sweep objectives, then endure brutal Descent and Legendary chaos.",
-      "summary_zhHant": "pending",
-      "summaryKind": "extract",
-      "alsoReportedBy": [],
-      "media": [],
-      "videoId": "i_hdTC9dP9Q",
-      "relatedIds": [],
-      "firstSeenAt": "2026-11-17T07:05:38.189Z",
-      "status": "new"
-    },
-    {
-      "id": "rj60vp",
-      "sourceId": "youtube",
-      "sourceName": "下班遊戲王",
-      "sourceUrl": "https://www.youtube.com/watch?v=bN87QnnqxTk",
-      "title_orig": "全境封鎖2-漫遊/白宮至城堡聚落",
-      "lang_orig": "zh",
-      "publishedAt": "2026-11-17T03:00:27.000Z",
-      "fetchedAt": "2026-11-17T04:53:14.291Z",
-      "category": "community",
-      "tags": [
-        "video"
-      ],
-      "importance": 52,
-      "confidence": "community",
-      "headline_en": "pending",
-      "headline_zhHant": "全境封鎖2-漫遊/白宮至城堡聚落",
-      "summary_en": "pending",
-      "summary_zhHant": "全境封鎖2-漫遊/白宮至城堡聚落",
-      "summaryKind": "extract",
-      "alsoReportedBy": [],
-      "media": [],
-      "videoId": "bN87QnnqxTk",
-      "relatedIds": [],
-      "firstSeenAt": "2026-11-17T04:53:14.291Z",
-      "status": "new"
     }
   ],
   "sources": [
     {
       "sourceId": "steam-news",
       "ok": true,
-      "checkedAt": "2026-11-17T12:56:06.069Z"
+      "checkedAt": "2026-11-17T14:52:12.860Z"
     },
     {
       "sourceId": "ubisoft-en",
       "ok": true,
-      "checkedAt": "2026-11-17T12:56:06.069Z"
+      "checkedAt": "2026-11-17T14:52:12.860Z"
     },
     {
       "sourceId": "ubisoft-zh-tw",
       "ok": true,
-      "checkedAt": "2026-11-17T12:56:06.069Z"
+      "checkedAt": "2026-11-17T14:52:12.860Z"
     },
     {
       "sourceId": "bahamut",
       "ok": true,
-      "checkedAt": "2026-11-17T12:56:06.069Z"
+      "checkedAt": "2026-11-17T14:52:12.860Z"
     }
   ]
 }

@@ -1,10 +1,10 @@
 {
-  "lastRun": "2026-11-17T12:56:38.155Z",
-  "durationMs": 32086,
+  "lastRun": "2026-11-17T14:52:50.605Z",
+  "durationMs": 37745,
   "edition": {
     "date": "2026-11-17",
     "number": 14,
-    "items": 57,
+    "items": 58,
     "zhPending": 50
   },
   "sources": [
@@ -26,7 +26,7 @@
     {
       "id": "bahamut",
       "ok": true,
-      "items": 10
+      "items": 11
     },
     {
       "id": "bahamut-hot",
@@ -48,7 +48,7 @@
     5,
     5,
     5,
-    5,
+    4,
     4
   ]
 }

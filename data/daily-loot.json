@@ -1,60 +1,60 @@
 {
- "date": "2026-11-16",
+ "date": "2026-11-17",
  "missions": [
   {
-   "place": "墳墓",
-   "reward": "獵人怒火",
-   "kind": "set"
+   "place": "美術館",
+   "reward": "手套",
+   "kind": "slot"
   },
   {
-   "place": "曼寧",
-   "reward": "茲維多",
-   "kind": "brand"
+   "place": "Capitol Building",
+   "reward": "護膝",
+   "kind": "slot"
   },
   {
-   "place": "銀行",
+   "place": "Jefferson Plaza",
    "reward": "面罩",
    "kind": "slot"
   },
   {
-   "place": "歷史博物館",
-   "reward": "飛龍",
+   "place": "Lincoln Memorial",
+   "reward": "霸主",
    "kind": "brand"
   },
   {
-   "place": "太空總署",
-   "reward": "奧提茲 : 修復",
+   "place": "Federal Emergency Bunker",
+   "reward": "固線",
    "kind": "set"
   }
  ],
  "vendor": [
-  "突擊步槍",
-  "槍套"
+  "輕機槍",
+  "面罩"
  ],
  "english": [
   {
-   "place": "The Tombs",
-   "reward": "Hunters Fury"
+   "place": "The Art Museum",
+   "reward": "Gloves"
   },
   {
-   "place": "Manning National Zoo",
-   "reward": "Zwiadowka Sp. z o.o"
+   "place": "Capitol Building",
+   "reward": "Kneepad"
   },
   {
-   "place": "Bank Headquarters",
+   "place": "Jefferson Plaza",
    "reward": "Mask"
   },
   {
-   "place": "American History Museum",
-   "reward": "Wyvern Wear"
+   "place": "Lincoln Memorial",
+   "reward": "Overlord Armaments"
   },
   {
-   "place": "Space Administration HQ",
-   "reward": "Ortiz: Reficere"
+   "place": "Federal Emergency Bunker",
+   "reward": "Hard Wired"
   }
  ],
  "title": "",
  "url": "https://prototrack.gg/target-loot/target-loot.php",
  "source": "prototrack",
- "fetchedAt": "2026-11-16T08:29:59.776Z"
+ "fetchedAt": "2026-11-17T14:52:12.860Z"
 }
