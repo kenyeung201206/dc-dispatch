@@ -1,7 +1,7 @@
 {
   "date": "2026-11-17",
   "editionNumber": 14,
-  "generatedAt": "2026-11-17T08:53:35.173Z",
+  "generatedAt": "2026-11-17T10:56:39.640Z",
   "meta": {
     "season_en": "Red Horizon",
     "season_zhHant": "Red Horizon 賽季",
@@ -17,14 +17,14 @@
       "title_orig": "The Division 2: Echoes of Central Park Event Pass Twitch Drops",
       "lang_orig": "en",
       "publishedAt": "2026-11-10T16:00:00.000Z",
-      "fetchedAt": "2026-11-17T08:53:35.173Z",
+      "fetchedAt": "2026-11-17T10:56:39.640Z",
       "category": "community",
       "tags": [
         "event",
         "twitch-drops",
         "exotic"
       ],
-      "importance": 77,
+      "importance": 76,
       "confidence": "official",
       "headline_en": "The Division 2: Echoes of Central Park Event Pass Twitch Drops",
       "headline_zhHant": "pending",
@@ -87,6 +87,35 @@
       }
     },
     {
+      "id": "1ps3uj9",
+      "sourceId": "youtube",
+      "sourceName": "iDentity",
+      "sourceUrl": "https://www.youtube.com/watch?v=kynYdPJj0Bo",
+      "title_orig": "NO ONE Is Gonna Use The Ratel In Season 4…",
+      "lang_orig": "en",
+      "publishedAt": "2026-11-16T17:00:16.000Z",
+      "fetchedAt": "2026-11-17T10:56:39.640Z",
+      "category": "missions",
+      "tags": [
+        "exotic",
+        "season",
+        "video"
+      ],
+      "importance": 71,
+      "confidence": "community",
+      "headline_en": "NO ONE Is Gonna Use The Ratel In Season 4…",
+      "headline_zhHant": "pending",
+      "summary_en": "The Division 2 Year 8 Season 4 is bringing an entirely new level of difficulty, and after testing the Ratel exotic assault rifle in the…",
+      "summary_zhHant": "pending",
+      "summaryKind": "extract",
+      "alsoReportedBy": [],
+      "media": [],
+      "videoId": "kynYdPJj0Bo",
+      "relatedIds": [],
+      "firstSeenAt": "2026-11-17T10:56:39.640Z",
+      "status": "new"
+    },
+    {
       "id": "15yr4ky",
       "sourceId": "ubisoft-en",
       "sourceName": "Ubisoft",
@@ -94,7 +123,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-17T08:53:35.173Z",
+      "fetchedAt": "2026-11-17T10:56:39.640Z",
       "category": "updates",
       "tags": [
         "known-issue",
@@ -142,7 +171,7 @@
       "title_orig": "[TUY8S3.3] Echoes of Central Park Launch, Crossplay Rollout, Conflict Improvements & More",
       "lang_orig": "en",
       "publishedAt": "2026-11-02T15:45:00.000Z",
-      "fetchedAt": "2026-11-17T08:53:35.173Z",
+      "fetchedAt": "2026-11-17T10:56:39.640Z",
       "category": "updates",
       "tags": [
         "title-update",
@@ -547,12 +576,12 @@
       "title_orig": "The Division 2: Echoes of Central Park DLC is available now!",
       "lang_orig": "en",
       "publishedAt": "2026-11-03T15:00:00.000Z",
-      "fetchedAt": "2026-11-17T08:53:35.173Z",
+      "fetchedAt": "2026-11-17T10:56:39.640Z",
       "category": "missions",
       "tags": [
         "dlc"
       ],
-      "importance": 64,
+      "importance": 63,
       "confidence": "official",
       "headline_en": "Echoes of Central Park DLC is out now",
       "headline_zhHant": "《中央公園的迴響》DLC 正式推出",
@@ -877,6 +906,61 @@
       "status": "new"
     },
     {
+      "id": "46fsy4",
+      "sourceId": "youtube",
+      "sourceName": "supermarioluf",
+      "sourceUrl": "https://www.youtube.com/watch?v=1SLo3vljVLk",
+      "title_orig": "THE DIVISION 2! NEUE META FERTIGKEIT? ALLE NEUEN SKILLS IM TEST!",
+      "lang_orig": "en",
+      "publishedAt": "2026-11-17T09:00:27.000Z",
+      "fetchedAt": "2026-11-17T10:56:39.640Z",
+      "category": "builds",
+      "tags": [
+        "dlc",
+        "video"
+      ],
+      "importance": 56,
+      "confidence": "community",
+      "headline_en": "THE DIVISION 2! NEUE META FERTIGKEIT? ALLE NEUEN SKILLS IM TEST!",
+      "headline_zhHant": "pending",
+      "summary_en": "Es gibt 6 neue Fertigkeiten! In diesem Video testen wir alle durch und schauen ob es eine neue beste Fertigkeit gibt Es gibt ein neues…",
+      "summary_zhHant": "pending",
+      "summaryKind": "extract",
+      "alsoReportedBy": [],
+      "media": [],
+      "videoId": "1SLo3vljVLk",
+      "relatedIds": [],
+      "firstSeenAt": "2026-11-17T10:56:39.640Z",
+      "status": "new"
+    },
+    {
+      "id": "14of2wj",
+      "sourceId": "youtube",
+      "sourceName": "下手なやらかし屋:SAIKA",
+      "sourceUrl": "https://www.youtube.com/watch?v=iwcNsD09wAg",
+      "title_orig": "普通に入れたww #ゲーム実況 #division2 #女性配信",
+      "lang_orig": "zh",
+      "publishedAt": "2026-11-17T10:32:45.000Z",
+      "fetchedAt": "2026-11-17T10:56:39.640Z",
+      "category": "community",
+      "tags": [
+        "video"
+      ],
+      "importance": 56,
+      "confidence": "community",
+      "headline_en": "pending",
+      "headline_zhHant": "普通に入れたww #ゲーム実況 #division2 #女性配信",
+      "summary_en": "pending",
+      "summary_zhHant": "皆様おは🐼・こん🐼（コンパンダ）♪SAIKAと申します( *´艸｀) 毎日２１‐２４時までゲームをしております！",
+      "summaryKind": "extract",
+      "alsoReportedBy": [],
+      "media": [],
+      "videoId": "iwcNsD09wAg",
+      "relatedIds": [],
+      "firstSeenAt": "2026-11-17T10:56:39.640Z",
+      "status": "new"
+    },
+    {
       "id": "1bthzcy",
       "sourceId": "youtube",
       "sourceName": "GCROCK XTRA",
@@ -992,7 +1076,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-17T08:53:35.173Z",
+      "fetchedAt": "2026-11-17T10:56:39.640Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -1018,6 +1102,33 @@
         "riskNote_en": "Known issue listed by Ubisoft. No workaround yet.",
         "riskNote_zhHant": "pending"
       }
+    },
+    {
+      "id": "1ybz8dv",
+      "sourceId": "youtube",
+      "sourceName": "GasMarijo",
+      "sourceUrl": "https://www.youtube.com/watch?v=oori-1ATQvA",
+      "title_orig": "Tier 10 Escalation SOLO | Steel & Sons UIC15 MOD2 Rifle Build | The Division 2!",
+      "lang_orig": "en",
+      "publishedAt": "2026-11-17T10:27:41.000Z",
+      "fetchedAt": "2026-11-17T10:56:39.640Z",
+      "category": "builds",
+      "tags": [
+        "video"
+      ],
+      "importance": 54,
+      "confidence": "community",
+      "headline_en": "Tier 10 Escalation SOLO | Steel & Sons UIC15 MOD2 Rifle Build | The Division 2!",
+      "headline_zhHant": "pending",
+      "summary_en": "Tier 10 Escalation SOLO | Steel & Sons UIC15 MOD2 Rifle Build | The Division 2!",
+      "summary_zhHant": "pending",
+      "summaryKind": "extract",
+      "alsoReportedBy": [],
+      "media": [],
+      "videoId": "oori-1ATQvA",
+      "relatedIds": [],
+      "firstSeenAt": "2026-11-17T10:56:39.640Z",
+      "status": "new"
     },
     {
       "id": "kelzig",
@@ -1274,7 +1385,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-17T08:53:35.173Z",
+      "fetchedAt": "2026-11-17T10:56:39.640Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -1390,7 +1501,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-17T08:53:35.173Z",
+      "fetchedAt": "2026-11-17T10:56:39.640Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -1418,29 +1529,30 @@
       }
     },
     {
-      "id": "ccqbq5",
-      "sourceId": "steam-news",
-      "sourceName": "Ubisoft (via Steam News)",
-      "sourceUrl": "https://store.steampowered.com/news/app/2221490/view/1848664643356049",
-      "title_orig": "The Division 2: 6X XP Event",
-      "lang_orig": "en",
-      "publishedAt": "2026-11-06T10:31:09.000Z",
-      "fetchedAt": "2026-11-17T08:53:35.173Z",
-      "category": "missions",
+      "id": "1tktg7q",
+      "sourceId": "youtube",
+      "sourceName": "小豬玩遊戲",
+      "sourceUrl": "https://www.youtube.com/watch?v=yxpHPiRWZUM",
+      "title_orig": "全境封鎖2 11/17 今日第2次  20連抽",
+      "lang_orig": "zh",
+      "publishedAt": "2026-11-17T06:54:26.000Z",
+      "fetchedAt": "2026-11-17T10:56:39.640Z",
+      "category": "community",
       "tags": [
-        "event"
+        "video"
       ],
       "importance": 52,
-      "confidence": "official",
-      "headline_en": "The Division 2: 6X XP Event",
-      "headline_zhHant": "pending",
-      "summary_en": "For the first time ever, earn SHD levels 6 times faster until November 10.",
-      "summary_zhHant": "pending",
+      "confidence": "community",
+      "headline_en": "pending",
+      "headline_zhHant": "全境封鎖2 11/17 今日第2次  20連抽",
+      "summary_en": "pending",
+      "summary_zhHant": "全境封鎖2 11/17 今日第2次  20連抽",
       "summaryKind": "extract",
       "alsoReportedBy": [],
       "media": [],
+      "videoId": "yxpHPiRWZUM",
       "relatedIds": [],
-      "firstSeenAt": "2026-11-09T16:58:40.968Z",
+      "firstSeenAt": "2026-11-17T10:56:39.640Z",
       "status": "new"
     },
     {
@@ -1586,7 +1698,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-17T08:53:35.173Z",
+      "fetchedAt": "2026-11-17T10:56:39.640Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -1612,149 +1724,28 @@
         "riskNote_en": "Known issue listed by Ubisoft. No workaround yet.",
         "riskNote_zhHant": "pending"
       }
-    },
-    {
-      "id": "pbs2js",
-      "sourceId": "bahamut",
-      "sourceName": "巴哈姆特 全境封鎖板",
-      "sourceUrl": "https://forum.gamer.com.tw/C.php?bsn=24460&snA=32897",
-      "title_orig": "【情報】關機維護公告 - 2026/11/17(二)",
-      "lang_orig": "zh",
-      "publishedAt": "2026-11-16T17:53:35.173Z",
-      "fetchedAt": "2026-11-17T08:53:35.173Z",
-      "category": "updates",
-      "tags": [],
-      "importance": 51,
-      "confidence": "community",
-      "headline_en": "pending",
-      "headline_zhHant": "【情報】關機維護公告 - 2026/11/17(二)",
-      "summary_en": "pending",
-      "summary_zhHant": "關機維護時間：2026 年 11 月 17 日 15:00 開始維護 預計維護 8 小時 繼上週完成PC玩家遷移作業後，…",
-      "summaryKind": "extract",
-      "alsoReportedBy": [],
-      "media": [],
-      "relatedIds": [],
-      "firstSeenAt": "2026-11-16T18:49:36.706Z",
-      "status": "new"
-    },
-    {
-      "id": "1blg61e",
-      "sourceId": "ubisoft-en",
-      "sourceName": "Ubisoft",
-      "sourceUrl": "https://www.ubisoft.com/en-us/game/the-division/the-division-2/news-updates/1wrUJ1HzY6BF8zzO4AMhJ3/spearfall-pts-patch-notes",
-      "title_orig": "Spearfall PTS Patch Notes",
-      "lang_orig": "en",
-      "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-17T08:53:35.173Z",
-      "category": "glitch-watch",
-      "tags": [
-        "known-issue"
-      ],
-      "importance": 50,
-      "confidence": "official",
-      "headline_en": "Known issue: Some Schematics offer more attribute changes than the item has slots for",
-      "headline_zhHant": "pending",
-      "summary_en": "Some Schematics offer more attribute changes than the item has slots for.",
-      "summary_zhHant": "pending",
-      "summaryKind": "extract",
-      "alsoReportedBy": [],
-      "media": [],
-      "relatedIds": [
-        "15yr4ky"
-      ],
-      "firstSeenAt": "2026-11-12T16:55:32.847Z",
-      "status": "new",
-      "glitch": {
-        "state": "active",
-        "firstSeen": "2026-11-12",
-        "banRisk": false,
-        "riskNote_en": "Known issue listed by Ubisoft. No workaround yet.",
-        "riskNote_zhHant": "pending"
-      }
-    },
-    {
-      "id": "1lsfrn8",
-      "sourceId": "youtube",
-      "sourceName": "Frank",
-      "sourceUrl": "https://www.youtube.com/watch?v=6XxbRGOztrs",
-      "title_orig": "P-Type Flip Trick | Y8S3 Build Workaround (The Division 2)",
-      "lang_orig": "en",
-      "publishedAt": "2026-11-15T23:43:53.000Z",
-      "fetchedAt": "2026-11-16T17:06:28.026Z",
-      "category": "glitch-watch",
-      "tags": [
-        "video"
-      ],
-      "importance": 50,
-      "confidence": "community",
-      "headline_en": "P-Type Flip Trick | Y8S3 Build Workaround (The Division 2)",
-      "headline_zhHant": "pending",
-      "summary_en": "A cool method for gaining more than just 1 max roll attribute when flipping a gear piece to prototype.",
-      "summary_zhHant": "pending",
-      "summaryKind": "extract",
-      "alsoReportedBy": [],
-      "media": [],
-      "videoId": "6XxbRGOztrs",
-      "relatedIds": [],
-      "firstSeenAt": "2026-11-16T17:06:28.026Z",
-      "status": "new"
-    },
-    {
-      "id": "1e2o3a6",
-      "sourceId": "ubisoft-en",
-      "sourceName": "Ubisoft",
-      "sourceUrl": "https://www.ubisoft.com/en-us/game/the-division/the-division-2/news-updates/1wrUJ1HzY6BF8zzO4AMhJ3/spearfall-pts-patch-notes",
-      "title_orig": "Spearfall PTS Patch Notes",
-      "lang_orig": "en",
-      "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-17T08:53:35.173Z",
-      "category": "glitch-watch",
-      "tags": [
-        "known-issue"
-      ],
-      "importance": 49,
-      "confidence": "official",
-      "headline_en": "Known issue: Unbreakable may repair 100% of your Armor instead of 95%",
-      "headline_zhHant": "pending",
-      "summary_en": "Unbreakable may repair 100% of your Armor instead of 95%.",
-      "summary_zhHant": "pending",
-      "summaryKind": "extract",
-      "alsoReportedBy": [],
-      "media": [],
-      "relatedIds": [
-        "15yr4ky"
-      ],
-      "firstSeenAt": "2026-11-12T16:55:32.847Z",
-      "status": "new",
-      "glitch": {
-        "state": "active",
-        "firstSeen": "2026-11-12",
-        "banRisk": false,
-        "riskNote_en": "Known issue listed by Ubisoft. No workaround yet.",
-        "riskNote_zhHant": "pending"
-      }
     }
   ],
   "sources": [
     {
       "sourceId": "steam-news",
       "ok": true,
-      "checkedAt": "2026-11-17T08:53:35.173Z"
+      "checkedAt": "2026-11-17T10:56:39.640Z"
     },
     {
       "sourceId": "ubisoft-en",
       "ok": true,
-      "checkedAt": "2026-11-17T08:53:35.173Z"
+      "checkedAt": "2026-11-17T10:56:39.640Z"
     },
     {
       "sourceId": "ubisoft-zh-tw",
       "ok": true,
-      "checkedAt": "2026-11-17T08:53:35.173Z"
+      "checkedAt": "2026-11-17T10:56:39.640Z"
     },
     {
       "sourceId": "bahamut",
       "ok": true,
-      "checkedAt": "2026-11-17T08:53:35.173Z"
+      "checkedAt": "2026-11-17T10:56:39.640Z"
     }
   ]
 }
