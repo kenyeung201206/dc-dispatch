@@ -1,7 +1,7 @@
 {
   "date": "2026-11-17",
   "editionNumber": 14,
-  "generatedAt": "2026-11-17T10:56:39.640Z",
+  "generatedAt": "2026-11-17T12:56:06.069Z",
   "meta": {
     "season_en": "Red Horizon",
     "season_zhHant": "Red Horizon 賽季",
@@ -17,7 +17,7 @@
       "title_orig": "The Division 2: Echoes of Central Park Event Pass Twitch Drops",
       "lang_orig": "en",
       "publishedAt": "2026-11-10T16:00:00.000Z",
-      "fetchedAt": "2026-11-17T10:56:39.640Z",
+      "fetchedAt": "2026-11-17T12:56:06.069Z",
       "category": "community",
       "tags": [
         "event",
@@ -123,7 +123,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-17T10:56:39.640Z",
+      "fetchedAt": "2026-11-17T12:56:06.069Z",
       "category": "updates",
       "tags": [
         "known-issue",
@@ -171,7 +171,7 @@
       "title_orig": "[TUY8S3.3] Echoes of Central Park Launch, Crossplay Rollout, Conflict Improvements & More",
       "lang_orig": "en",
       "publishedAt": "2026-11-02T15:45:00.000Z",
-      "fetchedAt": "2026-11-17T10:56:39.640Z",
+      "fetchedAt": "2026-11-17T12:56:06.069Z",
       "category": "updates",
       "tags": [
         "title-update",
@@ -576,7 +576,7 @@
       "title_orig": "The Division 2: Echoes of Central Park DLC is available now!",
       "lang_orig": "en",
       "publishedAt": "2026-11-03T15:00:00.000Z",
-      "fetchedAt": "2026-11-17T10:56:39.640Z",
+      "fetchedAt": "2026-11-17T12:56:06.069Z",
       "category": "missions",
       "tags": [
         "dlc"
@@ -796,6 +796,33 @@
       "status": "new"
     },
     {
+      "id": "n3c4i",
+      "sourceId": "youtube",
+      "sourceName": "Joker Farina",
+      "sourceUrl": "https://www.youtube.com/watch?v=kd8-gclWv-c",
+      "title_orig": "IS THIS THE MOST BROKEN IMMORTAL BUILD IN THE DIVISION 2?! 😱🔥 #division2builds #bestbuilds #shorts",
+      "lang_orig": "en",
+      "publishedAt": "2026-11-17T11:20:42.000Z",
+      "fetchedAt": "2026-11-17T12:56:06.069Z",
+      "category": "builds",
+      "tags": [
+        "video"
+      ],
+      "importance": 57,
+      "confidence": "community",
+      "headline_en": "IS THIS THE MOST BROKEN IMMORTAL BUILD IN THE DIVISION 2?! 😱🔥 #division2builds #bestbuilds #shorts",
+      "headline_zhHant": "pending",
+      "summary_en": "🔥 THE DIVISION 2 | ARMAS FORTES, BUILDS META E DICAS DE ENDGAME Seja bem-vindo ao canal!",
+      "summary_zhHant": "pending",
+      "summaryKind": "extract",
+      "alsoReportedBy": [],
+      "media": [],
+      "videoId": "kd8-gclWv-c",
+      "relatedIds": [],
+      "firstSeenAt": "2026-11-17T12:56:06.069Z",
+      "status": "new"
+    },
+    {
       "id": "jvqyke",
       "sourceId": "youtube",
       "sourceName": "DJTICKLE",
@@ -906,61 +933,6 @@
       "status": "new"
     },
     {
-      "id": "46fsy4",
-      "sourceId": "youtube",
-      "sourceName": "supermarioluf",
-      "sourceUrl": "https://www.youtube.com/watch?v=1SLo3vljVLk",
-      "title_orig": "THE DIVISION 2! NEUE META FERTIGKEIT? ALLE NEUEN SKILLS IM TEST!",
-      "lang_orig": "en",
-      "publishedAt": "2026-11-17T09:00:27.000Z",
-      "fetchedAt": "2026-11-17T10:56:39.640Z",
-      "category": "builds",
-      "tags": [
-        "dlc",
-        "video"
-      ],
-      "importance": 56,
-      "confidence": "community",
-      "headline_en": "THE DIVISION 2! NEUE META FERTIGKEIT? ALLE NEUEN SKILLS IM TEST!",
-      "headline_zhHant": "pending",
-      "summary_en": "Es gibt 6 neue Fertigkeiten! In diesem Video testen wir alle durch und schauen ob es eine neue beste Fertigkeit gibt Es gibt ein neues…",
-      "summary_zhHant": "pending",
-      "summaryKind": "extract",
-      "alsoReportedBy": [],
-      "media": [],
-      "videoId": "1SLo3vljVLk",
-      "relatedIds": [],
-      "firstSeenAt": "2026-11-17T10:56:39.640Z",
-      "status": "new"
-    },
-    {
-      "id": "14of2wj",
-      "sourceId": "youtube",
-      "sourceName": "下手なやらかし屋:SAIKA",
-      "sourceUrl": "https://www.youtube.com/watch?v=iwcNsD09wAg",
-      "title_orig": "普通に入れたww #ゲーム実況 #division2 #女性配信",
-      "lang_orig": "zh",
-      "publishedAt": "2026-11-17T10:32:45.000Z",
-      "fetchedAt": "2026-11-17T10:56:39.640Z",
-      "category": "community",
-      "tags": [
-        "video"
-      ],
-      "importance": 56,
-      "confidence": "community",
-      "headline_en": "pending",
-      "headline_zhHant": "普通に入れたww #ゲーム実況 #division2 #女性配信",
-      "summary_en": "pending",
-      "summary_zhHant": "皆様おは🐼・こん🐼（コンパンダ）♪SAIKAと申します( *´艸｀) 毎日２１‐２４時までゲームをしております！",
-      "summaryKind": "extract",
-      "alsoReportedBy": [],
-      "media": [],
-      "videoId": "iwcNsD09wAg",
-      "relatedIds": [],
-      "firstSeenAt": "2026-11-17T10:56:39.640Z",
-      "status": "new"
-    },
-    {
       "id": "1bthzcy",
       "sourceId": "youtube",
       "sourceName": "GCROCK XTRA",
@@ -1012,6 +984,33 @@
       "videoId": "fG-HX___VUo",
       "relatedIds": [],
       "firstSeenAt": "2026-11-16T20:45:05.849Z",
+      "status": "new"
+    },
+    {
+      "id": "w58zw3",
+      "sourceId": "youtube",
+      "sourceName": "Faidwoizn -TV",
+      "sourceUrl": "https://www.youtube.com/watch?v=eIudvStx8z0",
+      "title_orig": "The Division 2: Falsche Treffer helfen dem Gegner! | Spearfall PTS",
+      "lang_orig": "en",
+      "publishedAt": "2026-11-17T12:00:10.000Z",
+      "fetchedAt": "2026-11-17T12:56:06.069Z",
+      "category": "updates",
+      "tags": [
+        "video"
+      ],
+      "importance": 55,
+      "confidence": "community",
+      "headline_en": "The Division 2: Falsche Treffer helfen dem Gegner! | Spearfall PTS",
+      "headline_zhHant": "pending",
+      "summary_en": "Einordnung zum PTS-Stand vom 13.11.2026: Im damaligen Spearfall-Testbuild beschleunigen Treffer abseits des markierten Schwachpunkts die Contra-Augment-Aufladung. So ist die angekündigte Mechanik gedacht.",
+      "summary_zhHant": "pending",
+      "summaryKind": "extract",
+      "alsoReportedBy": [],
+      "media": [],
+      "videoId": "eIudvStx8z0",
+      "relatedIds": [],
+      "firstSeenAt": "2026-11-17T12:56:06.069Z",
       "status": "new"
     },
     {
@@ -1076,7 +1075,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-17T10:56:39.640Z",
+      "fetchedAt": "2026-11-17T12:56:06.069Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -1102,6 +1101,33 @@
         "riskNote_en": "Known issue listed by Ubisoft. No workaround yet.",
         "riskNote_zhHant": "pending"
       }
+    },
+    {
+      "id": "1q04q8g",
+      "sourceId": "youtube",
+      "sourceName": "iSE的遊戲小圈圈",
+      "sourceUrl": "https://www.youtube.com/watch?v=24XZo96cSps",
+      "title_orig": "［The Division 2］新技能：戰利品系統，測試入侵銀行總部",
+      "lang_orig": "zh",
+      "publishedAt": "2026-11-17T12:27:53.000Z",
+      "fetchedAt": "2026-11-17T12:56:06.069Z",
+      "category": "community",
+      "tags": [
+        "video"
+      ],
+      "importance": 54,
+      "confidence": "community",
+      "headline_en": "pending",
+      "headline_zhHant": "［The Division 2］新技能：戰利品系統，測試入侵銀行總部",
+      "summary_en": "pending",
+      "summary_zhHant": "［The Division 2］新技能：戰利品系統，測試入侵銀行總部",
+      "summaryKind": "extract",
+      "alsoReportedBy": [],
+      "media": [],
+      "videoId": "24XZo96cSps",
+      "relatedIds": [],
+      "firstSeenAt": "2026-11-17T12:56:06.069Z",
+      "status": "new"
     },
     {
       "id": "1ybz8dv",
@@ -1385,7 +1411,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-17T10:56:39.640Z",
+      "fetchedAt": "2026-11-17T12:56:06.069Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -1501,7 +1527,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-17T10:56:39.640Z",
+      "fetchedAt": "2026-11-17T12:56:06.069Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -1527,6 +1553,34 @@
         "riskNote_en": "Known issue listed by Ubisoft. No workaround yet.",
         "riskNote_zhHant": "pending"
       }
+    },
+    {
+      "id": "7thljw",
+      "sourceId": "youtube",
+      "sourceName": "Streamer House",
+      "sourceUrl": "https://www.youtube.com/watch?v=Uz45fmQ-ELI",
+      "title_orig": "Tom Clancy's The Division 2 Legendary Crit Build vs District Union",
+      "lang_orig": "en",
+      "publishedAt": "2026-11-17T11:38:09.000Z",
+      "fetchedAt": "2026-11-17T12:56:06.069Z",
+      "category": "builds",
+      "tags": [
+        "event",
+        "video"
+      ],
+      "importance": 52,
+      "confidence": "community",
+      "headline_en": "Tom Clancy's The Division 2 Legendary Crit Build vs District Union",
+      "headline_zhHant": "pending",
+      "summary_en": "Jesus tests a crit build in Tom Clancy's The Division 2—see how Legendary District Union forces a pivot to a fast core farm.",
+      "summary_zhHant": "pending",
+      "summaryKind": "extract",
+      "alsoReportedBy": [],
+      "media": [],
+      "videoId": "Uz45fmQ-ELI",
+      "relatedIds": [],
+      "firstSeenAt": "2026-11-17T12:56:06.069Z",
+      "status": "new"
     },
     {
       "id": "1tktg7q",
@@ -1608,144 +1662,28 @@
       "relatedIds": [],
       "firstSeenAt": "2026-11-17T04:53:14.291Z",
       "status": "new"
-    },
-    {
-      "id": "ghkq8v",
-      "sourceId": "youtube",
-      "sourceName": "Ms686",
-      "sourceUrl": "https://www.youtube.com/watch?v=QXIBMgQWuRo",
-      "title_orig": "阿嬤說你還不能走　全境封鎖2 配裝　配置",
-      "lang_orig": "zh",
-      "publishedAt": "2026-11-16T23:03:45.000Z",
-      "fetchedAt": "2026-11-17T00:54:21.160Z",
-      "category": "builds",
-      "tags": [
-        "video"
-      ],
-      "importance": 52,
-      "confidence": "community",
-      "headline_en": "pending",
-      "headline_zhHant": "阿嬤說你還不能走　全境封鎖2 配裝　配置",
-      "summary_en": "pending",
-      "summary_zhHant": "阿嬤說你還不能走　全境封鎖2 配裝　配置",
-      "summaryKind": "extract",
-      "alsoReportedBy": [],
-      "media": [],
-      "videoId": "QXIBMgQWuRo",
-      "relatedIds": [],
-      "firstSeenAt": "2026-11-17T00:54:21.160Z",
-      "status": "new"
-    },
-    {
-      "id": "1injcmq",
-      "sourceId": "youtube",
-      "sourceName": "小豬玩遊戲",
-      "sourceUrl": "https://www.youtube.com/watch?v=1K3-n_w8Dg8",
-      "title_orig": "全境封鎖2 英雄 中央公園 幹翻5個守護者",
-      "lang_orig": "zh",
-      "publishedAt": "2026-11-16T19:24:57.000Z",
-      "fetchedAt": "2026-11-16T20:45:05.849Z",
-      "category": "community",
-      "tags": [
-        "video"
-      ],
-      "importance": 52,
-      "confidence": "community",
-      "headline_en": "pending",
-      "headline_zhHant": "全境封鎖2 英雄 中央公園 幹翻5個守護者",
-      "summary_en": "pending",
-      "summary_zhHant": "全境封鎖2 英雄 中央公園 幹翻5個守護者",
-      "summaryKind": "extract",
-      "alsoReportedBy": [],
-      "media": [],
-      "videoId": "1K3-n_w8Dg8",
-      "relatedIds": [],
-      "firstSeenAt": "2026-11-16T20:45:05.849Z",
-      "status": "new"
-    },
-    {
-      "id": "owyiit",
-      "sourceId": "youtube",
-      "sourceName": "Vortex SHD",
-      "sourceUrl": "https://www.youtube.com/watch?v=HLxssUGO2ns",
-      "title_orig": "🔥 CAN'T MOVE! This Ember Engine Build LOCKS DOWN Entire Rooms! | The Division 2",
-      "lang_orig": "en",
-      "publishedAt": "2026-11-16T15:00:03.000Z",
-      "fetchedAt": "2026-11-16T17:06:28.026Z",
-      "category": "builds",
-      "tags": [
-        "video"
-      ],
-      "importance": 52,
-      "confidence": "community",
-      "headline_en": "🔥 CAN'T MOVE! This Ember Engine Build LOCKS DOWN Entire Rooms! | The Division 2",
-      "headline_zhHant": "pending",
-      "summary_en": "🔥 **WELCOME, AGENTS!** What happens when you combine the Ember Engine with FULL CROWD CONTROL? You turn entire rooms into a lockdown zone!",
-      "summary_zhHant": "pending",
-      "summaryKind": "extract",
-      "alsoReportedBy": [],
-      "media": [],
-      "videoId": "HLxssUGO2ns",
-      "relatedIds": [],
-      "firstSeenAt": "2026-11-16T17:06:28.026Z",
-      "status": "new"
-    },
-    {
-      "id": "1ypems3",
-      "sourceId": "ubisoft-en",
-      "sourceName": "Ubisoft",
-      "sourceUrl": "https://www.ubisoft.com/en-us/game/the-division/the-division-2/news-updates/1wrUJ1HzY6BF8zzO4AMhJ3/spearfall-pts-patch-notes",
-      "title_orig": "Spearfall PTS Patch Notes",
-      "lang_orig": "en",
-      "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-17T10:56:39.640Z",
-      "category": "glitch-watch",
-      "tags": [
-        "known-issue"
-      ],
-      "importance": 51,
-      "confidence": "official",
-      "headline_en": "Known issue: When selecting a Schematic for a Prototype item, the list may show…",
-      "headline_zhHant": "pending",
-      "summary_en": "When selecting a Schematic for a Prototype item, the list may show Schematics intended for a different weapon category or gear slot.",
-      "summary_zhHant": "pending",
-      "summaryKind": "extract",
-      "alsoReportedBy": [],
-      "media": [],
-      "relatedIds": [
-        "15yr4ky"
-      ],
-      "firstSeenAt": "2026-11-12T16:55:32.847Z",
-      "status": "new",
-      "glitch": {
-        "state": "active",
-        "firstSeen": "2026-11-12",
-        "banRisk": false,
-        "riskNote_en": "Known issue listed by Ubisoft. No workaround yet.",
-        "riskNote_zhHant": "pending"
-      }
     }
   ],
   "sources": [
     {
       "sourceId": "steam-news",
       "ok": true,
-      "checkedAt": "2026-11-17T10:56:39.640Z"
+      "checkedAt": "2026-11-17T12:56:06.069Z"
     },
     {
       "sourceId": "ubisoft-en",
       "ok": true,
-      "checkedAt": "2026-11-17T10:56:39.640Z"
+      "checkedAt": "2026-11-17T12:56:06.069Z"
     },
     {
       "sourceId": "ubisoft-zh-tw",
       "ok": true,
-      "checkedAt": "2026-11-17T10:56:39.640Z"
+      "checkedAt": "2026-11-17T12:56:06.069Z"
     },
     {
       "sourceId": "bahamut",
       "ok": true,
-      "checkedAt": "2026-11-17T10:56:39.640Z"
+      "checkedAt": "2026-11-17T12:56:06.069Z"
     }
   ]
 }
