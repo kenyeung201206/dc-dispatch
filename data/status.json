@@ -1,11 +1,11 @@
 {
-  "lastRun": "2026-11-18T12:47:55.063Z",
-  "durationMs": 34296,
+  "lastRun": "2026-11-18T15:49:03.427Z",
+  "durationMs": 40132,
   "edition": {
     "date": "2026-11-18",
     "number": 15,
-    "items": 60,
-    "zhPending": 41
+    "items": 59,
+    "zhPending": 42
   },
   "sources": [
     {
@@ -31,7 +31,7 @@
     {
       "id": "bahamut-hot",
       "ok": true,
-      "items": 2
+      "items": 3
     }
   ],
   "videos": {
@@ -45,8 +45,8 @@
   "newTopics": 6,
   "recentNewTopics": [
     4,
-    4,
     9,
+    6,
     6,
     6,
     6
