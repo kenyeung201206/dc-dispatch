@@ -644,6 +644,14 @@
    ],
    "icon": "/icons/gear/skill-mods.png",
    "auto": true
+  },
+  {
+   "en": "Body Armor",
+   "aliases": [
+    "Body Armor"
+   ],
+   "icon": "/icons/gear/body-armor.png",
+   "auto": true
   }
  ]
 }

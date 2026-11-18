@@ -1,60 +1,60 @@
 {
- "date": "2026-11-17",
+ "date": "2026-11-18",
  "missions": [
   {
    "place": "美術館",
-   "reward": "手套",
-   "kind": "slot"
+   "reward": "Body Armor",
+   "kind": "other"
   },
   {
    "place": "Capitol Building",
-   "reward": "護膝",
-   "kind": "slot"
+   "reward": "未來主動權",
+   "kind": "set"
   },
   {
    "place": "Jefferson Plaza",
-   "reward": "面罩",
-   "kind": "slot"
+   "reward": "奧提茲 : 修復",
+   "kind": "set"
   },
   {
    "place": "Lincoln Memorial",
-   "reward": "霸主",
+   "reward": "芬里斯",
    "kind": "brand"
   },
   {
    "place": "Federal Emergency Bunker",
-   "reward": "固線",
-   "kind": "set"
+   "reward": "裝備模組",
+   "kind": "other"
   }
  ],
  "vendor": [
-  "輕機槍",
-  "面罩"
+  "霰彈槍",
+  "背包"
  ],
  "english": [
   {
    "place": "The Art Museum",
-   "reward": "Gloves"
+   "reward": "Body Armor"
   },
   {
    "place": "Capitol Building",
-   "reward": "Kneepad"
+   "reward": "Future Initiative"
   },
   {
    "place": "Jefferson Plaza",
-   "reward": "Mask"
+   "reward": "Ortiz: Reficere"
   },
   {
    "place": "Lincoln Memorial",
-   "reward": "Overlord Armaments"
+   "reward": "Fenris Group AB"
   },
   {
    "place": "Federal Emergency Bunker",
-   "reward": "Hard Wired"
+   "reward": "Gear Mods"
   }
  ],
  "title": "",
  "url": "https://prototrack.gg/target-loot/target-loot.php",
  "source": "prototrack",
- "fetchedAt": "2026-11-17T14:52:12.860Z"
+ "fetchedAt": "2026-11-18T09:10:01.862Z"
 }
