@@ -7,6 +7,11 @@ what you did. The owner reads Chinese and wants the site to fix itself; they don
 
 ## Steps
 
+0. **Is the paper late?** GitHub sometimes never starts the robot's scheduled runs (2026-11-18: 10 hours with no
+   update). Read `lastRun` in `data/status.json`. If it is **3 hours or more** ago, and `data/trigger/refresh.txt`
+   wasn't changed in the last 2 hours (`git log -1 --format=%cI -- data/trigger/refresh.txt`), write the current time
+   (ISO) on its last line, commit only that file (`chore(ops): start the robot — paper N h old`) and push. That push
+   starts the robot (`.github/workflows/refresh.yml`). Then continue with step 1.
 1. Read `data/problems.json`. If no problem has `"status": "open"`, stop now: no commit, no other work.
 2. For each open problem (oldest first, at most 3 per run):
    1. Read `signature`, `failedSteps` and `log`. Work out the cause. Reproduce it locally when you can

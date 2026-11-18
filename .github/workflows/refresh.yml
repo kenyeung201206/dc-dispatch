@@ -1,6 +1,11 @@
 name: Daily edition
 
-# Every 2 hours (UTC 00, 02, …, 22 = Taiwan/HK 08, 10, …, 06). Same-day runs update that day's edition (same
+# Every 2 hours. GitHub often delays or drops scheduled runs, worst at the top of the hour (2026-11-18: 10 h with no
+# update, and no run failed — they never started). So: the main time is :17 (quieter), with backup times at :47 and
+# on odd hours. Every scheduled start first checks data/status.json: it only runs the robot when the last update is
+# 100+ minutes old, so backups cost seconds and no YouTube quota when the main run happened. Last resort: the hourly
+# self-repair routine (Anthropic's scheduler) touches data/trigger/refresh.txt when the paper is 3+ hours old, and
+# that push starts this workflow. Same-day runs update that day's edition (same
 # edition number). YouTube quota per run: 5 searches x 101 (50 results each, last 24 h) + followed creators x 2
 # (25 now, auto-grows to at most 60: pipeline/video/discover.ts) + Watch Now channels ~10 = about 580-650 units,
 # x 12 runs = about 7,000-7,800 of 10,000/day. Free Actions minutes: ~1-2 min/run.
@@ -8,24 +13,51 @@ name: Daily edition
 # Also runnable by hand from the Actions tab.
 on:
   schedule:
-    - cron: '0 */2 * * *'
+    - cron: '17 */2 * * *' # main: even hours UTC
+    - cron: '47 */2 * * *' # backup, 30 min later
+    - cron: '17 1-23/2 * * *' # backup, odd hours
+  push:
+    branches: [main]
+    paths: [data/trigger/refresh.txt] # self-repair fallback (docs/SELF_REPAIR.md)
   workflow_dispatch:
 
 permissions:
   contents: write # commit the new edition back to the repo
   actions: read # publish-gate: did this code already pass CI?
 
-concurrency:
-  group: daily-edition
-  cancel-in-progress: false
-
 env:
   ASTRO_TELEMETRY_DISABLED: '1'
 
 jobs:
+  # Is an update due? Scheduled and fallback starts run the robot only when the last one is 100+ minutes old.
+  # (Outside the concurrency group, so a skipped check never takes the queue place of a real run.)
+  due:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    outputs:
+      run: ${{ steps.age.outputs.run }}
+    steps:
+      - uses: actions/checkout@v7.0.1
+        with:
+          sparse-checkout: data/status.json
+          sparse-checkout-cone-mode: false
+          persist-credentials: false
+      - id: age
+        run: |
+          mins=$(node -e "console.log(Math.round((Date.now()-Date.parse(require('./data/status.json').lastRun))/60000))")
+          echo "Last update $mins minutes ago (event: $EVENT)"
+          if [ "$EVENT" = "workflow_dispatch" ] || [ "$mins" -ge 100 ]; then echo "run=true" >> "$GITHUB_OUTPUT"; else echo "run=false" >> "$GITHUB_OUTPUT"; fi
+        env:
+          EVENT: ${{ github.event_name }}
+
   refresh:
+    needs: due
+    if: needs.due.outputs.run == 'true'
     runs-on: ubuntu-latest
     timeout-minutes: 20
+    concurrency:
+      group: daily-edition
+      cancel-in-progress: false
     steps:
       - uses: actions/checkout@v7.0.1
         with:
