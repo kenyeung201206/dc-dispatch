@@ -1,5 +1,5 @@
 {
- "_note": "戰鬥升級 mission names. places = the names 巴哈's daily post uses (the robot adds new ones itself when 巴哈 and ProtoTrack list the same day in the same order; pipeline/learn-names.ts). fromOtherSources = full names confirmed in other 巴哈 posts, shown only until 巴哈's daily post teaches its own name.",
+ "_note": "戰鬥升級 mission names. fromOwner = names the site owner gave (always shown first). places = the names 巴哈's daily post uses (the robot adds new ones itself when 巴哈 and ProtoTrack list the same day in the same order; pipeline/learn-names.ts). fromOtherSources = full names confirmed in other 巴哈 posts, shown only until 巴哈's daily post teaches its own name.",
  "places": {
   "The Art Museum": "美術館",
   "Manning National Zoo": "曼寧",
@@ -15,5 +15,11 @@
   "Bank Headquarters": "銀行總部",
   "American History Museum": "美國歷史博物館",
   "Space Administration HQ": "太空總署總部"
+ },
+ "fromOwner": {
+  "Capitol Building": "國會大廈",
+  "Jefferson Plaza": "傑佛遜廣場",
+  "Lincoln Memorial": "林肯紀念堂",
+  "Federal Emergency Bunker": "聯邦緊急地堡"
  }
 }

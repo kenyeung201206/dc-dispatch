@@ -16,8 +16,8 @@ export const nameKey = (s: string) => s.toLowerCase().replace(/[^a-z0-9]/g, '').
 const key = nameKey;
 /** Mission names as 巴哈's daily post writes them (data/places.json; the robot learns new ones). */
 const PLACE: Record<string, string> = Object.fromEntries(
-  // 巴哈's own names win over full names from other sources.
-  Object.entries({ ...(places.fromOtherSources as Record<string, string>), ...(places.places as Record<string, string>) }).map(([en, zh]) => [key(en), zh]),
+  // Priority: the owner's names, then 巴哈's own daily-post names, then full names from other sources.
+  Object.entries({ ...(places.fromOtherSources as Record<string, string>), ...(places.places as Record<string, string>), ...(places.fromOwner as Record<string, string>) }).map(([en, zh]) => [key(en), zh]),
 );
 export const CJK = /[㐀-鿿]/;
 

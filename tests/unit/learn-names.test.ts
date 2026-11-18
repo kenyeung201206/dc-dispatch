@@ -72,3 +72,15 @@ describe('full names from other sources', () => {
     expect(learnNames(english, chinese, p, brands())?.places).toEqual({ 'The Pentagon': '五角' });
   });
 });
+
+describe("the owner's place names (data/places.json fromOwner)", async () => {
+  const { parseProtoTrack } = await import('../../pipeline/sources/prototrack.ts');
+  it('are always shown, and never block learning from 巴哈', () => {
+    const txt = 'Date: 2026-11-18\nMissions:\n- Capitol Building: Mask\n- Jefferson Plaza: Mask\n- Lincoln Memorial: Mask\n- Federal Emergency Bunker: Mask\n';
+    expect(parseProtoTrack(txt)!.missions.map((m) => m.place)).toEqual(['國會大廈', '傑佛遜廣場', '林肯紀念堂', '聯邦緊急地堡']);
+    // learnNames only compares 巴哈's own names (places.places), so a shorter 巴哈 form can't cause a mismatch.
+    const eng = [{ place: 'Capitol Building', reward: 'Golan Gear Ltd' }, ...english.slice(1)];
+    const zh = [{ place: '國會', reward: '戈蘭' }, ...chinese.slice(1)];
+    expect(learnNames(eng, zh, places(), brands())?.places).toEqual({ 'Capitol Building': '國會' });
+  });
+});
