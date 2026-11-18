@@ -14,6 +14,19 @@
    "status": "fixed",
    "attempts": 1,
    "note": "測試項目，並非真實故障：目前 main 上 i18n:check、check、test 全部通過，無需修改。"
+  },
+  {
+   "id": "202611180939-2",
+   "workflow": "CI",
+   "url": "https://github.com/kenyeung201206/dc-dispatch/actions/runs/44277812520",
+   "at": "2026-11-18T09:39:27.627Z",
+   "lastSeen": "2026-11-18T09:39:27.627Z",
+   "seen": 1,
+   "failedSteps": "Dependency audit",
+   "signature": "Process completed with exit code 1.",
+   "log": "build\tDependency audit\t﻿2026-11-18T09:39:11.9230803Z ##[group]Run pnpm audit --prod --audit-level high\npnpm audit --prod --audit-level high\nshell: /usr/bin/bash -e {0}\nenv:\n  ASTRO_TELEMETRY_DISABLED: 1\n  PNPM_HOME: /home/runner/setup-pnpm/node_modules/.bin\n┌─────────────────────┬───────────────────────────────────────────────────────────────────────┐\n│ high                │ picomatch vulnerable to ReDoS through single-branch repeated extglobs │\n├─────────────────────┼───────────────────────────────────────────────────────────────────────┤\n│ Package             │ picomatch                                                             │\n├─────────────────────┼───────────────────────────────────────────────────────────────────────┤\n│ Vulnerable versions │ <=4.0.7                                                               │\n├─────────────────────┼───────────────────────────────────────────────────────────────────────┤\n│ Patched versions    │ None                                                                  │\n├─────────────────────┼───────────────────────────────────────────────────────────────────────┤\n│ Paths               │ .>astro>unstorage>anymatch>picomatch                                  │\n│                     │                                                                       │\n│                     │ .>astro>picomatch                                                     │\n│                     │                                                                       │\n│                     │ .>astro>tinyglobby>picomatch                                          │\n│                     │                                                                       │\n│                     │ ... Found 12 paths, run `pnpm why picomatch` for more information     │\n├─────────────────────┼───────────────────────────────────────────────────────────────────────┤\n│ More info           │ https://github.com/advisories/GHSA-fc5q-39xc-vjpf                     │\n└─────────────────────┴───────────────────────────────────────────────────────────────────────┘\n2 vulnerabilities found\nSeverity: 1 moderate | 1 high\n##[error]Process completed with exit code 1.",
+   "status": "open",
+   "attempts": 0
   }
  ]
 }
