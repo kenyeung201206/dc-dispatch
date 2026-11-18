@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-18T15:48:23.295Z",
+  "updatedAt": "2026-11-18T19:11:36.242Z",
   "topics": [
     {
       "id": "32892",
@@ -11,6 +11,15 @@
       "lastReplyAt": "2026-11-12T04:33:00.000Z"
     },
     {
+      "id": "32900",
+      "tag": "討論",
+      "title": "【討論】測試後可以加跨平台好友",
+      "url": "https://forum.gamer.com.tw/C.php?bsn=24460&snA=32900",
+      "replies": 7,
+      "views": 124,
+      "lastReplyAt": "2026-11-18T15:24:00.000Z"
+    },
+    {
       "id": "32896",
       "tag": "問題",
       "title": "【問題】(已解決) 聲音有bug還沒解決?",
@@ -18,15 +27,6 @@
       "replies": 5,
       "views": 718,
       "lastReplyAt": "2026-11-14T13:57:00.000Z"
-    },
-    {
-      "id": "32900",
-      "tag": "討論",
-      "title": "【討論】測試後可以加跨平台好友",
-      "url": "https://forum.gamer.com.tw/C.php?bsn=24460&snA=32900",
-      "replies": 1,
-      "views": 19,
-      "lastReplyAt": "2026-11-18T15:24:23.295Z"
     }
   ]
 }
