@@ -538,7 +538,8 @@
     "胸甲",
     "防彈背心",
     "背心",
-    "Chest"
+    "Chest",
+    "Body Armor"
    ],
    "icon": "/icons/slot/chest.png"
   },
@@ -643,14 +644,6 @@
     "Skill Mods"
    ],
    "icon": "/icons/gear/skill-mods.png",
-   "auto": true
-  },
-  {
-   "en": "Body Armor",
-   "aliases": [
-    "Body Armor"
-   ],
-   "icon": "/icons/gear/body-armor.png",
    "auto": true
   }
  ]

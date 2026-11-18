@@ -3,8 +3,8 @@
  "missions": [
   {
    "place": "美術館",
-   "reward": "Body Armor",
-   "kind": "other"
+   "reward": "護甲",
+   "kind": "slot"
   },
   {
    "place": "國會大廈",
