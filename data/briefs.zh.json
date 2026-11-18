@@ -11690,6 +11690,89 @@
         }
       ],
       "written": "2026-11-18"
+    },
+    "123dkvs": {
+      "points": [
+        "影片介紹（依標題）：這是一支 Shorts 短影片，標題在問「Kenly College」是 Glitch（漏洞）還是 Exploit（濫用）",
+        "影片說明只有頻道簡介（Build、單人攜帶配裝、刷寶路線與經驗策略），沒有說明影片本身的結論",
+        "製作者為 Died Again Gaming（DAGS）頻道"
+      ],
+      "written": "2026-11-18"
+    },
+    "1p9lgcu": {
+      "points": [
+        "影片介紹（依標題）：玩家影片，標題表示新賽季「今天某個時間」會上線",
+        "影片說明沒有提供賽季名稱、時間或內容",
+        "資訊以官方公告為準"
+      ],
+      "written": "2026-11-18"
+    },
+    "a9hzd": {
+      "points": [
+        "影片介紹：DJTICKLE 整理 11 月 18 日（週三）的 Cassie Mendoza 與 Danny Weaver 每週重置內容，並開了幾個箱子",
+        "Cassie Mendoza 販售 Shield Splinterer、完美 Frenzy 的 Huntsman，以及滿核心的 Hotshot 槍套",
+        "Danny Weaver 本週有 7 個箱子，含 2 個奇特箱與 2 個強化版舊賽季箱",
+        "影片章節：0:00 開場、0:23 Cassie Mendoza、2:38 Danny Weaver（7 個箱子）、3:14 開箱、3:29 結語"
+      ],
+      "tables": [
+        {
+          "title": "本週重置內容",
+          "columns": [
+            "商人",
+            "項目",
+            "數量／狀態"
+          ],
+          "rows": [
+            [
+              "Cassie Mendoza",
+              "Shield Splinterer",
+              "販售"
+            ],
+            [
+              "Cassie Mendoza",
+              "Huntsman",
+              "完美 Frenzy"
+            ],
+            [
+              "Cassie Mendoza",
+              "Hotshot 槍套",
+              "滿核心"
+            ],
+            [
+              "Danny Weaver",
+              "箱子總數",
+              "7"
+            ],
+            [
+              "Danny Weaver",
+              "奇特箱",
+              "2"
+            ],
+            [
+              "Danny Weaver",
+              "強化版舊賽季箱",
+              "2"
+            ]
+          ]
+        }
+      ],
+      "written": "2026-11-18"
+    },
+    "ybg5t5": {
+      "points": [
+        "影片介紹（依標題）：玩家認為 Huntsman 獵頭獵人配裝是「王子」的最佳配裝，並期待下季獵人（Hunter）加強",
+        "影片說明提到原本想用全紅道格加危急，但不用獵人時近距離太容易死亡",
+        "這是玩家個人意見與配裝心得，並非官方消息"
+      ],
+      "written": "2026-11-18"
+    },
+    "1b64n4d": {
+      "points": [
+        "影片介紹（依標題）：老施的直播實況，主題是《全境封鎖2》跨平台組隊開放後，一起打分階內容",
+        "影片說明為 Ubisoft 創作者計畫的合作聲明（#ubisoftpartner #ad）與頻道會員連結",
+        "影片說明沒有提供其他細節"
+      ],
+      "written": "2026-11-18"
     }
   }
 }
