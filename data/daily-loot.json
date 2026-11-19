@@ -1,60 +1,60 @@
 {
- "date": "2026-11-18",
+ "date": "2026-11-19",
  "missions": [
   {
    "place": "美術館",
-   "reward": "護甲",
-   "kind": "slot"
-  },
-  {
-   "place": "國會大廈",
-   "reward": "未來主動權",
-   "kind": "set"
-  },
-  {
-   "place": "傑佛遜廣場",
-   "reward": "奧提茲 : 修復",
-   "kind": "set"
-  },
-  {
-   "place": "林肯紀念堂",
-   "reward": "芬里斯",
+   "reward": "毒蜥",
    "kind": "brand"
   },
   {
+   "place": "國會大廈",
+   "reward": "Hana-U Corporation",
+   "kind": "other"
+  },
+  {
+   "place": "傑佛遜廣場",
+   "reward": "烏茲娜 ‧ 蓋蒂卡",
+   "kind": "brand"
+  },
+  {
+   "place": "林肯紀念堂",
+   "reward": "Concentrated Company",
+   "kind": "other"
+  },
+  {
    "place": "聯邦緊急地堡",
-   "reward": "裝備模組",
+   "reward": "Grupo Sombra S.A.",
    "kind": "other"
   }
  ],
  "vendor": [
-  "霰彈槍",
+  "精準步槍",
   "背包"
  ],
  "english": [
   {
    "place": "The Art Museum",
-   "reward": "Body Armor"
+   "reward": "Gila Guard"
   },
   {
    "place": "Capitol Building",
-   "reward": "Future Initiative"
+   "reward": "Hana-U Corporation"
   },
   {
    "place": "Jefferson Plaza",
-   "reward": "Ortiz: Reficere"
+   "reward": "Uzina Getica"
   },
   {
    "place": "Lincoln Memorial",
-   "reward": "Fenris Group AB"
+   "reward": "Concentrated Company"
   },
   {
    "place": "Federal Emergency Bunker",
-   "reward": "Gear Mods"
+   "reward": "Grupo Sombra S.A."
   }
  ],
  "title": "",
  "url": "https://prototrack.gg/target-loot/target-loot.php",
  "source": "prototrack",
- "fetchedAt": "2026-11-18T09:10:01.862Z"
+ "fetchedAt": "2026-11-19T11:13:10.601Z"
 }

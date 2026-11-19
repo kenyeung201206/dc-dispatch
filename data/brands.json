@@ -303,6 +303,22 @@
     "Urban Lookout"
    ],
    "icon": "/icons/brand/urban-lookout.png"
+  },
+  {
+   "en": "Hana-U Corporation",
+   "aliases": [
+    "Hana-U Corporation"
+   ],
+   "icon": "/icons/brand/hana-u-corporation.png",
+   "auto": true
+  },
+  {
+   "en": "Grupo Sombra S.A.",
+   "aliases": [
+    "Grupo Sombra S.A."
+   ],
+   "icon": "/icons/brand/grupo-sombra-s-a.png",
+   "auto": true
   }
  ],
  "sets": [
@@ -510,6 +526,14 @@
     "Ortiz: Reficere"
    ],
    "icon": "/icons/set/ortiz-reficere.png"
+  },
+  {
+   "en": "Concentrated Company",
+   "aliases": [
+    "Concentrated Company"
+   ],
+   "icon": "/icons/set/concentrated-company.png",
+   "auto": true
   }
  ],
  "slots": [
