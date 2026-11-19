@@ -1,11 +1,11 @@
 {
-  "lastRun": "2026-11-19T17:26:52.296Z",
-  "durationMs": 40671,
+  "lastRun": "2026-11-19T21:13:04.333Z",
+  "durationMs": 38707,
   "edition": {
     "date": "2026-11-20",
     "number": 17,
-    "items": 42,
-    "zhPending": 29
+    "items": 46,
+    "zhPending": 33
   },
   "sources": [
     {
@@ -16,7 +16,7 @@
     {
       "id": "ubisoft-en",
       "ok": true,
-      "items": 9
+      "items": 8
     },
     {
       "id": "ubisoft-zh-tw",
@@ -44,10 +44,10 @@
   },
   "newTopics": 5,
   "recentNewTopics": [
-    5,
     4,
     5,
     6,
+    5,
     5,
     5
   ]
