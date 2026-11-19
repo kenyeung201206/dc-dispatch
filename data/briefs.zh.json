@@ -12770,6 +12770,225 @@
         "技能為 Decoy（誘餌）與 Revive Hive。作者提到另有一支 Tipping Scales 坦克配裝影片。"
       ],
       "written": "2026-11-20"
+    },
+    "1716d5b": {
+      "points": [
+        "影片介紹（依標題）：這是一支 The Division 2 的刷取／推薦影片，主題是 Bighorn 奇特武器與 Concentrated Company 原型（Prototype）裝備，標題呼籲今天就去刷",
+        "影片說明只有頻道加入連結與訂閱呼籲，沒有提供掉落位置、數值或配裝細節，因此本整理不包含這些內容"
+      ],
+      "written": "2026-11-20"
+    },
+    "ej5u5m": {
+      "points": [
+        "影片介紹（依標題）：這是第 4 季 PTS（公開測試伺服器）的配裝影片，主題是適用於開放世界傳奇難度的 Hunter's Fury「警長」風格配裝",
+        "影片說明只有訂閱呼籲與背景音樂資訊，沒有提到裝備、數值或實測結果"
+      ],
+      "written": "2026-11-20"
+    },
+    "1hur4if": {
+      "points": [
+        "影片介紹：作者認為 Vindicator 奇特步槍被低估，推出單人（Solo）終局配裝，主打高單體傷害、精準度與暴擊倍率，用於英雄與傳奇難度內容",
+        "主武器 Vindicator 奇特步槍；專精 Sharpshooter（神射手）",
+        "主要屬性：暴擊機率、暴擊傷害、爆頭傷害",
+        "說明中提到 Ortiz Assault Interface 天賦用來放大爆發傷害，並以擊殺回護甲維持生存",
+        "影片說明含贊助商折扣碼，與遊戲內容無關"
+      ],
+      "tables": [
+        {
+          "title": "配裝概要",
+          "columns": [
+            "項目",
+            "內容"
+          ],
+          "rows": [
+            [
+              "武器",
+              "Vindicator 奇特步槍"
+            ],
+            [
+              "裝備",
+              "4 件 Aces & Eights 套裝 + overdogs + Bloodsucker"
+            ],
+            [
+              "專精",
+              "Sharpshooter"
+            ],
+            [
+              "主要屬性",
+              "暴擊機率／暴擊傷害／爆頭傷害"
+            ]
+          ]
+        },
+        {
+          "title": "影片章節",
+          "columns": [
+            "時間",
+            "內容"
+          ],
+          "rows": [
+            [
+              "00:00",
+              "配裝總覽與展示"
+            ],
+            [
+              "01:15",
+              "Vindicator 奇特與獨特機制"
+            ],
+            [
+              "02:30",
+              "贊助商 DVING"
+            ],
+            [
+              "03:10",
+              "胸甲與背包天賦解說"
+            ],
+            [
+              "05:45",
+              "專精與技能搭配"
+            ],
+            [
+              "07:15",
+              "單人英雄／傳奇實戰展示"
+            ]
+          ]
+        }
+      ],
+      "written": "2026-11-20"
+    },
+    "1xqz4it": {
+      "points": [
+        "影片介紹：這是「Surviving Legendary Solo」新系列第一集，針對單人玩家，介紹 5 套對抗 White Tusk 的狙擊配裝，從基礎的 Prima Donna 配裝一路到爆炸抗性達 90% 上限的 Mantis 終極配裝",
+        "第 4 季中傳奇成為可在華盛頓特區設定的全域難度；White Tusk 佔領控制點與街頭活動，會包抄、丟會造成踉蹌的爆炸物，並用無人機、砲塔與 Stinger Hive 逼你離開掩體",
+        "作者說明影片未使用任何修改器或全域事件，且這不是原型（Prototype）配裝教學；若有原型裝備，建議五件都配 Echo 以增加補充傷害",
+        "影片也以白話說明原型信用點、設計圖與核心",
+        "小技巧：Sharpshooter 的閃光彈範圍很大，可隨時用來致盲敵人"
+      ],
+      "tables": [
+        {
+          "title": "5 套配裝",
+          "columns": [
+            "配裝",
+            "重點"
+          ],
+          "rows": [
+            [
+              "1",
+              "Prima Donna + Iron Will + The Gift（Perfect Vigilance）+ 4 件 Aces & Eights、Sharpshooter、Revive Hive + Decoy"
+            ],
+            [
+              "2",
+              "Demolitionist（每 60 秒無視一次爆炸）+ Brooklyn DLC 的 Fortified Smart Cover（掩體內額外護甲 75%、免疫踉蹌）"
+            ],
+            [
+              "3",
+              "Aces 背包、Sawyer's Kneepads、Chainkiller 搭 Perfect Headhunter、SHD 手錶提供 20% 爆炸抗性、Hive 與 Decoy 回歸"
+            ],
+            [
+              "4",
+              "Mantis：爆頭擊殺重置 Decoy 冷卻，可無限放誘餌；4 件 Aces & Eights、Chainkiller、Sarru"
+            ],
+            [
+              "5A",
+              "Mantis + Sawyer's（免踉蹌）、2 件 R&K（爆炸抗性 40%）+ 2 件 Urban Lookout（操控 + MMR 傷害 24%）、Headhunter 胸甲、Vigilance 背包：爆炸抗性 90%"
+            ],
+            [
+              "5B",
+              "同樣達到 90% 上限，以 Iron Will 取代 Sawyer's"
+            ]
+          ]
+        }
+      ],
+      "written": "2026-11-20"
+    },
+    "xn2dw4": {
+      "points": [
+        "影片介紹：Backfire 搭配 Ongoing Directive（持續指令）的配裝，暴擊傷害（CHD）可超過 280%，並持續產生強化的流血彈藥，每次擊殺還能回護甲並增加近距離傷害",
+        "循環方式：Howl 先施加狀態效果，被影響的敵人會被標記，擊殺後供給 Hollow-Point 彈藥並同時觸發 Bloodsucker",
+        "Hollow-Point 彈藥提供 40% 強化武器傷害並造成流血，讓下一個敵人延續循環；Bloodsucker 給的護甲讓 Intimidate 更容易在擊殺後啟動，增加近距離傷害",
+        "Backfire 的 Payment in Kind 最多 100 層，每層暴擊傷害 +2%，上限 +200%，加上配裝起始的 83.5%，滿層後超過 280%",
+        "影片說明另含贊助折扣與 Echoes of Central Park 抽獎資訊，與配裝內容無關"
+      ],
+      "tables": [
+        {
+          "title": "暴擊傷害計算",
+          "columns": [
+            "項目",
+            "數值"
+          ],
+          "rows": [
+            [
+              "起始暴擊傷害",
+              "83.5%"
+            ],
+            [
+              "Payment in Kind 每層",
+              "+2%"
+            ],
+            [
+              "最高層數",
+              "100 層"
+            ],
+            [
+              "層數加成上限",
+              "+200%"
+            ],
+            [
+              "滿層總計",
+              "超過 280%"
+            ]
+          ]
+        },
+        {
+          "title": "影片章節",
+          "columns": [
+            "時間",
+            "內容"
+          ],
+          "rows": [
+            [
+              "00:00",
+              "開場"
+            ],
+            [
+              "01:17",
+              "武器"
+            ],
+            [
+              "02:41",
+              "裝備"
+            ],
+            [
+              "04:13",
+              "屬性"
+            ],
+            [
+              "05:08",
+              "技能"
+            ],
+            [
+              "05:24",
+              "數據與專精等級"
+            ],
+            [
+              "05:46",
+              "賽季與活動修改器"
+            ],
+            [
+              "05:56",
+              "專精"
+            ],
+            [
+              "06:07",
+              "配裝與協同"
+            ],
+            [
+              "08:32",
+              "結尾"
+            ]
+          ]
+        }
+      ],
+      "written": "2026-11-20"
     }
   }
 }
