@@ -12645,6 +12645,131 @@
         "與遊戲內容的關係不明，細節需看影片"
       ],
       "written": "2026-11-19"
+    },
+    "1tgaqdy": {
+      "points": [
+        "影片介紹（依標題）：TigerCat 的單人實況，內容是刷奇特裝備與 Honey Badger 突擊步槍（AR）",
+        "影片說明提到：有效率的刷取流程、針對性刷寶，以及戰鬥場面",
+        "頻道另附其「Golden Build」配裝影片連結，說明稱該配裝用於其直播",
+        "影片說明沒有給出掉落率或具體數字"
+      ],
+      "written": "2026-11-20"
+    },
+    "shpoz2": {
+      "points": [
+        "影片是一套爆炸技能配裝的測試：Hard Wired、China Light Industries 搭配 Waveform 奇特槍套",
+        "技能為 Cluster Seeker Mines 與 Explosive Sticky Bomb；專長為 Demolitionist",
+        "作者認為這套配裝還不足以應付目前的 Escalation 第 10 階（T10）：敵人血量很高，霰彈槍突擊兵也很難纏",
+        "影片也介紹 Mortar Turret、Bulwark Shield 兩種替代技能組合，並談到第 4 季 Escalation 2.0 的敵人強度縮減，可能讓這套配裝更有趣"
+      ],
+      "tables": [
+        {
+          "title": "配裝內容",
+          "columns": [
+            "項目",
+            "內容"
+          ],
+          "rows": [
+            [
+              "Hard Wired",
+              "4 件：面罩、胸甲、背包、手套"
+            ],
+            [
+              "China Light Industries",
+              "1 件：護膝"
+            ],
+            [
+              "槍套",
+              "Waveform（奇特）"
+            ],
+            [
+              "主武器",
+              "Capacitor"
+            ],
+            [
+              "副武器",
+              "Surge（Perfect Spike）"
+            ],
+            [
+              "專長",
+              "Demolitionist"
+            ],
+            [
+              "主要技能",
+              "Cluster Seeker Mines、Explosive Sticky Bomb"
+            ],
+            [
+              "替代技能",
+              "Mortar Turret；Bulwark Shield + Seeker Mines"
+            ]
+          ]
+        }
+      ],
+      "written": "2026-11-20"
+    },
+    "ovt3ex": {
+      "points": [
+        "影片是 EllisDee789 的 Pestilence + Tipping Scales 輸出（DPS）配裝，在 T10 Escalation 的 The Tombs 中展示（影片說明為依據）",
+        "核心思路：堆高暴擊傷害，靠 Pestilence 的 Plague of the Outcasts 持續傷害（DOT）擴散輸出，並以輔助技能與仇恨控制保命",
+        "4 件 Tipping Scales（含背包）提供彈匣與 LMG 傷害加成，Full Throttle 可大幅提升暴擊傷害，背包再進一步強化",
+        "Exodus 手套可在護甲破裂時脫戰；Equalizer 胸甲則隨 Perfect Obliterate 層數提高傷害"
+      ],
+      "tables": [
+        {
+          "title": "武器",
+          "columns": [
+            "武器",
+            "說明"
+          ],
+          "rows": [
+            [
+              "Pestilence（奇特 LMG）",
+              "主要傷害來源；Plague of the Outcasts DOT 在敵人間擴散"
+            ],
+            [
+              "Lexington（Named AR，Optimist）",
+              "遠距離精準穩定，換位或收尾時使用"
+            ],
+            [
+              "Quickstep（Named 手槍，Sports Mode）",
+              "移動速度 +20%"
+            ]
+          ]
+        },
+        {
+          "title": "裝備效果",
+          "columns": [
+            "裝備",
+            "效果"
+          ],
+          "rows": [
+            [
+              "4 件 Tipping Scales",
+              "彈匣容量 +30%；LMG 傷害 +30%"
+            ],
+            [
+              "Full Throttle",
+              "武器操控最高 +25%；暴擊傷害最高 +200%"
+            ],
+            [
+              "Tipping Scales 背包",
+              "Full Throttle 暴擊傷害最高提升到 350%"
+            ],
+            [
+              "Exodus 手套",
+              "護甲破裂時丟煙霧彈，2 秒內敵人看不到你；脫戰時護甲與生命全滿"
+            ],
+            [
+              "Equalizer 胸甲（Unit Alloys）",
+              "射速 +5%；Perfect Obliterate 武器傷害最高 +24%"
+            ]
+          ]
+        }
+      ],
+      "body": [
+        "技能為 Decoy（誘餌）與 Revive Hive。作者提到另有一支 Tipping Scales 坦克配裝影片。"
+      ],
+      "written": "2026-11-20"
     }
   }
 }
