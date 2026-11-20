@@ -1,7 +1,7 @@
 {
   "date": "2026-11-20",
   "editionNumber": 17,
-  "generatedAt": "2026-11-20T10:07:49.976Z",
+  "generatedAt": "2026-11-20T13:16:35.674Z",
   "meta": {
     "season_en": "Red Horizon",
     "season_zhHant": "Red Horizon 賽季",
@@ -17,7 +17,7 @@
       "title_orig": "The Division 2: Crossplay Live Now",
       "lang_orig": "en",
       "publishedAt": "2026-11-18T18:00:17.000Z",
-      "fetchedAt": "2026-11-20T10:07:49.976Z",
+      "fetchedAt": "2026-11-20T13:16:35.674Z",
       "category": "missions",
       "tags": [
         "crossplay",
@@ -79,7 +79,7 @@
       "title_orig": "The Division 2: Echoes of Central Park Event Pass Twitch Drops",
       "lang_orig": "en",
       "publishedAt": "2026-11-10T16:00:00.000Z",
-      "fetchedAt": "2026-11-20T10:07:49.976Z",
+      "fetchedAt": "2026-11-20T13:16:35.674Z",
       "category": "community",
       "tags": [
         "event",
@@ -117,7 +117,7 @@
       "title_orig": "[TUY8S3.3] Echoes of Central Park Launch, Crossplay Rollout, Conflict Improvements & More",
       "lang_orig": "en",
       "publishedAt": "2026-11-02T15:45:00.000Z",
-      "fetchedAt": "2026-11-20T10:07:49.976Z",
+      "fetchedAt": "2026-11-20T13:16:35.674Z",
       "category": "updates",
       "tags": [
         "title-update",
@@ -144,6 +144,34 @@
         "jrg9a1"
       ],
       "firstSeenAt": "2026-11-05T06:21:13.290Z",
+      "status": "new"
+    },
+    {
+      "id": "13dklwn",
+      "sourceId": "youtube",
+      "sourceName": "Livid Fray",
+      "sourceUrl": "https://www.youtube.com/watch?v=AeX5Q4kpCMA",
+      "title_orig": "THIS Support Build Is A MUST HAVE in Season 4! | The Division 2",
+      "lang_orig": "en",
+      "publishedAt": "2026-11-20T10:15:01.000Z",
+      "fetchedAt": "2026-11-20T13:16:35.674Z",
+      "category": "builds",
+      "tags": [
+        "season",
+        "video"
+      ],
+      "importance": 65,
+      "confidence": "community",
+      "headline_en": "THIS Support Build Is A MUST HAVE in Season 4! | The Division 2",
+      "headline_zhHant": "pending",
+      "summary_en": "Measured Assembly is about to become a top tier support build in Season 4: Spearfall due to it's welcomed Skill Tier buff.",
+      "summary_zhHant": "pending",
+      "summaryKind": "extract",
+      "alsoReportedBy": [],
+      "media": [],
+      "videoId": "AeX5Q4kpCMA",
+      "relatedIds": [],
+      "firstSeenAt": "2026-11-20T13:16:35.674Z",
       "status": "new"
     },
     {
@@ -210,7 +238,7 @@
       "title_orig": "The Division 2: Echoes of Central Park DLC is available now!",
       "lang_orig": "en",
       "publishedAt": "2026-11-03T15:00:00.000Z",
-      "fetchedAt": "2026-11-20T10:07:49.976Z",
+      "fetchedAt": "2026-11-20T13:16:35.674Z",
       "category": "missions",
       "tags": [
         "dlc"
@@ -235,6 +263,34 @@
       "relatedIds": [],
       "firstSeenAt": "2026-11-03T15:00:00.000Z",
       "status": "updated"
+    },
+    {
+      "id": "kcwy9m",
+      "sourceId": "youtube",
+      "sourceName": "DJTICKLE",
+      "sourceUrl": "https://www.youtube.com/watch?v=oQBgLL3JKqg",
+      "title_orig": "My Clanmate Dropped Me the Ratel Exotic #TheDivision2 #Shorts",
+      "lang_orig": "en",
+      "publishedAt": "2026-11-20T10:26:44.000Z",
+      "fetchedAt": "2026-11-20T13:16:35.674Z",
+      "category": "arsenal",
+      "tags": [
+        "exotic",
+        "video"
+      ],
+      "importance": 63,
+      "confidence": "community",
+      "headline_en": "My Clanmate Dropped Me the Ratel Exotic #TheDivision2 #Shorts",
+      "headline_zhHant": "pending",
+      "summary_en": "The Division 2 builds, guides, legendary strategies, and end-game content. DJT-CKL-ERJ-YTB On this channel I cover The Division 2 news, builds, farming, legendary and all-directive…",
+      "summary_zhHant": "pending",
+      "summaryKind": "extract",
+      "alsoReportedBy": [],
+      "media": [],
+      "videoId": "oQBgLL3JKqg",
+      "relatedIds": [],
+      "firstSeenAt": "2026-11-20T13:16:35.674Z",
+      "status": "new"
     },
     {
       "id": "1hur4if",
@@ -301,7 +357,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-20T10:07:49.976Z",
+      "fetchedAt": "2026-11-20T13:16:35.674Z",
       "category": "updates",
       "tags": [
         "known-issue",
@@ -367,6 +423,34 @@
       "videoId": "-RyU5mihqgE",
       "relatedIds": [],
       "firstSeenAt": "2026-11-20T04:12:15.678Z",
+      "status": "new"
+    },
+    {
+      "id": "1ix1hnl",
+      "sourceId": "youtube",
+      "sourceName": "JygarPlays",
+      "sourceUrl": "https://www.youtube.com/watch?v=RncIOBJWb84",
+      "title_orig": "Chatterbox Is CRAZY in ASSAULT! 🔥 Solo Heroic Build | Division 2 #shorts  #gaming #division2 #gta6",
+      "lang_orig": "en",
+      "publishedAt": "2026-11-20T12:00:32.000Z",
+      "fetchedAt": "2026-11-20T13:16:35.674Z",
+      "category": "builds",
+      "tags": [
+        "event",
+        "video"
+      ],
+      "importance": 60,
+      "confidence": "community",
+      "headline_en": "Chatterbox Is CRAZY in ASSAULT! 🔥 Solo Heroic Build | Division 2 #shorts  #gaming #division2 #gta6",
+      "headline_zhHant": "pending",
+      "summary_en": "The Chatterbox is incredibly fun during the Assault Global Event in The Division 2 I tested this build Solo on Heroic difficulty at Jefferson Trade…",
+      "summary_zhHant": "pending",
+      "summaryKind": "extract",
+      "alsoReportedBy": [],
+      "media": [],
+      "videoId": "RncIOBJWb84",
+      "relatedIds": [],
+      "firstSeenAt": "2026-11-20T13:16:35.674Z",
       "status": "new"
     },
     {
@@ -536,6 +620,33 @@
       "status": "new"
     },
     {
+      "id": "njuj58",
+      "sourceId": "youtube",
+      "sourceName": "Joker Farina",
+      "sourceUrl": "https://www.youtube.com/watch?v=Fxut1Pepm2w",
+      "title_orig": "IS THIS THE MOST OP DAMAGE BUILD!? 😱🔥#division2builds #bestbuilds #shorts",
+      "lang_orig": "en",
+      "publishedAt": "2026-11-20T11:44:57.000Z",
+      "fetchedAt": "2026-11-20T13:16:35.674Z",
+      "category": "builds",
+      "tags": [
+        "video"
+      ],
+      "importance": 56,
+      "confidence": "community",
+      "headline_en": "IS THIS THE MOST OP DAMAGE BUILD!? 😱🔥#division2builds #bestbuilds #shorts",
+      "headline_zhHant": "pending",
+      "summary_en": "🔥 THE DIVISION 2 | ARMAS FORTES, BUILDS META E DICAS DE ENDGAME Seja bem-vindo ao canal!",
+      "summary_zhHant": "pending",
+      "summaryKind": "extract",
+      "alsoReportedBy": [],
+      "media": [],
+      "videoId": "Fxut1Pepm2w",
+      "relatedIds": [],
+      "firstSeenAt": "2026-11-20T13:16:35.674Z",
+      "status": "new"
+    },
+    {
       "id": "xolfe9",
       "sourceId": "youtube",
       "sourceName": "Fajachico",
@@ -669,6 +780,33 @@
       "videoId": "nPYNYh8I8J4",
       "relatedIds": [],
       "firstSeenAt": "2026-11-20T00:41:26.228Z",
+      "status": "new"
+    },
+    {
+      "id": "10pc5b8",
+      "sourceId": "youtube",
+      "sourceName": "FerrariZEROF1",
+      "sourceUrl": "https://www.youtube.com/watch?v=oqVRoOBQ7nA",
+      "title_orig": "全境封鎖2-（Y8S3） T10 美術館Solo失敗～😖唉！我就爛，一次就夠了不打了｜2026/11/20",
+      "lang_orig": "zh",
+      "publishedAt": "2026-11-20T11:55:57.000Z",
+      "fetchedAt": "2026-11-20T13:16:35.674Z",
+      "category": "updates",
+      "tags": [
+        "video"
+      ],
+      "importance": 54,
+      "confidence": "community",
+      "headline_en": "pending",
+      "headline_zhHant": "全境封鎖2-（Y8S3） T10 美術館Solo失敗～😖唉！我就爛，一次就夠了不打了｜2026/11/20",
+      "summary_en": "pending",
+      "summary_zhHant": "全境封鎖2-（Y8S3） T10 美術館Solo失敗～😖唉！我就爛，一次就夠了不打了｜2026/11/20",
+      "summaryKind": "extract",
+      "alsoReportedBy": [],
+      "media": [],
+      "videoId": "oqVRoOBQ7nA",
+      "relatedIds": [],
+      "firstSeenAt": "2026-11-20T13:16:35.674Z",
       "status": "new"
     },
     {
@@ -811,6 +949,33 @@
       "status": "new"
     },
     {
+      "id": "jdemt",
+      "sourceId": "youtube",
+      "sourceName": "下班遊戲王",
+      "sourceUrl": "https://www.youtube.com/watch?v=BZFnFdPU8g8",
+      "title_orig": "全境封鎖2 傑佛遜廣場",
+      "lang_orig": "zh",
+      "publishedAt": "2026-11-20T12:00:29.000Z",
+      "fetchedAt": "2026-11-20T13:16:35.674Z",
+      "category": "community",
+      "tags": [
+        "video"
+      ],
+      "importance": 52,
+      "confidence": "community",
+      "headline_en": "pending",
+      "headline_zhHant": "全境封鎖2 傑佛遜廣場",
+      "summary_en": "pending",
+      "summary_zhHant": "全境封鎖2 傑佛遜廣場",
+      "summaryKind": "extract",
+      "alsoReportedBy": [],
+      "media": [],
+      "videoId": "BZFnFdPU8g8",
+      "relatedIds": [],
+      "firstSeenAt": "2026-11-20T13:16:35.674Z",
+      "status": "new"
+    },
+    {
       "id": "xou1tq",
       "sourceId": "youtube",
       "sourceName": "母胎單身的我本質上是個渣男",
@@ -950,7 +1115,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-20T10:07:49.976Z",
+      "fetchedAt": "2026-11-20T13:16:35.674Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -985,7 +1150,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-20T10:07:49.976Z",
+      "fetchedAt": "2026-11-20T13:16:35.674Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -1020,7 +1185,7 @@
       "title_orig": "[TUY8S3.3] Echoes of Central Park Launch, Crossplay Rollout, Conflict Improvements & More",
       "lang_orig": "en",
       "publishedAt": "2026-11-02T15:45:00.000Z",
-      "fetchedAt": "2026-11-20T10:07:49.976Z",
+      "fetchedAt": "2026-11-20T13:16:35.674Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -1079,7 +1244,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-20T10:07:49.976Z",
+      "fetchedAt": "2026-11-20T13:16:35.674Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -1114,7 +1279,7 @@
       "title_orig": "The Division 2: 6X XP Event",
       "lang_orig": "en",
       "publishedAt": "2026-11-06T10:31:09.000Z",
-      "fetchedAt": "2026-11-20T10:07:49.976Z",
+      "fetchedAt": "2026-11-20T13:16:35.674Z",
       "category": "missions",
       "tags": [
         "event"
@@ -1140,7 +1305,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-20T10:07:49.976Z",
+      "fetchedAt": "2026-11-20T13:16:35.674Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -1175,7 +1340,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-20T10:07:49.976Z",
+      "fetchedAt": "2026-11-20T13:16:35.674Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -1210,7 +1375,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-20T10:07:49.976Z",
+      "fetchedAt": "2026-11-20T13:16:35.674Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -1245,7 +1410,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-20T10:07:49.976Z",
+      "fetchedAt": "2026-11-20T13:16:35.674Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -1280,7 +1445,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-20T10:07:49.976Z",
+      "fetchedAt": "2026-11-20T13:16:35.674Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -1315,7 +1480,7 @@
       "title_orig": "The Division 2: Echoes of Central Park Launch Twitch Drops",
       "lang_orig": "en",
       "publishedAt": "2026-11-03T15:00:00.000Z",
-      "fetchedAt": "2026-11-20T10:07:49.976Z",
+      "fetchedAt": "2026-11-20T13:16:35.674Z",
       "category": "community",
       "tags": [
         "twitch-drops",
@@ -1343,7 +1508,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-20T10:07:49.976Z",
+      "fetchedAt": "2026-11-20T13:16:35.674Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -1402,7 +1567,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-20T10:07:49.976Z",
+      "fetchedAt": "2026-11-20T13:16:35.674Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -1437,7 +1602,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-20T10:07:49.976Z",
+      "fetchedAt": "2026-11-20T13:16:35.674Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -1472,7 +1637,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-20T10:07:49.976Z",
+      "fetchedAt": "2026-11-20T13:16:35.674Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -1507,7 +1672,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-20T10:07:49.976Z",
+      "fetchedAt": "2026-11-20T13:16:35.674Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -1542,7 +1707,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-20T10:07:49.976Z",
+      "fetchedAt": "2026-11-20T13:16:35.674Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -1577,7 +1742,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-20T10:07:49.976Z",
+      "fetchedAt": "2026-11-20T13:16:35.674Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -1612,7 +1777,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-20T10:07:49.976Z",
+      "fetchedAt": "2026-11-20T13:16:35.674Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -1647,7 +1812,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-20T10:07:49.976Z",
+      "fetchedAt": "2026-11-20T13:16:35.674Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -1673,98 +1838,28 @@
         "riskNote_en": "Known issue listed by Ubisoft. No workaround yet.",
         "riskNote_zhHant": "pending"
       }
-    },
-    {
-      "id": "qy8rcm",
-      "sourceId": "ubisoft-en",
-      "sourceName": "Ubisoft",
-      "sourceUrl": "https://www.ubisoft.com/en-us/game/the-division/the-division-2/news-updates/1wrUJ1HzY6BF8zzO4AMhJ3/spearfall-pts-patch-notes",
-      "title_orig": "Spearfall PTS Patch Notes",
-      "lang_orig": "en",
-      "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-20T10:07:49.976Z",
-      "category": "glitch-watch",
-      "tags": [
-        "known-issue"
-      ],
-      "importance": 30,
-      "confidence": "official",
-      "headline_en": "Known issue: White Tusk have less Health and Armor in the Legendary Open World…",
-      "headline_zhHant": "pending",
-      "summary_en": "White Tusk have less Health and Armor in the Legendary Open World than in Legendary Main Missions.",
-      "summary_zhHant": "pending",
-      "summaryKind": "extract",
-      "alsoReportedBy": [],
-      "media": [],
-      "relatedIds": [
-        "15yr4ky"
-      ],
-      "firstSeenAt": "2026-11-12T16:55:32.847Z",
-      "status": "new",
-      "glitch": {
-        "state": "active",
-        "firstSeen": "2026-11-12",
-        "banRisk": false,
-        "riskNote_en": "Known issue listed by Ubisoft. No workaround yet.",
-        "riskNote_zhHant": "pending"
-      }
-    },
-    {
-      "id": "sbrqm9",
-      "sourceId": "ubisoft-en",
-      "sourceName": "Ubisoft",
-      "sourceUrl": "https://www.ubisoft.com/en-us/game/the-division/the-division-2/news-updates/1wrUJ1HzY6BF8zzO4AMhJ3/spearfall-pts-patch-notes",
-      "title_orig": "Spearfall PTS Patch Notes",
-      "lang_orig": "en",
-      "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-20T10:07:49.976Z",
-      "category": "glitch-watch",
-      "tags": [
-        "known-issue"
-      ],
-      "importance": 29,
-      "confidence": "official",
-      "headline_en": "Known issue: Enemies from factions other than White Tusk still use Heroic scaling when…",
-      "headline_zhHant": "pending",
-      "summary_en": "Enemies from factions other than White Tusk still use Heroic scaling when Global Difficulty is set to Legendary in Washington, D.C.",
-      "summary_zhHant": "pending",
-      "summaryKind": "extract",
-      "alsoReportedBy": [],
-      "media": [],
-      "relatedIds": [
-        "15yr4ky"
-      ],
-      "firstSeenAt": "2026-11-19T17:26:11.625Z",
-      "status": "new",
-      "glitch": {
-        "state": "active",
-        "firstSeen": "2026-11-12",
-        "banRisk": false,
-        "riskNote_en": "Known issue listed by Ubisoft. No workaround yet.",
-        "riskNote_zhHant": "pending"
-      }
     }
   ],
   "sources": [
     {
       "sourceId": "steam-news",
       "ok": true,
-      "checkedAt": "2026-11-20T10:07:49.976Z"
+      "checkedAt": "2026-11-20T13:16:35.674Z"
     },
     {
       "sourceId": "ubisoft-en",
       "ok": true,
-      "checkedAt": "2026-11-20T10:07:49.976Z"
+      "checkedAt": "2026-11-20T13:16:35.674Z"
     },
     {
       "sourceId": "ubisoft-zh-tw",
       "ok": true,
-      "checkedAt": "2026-11-20T10:07:49.976Z"
+      "checkedAt": "2026-11-20T13:16:35.674Z"
     },
     {
       "sourceId": "bahamut",
       "ok": false,
-      "checkedAt": "2026-11-20T10:07:49.976Z",
+      "checkedAt": "2026-11-20T13:16:35.674Z",
       "note": "Error: HTTP 403"
     }
   ]
