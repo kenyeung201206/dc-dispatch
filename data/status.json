@@ -1,11 +1,11 @@
 {
-  "lastRun": "2026-11-20T08:13:14.880Z",
-  "durationMs": 33698,
+  "lastRun": "2026-11-20T10:08:25.761Z",
+  "durationMs": 35785,
   "edition": {
     "date": "2026-11-20",
     "number": 17,
     "items": 56,
-    "zhPending": 43
+    "zhPending": 46
   },
   "sources": [
     {
@@ -16,7 +16,7 @@
     {
       "id": "ubisoft-en",
       "ok": true,
-      "items": 8
+      "items": 9
     },
     {
       "id": "ubisoft-zh-tw",
@@ -25,13 +25,17 @@
     },
     {
       "id": "bahamut",
-      "ok": true,
-      "items": 10
+      "ok": false,
+      "items": 0,
+      "note": "Error: HTTP 403",
+      "failingSince": "2026-11-20T10:07:49.976Z"
     },
     {
       "id": "bahamut-hot",
-      "ok": true,
-      "items": 4
+      "ok": false,
+      "items": 0,
+      "note": "Error: 巴哈 board page not fetched this run",
+      "failingSince": "2026-11-20T10:07:49.976Z"
     }
   ],
   "videos": {
@@ -46,7 +50,7 @@
   "recentNewTopics": [
     5,
     5,
-    5,
+    4,
     4,
     4,
     4
