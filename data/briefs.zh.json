@@ -13319,6 +13319,205 @@
         "影片沒有提供說明欄，詳細內容請自行觀看"
       ],
       "written": "2026-11-20"
+    },
+    "vub7mk": {
+      "points": [
+        "影片介紹：創作者推出配裝，在突襲（Assault）全球事件期間，以 The Chatterbox 搭配 4 件 Hunter’s Fury，主打近距離快節奏打法",
+        "作者在傑佛遜貿易中心（Jefferson Trade Center）以英雄（Heroic）難度單人測試，表示效果很好",
+        "思路：事件鼓勵貼近敵人，Matador 背包在敵人靠近時提供額外護甲，進而啟動 Hunter-Killer 胸甲的完美威嚇（Perfect Intimidate），提高近距離武器傷害",
+        "Hunter’s Fury 可使附近敵人迷惑，Chatterbox 在擊殺後能回填部分彈匣，第一個敵人倒下後就能滾雪球",
+        "打法：靠近敵群、在多名敵人附近裝填、啟動 Striker Shield、拿下首殺後逐個目標推進；英雄難度仍要注意位置與時機，別盲衝"
+      ],
+      "tables": [
+        {
+          "title": "配裝清單",
+          "columns": [
+            "欄位",
+            "內容"
+          ],
+          "rows": [
+            [
+              "主武器",
+              "The Chatterbox"
+            ],
+            [
+              "副武器",
+              "Dark Winter"
+            ],
+            [
+              "裝備套裝",
+              "4 件 Hunter’s Fury"
+            ],
+            [
+              "背包",
+              "Matador（完美 Adrenaline Rush）"
+            ],
+            [
+              "胸甲",
+              "Hunter-Killer（完美 Intimidate）"
+            ],
+            [
+              "專長",
+              "Firewall"
+            ],
+            [
+              "技能",
+              "Striker Shield、Reviver Hive"
+            ]
+          ]
+        }
+      ],
+      "written": "2026-11-21"
+    },
+    "af6dft": {
+      "points": [
+        "影片介紹（依標題）：中文玩家「牛哥」11/20 的《全境封鎖2》影片，主題是「電坦偏移盾」配裝",
+        "影片說明欄只有 PSN ID，沒有其他文字，詳細內容請自行觀看"
+      ],
+      "written": "2026-11-21"
+    },
+    "92essw": {
+      "points": [
+        "影片介紹：德語創作者分享團隊用坦克＋輸出配裝，主打能在近戰輸出的坦克",
+        "用到 Gegenfeuer（反擊火力）、Feuerwand（Firewall）與 Stürmer-Schild（Striker Shield）；另搭配 2 件 Palisaden-Stahlwerke、3 件 Belstone、護理員護膝，以及威嚇（Einschüchtern）與腎上腺素湧動（Adrenalinrausch）",
+        "作者提到錄影當下畫面顯示對菁英敵人 80% 防護、100% 危害防護",
+        "注意：錄影時突襲（Sturm）事件進行中，畫面上的傷害數字不能直接套用到一般遊戲；此配裝以組隊為主，也無法免疫守衛者（Wächter）的吼叫",
+        "影片內容含配裝想法、射擊場測試、實戰片段、替代選擇與結論"
+      ],
+      "tables": [
+        {
+          "title": "配裝與影片數值",
+          "columns": [
+            "項目",
+            "內容"
+          ],
+          "rows": [
+            [
+              "裝備",
+              "2 件 Palisaden-Stahlwerke、3 件 Belstone、護理員護膝"
+            ],
+            [
+              "技能／專長",
+              "Feuerwand（Firewall）、Stürmer-Schild（Striker Shield）、Gegenfeuer"
+            ],
+            [
+              "副武器",
+              "Stapel-Verteiler、Schnellschritt"
+            ],
+            [
+              "對菁英敵人防護",
+              "80%"
+            ],
+            [
+              "危害防護",
+              "100%"
+            ]
+          ]
+        }
+      ],
+      "written": "2026-11-21"
+    },
+    "rihf1": {
+      "points": [
+        "影片介紹：英語創作者在突襲（Assault）事件中，以 T10 戰鬥升級（Escalation）挑戰國會大廈（Capitol Building），使用 PRIMA DONNA 單發狙擊配裝",
+        "主打在敵人生成時就一槍擊倒；主武器為奇特 Mk20 SSR PRIMA DONNA，脫戰時可累積 10 層，每層 +12.5% 增幅傷害，受傷時消耗 1 層完整修復所受傷害，每 3 秒回復 1 層",
+        "搭配 Aces & Eights（完成牌型後，接下來的射擊獲得 75% 增幅傷害）與奇特胸甲 Iron Will（每 2 秒讓下一次身體命中視為爆頭，僅限 PvE）",
+        "技能為 Reviver Hive 與 Tactician Drone；說明欄另有作者的商店折扣碼（廣告）"
+      ],
+      "tables": [
+        {
+          "title": "武器與配件",
+          "columns": [
+            "項目",
+            "效果"
+          ],
+          "rows": [
+            [
+              "PRIMA DONNA（奇特 Mk20 SSR）",
+              "脫戰 10 層，每層 +12.5% 增幅傷害；每 3 秒回復 1 層"
+            ],
+            [
+              "The Artist's Tool（Perfect Rifleman + ACOG 4.0x）",
+              "爆頭 +11% 武器傷害，持續 5 秒，最多疊至 +66%；瞄準鏡 +50% 最佳射程"
+            ],
+            [
+              "Quickstep（Sport Mode）",
+              "+20% 移動速度"
+            ]
+          ]
+        },
+        {
+          "title": "Aces & Eights",
+          "columns": [
+            "牌型",
+            "增幅射擊數"
+          ],
+          "rows": [
+            [
+              "Four of a Kind",
+              "4"
+            ],
+            [
+              "Full House",
+              "3"
+            ],
+            [
+              "Aces & Eights",
+              "2"
+            ]
+          ]
+        },
+        {
+          "title": "Aces & Eights 加成",
+          "columns": [
+            "項目",
+            "數值"
+          ],
+          "rows": [
+            [
+              "步槍傷害",
+              "+30%"
+            ],
+            [
+              "射手步槍傷害",
+              "+30%"
+            ],
+            [
+              "爆頭傷害",
+              "+30%"
+            ],
+            [
+              "武器操控",
+              "+30%"
+            ],
+            [
+              "完成牌型後增幅傷害",
+              "75%"
+            ]
+          ]
+        },
+        {
+          "title": "Melon Baller（Perfect Concussion）",
+          "columns": [
+            "條件",
+            "加成",
+            "持續"
+          ],
+          "rows": [
+            [
+              "爆頭",
+              "+20% 武器總傷害",
+              "5 秒"
+            ],
+            [
+              "爆頭擊殺",
+              "+15% 武器總傷害",
+              "10 秒"
+            ]
+          ]
+        }
+      ],
+      "written": "2026-11-21"
     }
   }
 }
