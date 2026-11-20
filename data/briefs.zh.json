@@ -13103,6 +13103,71 @@
         "影片說明只有感謝觀看與訂閱呼籲，沒有其他細節"
       ],
       "written": "2026-11-20"
+    },
+    "nn18lh": {
+      "points": [
+        "影片介紹（依標題）：短片（Shorts），內容是連續開啟 14 個奇特（Exotic）補給箱並展示掉落",
+        "影片說明提到會看掉落與詞條（rolls），並詢問運氣（RNG）是否值得刷",
+        "影片說明邀請觀眾留言分享本賽季最好的奇特掉落"
+      ],
+      "written": "2026-11-20"
+    },
+    "1ulv58g": {
+      "points": [
+        "影片介紹（依標題）：PTS（公開測試服）上的 Field General 新套裝配裝影片，把它玩成治療角色",
+        "影片說明：4 件 Field General（面具、胸甲、槍套、護膝），搭配 BTSU Datagloves、Hermano 背包（Perfect Overclock）、Vertigo（Startling）、Restorer Hive 與 Healing Chem Launcher，並用 Technician 多取得一個技能階級",
+        "影片說明：此套裝有 6 個技能階級、標記讓敵人多受 40% 傷害、每 60 秒一個護甲包",
+        "作者結論：這不是永不倒下的配裝；當輸出角色玩會倒，當輔助（標記、增益、治療、壓制）則能讓全隊輸出更高、撐更久",
+        "測試地點為 Grand Washington Hotel，隊友 Bakamil 負責輸出；作者詢問是否要在傳說難度再測"
+      ],
+      "tables": [
+        {
+          "title": "Field General 配裝",
+          "columns": [
+            "部位",
+            "內容"
+          ],
+          "rows": [
+            [
+              "套裝",
+              "Field General 4 件（面具、胸甲、槍套、護膝）"
+            ],
+            [
+              "手套",
+              "BTSU Datagloves"
+            ],
+            [
+              "背包",
+              "Hermano（Perfect Overclock）"
+            ],
+            [
+              "武器／技能",
+              "Vertigo（Startling）、Restorer Hive、Healing Chem Launcher"
+            ],
+            [
+              "專長",
+              "Technician（多一個技能階級）"
+            ]
+          ]
+        }
+      ],
+      "written": "2026-11-20"
+    },
+    "18p8ld5": {
+      "points": [
+        "影片介紹（依標題）：狙擊（Sniper）配裝，單人以英雄（Heroic）難度挑戰入侵（Invaded）版 Bank Headquarters 任務",
+        "影片說明：作者很喜歡這個任務，但遇到錯誤：原本總統出現的段落，叛變特工出現時門不會開，導致被鎖住無法繼續",
+        "作者說這是第二次遇到，並選擇自殺重來、沒有剪掉影片",
+        "作者的入侵任務進度：已完成 Bank Headquarters、Lincoln Memorial、Camp White Oak、Manning National Zoo"
+      ],
+      "written": "2026-11-20"
+    },
+    "hu71ce": {
+      "points": [
+        "影片介紹（依標題）：與戰隊夥伴一起挑戰 T10 難度的國會大廈（Capitol Building）",
+        "本影片沒有影片說明，只依標題介紹，內容細節不明"
+      ],
+      "written": "2026-11-20"
     }
   }
 }
