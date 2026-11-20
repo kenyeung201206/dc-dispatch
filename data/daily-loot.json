@@ -7,8 +7,8 @@
    "kind": "set"
   },
   {
-   "place": "國會大廈",
-   "reward": "Breaking Point",
+   "place": "國會",
+   "reward": "臨界點",
    "kind": "set"
   },
   {
@@ -17,12 +17,12 @@
    "kind": "set"
   },
   {
-   "place": "林肯紀念堂",
+   "place": "林肯",
    "reward": "女皇",
    "kind": "brand"
   },
   {
-   "place": "聯邦緊急地堡",
+   "place": "地下碉堡",
    "reward": "步槍",
    "kind": "weapon"
   }
