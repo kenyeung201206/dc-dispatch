@@ -13518,6 +13518,156 @@
         }
       ],
       "written": "2026-11-21"
+    },
+    "gxla9o": {
+      "points": [
+        "影片介紹：創作者示範以 Hunter's Fury 四件套搭配 Underboss 奇特衝鋒槍（Gangland Hit）與 The Apartment 的 PvE 配裝。",
+        "說明稱護甲超過 140 萬、生命值最高 150 萬（裝備 The Apartment 時），裝備 Underboss 時約 130 萬；暴擊傷害約 110 萬。",
+        "傷害加成：Underboss 標記對被標記敵人有 20% 增幅傷害；Hunter's Fury 的 Apex Predator 對 15 公尺內敵人有 20% 增幅武器傷害，每次擊殺可再疊 5%，五層全滿。",
+        "影片稱在條件齊全時，上述加成合計可能超過 80%，但強調這是有條件的計算值，並非永久額外 80% 傷害。",
+        "另有 Perfectly Unstoppable Force（五層最多 35% 武器總傷害）與 Obliterate，搭配擊殺回生命與護甲、Firewall 專長與 Striker 護盾，不需賽季詞綴。"
+      ],
+      "tables": [
+        {
+          "title": "影片說明列出的數值",
+          "columns": [
+            "項目",
+            "數值"
+          ],
+          "rows": [
+            [
+              "護甲",
+              "超過 140 萬"
+            ],
+            [
+              "生命值（裝備 The Apartment）",
+              "最高 150 萬"
+            ],
+            [
+              "生命值（裝備 Underboss）",
+              "約 130 萬"
+            ],
+            [
+              "暴擊傷害",
+              "約 110 萬"
+            ],
+            [
+              "Underboss 標記增幅傷害",
+              "20%"
+            ],
+            [
+              "Apex Predator 增幅武器傷害（15 公尺內）",
+              "20%"
+            ],
+            [
+              "Apex Predator 每次擊殺額外疊加",
+              "5%"
+            ],
+            [
+              "Perfectly Unstoppable Force（五層）",
+              "最高 35% 武器總傷害"
+            ]
+          ]
+        }
+      ],
+      "body": [
+        "這是創作者自述的配裝成果，數值取自影片說明，實際表現會因裝備詞條而異。"
+      ],
+      "written": "2026-11-21"
+    },
+    "dov38d": {
+      "points": [
+        "影片介紹（依標題）：這是 FragSavage 的《全境封鎖 2》直播，內容為即時測試各種配裝。",
+        "說明稱直播會邊玩邊測試配裝、武器與裝備組合，並進行刷取與 PvE 內容。",
+        "測試的配裝可能是成品，也可能是現場調整中的點子，不一定是最佳化的完成版。",
+        "觀眾可在聊天室提問，或建議想看的配裝、奇特武器與裝備組合。"
+      ],
+      "written": "2026-11-21"
+    },
+    "1ps9c8x": {
+      "points": [
+        "影片介紹：創作者 EllisDee 在銀行總部（Bank Headquarters）T10 Escalation 示範 Bluescreen「Tipping Scales」DPS 配裝，面向傳奇難度與高階 Escalation。",
+        "武器：Bluescreen 奇特 LMG、Lexington 突擊步槍（Optimist 專長）、Quickstep 手槍（Sport Mode，裝備時移動速度 +20%）。",
+        "裝備：Tipping Scales 四件套（含背包）、Equalizer 命名胸甲（Perfect Obliterate）、Exodus 奇特手套（護甲破裂時放煙霧彈脫戰並恢復護甲與生命）。",
+        "技能與特化：Gunner 特化（Minigun）、Decoy 誘餌、Reviver Hive。",
+        "創作者表示此配裝與其 Pestilence Tipping Scales 坦克配裝相近，並詢問是否需要完整配裝解說影片。"
+      ],
+      "tables": [
+        {
+          "title": "Tipping Scales 四件套加成（依影片說明）",
+          "columns": [
+            "項目",
+            "數值"
+          ],
+          "rows": [
+            [
+              "彈匣容量",
+              "+30%"
+            ],
+            [
+              "LMG 傷害",
+              "+30%"
+            ],
+            [
+              "武器操控",
+              "最高 +25%"
+            ],
+            [
+              "暴擊傷害（持續射擊）",
+              "最高 +200%"
+            ],
+            [
+              "背包 Snowball 每層暴擊傷害",
+              "4% → 7%"
+            ]
+          ]
+        }
+      ],
+      "written": "2026-11-21"
+    },
+    "ss6i0r": {
+      "points": [
+        "影片介紹：Rogue Scorpion 的 Future Initiative 治療配裝，目標是讓隊友存活，而非衝傷害榜。",
+        "這是三集系列的第 1 集（配裝解說），發布日期 2026 年 11 月 20 日。",
+        "裝備：Future Initiative 四件套、The Benefactor 胸甲（Perfect Resolve）、Birdie's 背包（Combat Medic）。",
+        "武器：Scorpio 霰彈槍、Lexington；技能：Restorer Hive、Reinforcer 化學發射器。"
+      ],
+      "tables": [
+        {
+          "title": "三集系列時程",
+          "columns": [
+            "集數",
+            "日期",
+            "內容"
+          ],
+          "rows": [
+            [
+              "第 1 集",
+              "2026/11/20",
+              "配裝解說"
+            ],
+            [
+              "第 2 集",
+              "2026/11/27",
+              "傳奇戰鬥中的治療方式"
+            ],
+            [
+              "第 3 集",
+              "2026/12/04",
+              "Escalation 中的治療"
+            ]
+          ]
+        }
+      ],
+      "written": "2026-11-21"
+    },
+    "vpnk0m": {
+      "points": [
+        "影片介紹：無旁白的《全境封鎖 2》遊玩影片，創作者進入血月事件挑戰 Red Moon Culprits。",
+        "重點是刷裝備、測試目前配裝並邊玩邊調整。",
+        "畫面規格：PC、1080p、60FPS，全程無解說。"
+      ],
+      "written": "2026-11-21"
     }
   }
 }
