@@ -1,60 +1,60 @@
 {
- "date": "2026-11-19",
+ "date": "2026-11-20",
  "missions": [
   {
    "place": "美術館",
-   "reward": "毒蜥",
-   "kind": "brand"
+   "reward": "奧提茲 : 修復",
+   "kind": "set"
   },
   {
    "place": "國會大廈",
-   "reward": "Hana-U Corporation",
-   "kind": "other"
+   "reward": "Breaking Point",
+   "kind": "set"
   },
   {
    "place": "傑佛遜廣場",
-   "reward": "烏茲娜 ‧ 蓋蒂卡",
-   "kind": "brand"
+   "reward": "王牌",
+   "kind": "set"
   },
   {
    "place": "林肯紀念堂",
-   "reward": "Concentrated Company",
-   "kind": "other"
+   "reward": "女皇",
+   "kind": "brand"
   },
   {
    "place": "聯邦緊急地堡",
-   "reward": "Grupo Sombra S.A.",
-   "kind": "other"
+   "reward": "步槍",
+   "kind": "weapon"
   }
  ],
  "vendor": [
-  "精準步槍",
-  "背包"
+  "輕機槍",
+  "槍套"
  ],
  "english": [
   {
    "place": "The Art Museum",
-   "reward": "Gila Guard"
+   "reward": "Ortiz: Reficere"
   },
   {
    "place": "Capitol Building",
-   "reward": "Hana-U Corporation"
+   "reward": "Breaking Point"
   },
   {
    "place": "Jefferson Plaza",
-   "reward": "Uzina Getica"
+   "reward": "Aces & Eights"
   },
   {
    "place": "Lincoln Memorial",
-   "reward": "Concentrated Company"
+   "reward": "Empress International"
   },
   {
    "place": "Federal Emergency Bunker",
-   "reward": "Grupo Sombra S.A."
+   "reward": "Rifle"
   }
  ],
  "title": "",
  "url": "https://prototrack.gg/target-loot/target-loot.php",
  "source": "prototrack",
- "fetchedAt": "2026-11-19T11:13:10.601Z"
+ "fetchedAt": "2026-11-20T08:12:41.182Z"
 }
