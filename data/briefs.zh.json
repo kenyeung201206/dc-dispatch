@@ -13197,6 +13197,128 @@
         "標題的看法是突襲搭配林肯（Lincoln）是絕配；影片沒有提供說明欄，詳細內容請自行觀看"
       ],
       "written": "2026-11-20"
+    },
+    "13dklwn": {
+      "points": [
+        "影片介紹：創作者 LividFray 的配裝影片，說明 Measured Assembly 會在第 4 季「Spearfall」成為頂級輔助配裝",
+        "原因是下個季度的技能階級（Skill Tier）加強，影片也會提到套裝加成與這項加強",
+        "為了迎接傳奇難度內容與戰鬥升級（Escalations）的改動，影片示範三種配裝：一組非原型版本、兩組原型（Prototype）版本",
+        "影片說明欄附有章節時間軸，方便跳著看"
+      ],
+      "tables": [
+        {
+          "title": "影片章節",
+          "columns": [
+            "時間",
+            "內容"
+          ],
+          "rows": [
+            [
+              "0:00",
+              "開場"
+            ],
+            [
+              "0:24",
+              "專精"
+            ],
+            [
+              "3:18",
+              "套裝加成與下季加強"
+            ],
+            [
+              "5:41",
+              "配裝 1（非原型）"
+            ],
+            [
+              "8:51",
+              "配裝 2（原型）"
+            ],
+            [
+              "10:12",
+              "配裝 3（皆可）"
+            ],
+            [
+              "12:33",
+              "最後提醒與心得"
+            ]
+          ]
+        }
+      ],
+      "written": "2026-11-20"
+    },
+    "kcwy9m": {
+      "points": [
+        "影片介紹（依標題）：玩家短片，內容是隊友（clanmate）送了他 Ratel 奇特武器",
+        "影片說明只有頻道簡介與連結，沒有進一步的內容"
+      ],
+      "written": "2026-11-20"
+    },
+    "1ix1hnl": {
+      "points": [
+        "影片介紹：短片，示範在「突襲（Assault）」全球事件中使用 Chatterbox 的配裝，作者在傑佛遜貿易中心（Jefferson Trade Center）以英雄難度單人測試",
+        "配裝：Chatterbox、Dark Winter、4 件 Hunter's Fury、Matador（完美 Adrenaline Rush）、Hunter-Killer（完美 Intimidate）",
+        "技能：Firewall、Striker Shield、Reviver Hive",
+        "思路：突襲獎勵近距離戰鬥，Hunter's Fury 也要求貼近敵人；Matador 在敵人附近提供額外護甲，進而觸發完美 Intimidate",
+        "打法：在多名敵人附近換彈來提高 Chatterbox 的射速，拿下第一個擊殺後持續連殺"
+      ],
+      "tables": [
+        {
+          "title": "配裝一覽",
+          "columns": [
+            "項目",
+            "內容"
+          ],
+          "rows": [
+            [
+              "主武器",
+              "Chatterbox"
+            ],
+            [
+              "配件／裝備",
+              "Dark Winter"
+            ],
+            [
+              "套裝",
+              "4 × Hunter's Fury"
+            ],
+            [
+              "背包",
+              "Matador（完美 Adrenaline Rush）"
+            ],
+            [
+              "手套",
+              "Hunter-Killer（完美 Intimidate）"
+            ],
+            [
+              "技能",
+              "Firewall、Striker Shield、Reviver Hive"
+            ]
+          ]
+        }
+      ],
+      "written": "2026-11-20"
+    },
+    "njuj58": {
+      "points": [
+        "影片介紹（依標題）：葡萄牙語頻道的短片，標題主打「最強傷害配裝」，屬於配裝類影片",
+        "影片說明只有頻道簡介（配裝、武器、終局攻略）與會員、社群連結，沒有具體配裝內容"
+      ],
+      "written": "2026-11-20"
+    },
+    "10pc5b8": {
+      "points": [
+        "影片介紹（依標題）：中文玩家影片，內容是在 Y8S3 以 T10 難度單人挑戰美術館（Museum）任務",
+        "標題說明這次挑戰失敗，作者表示打一次就不再繼續",
+        "影片沒有提供說明欄，詳細內容請自行觀看"
+      ],
+      "written": "2026-11-20"
+    },
+    "jdemt": {
+      "points": [
+        "影片介紹（依標題）：中文玩家影片，地點是《全境封鎖2》的傑佛遜廣場",
+        "影片沒有提供說明欄，詳細內容請自行觀看"
+      ],
+      "written": "2026-11-20"
     }
   }
 }
