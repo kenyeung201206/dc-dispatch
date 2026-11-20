@@ -1,7 +1,7 @@
 {
   "date": "2026-11-20",
   "editionNumber": 17,
-  "generatedAt": "2026-11-20T00:41:26.228Z",
+  "generatedAt": "2026-11-20T04:12:15.678Z",
   "meta": {
     "season_en": "Red Horizon",
     "season_zhHant": "Red Horizon 賽季",
@@ -17,7 +17,7 @@
       "title_orig": "The Division 2: Crossplay Live Now",
       "lang_orig": "en",
       "publishedAt": "2026-11-18T18:00:17.000Z",
-      "fetchedAt": "2026-11-20T00:41:26.228Z",
+      "fetchedAt": "2026-11-20T04:12:15.678Z",
       "category": "missions",
       "tags": [
         "crossplay",
@@ -79,7 +79,7 @@
       "title_orig": "The Division 2: Echoes of Central Park Event Pass Twitch Drops",
       "lang_orig": "en",
       "publishedAt": "2026-11-10T16:00:00.000Z",
-      "fetchedAt": "2026-11-20T00:41:26.228Z",
+      "fetchedAt": "2026-11-20T04:12:15.678Z",
       "category": "community",
       "tags": [
         "event",
@@ -101,10 +101,6 @@
         {
           "name": "Ubisoft (via Steam News)",
           "url": "https://store.steampowered.com/news/app/2221490/view/1848664643356077"
-        },
-        {
-          "name": "巴哈姆特 全境封鎖板",
-          "url": "https://forum.gamer.com.tw/C.php?bsn=24460&snA=32884"
         }
       ],
       "media": [],
@@ -121,7 +117,7 @@
       "title_orig": "[TUY8S3.3] Echoes of Central Park Launch, Crossplay Rollout, Conflict Improvements & More",
       "lang_orig": "en",
       "publishedAt": "2026-11-02T15:45:00.000Z",
-      "fetchedAt": "2026-11-20T00:41:26.228Z",
+      "fetchedAt": "2026-11-20T04:12:15.678Z",
       "category": "updates",
       "tags": [
         "title-update",
@@ -214,7 +210,7 @@
       "title_orig": "The Division 2: Echoes of Central Park DLC is available now!",
       "lang_orig": "en",
       "publishedAt": "2026-11-03T15:00:00.000Z",
-      "fetchedAt": "2026-11-20T00:41:26.228Z",
+      "fetchedAt": "2026-11-20T04:12:15.678Z",
       "category": "missions",
       "tags": [
         "dlc"
@@ -276,7 +272,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-20T00:41:26.228Z",
+      "fetchedAt": "2026-11-20T04:12:15.678Z",
       "category": "updates",
       "tags": [
         "known-issue",
@@ -314,6 +310,34 @@
         "sbrqm9"
       ],
       "firstSeenAt": "2026-11-12T16:55:32.847Z",
+      "status": "new"
+    },
+    {
+      "id": "i1xx2c",
+      "sourceId": "youtube",
+      "sourceName": "Oojimee",
+      "sourceUrl": "https://www.youtube.com/watch?v=-RyU5mihqgE",
+      "title_orig": "The Division 2 - Solo Escalation T10 - Jefferson Plaza - Striker/Centurion Build",
+      "lang_orig": "en",
+      "publishedAt": "2026-11-19T20:37:58.000Z",
+      "fetchedAt": "2026-11-20T04:12:15.678Z",
+      "category": "builds",
+      "tags": [
+        "season",
+        "video"
+      ],
+      "importance": 61,
+      "confidence": "community",
+      "headline_en": "The Division 2 - Solo Escalation T10 - Jefferson Plaza - Striker/Centurion Build",
+      "headline_zhHant": "pending",
+      "summary_en": "Like always this season, how fast you get through depends on the combo and buffs/debuffs.",
+      "summary_zhHant": "pending",
+      "summaryKind": "extract",
+      "alsoReportedBy": [],
+      "media": [],
+      "videoId": "-RyU5mihqgE",
+      "relatedIds": [],
+      "firstSeenAt": "2026-11-20T04:12:15.678Z",
       "status": "new"
     },
     {
@@ -398,6 +422,61 @@
       "videoId": "VXwHZ7y0LWU",
       "relatedIds": [],
       "firstSeenAt": "2026-11-19T21:12:25.626Z",
+      "status": "new"
+    },
+    {
+      "id": "fel6oc",
+      "sourceId": "youtube",
+      "sourceName": "PlumConch836",
+      "sourceUrl": "https://www.youtube.com/watch?v=j6VAHjNmm1k",
+      "title_orig": "SPEARFALL, COMING SOON?!🔥 NEW SEASON TRAILER DROPPED...Year 8 Season 4! The Division 2",
+      "lang_orig": "en",
+      "publishedAt": "2026-11-20T01:30:30.000Z",
+      "fetchedAt": "2026-11-20T04:12:15.678Z",
+      "category": "missions",
+      "tags": [
+        "season",
+        "video"
+      ],
+      "importance": 57,
+      "confidence": "rumour",
+      "headline_en": "SPEARFALL, COMING SOON?!🔥 NEW SEASON TRAILER DROPPED...Year 8 Season 4! The Division 2",
+      "headline_zhHant": "pending",
+      "summary_en": "SPEARFALL, COMING SOON?!🔥 NEW SEASON TRAILER DROPPED...Year 8 Season 4! The Division 2 Check out the link for a cool build video!",
+      "summary_zhHant": "pending",
+      "summaryKind": "extract",
+      "alsoReportedBy": [],
+      "media": [],
+      "videoId": "j6VAHjNmm1k",
+      "relatedIds": [],
+      "firstSeenAt": "2026-11-20T04:12:15.678Z",
+      "status": "new"
+    },
+    {
+      "id": "1nprtoy",
+      "sourceId": "youtube",
+      "sourceName": "OleHeadsGaming",
+      "sourceUrl": "https://www.youtube.com/watch?v=wh06ZyT-Uto",
+      "title_orig": "This Legendary PTS Had Me on Edge! #shorts",
+      "lang_orig": "en",
+      "publishedAt": "2026-11-20T00:01:20.000Z",
+      "fetchedAt": "2026-11-20T04:12:15.678Z",
+      "category": "updates",
+      "tags": [
+        "video"
+      ],
+      "importance": 55,
+      "confidence": "community",
+      "headline_en": "This Legendary PTS Had Me on Edge! #shorts",
+      "headline_zhHant": "pending",
+      "summary_en": "It will pucker up your ballon knot... #division2________ #over50gamers_________ #thedivision2community_________ #TheDivision2 #Gaming #Gameplay #BomberBuild #ActionGaming",
+      "summary_zhHant": "pending",
+      "summaryKind": "extract",
+      "alsoReportedBy": [],
+      "media": [],
+      "videoId": "wh06ZyT-Uto",
+      "relatedIds": [],
+      "firstSeenAt": "2026-11-20T04:12:15.678Z",
       "status": "new"
     },
     {
@@ -540,6 +619,33 @@
       "status": "new"
     },
     {
+      "id": "nj5o3y",
+      "sourceId": "youtube",
+      "sourceName": "Try Harder Gaming",
+      "sourceUrl": "https://www.youtube.com/watch?v=jUqqlGFv_h8",
+      "title_orig": "The Division 2 / Skill Build / Turret and Drone / Amazing DPS / Legendary Difficulty",
+      "lang_orig": "en",
+      "publishedAt": "2026-11-19T19:11:04.000Z",
+      "fetchedAt": "2026-11-20T04:12:15.678Z",
+      "category": "builds",
+      "tags": [
+        "video"
+      ],
+      "importance": 53,
+      "confidence": "community",
+      "headline_en": "The Division 2 / Skill Build / Turret and Drone / Amazing DPS / Legendary Difficulty",
+      "headline_zhHant": "pending",
+      "summary_en": "Have a great day, and as always, thanks for watching!😄share 🤗Comment 😄like and subscribe I appreciate it very much 😁",
+      "summary_zhHant": "pending",
+      "summaryKind": "extract",
+      "alsoReportedBy": [],
+      "media": [],
+      "videoId": "jUqqlGFv_h8",
+      "relatedIds": [],
+      "firstSeenAt": "2026-11-20T04:12:15.678Z",
+      "status": "new"
+    },
+    {
       "id": "ovt3ex",
       "sourceId": "youtube",
       "sourceName": "EllisDee789",
@@ -574,11 +680,11 @@
       "sourceUrl": "https://forum.gamer.com.tw/C.php?bsn=24460&snA=32902",
       "title_orig": "【心得】超冷門原型天賦:5件熵 高生命值的用途",
       "lang_orig": "zh",
-      "publishedAt": "2026-11-19T08:40:00.000Z",
-      "fetchedAt": "2026-11-20T00:41:26.228Z",
+      "publishedAt": "2026-11-19T09:15:09.191Z",
+      "fetchedAt": "2026-11-19T14:15:09.191Z",
       "category": "arsenal",
       "tags": [],
-      "importance": 51,
+      "importance": 52,
       "confidence": "community",
       "headline_en": "pending",
       "headline_zhHant": "【心得】超冷門原型天賦:5件熵 高生命值的用途",
@@ -599,7 +705,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-20T00:41:26.228Z",
+      "fetchedAt": "2026-11-20T04:12:15.678Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -627,6 +733,32 @@
       }
     },
     {
+      "id": "orsv5u",
+      "sourceId": "bahamut",
+      "sourceName": "巴哈姆特 全境封鎖板",
+      "sourceUrl": "https://forum.gamer.com.tw/C.php?bsn=24460&snA=32899",
+      "title_orig": "【心得】『18米戰神』中央公園DLC新技能：戰利品系統",
+      "lang_orig": "zh",
+      "publishedAt": "2026-11-17T14:25:00.000Z",
+      "fetchedAt": "2026-11-19T14:15:09.191Z",
+      "category": "missions",
+      "tags": [
+        "dlc"
+      ],
+      "importance": 48,
+      "confidence": "community",
+      "headline_en": "pending",
+      "headline_zhHant": "【心得】『18米戰神』中央公園DLC新技能：戰利品系統",
+      "summary_en": "pending",
+      "summary_zhHant": "Hey guys 重度守衛無人機成癮症患者又來了。 減傷跟盾系一直都是我蠻喜歡的穩定型打法，這次出了新的減傷無人機當然要…",
+      "summaryKind": "extract",
+      "alsoReportedBy": [],
+      "media": [],
+      "relatedIds": [],
+      "firstSeenAt": "2026-11-17T14:52:12.860Z",
+      "status": "new"
+    },
+    {
       "id": "y6mkzc",
       "sourceId": "ubisoft-en",
       "sourceName": "Ubisoft",
@@ -634,7 +766,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-20T00:41:26.228Z",
+      "fetchedAt": "2026-11-20T04:12:15.678Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -662,32 +794,6 @@
       }
     },
     {
-      "id": "orsv5u",
-      "sourceId": "bahamut",
-      "sourceName": "巴哈姆特 全境封鎖板",
-      "sourceUrl": "https://forum.gamer.com.tw/C.php?bsn=24460&snA=32899",
-      "title_orig": "【心得】『18米戰神』中央公園DLC新技能：戰利品系統",
-      "lang_orig": "zh",
-      "publishedAt": "2026-11-17T14:25:00.000Z",
-      "fetchedAt": "2026-11-20T00:41:26.228Z",
-      "category": "missions",
-      "tags": [
-        "dlc"
-      ],
-      "importance": 47,
-      "confidence": "community",
-      "headline_en": "pending",
-      "headline_zhHant": "【心得】『18米戰神』中央公園DLC新技能：戰利品系統",
-      "summary_en": "pending",
-      "summary_zhHant": "Hey guys 重度守衛無人機成癮症患者又來了。 減傷跟盾系一直都是我蠻喜歡的穩定型打法，這次出了新的減傷無人機當然要…",
-      "summaryKind": "extract",
-      "alsoReportedBy": [],
-      "media": [],
-      "relatedIds": [],
-      "firstSeenAt": "2026-11-17T14:52:12.860Z",
-      "status": "new"
-    },
-    {
       "id": "98qmb5",
       "sourceId": "ubisoft-en",
       "sourceName": "Ubisoft",
@@ -695,7 +801,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-20T00:41:26.228Z",
+      "fetchedAt": "2026-11-20T04:12:15.678Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -730,7 +836,7 @@
       "title_orig": "[TUY8S3.3] Echoes of Central Park Launch, Crossplay Rollout, Conflict Improvements & More",
       "lang_orig": "en",
       "publishedAt": "2026-11-02T15:45:00.000Z",
-      "fetchedAt": "2026-11-20T00:41:26.228Z",
+      "fetchedAt": "2026-11-20T04:12:15.678Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -765,7 +871,7 @@
       "title_orig": "The Division 2: 6X XP Event",
       "lang_orig": "en",
       "publishedAt": "2026-11-06T10:31:09.000Z",
-      "fetchedAt": "2026-11-20T00:41:26.228Z",
+      "fetchedAt": "2026-11-20T04:12:15.678Z",
       "category": "missions",
       "tags": [
         "event"
@@ -784,6 +890,30 @@
       "status": "new"
     },
     {
+      "id": "pbs2js",
+      "sourceId": "bahamut",
+      "sourceName": "巴哈姆特 全境封鎖板",
+      "sourceUrl": "https://forum.gamer.com.tw/C.php?bsn=24460&snA=32897",
+      "title_orig": "【情報】【再次開機】關機維護公告 - 2026/11/17(二) ， 開機後再次加碼進入維修",
+      "lang_orig": "zh",
+      "publishedAt": "2026-11-16T17:18:00.000Z",
+      "fetchedAt": "2026-11-19T14:15:09.191Z",
+      "category": "updates",
+      "tags": [],
+      "importance": 46,
+      "confidence": "community",
+      "headline_en": "pending",
+      "headline_zhHant": "【情報】【再次開機】關機維護公告 - 2026/11/17(二) ， 開機後再次加碼進入維修",
+      "summary_en": "pending",
+      "summary_zhHant": "關機維護時間：2026 年 11 月 17 日 15:00 開始維護 預計維護 8 小時 繼上週完成PC玩家遷移作業後，…",
+      "summaryKind": "extract",
+      "alsoReportedBy": [],
+      "media": [],
+      "relatedIds": [],
+      "firstSeenAt": "2026-11-17T16:56:36.569Z",
+      "status": "new"
+    },
+    {
       "id": "1ypems3",
       "sourceId": "ubisoft-en",
       "sourceName": "Ubisoft",
@@ -791,7 +921,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-20T00:41:26.228Z",
+      "fetchedAt": "2026-11-20T04:12:15.678Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -819,30 +949,6 @@
       }
     },
     {
-      "id": "pbs2js",
-      "sourceId": "bahamut",
-      "sourceName": "巴哈姆特 全境封鎖板",
-      "sourceUrl": "https://forum.gamer.com.tw/C.php?bsn=24460&snA=32897",
-      "title_orig": "【情報】【再次開機】關機維護公告 - 2026/11/17(二) ， 開機後再次加碼進入維修",
-      "lang_orig": "zh",
-      "publishedAt": "2026-11-16T17:18:00.000Z",
-      "fetchedAt": "2026-11-20T00:41:26.228Z",
-      "category": "updates",
-      "tags": [],
-      "importance": 45,
-      "confidence": "community",
-      "headline_en": "pending",
-      "headline_zhHant": "【情報】【再次開機】關機維護公告 - 2026/11/17(二) ， 開機後再次加碼進入維修",
-      "summary_en": "pending",
-      "summary_zhHant": "關機維護時間：2026 年 11 月 17 日 15:00 開始維護 預計維護 8 小時 繼上週完成PC玩家遷移作業後，…",
-      "summaryKind": "extract",
-      "alsoReportedBy": [],
-      "media": [],
-      "relatedIds": [],
-      "firstSeenAt": "2026-11-17T16:56:36.569Z",
-      "status": "new"
-    },
-    {
       "id": "1blg61e",
       "sourceId": "ubisoft-en",
       "sourceName": "Ubisoft",
@@ -850,7 +956,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-20T00:41:26.228Z",
+      "fetchedAt": "2026-11-20T04:12:15.678Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -885,7 +991,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-20T00:41:26.228Z",
+      "fetchedAt": "2026-11-20T04:12:15.678Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -920,7 +1026,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-20T00:41:26.228Z",
+      "fetchedAt": "2026-11-20T04:12:15.678Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -955,7 +1061,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-20T00:41:26.228Z",
+      "fetchedAt": "2026-11-20T04:12:15.678Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -990,7 +1096,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-20T00:41:26.228Z",
+      "fetchedAt": "2026-11-20T04:12:15.678Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -1025,7 +1131,7 @@
       "title_orig": "The Division 2: Echoes of Central Park Launch Twitch Drops",
       "lang_orig": "en",
       "publishedAt": "2026-11-03T15:00:00.000Z",
-      "fetchedAt": "2026-11-20T00:41:26.228Z",
+      "fetchedAt": "2026-11-20T04:12:15.678Z",
       "category": "community",
       "tags": [
         "twitch-drops",
@@ -1053,7 +1159,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-20T00:41:26.228Z",
+      "fetchedAt": "2026-11-20T04:12:15.678Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -1081,6 +1187,30 @@
       }
     },
     {
+      "id": "q5qvmp",
+      "sourceId": "bahamut",
+      "sourceName": "巴哈姆特 全境封鎖板",
+      "sourceUrl": "https://forum.gamer.com.tw/C.php?bsn=24460&snA=32894",
+      "title_orig": "【情報】TU30 / Y8S4 PTS Patchnote翻譯",
+      "lang_orig": "zh",
+      "publishedAt": "2026-11-13T07:31:00.000Z",
+      "fetchedAt": "2026-11-19T14:15:09.191Z",
+      "category": "updates",
+      "tags": [],
+      "importance": 39,
+      "confidence": "community",
+      "headline_en": "pending",
+      "headline_zhHant": "【情報】TU30 / Y8S4 PTS Patchnote翻譯",
+      "summary_en": "pending",
+      "summary_zhHant": "原文公告 以下為AI機翻並且由筆者稍微潤飾過 2F為Y8S4裝備平衡性改動翻譯 《全境封鎖 2》Spearfall PT…",
+      "summaryKind": "extract",
+      "alsoReportedBy": [],
+      "media": [],
+      "relatedIds": [],
+      "firstSeenAt": "2026-11-12T18:47:15.805Z",
+      "status": "new"
+    },
+    {
       "id": "hej7xr",
       "sourceId": "ubisoft-en",
       "sourceName": "Ubisoft",
@@ -1088,7 +1218,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-20T00:41:26.228Z",
+      "fetchedAt": "2026-11-20T04:12:15.678Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -1116,30 +1246,6 @@
       }
     },
     {
-      "id": "q5qvmp",
-      "sourceId": "bahamut",
-      "sourceName": "巴哈姆特 全境封鎖板",
-      "sourceUrl": "https://forum.gamer.com.tw/C.php?bsn=24460&snA=32894",
-      "title_orig": "【情報】TU30 / Y8S4 PTS Patchnote翻譯",
-      "lang_orig": "zh",
-      "publishedAt": "2026-11-13T07:31:00.000Z",
-      "fetchedAt": "2026-11-20T00:41:26.228Z",
-      "category": "updates",
-      "tags": [],
-      "importance": 38,
-      "confidence": "community",
-      "headline_en": "pending",
-      "headline_zhHant": "【情報】TU30 / Y8S4 PTS Patchnote翻譯",
-      "summary_en": "pending",
-      "summary_zhHant": "原文公告 以下為AI機翻並且由筆者稍微潤飾過 2F為Y8S4裝備平衡性改動翻譯 《全境封鎖 2》Spearfall PT…",
-      "summaryKind": "extract",
-      "alsoReportedBy": [],
-      "media": [],
-      "relatedIds": [],
-      "firstSeenAt": "2026-11-12T18:47:15.805Z",
-      "status": "new"
-    },
-    {
       "id": "166wyo6",
       "sourceId": "ubisoft-en",
       "sourceName": "Ubisoft",
@@ -1147,7 +1253,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-20T00:41:26.228Z",
+      "fetchedAt": "2026-11-20T04:12:15.678Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -1182,7 +1288,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-20T00:41:26.228Z",
+      "fetchedAt": "2026-11-20T04:12:15.678Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -1217,7 +1323,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-20T00:41:26.228Z",
+      "fetchedAt": "2026-11-20T04:12:15.678Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -1245,30 +1351,6 @@
       }
     },
     {
-      "id": "qzpopm",
-      "sourceId": "bahamut",
-      "sourceName": "巴哈姆特 全境封鎖板",
-      "sourceUrl": "https://forum.gamer.com.tw/C.php?bsn=24460&snA=32891",
-      "title_orig": "【情報】【已開機】關機維護公告 - 2026/11/12(四) 16:30",
-      "lang_orig": "zh",
-      "publishedAt": "2026-11-11T23:46:00.000Z",
-      "fetchedAt": "2026-11-20T00:41:26.228Z",
-      "category": "updates",
-      "tags": [],
-      "importance": 35,
-      "confidence": "community",
-      "headline_en": "pending",
-      "headline_zhHant": "【情報】【已開機】關機維護公告 - 2026/11/12(四) 16:30",
-      "summary_en": "pending",
-      "summary_zhHant": "關機維護時間：2026 年 11 月 12 日 16:30 開始維護 預計維護 6 小時 本次維護將包含以下項目： 1.…",
-      "summaryKind": "extract",
-      "alsoReportedBy": [],
-      "media": [],
-      "relatedIds": [],
-      "firstSeenAt": "2026-11-12T16:55:32.847Z",
-      "status": "new"
-    },
-    {
       "id": "1rxclrc",
       "sourceId": "ubisoft-en",
       "sourceName": "Ubisoft",
@@ -1276,7 +1358,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-20T00:41:26.228Z",
+      "fetchedAt": "2026-11-20T04:12:15.678Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -1311,7 +1393,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-20T00:41:26.228Z",
+      "fetchedAt": "2026-11-20T04:12:15.678Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -1339,30 +1421,6 @@
       }
     },
     {
-      "id": "g5zpjp",
-      "sourceId": "bahamut",
-      "sourceName": "巴哈姆特 全境封鎖板",
-      "sourceUrl": "https://forum.gamer.com.tw/C.php?bsn=24460&snA=32090",
-      "title_orig": "【心得】裝備專精系統心得",
-      "lang_orig": "zh",
-      "publishedAt": "2026-11-11T00:41:00.000Z",
-      "fetchedAt": "2026-11-20T00:41:26.228Z",
-      "category": "arsenal",
-      "tags": [],
-      "importance": 33,
-      "confidence": "community",
-      "headline_en": "pending",
-      "headline_zhHant": "【心得】裝備專精系統心得",
-      "summary_en": "pending",
-      "summary_zhHant": "先附上人權 前言 為什麼想寫這個？ 因為不知道為什麼最近看到很多人在問專精 裝備專精系統本意是給已經走進畢業大門內的老手…",
-      "summaryKind": "extract",
-      "alsoReportedBy": [],
-      "media": [],
-      "relatedIds": [],
-      "firstSeenAt": "2026-11-11T00:50:04.938Z",
-      "status": "new"
-    },
-    {
       "id": "37y6no",
       "sourceId": "ubisoft-en",
       "sourceName": "Ubisoft",
@@ -1370,7 +1428,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-20T00:41:26.228Z",
+      "fetchedAt": "2026-11-20T04:12:15.678Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -1398,30 +1456,6 @@
       }
     },
     {
-      "id": "1ok88ji",
-      "sourceId": "bahamut",
-      "sourceName": "巴哈姆特 全境封鎖板",
-      "sourceUrl": "https://forum.gamer.com.tw/C.php?bsn=24460&snA=32886",
-      "title_orig": "【情報】【已開機】關機維護公告 - 2026/11/10(二) 16:30，延長 1 小時",
-      "lang_orig": "zh",
-      "publishedAt": "2026-11-10T15:59:00.000Z",
-      "fetchedAt": "2026-11-20T00:41:26.228Z",
-      "category": "updates",
-      "tags": [],
-      "importance": 32,
-      "confidence": "community",
-      "headline_en": "pending",
-      "headline_zhHant": "【情報】【已開機】關機維護公告 - 2026/11/10(二) 16:30，延長 1 小時",
-      "summary_en": "pending",
-      "summary_zhHant": "關機維護時間：2026 年 11 月 10 日 16:30 開始維護 預計維護 5 小時 本次維護將著重於基礎設施更新，…",
-      "summaryKind": "extract",
-      "alsoReportedBy": [],
-      "media": [],
-      "relatedIds": [],
-      "firstSeenAt": "2026-11-10T01:14:51.950Z",
-      "status": "new"
-    },
-    {
       "id": "qy8rcm",
       "sourceId": "ubisoft-en",
       "sourceName": "Ubisoft",
@@ -1429,7 +1463,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-20T00:41:26.228Z",
+      "fetchedAt": "2026-11-20T04:12:15.678Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -1464,7 +1498,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-20T00:41:26.228Z",
+      "fetchedAt": "2026-11-20T04:12:15.678Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -1490,102 +1524,29 @@
         "riskNote_en": "Known issue listed by Ubisoft. No workaround yet.",
         "riskNote_zhHant": "pending"
       }
-    },
-    {
-      "id": "1l9fm8s",
-      "sourceId": "bahamut",
-      "sourceName": "巴哈姆特 全境封鎖板",
-      "sourceUrl": "https://forum.gamer.com.tw/C.php?bsn=24460&snA=32758",
-      "title_orig": "【情報】*劇透注意* Y8S3/TU29 獵捕行動 Red Horizon 偵查任務 每週統整",
-      "lang_orig": "zh",
-      "publishedAt": "2026-11-03T17:07:00.000Z",
-      "fetchedAt": "2026-11-20T00:41:26.228Z",
-      "category": "updates",
-      "tags": [],
-      "importance": 22,
-      "confidence": "community",
-      "headline_en": "pending",
-      "headline_zhHant": "【情報】*劇透注意* Y8S3/TU29 獵捕行動 Red Horizon 偵查任務 每週統整",
-      "summary_en": "pending",
-      "summary_zhHant": "【情報】*劇透注意* Y8S3/TU29 獵捕行動 Red Horizon 偵查任務 每週統整",
-      "summaryKind": "extract",
-      "alsoReportedBy": [],
-      "media": [],
-      "relatedIds": [],
-      "firstSeenAt": "2026-11-08T02:44:51.866Z",
-      "status": "new"
-    },
-    {
-      "id": "hsu80a",
-      "sourceId": "bahamut",
-      "sourceName": "巴哈姆特 全境封鎖板",
-      "sourceUrl": "https://forum.gamer.com.tw/C.php?bsn=24460&snA=32068",
-      "title_orig": "【攻略】部分技能的解鎖方式整理",
-      "lang_orig": "zh",
-      "publishedAt": "2026-11-05T05:49:00.000Z",
-      "fetchedAt": "2026-11-20T00:41:26.228Z",
-      "category": "builds",
-      "tags": [],
-      "importance": 22,
-      "confidence": "community",
-      "headline_en": "pending",
-      "headline_zhHant": "【攻略】部分技能的解鎖方式整理",
-      "summary_en": "pending",
-      "summary_zhHant": "最近小號升 40 發現技能沒有跟主角色同步，需要獨自取得 （太久沒練小號都忘光了） 於是網路上一個個的搜尋各種技能如何解…",
-      "summaryKind": "extract",
-      "alsoReportedBy": [],
-      "media": [],
-      "relatedIds": [],
-      "firstSeenAt": "2026-11-05T04:01:30.015Z",
-      "status": "new"
-    },
-    {
-      "id": "kmjycv",
-      "sourceId": "bahamut",
-      "sourceName": "巴哈姆特 全境封鎖板",
-      "sourceUrl": "https://forum.gamer.com.tw/C.php?bsn=24460&snA=32874",
-      "title_orig": "【情報】中央公園的迴響 DLC 夥伴 - 相關資訊",
-      "lang_orig": "zh",
-      "publishedAt": "2026-11-05T04:03:00.000Z",
-      "fetchedAt": "2026-11-20T00:41:26.228Z",
-      "category": "missions",
-      "tags": [
-        "dlc"
-      ],
-      "importance": 22,
-      "confidence": "community",
-      "headline_en": "pending",
-      "headline_zhHant": "【情報】中央公園的迴響 DLC 夥伴 - 相關資訊",
-      "summary_en": "pending",
-      "summary_zhHant": "遊戲內的資訊整理成圖表方便一覽 內容若有錯誤請再指教",
-      "summaryKind": "extract",
-      "alsoReportedBy": [],
-      "media": [],
-      "relatedIds": [],
-      "firstSeenAt": "2026-11-05T04:04:30.015Z",
-      "status": "new"
     }
   ],
   "sources": [
     {
       "sourceId": "steam-news",
       "ok": true,
-      "checkedAt": "2026-11-20T00:41:26.228Z"
+      "checkedAt": "2026-11-20T04:12:15.678Z"
     },
     {
       "sourceId": "ubisoft-en",
       "ok": true,
-      "checkedAt": "2026-11-20T00:41:26.228Z"
+      "checkedAt": "2026-11-20T04:12:15.678Z"
     },
     {
       "sourceId": "ubisoft-zh-tw",
       "ok": true,
-      "checkedAt": "2026-11-20T00:41:26.228Z"
+      "checkedAt": "2026-11-20T04:12:15.678Z"
     },
     {
       "sourceId": "bahamut",
-      "ok": true,
-      "checkedAt": "2026-11-20T00:41:26.228Z"
+      "ok": false,
+      "checkedAt": "2026-11-20T04:12:15.678Z",
+      "note": "Error: HTTP 403"
     }
   ]
 }
