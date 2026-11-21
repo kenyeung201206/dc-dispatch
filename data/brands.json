@@ -535,6 +535,14 @@
    ],
    "icon": "/icons/set/concentrated-company.png",
    "auto": true
+  },
+  {
+   "en": "Core Strength",
+   "aliases": [
+    "Core Strength"
+   ],
+   "icon": "/icons/set/core-strength.png",
+   "auto": true
   }
  ],
  "slots": [

@@ -1,60 +1,60 @@
 {
- "date": "2026-11-20",
+ "date": "2026-11-21",
  "missions": [
   {
    "place": "美術館",
-   "reward": "奧提茲 : 修復",
-   "kind": "set"
+   "reward": "Core Strength",
+   "kind": "other"
   },
   {
-   "place": "國會",
-   "reward": "臨界點",
-   "kind": "set"
+   "place": "國會大廈",
+   "reward": "霰彈槍",
+   "kind": "weapon"
   },
   {
    "place": "傑佛遜廣場",
-   "reward": "王牌",
+   "reward": "鑄造廠",
    "kind": "set"
   },
   {
-   "place": "林肯",
-   "reward": "女皇",
-   "kind": "brand"
+   "place": "林肯紀念堂",
+   "reward": "精密組裝",
+   "kind": "set"
   },
   {
-   "place": "地下碉堡",
-   "reward": "步槍",
-   "kind": "weapon"
+   "place": "聯邦緊急地堡",
+   "reward": "阿爾卑斯",
+   "kind": "brand"
   }
  ],
  "vendor": [
   "輕機槍",
-  "槍套"
+  "Chest Pieces"
  ],
  "english": [
   {
    "place": "The Art Museum",
-   "reward": "Ortiz: Reficere"
+   "reward": "Core Strength"
   },
   {
    "place": "Capitol Building",
-   "reward": "Breaking Point"
+   "reward": "Shotgun"
   },
   {
    "place": "Jefferson Plaza",
-   "reward": "Aces & Eights"
+   "reward": "Foundry Bulwark"
   },
   {
    "place": "Lincoln Memorial",
-   "reward": "Empress International"
+   "reward": "Measured Assembly"
   },
   {
    "place": "Federal Emergency Bunker",
-   "reward": "Rifle"
+   "reward": "Alps Summit Armaments"
   }
  ],
  "title": "",
  "url": "https://prototrack.gg/target-loot/target-loot.php",
  "source": "prototrack",
- "fetchedAt": "2026-11-20T08:12:41.182Z"
+ "fetchedAt": "2026-11-21T08:11:05.579Z"
 }

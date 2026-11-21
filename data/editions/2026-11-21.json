@@ -1,7 +1,7 @@
 {
   "date": "2026-11-21",
   "editionNumber": 18,
-  "generatedAt": "2026-11-21T04:10:58.650Z",
+  "generatedAt": "2026-11-21T08:11:05.579Z",
   "meta": {
     "season_en": "Red Horizon",
     "season_zhHant": "Red Horizon 賽季",
@@ -17,13 +17,13 @@
       "title_orig": "The Division 2: Crossplay Live Now",
       "lang_orig": "en",
       "publishedAt": "2026-11-18T18:00:17.000Z",
-      "fetchedAt": "2026-11-21T04:10:58.650Z",
+      "fetchedAt": "2026-11-21T08:11:05.579Z",
       "category": "missions",
       "tags": [
         "crossplay",
         "event"
       ],
-      "importance": 78,
+      "importance": 77,
       "confidence": "official",
       "headline_en": "The Division 2: Crossplay Live Now",
       "headline_zhHant": "pending",
@@ -79,7 +79,7 @@
       "title_orig": "The Division 2: Echoes of Central Park Event Pass Twitch Drops",
       "lang_orig": "en",
       "publishedAt": "2026-11-10T16:00:00.000Z",
-      "fetchedAt": "2026-11-21T04:10:58.650Z",
+      "fetchedAt": "2026-11-21T08:11:05.579Z",
       "category": "community",
       "tags": [
         "event",
@@ -121,7 +121,7 @@
       "title_orig": "[TUY8S3.3] Echoes of Central Park Launch, Crossplay Rollout, Conflict Improvements & More",
       "lang_orig": "en",
       "publishedAt": "2026-11-02T15:45:00.000Z",
-      "fetchedAt": "2026-11-21T04:10:58.650Z",
+      "fetchedAt": "2026-11-21T08:11:05.579Z",
       "category": "updates",
       "tags": [
         "title-update",
@@ -158,7 +158,7 @@
       "title_orig": "The Division 2: Echoes of Central Park DLC is available now!",
       "lang_orig": "en",
       "publishedAt": "2026-11-03T15:00:00.000Z",
-      "fetchedAt": "2026-11-21T04:10:58.650Z",
+      "fetchedAt": "2026-11-21T08:11:05.579Z",
       "category": "missions",
       "tags": [
         "dlc"
@@ -220,13 +220,13 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-21T04:10:58.650Z",
+      "fetchedAt": "2026-11-21T08:11:05.579Z",
       "category": "updates",
       "tags": [
         "known-issue",
         "season"
       ],
-      "importance": 60,
+      "importance": 59,
       "confidence": "official",
       "headline_en": "Spearfall PTS Patch Notes",
       "headline_zhHant": "pending",
@@ -261,6 +261,33 @@
       "status": "new"
     },
     {
+      "id": "1qhz95k",
+      "sourceId": "youtube",
+      "sourceName": "Kamikazevondoom",
+      "sourceUrl": "https://www.youtube.com/watch?v=YxoOxEDS0IE",
+      "title_orig": "*INSANE TIER 10 LEECH HIVE* The Division 2: INSANE LEECH HIVE Refactor Build for ALL ENDGAME PVE...",
+      "lang_orig": "en",
+      "publishedAt": "2026-11-21T03:30:06.000Z",
+      "fetchedAt": "2026-11-21T08:11:05.579Z",
+      "category": "builds",
+      "tags": [
+        "video"
+      ],
+      "importance": 58,
+      "confidence": "community",
+      "headline_en": "*INSANE TIER 10 LEECH HIVE* The Division 2: INSANE LEECH HIVE Refactor Build for ALL ENDGAME PVE...",
+      "headline_zhHant": "pending",
+      "summary_en": "Enjoy! Join this channel to get access to perks: Don't forget to mash that LIKE AND SUBSCRIBE to the channel.",
+      "summary_zhHant": "pending",
+      "summaryKind": "extract",
+      "alsoReportedBy": [],
+      "media": [],
+      "videoId": "YxoOxEDS0IE",
+      "relatedIds": [],
+      "firstSeenAt": "2026-11-21T08:11:05.579Z",
+      "status": "new"
+    },
+    {
       "id": "vub7mk",
       "sourceId": "youtube",
       "sourceName": "JygarPlays",
@@ -286,6 +313,33 @@
       "videoId": "wByxBrKtAXU",
       "relatedIds": [],
       "firstSeenAt": "2026-11-20T17:12:44.619Z",
+      "status": "new"
+    },
+    {
+      "id": "3fuf8q",
+      "sourceId": "youtube",
+      "sourceName": "SHD Workshop",
+      "sourceUrl": "https://www.youtube.com/watch?v=waTWKarL0eM",
+      "title_orig": "The Division 2 | Trying out @TuxedoBandido CS FAFNIR BUILD (LONG STORY, READ DESCRIPTION)",
+      "lang_orig": "en",
+      "publishedAt": "2026-11-21T01:54:10.000Z",
+      "fetchedAt": "2026-11-21T08:11:05.579Z",
+      "category": "builds",
+      "tags": [
+        "video"
+      ],
+      "importance": 57,
+      "confidence": "community",
+      "headline_en": "The Division 2 | Trying out @TuxedoBandido CS FAFNIR BUILD (LONG STORY, READ DESCRIPTION)",
+      "headline_zhHant": "pending",
+      "summary_en": "***UPDATE*** : It was brought to my attention late that is actually a build from @TuxedoBandido!",
+      "summary_zhHant": "pending",
+      "summaryKind": "extract",
+      "alsoReportedBy": [],
+      "media": [],
+      "videoId": "waTWKarL0eM",
+      "relatedIds": [],
+      "firstSeenAt": "2026-11-21T08:11:05.579Z",
       "status": "new"
     },
     {
@@ -401,33 +455,6 @@
       "status": "new"
     },
     {
-      "id": "1h8td4f",
-      "sourceId": "youtube",
-      "sourceName": "Alex Hsieh",
-      "sourceUrl": "https://www.youtube.com/watch?v=-YwokP-qKWI",
-      "title_orig": "[Alex菜鳥特工]全境封鎖2：就是愛槓槍。",
-      "lang_orig": "zh",
-      "publishedAt": "2026-11-21T03:07:10.000Z",
-      "fetchedAt": "2026-11-21T04:10:58.650Z",
-      "category": "community",
-      "tags": [
-        "video"
-      ],
-      "importance": 54,
-      "confidence": "community",
-      "headline_en": "pending",
-      "headline_zhHant": "[Alex菜鳥特工]全境封鎖2：就是愛槓槍。",
-      "summary_en": "pending",
-      "summary_zhHant": "打的很爛，敬請見諒。",
-      "summaryKind": "extract",
-      "alsoReportedBy": [],
-      "media": [],
-      "videoId": "-YwokP-qKWI",
-      "relatedIds": [],
-      "firstSeenAt": "2026-11-21T04:10:58.650Z",
-      "status": "new"
-    },
-    {
       "id": "tw1byz",
       "sourceId": "youtube",
       "sourceName": "DecrepitWolf",
@@ -510,6 +537,33 @@
       "status": "new"
     },
     {
+      "id": "64f5b7",
+      "sourceId": "youtube",
+      "sourceName": "Si Yu H",
+      "sourceUrl": "https://www.youtube.com/watch?v=FzE9uxvlYmQ",
+      "title_orig": "全境封鎖2-10階林肯紀念堂-技能分階3,全火突襲裝Tom Clancy's The Division 2_20261121",
+      "lang_orig": "zh",
+      "publishedAt": "2026-11-21T06:34:53.000Z",
+      "fetchedAt": "2026-11-21T08:11:05.579Z",
+      "category": "missions",
+      "tags": [
+        "video"
+      ],
+      "importance": 53,
+      "confidence": "community",
+      "headline_en": "pending",
+      "headline_zhHant": "全境封鎖2-10階林肯紀念堂-技能分階3,全火突襲裝Tom Clancy's The Division 2_20261121",
+      "summary_en": "pending",
+      "summary_zhHant": "天崩開局遇叛變特工，十階戰鬥不讓人好活",
+      "summaryKind": "extract",
+      "alsoReportedBy": [],
+      "media": [],
+      "videoId": "FzE9uxvlYmQ",
+      "relatedIds": [],
+      "firstSeenAt": "2026-11-21T08:11:05.579Z",
+      "status": "new"
+    },
+    {
       "id": "1xlv97p",
       "sourceId": "youtube",
       "sourceName": "𝓜𝓐𝓡 𝓛𝓔𝓖𝓔𝓝𝓓",
@@ -562,6 +616,33 @@
       "videoId": "-uy1cjXJ9so",
       "relatedIds": [],
       "firstSeenAt": "2026-11-20T17:12:44.619Z",
+      "status": "new"
+    },
+    {
+      "id": "1gr4rwm",
+      "sourceId": "youtube",
+      "sourceName": "布萊恩的樂活頻道",
+      "sourceUrl": "https://www.youtube.com/watch?v=NY84T-fGleo",
+      "title_orig": "全境封鎖　中央公園",
+      "lang_orig": "zh",
+      "publishedAt": "2026-11-21T05:28:16.000Z",
+      "fetchedAt": "2026-11-21T08:11:05.579Z",
+      "category": "community",
+      "tags": [
+        "video"
+      ],
+      "importance": 52,
+      "confidence": "community",
+      "headline_en": "pending",
+      "headline_zhHant": "全境封鎖　中央公園",
+      "summary_en": "pending",
+      "summary_zhHant": "Playstation5",
+      "summaryKind": "extract",
+      "alsoReportedBy": [],
+      "media": [],
+      "videoId": "NY84T-fGleo",
+      "relatedIds": [],
+      "firstSeenAt": "2026-11-21T08:11:05.579Z",
       "status": "new"
     },
     {
@@ -709,7 +790,7 @@
       "title_orig": "【心得】超冷門原型天賦:5件熵 高生命值的用途",
       "lang_orig": "zh",
       "publishedAt": "2026-11-19T08:40:00.000Z",
-      "fetchedAt": "2026-11-21T04:10:58.650Z",
+      "fetchedAt": "2026-11-21T08:11:05.579Z",
       "category": "arsenal",
       "tags": [],
       "importance": 48,
@@ -726,41 +807,6 @@
       "status": "new"
     },
     {
-      "id": "1w2a0q7",
-      "sourceId": "ubisoft-en",
-      "sourceName": "Ubisoft",
-      "sourceUrl": "https://www.ubisoft.com/en-us/game/the-division/the-division-2/news-updates/1wrUJ1HzY6BF8zzO4AMhJ3/spearfall-pts-patch-notes",
-      "title_orig": "Spearfall PTS Patch Notes",
-      "lang_orig": "en",
-      "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-21T04:10:58.650Z",
-      "category": "glitch-watch",
-      "tags": [
-        "known-issue"
-      ],
-      "importance": 46,
-      "confidence": "official",
-      "headline_en": "Known issue: Capacitor: The Muzzle Mod grants 30% Critical Hit Damage instead of th…",
-      "headline_zhHant": "pending",
-      "summary_en": "Capacitor: The Muzzle Mod grants 30% Critical Hit Damage instead of th eintended 20%",
-      "summary_zhHant": "pending",
-      "summaryKind": "extract",
-      "alsoReportedBy": [],
-      "media": [],
-      "relatedIds": [
-        "15yr4ky"
-      ],
-      "firstSeenAt": "2026-11-16T02:50:16.192Z",
-      "status": "new",
-      "glitch": {
-        "state": "active",
-        "firstSeen": "2026-11-12",
-        "banRisk": false,
-        "riskNote_en": "Known issue listed by Ubisoft. No workaround yet.",
-        "riskNote_zhHant": "pending"
-      }
-    },
-    {
       "id": "jrg9a1",
       "sourceId": "ubisoft-en",
       "sourceName": "Ubisoft",
@@ -768,7 +814,7 @@
       "title_orig": "[TUY8S3.3] Echoes of Central Park Launch, Crossplay Rollout, Conflict Improvements & More",
       "lang_orig": "en",
       "publishedAt": "2026-11-02T15:45:00.000Z",
-      "fetchedAt": "2026-11-21T04:10:58.650Z",
+      "fetchedAt": "2026-11-21T08:11:05.579Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -796,23 +842,23 @@
       }
     },
     {
-      "id": "y6mkzc",
+      "id": "1w2a0q7",
       "sourceId": "ubisoft-en",
       "sourceName": "Ubisoft",
       "sourceUrl": "https://www.ubisoft.com/en-us/game/the-division/the-division-2/news-updates/1wrUJ1HzY6BF8zzO4AMhJ3/spearfall-pts-patch-notes",
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-21T04:10:58.650Z",
+      "fetchedAt": "2026-11-21T08:11:05.579Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
       ],
       "importance": 45,
       "confidence": "official",
-      "headline_en": "Known issue: Measured Assembly: The 4 piece Talent description shows +1 Skill Tier per…",
+      "headline_en": "Known issue: Capacitor: The Muzzle Mod grants 30% Critical Hit Damage instead of th…",
       "headline_zhHant": "pending",
-      "summary_en": "Measured Assembly: The 4 piece Talent description shows +1 Skill Tier per ally within range of your Hive or Smart Cover.",
+      "summary_en": "Capacitor: The Muzzle Mod grants 30% Critical Hit Damage instead of th eintended 20%",
       "summary_zhHant": "pending",
       "summaryKind": "extract",
       "alsoReportedBy": [],
@@ -838,7 +884,7 @@
       "title_orig": "The Division 2: 6X XP Event",
       "lang_orig": "en",
       "publishedAt": "2026-11-06T10:31:09.000Z",
-      "fetchedAt": "2026-11-21T04:10:58.650Z",
+      "fetchedAt": "2026-11-21T08:11:05.579Z",
       "category": "missions",
       "tags": [
         "event"
@@ -857,23 +903,23 @@
       "status": "new"
     },
     {
-      "id": "98qmb5",
+      "id": "y6mkzc",
       "sourceId": "ubisoft-en",
       "sourceName": "Ubisoft",
       "sourceUrl": "https://www.ubisoft.com/en-us/game/the-division/the-division-2/news-updates/1wrUJ1HzY6BF8zzO4AMhJ3/spearfall-pts-patch-notes",
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-21T04:10:58.650Z",
+      "fetchedAt": "2026-11-21T08:11:05.579Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
       ],
       "importance": 44,
       "confidence": "official",
-      "headline_en": "Known issue: Heartbreaker: The 4 piece and Backpack Talent descriptions show 1.3% base Bonus…",
+      "headline_en": "Known issue: Measured Assembly: The 4 piece Talent description shows +1 Skill Tier per…",
       "headline_zhHant": "pending",
-      "summary_en": "Heartbreaker: The 4 piece and Backpack Talent descriptions show 1.3% base Bonus Armor per stack.",
+      "summary_en": "Measured Assembly: The 4 piece Talent description shows +1 Skill Tier per ally within range of your Hive or Smart Cover.",
       "summary_zhHant": "pending",
       "summaryKind": "extract",
       "alsoReportedBy": [],
@@ -899,7 +945,7 @@
       "title_orig": "【心得】『18米戰神』中央公園DLC新技能：戰利品系統",
       "lang_orig": "zh",
       "publishedAt": "2026-11-17T14:25:00.000Z",
-      "fetchedAt": "2026-11-21T04:10:58.650Z",
+      "fetchedAt": "2026-11-21T08:11:05.579Z",
       "category": "missions",
       "tags": [
         "dlc"
@@ -918,23 +964,23 @@
       "status": "new"
     },
     {
-      "id": "1ypems3",
+      "id": "98qmb5",
       "sourceId": "ubisoft-en",
       "sourceName": "Ubisoft",
       "sourceUrl": "https://www.ubisoft.com/en-us/game/the-division/the-division-2/news-updates/1wrUJ1HzY6BF8zzO4AMhJ3/spearfall-pts-patch-notes",
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-21T04:10:58.650Z",
+      "fetchedAt": "2026-11-21T08:11:05.579Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
       ],
       "importance": 43,
       "confidence": "official",
-      "headline_en": "Known issue: When selecting a Schematic for a Prototype item, the list may show…",
+      "headline_en": "Known issue: Heartbreaker: The 4 piece and Backpack Talent descriptions show 1.3% base Bonus…",
       "headline_zhHant": "pending",
-      "summary_en": "When selecting a Schematic for a Prototype item, the list may show Schematics intended for a different weapon category or gear slot.",
+      "summary_en": "Heartbreaker: The 4 piece and Backpack Talent descriptions show 1.3% base Bonus Armor per stack.",
       "summary_zhHant": "pending",
       "summaryKind": "extract",
       "alsoReportedBy": [],
@@ -942,7 +988,7 @@
       "relatedIds": [
         "15yr4ky"
       ],
-      "firstSeenAt": "2026-11-12T16:55:32.847Z",
+      "firstSeenAt": "2026-11-16T02:50:16.192Z",
       "status": "new",
       "glitch": {
         "state": "active",
@@ -953,23 +999,23 @@
       }
     },
     {
-      "id": "1blg61e",
+      "id": "1ypems3",
       "sourceId": "ubisoft-en",
       "sourceName": "Ubisoft",
       "sourceUrl": "https://www.ubisoft.com/en-us/game/the-division/the-division-2/news-updates/1wrUJ1HzY6BF8zzO4AMhJ3/spearfall-pts-patch-notes",
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-21T04:10:58.650Z",
+      "fetchedAt": "2026-11-21T08:11:05.579Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
       ],
       "importance": 42,
       "confidence": "official",
-      "headline_en": "Known issue: Some Schematics offer more attribute changes than the item has slots for",
+      "headline_en": "Known issue: When selecting a Schematic for a Prototype item, the list may show…",
       "headline_zhHant": "pending",
-      "summary_en": "Some Schematics offer more attribute changes than the item has slots for.",
+      "summary_en": "When selecting a Schematic for a Prototype item, the list may show Schematics intended for a different weapon category or gear slot.",
       "summary_zhHant": "pending",
       "summaryKind": "extract",
       "alsoReportedBy": [],
@@ -995,7 +1041,7 @@
       "title_orig": "【情報】【再次開機】關機維護公告 - 2026/11/17(二) ， 開機後再次加碼進入維修",
       "lang_orig": "zh",
       "publishedAt": "2026-11-16T17:18:00.000Z",
-      "fetchedAt": "2026-11-21T04:10:58.650Z",
+      "fetchedAt": "2026-11-21T08:11:05.579Z",
       "category": "updates",
       "tags": [],
       "importance": 42,
@@ -1012,23 +1058,23 @@
       "status": "new"
     },
     {
-      "id": "1e2o3a6",
+      "id": "1blg61e",
       "sourceId": "ubisoft-en",
       "sourceName": "Ubisoft",
       "sourceUrl": "https://www.ubisoft.com/en-us/game/the-division/the-division-2/news-updates/1wrUJ1HzY6BF8zzO4AMhJ3/spearfall-pts-patch-notes",
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-21T04:10:58.650Z",
+      "fetchedAt": "2026-11-21T08:11:05.579Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
       ],
       "importance": 41,
       "confidence": "official",
-      "headline_en": "Known issue: Unbreakable may repair 100% of your Armor instead of 95%",
+      "headline_en": "Known issue: Some Schematics offer more attribute changes than the item has slots for",
       "headline_zhHant": "pending",
-      "summary_en": "Unbreakable may repair 100% of your Armor instead of 95%.",
+      "summary_en": "Some Schematics offer more attribute changes than the item has slots for.",
       "summary_zhHant": "pending",
       "summaryKind": "extract",
       "alsoReportedBy": [],
@@ -1047,23 +1093,23 @@
       }
     },
     {
-      "id": "t35ov9",
+      "id": "1e2o3a6",
       "sourceId": "ubisoft-en",
       "sourceName": "Ubisoft",
       "sourceUrl": "https://www.ubisoft.com/en-us/game/the-division/the-division-2/news-updates/1wrUJ1HzY6BF8zzO4AMhJ3/spearfall-pts-patch-notes",
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-21T04:10:58.650Z",
+      "fetchedAt": "2026-11-21T08:11:05.579Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
       ],
       "importance": 40,
       "confidence": "official",
-      "headline_en": "Known issue: Headshots may fail to trigger Reformation’s Skill Repair bonus",
+      "headline_en": "Known issue: Unbreakable may repair 100% of your Armor instead of 95%",
       "headline_zhHant": "pending",
-      "summary_en": "Headshots may fail to trigger Reformation’s Skill Repair bonus.",
+      "summary_en": "Unbreakable may repair 100% of your Armor instead of 95%.",
       "summary_zhHant": "pending",
       "summaryKind": "extract",
       "alsoReportedBy": [],
@@ -1089,7 +1135,7 @@
       "title_orig": "The Division 2: Echoes of Central Park Launch Twitch Drops",
       "lang_orig": "en",
       "publishedAt": "2026-11-03T15:00:00.000Z",
-      "fetchedAt": "2026-11-21T04:10:58.650Z",
+      "fetchedAt": "2026-11-21T08:11:05.579Z",
       "category": "community",
       "tags": [
         "twitch-drops",
@@ -1110,6 +1156,41 @@
       "status": "new"
     },
     {
+      "id": "t35ov9",
+      "sourceId": "ubisoft-en",
+      "sourceName": "Ubisoft",
+      "sourceUrl": "https://www.ubisoft.com/en-us/game/the-division/the-division-2/news-updates/1wrUJ1HzY6BF8zzO4AMhJ3/spearfall-pts-patch-notes",
+      "title_orig": "Spearfall PTS Patch Notes",
+      "lang_orig": "en",
+      "publishedAt": "2026-11-12T16:00:00.000Z",
+      "fetchedAt": "2026-11-21T08:11:05.579Z",
+      "category": "glitch-watch",
+      "tags": [
+        "known-issue"
+      ],
+      "importance": 39,
+      "confidence": "official",
+      "headline_en": "Known issue: Headshots may fail to trigger Reformation’s Skill Repair bonus",
+      "headline_zhHant": "pending",
+      "summary_en": "Headshots may fail to trigger Reformation’s Skill Repair bonus.",
+      "summary_zhHant": "pending",
+      "summaryKind": "extract",
+      "alsoReportedBy": [],
+      "media": [],
+      "relatedIds": [
+        "15yr4ky"
+      ],
+      "firstSeenAt": "2026-11-12T16:55:32.847Z",
+      "status": "new",
+      "glitch": {
+        "state": "active",
+        "firstSeen": "2026-11-12",
+        "banRisk": false,
+        "riskNote_en": "Known issue listed by Ubisoft. No workaround yet.",
+        "riskNote_zhHant": "pending"
+      }
+    },
+    {
       "id": "1u6r63n",
       "sourceId": "ubisoft-en",
       "sourceName": "Ubisoft",
@@ -1117,12 +1198,12 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-21T04:10:58.650Z",
+      "fetchedAt": "2026-11-21T08:11:05.579Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
       ],
-      "importance": 39,
+      "importance": 38,
       "confidence": "official",
       "headline_en": "Known issue: Brave Draw is missing its Protection from Elites bonus",
       "headline_zhHant": "pending",
@@ -1152,12 +1233,12 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-21T04:10:58.650Z",
+      "fetchedAt": "2026-11-21T08:11:05.579Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
       ],
-      "importance": 38,
+      "importance": 37,
       "confidence": "official",
       "headline_en": "Known issue: We recommend focusing your Escalation testing on Core Build directive.",
       "headline_zhHant": "pending",
@@ -1187,12 +1268,12 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-21T04:10:58.650Z",
+      "fetchedAt": "2026-11-21T08:11:05.579Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
       ],
-      "importance": 37,
+      "importance": 36,
       "confidence": "official",
       "headline_en": "Known issue: Mission objectives and Player Rating may disappear from the HUD when you…",
       "headline_zhHant": "pending",
@@ -1222,12 +1303,12 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-21T04:10:58.650Z",
+      "fetchedAt": "2026-11-21T08:11:05.579Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
       ],
-      "importance": 36,
+      "importance": 35,
       "confidence": "official",
       "headline_en": "Known issue: Player Rating from revives can be inconsistent.",
       "headline_zhHant": "pending",
@@ -1250,6 +1331,30 @@
       }
     },
     {
+      "id": "q5qvmp",
+      "sourceId": "bahamut",
+      "sourceName": "巴哈姆特 全境封鎖板",
+      "sourceUrl": "https://forum.gamer.com.tw/C.php?bsn=24460&snA=32894",
+      "title_orig": "【情報】TU30 / Y8S4 PTS Patchnote翻譯",
+      "lang_orig": "zh",
+      "publishedAt": "2026-11-13T07:31:00.000Z",
+      "fetchedAt": "2026-11-21T08:11:05.579Z",
+      "category": "updates",
+      "tags": [],
+      "importance": 35,
+      "confidence": "community",
+      "headline_en": "pending",
+      "headline_zhHant": "【情報】TU30 / Y8S4 PTS Patchnote翻譯",
+      "summary_en": "pending",
+      "summary_zhHant": "原文公告 以下為AI機翻並且由筆者稍微潤飾過 2F為Y8S4裝備平衡性改動翻譯 《全境封鎖 2》Spearfall PT…",
+      "summaryKind": "extract",
+      "alsoReportedBy": [],
+      "media": [],
+      "relatedIds": [],
+      "firstSeenAt": "2026-11-12T18:47:15.805Z",
+      "status": "new"
+    },
+    {
       "id": "166wyo6",
       "sourceId": "ubisoft-en",
       "sourceName": "Ubisoft",
@@ -1257,12 +1362,12 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-21T04:10:58.650Z",
+      "fetchedAt": "2026-11-21T08:11:05.579Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
       ],
-      "importance": 35,
+      "importance": 34,
       "confidence": "official",
       "headline_en": "Known issue: Enemy scaling is lower than intended. This affects both gameplay and the…",
       "headline_zhHant": "pending",
@@ -1285,30 +1390,6 @@
       }
     },
     {
-      "id": "q5qvmp",
-      "sourceId": "bahamut",
-      "sourceName": "巴哈姆特 全境封鎖板",
-      "sourceUrl": "https://forum.gamer.com.tw/C.php?bsn=24460&snA=32894",
-      "title_orig": "【情報】TU30 / Y8S4 PTS Patchnote翻譯",
-      "lang_orig": "zh",
-      "publishedAt": "2026-11-13T07:31:00.000Z",
-      "fetchedAt": "2026-11-21T04:10:58.650Z",
-      "category": "updates",
-      "tags": [],
-      "importance": 35,
-      "confidence": "community",
-      "headline_en": "pending",
-      "headline_zhHant": "【情報】TU30 / Y8S4 PTS Patchnote翻譯",
-      "summary_en": "pending",
-      "summary_zhHant": "原文公告 以下為AI機翻並且由筆者稍微潤飾過 2F為Y8S4裝備平衡性改動翻譯 《全境封鎖 2》Spearfall PT…",
-      "summaryKind": "extract",
-      "alsoReportedBy": [],
-      "media": [],
-      "relatedIds": [],
-      "firstSeenAt": "2026-11-12T18:47:15.805Z",
-      "status": "new"
-    },
-    {
       "id": "1ttmry9",
       "sourceId": "ubisoft-en",
       "sourceName": "Ubisoft",
@@ -1316,12 +1397,12 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-21T04:10:58.650Z",
+      "fetchedAt": "2026-11-21T08:11:05.579Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
       ],
-      "importance": 34,
+      "importance": 33,
       "confidence": "official",
       "headline_en": "Known issue: Gear stashes in both regular and Elite Territory Control activities fail to…",
       "headline_zhHant": "pending",
@@ -1351,51 +1432,16 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-21T04:10:58.650Z",
-      "category": "glitch-watch",
-      "tags": [
-        "known-issue"
-      ],
-      "importance": 33,
-      "confidence": "official",
-      "headline_en": "Known issue: Named enemies at Control Points can drop Prototype Gear while Global Difficulty…",
-      "headline_zhHant": "pending",
-      "summary_en": "Named enemies at Control Points can drop Prototype Gear while Global Difficulty is set to Heroic.",
-      "summary_zhHant": "pending",
-      "summaryKind": "extract",
-      "alsoReportedBy": [],
-      "media": [],
-      "relatedIds": [
-        "15yr4ky"
-      ],
-      "firstSeenAt": "2026-11-12T16:55:32.847Z",
-      "status": "new",
-      "glitch": {
-        "state": "active",
-        "firstSeen": "2026-11-12",
-        "banRisk": false,
-        "riskNote_en": "Known issue listed by Ubisoft. No workaround yet.",
-        "riskNote_zhHant": "pending"
-      }
-    },
-    {
-      "id": "1rxclrc",
-      "sourceId": "ubisoft-en",
-      "sourceName": "Ubisoft",
-      "sourceUrl": "https://www.ubisoft.com/en-us/game/the-division/the-division-2/news-updates/1wrUJ1HzY6BF8zzO4AMhJ3/spearfall-pts-patch-notes",
-      "title_orig": "Spearfall PTS Patch Notes",
-      "lang_orig": "en",
-      "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-21T04:10:58.650Z",
+      "fetchedAt": "2026-11-21T08:11:05.579Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
       ],
       "importance": 32,
       "confidence": "official",
-      "headline_en": "Known issue: Bosses in the new Legendary Main Missions have placeholder names",
+      "headline_en": "Known issue: Named enemies at Control Points can drop Prototype Gear while Global Difficulty…",
       "headline_zhHant": "pending",
-      "summary_en": "Bosses in the new Legendary Main Missions have placeholder names.",
+      "summary_en": "Named enemies at Control Points can drop Prototype Gear while Global Difficulty is set to Heroic.",
       "summary_zhHant": "pending",
       "summaryKind": "extract",
       "alsoReportedBy": [],
@@ -1421,7 +1467,7 @@
       "title_orig": "【情報】【已開機】關機維護公告 - 2026/11/12(四) 16:30",
       "lang_orig": "zh",
       "publishedAt": "2026-11-11T23:46:00.000Z",
-      "fetchedAt": "2026-11-21T04:10:58.650Z",
+      "fetchedAt": "2026-11-21T08:11:05.579Z",
       "category": "updates",
       "tags": [],
       "importance": 32,
@@ -1438,23 +1484,23 @@
       "status": "new"
     },
     {
-      "id": "tion2p",
+      "id": "1rxclrc",
       "sourceId": "ubisoft-en",
       "sourceName": "Ubisoft",
       "sourceUrl": "https://www.ubisoft.com/en-us/game/the-division/the-division-2/news-updates/1wrUJ1HzY6BF8zzO4AMhJ3/spearfall-pts-patch-notes",
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-21T04:10:58.650Z",
+      "fetchedAt": "2026-11-21T08:11:05.579Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
       ],
       "importance": 31,
       "confidence": "official",
-      "headline_en": "Known issue: A Heroic Retaliation started from the Legendary Open World may show Legendary…",
+      "headline_en": "Known issue: Bosses in the new Legendary Main Missions have placeholder names",
       "headline_zhHant": "pending",
-      "summary_en": "A Heroic Retaliation started from the Legendary Open World may show Legendary in the UI. The Retaliation itself runs on Heroic.",
+      "summary_en": "Bosses in the new Legendary Main Missions have placeholder names.",
       "summary_zhHant": "pending",
       "summaryKind": "extract",
       "alsoReportedBy": [],
@@ -1473,23 +1519,23 @@
       }
     },
     {
-      "id": "37y6no",
+      "id": "tion2p",
       "sourceId": "ubisoft-en",
       "sourceName": "Ubisoft",
       "sourceUrl": "https://www.ubisoft.com/en-us/game/the-division/the-division-2/news-updates/1wrUJ1HzY6BF8zzO4AMhJ3/spearfall-pts-patch-notes",
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-21T04:10:58.650Z",
+      "fetchedAt": "2026-11-21T08:11:05.579Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
       ],
       "importance": 30,
       "confidence": "official",
-      "headline_en": "Known issue: Enemies from factions other than White Tusk use Heroic scaling in the…",
+      "headline_en": "Known issue: A Heroic Retaliation started from the Legendary Open World may show Legendary…",
       "headline_zhHant": "pending",
-      "summary_en": "Enemies from factions other than White Tusk use Heroic scaling in the Legendary Open World.",
+      "summary_en": "A Heroic Retaliation started from the Legendary Open World may show Legendary in the UI. The Retaliation itself runs on Heroic.",
       "summary_zhHant": "pending",
       "summaryKind": "extract",
       "alsoReportedBy": [],
@@ -1515,7 +1561,7 @@
       "title_orig": "【心得】裝備專精系統心得",
       "lang_orig": "zh",
       "publishedAt": "2026-11-11T00:41:00.000Z",
-      "fetchedAt": "2026-11-21T04:10:58.650Z",
+      "fetchedAt": "2026-11-21T08:11:05.579Z",
       "category": "arsenal",
       "tags": [],
       "importance": 30,
@@ -1532,23 +1578,23 @@
       "status": "new"
     },
     {
-      "id": "qy8rcm",
+      "id": "37y6no",
       "sourceId": "ubisoft-en",
       "sourceName": "Ubisoft",
       "sourceUrl": "https://www.ubisoft.com/en-us/game/the-division/the-division-2/news-updates/1wrUJ1HzY6BF8zzO4AMhJ3/spearfall-pts-patch-notes",
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-21T04:10:58.650Z",
+      "fetchedAt": "2026-11-21T08:11:05.579Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
       ],
       "importance": 29,
       "confidence": "official",
-      "headline_en": "Known issue: White Tusk have less Health and Armor in the Legendary Open World…",
+      "headline_en": "Known issue: Enemies from factions other than White Tusk use Heroic scaling in the…",
       "headline_zhHant": "pending",
-      "summary_en": "White Tusk have less Health and Armor in the Legendary Open World than in Legendary Main Missions.",
+      "summary_en": "Enemies from factions other than White Tusk use Heroic scaling in the Legendary Open World.",
       "summary_zhHant": "pending",
       "summaryKind": "extract",
       "alsoReportedBy": [],
@@ -1574,7 +1620,7 @@
       "title_orig": "【情報】【已開機】關機維護公告 - 2026/11/10(二) 16:30，延長 1 小時",
       "lang_orig": "zh",
       "publishedAt": "2026-11-10T15:59:00.000Z",
-      "fetchedAt": "2026-11-21T04:10:58.650Z",
+      "fetchedAt": "2026-11-21T08:11:05.579Z",
       "category": "updates",
       "tags": [],
       "importance": 29,
@@ -1591,6 +1637,41 @@
       "status": "new"
     },
     {
+      "id": "qy8rcm",
+      "sourceId": "ubisoft-en",
+      "sourceName": "Ubisoft",
+      "sourceUrl": "https://www.ubisoft.com/en-us/game/the-division/the-division-2/news-updates/1wrUJ1HzY6BF8zzO4AMhJ3/spearfall-pts-patch-notes",
+      "title_orig": "Spearfall PTS Patch Notes",
+      "lang_orig": "en",
+      "publishedAt": "2026-11-12T16:00:00.000Z",
+      "fetchedAt": "2026-11-21T08:11:05.579Z",
+      "category": "glitch-watch",
+      "tags": [
+        "known-issue"
+      ],
+      "importance": 28,
+      "confidence": "official",
+      "headline_en": "Known issue: White Tusk have less Health and Armor in the Legendary Open World…",
+      "headline_zhHant": "pending",
+      "summary_en": "White Tusk have less Health and Armor in the Legendary Open World than in Legendary Main Missions.",
+      "summary_zhHant": "pending",
+      "summaryKind": "extract",
+      "alsoReportedBy": [],
+      "media": [],
+      "relatedIds": [
+        "15yr4ky"
+      ],
+      "firstSeenAt": "2026-11-12T16:55:32.847Z",
+      "status": "new",
+      "glitch": {
+        "state": "active",
+        "firstSeen": "2026-11-12",
+        "banRisk": false,
+        "riskNote_en": "Known issue listed by Ubisoft. No workaround yet.",
+        "riskNote_zhHant": "pending"
+      }
+    },
+    {
       "id": "sbrqm9",
       "sourceId": "ubisoft-en",
       "sourceName": "Ubisoft",
@@ -1598,12 +1679,12 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-21T04:10:58.650Z",
+      "fetchedAt": "2026-11-21T08:11:05.579Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
       ],
-      "importance": 28,
+      "importance": 27,
       "confidence": "official",
       "headline_en": "Known issue: Enemies from factions other than White Tusk still use Heroic scaling when…",
       "headline_zhHant": "pending",
@@ -1633,7 +1714,7 @@
       "title_orig": "【情報】*劇透注意* Y8S3/TU29 獵捕行動 Red Horizon 偵查任務 每週統整",
       "lang_orig": "zh",
       "publishedAt": "2026-11-03T17:07:00.000Z",
-      "fetchedAt": "2026-11-21T04:10:58.650Z",
+      "fetchedAt": "2026-11-21T08:11:05.579Z",
       "category": "updates",
       "tags": [],
       "importance": 22,
@@ -1654,22 +1735,22 @@
     {
       "sourceId": "steam-news",
       "ok": true,
-      "checkedAt": "2026-11-21T04:10:58.650Z"
+      "checkedAt": "2026-11-21T08:11:05.579Z"
     },
     {
       "sourceId": "ubisoft-en",
       "ok": true,
-      "checkedAt": "2026-11-21T04:10:58.650Z"
+      "checkedAt": "2026-11-21T08:11:05.579Z"
     },
     {
       "sourceId": "ubisoft-zh-tw",
       "ok": true,
-      "checkedAt": "2026-11-21T04:10:58.650Z"
+      "checkedAt": "2026-11-21T08:11:05.579Z"
     },
     {
       "sourceId": "bahamut",
       "ok": true,
-      "checkedAt": "2026-11-21T04:10:58.650Z"
+      "checkedAt": "2026-11-21T08:11:05.579Z"
     }
   ]
 }
