@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-21T00:49:30.976Z",
+  "updatedAt": "2026-11-21T04:10:58.650Z",
   "topics": [
     {
       "id": "32900",
@@ -17,7 +17,16 @@
       "url": "https://forum.gamer.com.tw/C.php?bsn=24460&snA=32377",
       "replies": 6,
       "views": 2620,
-      "lastReplyAt": "2026-11-20T21:49:30.976Z"
+      "lastReplyAt": "2026-11-20T21:10:58.650Z"
+    },
+    {
+      "id": "32905",
+      "tag": "問題",
+      "title": "【問題】皮膚疑問",
+      "url": "https://forum.gamer.com.tw/C.php?bsn=24460&snA=32905",
+      "replies": 6,
+      "views": 126,
+      "lastReplyAt": "2026-11-21T01:10:58.650Z"
     },
     {
       "id": "32896",
@@ -29,21 +38,12 @@
       "lastReplyAt": "2026-11-14T13:57:00.000Z"
     },
     {
-      "id": "32904",
-      "tag": "問題",
-      "title": "【問題】全境封鎖2上西城戰鬥任務之中央公園泥沼挑釁動作",
-      "url": "https://forum.gamer.com.tw/C.php?bsn=24460&snA=32904",
-      "replies": 2,
-      "views": 146,
-      "lastReplyAt": "2026-11-20T05:30:00.000Z"
-    },
-    {
       "id": "32903",
       "tag": "問題",
       "title": "【問題】好友引介問題",
       "url": "https://forum.gamer.com.tw/C.php?bsn=24460&snA=32903",
-      "replies": 2,
-      "views": 105,
+      "replies": 4,
+      "views": 131,
       "lastReplyAt": "2026-11-20T05:23:00.000Z"
     }
   ]
