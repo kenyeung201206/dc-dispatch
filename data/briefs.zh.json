@@ -13697,6 +13697,60 @@
         "影片說明只寫這是給 guardians 的中央公園單人配裝，未列出裝備或數據。"
       ],
       "written": "2026-11-21"
+    },
+    "1ytrsaq": {
+      "points": [
+        "影片介紹（依標題）：玩家分享的單人（SOLO）挑戰影片，內容是以狙擊配裝（Sniper Build）在英雄難度（HEROIC）下挑戰被入侵（INVADED）的 Tidal Basin 任務。",
+        "作者說在最後階段被擊倒兩次，但仍完成任務，並認為這個任務很難、也很有趣。",
+        "影片說明附有任務完成清單：一般任務 12 個已完成；入侵任務中 Bank Headquarters、Lincoln Memorial、Camp White Oak、Manning National Zoo、Tidal Basin 已完成。"
+      ],
+      "tables": [
+        {
+          "title": "作者的入侵任務進度（依影片說明）",
+          "columns": [
+            "入侵任務",
+            "狀態"
+          ],
+          "rows": [
+            [
+              "Bank Headquarters",
+              "已完成"
+            ],
+            [
+              "Lincoln Memorial",
+              "已完成"
+            ],
+            [
+              "Camp White Oak",
+              "已完成"
+            ],
+            [
+              "Manning National Zoo",
+              "已完成"
+            ],
+            [
+              "Tidal Basin",
+              "已完成"
+            ]
+          ]
+        }
+      ],
+      "written": "2026-11-21"
+    },
+    "s5gopv": {
+      "points": [
+        "影片介紹（依標題）：玩家分享的《全境封鎖2》TU29 狙擊手配裝攻略影片。",
+        "標題提出的問題是：狙擊手該選哪種套裝，並比較「烈焰大砲」與 VSA8 兩種各兩件的搭配，兩者有何差異。",
+        "影片說明只有請觀眾按讚訂閱，沒有列出裝備或數據。"
+      ],
+      "written": "2026-11-21"
+    },
+    "1mdmaln": {
+      "points": [
+        "影片介紹（依標題）：玩家分享的《全境封鎖2》配裝（Build）影片，主題是 Foundry Bulwark 與 Gila Guard 兩個套裝／裝備組合。",
+        "影片說明只重複標題，沒有列出裝備、天賦或數據。"
+      ],
+      "written": "2026-11-21"
     }
   }
 }
