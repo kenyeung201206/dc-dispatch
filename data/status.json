@@ -1,11 +1,11 @@
 {
-  "lastRun": "2026-11-21T13:12:33.084Z",
-  "durationMs": 42412,
+  "lastRun": "2026-11-21T16:49:15.235Z",
+  "durationMs": 35676,
   "edition": {
-    "date": "2026-11-21",
-    "number": 18,
-    "items": 58,
-    "zhPending": 44
+    "date": "2026-11-22",
+    "number": 19,
+    "items": 42,
+    "zhPending": 28
   },
   "sources": [
     {
@@ -26,12 +26,12 @@
     {
       "id": "bahamut",
       "ok": true,
-      "items": 10
+      "items": 11
     },
     {
       "id": "bahamut-hot",
       "ok": true,
-      "items": 5
+      "items": 4
     }
   ],
   "videos": {
@@ -42,13 +42,13 @@
     "youtubeQuotaUnits": 637,
     "costUsd": 0
   },
-  "newTopics": 4,
+  "newTopics": 7,
   "recentNewTopics": [
-    6,
     4,
     4,
     4,
     3,
-    4
+    4,
+    7
   ]
 }
