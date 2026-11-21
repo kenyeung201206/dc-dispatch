@@ -1,7 +1,7 @@
 {
   "date": "2026-11-22",
   "editionNumber": 19,
-  "generatedAt": "2026-11-21T20:11:23.547Z",
+  "generatedAt": "2026-11-21T22:12:08.919Z",
   "meta": {
     "season_en": "Red Horizon",
     "season_zhHant": "Red Horizon 賽季",
@@ -17,7 +17,7 @@
       "title_orig": "The Division 2: Crossplay Live Now",
       "lang_orig": "en",
       "publishedAt": "2026-11-18T18:00:17.000Z",
-      "fetchedAt": "2026-11-21T20:11:23.547Z",
+      "fetchedAt": "2026-11-21T22:12:08.919Z",
       "category": "missions",
       "tags": [
         "crossplay",
@@ -79,7 +79,7 @@
       "title_orig": "[TUY8S3.3] Echoes of Central Park Launch, Crossplay Rollout, Conflict Improvements & More",
       "lang_orig": "en",
       "publishedAt": "2026-11-02T15:45:00.000Z",
-      "fetchedAt": "2026-11-21T20:11:23.547Z",
+      "fetchedAt": "2026-11-21T22:12:08.919Z",
       "category": "updates",
       "tags": [
         "title-update",
@@ -116,7 +116,7 @@
       "title_orig": "The Division 2: Echoes of Central Park Event Pass Twitch Drops",
       "lang_orig": "en",
       "publishedAt": "2026-11-10T16:00:00.000Z",
-      "fetchedAt": "2026-11-21T20:11:23.547Z",
+      "fetchedAt": "2026-11-21T22:12:08.919Z",
       "category": "community",
       "tags": [
         "event",
@@ -148,6 +148,35 @@
       "imageId": "ubi-5jeY7kzIeBLvfHja0iBIuX",
       "relatedIds": [],
       "firstSeenAt": "2026-11-10T16:46:28.397Z",
+      "status": "new"
+    },
+    {
+      "id": "1iupr08",
+      "sourceId": "youtube",
+      "sourceName": "Blackfire Gaming ",
+      "sourceUrl": "https://www.youtube.com/watch?v=-n61MPTPYJc",
+      "title_orig": "Get 70 Exotic Components Fast - Division 2 Shepherd Project",
+      "lang_orig": "en",
+      "publishedAt": "2026-11-21T17:43:46.000Z",
+      "fetchedAt": "2026-11-21T22:12:08.919Z",
+      "category": "arsenal",
+      "tags": [
+        "event",
+        "exotic",
+        "video"
+      ],
+      "importance": 66,
+      "confidence": "community",
+      "headline_en": "Get 70 Exotic Components Fast - Division 2 Shepherd Project",
+      "headline_zhHant": "pending",
+      "summary_en": "Free named MK16 in the next 5 days. The Shepherd Event in The Division 2 lets you farm 70 Exotic Components — here's how to…",
+      "summary_zhHant": "pending",
+      "summaryKind": "extract",
+      "alsoReportedBy": [],
+      "media": [],
+      "videoId": "-n61MPTPYJc",
+      "relatedIds": [],
+      "firstSeenAt": "2026-11-21T22:12:08.919Z",
       "status": "new"
     },
     {
@@ -187,7 +216,7 @@
       "title_orig": "The Division 2: Echoes of Central Park DLC is available now!",
       "lang_orig": "en",
       "publishedAt": "2026-11-03T15:00:00.000Z",
-      "fetchedAt": "2026-11-21T20:11:23.547Z",
+      "fetchedAt": "2026-11-21T22:12:08.919Z",
       "category": "missions",
       "tags": [
         "dlc"
@@ -249,7 +278,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-21T20:11:23.547Z",
+      "fetchedAt": "2026-11-21T22:12:08.919Z",
       "category": "updates",
       "tags": [
         "known-issue",
@@ -425,6 +454,89 @@
       "status": "new"
     },
     {
+      "id": "15cqnk8",
+      "sourceId": "youtube",
+      "sourceName": "EllisDee789",
+      "sourceUrl": "https://www.youtube.com/watch?v=WsBpJnKfUJQ",
+      "title_orig": "American History Museum | T10 Escalation | PRIMA DONNA One Shot Sniper Build - The Division 2",
+      "lang_orig": "en",
+      "publishedAt": "2026-11-21T17:00:24.000Z",
+      "fetchedAt": "2026-11-21T22:12:08.919Z",
+      "category": "builds",
+      "tags": [
+        "exotic",
+        "video"
+      ],
+      "importance": 54,
+      "confidence": "community",
+      "headline_en": "American History Museum | T10 Escalation | PRIMA DONNA One Shot Sniper Build - The Division 2",
+      "headline_zhHant": "pending",
+      "summary_en": "=============================== 🔥 ONE-SHOT ACES & EIGHTS SNIPER BUILD! | The Division 2 One-shotting enemies as soon as they spawn!",
+      "summary_zhHant": "pending",
+      "summaryKind": "extract",
+      "alsoReportedBy": [],
+      "media": [],
+      "videoId": "WsBpJnKfUJQ",
+      "relatedIds": [],
+      "firstSeenAt": "2026-11-21T22:12:08.919Z",
+      "status": "new"
+    },
+    {
+      "id": "m0lx3",
+      "sourceId": "youtube",
+      "sourceName": "GPop2024",
+      "sourceUrl": "https://www.youtube.com/watch?v=G4-9Udr4uLM",
+      "title_orig": "The Division 2 | Maybe the build I want, doesn't exist :(",
+      "lang_orig": "en",
+      "publishedAt": "2026-11-21T20:18:43.000Z",
+      "fetchedAt": "2026-11-21T22:12:08.919Z",
+      "category": "builds",
+      "tags": [
+        "season",
+        "video"
+      ],
+      "importance": 54,
+      "confidence": "community",
+      "headline_en": "The Division 2 | Maybe the build I want, doesn't exist :(",
+      "headline_zhHant": "pending",
+      "summary_en": "Please join my live stream today and join me for some Division 2 fun.",
+      "summary_zhHant": "pending",
+      "summaryKind": "extract",
+      "alsoReportedBy": [],
+      "media": [],
+      "videoId": "G4-9Udr4uLM",
+      "relatedIds": [],
+      "firstSeenAt": "2026-11-21T22:12:08.919Z",
+      "status": "new"
+    },
+    {
+      "id": "1b9kfoh",
+      "sourceId": "youtube",
+      "sourceName": "FerrariZEROF1",
+      "sourceUrl": "https://www.youtube.com/watch?v=zgnyCWCyAbo",
+      "title_orig": "全境封鎖-2 看來我是跟美術館無緣了😒｜是我什麼步驟沒完成嗎？連2場都開不了門？2026/11/21",
+      "lang_orig": "zh",
+      "publishedAt": "2026-11-21T14:58:11.000Z",
+      "fetchedAt": "2026-11-21T22:12:08.919Z",
+      "category": "community",
+      "tags": [
+        "video"
+      ],
+      "importance": 54,
+      "confidence": "community",
+      "headline_en": "pending",
+      "headline_zhHant": "全境封鎖-2 看來我是跟美術館無緣了😒｜是我什麼步驟沒完成嗎？連2場都開不了門？2026/11/21",
+      "summary_en": "pending",
+      "summary_zhHant": "全境封鎖-2 看來我是跟美術館無緣了😒｜是我什麼步驟沒完成嗎？連2場都開不了門？2026/11/21",
+      "summaryKind": "extract",
+      "alsoReportedBy": [],
+      "media": [],
+      "videoId": "zgnyCWCyAbo",
+      "relatedIds": [],
+      "firstSeenAt": "2026-11-21T22:12:08.919Z",
+      "status": "new"
+    },
+    {
       "id": "1sc4p9z",
       "sourceId": "youtube",
       "sourceName": "Go Max",
@@ -486,8 +598,8 @@
       "sourceUrl": "https://forum.gamer.com.tw/C.php?bsn=24460&snA=32469",
       "title_orig": "【心得】2026年入坑新手和回鍋特工需要注意的事項 // 老手請直接忽略~~",
       "lang_orig": "zh",
-      "publishedAt": "2026-11-21T17:11:23.547Z",
-      "fetchedAt": "2026-11-21T20:11:23.547Z",
+      "publishedAt": "2026-11-21T17:12:08.919Z",
+      "fetchedAt": "2026-11-21T22:12:08.919Z",
       "category": "builds",
       "tags": [],
       "importance": 52,
@@ -511,7 +623,7 @@
       "title_orig": "【心得】超冷門原型天賦:5件熵 高生命值的用途",
       "lang_orig": "zh",
       "publishedAt": "2026-11-19T08:40:00.000Z",
-      "fetchedAt": "2026-11-21T20:11:23.547Z",
+      "fetchedAt": "2026-11-21T22:12:08.919Z",
       "category": "arsenal",
       "tags": [],
       "importance": 47,
@@ -535,7 +647,7 @@
       "title_orig": "[TUY8S3.3] Echoes of Central Park Launch, Crossplay Rollout, Conflict Improvements & More",
       "lang_orig": "en",
       "publishedAt": "2026-11-02T15:45:00.000Z",
-      "fetchedAt": "2026-11-21T20:11:23.547Z",
+      "fetchedAt": "2026-11-21T22:12:08.919Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -570,7 +682,7 @@
       "title_orig": "The Division 2: 6X XP Event",
       "lang_orig": "en",
       "publishedAt": "2026-11-06T10:31:09.000Z",
-      "fetchedAt": "2026-11-21T20:11:23.547Z",
+      "fetchedAt": "2026-11-21T22:12:08.919Z",
       "category": "missions",
       "tags": [
         "event"
@@ -596,7 +708,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-21T20:11:23.547Z",
+      "fetchedAt": "2026-11-21T22:12:08.919Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -631,7 +743,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-21T20:11:23.547Z",
+      "fetchedAt": "2026-11-21T22:12:08.919Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -666,7 +778,7 @@
       "title_orig": "【心得】『18米戰神』中央公園DLC新技能：戰利品系統",
       "lang_orig": "zh",
       "publishedAt": "2026-11-17T14:25:00.000Z",
-      "fetchedAt": "2026-11-21T20:11:23.547Z",
+      "fetchedAt": "2026-11-21T22:12:08.919Z",
       "category": "missions",
       "tags": [
         "dlc"
@@ -692,7 +804,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-21T20:11:23.547Z",
+      "fetchedAt": "2026-11-21T22:12:08.919Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -727,7 +839,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-21T20:11:23.547Z",
+      "fetchedAt": "2026-11-21T22:12:08.919Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -762,7 +874,7 @@
       "title_orig": "【情報】【再次開機】關機維護公告 - 2026/11/17(二) ， 開機後再次加碼進入維修",
       "lang_orig": "zh",
       "publishedAt": "2026-11-16T17:18:00.000Z",
-      "fetchedAt": "2026-11-21T20:11:23.547Z",
+      "fetchedAt": "2026-11-21T22:12:08.919Z",
       "category": "updates",
       "tags": [],
       "importance": 41,
@@ -786,7 +898,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-21T20:11:23.547Z",
+      "fetchedAt": "2026-11-21T22:12:08.919Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -821,7 +933,7 @@
       "title_orig": "The Division 2: Echoes of Central Park Launch Twitch Drops",
       "lang_orig": "en",
       "publishedAt": "2026-11-03T15:00:00.000Z",
-      "fetchedAt": "2026-11-21T20:11:23.547Z",
+      "fetchedAt": "2026-11-21T22:12:08.919Z",
       "category": "community",
       "tags": [
         "twitch-drops",
@@ -849,7 +961,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-21T20:11:23.547Z",
+      "fetchedAt": "2026-11-21T22:12:08.919Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -884,7 +996,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-21T20:11:23.547Z",
+      "fetchedAt": "2026-11-21T22:12:08.919Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -919,7 +1031,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-21T20:11:23.547Z",
+      "fetchedAt": "2026-11-21T22:12:08.919Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -954,7 +1066,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-21T20:11:23.547Z",
+      "fetchedAt": "2026-11-21T22:12:08.919Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -989,7 +1101,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-21T20:11:23.547Z",
+      "fetchedAt": "2026-11-21T22:12:08.919Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -1024,7 +1136,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-21T20:11:23.547Z",
+      "fetchedAt": "2026-11-21T22:12:08.919Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -1059,7 +1171,7 @@
       "title_orig": "【情報】TU30 / Y8S4 PTS Patchnote翻譯",
       "lang_orig": "zh",
       "publishedAt": "2026-11-13T07:31:00.000Z",
-      "fetchedAt": "2026-11-21T20:11:23.547Z",
+      "fetchedAt": "2026-11-21T22:12:08.919Z",
       "category": "updates",
       "tags": [],
       "importance": 34,
@@ -1083,7 +1195,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-21T20:11:23.547Z",
+      "fetchedAt": "2026-11-21T22:12:08.919Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -1118,7 +1230,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-21T20:11:23.547Z",
+      "fetchedAt": "2026-11-21T22:12:08.919Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -1153,7 +1265,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-21T20:11:23.547Z",
+      "fetchedAt": "2026-11-21T22:12:08.919Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -1188,7 +1300,7 @@
       "title_orig": "【情報】【已開機】關機維護公告 - 2026/11/12(四) 16:30",
       "lang_orig": "zh",
       "publishedAt": "2026-11-11T23:46:00.000Z",
-      "fetchedAt": "2026-11-21T20:11:23.547Z",
+      "fetchedAt": "2026-11-21T22:12:08.919Z",
       "category": "updates",
       "tags": [],
       "importance": 31,
@@ -1212,7 +1324,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-21T20:11:23.547Z",
+      "fetchedAt": "2026-11-21T22:12:08.919Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -1247,7 +1359,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-21T20:11:23.547Z",
+      "fetchedAt": "2026-11-21T22:12:08.919Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -1282,7 +1394,7 @@
       "title_orig": "【心得】裝備專精系統心得",
       "lang_orig": "zh",
       "publishedAt": "2026-11-11T00:41:00.000Z",
-      "fetchedAt": "2026-11-21T20:11:23.547Z",
+      "fetchedAt": "2026-11-21T22:12:08.919Z",
       "category": "arsenal",
       "tags": [],
       "importance": 29,
@@ -1306,7 +1418,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-21T20:11:23.547Z",
+      "fetchedAt": "2026-11-21T22:12:08.919Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -1341,7 +1453,7 @@
       "title_orig": "【情報】【已開機】關機維護公告 - 2026/11/10(二) 16:30，延長 1 小時",
       "lang_orig": "zh",
       "publishedAt": "2026-11-10T15:59:00.000Z",
-      "fetchedAt": "2026-11-21T20:11:23.547Z",
+      "fetchedAt": "2026-11-21T22:12:08.919Z",
       "category": "updates",
       "tags": [],
       "importance": 28,
@@ -1365,7 +1477,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-21T20:11:23.547Z",
+      "fetchedAt": "2026-11-21T22:12:08.919Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -1400,7 +1512,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-21T20:11:23.547Z",
+      "fetchedAt": "2026-11-21T22:12:08.919Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -1435,7 +1547,7 @@
       "title_orig": "【情報】*劇透注意* Y8S3/TU29 獵捕行動 Red Horizon 偵查任務 每週統整",
       "lang_orig": "zh",
       "publishedAt": "2026-11-03T17:07:00.000Z",
-      "fetchedAt": "2026-11-21T20:11:23.547Z",
+      "fetchedAt": "2026-11-21T22:12:08.919Z",
       "category": "updates",
       "tags": [],
       "importance": 22,
@@ -1456,22 +1568,22 @@
     {
       "sourceId": "steam-news",
       "ok": true,
-      "checkedAt": "2026-11-21T20:11:23.547Z"
+      "checkedAt": "2026-11-21T22:12:08.919Z"
     },
     {
       "sourceId": "ubisoft-en",
       "ok": true,
-      "checkedAt": "2026-11-21T20:11:23.547Z"
+      "checkedAt": "2026-11-21T22:12:08.919Z"
     },
     {
       "sourceId": "ubisoft-zh-tw",
       "ok": true,
-      "checkedAt": "2026-11-21T20:11:23.547Z"
+      "checkedAt": "2026-11-21T22:12:08.919Z"
     },
     {
       "sourceId": "bahamut",
       "ok": true,
-      "checkedAt": "2026-11-21T20:11:23.547Z"
+      "checkedAt": "2026-11-21T22:12:08.919Z"
     }
   ]
 }
