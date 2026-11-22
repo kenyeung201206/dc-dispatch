@@ -1,7 +1,7 @@
 {
   "date": "2026-11-22",
   "editionNumber": 19,
-  "generatedAt": "2026-11-22T06:11:23.365Z",
+  "generatedAt": "2026-11-22T10:11:21.594Z",
   "meta": {
     "season_en": "Red Horizon",
     "season_zhHant": "Red Horizon 賽季",
@@ -17,7 +17,7 @@
       "title_orig": "The Division 2: Crossplay Live Now",
       "lang_orig": "en",
       "publishedAt": "2026-11-18T18:00:17.000Z",
-      "fetchedAt": "2026-11-22T06:11:23.365Z",
+      "fetchedAt": "2026-11-22T10:11:21.594Z",
       "category": "missions",
       "tags": [
         "crossplay",
@@ -79,7 +79,7 @@
       "title_orig": "[TUY8S3.3] Echoes of Central Park Launch, Crossplay Rollout, Conflict Improvements & More",
       "lang_orig": "en",
       "publishedAt": "2026-11-02T15:45:00.000Z",
-      "fetchedAt": "2026-11-22T06:11:23.365Z",
+      "fetchedAt": "2026-11-22T10:11:21.594Z",
       "category": "updates",
       "tags": [
         "title-update",
@@ -116,7 +116,7 @@
       "title_orig": "The Division 2: Echoes of Central Park Event Pass Twitch Drops",
       "lang_orig": "en",
       "publishedAt": "2026-11-10T16:00:00.000Z",
-      "fetchedAt": "2026-11-22T06:11:23.365Z",
+      "fetchedAt": "2026-11-22T10:11:21.594Z",
       "category": "community",
       "tags": [
         "event",
@@ -245,7 +245,7 @@
       "title_orig": "The Division 2: Echoes of Central Park DLC is available now!",
       "lang_orig": "en",
       "publishedAt": "2026-11-03T15:00:00.000Z",
-      "fetchedAt": "2026-11-22T06:11:23.365Z",
+      "fetchedAt": "2026-11-22T10:11:21.594Z",
       "category": "missions",
       "tags": [
         "dlc"
@@ -270,6 +270,34 @@
       "relatedIds": [],
       "firstSeenAt": "2026-11-03T15:00:00.000Z",
       "status": "updated"
+    },
+    {
+      "id": "1pukqqr",
+      "sourceId": "youtube",
+      "sourceName": "PlumConch836",
+      "sourceUrl": "https://www.youtube.com/watch?v=f_Li_qPqE9w",
+      "title_orig": "POINT & BURN?!😮 NEW EXOTIC MASK FORWARD OBSERVER is BROKEN or just the BEST CC?! PTS The Division 2",
+      "lang_orig": "en",
+      "publishedAt": "2026-11-22T09:30:23.000Z",
+      "fetchedAt": "2026-11-22T10:11:21.594Z",
+      "category": "updates",
+      "tags": [
+        "exotic",
+        "video"
+      ],
+      "importance": 61,
+      "confidence": "community",
+      "headline_en": "POINT & BURN?!😮 NEW EXOTIC MASK FORWARD OBSERVER is BROKEN or just the BEST CC?! PTS The Division 2",
+      "headline_zhHant": "pending",
+      "summary_en": "POINT & BURN?!😮 NEW EXOTIC MASK FORWARD OBSERVER is BROKEN or just the BEST CC?!",
+      "summary_zhHant": "pending",
+      "summaryKind": "extract",
+      "alsoReportedBy": [],
+      "media": [],
+      "videoId": "f_Li_qPqE9w",
+      "relatedIds": [],
+      "firstSeenAt": "2026-11-22T10:11:21.594Z",
+      "status": "new"
     },
     {
       "id": "1478d3t",
@@ -391,7 +419,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-22T06:11:23.365Z",
+      "fetchedAt": "2026-11-22T10:11:21.594Z",
       "category": "updates",
       "tags": [
         "known-issue",
@@ -429,33 +457,6 @@
         "sbrqm9"
       ],
       "firstSeenAt": "2026-11-12T16:55:32.847Z",
-      "status": "new"
-    },
-    {
-      "id": "gcawt0",
-      "sourceId": "youtube",
-      "sourceName": "GIDEEMSD",
-      "sourceUrl": "https://www.youtube.com/watch?v=r0QrguHNjJ4",
-      "title_orig": "THE DIVISION 2 MELHOR BUILD DPS  DO MOMENTO APRENDA A JOGAR COM ELA",
-      "lang_orig": "en",
-      "publishedAt": "2026-11-21T22:31:28.000Z",
-      "fetchedAt": "2026-11-22T06:11:23.365Z",
-      "category": "builds",
-      "tags": [
-        "video"
-      ],
-      "importance": 57,
-      "confidence": "community",
-      "headline_en": "THE DIVISION 2 MELHOR BUILD DPS  DO MOMENTO APRENDA A JOGAR COM ELA",
-      "headline_zhHant": "pending",
-      "summary_en": "quer colaborar com nosso trabalho no youtube ? pix email : gideebolt@gmail.com",
-      "summary_zhHant": "pending",
-      "summaryKind": "extract",
-      "alsoReportedBy": [],
-      "media": [],
-      "videoId": "r0QrguHNjJ4",
-      "relatedIds": [],
-      "firstSeenAt": "2026-11-22T06:11:23.365Z",
       "status": "new"
     },
     {
@@ -513,6 +514,33 @@
       "status": "new"
     },
     {
+      "id": "jru8hd",
+      "sourceId": "youtube",
+      "sourceName": "小肥牛",
+      "sourceUrl": "https://www.youtube.com/watch?v=Fxqq0Hko6H0",
+      "title_orig": "🐮牛哥 全境封鎖2 11/22 下午好",
+      "lang_orig": "zh",
+      "publishedAt": "2026-11-22T04:18:57.000Z",
+      "fetchedAt": "2026-11-22T10:11:21.594Z",
+      "category": "community",
+      "tags": [
+        "video"
+      ],
+      "importance": 56,
+      "confidence": "community",
+      "headline_en": "pending",
+      "headline_zhHant": "🐮牛哥 全境封鎖2 11/22 下午好",
+      "summary_en": "pending",
+      "summary_zhHant": "PSN ID:WILDARMS_Andy",
+      "summaryKind": "extract",
+      "alsoReportedBy": [],
+      "media": [],
+      "videoId": "Fxqq0Hko6H0",
+      "relatedIds": [],
+      "firstSeenAt": "2026-11-22T10:11:21.594Z",
+      "status": "new"
+    },
+    {
       "id": "5fkawg",
       "sourceId": "youtube",
       "sourceName": "Running Butcher",
@@ -537,6 +565,33 @@
       "videoId": "NZDyQQ32zhI",
       "relatedIds": [],
       "firstSeenAt": "2026-11-21T20:11:23.547Z",
+      "status": "new"
+    },
+    {
+      "id": "gya5ad",
+      "sourceId": "youtube",
+      "sourceName": "CBWarriorGaming",
+      "sourceUrl": "https://www.youtube.com/watch?v=c6P6W-V5-Hk",
+      "title_orig": "Will Rng Bless Us with Meta Mods?  | The Division 2",
+      "lang_orig": "en",
+      "publishedAt": "2026-11-22T06:39:27.000Z",
+      "fetchedAt": "2026-11-22T10:11:21.594Z",
+      "category": "builds",
+      "tags": [
+        "video"
+      ],
+      "importance": 55,
+      "confidence": "community",
+      "headline_en": "Will Rng Bless Us with Meta Mods?  | The Division 2",
+      "headline_zhHant": "pending",
+      "summary_en": "Farming some mods in countdown. Fixing my loadouts! #thedivision #thedivision2game #viral #dad #gaming #interactive #newstreamer #help #pve #shorts #nostalgia",
+      "summary_zhHant": "pending",
+      "summaryKind": "extract",
+      "alsoReportedBy": [],
+      "media": [],
+      "videoId": "c6P6W-V5-Hk",
+      "relatedIds": [],
+      "firstSeenAt": "2026-11-22T10:11:21.594Z",
       "status": "new"
     },
     {
@@ -786,6 +841,33 @@
       "status": "new"
     },
     {
+      "id": "1gf9vqq",
+      "sourceId": "youtube",
+      "sourceName": "SDCRISS",
+      "sourceUrl": "https://www.youtube.com/watch?v=gpXXwzt8yaM",
+      "title_orig": "Mi build 3 en 1 para ayudar al equipo en The Division 2",
+      "lang_orig": "en",
+      "publishedAt": "2026-11-22T09:46:37.000Z",
+      "fetchedAt": "2026-11-22T10:11:21.594Z",
+      "category": "builds",
+      "tags": [
+        "video"
+      ],
+      "importance": 53,
+      "confidence": "community",
+      "headline_en": "Mi build 3 en 1 para ayudar al equipo en The Division 2",
+      "headline_zhHant": "pending",
+      "summary_en": "Quema, levanta en un segundo con la Birdie y cura con la piña de médico. No hace daño… pero salva partidas.",
+      "summary_zhHant": "pending",
+      "summaryKind": "extract",
+      "alsoReportedBy": [],
+      "media": [],
+      "videoId": "gpXXwzt8yaM",
+      "relatedIds": [],
+      "firstSeenAt": "2026-11-22T10:11:21.594Z",
+      "status": "new"
+    },
+    {
       "id": "1ajpz24",
       "sourceId": "youtube",
       "sourceName": "POOLWATA",
@@ -814,17 +896,71 @@
       "status": "new"
     },
     {
+      "id": "1c4l363",
+      "sourceId": "youtube",
+      "sourceName": "母胎單身的我本質上是個渣男",
+      "sourceUrl": "https://www.youtube.com/watch?v=Bm-2vGxdqKw",
+      "title_orig": "《全境封鎖2 》《The Division 2 》刷到懷疑人生了",
+      "lang_orig": "zh",
+      "publishedAt": "2026-11-21T16:22:55.000Z",
+      "fetchedAt": "2026-11-22T10:11:21.594Z",
+      "category": "community",
+      "tags": [
+        "video"
+      ],
+      "importance": 52,
+      "confidence": "community",
+      "headline_en": "pending",
+      "headline_zhHant": "《全境封鎖2 》《The Division 2 》刷到懷疑人生了",
+      "summary_en": "pending",
+      "summary_zhHant": "《全境封鎖2 》《The Division 2 》刷到懷疑人生了",
+      "summaryKind": "extract",
+      "alsoReportedBy": [],
+      "media": [],
+      "videoId": "Bm-2vGxdqKw",
+      "relatedIds": [],
+      "firstSeenAt": "2026-11-22T10:11:21.594Z",
+      "status": "new"
+    },
+    {
+      "id": "nqkdrw",
+      "sourceId": "youtube",
+      "sourceName": "Terence.",
+      "sourceUrl": "https://www.youtube.com/watch?v=ZGUWwRIhyhY",
+      "title_orig": "[全境封鎖2]T10林肯紀念堂癲狗打法 日蝕控Pov",
+      "lang_orig": "zh",
+      "publishedAt": "2026-11-21T16:48:12.000Z",
+      "fetchedAt": "2026-11-22T10:11:21.594Z",
+      "category": "community",
+      "tags": [
+        "video"
+      ],
+      "importance": 52,
+      "confidence": "community",
+      "headline_en": "pending",
+      "headline_zhHant": "[全境封鎖2]T10林肯紀念堂癲狗打法 日蝕控Pov",
+      "summary_en": "pending",
+      "summary_zhHant": "[全境封鎖2]T10林肯紀念堂癲狗打法 日蝕控Pov",
+      "summaryKind": "extract",
+      "alsoReportedBy": [],
+      "media": [],
+      "videoId": "ZGUWwRIhyhY",
+      "relatedIds": [],
+      "firstSeenAt": "2026-11-22T10:11:21.594Z",
+      "status": "new"
+    },
+    {
       "id": "10tiq89",
       "sourceId": "bahamut",
       "sourceName": "巴哈姆特 全境封鎖板",
       "sourceUrl": "https://forum.gamer.com.tw/C.php?bsn=24460&snA=32469",
       "title_orig": "【心得】2026年入坑新手和回鍋特工需要注意的事項 // 老手請直接忽略~~",
       "lang_orig": "zh",
-      "publishedAt": "2026-11-21T17:11:23.365Z",
-      "fetchedAt": "2026-11-22T06:11:23.365Z",
+      "publishedAt": "2026-11-21T17:11:21.594Z",
+      "fetchedAt": "2026-11-22T10:11:21.594Z",
       "category": "builds",
       "tags": [],
-      "importance": 51,
+      "importance": 50,
       "confidence": "community",
       "headline_en": "pending",
       "headline_zhHant": "【心得】2026年入坑新手和回鍋特工需要注意的事項 // 老手請直接忽略~~",
@@ -845,7 +981,7 @@
       "title_orig": "[TUY8S3.3] Echoes of Central Park Launch, Crossplay Rollout, Conflict Improvements & More",
       "lang_orig": "en",
       "publishedAt": "2026-11-02T15:45:00.000Z",
-      "fetchedAt": "2026-11-22T06:11:23.365Z",
+      "fetchedAt": "2026-11-22T10:11:21.594Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -873,30 +1009,6 @@
       }
     },
     {
-      "id": "1kv30sd",
-      "sourceId": "bahamut",
-      "sourceName": "巴哈姆特 全境封鎖板",
-      "sourceUrl": "https://forum.gamer.com.tw/C.php?bsn=24460&snA=32902",
-      "title_orig": "【心得】超冷門原型天賦:5件熵 高生命值的用途",
-      "lang_orig": "zh",
-      "publishedAt": "2026-11-19T08:40:00.000Z",
-      "fetchedAt": "2026-11-22T06:11:23.365Z",
-      "category": "arsenal",
-      "tags": [],
-      "importance": 46,
-      "confidence": "community",
-      "headline_en": "pending",
-      "headline_zhHant": "【心得】超冷門原型天賦:5件熵 高生命值的用途",
-      "summary_en": "pending",
-      "summary_zhHant": "超冷門原型天賦:5件熵(目前轉換率25%生命值約7X萬若練滿全部轉換率約70%) 全境封鎖2_T10 林肯紀念堂_逆火突…",
-      "summaryKind": "extract",
-      "alsoReportedBy": [],
-      "media": [],
-      "relatedIds": [],
-      "firstSeenAt": "2026-11-19T11:13:10.601Z",
-      "status": "new"
-    },
-    {
       "id": "ccqbq5",
       "sourceId": "steam-news",
       "sourceName": "Ubisoft (via Steam News)",
@@ -904,7 +1016,7 @@
       "title_orig": "The Division 2: 6X XP Event",
       "lang_orig": "en",
       "publishedAt": "2026-11-06T10:31:09.000Z",
-      "fetchedAt": "2026-11-22T06:11:23.365Z",
+      "fetchedAt": "2026-11-22T10:11:21.594Z",
       "category": "missions",
       "tags": [
         "event"
@@ -923,6 +1035,30 @@
       "status": "new"
     },
     {
+      "id": "1kv30sd",
+      "sourceId": "bahamut",
+      "sourceName": "巴哈姆特 全境封鎖板",
+      "sourceUrl": "https://forum.gamer.com.tw/C.php?bsn=24460&snA=32902",
+      "title_orig": "【心得】超冷門原型天賦:5件熵 高生命值的用途",
+      "lang_orig": "zh",
+      "publishedAt": "2026-11-19T08:40:00.000Z",
+      "fetchedAt": "2026-11-22T10:11:21.594Z",
+      "category": "arsenal",
+      "tags": [],
+      "importance": 45,
+      "confidence": "community",
+      "headline_en": "pending",
+      "headline_zhHant": "【心得】超冷門原型天賦:5件熵 高生命值的用途",
+      "summary_en": "pending",
+      "summary_zhHant": "超冷門原型天賦:5件熵(目前轉換率25%生命值約7X萬若練滿全部轉換率約70%) 全境封鎖2_T10 林肯紀念堂_逆火突…",
+      "summaryKind": "extract",
+      "alsoReportedBy": [],
+      "media": [],
+      "relatedIds": [],
+      "firstSeenAt": "2026-11-19T11:13:10.601Z",
+      "status": "new"
+    },
+    {
       "id": "1w2a0q7",
       "sourceId": "ubisoft-en",
       "sourceName": "Ubisoft",
@@ -930,7 +1066,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-22T06:11:23.365Z",
+      "fetchedAt": "2026-11-22T10:11:21.594Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -965,7 +1101,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-22T06:11:23.365Z",
+      "fetchedAt": "2026-11-22T10:11:21.594Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -1000,7 +1136,7 @@
       "title_orig": "【心得】『18米戰神』中央公園DLC新技能：戰利品系統",
       "lang_orig": "zh",
       "publishedAt": "2026-11-17T14:25:00.000Z",
-      "fetchedAt": "2026-11-22T06:11:23.365Z",
+      "fetchedAt": "2026-11-22T10:11:21.594Z",
       "category": "missions",
       "tags": [
         "dlc"
@@ -1026,7 +1162,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-22T06:11:23.365Z",
+      "fetchedAt": "2026-11-22T10:11:21.594Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -1061,7 +1197,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-22T06:11:23.365Z",
+      "fetchedAt": "2026-11-22T10:11:21.594Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -1096,7 +1232,7 @@
       "title_orig": "The Division 2: Echoes of Central Park Launch Twitch Drops",
       "lang_orig": "en",
       "publishedAt": "2026-11-03T15:00:00.000Z",
-      "fetchedAt": "2026-11-22T06:11:23.365Z",
+      "fetchedAt": "2026-11-22T10:11:21.594Z",
       "category": "community",
       "tags": [
         "twitch-drops",
@@ -1124,7 +1260,7 @@
       "title_orig": "【情報】【再次開機】關機維護公告 - 2026/11/17(二) ， 開機後再次加碼進入維修",
       "lang_orig": "zh",
       "publishedAt": "2026-11-16T17:18:00.000Z",
-      "fetchedAt": "2026-11-22T06:11:23.365Z",
+      "fetchedAt": "2026-11-22T10:11:21.594Z",
       "category": "updates",
       "tags": [],
       "importance": 40,
@@ -1148,7 +1284,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-22T06:11:23.365Z",
+      "fetchedAt": "2026-11-22T10:11:21.594Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -1183,7 +1319,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-22T06:11:23.365Z",
+      "fetchedAt": "2026-11-22T10:11:21.594Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -1218,7 +1354,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-22T06:11:23.365Z",
+      "fetchedAt": "2026-11-22T10:11:21.594Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -1253,7 +1389,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-22T06:11:23.365Z",
+      "fetchedAt": "2026-11-22T10:11:21.594Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -1288,7 +1424,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-22T06:11:23.365Z",
+      "fetchedAt": "2026-11-22T10:11:21.594Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -1323,7 +1459,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-22T06:11:23.365Z",
+      "fetchedAt": "2026-11-22T10:11:21.594Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -1358,7 +1494,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-22T06:11:23.365Z",
+      "fetchedAt": "2026-11-22T10:11:21.594Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -1386,30 +1522,6 @@
       }
     },
     {
-      "id": "q5qvmp",
-      "sourceId": "bahamut",
-      "sourceName": "巴哈姆特 全境封鎖板",
-      "sourceUrl": "https://forum.gamer.com.tw/C.php?bsn=24460&snA=32894",
-      "title_orig": "【情報】TU30 / Y8S4 PTS Patchnote翻譯",
-      "lang_orig": "zh",
-      "publishedAt": "2026-11-13T07:31:00.000Z",
-      "fetchedAt": "2026-11-22T06:11:23.365Z",
-      "category": "updates",
-      "tags": [],
-      "importance": 33,
-      "confidence": "community",
-      "headline_en": "pending",
-      "headline_zhHant": "【情報】TU30 / Y8S4 PTS Patchnote翻譯",
-      "summary_en": "pending",
-      "summary_zhHant": "原文公告 以下為AI機翻並且由筆者稍微潤飾過 2F為Y8S4裝備平衡性改動翻譯 《全境封鎖 2》Spearfall PT…",
-      "summaryKind": "extract",
-      "alsoReportedBy": [],
-      "media": [],
-      "relatedIds": [],
-      "firstSeenAt": "2026-11-12T18:47:15.805Z",
-      "status": "new"
-    },
-    {
       "id": "166wyo6",
       "sourceId": "ubisoft-en",
       "sourceName": "Ubisoft",
@@ -1417,7 +1529,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-22T06:11:23.365Z",
+      "fetchedAt": "2026-11-22T10:11:21.594Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -1445,6 +1557,30 @@
       }
     },
     {
+      "id": "q5qvmp",
+      "sourceId": "bahamut",
+      "sourceName": "巴哈姆特 全境封鎖板",
+      "sourceUrl": "https://forum.gamer.com.tw/C.php?bsn=24460&snA=32894",
+      "title_orig": "【情報】TU30 / Y8S4 PTS Patchnote翻譯",
+      "lang_orig": "zh",
+      "publishedAt": "2026-11-13T07:31:00.000Z",
+      "fetchedAt": "2026-11-22T10:11:21.594Z",
+      "category": "updates",
+      "tags": [],
+      "importance": 32,
+      "confidence": "community",
+      "headline_en": "pending",
+      "headline_zhHant": "【情報】TU30 / Y8S4 PTS Patchnote翻譯",
+      "summary_en": "pending",
+      "summary_zhHant": "原文公告 以下為AI機翻並且由筆者稍微潤飾過 2F為Y8S4裝備平衡性改動翻譯 《全境封鎖 2》Spearfall PT…",
+      "summaryKind": "extract",
+      "alsoReportedBy": [],
+      "media": [],
+      "relatedIds": [],
+      "firstSeenAt": "2026-11-12T18:47:15.805Z",
+      "status": "new"
+    },
+    {
       "id": "1ttmry9",
       "sourceId": "ubisoft-en",
       "sourceName": "Ubisoft",
@@ -1452,7 +1588,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-22T06:11:23.365Z",
+      "fetchedAt": "2026-11-22T10:11:21.594Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -1487,7 +1623,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-22T06:11:23.365Z",
+      "fetchedAt": "2026-11-22T10:11:21.594Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -1522,7 +1658,7 @@
       "title_orig": "【情報】【已開機】關機維護公告 - 2026/11/12(四) 16:30",
       "lang_orig": "zh",
       "publishedAt": "2026-11-11T23:46:00.000Z",
-      "fetchedAt": "2026-11-22T06:11:23.365Z",
+      "fetchedAt": "2026-11-22T10:11:21.594Z",
       "category": "updates",
       "tags": [],
       "importance": 30,
@@ -1546,7 +1682,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-22T06:11:23.365Z",
+      "fetchedAt": "2026-11-22T10:11:21.594Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -1581,7 +1717,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-22T06:11:23.365Z",
+      "fetchedAt": "2026-11-22T10:11:21.594Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -1616,7 +1752,7 @@
       "title_orig": "【心得】裝備專精系統心得",
       "lang_orig": "zh",
       "publishedAt": "2026-11-11T00:41:00.000Z",
-      "fetchedAt": "2026-11-22T06:11:23.365Z",
+      "fetchedAt": "2026-11-22T10:11:21.594Z",
       "category": "arsenal",
       "tags": [],
       "importance": 28,
@@ -1640,7 +1776,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-22T06:11:23.365Z",
+      "fetchedAt": "2026-11-22T10:11:21.594Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -1666,146 +1802,28 @@
         "riskNote_en": "Known issue listed by Ubisoft. No workaround yet.",
         "riskNote_zhHant": "pending"
       }
-    },
-    {
-      "id": "1ok88ji",
-      "sourceId": "bahamut",
-      "sourceName": "巴哈姆特 全境封鎖板",
-      "sourceUrl": "https://forum.gamer.com.tw/C.php?bsn=24460&snA=32886",
-      "title_orig": "【情報】【已開機】關機維護公告 - 2026/11/10(二) 16:30，延長 1 小時",
-      "lang_orig": "zh",
-      "publishedAt": "2026-11-10T15:59:00.000Z",
-      "fetchedAt": "2026-11-22T06:11:23.365Z",
-      "category": "updates",
-      "tags": [],
-      "importance": 27,
-      "confidence": "community",
-      "headline_en": "pending",
-      "headline_zhHant": "【情報】【已開機】關機維護公告 - 2026/11/10(二) 16:30，延長 1 小時",
-      "summary_en": "pending",
-      "summary_zhHant": "關機維護時間：2026 年 11 月 10 日 16:30 開始維護 預計維護 5 小時 本次維護將著重於基礎設施更新，…",
-      "summaryKind": "extract",
-      "alsoReportedBy": [],
-      "media": [],
-      "relatedIds": [],
-      "firstSeenAt": "2026-11-10T01:14:51.950Z",
-      "status": "new"
-    },
-    {
-      "id": "qy8rcm",
-      "sourceId": "ubisoft-en",
-      "sourceName": "Ubisoft",
-      "sourceUrl": "https://www.ubisoft.com/en-us/game/the-division/the-division-2/news-updates/1wrUJ1HzY6BF8zzO4AMhJ3/spearfall-pts-patch-notes",
-      "title_orig": "Spearfall PTS Patch Notes",
-      "lang_orig": "en",
-      "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-22T06:11:23.365Z",
-      "category": "glitch-watch",
-      "tags": [
-        "known-issue"
-      ],
-      "importance": 26,
-      "confidence": "official",
-      "headline_en": "Known issue: White Tusk have less Health and Armor in the Legendary Open World…",
-      "headline_zhHant": "pending",
-      "summary_en": "White Tusk have less Health and Armor in the Legendary Open World than in Legendary Main Missions.",
-      "summary_zhHant": "pending",
-      "summaryKind": "extract",
-      "alsoReportedBy": [],
-      "media": [],
-      "relatedIds": [
-        "15yr4ky"
-      ],
-      "firstSeenAt": "2026-11-12T16:55:32.847Z",
-      "status": "new",
-      "glitch": {
-        "state": "active",
-        "firstSeen": "2026-11-12",
-        "banRisk": false,
-        "riskNote_en": "Known issue listed by Ubisoft. No workaround yet.",
-        "riskNote_zhHant": "pending"
-      }
-    },
-    {
-      "id": "sbrqm9",
-      "sourceId": "ubisoft-en",
-      "sourceName": "Ubisoft",
-      "sourceUrl": "https://www.ubisoft.com/en-us/game/the-division/the-division-2/news-updates/1wrUJ1HzY6BF8zzO4AMhJ3/spearfall-pts-patch-notes",
-      "title_orig": "Spearfall PTS Patch Notes",
-      "lang_orig": "en",
-      "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-22T06:11:23.365Z",
-      "category": "glitch-watch",
-      "tags": [
-        "known-issue"
-      ],
-      "importance": 25,
-      "confidence": "official",
-      "headline_en": "Known issue: Enemies from factions other than White Tusk still use Heroic scaling when…",
-      "headline_zhHant": "pending",
-      "summary_en": "Enemies from factions other than White Tusk still use Heroic scaling when Global Difficulty is set to Legendary in Washington, D.C.",
-      "summary_zhHant": "pending",
-      "summaryKind": "extract",
-      "alsoReportedBy": [],
-      "media": [],
-      "relatedIds": [
-        "15yr4ky"
-      ],
-      "firstSeenAt": "2026-11-21T16:48:39.559Z",
-      "status": "new",
-      "glitch": {
-        "state": "active",
-        "firstSeen": "2026-11-12",
-        "banRisk": false,
-        "riskNote_en": "Known issue listed by Ubisoft. No workaround yet.",
-        "riskNote_zhHant": "pending"
-      }
-    },
-    {
-      "id": "1l9fm8s",
-      "sourceId": "bahamut",
-      "sourceName": "巴哈姆特 全境封鎖板",
-      "sourceUrl": "https://forum.gamer.com.tw/C.php?bsn=24460&snA=32758",
-      "title_orig": "【情報】*劇透注意* Y8S3/TU29 獵捕行動 Red Horizon 偵查任務 每週統整",
-      "lang_orig": "zh",
-      "publishedAt": "2026-11-03T17:07:00.000Z",
-      "fetchedAt": "2026-11-22T06:11:23.365Z",
-      "category": "updates",
-      "tags": [],
-      "importance": 22,
-      "confidence": "community",
-      "headline_en": "pending",
-      "headline_zhHant": "【情報】*劇透注意* Y8S3/TU29 獵捕行動 Red Horizon 偵查任務 每週統整",
-      "summary_en": "pending",
-      "summary_zhHant": "【情報】*劇透注意* Y8S3/TU29 獵捕行動 Red Horizon 偵查任務 每週統整",
-      "summaryKind": "extract",
-      "alsoReportedBy": [],
-      "media": [],
-      "relatedIds": [],
-      "firstSeenAt": "2026-11-08T02:44:51.866Z",
-      "status": "new"
     }
   ],
   "sources": [
     {
       "sourceId": "steam-news",
       "ok": true,
-      "checkedAt": "2026-11-22T06:11:23.365Z"
+      "checkedAt": "2026-11-22T10:11:21.594Z"
     },
     {
       "sourceId": "ubisoft-en",
       "ok": true,
-      "checkedAt": "2026-11-22T06:11:23.365Z"
+      "checkedAt": "2026-11-22T10:11:21.594Z"
     },
     {
       "sourceId": "ubisoft-zh-tw",
       "ok": true,
-      "checkedAt": "2026-11-22T06:11:23.365Z"
+      "checkedAt": "2026-11-22T10:11:21.594Z"
     },
     {
       "sourceId": "bahamut",
       "ok": true,
-      "checkedAt": "2026-11-22T06:11:23.365Z"
+      "checkedAt": "2026-11-22T10:11:21.594Z"
     }
   ]
 }

@@ -1,60 +1,60 @@
 {
- "date": "2026-11-21",
+ "date": "2026-11-22",
  "missions": [
   {
    "place": "美術館",
-   "reward": "Core Strength",
-   "kind": "other"
+   "reward": "本影",
+   "kind": "set"
   },
   {
    "place": "國會大廈",
-   "reward": "霰彈槍",
-   "kind": "weapon"
+   "reward": "未來主動權",
+   "kind": "set"
   },
   {
    "place": "傑佛遜廣場",
-   "reward": "鑄造廠",
-   "kind": "set"
+   "reward": "阿爾卑斯",
+   "kind": "brand"
   },
   {
    "place": "林肯紀念堂",
-   "reward": "精密組裝",
-   "kind": "set"
+   "reward": "電力",
+   "kind": "brand"
   },
   {
    "place": "聯邦緊急地堡",
-   "reward": "阿爾卑斯",
+   "reward": "Grupo Sombra S.A.",
    "kind": "brand"
   }
  ],
  "vendor": [
-  "輕機槍",
-  "Chest Pieces"
+  "突擊步槍",
+  "面罩"
  ],
  "english": [
   {
    "place": "The Art Museum",
-   "reward": "Core Strength"
+   "reward": "Umbra Initiative"
   },
   {
    "place": "Capitol Building",
-   "reward": "Shotgun"
+   "reward": "Future Initiative"
   },
   {
    "place": "Jefferson Plaza",
-   "reward": "Foundry Bulwark"
+   "reward": "Alps Summit Armaments"
   },
   {
    "place": "Lincoln Memorial",
-   "reward": "Measured Assembly"
+   "reward": "Electrique"
   },
   {
    "place": "Federal Emergency Bunker",
-   "reward": "Alps Summit Armaments"
+   "reward": "Grupo Sombra S.A."
   }
  ],
  "title": "",
  "url": "https://prototrack.gg/target-loot/target-loot.php",
  "source": "prototrack",
- "fetchedAt": "2026-11-21T08:11:05.579Z"
+ "fetchedAt": "2026-11-22T10:11:21.594Z"
 }
