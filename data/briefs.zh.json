@@ -14910,6 +14910,130 @@
         "說明欄沒有其他內容。"
       ],
       "written": "2026-11-23"
+    },
+    "1sef1rf": {
+      "points": [
+        "影片介紹：英文配裝影片，主題是第 8 年第 3 季（Y8S3）的單人 Pestilence 奇特輕機槍配裝，說明稱可輕鬆應付英勇與傳奇難度內容。",
+        "配裝重點是讓 TDI Kard Custom 的技能階級搭配 Precision Smart Cover 的 DTTOC，把 Plague of the Outcast 傷害疊在整張地圖上。",
+        "說明建議站在隊伍後方，並盡量隨時維持 Pestilence 的層數。",
+        "說明稱適用英勇、傳奇與戰鬥升級 1–4 階，不需要原型（Prototype）裝備。",
+        "影片章節涵蓋：配裝總覽、副武器 The Cooler、胸甲 The Sacrifice、背包 Backbone Lengmo、護膝 Turmoil 的 Bewildered 天賦、為何 Overdogs 手套最佳，以及原型強化。"
+      ],
+      "tables": [
+        {
+          "title": "配裝裝備（依影片說明）",
+          "columns": [
+            "部位",
+            "裝備"
+          ],
+          "rows": [
+            [
+              "主武器",
+              "Pestilence（奇特輕機槍）"
+            ],
+            [
+              "副武器",
+              "The Cooler"
+            ],
+            [
+              "手套",
+              "Overdogs（奇特）"
+            ],
+            [
+              "護膝",
+              "Turmoil"
+            ],
+            [
+              "胸甲",
+              "The Sacrifice"
+            ],
+            [
+              "背包",
+              "Backbone Lengmo"
+            ],
+            [
+              "槍套",
+              "Lengmo"
+            ],
+            [
+              "面罩",
+              "Petrov"
+            ]
+          ]
+        },
+        {
+          "title": "影片章節",
+          "columns": [
+            "時間",
+            "內容"
+          ],
+          "rows": [
+            [
+              "00:00",
+              "單人 Pestilence 配裝"
+            ],
+            [
+              "00:53",
+              "配裝解析（Pestilence 輕機槍）"
+            ],
+            [
+              "02:21",
+              "副武器 The Cooler"
+            ],
+            [
+              "02:44",
+              "TDI Kard Custom + Precision Smart Cover"
+            ],
+            [
+              "04:19",
+              "The Sacrifice 胸甲"
+            ],
+            [
+              "04:44",
+              "Backbone Lengmo 背包"
+            ],
+            [
+              "05:27",
+              "Turmoil 護膝的 Bewildered 天賦"
+            ],
+            [
+              "06:18",
+              "Overdogs 是最佳選擇"
+            ],
+            [
+              "07:36",
+              "為何這樣配"
+            ],
+            [
+              "08:39",
+              "原型強化（Prototype Augments）"
+            ]
+          ]
+        }
+      ],
+      "written": "2026-11-23"
+    },
+    "1e52ve4": {
+      "points": [
+        "影片介紹（依標題）：玩家在 PlayStation 5 上展示以 St Elmos 突擊步槍為核心的突擊兵（Striker）配裝。",
+        "影片沒有說明欄內容，這裡只依標題整理。"
+      ],
+      "written": "2026-11-23"
+    },
+    "12oouud": {
+      "points": [
+        "影片介紹：中文影片，標題主張第 8 階（A8）也能玩突擊「步槍」利希滕貝格，可遠可近，有位移也有爆發。",
+        "說明欄提到這把槍是血月活動的箱子給的，作者不確定現在是否還能取得。",
+        "作者推測下一季可能會成為常駐武器，但這只是猜測。"
+      ],
+      "written": "2026-11-23"
+    },
+    "rouvdt": {
+      "points": [
+        "影片介紹：短影片，標題為 APEX Protocol 原型（PROTOTYPE）T10 戰鬥升級配裝與實戰。",
+        "說明欄稱這是期待已久的特別配裝，並透過聯邦緊急避難所（Federal Emergency Bunker）任務來展示。"
+      ],
+      "written": "2026-11-23"
     }
   }
 }
