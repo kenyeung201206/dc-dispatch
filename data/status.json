@@ -1,11 +1,11 @@
 {
-  "lastRun": "2026-11-23T03:10:29.388Z",
-  "durationMs": 33027,
+  "lastRun": "2026-11-23T06:12:10.392Z",
+  "durationMs": 33260,
   "edition": {
     "date": "2026-11-23",
     "number": 20,
-    "items": 57,
-    "zhPending": 40
+    "items": 58,
+    "zhPending": 41
   },
   "sources": [
     {
@@ -44,10 +44,10 @@
   },
   "newTopics": 4,
   "recentNewTopics": [
-    4,
     6,
     5,
     3,
+    4,
     4,
     4
   ]
