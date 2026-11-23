@@ -450,6 +450,24 @@
       "tags": [
         "news"
       ]
+    },
+    {
+      "kind": "image",
+      "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/5ay0dLWkZPq9Y5frgSzpi7/408bc3ce8c57a46a524b3cd001f09c30/TD2_Steam_Awards_2026_LABOR_OF_LOVE_Web_thumb.jpg?w=1600",
+      "alt_en": "Official image for \"The Division 2: Steam Awards 2026\"",
+      "alt_zhHant": "官方新聞圖片：The Division 2: Steam Awards 2026",
+      "license": "Official promotional image © Ubisoft Entertainment. Shown unmodified, with credit, on a private non-commercial site.",
+      "attribution": "Ubisoft",
+      "attributionUrl": "https://www.ubisoft.com/en-us/game/the-division/the-division-2/news-updates/4SlePThszlLWcrTllz19IG/the-division-2-steam-awards-2026",
+      "aiGenerated": false,
+      "id": "ubi-4SlePThszlLWcrTllz19IG",
+      "width": 1600,
+      "height": 900,
+      "urlSmall": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/5ay0dLWkZPq9Y5frgSzpi7/408bc3ce8c57a46a524b3cd001f09c30/TD2_Steam_Awards_2026_LABOR_OF_LOVE_Web_thumb.jpg?w=640",
+      "widthSmall": 640,
+      "tags": [
+        "news"
+      ]
     }
   ],
   "sectionBanners": {
