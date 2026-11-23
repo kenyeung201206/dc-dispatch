@@ -1,60 +1,60 @@
 {
- "date": "2026-11-22",
+ "date": "2026-11-23",
  "missions": [
   {
    "place": "美術館",
-   "reward": "本影",
-   "kind": "set"
+   "reward": "芬里斯",
+   "kind": "brand"
   },
   {
    "place": "國會大廈",
-   "reward": "未來主動權",
-   "kind": "set"
+   "reward": "霸主",
+   "kind": "brand"
   },
   {
    "place": "傑佛遜廣場",
-   "reward": "阿爾卑斯",
-   "kind": "brand"
+   "reward": "先鋒",
+   "kind": "set"
   },
   {
    "place": "林肯紀念堂",
-   "reward": "電力",
-   "kind": "brand"
+   "reward": "政令",
+   "kind": "set"
   },
   {
    "place": "聯邦緊急地堡",
-   "reward": "影子",
-   "kind": "brand"
+   "reward": "王牌",
+   "kind": "set"
   }
  ],
  "vendor": [
-  "突擊步槍",
+  "輕機槍",
   "面罩"
  ],
  "english": [
   {
    "place": "The Art Museum",
-   "reward": "Umbra Initiative"
+   "reward": "Fenris Group AB"
   },
   {
    "place": "Capitol Building",
-   "reward": "Future Initiative"
+   "reward": "Overlord Armaments"
   },
   {
    "place": "Jefferson Plaza",
-   "reward": "Alps Summit Armaments"
+   "reward": "Tip of the Spear"
   },
   {
    "place": "Lincoln Memorial",
-   "reward": "Electrique"
+   "reward": "Ongoing Directive"
   },
   {
    "place": "Federal Emergency Bunker",
-   "reward": "Grupo Sombra S.A."
+   "reward": "Aces & Eights"
   }
  ],
  "title": "",
  "url": "https://prototrack.gg/target-loot/target-loot.php",
  "source": "prototrack",
- "fetchedAt": "2026-11-22T10:11:21.594Z"
+ "fetchedAt": "2026-11-23T10:11:05.613Z"
 }
