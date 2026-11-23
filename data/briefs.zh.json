@@ -15062,6 +15062,84 @@
         "說明欄標註日期為 2026-11-23，並附上 Twitch 轉播連結；時間若有更改，請留意其 Facebook 群組與時間表。"
       ],
       "written": "2026-11-23"
+    },
+    "1iqrgw1": {
+      "points": [
+        "影片介紹（依標題）：這是一支《全境封鎖2》奇特裝備與 Tier 10 刷取的影片。",
+        "說明欄只有「Division 2」，沒有更多內容，因此影片提到哪些地點、方法或數據，這裡無法得知。"
+      ],
+      "written": "2026-11-23"
+    },
+    "1y0pok4": {
+      "points": [
+        "影片介紹（依標題）：玩家示範以 Hunter’s Fury 四件套為核心的霰彈槍配裝，用在突擊（Assault）全球事件上。",
+        "作者在英雄難度單人通關 Federal Emergency Bunker，稱不少敵人被一發霰彈擊倒。",
+        "配裝思路是貼身近戰：Hunter’s Fury 強化衝鋒槍與霰彈槍的進攻打法，擊殺可使附近敵人迷惑並提供續戰力。",
+        "Matador 背包搭配 Perfect Adrenaline Rush，敵人靠近時獲得額外護甲；再配合 Hunter-Killer 胸甲的 Perfect Intimidate。",
+        "作者提醒：英雄難度下仍要注意站位並善用 Striker 盾牌，強不代表不會倒。"
+      ],
+      "tables": [
+        {
+          "title": "配裝內容",
+          "columns": [
+            "部位",
+            "內容"
+          ],
+          "rows": [
+            [
+              "套裝",
+              "4 x Hunter’s Fury"
+            ],
+            [
+              "背包",
+              "Matador（Perfect Adrenaline Rush）"
+            ],
+            [
+              "胸甲",
+              "Hunter-Killer（Perfect Intimidate）"
+            ],
+            [
+              "專長",
+              "Firewall"
+            ],
+            [
+              "盾牌",
+              "Striker Shield"
+            ],
+            [
+              "技能",
+              "Reviver Hive"
+            ],
+            [
+              "測試霰彈槍",
+              "Sheriff、Fafnir、Thorn、Custom M870 MCS 等"
+            ]
+          ]
+        }
+      ],
+      "written": "2026-11-23"
+    },
+    "1uc3yot": {
+      "points": [
+        "影片介紹（依標題）：台灣 VTuber 珞雪嵐的《全境封鎖2》直播，標題稱會玩戰鬥升級（Escalation），同時完成突擊活動。",
+        "說明欄多為聊天室規則、贊助連結與繪師資訊，沒有遊戲內容的細節。"
+      ],
+      "written": "2026-11-23"
+    },
+    "6l1x7v": {
+      "points": [
+        "影片介紹（依標題）：這是一支《全境封鎖2》的影片，主題是手動製作（手搓）出三項全滿的裝備，標題強調沒有捷徑，只能靠農（刷）。",
+        "影片沒有說明欄內容，具體方法與數據無法得知。"
+      ],
+      "written": "2026-11-23"
+    },
+    "1r21c7n": {
+      "points": [
+        "影片介紹（依標題）：公開測試伺服器（PTS）上新套裝 Field General 的首次試玩影片。",
+        "標題稱可達到 116% DTOC 與 200% 額外護甲；說明欄只表示完整配裝請看連結影片，未提供其他細節。",
+        "說明欄另附作者的 Twitch、TikTok 與 Kick 頻道連結。"
+      ],
+      "written": "2026-11-23"
     }
   }
 }
