@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-24T09:11:17.934Z",
+  "updatedAt": "2026-11-24T10:56:56.005Z",
   "topics": [
     {
       "id": "32900",
@@ -9,6 +9,15 @@
       "replies": 10,
       "views": 747,
       "lastReplyAt": "2026-11-18T15:24:00.000Z"
+    },
+    {
+      "id": "32907",
+      "tag": "討論",
+      "title": "【討論】大佬們都怎安排",
+      "url": "https://forum.gamer.com.tw/C.php?bsn=24460&snA=32907",
+      "replies": 9,
+      "views": 291,
+      "lastReplyAt": "2026-11-24T07:56:56.005Z"
     },
     {
       "id": "32903",
@@ -36,15 +45,6 @@
       "replies": 6,
       "views": 3245,
       "lastReplyAt": "2026-11-20T21:10:00.000Z"
-    },
-    {
-      "id": "32904",
-      "tag": "問題",
-      "title": "【問題】全境封鎖2上西城戰鬥任務之中央公園泥沼挑釁動作",
-      "url": "https://forum.gamer.com.tw/C.php?bsn=24460&snA=32904",
-      "replies": 3,
-      "views": 732,
-      "lastReplyAt": "2026-11-20T05:30:00.000Z"
     }
   ]
 }
