@@ -5,7 +5,9 @@
  * data/video-channels.json, where all its new uploads cost ~2 units a run. Capped at MAX_FOLLOW channels.
  */
 export const DISCOVER_AFTER = 3;
-export const MAX_FOLLOW = 60;
+/** Chinese creators are scarcer and readers want Chinese (owner, 2026-11-25): followed after 2 videos, and first. */
+export const DISCOVER_AFTER_ZH = 2;
+export const MAX_FOLLOW = 80; // 60 → 80 (2026-11-25) so Chinese creators found now have room; ~2 quota units each per run
 
 type Channel = { id: string; name: string; official: boolean };
 export interface CreatorConfig {
@@ -13,7 +15,7 @@ export interface CreatorConfig {
   guideCreators?: Channel[];
   follow?: Channel[];
   /** Channels seen in searches but not followed yet: channel id → name and the video ids found. */
-  discovered?: Record<string, { name: string; videos: string[]; firstSeen: string }>;
+  discovered?: Record<string, { name: string; videos: string[]; firstSeen: string; zh?: boolean }>;
 }
 
 const channelId = (url: string) => /\/channel\/(UC[\w-]{22})/.exec(url)?.[1];
@@ -21,7 +23,7 @@ const channelId = (url: string) => /\/channel\/(UC[\w-]{22})/.exec(url)?.[1];
 /** Updates `discovered` and moves creators with enough videos into `follow`. Returns the names added. */
 export function trackCreators(
   config: CreatorConfig,
-  found: { id: string; channelName?: string; channelUrl?: string; official?: boolean }[],
+  found: { id: string; title?: string; channelName?: string; channelUrl?: string; official?: boolean }[],
   now: Date,
 ): string[] {
   const known = new Set([...(config.channels ?? []), ...(config.guideCreators ?? []), ...(config.follow ?? [])].map((c) => c.id));
@@ -32,17 +34,20 @@ export function trackCreators(
     const e = (d[id] ??= { name: v.channelName ?? id, videos: [], firstSeen: now.toISOString() });
     if (v.channelName) e.name = v.channelName;
     if (!e.videos.includes(v.id)) e.videos = [...e.videos, v.id].slice(-10);
+    if (/[\u3400-\u9fff]/.test(`${v.title ?? ''}${v.channelName ?? ''}`)) e.zh = true;
   }
   const added: string[] = [];
   const follow = (config.follow ??= []);
   // Most videos first, so the most active creators get the free places.
-  for (const [id, e] of Object.entries(d).sort((a, b) => b[1].videos.length - a[1].videos.length)) {
-    if (e.videos.length < DISCOVER_AFTER || follow.length >= MAX_FOLLOW) continue;
+  const enough = (e: { videos: string[]; zh?: boolean }) => e.videos.length >= (e.zh ? DISCOVER_AFTER_ZH : DISCOVER_AFTER);
+  const order = Object.entries(d).sort((a, b) => Number(Boolean(b[1].zh)) - Number(Boolean(a[1].zh)) || b[1].videos.length - a[1].videos.length);
+  for (const [id, e] of order) {
+    if (!enough(e) || follow.length >= MAX_FOLLOW) continue;
     follow.push({ id, name: e.name, official: false });
     delete d[id];
     added.push(e.name);
   }
   // Forget one-off channels after 30 days so the list stays small.
-  for (const [id, e] of Object.entries(d)) if (now.getTime() - Date.parse(e.firstSeen) > 30 * 86_400_000 && e.videos.length < DISCOVER_AFTER) delete d[id];
+  for (const [id, e] of Object.entries(d)) if (now.getTime() - Date.parse(e.firstSeen) > 30 * 86_400_000 && !enough(e)) delete d[id];
   return added;
 }

@@ -11,9 +11,15 @@ import { RUMOUR_WORDS, type VideoCandidate } from './videos.ts';
 
 /**
  * New video stories per update (every ~2 h). The owner wants only the 3–6 most interesting and useful ones,
- * not a flood (2026-11-14): the wide searches are for choosing the best, not for showing more. Half Chinese.
+ * not a flood (2026-11-14): the wide searches are for choosing the best, not for showing more.
+ * Language (owner, 2026-11-25: most readers are in Asia, aim for 80% Chinese / 20% English): up to MAX_ZH Chinese
+ * and MAX_EN English per update; if that gives fewer than MIN_STORIES, English tops it up (Chinese videos are
+ * scarcer than English ones on YouTube, and Bilibili blocks bots).
  */
 export const MAX_VIDEO_STORIES = 6;
+export const MAX_ZH = 5;
+export const MAX_EN = 1;
+export const MIN_STORIES = 3;
 /** At most this many stories from one creator per update, so the few places go to different creators. */
 export const MAX_PER_CHANNEL = 1;
 /** Intel-ish topics get picked first, then by views. */
@@ -76,8 +82,10 @@ export function videoStories(videos: VideoCandidate[], now: Date): Item[] {
       return n < MAX_PER_CHANNEL;
     });
   // Keep room for Chinese-speaking creators (up to half), so Chinese readers get videos they can follow.
-  const zh = ranked.filter((v) => detectLang(v.title) === 'zh').slice(0, MAX_VIDEO_STORIES / 2);
-  const rest = ranked.filter((v) => !zh.includes(v)).slice(0, MAX_VIDEO_STORIES - zh.length);
+  const zh = ranked.filter((v) => detectLang(v.title) === 'zh').slice(0, MAX_ZH);
+  // English: at most MAX_EN, or more only to reach MIN_STORIES when there are too few Chinese videos.
+  const enSlots = Math.min(MAX_VIDEO_STORIES - zh.length, Math.max(MAX_EN, MIN_STORIES - zh.length));
+  const rest = ranked.filter((v) => !zh.includes(v)).slice(0, enSlots);
   const picked = ranked.filter((v) => zh.includes(v) || rest.includes(v));
   return picked.map((v) => {
     const url = `https://www.youtube.com/watch?v=${v.id}`;

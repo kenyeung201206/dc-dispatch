@@ -18,6 +18,7 @@ import HotTopics from './HotTopics.astro';
 import { agentOfTheDay, humourLevel } from '../lib/humour.ts';
 import { videoOfTheDay, videosFor } from '../lib/videos.ts';
 import { bannerFor, imageFor } from '../lib/images.ts';
+import { sourceLang } from '../lib/source-lang.ts';
 
 interface Props {
   locale: Locale;
@@ -89,6 +90,7 @@ const moreVideos = videosFor(locale).filter((v) => v.id !== vod?.id).slice(0, 2)
                 <p class="lm">
                   <span class="newb" data-new-badge data-story-id={r.item.id} data-first-seen={r.item.firstSeenAt} hidden>{t(locale, 'badge.new')}</span>
                   <time class="hud-label" datetime={r.item.firstSeenAt}>{clock(r.item.firstSeenAt!)}</time>
+                  {sourceLang(r.item) && <span class={`lng lng-${sourceLang(r.item)}`} title={t(locale, 'srclang.tip')}>{t(locale, `srclang.${sourceLang(r.item)}` as UiKey)}</span>}
                   <span class="sec">· {t(locale, `section.${r.item.category}` as UiKey)}</span>
                 </p>
                 <a href={routes.story(locale, r.item.id)}>{localized(r.item, 'headline', locale).text}</a>
@@ -196,6 +198,28 @@ const moreVideos = videosFor(locale).filter((v) => v.id !== vod?.id).slice(0, 2)
   <BackPage locale={locale} edition={edition} />
 
 <style>
+  /* Source language: 中文 / 英文 (the original, not our translation). */
+  .lng {
+    display: inline-block;
+    padding: 0 5px;
+    border: 1px solid currentColor;
+    border-radius: 3px;
+    font: 600 0.6875rem / 1.45 var(--font-hud);
+    vertical-align: 1px;
+  }
+  .lng-zh {
+    color: #2ea36f;
+  }
+  .lng-en {
+    color: #4f86c6;
+  }
+  /* Darker on the light 日報 paper, so the small text stays readable (contrast 5.6 / 6.1). */
+  :global(:root[data-theme='day']) .lng-zh {
+    color: #1a6b46;
+  }
+  :global(:root[data-theme='day']) .lng-en {
+    color: #2a5a94;
+  }
   .latest {
     margin: var(--space-4) 0;
     padding: 10px 14px;

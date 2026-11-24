@@ -8,6 +8,7 @@ import { sourceZh } from '../lib/zh.ts';
 import type { PlacedImage } from '../lib/images.ts';
 import { routes } from '../lib/routes.ts';
 import type { Item } from '../schema/item.ts';
+import { sourceLang } from '../lib/source-lang.ts';
 
 interface Props {
   locale: Locale;
@@ -30,6 +31,7 @@ const day = new Intl.DateTimeFormat(locale === 'en' ? 'en' : 'zh-Hant-TW', {
   month: 'short',
   day: 'numeric',
 }).format(new Date(item.publishedAt));
+const srcLang = sourceLang(item);
 ---
 <article class:list={['story', variant]} data-confidence={item.confidence}>
   {item.videoId && !photo && variant !== 'brief' && (
@@ -44,6 +46,7 @@ const day = new Intl.DateTimeFormat(locale === 'en' ? 'en' : 'zh-Hant-TW', {
   <div class="meta">
     {item.firstSeenAt && <span class="newb" data-new-badge data-story-id={item.id} data-first-seen={item.firstSeenAt} hidden>{t(locale, 'badge.new')}</span>}
     <Stamp locale={locale} confidence={item.confidence} />
+    {srcLang && <span class={`lng lng-${srcLang}`} title={t(locale, 'srclang.tip')}>{t(locale, `srclang.${srcLang}`)}</span>}
     {item.status === 'updated' && <span class="hud-label upd">{t(locale, 'status.updated')}</span>}
     <time class="hud-label" datetime={item.publishedAt} title={formatDate(item.publishedAt, locale)}>{day}</time>
     <FavButton locale={locale} id={item.id} />
@@ -81,6 +84,28 @@ const day = new Intl.DateTimeFormat(locale === 'en' ? 'en' : 'zh-Hant-TW', {
 </article>
 
 <style>
+  /* Source language: 中文 / 英文 (the original, not our translation). */
+  .lng {
+    display: inline-block;
+    padding: 0 5px;
+    border: 1px solid currentColor;
+    border-radius: 3px;
+    font: 600 0.6875rem / 1.45 var(--font-hud);
+    vertical-align: 1px;
+  }
+  .lng-zh {
+    color: #2ea36f;
+  }
+  .lng-en {
+    color: #4f86c6;
+  }
+  /* Darker on the light 日報 paper, so the small text stays readable (contrast 5.6 / 6.1). */
+  :global(:root[data-theme='day']) .lng-zh {
+    color: #1a6b46;
+  }
+  :global(:root[data-theme='day']) .lng-en {
+    color: #2a5a94;
+  }
   .story {
     padding-bottom: var(--space-4);
   }

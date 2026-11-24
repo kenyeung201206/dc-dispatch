@@ -189,6 +189,9 @@ Find and summarise (with links): Ubisoft's current **fan site / fan content / br
 - A picked story must not silently disappear: if the writer can't summarise it, it still gets a Chinese title and a
   short honest introduction from its title; it is dropped only when there is truly nothing to say.
 - The daily 戰鬥升級 post is **not** a topic (it has its own box).
+- **Language mix (2026-11-25): aim for 80% Chinese / 20% English** — most readers are in Asia. Per update: up to 5
+  Chinese videos and at most 1 English; when there are too few Chinese ones, English tops it up to 3 (the 3–6 rule).
+  Chinese creators are found and followed first. Every story shows its source language (中文 / 英文).
 - If updates keep bringing fewer than 3 new topics, treat it as a bug to fix (find more sources or fix selection),
   not as "there was no news".
 
