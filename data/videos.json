@@ -1,6 +1,69 @@
 {
   "videos": [
     {
+      "id": "McgcM7syPVk",
+      "title": "Atlasbasket - Volos League - Division 1 - Round 9 - ΚΕΝΤΑΥΡΟΣ vs ΛΑΓΟΚΕΦΑΛΟΙ",
+      "channelName": "Atlasbasket",
+      "channelUrl": "https://www.youtube.com/channel/UCRTTtMCMaxoKT11U1MekmwQ",
+      "publishedAt": "2026-11-24T06:00:18.000Z",
+      "official": false,
+      "row": "more",
+      "checkedAt": "2026-11-24T06:08:20.285Z",
+      "via": "youtube-api",
+      "rumour": false
+    },
+    {
+      "id": "5rsF8UXM7XU",
+      "title": "Atlasbasket - Volos League - Division 2 - Round 9 - ΑΚΡΩΤΗΡΙ DOCTORS vs NO NAME",
+      "channelName": "Atlasbasket",
+      "channelUrl": "https://www.youtube.com/channel/UCRTTtMCMaxoKT11U1MekmwQ",
+      "publishedAt": "2026-11-24T05:59:15.000Z",
+      "official": false,
+      "row": "more",
+      "checkedAt": "2026-11-24T06:08:20.285Z",
+      "via": "youtube-api",
+      "rumour": false
+    },
+    {
+      "id": "UFjz97m9Was",
+      "title": "Division 2's Veer Overrides Explained #TheDivision2 #Shorts",
+      "channelName": "DJTICKLE",
+      "channelUrl": "https://www.youtube.com/channel/UCo1i3wQmofsjU6QQwKiPKRA",
+      "publishedAt": "2026-11-24T05:26:40.000Z",
+      "durationSec": 37,
+      "official": false,
+      "row": "more",
+      "checkedAt": "2026-11-24T06:08:20.285Z",
+      "via": "youtube-api",
+      "rumour": false
+    },
+    {
+      "id": "rElbraVMyvw",
+      "title": "Atlasbasket - Volos League - Division 2 - Round 9 - LAFKOS BC vs ΧΡΕΩΜΕΝΟΙ",
+      "channelName": "Atlasbasket",
+      "channelUrl": "https://www.youtube.com/channel/UCRTTtMCMaxoKT11U1MekmwQ",
+      "publishedAt": "2026-11-24T05:25:12.000Z",
+      "durationSec": 4441,
+      "official": false,
+      "row": "more",
+      "checkedAt": "2026-11-24T06:08:20.285Z",
+      "via": "youtube-api",
+      "rumour": false
+    },
+    {
+      "id": "nR0Y9G3qtbk",
+      "title": "The Division 2 - Echoes of Central Park - Legendary/Master/Escalation Tier 10 Content! Who Hoo!",
+      "channelName": "Michael Rebirth Studio",
+      "channelUrl": "https://www.youtube.com/channel/UCx3wlNlbXFYvfd0ImC9aEYg",
+      "publishedAt": "2026-11-24T04:41:59.000Z",
+      "durationSec": 4136,
+      "official": false,
+      "row": "more",
+      "checkedAt": "2026-11-24T06:08:20.285Z",
+      "via": "youtube-api",
+      "rumour": false
+    },
+    {
       "id": "HtqnxNV4m14",
       "title": "Hunting Moon Cultist Bounties for Red Moon Keys! 🎯🔑 | The Division 2 (Red Moon Throwback) #shorts",
       "channelName": "Tombro87",
@@ -54,13 +117,14 @@
     },
     {
       "id": "1NS0jz8ZHHk",
-      "title": "The Division 2 - Echoes of Central Park - Legendary/Master/Escalation Tier 10 Content! Who Hoo!",
+      "title": "The Division 2 - Echoes of Central Park - Heroic / Striker Team Hazard Build, Guardian Killer Setup!",
       "channelName": "Michael Rebirth Studio",
       "channelUrl": "https://www.youtube.com/channel/UCx3wlNlbXFYvfd0ImC9aEYg",
       "publishedAt": "2026-11-24T02:42:19.000Z",
+      "durationSec": 2383,
       "official": false,
-      "row": "more",
-      "checkedAt": "2026-11-24T03:04:20.541Z",
+      "row": "build-guides",
+      "checkedAt": "2026-11-24T06:08:20.285Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -190,8 +254,8 @@
       "durationSec": 3894,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-24T03:04:20.541Z",
-      "via": "youtube-search",
+      "checkedAt": "2026-11-24T06:08:20.285Z",
+      "via": "youtube-api",
       "rumour": false
     },
     {
@@ -203,8 +267,8 @@
       "durationSec": 159,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-24T03:04:20.541Z",
-      "via": "youtube-search",
+      "checkedAt": "2026-11-24T06:08:20.285Z",
+      "via": "youtube-api",
       "rumour": false
     },
     {
@@ -255,7 +319,7 @@
       "durationSec": 7979,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-24T03:04:20.541Z",
+      "checkedAt": "2026-11-24T06:08:20.285Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -265,9 +329,10 @@
       "channelName": "Died Again Gaming",
       "channelUrl": "https://www.youtube.com/channel/UCrK99e79TwSpgElDb-r-Lpg",
       "publishedAt": "2026-11-24T00:36:33.000Z",
+      "durationSec": 9184,
       "official": false,
       "row": "more",
-      "checkedAt": "2026-11-24T03:04:20.541Z",
+      "checkedAt": "2026-11-24T06:08:20.285Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -306,8 +371,8 @@
       "durationSec": 50,
       "official": false,
       "row": "build-guides",
-      "checkedAt": "2026-11-24T03:04:20.541Z",
-      "via": "youtube-search",
+      "checkedAt": "2026-11-24T06:08:20.285Z",
+      "via": "youtube-api",
       "rumour": false
     },
     {
@@ -363,71 +428,6 @@
       "rumour": false
     },
     {
-      "id": "xi1bVMfMcVM",
-      "title": "Cómo conseguir la Capo menor en The Division 2",
-      "channelName": "SDCRISS",
-      "channelUrl": "https://www.youtube.com/channel/UCxQqRElxuPVqRanOv0Bd5dw",
-      "publishedAt": "2026-11-24T00:01:44.000Z",
-      "durationSec": 22,
-      "official": false,
-      "row": "more",
-      "checkedAt": "2026-11-24T03:04:20.541Z",
-      "via": "youtube-search",
-      "rumour": false
-    },
-    {
-      "id": "7fa3G3Qr6ZU",
-      "title": "La exótica que casi nadie usa en The Division 2",
-      "channelName": "SDCRISS",
-      "channelUrl": "https://www.youtube.com/channel/UCxQqRElxuPVqRanOv0Bd5dw",
-      "publishedAt": "2026-11-23T23:59:58.000Z",
-      "durationSec": 34,
-      "official": false,
-      "row": "more",
-      "checkedAt": "2026-11-24T03:04:20.541Z",
-      "via": "youtube-search",
-      "rumour": false
-    },
-    {
-      "id": "cTNviDe_SgI",
-      "title": "Esta semana pégate al enemigo en The Division 2",
-      "channelName": "SDCRISS",
-      "channelUrl": "https://www.youtube.com/channel/UCxQqRElxuPVqRanOv0Bd5dw",
-      "publishedAt": "2026-11-23T23:59:41.000Z",
-      "durationSec": 33,
-      "official": false,
-      "row": "more",
-      "checkedAt": "2026-11-24T03:04:20.541Z",
-      "via": "youtube-search",
-      "rumour": false
-    },
-    {
-      "id": "9-L0tH2-KZ4",
-      "title": "Expliqué toda la estrategia y nadie me oía 🤦‍♂️",
-      "channelName": "SDCRISS",
-      "channelUrl": "https://www.youtube.com/channel/UCxQqRElxuPVqRanOv0Bd5dw",
-      "publishedAt": "2026-11-23T23:59:22.000Z",
-      "durationSec": 79,
-      "official": false,
-      "row": "more",
-      "checkedAt": "2026-11-24T03:04:20.541Z",
-      "via": "youtube-search",
-      "rumour": false
-    },
-    {
-      "id": "OpUNV3E3I1I",
-      "title": "First Look at NEW \"August\" Exotic AR (Memento PVE Build)",
-      "channelName": "Kamikazevondoom",
-      "channelUrl": "https://www.youtube.com/channel/UCWd5S9-AEf26j0wY3P8TOhw",
-      "publishedAt": "2026-11-23T23:54:30.000Z",
-      "durationSec": 179,
-      "official": false,
-      "row": "intel",
-      "checkedAt": "2026-11-24T03:04:20.541Z",
-      "via": "youtube-search",
-      "rumour": true
-    },
-    {
       "id": "Q2FMKC4GdE8",
       "title": "The Division 2: Spearfall Season Launch Livestream",
       "channelName": "Ubisoft",
@@ -435,7 +435,7 @@
       "publishedAt": "2026-11-23T14:20:46.000Z",
       "official": true,
       "row": "more",
-      "checkedAt": "2026-11-24T03:04:20.541Z",
+      "checkedAt": "2026-11-24T06:08:20.285Z",
       "via": "youtube-api",
       "rumour": false
     },
@@ -487,7 +487,7 @@
       "publishedAt": "2026-11-02T13:48:39.000Z",
       "official": true,
       "row": "more",
-      "checkedAt": "2026-11-24T03:04:20.541Z",
+      "checkedAt": "2026-11-24T06:08:20.285Z",
       "via": "ubisoft-page",
       "rumour": false
     },
@@ -500,7 +500,7 @@
       "publishedAt": "2026-10-30T18:16:35.000Z",
       "official": true,
       "row": "trailers",
-      "checkedAt": "2026-11-24T03:04:20.541Z",
+      "checkedAt": "2026-11-24T06:08:20.285Z",
       "via": "ubisoft-page",
       "rumour": false
     },
