@@ -1,60 +1,60 @@
 {
- "date": "2026-11-23",
+ "date": "2026-11-24",
  "missions": [
   {
-   "place": "美術館",
+   "place": "五角",
+   "reward": "中國光能",
+   "kind": "brand"
+  },
+  {
+   "place": "國防實驗室",
+   "reward": "彼得羅夫",
+   "kind": "brand"
+  },
+  {
+   "place": "District Union Arena",
    "reward": "芬里斯",
    "kind": "brand"
   },
   {
-   "place": "國會大廈",
-   "reward": "霸主",
+   "place": "Roosevelt Island",
+   "reward": "影子",
    "kind": "brand"
   },
   {
-   "place": "傑佛遜廣場",
-   "reward": "先鋒",
-   "kind": "set"
-  },
-  {
-   "place": "林肯紀念堂",
-   "reward": "政令",
-   "kind": "set"
-  },
-  {
-   "place": "聯邦緊急地堡",
-   "reward": "王牌",
-   "kind": "set"
+   "place": "太空總署",
+   "reward": "護甲",
+   "kind": "slot"
   }
  ],
  "vendor": [
-  "輕機槍",
-  "面罩"
+  "步槍",
+  "槍套"
  ],
  "english": [
   {
-   "place": "The Art Museum",
+   "place": "The Pentagon",
+   "reward": "China Light Industries"
+  },
+  {
+   "place": "DARPA Research Labs",
+   "reward": "Petrov Defense Group"
+  },
+  {
+   "place": "District Union Arena",
    "reward": "Fenris Group AB"
   },
   {
-   "place": "Capitol Building",
-   "reward": "Overlord Armaments"
+   "place": "Roosevelt Island",
+   "reward": "Grupo Sombra S.A."
   },
   {
-   "place": "Jefferson Plaza",
-   "reward": "Tip of the Spear"
-  },
-  {
-   "place": "Lincoln Memorial",
-   "reward": "Ongoing Directive"
-  },
-  {
-   "place": "Federal Emergency Bunker",
-   "reward": "Aces & Eights"
+   "place": "Space Administration HQ",
+   "reward": "Body Armor"
   }
  ],
  "title": "",
  "url": "https://prototrack.gg/target-loot/target-loot.php",
  "source": "prototrack",
- "fetchedAt": "2026-11-23T10:11:05.613Z"
+ "fetchedAt": "2026-11-24T09:11:17.934Z"
 }
