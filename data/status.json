@@ -1,11 +1,11 @@
 {
-  "lastRun": "2026-11-24T14:15:36.439Z",
-  "durationMs": 40821,
+  "lastRun": "2026-11-24T17:54:41.415Z",
+  "durationMs": 39941,
   "edition": {
-    "date": "2026-11-24",
-    "number": 21,
-    "items": 59,
-    "zhPending": 46
+    "date": "2026-11-25",
+    "number": 22,
+    "items": 35,
+    "zhPending": 26
   },
   "sources": [
     {
@@ -25,13 +25,17 @@
     },
     {
       "id": "bahamut",
-      "ok": true,
-      "items": 12
+      "ok": false,
+      "items": 0,
+      "note": "Error: HTTP 403",
+      "failingSince": "2026-11-24T17:54:01.474Z"
     },
     {
       "id": "bahamut-hot",
-      "ok": true,
-      "items": 5
+      "ok": false,
+      "items": 0,
+      "note": "Error: 巴哈 board page not fetched this run",
+      "failingSince": "2026-11-24T17:54:01.474Z"
     }
   ],
   "videos": {
@@ -39,16 +43,16 @@
     "youtubeApiConfigured": true
   },
   "budget": {
-    "youtubeQuotaUnits": 637,
+    "youtubeQuotaUnits": 677,
     "costUsd": 0
   },
-  "newTopics": 6,
+  "newTopics": 7,
   "recentNewTopics": [
     6,
     6,
     6,
-    6,
     7,
-    6
+    6,
+    7
   ]
 }
