@@ -15458,6 +15458,98 @@
         "武器效果與配裝內容未知"
       ],
       "written": "2026-11-24"
+    },
+    "1onl5q8": {
+      "points": [
+        "影片介紹（依標題）：與全境封鎖無關，是英雄聯盟實況主錦標賽 LTK Season 總決賽第 2 天的精華",
+        "說明欄提到這是 Riot Games 支持的「League The k4sen」賽事，並列出贊助商與官方帳號",
+        "比賽內容與結果說明欄沒有提及"
+      ],
+      "written": "2026-11-24"
+    },
+    "mrl19d": {
+      "points": [
+        "玩家影片，討論跨平台對戰（crossplay）對全境封鎖 2 PvP 是好事還是壞事",
+        "優點：玩家基數增加、排隊時間變短、有更多新玩家可一起或對戰",
+        "缺點：PC 外掛問題、主機玩家可能吃虧、伺服器可能不穩",
+        "影片最後會給出作者的結論，說明欄未提結論內容"
+      ],
+      "written": "2026-11-24"
+    },
+    "hxhxx6": {
+      "points": [
+        "影片介紹（依標題）：玩家影片，提醒「明天前要做」的事，內容是守護者面具（Guardian Masks）活動最後一天，以及本週重點整理",
+        "說明欄只有標籤與頻道會員、訂閱連結，沒有細節",
+        "具體要做什麼、截止時間，說明欄未提"
+      ],
+      "written": "2026-11-24"
+    },
+    "lla4l3": {
+      "points": [
+        "影片介紹（依標題）：玩家短影片，評價新的腐蝕陷阱（Corrosive Trap）好不好用",
+        "說明欄只有頻道簡介、連結與兌換碼，沒有陷阱的效果或數據",
+        "評價結果未知"
+      ],
+      "written": "2026-11-24"
+    },
+    "79kqif": {
+      "points": [
+        "影片介紹（依標題）：玩家短影片，主張 Y8S3 追捕/狩獵任務（Manhunt）裡的衝鋒型敵人（Rushers）很容易對付",
+        "說明欄指向完整影片，並只有頻道簡介與標籤",
+        "具體打法未知"
+      ],
+      "written": "2026-11-24"
+    },
+    "7aojip": {
+      "points": [
+        "玩家短影片整理 11 月 23 日升級挑戰（Escalation）各地點的目標掉落（該日已過）",
+        "標示為優先的是 Lincoln Memorial 的 Ongoing Directive 與 Federal Emergency Bunker 的 Aces & Eights",
+        "原型補給箱（Prototype caches）：面具與輕機槍"
+      ],
+      "tables": [
+        {
+          "title": "11 月 23 日升級挑戰目標掉落",
+          "columns": [
+            "地點",
+            "目標掉落",
+            "類型",
+            "優先"
+          ],
+          "rows": [
+            [
+              "The Art Museum",
+              "Fenris Group AB",
+              "品牌套裝",
+              "否"
+            ],
+            [
+              "Capitol Building",
+              "Overlord Armaments",
+              "品牌套裝",
+              "否"
+            ],
+            [
+              "Jefferson Plaza",
+              "Tip of the Spear",
+              "裝備套裝",
+              "否"
+            ],
+            [
+              "Lincoln Memorial",
+              "Ongoing Directive",
+              "裝備套裝",
+              "是"
+            ],
+            [
+              "Federal Emergency Bunker",
+              "Aces & Eights",
+              "裝備套裝",
+              "是"
+            ]
+          ]
+        }
+      ],
+      "written": "2026-11-24"
     }
   }
 }
