@@ -28,6 +28,19 @@
    "status": "needs-owner",
    "attempts": 1,
    "note": "依賴審計失敗：picomatch（<=4.0.7，GHSA-fc5q-39xc-vjpf，ReDoS）為 high，但目前沒有已修補版本（npm 最新即 4.0.7），經 astro 等多條間接依賴引入。要通過只能忽略此公告或放寬 CI 的 audit 步驟（需改 .github/workflows/），我無權自行處理。請決定：暫時忽略該公告（例如 pnpm auditConfig.ignoreGhsas），或等上游發布修補版本。"
+  },
+  {
+   "id": "202611251813-3",
+   "workflow": "Daily edition",
+   "url": "https://github.com/kenyeung201206/dc-dispatch/actions/runs/45672534222",
+   "at": "2026-11-25T18:13:46.892Z",
+   "lastSeen": "2026-11-25T18:13:46.892Z",
+   "seen": 1,
+   "failedSteps": "Report problems",
+   "signature": "Published in safe mode. A check failed, but this code passed CI, so the cause is today's data: zh.test.ts > Chinese-only pages > exotics and patches have Chinese, and change lines line up one-to-one",
+   "log": "refresh\tReport problems\t﻿2026-11-25T18:13:27.5099802Z ##[group]Run echo \"::error::$REASON\"\necho \"::error::$REASON\"\nexit 1\nshell: /usr/bin/bash -e {0}\nenv:\n  ASTRO_TELEMETRY_DISABLED: 1\n  PNPM_HOME: /home/runner/setup-pnpm/node_modules/.bin\n  REASON: Published in safe mode. A check failed, but this code passed CI, so the cause is today's data: zh.test.ts > Chinese-only pages > exotics and patches have Chinese, and change lines line up one-to-one\n##[error]Published in safe mode. A check failed, but this code passed CI, so the cause is today's data: zh.test.ts > Chinese-only pages > exotics and patches have Chinese, and change lines line up one-to-one\n##[error]Process completed with exit code 1.",
+   "status": "open",
+   "attempts": 0
   }
  ]
 }
