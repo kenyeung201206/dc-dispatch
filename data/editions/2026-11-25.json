@@ -1,7 +1,7 @@
 {
   "date": "2026-11-25",
   "editionNumber": 22,
-  "generatedAt": "2026-11-25T01:06:32.485Z",
+  "generatedAt": "2026-11-25T04:11:30.076Z",
   "meta": {
     "season_en": "Red Horizon",
     "season_zhHant": "Red Horizon 賽季",
@@ -52,13 +52,13 @@
       "title_orig": "The Division 2: Crossplay Live Now",
       "lang_orig": "en",
       "publishedAt": "2026-11-18T18:00:17.000Z",
-      "fetchedAt": "2026-11-25T01:06:32.485Z",
+      "fetchedAt": "2026-11-25T04:11:30.076Z",
       "category": "missions",
       "tags": [
         "crossplay",
         "event"
       ],
-      "importance": 70,
+      "importance": 69,
       "confidence": "official",
       "headline_en": "The Division 2: Crossplay Live Now",
       "headline_zhHant": "pending",
@@ -79,7 +79,7 @@
       "title_orig": "The Division 2: Steam Awards 2026",
       "lang_orig": "en",
       "publishedAt": "2026-11-23T17:00:00.000Z",
-      "fetchedAt": "2026-11-25T01:06:32.485Z",
+      "fetchedAt": "2026-11-25T04:11:30.076Z",
       "category": "missions",
       "tags": [
         "crossplay",
@@ -193,7 +193,7 @@
       "title_orig": "The Division 2: Echoes of Central Park Event Pass Twitch Drops",
       "lang_orig": "en",
       "publishedAt": "2026-11-10T16:00:00.000Z",
-      "fetchedAt": "2026-11-25T01:06:32.485Z",
+      "fetchedAt": "2026-11-25T04:11:30.076Z",
       "category": "community",
       "tags": [
         "event",
@@ -225,6 +225,34 @@
       "imageId": "ubi-5jeY7kzIeBLvfHja0iBIuX",
       "relatedIds": [],
       "firstSeenAt": "2026-11-10T16:46:28.397Z",
+      "status": "new"
+    },
+    {
+      "id": "wiongg",
+      "sourceId": "youtube",
+      "sourceName": "Azazel's Gaming Realm",
+      "sourceUrl": "https://www.youtube.com/watch?v=YXNAkJWsrQE",
+      "title_orig": "5.6M HEALTH + 2.8M ARMOR! This Tank Build Can’t Die | The Division 2",
+      "lang_orig": "en",
+      "publishedAt": "2026-11-24T20:03:07.000Z",
+      "fetchedAt": "2026-11-25T04:11:30.076Z",
+      "category": "builds",
+      "tags": [
+        "season",
+        "video"
+      ],
+      "importance": 57,
+      "confidence": "community",
+      "headline_en": "5.6M HEALTH + 2.8M ARMOR! This Tank Build Can’t Die | The Division 2",
+      "headline_zhHant": "pending",
+      "summary_en": "🔥 MASSIVE HEALTH + 2.8 MILLION ARMOR?! This Division 2 TANK BUILD combines AEGIS DAMAGE RESISTANCE, PERFECT CLUTCH HEALING, and some absolutely RIDICULOUS SURVIVABILITY!",
+      "summary_zhHant": "pending",
+      "summaryKind": "extract",
+      "alsoReportedBy": [],
+      "media": [],
+      "videoId": "YXNAkJWsrQE",
+      "relatedIds": [],
+      "firstSeenAt": "2026-11-25T04:11:30.076Z",
       "status": "new"
     },
     {
@@ -451,7 +479,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-25T01:06:32.485Z",
+      "fetchedAt": "2026-11-25T04:11:30.076Z",
       "category": "updates",
       "tags": [
         "known-issue",
@@ -489,30 +517,6 @@
         "sbrqm9"
       ],
       "firstSeenAt": "2026-11-12T16:55:32.847Z",
-      "status": "new"
-    },
-    {
-      "id": "1i36zun",
-      "sourceId": "bahamut",
-      "sourceName": "巴哈姆特 全境封鎖板",
-      "sourceUrl": "https://forum.gamer.com.tw/C.php?bsn=24460&snA=32908",
-      "title_orig": "【心得】全境封鎖2_威脅度+200完美靈巧身手守護者反射盾_T10美國歷史博物館",
-      "lang_orig": "zh",
-      "publishedAt": "2026-11-24T09:14:00.000Z",
-      "fetchedAt": "2026-11-25T01:06:32.485Z",
-      "category": "builds",
-      "tags": [],
-      "importance": 51,
-      "confidence": "community",
-      "headline_en": "pending",
-      "headline_zhHant": "【心得】全境封鎖2_威脅度+200完美靈巧身手守護者反射盾_T10美國歷史博物館",
-      "summary_en": "pending",
-      "summary_zhHant": "套裝操作: 此套裝穩定提約莫團隊3倍的承受傷害並利用高威脅度將敵人趕出掩體吸引砲火讓隊友開火擊殺敵人！",
-      "summaryKind": "extract",
-      "alsoReportedBy": [],
-      "media": [],
-      "relatedIds": [],
-      "firstSeenAt": "2026-11-24T10:56:56.005Z",
       "status": "new"
     },
     {
@@ -570,6 +574,57 @@
       "status": "new"
     },
     {
+      "id": "1i36zun",
+      "sourceId": "bahamut",
+      "sourceName": "巴哈姆特 全境封鎖板",
+      "sourceUrl": "https://forum.gamer.com.tw/C.php?bsn=24460&snA=32908",
+      "title_orig": "【心得】全境封鎖2_威脅度+200完美靈巧身手守護者反射盾_T10美國歷史博物館",
+      "lang_orig": "zh",
+      "publishedAt": "2026-11-24T09:14:00.000Z",
+      "fetchedAt": "2026-11-25T04:11:30.076Z",
+      "category": "builds",
+      "tags": [],
+      "importance": 50,
+      "confidence": "community",
+      "headline_en": "pending",
+      "headline_zhHant": "【心得】全境封鎖2_威脅度+200完美靈巧身手守護者反射盾_T10美國歷史博物館",
+      "summary_en": "pending",
+      "summary_zhHant": "套裝操作: 此套裝穩定提約莫團隊3倍的承受傷害並利用高威脅度將敵人趕出掩體吸引砲火讓隊友開火擊殺敵人！",
+      "summaryKind": "extract",
+      "alsoReportedBy": [],
+      "media": [],
+      "relatedIds": [],
+      "firstSeenAt": "2026-11-24T10:56:56.005Z",
+      "status": "new"
+    },
+    {
+      "id": "105b1mn",
+      "sourceId": "youtube",
+      "sourceName": "葉庭宇",
+      "sourceUrl": "https://www.youtube.com/watch?v=UIkewEyUR3A",
+      "title_orig": "全境封鎖2_6紅完美效率第一_SOLO傳奇羅斯福島_36m37s",
+      "lang_orig": "zh",
+      "publishedAt": "2026-11-24T05:49:34.000Z",
+      "fetchedAt": "2026-11-25T04:11:30.076Z",
+      "category": "community",
+      "tags": [
+        "video"
+      ],
+      "importance": 50,
+      "confidence": "community",
+      "headline_en": "pending",
+      "headline_zhHant": "全境封鎖2_6紅完美效率第一_SOLO傳奇羅斯福島_36m37s",
+      "summary_en": "pending",
+      "summary_zhHant": "有手就會 6紅主屬性單刷5大傳奇配裝 如果是5政令5大傳奇也不是問題！",
+      "summaryKind": "extract",
+      "alsoReportedBy": [],
+      "media": [],
+      "videoId": "UIkewEyUR3A",
+      "relatedIds": [],
+      "firstSeenAt": "2026-11-25T04:11:30.076Z",
+      "status": "new"
+    },
+    {
       "id": "jrg9a1",
       "sourceId": "ubisoft-en",
       "sourceName": "Ubisoft",
@@ -577,7 +632,7 @@
       "title_orig": "[TUY8S3.3] Echoes of Central Park Launch, Crossplay Rollout, Conflict Improvements & More",
       "lang_orig": "en",
       "publishedAt": "2026-11-02T15:45:00.000Z",
-      "fetchedAt": "2026-11-25T01:06:32.485Z",
+      "fetchedAt": "2026-11-25T04:11:30.076Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -612,7 +667,7 @@
       "title_orig": "The Division 2: 6X XP Event",
       "lang_orig": "en",
       "publishedAt": "2026-11-06T10:31:09.000Z",
-      "fetchedAt": "2026-11-25T01:06:32.485Z",
+      "fetchedAt": "2026-11-25T04:11:30.076Z",
       "category": "missions",
       "tags": [
         "event"
@@ -638,7 +693,7 @@
       "title_orig": "【心得】2026年入坑新手和回鍋特工需要注意的事項 // 老手請直接忽略~~",
       "lang_orig": "zh",
       "publishedAt": "2026-11-21T16:13:00.000Z",
-      "fetchedAt": "2026-11-25T01:06:32.485Z",
+      "fetchedAt": "2026-11-25T04:11:30.076Z",
       "category": "builds",
       "tags": [],
       "importance": 45,
@@ -662,7 +717,7 @@
       "title_orig": "【心得】超冷門原型天賦:5件熵 高生命值的用途",
       "lang_orig": "zh",
       "publishedAt": "2026-11-19T08:40:00.000Z",
-      "fetchedAt": "2026-11-25T01:06:32.485Z",
+      "fetchedAt": "2026-11-25T04:11:30.076Z",
       "category": "arsenal",
       "tags": [],
       "importance": 40,
@@ -686,7 +741,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-25T01:06:32.485Z",
+      "fetchedAt": "2026-11-25T04:11:30.076Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -721,7 +776,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-25T01:06:32.485Z",
+      "fetchedAt": "2026-11-25T04:11:30.076Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -756,7 +811,7 @@
       "title_orig": "【心得】『18米戰神』中央公園DLC新技能：戰利品系統",
       "lang_orig": "zh",
       "publishedAt": "2026-11-17T14:25:00.000Z",
-      "fetchedAt": "2026-11-25T01:06:32.485Z",
+      "fetchedAt": "2026-11-25T04:11:30.076Z",
       "category": "missions",
       "tags": [
         "dlc"
@@ -782,7 +837,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-25T01:06:32.485Z",
+      "fetchedAt": "2026-11-25T04:11:30.076Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -817,7 +872,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-25T01:06:32.485Z",
+      "fetchedAt": "2026-11-25T04:11:30.076Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -852,7 +907,7 @@
       "title_orig": "【情報】【再次開機】關機維護公告 - 2026/11/17(二) ， 開機後再次加碼進入維修",
       "lang_orig": "zh",
       "publishedAt": "2026-11-16T17:18:00.000Z",
-      "fetchedAt": "2026-11-25T01:06:32.485Z",
+      "fetchedAt": "2026-11-25T04:11:30.076Z",
       "category": "updates",
       "tags": [],
       "importance": 34,
@@ -876,7 +931,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-25T01:06:32.485Z",
+      "fetchedAt": "2026-11-25T04:11:30.076Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -911,7 +966,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-25T01:06:32.485Z",
+      "fetchedAt": "2026-11-25T04:11:30.076Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -946,7 +1001,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-25T01:06:32.485Z",
+      "fetchedAt": "2026-11-25T04:11:30.076Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -981,7 +1036,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-25T01:06:32.485Z",
+      "fetchedAt": "2026-11-25T04:11:30.076Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -1016,7 +1071,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-25T01:06:32.485Z",
+      "fetchedAt": "2026-11-25T04:11:30.076Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -1051,7 +1106,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-25T01:06:32.485Z",
+      "fetchedAt": "2026-11-25T04:11:30.076Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -1086,7 +1141,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-25T01:06:32.485Z",
+      "fetchedAt": "2026-11-25T04:11:30.076Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -1121,7 +1176,7 @@
       "title_orig": "【情報】TU30 / Y8S4 PTS Patchnote翻譯",
       "lang_orig": "zh",
       "publishedAt": "2026-11-13T07:31:00.000Z",
-      "fetchedAt": "2026-11-25T01:06:32.485Z",
+      "fetchedAt": "2026-11-25T04:11:30.076Z",
       "category": "updates",
       "tags": [],
       "importance": 27,
@@ -1145,7 +1200,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-25T01:06:32.485Z",
+      "fetchedAt": "2026-11-25T04:11:30.076Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -1180,7 +1235,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-25T01:06:32.485Z",
+      "fetchedAt": "2026-11-25T04:11:30.076Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -1215,7 +1270,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-25T01:06:32.485Z",
+      "fetchedAt": "2026-11-25T04:11:30.076Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -1250,7 +1305,7 @@
       "title_orig": "【情報】【已開機】關機維護公告 - 2026/11/12(四) 16:30",
       "lang_orig": "zh",
       "publishedAt": "2026-11-11T23:46:00.000Z",
-      "fetchedAt": "2026-11-25T01:06:32.485Z",
+      "fetchedAt": "2026-11-25T04:11:30.076Z",
       "category": "updates",
       "tags": [],
       "importance": 24,
@@ -1274,7 +1329,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-25T01:06:32.485Z",
+      "fetchedAt": "2026-11-25T04:11:30.076Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -1309,7 +1364,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-25T01:06:32.485Z",
+      "fetchedAt": "2026-11-25T04:11:30.076Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -1344,7 +1399,7 @@
       "title_orig": "【心得】裝備專精系統心得",
       "lang_orig": "zh",
       "publishedAt": "2026-11-11T00:41:00.000Z",
-      "fetchedAt": "2026-11-25T01:06:32.485Z",
+      "fetchedAt": "2026-11-25T04:11:30.076Z",
       "category": "arsenal",
       "tags": [],
       "importance": 22,
@@ -1368,7 +1423,7 @@
       "title_orig": "【情報】【已開機】關機維護公告 - 2026/11/10(二) 16:30，延長 1 小時",
       "lang_orig": "zh",
       "publishedAt": "2026-11-10T15:59:00.000Z",
-      "fetchedAt": "2026-11-25T01:06:32.485Z",
+      "fetchedAt": "2026-11-25T04:11:30.076Z",
       "category": "updates",
       "tags": [],
       "importance": 22,
@@ -1392,7 +1447,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-25T01:06:32.485Z",
+      "fetchedAt": "2026-11-25T04:11:30.076Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -1427,7 +1482,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-25T01:06:32.485Z",
+      "fetchedAt": "2026-11-25T04:11:30.076Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -1462,7 +1517,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-25T01:06:32.485Z",
+      "fetchedAt": "2026-11-25T04:11:30.076Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -1494,22 +1549,22 @@
     {
       "sourceId": "steam-news",
       "ok": true,
-      "checkedAt": "2026-11-25T01:06:32.485Z"
+      "checkedAt": "2026-11-25T04:11:30.076Z"
     },
     {
       "sourceId": "ubisoft-en",
       "ok": true,
-      "checkedAt": "2026-11-25T01:06:32.485Z"
+      "checkedAt": "2026-11-25T04:11:30.076Z"
     },
     {
       "sourceId": "ubisoft-zh-tw",
       "ok": true,
-      "checkedAt": "2026-11-25T01:06:32.485Z"
+      "checkedAt": "2026-11-25T04:11:30.076Z"
     },
     {
       "sourceId": "bahamut",
       "ok": true,
-      "checkedAt": "2026-11-25T01:06:32.485Z"
+      "checkedAt": "2026-11-25T04:11:30.076Z"
     }
   ]
 }
