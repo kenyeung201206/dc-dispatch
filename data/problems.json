@@ -39,8 +39,9 @@
    "failedSteps": "Report problems",
    "signature": "Published in safe mode. A check failed, but this code passed CI, so the cause is today's data: zh.test.ts > Chinese-only pages > exotics and patches have Chinese, and change lines line up one-to-one",
    "log": "refresh\tReport problems\t﻿2026-11-25T18:13:27.5099802Z ##[group]Run echo \"::error::$REASON\"\necho \"::error::$REASON\"\nexit 1\nshell: /usr/bin/bash -e {0}\nenv:\n  ASTRO_TELEMETRY_DISABLED: 1\n  PNPM_HOME: /home/runner/setup-pnpm/node_modules/.bin\n  REASON: Published in safe mode. A check failed, but this code passed CI, so the cause is today's data: zh.test.ts > Chinese-only pages > exotics and patches have Chinese, and change lines line up one-to-one\n##[error]Published in safe mode. A check failed, but this code passed CI, so the cause is today's data: zh.test.ts > Chinese-only pages > exotics and patches have Chinese, and change lines line up one-to-one\n##[error]Process completed with exit code 1.",
-   "status": "open",
-   "attempts": 0
+   "status": "needs-owner",
+   "attempts": 1,
+   "note": "今日新增的奇特武器「August」（突擊步槍，Spearfall PTS）在 data/translations.zh.json 的 exotics 中沒有中文名，zh.test.ts 因此失敗。我找不到來源確認的官方繁中名稱（巴哈與玩家影片標題都直接用英文 August），依規定不能自行編造。請確認譯名後加入 exotics.August.name；若官方就是保留英文，需決定是否調整測試對保留英文名稱的要求。"
   }
  ]
 }
