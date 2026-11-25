@@ -1,11 +1,11 @@
 {
-  "lastRun": "2026-11-25T18:12:46.148Z",
-  "durationMs": 50736,
+  "lastRun": "2026-11-25T22:00:34.586Z",
+  "durationMs": 44791,
   "edition": {
     "date": "2026-11-26",
     "number": 23,
-    "items": 44,
-    "zhPending": 29
+    "items": 45,
+    "zhPending": 30
   },
   "sources": [
     {
@@ -42,19 +42,13 @@
     "youtubeQuotaUnits": 677,
     "costUsd": 0
   },
-  "newTopics": 8,
+  "newTopics": 1,
   "recentNewTopics": [
-    3,
     2,
     2,
     3,
     3,
-    8
-  ],
-  "degraded": {
-    "at": "2026-11-25T18:12:51.664Z",
-    "failed": [
-      "zh.test.ts > Chinese-only pages > exotics and patches have Chinese, and change lines line up one-to-one"
-    ]
-  }
+    8,
+    1
+  ]
 }
