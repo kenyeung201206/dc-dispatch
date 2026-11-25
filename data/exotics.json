@@ -1,6 +1,20 @@
 {
   "exotics": [
     {
+      "name": "August",
+      "type": "Assault Rifle",
+      "text": "August is an Exotic Assault Rifle in Tom Clancy's The Division 2.",
+      "status": "spotted",
+      "confidence": "community",
+      "firstSeen": "2026-11-25T17:43:32.000Z",
+      "sources": [
+        {
+          "name": "The Division Wiki (CC BY-SA)",
+          "url": "https://thedivision.fandom.com/wiki/August"
+        }
+      ]
+    },
+    {
       "name": "Forward Observer",
       "type": "Mask",
       "talent": "Strike Order",
@@ -12,6 +26,10 @@
         {
           "name": "Ubisoft",
           "url": "https://www.ubisoft.com/en-us/game/the-division/the-division-2/news-updates/1wrUJ1HzY6BF8zzO4AMhJ3/spearfall-pts-patch-notes"
+        },
+        {
+          "name": "Ubisoft",
+          "url": "https://www.ubisoft.com/en-us/game/the-division/the-division-2/news-updates/3PTrbamgqs4rzoxSJ3bKQd/the-division-2-spearfall"
         }
       ]
     },

@@ -1,41 +1,37 @@
 {
-  "lastRun": "2026-11-25T14:32:42.854Z",
-  "durationMs": 40563,
+  "lastRun": "2026-11-25T18:12:46.148Z",
+  "durationMs": 50736,
   "edition": {
-    "date": "2026-11-25",
-    "number": 22,
-    "items": 50,
-    "zhPending": 35
+    "date": "2026-11-26",
+    "number": 23,
+    "items": 44,
+    "zhPending": 29
   },
   "sources": [
     {
       "id": "steam-news",
       "ok": true,
-      "items": 21
+      "items": 20
     },
     {
       "id": "ubisoft-en",
       "ok": true,
-      "items": 9
+      "items": 8
     },
     {
       "id": "ubisoft-zh-tw",
       "ok": true,
-      "items": 9
+      "items": 7
     },
     {
       "id": "bahamut",
-      "ok": false,
-      "items": 0,
-      "note": "Error: HTTP 403",
-      "failingSince": "2026-11-25T14:32:02.291Z"
+      "ok": true,
+      "items": 13
     },
     {
       "id": "bahamut-hot",
-      "ok": false,
-      "items": 0,
-      "note": "Error: 巴哈 board page not fetched this run",
-      "failingSince": "2026-11-25T14:32:02.291Z"
+      "ok": true,
+      "items": 5
     }
   ],
   "videos": {
@@ -46,13 +42,19 @@
     "youtubeQuotaUnits": 677,
     "costUsd": 0
   },
-  "newTopics": 3,
+  "newTopics": 8,
   "recentNewTopics": [
-    5,
     3,
     2,
     2,
     3,
-    3
-  ]
+    3,
+    8
+  ],
+  "degraded": {
+    "at": "2026-11-25T18:12:51.664Z",
+    "failed": [
+      "zh.test.ts > Chinese-only pages > exotics and patches have Chinese, and change lines line up one-to-one"
+    ]
+  }
 }

@@ -468,6 +468,42 @@
       "tags": [
         "news"
       ]
+    },
+    {
+      "kind": "image",
+      "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/4qdhOeR9G5XlRm0lqaKjxm/81440d1d4a12628565b2edd1af5eff7b/-TD2-_News_-_The_Division_2_-_Spearfall_-_TCTD2_Spearfall_Keyart_Thumbnail.jpg?w=1600",
+      "alt_en": "Official image for \"The Division 2: Spearfall\"",
+      "alt_zhHant": "官方新聞圖片：The Division 2: Spearfall",
+      "license": "Official promotional image © Ubisoft Entertainment. Shown unmodified, with credit, on a private non-commercial site.",
+      "attribution": "Ubisoft",
+      "attributionUrl": "https://www.ubisoft.com/en-us/game/the-division/the-division-2/news-updates/3PTrbamgqs4rzoxSJ3bKQd/the-division-2-spearfall",
+      "aiGenerated": false,
+      "id": "ubi-3PTrbamgqs4rzoxSJ3bKQd",
+      "width": 1600,
+      "height": 900,
+      "urlSmall": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/4qdhOeR9G5XlRm0lqaKjxm/81440d1d4a12628565b2edd1af5eff7b/-TD2-_News_-_The_Division_2_-_Spearfall_-_TCTD2_Spearfall_Keyart_Thumbnail.jpg?w=640",
+      "widthSmall": 640,
+      "tags": [
+        "news"
+      ]
+    },
+    {
+      "kind": "image",
+      "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/3VuMT6VCh2uDgvL1V5AlS/643505a99d1a3d9f4d75209cce1ea44a/-TD2-_News_-_Celebrating_Our_Agents_With_Veteran_Rewards_-_TCTD2_Veteran_Rewards_2026_Thumbnail.jpg?w=1600",
+      "alt_en": "Official image for \"Celebrating Our Agents With Veteran Rewards\"",
+      "alt_zhHant": "官方新聞圖片：Celebrating Our Agents With Veteran Rewards",
+      "license": "Official promotional image © Ubisoft Entertainment. Shown unmodified, with credit, on a private non-commercial site.",
+      "attribution": "Ubisoft",
+      "attributionUrl": "https://www.ubisoft.com/en-us/game/the-division/the-division-2/news-updates/7lCywjM0kOmdl90EI9dweB/celebrating-our-agents-with-veteran-rewards",
+      "aiGenerated": false,
+      "id": "ubi-7lCywjM0kOmdl90EI9dweB",
+      "width": 1600,
+      "height": 900,
+      "urlSmall": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/3VuMT6VCh2uDgvL1V5AlS/643505a99d1a3d9f4d75209cce1ea44a/-TD2-_News_-_Celebrating_Our_Agents_With_Veteran_Rewards_-_TCTD2_Veteran_Rewards_2026_Thumbnail.jpg?w=640",
+      "widthSmall": 640,
+      "tags": [
+        "news"
+      ]
     }
   ],
   "sectionBanners": {

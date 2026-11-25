@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-25T11:45:44.138Z",
+  "updatedAt": "2026-11-25T18:11:55.412Z",
   "topics": [
     {
       "id": "32907",
@@ -9,15 +9,6 @@
       "replies": 13,
       "views": 770,
       "lastReplyAt": "2026-11-24T07:37:00.000Z"
-    },
-    {
-      "id": "32900",
-      "tag": "討論",
-      "title": "【討論】測試後可以加跨平台好友",
-      "url": "https://forum.gamer.com.tw/C.php?bsn=24460&snA=32900",
-      "replies": 12,
-      "views": 803,
-      "lastReplyAt": "2026-11-18T15:24:00.000Z"
     },
     {
       "id": "32903",
@@ -33,8 +24,8 @@
       "tag": "問題",
       "title": "【問題】原型裝備",
       "url": "https://forum.gamer.com.tw/C.php?bsn=24460&snA=32906",
-      "replies": 7,
-      "views": 1206,
+      "replies": 8,
+      "views": 1411,
       "lastReplyAt": "2026-11-22T03:27:00.000Z"
     },
     {
@@ -45,6 +36,15 @@
       "replies": 6,
       "views": 3245,
       "lastReplyAt": "2026-11-20T21:10:00.000Z"
+    },
+    {
+      "id": "32904",
+      "tag": "問題",
+      "title": "【問題】全境封鎖2上西城戰鬥任務之中央公園泥沼挑釁動作",
+      "url": "https://forum.gamer.com.tw/C.php?bsn=24460&snA=32904",
+      "replies": 3,
+      "views": 732,
+      "lastReplyAt": "2026-11-20T05:30:00.000Z"
     }
   ]
 }

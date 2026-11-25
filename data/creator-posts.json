@@ -15,7 +15,9 @@
     "UgkxNvbhteNUDXtR-OIEnvniFwYPtAAQKaOX",
     "UgkxSN_-cqtuZKQFmhEU8pO3Y-g48oD2Kw9L",
     "UgkxAWyxbbb2Lc5Y4xcB-EfJvBnoZsG2I2qB",
-    "UgkxXD9szFD-_3Gb_rApxdbKjzZ3sd2b8U7I"
+    "UgkxXD9szFD-_3Gb_rApxdbKjzZ3sd2b8U7I",
+    "Ugkx3e2zGvVnduzWdNZJHFYV6PxFURKnik1T",
+    "UgkxoZqDhYx6dqAw-mHXpcd7jIRuqSRfDEa9"
   ],
   "creator": {
     "name": "灰帽特工 Gray Hat Agent",
@@ -205,6 +207,33 @@
     }
   ],
   "posts": [
+    {
+      "id": "post-ruqsrfdea9",
+      "title_zhHant": "「老兵獎勵」將於明日回歸",
+      "title_en": "「老兵獎勵」將於明日回歸",
+      "text_zhHant": "只要首次登入遊戲時間達標，即可獲得「軍需官步槍」以及最多三款武器外觀： 青銅外觀:2026 年 1 月 1 日之後 白銀外觀: 2020年 3 月 17 日至 2026 年 1 月 1 日之間 黃金外觀:2020 年 3 月 17 日之前",
+      "text_en": "只要首次登入遊戲時間達標，即可獲得「軍需官步槍」以及最多三款武器外觀： 青銅外觀:2026 年 1 月 1 日之後 白銀外觀: 2020年 3 月 17 日至 2026 年 1 月 1 日之間 黃金外觀:2020 年 3 月 17 日之前",
+      "category": "community",
+      "publishedAt": "2026-11-25",
+      "postUrl": "https://www.youtube.com/post/UgkxoZqDhYx6dqAw-mHXpcd7jIRuqSRfDEa9",
+      "seen": "2026-11-25",
+      "until": "2026-12-16",
+      "auto": true
+    },
+    {
+      "id": "post-xfurknik1t",
+      "title_zhHant": "華盛頓特區即將迎來「傳奇」挑戰。特工們，「長矛墜落」（Spearfall）明日正",
+      "title_en": "華盛頓特區即將迎來「傳奇」挑戰。特工們，「長矛墜落」（Spearfall）明日正",
+      "text_zhHant": "維護時間: 📅 11月26日，星期四 🕐 下午4:00 ⏳ 預計停機時間：5小時30分鐘",
+      "text_en": "維護時間: 📅 11月26日，星期四 🕐 下午4:00 ⏳ 預計停機時間：5小時30分鐘",
+      "category": "updates",
+      "publishedAt": "2026-11-25",
+      "link": "https://www.ubisoft.com/en-gb/game/the-division/the-division-2/news-updates/3PTrbamgqs4rzoxSJ3bKQd",
+      "postUrl": "https://www.youtube.com/post/Ugkx3e2zGvVnduzWdNZJHFYV6PxFURKnik1T",
+      "seen": "2026-11-25",
+      "until": "2026-12-16",
+      "auto": true
+    },
     {
       "id": "post-z3sd2b8u7i",
       "title_zhHant": "維護警報",
