@@ -17,7 +17,8 @@
     "UgkxAWyxbbb2Lc5Y4xcB-EfJvBnoZsG2I2qB",
     "UgkxXD9szFD-_3Gb_rApxdbKjzZ3sd2b8U7I",
     "Ugkx3e2zGvVnduzWdNZJHFYV6PxFURKnik1T",
-    "UgkxoZqDhYx6dqAw-mHXpcd7jIRuqSRfDEa9"
+    "UgkxoZqDhYx6dqAw-mHXpcd7jIRuqSRfDEa9",
+    "Ugkxb6HbXEtfJrqoi_iBYc8fqx-S71ymhI-l"
   ],
   "creator": {
     "name": "灰帽特工 Gray Hat Agent",
@@ -25,6 +26,32 @@
     "postsUrl": "https://www.youtube.com/@%E7%81%B0%E5%B8%BD%E7%89%B9%E5%B7%A5/posts"
   },
   "series": [
+    {
+      "id": "y8s4-manhunt-scouts",
+      "title_zhHant": "Y8S4 獵捕偵查任務",
+      "title_en": "Y8S4 Manhunt Scouts",
+      "total": 11,
+      "until": "2027-02-24",
+      "untilNote": "Added by the robot: total and season end are guesses; fix them when Ubisoft announces the season.",
+      "entries": [
+        {
+          "n": 1,
+          "steps_zhHant": [
+            "擊殺10名位於西下城區的鬣狗成員",
+            "擊殺10名位於憲政大廳的流亡者成員",
+            "擊殺10名位於西南區的真實之子成員"
+          ],
+          "steps_en": [
+            "擊殺10名位於西下城區的鬣狗成員",
+            "擊殺10名位於憲政大廳的流亡者成員",
+            "擊殺10名位於西南區的真實之子成員"
+          ],
+          "postUrl": "https://www.youtube.com/post/Ugkxb6HbXEtfJrqoi_iBYc8fqx-S71ymhI-l",
+          "seen": "2026-11-26",
+          "publishedAt": "2026-11-26"
+        }
+      ]
+    },
     {
       "id": "y8s3-manhunt-scouts",
       "title_zhHant": "Y8S3 獵捕偵查任務",

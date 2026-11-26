@@ -504,6 +504,24 @@
       "tags": [
         "news"
       ]
+    },
+    {
+      "kind": "image",
+      "url": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/4j6aK1E2xmQmiPQtyDPPkw/74a0c3cde2694e18f62d3f8f3c51c8a3/TCTD2_Y8S4_Twitch_Drop_Spearfall_960x540.jpg?w=1600",
+      "alt_en": "Official image for \"The Division 2: Spearfall Season Launch Twitch Drops\"",
+      "alt_zhHant": "官方新聞圖片：《全境封鎖 2》的「戰矛隕落」季度推出 Twitch 掉寶獎勵",
+      "license": "Official promotional image © Ubisoft Entertainment. Shown unmodified, with credit, on a private non-commercial site.",
+      "attribution": "Ubisoft",
+      "attributionUrl": "https://www.ubisoft.com/en-us/game/the-division/the-division-2/news-updates/2d5HeiKrddY3JbjYT9QAGF/the-division-2-spearfall-season-launch-twitch-drops",
+      "aiGenerated": false,
+      "id": "ubi-2d5HeiKrddY3JbjYT9QAGF",
+      "width": 1600,
+      "height": 900,
+      "urlSmall": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/4j6aK1E2xmQmiPQtyDPPkw/74a0c3cde2694e18f62d3f8f3c51c8a3/TCTD2_Y8S4_Twitch_Drop_Spearfall_960x540.jpg?w=640",
+      "widthSmall": 640,
+      "tags": [
+        "news"
+      ]
     }
   ],
   "sectionBanners": {
