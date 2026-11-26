@@ -53,8 +53,9 @@
    "failedSteps": "update volume",
    "signature": "Low update volume: new topics in the last updates 3, 3, 8, 1, 2, 2 (owner requires 3–6 per update, DIVISION2_SITE_BRIEF.md §4.3a)",
    "log": "Low update volume: new topics in the last updates 3, 3, 8, 1, 2, 2 (owner requires 3–6 per update, DIVISION2_SITE_BRIEF.md §4.3a)",
-   "status": "open",
-   "attempts": 0
+   "status": "fixed",
+   "attempts": 1,
+   "note": "所有來源（Steam、Ubisoft、巴哈）均正常運作，影片搜尋與跳過清單亦無異常；近期新題材偏少只是新聞淡季（無新內容），非程式問題，無需修改。"
   }
  ]
 }
