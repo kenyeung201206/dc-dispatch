@@ -548,10 +548,10 @@
   {
    "en": "Tipping Scales",
    "aliases": [
+    "打破平衡",
     "Tipping Scales"
    ],
-   "icon": "/icons/set/tipping-scales.png",
-   "auto": true
+   "icon": "/icons/set/tipping-scales.png"
   }
  ],
  "slots": [
