@@ -42,6 +42,19 @@
    "status": "needs-owner",
    "attempts": 1,
    "note": "今日新增的奇特武器「August」（突擊步槍，Spearfall PTS）在 data/translations.zh.json 的 exotics 中沒有中文名，zh.test.ts 因此失敗。我找不到來源確認的官方繁中名稱（巴哈與玩家影片標題都直接用英文 August），依規定不能自行編造。請確認譯名後加入 exotics.August.name；若官方就是保留英文，需決定是否調整測試對保留英文名稱的要求。"
+  },
+  {
+   "id": "202611260411-4",
+   "workflow": "Daily edition",
+   "url": "",
+   "at": "2026-11-26T04:11:07.813Z",
+   "lastSeen": "2026-11-26T04:11:07.813Z",
+   "seen": 1,
+   "failedSteps": "update volume",
+   "signature": "Low update volume: new topics in the last updates 3, 3, 8, 1, 2, 2 (owner requires 3–6 per update, DIVISION2_SITE_BRIEF.md §4.3a)",
+   "log": "Low update volume: new topics in the last updates 3, 3, 8, 1, 2, 2 (owner requires 3–6 per update, DIVISION2_SITE_BRIEF.md §4.3a)",
+   "status": "open",
+   "attempts": 0
   }
  ]
 }
