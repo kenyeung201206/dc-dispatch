@@ -1,7 +1,7 @@
 {
   "date": "2026-11-26",
   "editionNumber": 23,
-  "generatedAt": "2026-11-26T10:59:53.193Z",
+  "generatedAt": "2026-11-26T14:12:21.498Z",
   "meta": {
     "season_en": "Red Horizon",
     "season_zhHant": "Red Horizon 賽季",
@@ -17,7 +17,7 @@
       "title_orig": "The Division 2: Spearfall",
       "lang_orig": "en",
       "publishedAt": "2026-11-25T15:45:00.000Z",
-      "fetchedAt": "2026-11-26T10:59:53.193Z",
+      "fetchedAt": "2026-11-26T14:12:21.498Z",
       "category": "missions",
       "tags": [
         "season"
@@ -53,7 +53,7 @@
       "title_orig": "Celebrating Our Agents With Veteran Rewards",
       "lang_orig": "en",
       "publishedAt": "2026-11-25T03:45:00.000Z",
-      "fetchedAt": "2026-11-26T10:59:53.193Z",
+      "fetchedAt": "2026-11-26T14:12:21.498Z",
       "category": "missions",
       "tags": [],
       "importance": 75,
@@ -118,7 +118,7 @@
       "title_orig": "Vote for The Division 2 in the Steam Awards 2026!",
       "lang_orig": "en",
       "publishedAt": "2026-11-25T14:03:29.000Z",
-      "fetchedAt": "2026-11-26T10:59:53.193Z",
+      "fetchedAt": "2026-11-26T14:12:21.498Z",
       "category": "missions",
       "tags": [
         "crossplay",
@@ -146,7 +146,7 @@
       "title_orig": "The Division 2: Crossplay Live Now",
       "lang_orig": "en",
       "publishedAt": "2026-11-18T18:00:17.000Z",
-      "fetchedAt": "2026-11-26T10:59:53.193Z",
+      "fetchedAt": "2026-11-26T14:12:21.498Z",
       "category": "missions",
       "tags": [
         "crossplay",
@@ -229,7 +229,7 @@
       "title_orig": "The Division 2: Steam Awards 2026",
       "lang_orig": "en",
       "publishedAt": "2026-11-23T17:00:00.000Z",
-      "fetchedAt": "2026-11-26T10:59:53.193Z",
+      "fetchedAt": "2026-11-26T14:12:21.498Z",
       "category": "missions",
       "tags": [
         "crossplay",
@@ -248,6 +248,34 @@
       "imageId": "ubi-4SlePThszlLWcrTllz19IG",
       "relatedIds": [],
       "firstSeenAt": "2026-11-23T19:11:45.977Z",
+      "status": "new"
+    },
+    {
+      "id": "1910cp2",
+      "sourceId": "youtube",
+      "sourceName": "Kamikazevondoom",
+      "sourceUrl": "https://www.youtube.com/watch?v=BkR5d_689k4",
+      "title_orig": "Testing NEW LADY DEATH META BUILD with NEW Exotic Mask, New Hunter's Fury Buff, & More...",
+      "lang_orig": "en",
+      "publishedAt": "2026-11-26T10:33:06.000Z",
+      "fetchedAt": "2026-11-26T14:12:21.498Z",
+      "category": "arsenal",
+      "tags": [
+        "exotic",
+        "video"
+      ],
+      "importance": 64,
+      "confidence": "community",
+      "headline_en": "Testing NEW LADY DEATH META BUILD with NEW Exotic Mask, New Hunter's Fury Buff, & More...",
+      "headline_zhHant": "pending",
+      "summary_en": "Enjoy! Join this channel to get access to perks: Don't forget to mash that LIKE AND SUBSCRIBE to the channel.",
+      "summary_zhHant": "pending",
+      "summaryKind": "extract",
+      "alsoReportedBy": [],
+      "media": [],
+      "videoId": "BkR5d_689k4",
+      "relatedIds": [],
+      "firstSeenAt": "2026-11-26T14:12:21.498Z",
       "status": "new"
     },
     {
@@ -314,7 +342,7 @@
       "title_orig": "The Division 2: Echoes of Central Park Event Pass Twitch Drops",
       "lang_orig": "en",
       "publishedAt": "2026-11-10T16:00:00.000Z",
-      "fetchedAt": "2026-11-26T10:59:53.193Z",
+      "fetchedAt": "2026-11-26T14:12:21.498Z",
       "category": "community",
       "tags": [
         "event",
@@ -455,6 +483,33 @@
       "status": "new"
     },
     {
+      "id": "a8fm0r",
+      "sourceId": "youtube",
+      "sourceName": "小肥牛",
+      "sourceUrl": "https://www.youtube.com/watch?v=FOk5qaqOW3A",
+      "title_orig": "🐮牛哥 全境封鎖2 11/26 打屁",
+      "lang_orig": "zh",
+      "publishedAt": "2026-11-26T13:31:35.000Z",
+      "fetchedAt": "2026-11-26T14:12:21.498Z",
+      "category": "community",
+      "tags": [
+        "video"
+      ],
+      "importance": 55,
+      "confidence": "community",
+      "headline_en": "pending",
+      "headline_zhHant": "🐮牛哥 全境封鎖2 11/26 打屁",
+      "summary_en": "pending",
+      "summary_zhHant": "PSN ID:WILDARMS_Andy",
+      "summaryKind": "extract",
+      "alsoReportedBy": [],
+      "media": [],
+      "videoId": "FOk5qaqOW3A",
+      "relatedIds": [],
+      "firstSeenAt": "2026-11-26T14:12:21.498Z",
+      "status": "new"
+    },
+    {
       "id": "11xhpfv",
       "sourceId": "youtube",
       "sourceName": "FerrariZEROF1",
@@ -567,7 +622,7 @@
       "title_orig": "「老兵獎勵」將於明日回歸",
       "lang_orig": "zh",
       "publishedAt": "2026-11-25T00:00:00Z",
-      "fetchedAt": "2026-11-26T10:59:53.193Z",
+      "fetchedAt": "2026-11-26T14:12:21.498Z",
       "category": "community",
       "tags": [
         "creator"
@@ -593,7 +648,7 @@
       "title_orig": "華盛頓特區即將迎來「傳奇」挑戰。特工們，「長矛墜落」（Spearfall）明日正",
       "lang_orig": "zh",
       "publishedAt": "2026-11-25T00:00:00Z",
-      "fetchedAt": "2026-11-26T10:59:53.193Z",
+      "fetchedAt": "2026-11-26T14:12:21.498Z",
       "category": "updates",
       "tags": [
         "creator"
@@ -619,7 +674,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-26T10:59:53.193Z",
+      "fetchedAt": "2026-11-26T14:12:21.498Z",
       "category": "updates",
       "tags": [
         "known-issue",
@@ -726,7 +781,7 @@
       "title_orig": "The Division 2: 6X XP Event",
       "lang_orig": "en",
       "publishedAt": "2026-11-06T10:31:09.000Z",
-      "fetchedAt": "2026-11-26T10:59:53.193Z",
+      "fetchedAt": "2026-11-26T14:12:21.498Z",
       "category": "missions",
       "tags": [
         "event"
@@ -776,7 +831,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-26T10:59:53.193Z",
+      "fetchedAt": "2026-11-26T14:12:21.498Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -811,7 +866,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-26T10:59:53.193Z",
+      "fetchedAt": "2026-11-26T14:12:21.498Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -846,7 +901,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-26T10:59:53.193Z",
+      "fetchedAt": "2026-11-26T14:12:21.498Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -881,7 +936,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-26T10:59:53.193Z",
+      "fetchedAt": "2026-11-26T14:12:21.498Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -916,7 +971,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-26T10:59:53.193Z",
+      "fetchedAt": "2026-11-26T14:12:21.498Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -951,7 +1006,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-26T10:59:53.193Z",
+      "fetchedAt": "2026-11-26T14:12:21.498Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -986,7 +1041,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-26T10:59:53.193Z",
+      "fetchedAt": "2026-11-26T14:12:21.498Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -1021,7 +1076,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-26T10:59:53.193Z",
+      "fetchedAt": "2026-11-26T14:12:21.498Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -1056,7 +1111,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-26T10:59:53.193Z",
+      "fetchedAt": "2026-11-26T14:12:21.498Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -1091,7 +1146,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-26T10:59:53.193Z",
+      "fetchedAt": "2026-11-26T14:12:21.498Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -1126,7 +1181,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-26T10:59:53.193Z",
+      "fetchedAt": "2026-11-26T14:12:21.498Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -1161,7 +1216,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-26T10:59:53.193Z",
+      "fetchedAt": "2026-11-26T14:12:21.498Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -1196,7 +1251,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-26T10:59:53.193Z",
+      "fetchedAt": "2026-11-26T14:12:21.498Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -1231,7 +1286,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-26T10:59:53.193Z",
+      "fetchedAt": "2026-11-26T14:12:21.498Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -1266,7 +1321,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-26T10:59:53.193Z",
+      "fetchedAt": "2026-11-26T14:12:21.498Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -1301,7 +1356,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-26T10:59:53.193Z",
+      "fetchedAt": "2026-11-26T14:12:21.498Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -1336,7 +1391,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-26T10:59:53.193Z",
+      "fetchedAt": "2026-11-26T14:12:21.498Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -1371,7 +1426,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-26T10:59:53.193Z",
+      "fetchedAt": "2026-11-26T14:12:21.498Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -1406,7 +1461,7 @@
       "title_orig": "Spearfall PTS Patch Notes",
       "lang_orig": "en",
       "publishedAt": "2026-11-12T16:00:00.000Z",
-      "fetchedAt": "2026-11-26T10:59:53.193Z",
+      "fetchedAt": "2026-11-26T14:12:21.498Z",
       "category": "glitch-watch",
       "tags": [
         "known-issue"
@@ -1438,22 +1493,22 @@
     {
       "sourceId": "steam-news",
       "ok": true,
-      "checkedAt": "2026-11-26T10:59:53.193Z"
+      "checkedAt": "2026-11-26T14:12:21.498Z"
     },
     {
       "sourceId": "ubisoft-en",
       "ok": true,
-      "checkedAt": "2026-11-26T10:59:53.193Z"
+      "checkedAt": "2026-11-26T14:12:21.498Z"
     },
     {
       "sourceId": "ubisoft-zh-tw",
       "ok": true,
-      "checkedAt": "2026-11-26T10:59:53.193Z"
+      "checkedAt": "2026-11-26T14:12:21.498Z"
     },
     {
       "sourceId": "bahamut",
       "ok": false,
-      "checkedAt": "2026-11-26T10:59:53.193Z",
+      "checkedAt": "2026-11-26T14:12:21.498Z",
       "note": "Error: HTTP 403"
     }
   ]
