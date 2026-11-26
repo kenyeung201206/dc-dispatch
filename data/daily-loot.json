@@ -1,60 +1,60 @@
 {
- "date": "2026-11-25",
+ "date": "2026-11-26",
  "missions": [
   {
    "place": "五角",
-   "reward": "大師",
-   "kind": "set"
+   "reward": "彼得羅夫",
+   "kind": "brand"
   },
   {
    "place": "國防實驗室",
-   "reward": "碎心者",
-   "kind": "set"
+   "reward": "5.11 戰術",
+   "kind": "brand"
   },
   {
    "place": "District Union Arena",
-   "reward": "精密組裝",
-   "kind": "set"
+   "reward": "Tipping Scales",
+   "kind": "other"
   },
   {
    "place": "Roosevelt Island",
-   "reward": "沃克",
+   "reward": "火繩槍",
    "kind": "brand"
   },
   {
    "place": "太空總署",
-   "reward": "Concentrated Company",
+   "reward": "王牌",
    "kind": "set"
   }
  ],
  "vendor": [
-  "霰彈槍",
-  "Chest Pieces"
+  "精準步槍",
+  "背包"
  ],
  "english": [
   {
    "place": "The Pentagon",
-   "reward": "Virtuoso"
+   "reward": "Petrov Defense Group"
   },
   {
    "place": "DARPA Research Labs",
-   "reward": "Heartbreaker"
+   "reward": "5.11 Tactical"
   },
   {
    "place": "District Union Arena",
-   "reward": "Measured Assembly"
+   "reward": "Tipping Scales"
   },
   {
    "place": "Roosevelt Island",
-   "reward": "Walker, Harris & Co"
+   "reward": "Brazos de Arcabuz"
   },
   {
    "place": "Space Administration HQ",
-   "reward": "Concentrated Company"
+   "reward": "Aces & Eights"
   }
  ],
  "title": "",
  "url": "https://prototrack.gg/target-loot/target-loot.php",
  "source": "prototrack",
- "fetchedAt": "2026-11-25T08:11:56.466Z"
+ "fetchedAt": "2026-11-26T08:11:07.954Z"
 }

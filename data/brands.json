@@ -544,6 +544,14 @@
    ],
    "icon": "/icons/set/core-strength.png",
    "auto": true
+  },
+  {
+   "en": "Tipping Scales",
+   "aliases": [
+    "Tipping Scales"
+   ],
+   "icon": "/icons/set/tipping-scales.png",
+   "auto": true
   }
  ],
  "slots": [

@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-26T04:11:07.813Z",
+  "updatedAt": "2026-11-26T08:11:07.954Z",
   "topics": [
     {
       "id": "32907",
@@ -29,6 +29,15 @@
       "lastReplyAt": "2026-11-22T03:27:00.000Z"
     },
     {
+      "id": "32912",
+      "tag": "問題",
+      "title": "【問題】老兵皮膚疑問",
+      "url": "https://forum.gamer.com.tw/C.php?bsn=24460&snA=32912",
+      "replies": 7,
+      "views": 72,
+      "lastReplyAt": "2026-11-26T07:11:07.954Z"
+    },
+    {
       "id": "32377",
       "tag": "討論",
       "title": "【討論】修復技能對苦甜給藍甲影響的上限",
@@ -36,15 +45,6 @@
       "replies": 6,
       "views": 3245,
       "lastReplyAt": "2026-11-20T21:10:00.000Z"
-    },
-    {
-      "id": "32904",
-      "tag": "問題",
-      "title": "【問題】全境封鎖2上西城戰鬥任務之中央公園泥沼挑釁動作",
-      "url": "https://forum.gamer.com.tw/C.php?bsn=24460&snA=32904",
-      "replies": 3,
-      "views": 732,
-      "lastReplyAt": "2026-11-20T05:30:00.000Z"
     }
   ]
 }
