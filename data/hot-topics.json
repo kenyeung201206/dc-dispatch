@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-27T12:12:14.311Z",
+  "updatedAt": "2026-11-27T15:07:50.760Z",
   "topics": [
     {
       "id": "32912",
@@ -7,8 +7,8 @@
       "title": "【問題】老兵皮膚疑問",
       "url": "https://forum.gamer.com.tw/C.php?bsn=24460&snA=32912",
       "replies": 38,
-      "views": 1217,
-      "lastReplyAt": "2026-11-26T20:12:14.311Z"
+      "views": 1269,
+      "lastReplyAt": "2026-11-26T20:07:50.760Z"
     },
     {
       "id": "32907",
@@ -18,6 +18,15 @@
       "replies": 17,
       "views": 1101,
       "lastReplyAt": "2026-11-24T07:37:00.000Z"
+    },
+    {
+      "id": "32917",
+      "tag": "問題",
+      "title": "【問題】奇特武器重新分配問題",
+      "url": "https://forum.gamer.com.tw/C.php?bsn=24460&snA=32917",
+      "replies": 11,
+      "views": 172,
+      "lastReplyAt": "2026-11-27T11:07:50.760Z"
     },
     {
       "id": "32906",
@@ -36,15 +45,6 @@
       "replies": 6,
       "views": 3414,
       "lastReplyAt": "2026-11-20T21:10:00.000Z"
-    },
-    {
-      "id": "32917",
-      "tag": "問題",
-      "title": "【問題】奇特武器重新分配問題",
-      "url": "https://forum.gamer.com.tw/C.php?bsn=24460&snA=32917",
-      "replies": 2,
-      "views": 74,
-      "lastReplyAt": "2026-11-27T11:12:14.311Z"
     }
   ]
 }
