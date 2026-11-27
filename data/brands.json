@@ -552,6 +552,14 @@
     "Tipping Scales"
    ],
    "icon": "/icons/set/tipping-scales.png"
+  },
+  {
+   "en": "Field General",
+   "aliases": [
+    "Field General"
+   ],
+   "icon": "/icons/set/field-general.png",
+   "auto": true
   }
  ],
  "slots": [

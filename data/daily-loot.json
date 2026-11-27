@@ -1,60 +1,60 @@
 {
- "date": "2026-11-26",
+ "date": "2026-11-27",
  "missions": [
   {
    "place": "五角",
-   "reward": "彼得羅夫",
+   "reward": "阿爾卑斯",
    "kind": "brand"
   },
   {
    "place": "國防實驗室",
-   "reward": "5.11 戰術",
-   "kind": "brand"
+   "reward": "Field General",
+   "kind": "other"
   },
   {
    "place": "區域聯盟體育館",
-   "reward": "打破平衡",
-   "kind": "set"
+   "reward": "毒蜥",
+   "kind": "brand"
   },
   {
    "place": "羅斯福島",
-   "reward": "火繩槍",
+   "reward": "村上",
    "kind": "brand"
   },
   {
    "place": "太空總署",
-   "reward": "王牌",
-   "kind": "set"
+   "reward": "火繩槍",
+   "kind": "brand"
   }
  ],
  "vendor": [
-  "精準步槍",
-  "背包"
+  "手槍",
+  "面罩"
  ],
  "english": [
   {
    "place": "The Pentagon",
-   "reward": "Petrov Defense Group"
+   "reward": "Alps Summit Armaments"
   },
   {
    "place": "DARPA Research Labs",
-   "reward": "5.11 Tactical"
+   "reward": "Field General"
   },
   {
    "place": "District Union Arena",
-   "reward": "Tipping Scales"
+   "reward": "Gila Guard"
   },
   {
    "place": "Roosevelt Island",
-   "reward": "Brazos de Arcabuz"
+   "reward": "Murakami Industries"
   },
   {
    "place": "Space Administration HQ",
-   "reward": "Aces & Eights"
+   "reward": "Brazos de Arcabuz"
   }
  ],
  "title": "",
  "url": "https://prototrack.gg/target-loot/target-loot.php",
  "source": "prototrack",
- "fetchedAt": "2026-11-26T08:11:07.954Z"
+ "fetchedAt": "2026-11-27T09:07:28.791Z"
 }
