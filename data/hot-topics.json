@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-28T08:55:44.927Z",
+  "updatedAt": "2026-11-28T20:11:24.121Z",
   "topics": [
     {
       "id": "32912",
@@ -36,6 +36,15 @@
       "replies": 10,
       "views": 1744,
       "lastReplyAt": "2026-11-22T03:27:00.000Z"
+    },
+    {
+      "id": "32920",
+      "tag": "問題",
+      "title": "【問題】使用E點數溝買技能改造模組 卻E點數一直減少東西卻沒在身上",
+      "url": "https://forum.gamer.com.tw/C.php?bsn=24460&snA=32920",
+      "replies": 1,
+      "views": 7,
+      "lastReplyAt": "2026-11-28T15:18:00.000Z"
     }
   ]
 }
