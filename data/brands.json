@@ -560,6 +560,14 @@
     "Field General"
    ],
    "icon": "/icons/set/field-general.png"
+  },
+  {
+   "en": "Refactor",
+   "aliases": [
+    "Refactor"
+   ],
+   "icon": "/icons/set/refactor.png",
+   "auto": true
   }
  ],
  "slots": [
