@@ -38,19 +38,22 @@ test('Guide Picks: front-page list links to playable guides on the Builds page',
   await expect(card.locator('iframe')).toHaveAttribute('src', /youtube-nocookie\.com\/embed\//);
 });
 
-test('灰帽特工 攻略 page: missions 1→11 in order, each linking to its own post', async ({ page }) => {
+test('特工情報站 page (was 攻略): missions 1→11 in order, each linking to its own post', async ({ page }) => {
   await page.goto('/zh-hant/guides/');
-  await expect(page.getByRole('heading', { level: 1 })).toHaveText('灰帽特工 攻略');
+  await expect(page.getByRole('heading', { level: 1 })).toHaveText('特工情報站');
+  await expect(page.locator('.subtitle')).toHaveText('獵捕偵查任務・兌換碼・灰帽特工最新消息');
   await expect(page.getByRole('link', { name: '查看灰帽特工全部貼文 ↗' })).toHaveAttribute('href', /youtube\.com\/@.+\/posts$/);
-  const slots = page.locator('.steps > .slot');
+  // The finished Y8S3 season (a new season's list may sit above it, still filling up).
+  const y8s3 = page.locator('section.series', { has: page.locator('#s-y8s3-manhunt-scouts') });
+  const slots = y8s3.locator('.steps > .slot');
   await expect(slots).toHaveCount(11);
-  await expect(page.locator('.steps > .slot.empty')).toHaveCount(0);
+  await expect(y8s3.locator('.steps > .slot.empty')).toHaveCount(0);
   await expect(slots.nth(0).locator('.n')).toHaveText('1');
   await expect(slots.nth(0)).toContainText('公開處決');
   await expect(slots.nth(0).locator('.src a')).toHaveAttribute('href', /^https:\/\/www\.youtube\.com\/post\/Ugkx/);
   await expect(slots.nth(10)).toHaveClass(/final/);
   await expect(slots.nth(10).locator('.todo li')).toHaveCount(3);
-  await expect(page.locator('.prog')).toContainText('已收錄 11 / 11');
+  await expect(y8s3.locator('.prog')).toContainText('已收錄 11 / 11');
 });
 
 test('灰帽特工 posts are sorted into newspaper sections, codes are shown, section links work', async ({ page }) => {
@@ -64,12 +67,13 @@ test('灰帽特工 posts are sorted into newspaper sections, codes are shown, se
   if (await codes.count()) await expect(codes.first()).toHaveText(/^[A-Z0-9]{3}-[A-Z0-9]{3}-[A-Z0-9]{3}-[A-Z0-9]{3}$/);
 });
 
-test('guides page is reachable from the nav in English', async ({ page, isMobile }) => {
+test('Agent Intel is the 2nd, highlighted nav button and opens the page', async ({ page, isMobile }) => {
   test.skip(isMobile, 'desktop nav');
   await page.goto('/en/');
-  await page.locator('.snav').getByRole('link', { name: 'Guides' }).click();
+  await expect(page.locator('.snav li').nth(1).locator('a')).toHaveClass(/intel-nav/);
+  await page.locator('.snav').getByRole('link', { name: /Agent Intel/ }).click();
   await expect(page).toHaveURL(/\/en\/guides\/$/);
-  await expect(page.locator('.steps > .slot').nth(10)).toContainText('Black Tusk');
+  await expect(page.locator('section.series', { has: page.locator('#s-y8s3-manhunt-scouts') }).locator('.steps > .slot').nth(10)).toContainText('Black Tusk');
 });
 
 test('Chinese pages: exotics and patch notes are in Chinese, English originals stay on English pages', async ({ page }) => {

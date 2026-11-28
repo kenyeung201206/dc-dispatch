@@ -21,6 +21,7 @@ const groups = CATEGORIES.map((c) => [c, posts.filter((p) => p.category === c).s
 <Paper locale={locale} title={t(locale, 'cg.title')} current="guides">
   <header class="section-head page-head">
     <h1>{t(locale, 'cg.title')}</h1>
+    <p class="subtitle">{t(locale, 'cg.subtitle')}</p>
   </header>
   <p class="intro">{t(locale, 'cg.intro')}</p>
   <p><a class="cta" href={creator.postsUrl} rel="noopener noreferrer" target="_blank">{t(locale, 'cg.allPosts')}</a></p>
@@ -124,6 +125,11 @@ const groups = CATEGORIES.map((c) => [c, posts.filter((p) => p.category === c).s
 </Paper>
 
 <style>
+  .subtitle {
+    margin: 4px 0 0;
+    color: var(--shd-ink);
+    font: 700 var(--step-0) / 1.4 var(--font-hud);
+  }
   .page-head h1 {
     margin: 0;
     font: 900 var(--step-3) / 1.1 var(--font-display);

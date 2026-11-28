@@ -10,7 +10,6 @@ interface Props {
 }
 const { locale, sections, current } = Astro.props;
 const tools = [
-  { key: 'guides', href: routes.guides(locale), label: t(locale, 'nav.guides') },
   { key: 'archive', href: routes.archive(locale), label: t(locale, 'nav.archive') },
   { key: 'patches', href: routes.patches(locale), label: t(locale, 'nav.patches') },
   { key: 'search', href: routes.search(locale), label: `⌕ ${t(locale, 'nav.search')}` },
@@ -19,7 +18,8 @@ const tools = [
 <nav class="snav" aria-label={t(locale, 'nav.sections')}>
   <ul>
     {
-      sections.map((s) => (
+      sections.map((s, i) => (
+        <>
         <li>
           <a
             href={s === 'back-page' ? `${routes.home(locale)}#back-page` : routes.section(locale, s)}
@@ -29,6 +29,15 @@ const tools = [
             {t(locale, `section.${s}` as UiKey)}
           </a>
         </li>
+        {i === 0 && (
+          // 特工情報站: missions, codes and 灰帽特工's news — 2nd button and highlighted, so readers find it (owner, 2026-11-28).
+          <li>
+            <a href={routes.guides(locale)} class="intel-nav" aria-current={current === 'guides' ? 'page' : undefined}>
+              <span aria-hidden="true">🎯</span> {t(locale, 'nav.guides')}
+            </a>
+          </li>
+        )}
+        </>
       ))
     }
     <li class="sep" aria-hidden="true"></li>
@@ -101,6 +110,24 @@ const tools = [
   }
   .hz {
     box-shadow: inset 4px 0 0 var(--hazard);
+  }
+  /* 特工情報站: an orange chip that stands out from the other sections. */
+  .intel-nav {
+    gap: 5px;
+    margin: 2px;
+    min-height: max(44px, calc(var(--nav-h) - 4px)); /* phone tap target */
+    padding: 0 12px;
+    border: 1px solid var(--shd);
+    border-radius: 4px;
+    background: var(--shd);
+    color: var(--on-shd); /* the site's text colour for SHD orange: dark on orange (6.5:1), white on the Hunter red */
+  }
+  .intel-nav:hover,
+  .intel-nav:focus-visible,
+  .intel-nav[aria-current='page'] {
+    border-bottom-color: var(--shd);
+    box-shadow: 0 0 0 2px var(--paper), 0 0 0 4px var(--shd);
+    color: var(--on-shd);
   }
   .dz {
     box-shadow: inset 4px 0 0 var(--dz-red);

@@ -32,8 +32,10 @@ test('YouTube facade loads no player until tapped, then plays inline from youtub
 
 test('Chinese page uses the regional upload when Ubisoft has one', async ({ page }) => {
   // Data changes daily: pick any listed video that has a zh-TW regional twin.
-  const videos = JSON.parse(readFileSync('data/videos.json', 'utf8')).videos as { id: string; idZh?: string }[];
-  const pair = videos.find((v) => v.idZh);
+  const videos = JSON.parse(readFileSync('data/videos.json', 'utf8')).videos as { id: string; idZh?: string; title: string; titleZh?: string }[];
+  const zhTitles = (JSON.parse(readFileSync('data/translations.zh.json', 'utf8')).videos ?? {}) as Record<string, string>;
+  // Chinese pages only list videos with a Chinese title, so a brand-new upload without one is not a fair pick.
+  const pair = videos.find((v) => v.idZh && (v.titleZh || /[\u3400-\u9fff]/.test(v.title) || zhTitles[v.id]));
   test.skip(!pair, 'no regional pair in the current data');
   await blockThirdParty(page);
   await page.goto('/en/watch/');

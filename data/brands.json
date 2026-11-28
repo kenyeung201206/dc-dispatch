@@ -556,10 +556,10 @@
   {
    "en": "Field General",
    "aliases": [
+    "戰地將軍",
     "Field General"
    ],
-   "icon": "/icons/set/field-general.png",
-   "auto": true
+   "icon": "/icons/set/field-general.png"
   }
  ],
  "slots": [
